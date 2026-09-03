@@ -1,0 +1,7 @@
+# Bare mirror of reflex-dev/reflex used for diff measurement. Large and fully
+# reproducible from `scripts/prscan.sh init`; never commit it.
+cache/repo.git/
+# Scratch
+*.pyc
+__pycache__/
+.DS_Store

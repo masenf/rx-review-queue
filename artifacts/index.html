@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reflex PR readiness · 2026-09-03</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1c1a; --muted: #6b6b66; --line: #e3e3de;
+    --accent: #5b4bdb; --good: #1f7a4d; --warn: #b26a00; --bad: #b3261e; --chip: #efeff9;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.5 -apple-system, "Segoe UI", Inter, Roboto, sans-serif; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  header { padding: 28px 32px 8px; }
+  header h1 { margin: 0 0 4px; font-size: 22px; }
+  header .sub { color: var(--muted); }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; padding: 12px 32px 4px; }
+  .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .tile .n { font-size: 26px; font-weight: 600; line-height: 1.1; }
+  .tile .l { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .attention { margin: 12px 32px 0; padding: 12px 16px; background: #fff8e6; border: 1px solid #f0d9a0; border-radius: 10px; }
+  .attention h2 { margin: 0 0 6px; font-size: 14px; }
+  .attention ul { margin: 0; padding-left: 18px; }
+  nav.tabs { display: flex; gap: 4px; flex-wrap: wrap; padding: 16px 32px 0; border-bottom: 1px solid var(--line); }
+  nav.tabs button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 8px 12px; font: inherit; color: var(--muted); cursor: pointer; }
+  nav.tabs button.active { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+  nav.tabs button .c { color: var(--muted); font-weight: 400; margin-left: 4px; }
+  section.pane { display: none; padding: 20px 32px 48px; }
+  section.pane.active { display: block; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; }
+  .card h3 { margin: 0 0 4px; font-size: 15px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .card h3 .rank { color: var(--muted); font-weight: 500; }
+  .card h3 .score { margin-left: auto; font-size: 12px; color: var(--muted); font-weight: 500; }
+  .meta { color: var(--muted); font-size: 12.5px; margin-bottom: 6px; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+  .chip { background: var(--chip); border-radius: 999px; padding: 1px 9px; font-size: 12px; }
+  .chip.good { background: #e4f4ea; color: var(--good); } .chip.warn { background: #fff1dc; color: var(--warn); } .chip.bad { background: #fde7e5; color: var(--bad); }
+  .card ul { margin: 6px 0 0; padding-left: 18px; }
+  .blocker { margin-top: 8px; padding: 8px 10px; border-left: 3px solid var(--warn); background: #fffaf0; border-radius: 4px; }
+  .blocker b { color: var(--warn); }
+  h2.group { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 20px 0 8px; }
+  table { border-collapse: collapse; width: 100%; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .empty { color: var(--muted); font-style: italic; }
+  footer { color: var(--muted); font-size: 12px; padding: 0 32px 32px; }
+  @media (max-width: 640px) { header, .tiles, .attention, nav.tabs, section.pane, footer { padding-left: 16px; padding-right: 16px; } }
+</style>
+</head>
+<body>
+<header><h1>Reflex PR readiness</h1><div class="sub">reflex-dev/reflex · open non-draft PRs ranked by how close they are to merging today · updated 2026-09-03 (2026-09-03 18:40 UTC)</div></header><div class="tiles"><div class="tile"><div class="n">—</div><div class="l">open PRs</div></div><div class="tile"><div class="n">—</div><div class="l">non-draft</div></div><div class="tile"><div class="n">—</div><div class="l">drafts (excluded)</div></div><div class="tile"><div class="n">—</div><div class="l">counting approvals</div></div><div class="tile"><div class="n">0</div><div class="l">fast lane</div></div><div class="tile"><div class="n">0</div><div class="l">one fix away</div></div><div class="tile"><div class="n">—</div><div class="l">fork PRs, CI never ran</div></div><div class="tile"><div class="n">—</div><div class="l">never human-reviewed</div></div></div><div class="attention"><h2>Needs attention today</h2><ul><li>No triage run has been recorded yet. This board is the renderer&#x27;s output for a bootstrap run with no GitHub API access; see Method &amp; caveats.</li></ul></div><nav class="tabs"><button data-pane="top">Top 15<span class="c">0</span></button><button data-pane="onefix">One fix away<span class="c">0</span></button><button data-pane="fast">Fast lane<span class="c">0</span></button><button data-pane="close">Close candidates<span class="c">0</span></button><button data-pane="stacks">Stacks<span class="c">0</span></button><button data-pane="delta">Since last run</button><button data-pane="method">Method &amp; caveats</button></nav><section class="pane" id="top"><p class="empty">No ranked PRs in this run.</p></section><section class="pane" id="onefix"><h2 class="group">Your move · 0</h2><p class="empty">none</p><h2 class="group">Author's move · 0</h2><p class="empty">none</p></section><section class="pane" id="fast"><p class="empty">Nothing verified mergeable at a glance.</p></section><section class="pane" id="close"><p class="empty">No closure candidates.</p></section><section class="pane" id="stacks"><h2 class="group">Stacks · 0</h2><p class="empty">No stacked PRs detected (head-SHA containment over all non-draft PRs).</p><h2 class="group">Conflict clusters · 0</h2><p class="empty">None recorded.</p></section><section class="pane" id="delta"><p class="meta">Compared with run <b>2026-08-28 (Cowork, notes only)</b>.</p><table><tr><th>Change</th><th>PRs</th></tr><tr><td>Merged (0)</td><td><span class="empty">none</span></td></tr><tr><td>Closed without merge (0)</td><td><span class="empty">none</span></td></tr><tr><td>Newly opened (0)</td><td><span class="empty">none</span></td></tr><tr><td>Entered top 15 (0)</td><td><span class="empty">none</span></td></tr><tr><td>Left top 15 (0)</td><td><span class="empty">none</span></td></tr><tr><td>Newly blocked (0)</td><td><span class="empty">none</span></td></tr><tr><td>Newly unblocked (0)</td><td><span class="empty">none</span></td></tr><tr><td>Draft ↔ ready flips (0)</td><td><span class="empty">none</span></td></tr></table></section><section class="pane" id="method"><table><tr><th>Run started</th><td>2026-09-03 18:40 UTC</td></tr><tr><th>Runner</th><td>claude-code-remote (bootstrap)</td></tr><tr><th>Review/CI layer</th><td>absent</td></tr><tr><th>main at</th><td>3e3732dcbedc 2026-09-02T18:24:43-07:00</td></tr><tr><th>Listing fetched</th><td>2026-09-03T18:40:00Z</td></tr><tr><th>PRs measured</th><td>16</td></tr><tr><th>Model / session</th><td>repo bootstrap, not a triage run</td></tr></table><h2 class="group">Method notes · 1</h2><ul><li>Bootstrap of the rx-review-queue repo. The git layer was exercised on 16 PR heads (4 from the Aug 28 notes plus the 12 highest-numbered PR refs) to validate scripts/measure.py; the open-PR listing and merge-box layer were not collected because reflex-dev/reflex was not attached to the session.</li></ul><h2 class="group">Caveats · 2</h2><ul><li>The 16 measured PRs are not a listing of open PRs; some may be closed or drafts.</li><li>No ranking was performed.</li></ul></section><footer>Generated by the <a href="https://github.com/masenf/rx-review-queue">rx-review-queue</a> skill. Only the GitHub merge box is authoritative; search qualifiers and bot summaries are not. Source data: <code>cache/runs/example-run/</code>.</footer>
+<script>
+  const tabs = document.querySelectorAll('nav.tabs button');
+  const panes = document.querySelectorAll('section.pane');
+  function show(id) {
+    tabs.forEach(b => b.classList.toggle('active', b.dataset.pane === id));
+    panes.forEach(p => p.classList.toggle('active', p.id === id));
+    try { history.replaceState(null, '', '#' + id); } catch (e) {}
+  }
+  tabs.forEach(b => b.addEventListener('click', () => show(b.dataset.pane)));
+  const initial = location.hash.slice(1);
+  show(document.getElementById(initial) ? initial : tabs[0].dataset.pane);
+</script>
+</body>
+</html>

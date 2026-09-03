@@ -1,0 +1,42 @@
+{
+ "run": {
+  "date": "2026-09-03",
+  "started_at": "2026-09-03 18:40 UTC",
+  "runner": "claude-code-remote (bootstrap)",
+  "github_login": null,
+  "review_ci_layer": "absent",
+  "session": "repo bootstrap, not a triage run"
+ },
+ "stats": {
+  "open": "\u2014",
+  "nondraft": "\u2014",
+  "drafts": "\u2014",
+  "counting_approvals": "\u2014",
+  "fork_ci_unrun": "\u2014",
+  "never_human_reviewed": "\u2014"
+ },
+ "attention": [
+  "No triage run has been recorded yet. This board is the renderer's output for a bootstrap run with no GitHub API access; see Method & caveats."
+ ],
+ "top15": [],
+ "one_fix_away": {
+  "maintainer": [],
+  "author": []
+ },
+ "fast_lane": [],
+ "closure": [],
+ "conflict_clusters": [],
+ "patterns": [],
+ "delta": {
+  "previous_run": "2026-08-28 (Cowork, notes only)"
+ },
+ "method": {
+  "notes": [
+   "Bootstrap of the rx-review-queue repo. The git layer was exercised on 16 PR heads (4 from the Aug 28 notes plus the 12 highest-numbered PR refs) to validate scripts/measure.py; the open-PR listing and merge-box layer were not collected because reflex-dev/reflex was not attached to the session."
+  ],
+  "caveats": [
+   "The 16 measured PRs are not a listing of open PRs; some may be closed or drafts.",
+   "No ranking was performed."
+  ]
+ }
+}

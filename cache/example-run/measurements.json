@@ -1,0 +1,750 @@
+{
+ "main": "3e3732dcbedc4f85943bd35ff76f02a09a70306c",
+ "main_date": "2026-09-02T18:24:43-07:00",
+ "listing_fetched_at": "2026-09-03T00:00:00Z",
+ "measured": 16,
+ "missing_refs": [],
+ "stacks": [],
+ "prs": {
+  "6899": {
+   "number": 6899,
+   "head": "aa01b4d67c153f3679b3b687c7474a8e4fa4dc2b",
+   "merge_base": "174f2c5fc993b04a84ccf77182cf50cf16bc95a8",
+   "files": 23,
+   "insertions": 1303,
+   "deletions": 38,
+   "commits_ahead": 8,
+   "behind_main": 2,
+   "buckets": {
+    "ci": 1,
+    "config": 4,
+    "fragments": 3,
+    "markdown_other": 2,
+    "python": 6,
+    "unit_tests": 7
+   },
+   "bucket_paths": {
+    "ci": [
+     ".github/workflows/dispatch_release.yml"
+    ],
+    "config": [
+     "packages/reflex-base/pyproject.toml",
+     "packages/reflex-otel/pyproject.toml",
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "fragments": [
+     "news/6227.feature.md",
+     "packages/reflex-base/news/6227.feature.md",
+     "packages/reflex-otel/news/6227.feature.md"
+    ],
+    "markdown_other": [
+     "packages/reflex-otel/CHANGELOG.md",
+     "packages/reflex-otel/README.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/event/context.py",
+     "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "packages/reflex-base/src/reflex_base/otel.py",
+     "packages/reflex-otel/src/reflex_otel/__init__.py",
+     "reflex/app.py"
+    ],
+    "unit_tests": [
+     "tests/units/conftest.py",
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+     "tests/units/reflex_base/event/processor/test_event_processor.py",
+     "tests/units/reflex_base/test_otel.py",
+     "tests/units/reflex_otel/__init__.py",
+     "tests/units/reflex_otel/test_init.py",
+     "tests/units/test_app.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [
+     6227
+    ],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-otel"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6927": {
+   "number": 6927,
+   "head": "9e3828ade77106efcb7657d569b1f6be6d99a162",
+   "merge_base": "d86f167bce73d4ec4ded9b4a77296955142ef019",
+   "files": 5,
+   "insertions": 737,
+   "deletions": 14,
+   "commits_ahead": 5,
+   "behind_main": 70,
+   "buckets": {
+    "fragments": 1,
+    "markdown_other": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-release/news/+verify-release-before-post-release.bugfix.md"
+    ],
+    "markdown_other": [
+     "packages/reflex-release/README.md"
+    ],
+    "python": [
+     "packages/reflex-release/src/reflex_release/commands.py",
+     "packages/reflex-release/src/reflex_release/gitutil.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_release/test_commands.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-release"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6963": {
+   "number": 6963,
+   "head": "cb69e69efca83f80fcd0941b233b75dd589af13d",
+   "merge_base": "f7c848fb7f1761daaebc65477bf5fb13053d6ee4",
+   "files": 2,
+   "insertions": 7,
+   "deletions": 5,
+   "commits_ahead": 2,
+   "behind_main": 42,
+   "buckets": {
+    "fragments": 1,
+    "python": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-hosting-cli/news/6963.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-hosting-cli/src/reflex_cli/v2/cli.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     6963
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-hosting-cli"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6933": {
+   "number": 6933,
+   "head": "26968d771c0c2b6e9ba79ea4157ab5569686be35",
+   "merge_base": "812bb4750378b18f56bd75d293d70cc2081934ce",
+   "files": 4,
+   "insertions": 524,
+   "deletions": 54,
+   "commits_ahead": 19,
+   "behind_main": 9,
+   "buckets": {
+    "fragments": 2,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/6933.bugfix.md",
+     "packages/reflex-base/news/6933.deprecation.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_config.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     6933
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7025": {
+   "number": 7025,
+   "head": "4a30260cf893036e62dc12f92652d6f5864754d1",
+   "merge_base": "b9286f51edee925e5ce522965777439aa7ae1468",
+   "files": 7,
+   "insertions": 245,
+   "deletions": 14,
+   "commits_ahead": 9,
+   "behind_main": 3,
+   "buckets": {
+    "fragments": 2,
+    "python": 4,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/7025.performance.md",
+     "packages/reflex-base/news/7025.performance.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "reflex/app.py",
+     "reflex/route.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/test_proxy.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     7025
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7027": {
+   "number": 7027,
+   "head": "9f1e1e6bce40c4b09ba23266730d9ab9e9420769",
+   "merge_base": "812bb4750378b18f56bd75d293d70cc2081934ce",
+   "files": 1,
+   "insertions": 23,
+   "deletions": 19,
+   "commits_ahead": 3,
+   "behind_main": 9,
+   "buckets": {
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "unit_tests": [
+     "tests/units/utils/test_processes.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7029": {
+   "number": 7029,
+   "head": "51bec59fd4323491e43cad0ecba6ac6b1baaa710",
+   "merge_base": "19d888d19b00d92bca349be6d7bbac8551ad8a49",
+   "files": 4,
+   "insertions": 538,
+   "deletions": 54,
+   "commits_ahead": 2,
+   "behind_main": 24,
+   "buckets": {
+    "markdown_other": 2,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "markdown_other": [
+     "CHANGELOG.md",
+     "packages/reflex-base/CHANGELOG.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_config.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7030": {
+   "number": 7030,
+   "head": "49d11a1dfe30ed748e4463b2ff16e1f33b45bb60",
+   "merge_base": "6beb371504cf8812a8865f29fab1217a7ee070fc",
+   "files": 4,
+   "insertions": 538,
+   "deletions": 54,
+   "commits_ahead": 2,
+   "behind_main": 11,
+   "buckets": {
+    "markdown_other": 2,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "markdown_other": [
+     "CHANGELOG.md",
+     "packages/reflex-base/CHANGELOG.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_config.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7031": {
+   "number": 7031,
+   "head": "0a17ec5e0c962a488e18279560e4e58c856fe394",
+   "merge_base": "c5902a3fb13f5fa4ab481ab6aed3ad8e0ebe8db7",
+   "files": 3,
+   "insertions": 35,
+   "deletions": 1,
+   "commits_ahead": 3,
+   "behind_main": 8,
+   "buckets": {
+    "config": 1,
+    "markdown_other": 2
+   },
+   "bucket_paths": {
+    "config": [
+     "pyproject.toml"
+    ],
+    "markdown_other": [
+     "CHANGELOG.md",
+     "packages/reflex-base/CHANGELOG.md"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7033": {
+   "number": 7033,
+   "head": "945a53fe3be10c6ff17e079a6fe724a2525f5307",
+   "merge_base": "9a2675367f2d82b705d646ae1e96dfb2dfda9ecd",
+   "files": 8,
+   "insertions": 317,
+   "deletions": 29,
+   "commits_ahead": 1,
+   "behind_main": 7,
+   "buckets": {
+    "docs": 1,
+    "fragments": 2,
+    "python": 3,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/events/events_overview.md"
+    ],
+    "fragments": [
+     "news/7033.feature.md",
+     "packages/reflex-base/news/7033.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py",
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_event.py",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     7033
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7035": {
+   "number": 7035,
+   "head": "f01c7556a977fb6bb98b09f6532cd59c9e2ac094",
+   "merge_base": "9a2675367f2d82b705d646ae1e96dfb2dfda9ecd",
+   "files": 3,
+   "insertions": 124,
+   "deletions": 15,
+   "commits_ahead": 1,
+   "behind_main": 7,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+config-reload-state-imports.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_config.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7036": {
+   "number": 7036,
+   "head": "fc47df9cad7c78676b9ff50c404cd6a822ef9076",
+   "merge_base": "174f2c5fc993b04a84ccf77182cf50cf16bc95a8",
+   "files": 7,
+   "insertions": 425,
+   "deletions": 51,
+   "commits_ahead": 3,
+   "behind_main": 2,
+   "buckets": {
+    "benchmarks": 1,
+    "fragments": 2,
+    "python": 3,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/test_state_dirty.py"
+    ],
+    "fragments": [
+     "news/+dirty-tracking-cutoff.performance.md",
+     "packages/reflex-base/news/+dirty-tracking-cutoff.performance.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/types.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7037": {
+   "number": 7037,
+   "head": "858494ea66a920d1ce7dfa3d5c9128199789692c",
+   "merge_base": "174f2c5fc993b04a84ccf77182cf50cf16bc95a8",
+   "files": 4,
+   "insertions": 577,
+   "deletions": 33,
+   "commits_ahead": 2,
+   "behind_main": 2,
+   "buckets": {
+    "ci": 1,
+    "config": 1,
+    "scripts": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "ci": [
+     ".github/workflows/check_outdated_dependencies.yml"
+    ],
+    "config": [
+     "pyproject.toml"
+    ],
+    "scripts": [
+     "scripts/check_outdated_deps.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_check_outdated_deps.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7038": {
+   "number": 7038,
+   "head": "9851ca6e2da5a9c8ec8e49195fc1cbe24f01e244",
+   "merge_base": "7d6edec97e7867677a319f90b91d5d34eea424ac",
+   "files": 1,
+   "insertions": 28,
+   "deletions": 14,
+   "commits_ahead": 1,
+   "behind_main": 1,
+   "buckets": {
+    "docs": 1
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/hosting/custom-domains.md"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": true,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7039": {
+   "number": 7039,
+   "head": "1e49725a56fc7422d3a0d60bb4f252e19ab558bc",
+   "merge_base": "7d6edec97e7867677a319f90b91d5d34eea424ac",
+   "files": 3,
+   "insertions": 455,
+   "deletions": 13,
+   "commits_ahead": 10,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/7039.bugfix.md"
+    ],
+    "python": [
+     "reflex/assets.py"
+    ],
+    "unit_tests": [
+     "tests/units/assets/test_assets.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7039
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7040": {
+   "number": 7040,
+   "head": "b965d6f8597128922d47232379d6c71f86983746",
+   "merge_base": "3e3732dcbedc4f85943bd35ff76f02a09a70306c",
+   "files": 12,
+   "insertions": 197,
+   "deletions": 45,
+   "commits_ahead": 1,
+   "behind_main": 0,
+   "buckets": {
+    "config": 2,
+    "markdown_other": 1,
+    "python": 7,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "config": [
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "markdown_other": [
+     "MIGRATION.md"
+    ],
+    "python": [
+     "reflex/custom_components/custom_components.py",
+     "reflex/utils/frontend_skeleton.py",
+     "reflex/utils/js_runtimes.py",
+     "reflex/utils/net.py",
+     "reflex/utils/registry.py",
+     "reflex/utils/telemetry.py",
+     "reflex/utils/templates.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_telemetry.py",
+     "tests/units/utils/test_utils.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  }
+ }
+}
