@@ -1,7 +1,10 @@
 {
  "fetched_at": "2026-09-03T18:48:10Z",
  "body_has_repro": false,
- "conflicting_files": [],
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/components/memo.py",
+  "pyi_hashes.json"
+ ],
  "auto_merge": false,
  "review_decision": null,
  "requested_reviewers": [],
@@ -126,6 +129,7 @@
   "Closes #6849 which the author filed himself (ENG-10883 linear link).",
   "No other maintainer review or comment; author is MEMBER.",
   "CI green (111 check runs, 2 skipped macos); page 2 not fetched.",
-  "Very large body with performance analysis; body_has_repro false (repro lives in the linked issue)."
+  "Very large body with performance analysis; body_has_repro false (repro lives in the linked issue).",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API."
  ]
 }

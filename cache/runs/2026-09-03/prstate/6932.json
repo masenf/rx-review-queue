@@ -1,7 +1,9 @@
 {
  "fetched_at": "2026-09-03T18:48:10Z",
  "body_has_repro": false,
- "conflicting_files": [],
+ "conflicting_files": [
+  "reflex/app.py"
+ ],
  "auto_merge": false,
  "review_decision": null,
  "requested_reviewers": [],
@@ -114,6 +116,7 @@
   "31 review threads (greptile/cubic), all resolved; author rebutted several bot findings in-thread.",
   "No MEMBER/OWNER review or comment at all; only human interaction is CONTRIBUTOR abulvenz's issue comment. Large change (22 files, +2399/-607, 33 commits) with no maintainer engagement.",
   "Fork PR but CI ran fully (111 check runs on head, all green except 2 skipped macos jobs); check-run page 2 not fetched, counts assume same pattern.",
-  "Body is short; no linked issue. Drops python-socketio/engineio/wsproto deps and migrates AppHarness to granian per body."
+  "Body is short; no linked issue. Drops python-socketio/engineio/wsproto deps and migrates AppHarness to granian per body.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API."
  ]
 }

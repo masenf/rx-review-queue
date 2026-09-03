@@ -1,112 +1,115 @@
 {
-  "number": 6597,
-  "fetched_at": "2026-09-03T18:50:31Z",
-  "head_sha": "1f44dbdc28da3d6213527e7b97bfc73099846942",
-  "title": "ENG-9668: feat: add rx.google_font for faster font loading from the document head",
-  "author": "FarhanAliRaza",
-  "author_association": "MEMBER",
-  "body_present": true,
-  "body_has_repro": false,
-  "mergeable": "CONFLICTING",
-  "merge_state": "DIRTY",
-  "conflicting_files": [],
-  "update_branch_offered": false,
-  "auto_merge": false,
-  "review_decision": null,
-  "requested_reviewers": [
-    "Alek99"
-  ],
-  "linked_issues": [],
-  "reviews": [
-    {
-      "by": "adhami3310",
-      "state": "COMMENTED",
-      "at": "2026-06-02T20:41:15Z",
-      "association": "MEMBER",
-      "can_push": true,
-      "commit_id": "2bf5978",
-      "on_current_head": false
-    },
-    {
-      "by": "greptile-apps[bot]",
-      "state": "COMMENTED",
-      "at": "2026-06-02T20:42:02Z",
-      "association": "CONTRIBUTOR",
-      "can_push": false,
-      "commit_id": "2bf5978",
-      "on_current_head": false
-    }
-  ],
-  "counting_approval": false,
-  "changes_requested_outstanding": false,
-  "human_reviewed": true,
-  "awaiting": [
-    "author: resolve merge conflicts with main",
-    "author: fix changelog check (news fragment)",
-    "author/maintainers: decide whether this belongs in reflex-enterprise (adhami3310)",
-    "Alek99: requested review outstanding"
-  ],
-  "threads": {
-    "total": 2,
-    "unresolved": []
+ "number": 6597,
+ "fetched_at": "2026-09-03T18:50:31Z",
+ "head_sha": "1f44dbdc28da3d6213527e7b97bfc73099846942",
+ "title": "ENG-9668: feat: add rx.google_font for faster font loading from the document head",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "pyi_hashes.json"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "adhami3310",
+   "state": "COMMENTED",
+   "at": "2026-06-02T20:41:15Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2bf5978",
+   "on_current_head": false
   },
-  "checks": {
-    "rollup": "FAILURE",
-    "total": 107,
-    "by_state": {
-      "success": 103,
-      "failure": 1,
-      "pending": 0,
-      "skipped": 2,
-      "cancelled": 0,
-      "action_required": 0,
-      "neutral": 1
-    },
-    "failing": [
-      "changelog"
-    ],
-    "pending": [],
-    "ai_reviewer_only": false
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-06-02T20:42:02Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "2bf5978",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author: resolve merge conflicts with main",
+  "author: fix changelog check (news fragment)",
+  "author/maintainers: decide whether this belongs in reflex-enterprise (adhami3310)",
+  "Alek99: requested review outstanding"
+ ],
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 107,
+  "by_state": {
+   "success": 103,
+   "failure": 1,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 1
   },
-  "ci_never_ran": false,
-  "failing_job_findings": [
-    {
-      "check": "changelog",
-      "cause": "Job log unavailable (410 Gone, run from 2026-06-02 expired); check name indicates the towncrier news-fragment check failed, most likely because the PR touches reflex/ and reflex-components-core without a news fragment or skip-changelog label.",
-      "prs_fault": null
-    }
+  "failing": [
+   "changelog"
   ],
-  "outstanding_asks": [
-    {
-      "by": "adhami3310",
-      "association": "MEMBER",
-      "at": "2026-06-02T20:41:15Z",
-      "ask": "This might make more sense in reflex-enterprise",
-      "addressed": false,
-      "evidence": "No author reply; only subsequent commits were greptile suggestion applications (c49b0e5, 1f44dbd) on 2026-06-02."
-    }
-  ],
-  "recent_comments": [
-    {
-      "by": "greptile-apps[bot]",
-      "association": "CONTRIBUTOR",
-      "at": "2026-06-02T20:41:56Z",
-      "excerpt": "Greptile Summary ... Confidence Score: 3/5 Safe to merge after guarding against an empty weights sequence (bot summary, not evidence)"
-    },
-    {
-      "by": "codspeed-hq[bot]",
-      "association": "NONE",
-      "at": "2026-06-02T20:42:30Z",
-      "excerpt": "Merging this PR will not alter performance"
-    }
-  ],
-  "last_author_activity_at": "2026-06-02T20:46:41Z",
-  "last_maintainer_activity_at": "2026-06-02T20:41:15Z",
-  "days_waiting_on_maintainer": 0,
-  "notes": [
-    "mergeable_state 'unknown' then 'dirty' (conflicts); raw mergeable boolean not exposed by tool.",
-    "Linear ticket ENG-9668 only; no GitHub issue linked.",
-    "adhami3310's review is a top-level COMMENTED review body (no thread) questioning placement in reflex-enterprise; unanswered since 2026-06-02.",
-    "Both greptile threads resolved (author applied suggestions)."
-  ]
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "changelog",
+   "cause": "Job log unavailable (410 Gone, run from 2026-06-02 expired); check name indicates the towncrier news-fragment check failed, most likely because the PR touches reflex/ and reflex-components-core without a news fragment or skip-changelog label.",
+   "prs_fault": null
+  }
+ ],
+ "outstanding_asks": [
+  {
+   "by": "adhami3310",
+   "association": "MEMBER",
+   "at": "2026-06-02T20:41:15Z",
+   "ask": "This might make more sense in reflex-enterprise",
+   "addressed": false,
+   "evidence": "No author reply; only subsequent commits were greptile suggestion applications (c49b0e5, 1f44dbd) on 2026-06-02."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-06-02T20:41:56Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 3/5 Safe to merge after guarding against an empty weights sequence (bot summary, not evidence)"
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-06-02T20:42:30Z",
+   "excerpt": "Merging this PR will not alter performance"
+  }
+ ],
+ "last_author_activity_at": "2026-06-02T20:46:41Z",
+ "last_maintainer_activity_at": "2026-06-02T20:41:15Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "mergeable_state 'unknown' then 'dirty' (conflicts); raw mergeable boolean not exposed by tool.",
+  "Linear ticket ENG-9668 only; no GitHub issue linked.",
+  "adhami3310's review is a top-level COMMENTED review body (no thread) questioning placement in reflex-enterprise; unanswered since 2026-06-02.",
+  "Both greptile threads resolved (author applied suggestions).",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API."
+ ]
 }

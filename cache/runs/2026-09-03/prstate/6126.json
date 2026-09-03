@@ -1,109 +1,113 @@
 {
-  "number": 6126,
-  "fetched_at": "2026-09-03T18:49:33Z",
-  "head_sha": "bea36baef659ba3c295b18fdef19d7b10cb5a229",
-  "title": "feat: Expose TokenManager with lifecycle APIs for session management",
-  "author": "timon0305",
-  "author_association": null,
-  "body_present": true,
-  "body_has_repro": false,
-  "mergeable": "CONFLICTING",
-  "merge_state": "DIRTY",
-  "conflicting_files": [],
-  "update_branch_offered": false,
-  "auto_merge": false,
-  "review_decision": null,
-  "requested_reviewers": [],
-  "linked_issues": [
-    {
-      "number": 5669,
-      "title": "Expose TokenManager with additional APIs",
-      "filed_by": "masenf",
-      "filer_is_author": false
-    }
-  ],
-  "reviews": [
-    {
-      "by": "greptile-apps[bot]",
-      "state": "COMMENTED",
-      "at": "2026-02-11T16:06:13Z",
-      "association": "CONTRIBUTOR",
-      "can_push": false,
-      "commit_id": "24df6bb",
-      "on_current_head": false
-    },
-    {
-      "by": "masenf",
-      "state": "COMMENTED",
-      "at": "2026-02-12T20:59:30Z",
-      "association": "MEMBER",
-      "can_push": true,
-      "commit_id": "bea36ba",
-      "on_current_head": true
-    }
-  ],
-  "counting_approval": false,
-  "changes_requested_outstanding": false,
-  "human_reviewed": true,
-  "awaiting": [
-    "author: remove when_token_connects / on-token-connect methods per masenf",
-    "author: rebase to resolve merge conflicts",
-    "CI has never run on this fork PR"
-  ],
-  "threads": {
-    "total": 1,
-    "unresolved": []
+ "number": 6126,
+ "fetched_at": "2026-09-03T18:49:33Z",
+ "head_sha": "bea36baef659ba3c295b18fdef19d7b10cb5a229",
+ "title": "feat: Expose TokenManager with lifecycle APIs for session management",
+ "author": "timon0305",
+ "author_association": null,
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "reflex/__init__.py",
+  "reflex/utils/token_manager.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 5669,
+   "title": "Expose TokenManager with additional APIs",
+   "filed_by": "masenf",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-02-11T16:06:13Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "24df6bb",
+   "on_current_head": false
   },
-  "checks": {
-    "rollup": null,
-    "total": 0,
-    "by_state": {
-      "success": 0,
-      "failure": 0,
-      "pending": 0,
-      "skipped": 0,
-      "cancelled": 0,
-      "action_required": 0,
-      "neutral": 0
-    },
-    "failing": [],
-    "pending": [],
-    "ai_reviewer_only": false
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-02-12T20:59:30Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "bea36ba",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author: remove when_token_connects / on-token-connect methods per masenf",
+  "author: rebase to resolve merge conflicts",
+  "CI has never run on this fork PR"
+ ],
+ "threads": {
+  "total": 1,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": null,
+  "total": 0,
+  "by_state": {
+   "success": 0,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
   },
-  "ci_never_ran": true,
-  "failing_job_findings": [],
-  "outstanding_asks": [
-    {
-      "by": "masenf",
-      "association": "MEMBER",
-      "at": "2026-02-12T20:59:30Z",
-      "ask": "Remove the on-token-connect methods (when_token_connects) for now since they won't work reliably across instances",
-      "addressed": false,
-      "evidence": "No commits after 2026-02-11T16:20:33Z and no author reply; PR body still lists when_token_connects."
-    }
-  ],
-  "recent_comments": [
-    {
-      "by": "greptile-apps[bot]",
-      "association": "CONTRIBUTOR",
-      "at": "2026-02-11T16:06:08Z",
-      "excerpt": "Greptile Summary ... Confidence Score 3/5 ... session_is_connected/token_is_connected are tight async-generator loops"
-    },
-    {
-      "by": "masenf",
-      "association": "MEMBER",
-      "at": "2026-02-12T20:59:30Z",
-      "excerpt": "this is good, but lets remove the on token connect methods for now, since they won't work reliably across instances"
-    }
-  ],
-  "last_author_activity_at": "2026-02-11T16:20:33Z",
-  "last_maintainer_activity_at": "2026-02-12T20:59:30Z",
-  "days_waiting_on_maintainer": 0,
-  "notes": [
-    "mergeable_state 'unknown' then 'dirty' -> CONFLICTING/DIRTY.",
-    "Zero check runs and zero commit statuses on head bea36ba (combined status 'pending', total_count 0): CI never ran on this fork PR (workflows awaiting approval) or runs have since disappeared; treat as not green.",
-    "Single greptile thread (busy-loop iterator) is resolved; author pushed a fix commit for it.",
-    "Ball is in the author's court since masenf's 2026-02-12 review; no author activity for ~6.5 months.",
-    "author_association not returned by the API for the PR author; fork PR."
-  ]
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-02-12T20:59:30Z",
+   "ask": "Remove the on-token-connect methods (when_token_connects) for now since they won't work reliably across instances",
+   "addressed": false,
+   "evidence": "No commits after 2026-02-11T16:20:33Z and no author reply; PR body still lists when_token_connects."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-02-11T16:06:08Z",
+   "excerpt": "Greptile Summary ... Confidence Score 3/5 ... session_is_connected/token_is_connected are tight async-generator loops"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-02-12T20:59:30Z",
+   "excerpt": "this is good, but lets remove the on token connect methods for now, since they won't work reliably across instances"
+  }
+ ],
+ "last_author_activity_at": "2026-02-11T16:20:33Z",
+ "last_maintainer_activity_at": "2026-02-12T20:59:30Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "mergeable_state 'unknown' then 'dirty' -> CONFLICTING/DIRTY.",
+  "Zero check runs and zero commit statuses on head bea36ba (combined status 'pending', total_count 0): CI never ran on this fork PR (workflows awaiting approval) or runs have since disappeared; treat as not green.",
+  "Single greptile thread (busy-loop iterator) is resolved; author pushed a fix commit for it.",
+  "Ball is in the author's court since masenf's 2026-02-12 review; no author activity for ~6.5 months.",
+  "author_association not returned by the API for the PR author; fork PR.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API."
+ ]
 }

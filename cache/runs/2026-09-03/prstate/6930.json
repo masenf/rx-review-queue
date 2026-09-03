@@ -1,82 +1,85 @@
 {
-  "fetched_at": "2026-09-03T18:49:00Z",
-  "conflicting_files": [],
-  "auto_merge": false,
-  "review_decision": null,
-  "ci_never_ran": false,
-  "awaiting": [],
-  "number": 6930,
-  "head_sha": "bd08a51b27ee9282bc56ed3f1795d1b5c468d430",
-  "title": "port lazy_loader perf and native PEP810 + add python3.15 support",
-  "author": "benedikt-bartscher",
-  "author_association": "CONTRIBUTOR",
-  "body_present": true,
-  "body_has_repro": false,
-  "mergeable": "CONFLICTING",
-  "merge_state": "DIRTY",
-  "update_branch_offered": false,
-  "requested_reviewers": [
-    "Alek99"
-  ],
-  "linked_issues": [],
-  "reviews": [
-    {
-      "by": "cubic-dev-ai[bot]",
-      "state": "COMMENTED",
-      "at": "2026-08-22T14:43:27Z",
-      "association": "CONTRIBUTOR",
-      "can_push": false,
-      "commit_id": "dc490e9",
-      "on_current_head": false
-    }
-  ],
-  "counting_approval": false,
-  "changes_requested_outstanding": false,
-  "human_reviewed": false,
-  "threads": {
-    "total": 1,
-    "unresolved": []
+ "fetched_at": "2026-09-03T18:49:00Z",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/components/component.py"
+ ],
+ "auto_merge": false,
+ "review_decision": null,
+ "ci_never_ran": false,
+ "awaiting": [],
+ "number": 6930,
+ "head_sha": "bd08a51b27ee9282bc56ed3f1795d1b5c468d430",
+ "title": "port lazy_loader perf and native PEP810 + add python3.15 support",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "update_branch_offered": false,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-22T14:43:27Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "dc490e9",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 1,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 120,
+  "by_state": {
+   "success": 118,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
   },
-  "checks": {
-    "rollup": "SUCCESS",
-    "total": 120,
-    "by_state": {
-      "success": 118,
-      "failure": 0,
-      "pending": 0,
-      "skipped": 2,
-      "cancelled": 0,
-      "action_required": 0,
-      "neutral": 0
-    },
-    "failing": [],
-    "pending": [],
-    "ai_reviewer_only": false
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-22T13:06:01Z",
+   "excerpt": "Confidence Score: 5/5 The PR appears safe to merge. (bot summary, not evidence)"
   },
-  "failing_job_findings": [],
-  "outstanding_asks": [],
-  "recent_comments": [
-    {
-      "by": "greptile-apps[bot]",
-      "association": "CONTRIBUTOR",
-      "at": "2026-08-22T13:06:01Z",
-      "excerpt": "Confidence Score: 5/5 The PR appears safe to merge. (bot summary, not evidence)"
-    },
-    {
-      "by": "codspeed-hq[bot]",
-      "association": "NONE",
-      "at": "2026-08-22T13:03:55Z",
-      "excerpt": "Merging this PR will improve performance by 5.22% (4 improved benchmarks)"
-    }
-  ],
-  "last_author_activity_at": "2026-08-29T10:21:19Z",
-  "last_maintainer_activity_at": null,
-  "days_waiting_on_maintainer": 5,
-  "notes": [
-    "merge_state DIRTY: conflicts with main (first `get` returned unknown, second returned dirty); CI on head bd08a51 (pre-conflict) was fully green including new 3.15 matrix entries.",
-    "Body is only two upstream lazy-loader PR links plus cubic banner; no description of the change.",
-    "No human review or maintainer comment; Alek99 review requested.",
-    "The single cubic thread (psycopg[binary] has no cp315 wheel) is resolved.",
-    "last_author_activity_at approximated from CI start on head commit bd08a51 (merge branch 'main')."
-  ]
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-08-22T13:03:55Z",
+   "excerpt": "Merging this PR will improve performance by 5.22% (4 improved benchmarks)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-29T10:21:19Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 5,
+ "notes": [
+  "merge_state DIRTY: conflicts with main (first `get` returned unknown, second returned dirty); CI on head bd08a51 (pre-conflict) was fully green including new 3.15 matrix entries.",
+  "Body is only two upstream lazy-loader PR links plus cubic banner; no description of the change.",
+  "No human review or maintainer comment; Alek99 review requested.",
+  "The single cubic thread (psycopg[binary] has no cp315 wheel) is resolved.",
+  "last_author_activity_at approximated from CI start on head commit bd08a51 (merge branch 'main').",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API."
+ ]
 }

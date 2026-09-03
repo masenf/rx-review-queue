@@ -399,7 +399,7 @@
   },
   {
    "number": 6597,
-   "summary": "rx.google_font (FarhanAliRaza): conflicting, changelog check red, adhami3310 asked on Jun 2 whether it belongs in reflex-enterprise; unanswered for 93 days.",
+   "summary": "rx.google_font (FarhanAliRaza): conflicting, changelog check red, adhami3310 asked on Jun 2 whether it belongs in reflex-enterprise; unanswered for 93 days. The only conflicting file is pyi_hashes.json.",
    "keep_issue": null
   },
   {
@@ -459,7 +459,7 @@
     6751,
     6757
    ],
-   "note": "Alek99's July perf stack, seven deep, bases chained onto each other. Root #6735 conflicts with main and only the benchmark workflow ran on its head. The children show merge state CLEAN against their branch bases, but only the perf workflows ran on each head, so 'green' does not include unit tests, pre-commit or changelog. masenf's July threads were answered Aug 13 with no re-review since. #6751 and #6757 are 75-76 files vs main. #6745 overlaps community PR #6853. Needs a decision: rebase the root onto main, or collapse the stack. Note #7025 (Alek99, merged Sep 2) also touched the state/event hot path; check what is already landed."
+   "note": "Alek99's July perf stack, seven deep, bases chained onto each other. Root #6735 conflicts with main and only the benchmark workflow ran on its head. The children show merge state CLEAN against their branch bases, but git merge-tree shows every one of them (#6743, #6744, #6745, #6798, #6751, #6757) conflicts with today's main in component.py, memo.py, base_state_processor.py, types.py and vars/base.py; and only the perf workflows ran on each head, so 'green' does not include unit tests, pre-commit or changelog. masenf's July threads were answered Aug 13 with no re-review since. #6751 and #6757 are 75-76 files vs main. #6745 overlaps community PR #6853. Needs a decision: rebase the root onto main, or collapse the stack. Note #7025 (Alek99, merged Sep 2) also touched the state/event hot path; check what is already landed."
   }
  ],
  "conflict_clusters": [
@@ -591,6 +591,10 @@
   {
    "title": "Flaky tests hitting the board today",
    "detail": "tests/integration/test_dynamic_routes.py::test_on_load_navigate[dev] failed on #7033, #6899, #6807 (position-mismatch after 3 reruns); test_on_load_navigate_non_dynamic[prod] Selenium StaleElementReferenceException on #7015 (which #6968 fixes); tests_playwright/test_memo.py::test_memo_event_handler_raw_pass_through on #6770 and #6676; setup-uv 'fetch failed' on #6899. None of these are the PRs' faults."
+  },
+  {
+   "title": "Conflicts confirmed by git merge-tree: 28 of 64",
+   "detail": "Every PR the API marks dirty (22) conflicts in a real merge-tree against main 2fc45ed5, plus the six perf-stack children whose API state is CLEAN only relative to their branch bases. Trivial ones: #6597 and #6833 conflict only in pyi_hashes.json; #5430 in pyi_hashes.json and one forms.py; #6116 only in tests/units/test_config.py; #6840 and #6853 only in tests/units/test_state.py; #6935 only in tests/units/test_event.py. Per-PR file lists are in conflicts.json and prstate conflicting_files."
   }
  ],
  "delta": {
@@ -661,7 +665,8 @@
    "The MCP get does not expose the mergeable boolean; mergeable is derived from mergeable_state (dirty = CONFLICTING, otherwise MERGEABLE; 'unknown' re-fetched once). Six files where the agent wrote UNKNOWN with mergeable_state=blocked were normalised to MERGEABLE with a note.",
    "Scoring per references/scoring.md. Stacked children carry a -1.5 penalty because they cannot merge before their parent. Ties at 5.5 (#7015, #7019, #6925, #6181, #6770 vs #6968) broken in favour of the PR that unblocks another; the rest are listed in one-fix-away or structural.",
    "Since-last-run compares against the Aug 28 notes, not a full listing: merged/closed/opened come from the API (merged:>2026-08-29T06:30Z, created:>, plus per-PR confirmation). Top-15 entered/left cannot be computed; the next run will have a real baseline.",
-   "Conflict clusters are computed from overlapping changed paths (excluding fragments, lockfiles, pyi hashes, CHANGELOG.md) between PRs not in the same stack."
+   "Conflict clusters are computed from overlapping changed paths (excluding fragments, lockfiles, pyi hashes, CHANGELOG.md) between PRs not in the same stack.",
+   "conflicts.json: the fact-check pass ran `git merge-tree --write-tree origin/main refs/pr/N` for every non-draft PR; its conflicting paths were copied into prstate conflicting_files. It agrees with the API on all 22 dirty PRs and adds the six perf-stack children."
   ],
   "audit_corrections": [
    "Author concentration: members hold 32 (not 33) of 64 non-draft PRs; first-time contributors 11 (not 9).",

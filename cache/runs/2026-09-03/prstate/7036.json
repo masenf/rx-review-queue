@@ -1,69 +1,172 @@
 {
-  "number": 7036,
-  "fetched_at": "2026-09-03T18:44:55Z",
-  "head_sha": "4ed537a69f40f3b8549a622561c2d15308136869",
-  "title": "perf(state): skip unchanged scalar writes and resolve stale computed vars lazily",
-  "author": "FarhanAliRaza",
-  "author_association": "MEMBER",
-  "body_present": true,
-  "body_has_repro": false,
-  "mergeable": "CONFLICTING",
-  "merge_state": "DIRTY",
-  "conflicting_files": [],
-  "update_branch_offered": false,
-  "auto_merge": false,
-  "review_decision": null,
-  "requested_reviewers": [],
-  "linked_issues": [],
-  "reviews": [
-    {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-02T17:58:51Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "ef8666b", "on_current_head": false},
-    {"by": "chatgpt-codex-connector[bot]", "state": "COMMENTED", "at": "2026-09-02T17:59:53Z", "association": "NONE", "can_push": false, "commit_id": "ef8666b", "on_current_head": false},
-    {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-02T18:05:09Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "ef8666b", "on_current_head": false}
-  ],
-  "counting_approval": false,
-  "changes_requested_outstanding": false,
-  "human_reviewed": false,
-  "awaiting": ["resolve merge conflicts with main", "CI run on current head", "maintainer review (masenf raised a behavior-change concern in comments; author says it was dropped)"],
-  "threads": {
-    "total": 6,
-    "unresolved": [
-      {"by": "greptile-apps", "outdated": false, "author_replied": false, "first_comment": "P1 Failed recomputation loses stale state: when a stale computed getter raises, _resolve_stale has already removed its stale marker while leaving the old cache intact, so subsequent reads treat the outdated cached value as current"},
-      {"by": "chatgpt-codex-connector", "outdated": false, "author_replied": false, "first_comment": "P1 Keep dynamically added dependencies in the forward map: add_dependency() after class init updates _var_dependencies but not _computed_var_deps, so _resolve_stale() sees no forward deps and returns without recomputing"},
-      {"by": "chatgpt-codex-connector", "outdated": false, "author_replied": false, "first_comment": "P2 Skip dependencies already resolved from the stale snapshot: dependent before dependency in the set snapshot causes the dependency getter to be recomputed twice"},
-      {"by": "chatgpt-codex-connector", "outdated": false, "author_replied": false, "first_comment": "P2 Preserve the sign when comparing zero-valued floats: 0.0 == -0.0 so assigning one over the other returns early under the scalar cutoff"},
-      {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P1: When a cached synchronous ComputedVar receives a dependency through add_dependency() after class initialization, this reverse map never includes it. The stale resolver retains the old cache and omits the computed value from the delta"},
-      {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2: If a stale computed getter raises, this method has already removed its stale marker, so the cached old value is returned on the next read without retrying"}
-    ]
+ "number": 7036,
+ "fetched_at": "2026-09-03T18:44:55Z",
+ "head_sha": "4ed537a69f40f3b8549a622561c2d15308136869",
+ "title": "perf(state): skip unchanged scalar writes and resolve stale computed vars lazily",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "reflex/state.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-02T17:58:51Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "ef8666b",
+   "on_current_head": false
   },
-  "checks": {
-    "rollup": "PENDING",
-    "total": 2,
-    "by_state": {"success": 1, "failure": 0, "pending": 1, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
-    "failing": [],
-    "pending": ["Greptile Review"],
-    "ai_reviewer_only": true
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-02T17:59:53Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "ef8666b",
+   "on_current_head": false
   },
-  "ci_never_ran": true,
-  "failing_job_findings": [],
-  "outstanding_asks": [
-    {"by": "masenf", "association": "MEMBER", "at": "2026-09-02T18:39:30Z", "ask": "The scalar self-assignment cutoff is a behavior change that breaks apps using self-assignment to force a computed-var cascade; the API to mark vars dirty explicitly is not nice enough to be the fallback.", "addressed": true, "evidence": "Author replied 'droped that' at 19:02Z and a commit titled 'Drop the scalar write cutoff' (fc47df9) is referenced by greptile; the PR title/body still describe the cutoff though."}
-  ],
-  "recent_comments": [
-    {"by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-09-02T17:55:03Z", "excerpt": "Codex Review Summary: Code Review completed on ef8666b (PR opened)"},
-    {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-02T17:58:21Z", "excerpt": "Merging this PR will improve performance by 4.52% (1 improved, 31 untouched, 7 new benchmarks); different runtime environments detected"},
-    {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-02T17:58:44Z", "excerpt": "Greptile Summary. Confidence Score: 4/5. Not yet safe to merge because a computed getter exception can leave an outdated cached value marked as current."},
-    {"by": "masenf", "association": "MEMBER", "at": "2026-09-02T18:39:30Z", "excerpt": "this is definitely a behavior change that will affect some apps i've seen in the wild that use self-assignment to manually trigger a cascade of dependent computed vars"},
-    {"by": "FarhanAliRaza", "association": "MEMBER", "at": "2026-09-02T19:02:57Z", "excerpt": "@masenf droped that. Other changes are worth a look i think."}
-  ],
-  "last_author_activity_at": "2026-09-03T18:35:46Z",
-  "last_maintainer_activity_at": "2026-09-02T18:39:30Z",
-  "days_waiting_on_maintainer": 0,
-  "notes": [
-    "mergeable_state=dirty: branch conflicts with main (base 174f2c5 is behind current main); conflicting files not exposed by the API.",
-    "Head 4ed537a was pushed 2026-09-03T18:35Z; only the two AI-reviewer check runs exist on it (cubic done, Greptile in progress). GitHub does not run pull_request workflows on a conflicting PR, so CI has not run on this head; the fork branch (FarhanAliRaza/reflex) is also a factor.",
-    "Greptile's summary says the last reviewed commit was 'Drop the scalar write cutoff' (fc47df9), so the PR title and body (which still advertise the scalar cutoff) have drifted from the code.",
-    "All 6 unresolved threads are bot threads on an older commit (ef8666b) with no author reply; two of them (add_dependency forward map, failed recomputation loses stale marker) are duplicated across codex/cubic/greptile.",
-    "Author is a MEMBER, so days_waiting_on_maintainer is 0 by rule even though masenf has not re-engaged since 09-02.",
-    "The `mergeable` boolean was not exposed by the tool output; mergeable derived from mergeable_state=dirty."
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-02T18:05:09Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "ef8666b",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "resolve merge conflicts with main",
+  "CI run on current head",
+  "maintainer review (masenf raised a behavior-change concern in comments; author says it was dropped)"
+ ],
+ "threads": {
+  "total": 6,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Failed recomputation loses stale state: when a stale computed getter raises, _resolve_stale has already removed its stale marker while leaving the old cache intact, so subsequent reads treat the outdated cached value as current"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Keep dynamically added dependencies in the forward map: add_dependency() after class init updates _var_dependencies but not _computed_var_deps, so _resolve_stale() sees no forward deps and returns without recomputing"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 Skip dependencies already resolved from the stale snapshot: dependent before dependency in the set snapshot causes the dependency getter to be recomputed twice"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 Preserve the sign when comparing zero-valued floats: 0.0 == -0.0 so assigning one over the other returns early under the scalar cutoff"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1: When a cached synchronous ComputedVar receives a dependency through add_dependency() after class initialization, this reverse map never includes it. The stale resolver retains the old cache and omits the computed value from the delta"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: If a stale computed getter raises, this method has already removed its stale marker, so the cached old value is returned on the next read without retrying"
+   }
   ]
+ },
+ "checks": {
+  "rollup": "PENDING",
+  "total": 2,
+  "by_state": {
+   "success": 1,
+   "failure": 0,
+   "pending": 1,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [
+   "Greptile Review"
+  ],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-02T18:39:30Z",
+   "ask": "The scalar self-assignment cutoff is a behavior change that breaks apps using self-assignment to force a computed-var cascade; the API to mark vars dirty explicitly is not nice enough to be the fallback.",
+   "addressed": true,
+   "evidence": "Author replied 'droped that' at 19:02Z and a commit titled 'Drop the scalar write cutoff' (fc47df9) is referenced by greptile; the PR title/body still describe the cutoff though."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "association": "NONE",
+   "at": "2026-09-02T17:55:03Z",
+   "excerpt": "Codex Review Summary: Code Review completed on ef8666b (PR opened)"
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-02T17:58:21Z",
+   "excerpt": "Merging this PR will improve performance by 4.52% (1 improved, 31 untouched, 7 new benchmarks); different runtime environments detected"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-02T17:58:44Z",
+   "excerpt": "Greptile Summary. Confidence Score: 4/5. Not yet safe to merge because a computed getter exception can leave an outdated cached value marked as current."
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-02T18:39:30Z",
+   "excerpt": "this is definitely a behavior change that will affect some apps i've seen in the wild that use self-assignment to manually trigger a cascade of dependent computed vars"
+  },
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-09-02T19:02:57Z",
+   "excerpt": "@masenf droped that. Other changes are worth a look i think."
+  }
+ ],
+ "last_author_activity_at": "2026-09-03T18:35:46Z",
+ "last_maintainer_activity_at": "2026-09-02T18:39:30Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "mergeable_state=dirty: branch conflicts with main (base 174f2c5 is behind current main); conflicting files not exposed by the API.",
+  "Head 4ed537a was pushed 2026-09-03T18:35Z; only the two AI-reviewer check runs exist on it (cubic done, Greptile in progress). GitHub does not run pull_request workflows on a conflicting PR, so CI has not run on this head; the fork branch (FarhanAliRaza/reflex) is also a factor.",
+  "Greptile's summary says the last reviewed commit was 'Drop the scalar write cutoff' (fc47df9), so the PR title and body (which still advertise the scalar cutoff) have drifted from the code.",
+  "All 6 unresolved threads are bot threads on an older commit (ef8666b) with no author reply; two of them (add_dependency forward map, failed recomputation loses stale marker) are duplicated across codex/cubic/greptile.",
+  "Author is a MEMBER, so days_waiting_on_maintainer is 0 by rule even though masenf has not re-engaged since 09-02.",
+  "The `mergeable` boolean was not exposed by the tool output; mergeable derived from mergeable_state=dirty.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API."
+ ]
 }

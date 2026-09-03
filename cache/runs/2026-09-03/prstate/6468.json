@@ -1,108 +1,114 @@
 {
-  "number": 6468,
-  "fetched_at": "2026-09-03T18:50:31Z",
-  "head_sha": "4f7dfb99b992721999c90dc3d989c571539b7d87",
-  "title": "refactor: freeze components after create and use copy_with for mutations",
-  "author": "FarhanAliRaza",
-  "author_association": "MEMBER",
-  "body_present": true,
-  "body_has_repro": false,
-  "mergeable": "CONFLICTING",
-  "merge_state": "DIRTY",
-  "conflicting_files": [],
-  "update_branch_offered": false,
-  "auto_merge": false,
-  "review_decision": null,
-  "requested_reviewers": [],
-  "linked_issues": [
-    {
-      "number": 6214,
-      "title": "Single-pass compiler: Make Component effectively immutable",
-      "filed_by": "masenf",
-      "filer_is_author": false
-    }
-  ],
-  "reviews": [
-    {
-      "by": "greptile-apps[bot]",
-      "state": "COMMENTED",
-      "at": "2026-05-07T15:59:47Z",
-      "association": "CONTRIBUTOR",
-      "can_push": false,
-      "commit_id": "41e141c",
-      "on_current_head": false
-    }
-  ],
-  "counting_approval": false,
-  "changes_requested_outstanding": false,
-  "human_reviewed": false,
-  "awaiting": [
-    "author: resolve merge conflicts with main",
-    "author: fix failing reflex-docs (3.11/3.12) and docs-tests jobs",
-    "author: resolve or rebut greptile DataTable ref thread",
-    "maintainer: first human review"
-  ],
-  "threads": {
-    "total": 1,
-    "unresolved": [
-      {
-        "by": "greptile-apps",
-        "outdated": true,
-        "author_replied": false,
-        "first_comment": "`ref` silently dropped when `DataTable` has an `id`: Component._render(props=None) auto-populates ref only in the props-is-None branch; DataTable._render now builds the props dict itself and passes it to super()._render(props=props), skipping that logic."
-      }
-    ]
-  },
-  "checks": {
-    "rollup": "FAILURE",
-    "total": 72,
-    "by_state": {
-      "success": 66,
-      "failure": 3,
-      "pending": 0,
-      "skipped": 2,
-      "cancelled": 0,
-      "action_required": 0,
-      "neutral": 1
-    },
-    "failing": [
-      "reflex-docs (3.11)",
-      "reflex-docs (3.12)",
-      "docs-tests"
-    ],
-    "pending": [],
-    "ai_reviewer_only": false
-  },
-  "ci_never_ran": false,
-  "failing_job_findings": [
-    {
-      "check": "reflex-docs (3.11), reflex-docs (3.12), docs-tests",
-      "cause": "Job logs unavailable (410 Gone, run from 2026-05-29 expired); all three docs-site jobs failed within ~1 minute of starting while unit and integration tests passed, consistent with the docs app breaking under the new frozen-component/__setattr__ guard, but this cannot be confirmed from logs.",
-      "prs_fault": null
-    }
-  ],
-  "outstanding_asks": [],
-  "recent_comments": [
-    {
-      "by": "greptile-apps[bot]",
-      "association": "CONTRIBUTOR",
-      "at": "2026-05-07T15:59:35Z",
-      "excerpt": "Greptile Summary ... Confidence Score: 4/5; flags TextArea padding double-application and DataTable ref regression (bot summary, not evidence)"
-    },
-    {
-      "by": "codspeed-hq[bot]",
-      "association": "NONE",
-      "at": "2026-05-07T15:59:54Z",
-      "excerpt": "Merging this PR will improve performance by 3.55% (2 improved benchmarks)"
-    }
-  ],
-  "last_author_activity_at": "2026-05-29T21:52:51Z",
-  "last_maintainer_activity_at": null,
-  "days_waiting_on_maintainer": 0,
-  "notes": [
-    "mergeable_state 'unknown' then 'dirty' (conflicts); raw mergeable boolean not exposed by tool.",
-    "No human review at all in ~4 months; only greptile. Author is MEMBER so days_waiting_on_maintainer=0 by rule, but the PR has had zero maintainer engagement since 2026-05-07.",
-    "Body also references Linear ENG-9146.",
-    "Only 72 check runs vs ~106 on other PRs: the per-package 'check (...)' matrix workflow did not run on this head (older workflow set at the time)."
+ "number": 6468,
+ "fetched_at": "2026-09-03T18:50:31Z",
+ "head_sha": "4f7dfb99b992721999c90dc3d989c571539b7d87",
+ "title": "refactor: freeze components after create and use copy_with for mutations",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/components/component.py",
+  "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+  "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+  "pyi_hashes.json"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6214,
+   "title": "Single-pass compiler: Make Component effectively immutable",
+   "filed_by": "masenf",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-05-07T15:59:47Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "41e141c",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "author: resolve merge conflicts with main",
+  "author: fix failing reflex-docs (3.11/3.12) and docs-tests jobs",
+  "author: resolve or rebut greptile DataTable ref thread",
+  "maintainer: first human review"
+ ],
+ "threads": {
+  "total": 1,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "`ref` silently dropped when `DataTable` has an `id`: Component._render(props=None) auto-populates ref only in the props-is-None branch; DataTable._render now builds the props dict itself and passes it to super()._render(props=props), skipping that logic."
+   }
   ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 72,
+  "by_state": {
+   "success": 66,
+   "failure": 3,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 1
+  },
+  "failing": [
+   "reflex-docs (3.11)",
+   "reflex-docs (3.12)",
+   "docs-tests"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "reflex-docs (3.11), reflex-docs (3.12), docs-tests",
+   "cause": "Job logs unavailable (410 Gone, run from 2026-05-29 expired); all three docs-site jobs failed within ~1 minute of starting while unit and integration tests passed, consistent with the docs app breaking under the new frozen-component/__setattr__ guard, but this cannot be confirmed from logs.",
+   "prs_fault": null
+  }
+ ],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-05-07T15:59:35Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 4/5; flags TextArea padding double-application and DataTable ref regression (bot summary, not evidence)"
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-05-07T15:59:54Z",
+   "excerpt": "Merging this PR will improve performance by 3.55% (2 improved benchmarks)"
+  }
+ ],
+ "last_author_activity_at": "2026-05-29T21:52:51Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "mergeable_state 'unknown' then 'dirty' (conflicts); raw mergeable boolean not exposed by tool.",
+  "No human review at all in ~4 months; only greptile. Author is MEMBER so days_waiting_on_maintainer=0 by rule, but the PR has had zero maintainer engagement since 2026-05-07.",
+  "Body also references Linear ENG-9146.",
+  "Only 72 check runs vs ~106 on other PRs: the per-package 'check (...)' matrix workflow did not run on this head (older workflow set at the time).",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API."
+ ]
 }
