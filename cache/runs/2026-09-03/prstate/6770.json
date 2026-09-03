@@ -1,0 +1,126 @@
+{
+  "number": 6770,
+  "fetched_at": "2026-09-03T18:49:59Z",
+  "head_sha": "84ceadc222e3300b5aac5e89cff80dbb329e2f3d",
+  "title": "fix(model): only carry scalar column defaults as server_default in migrations",
+  "author": "anxkhn",
+  "author_association": "CONTRIBUTOR",
+  "body_present": true,
+  "body_has_repro": true,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-15T05:39:38Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "c68b001",
+      "on_current_head": false
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-15T05:41:13Z",
+      "association": "NONE",
+      "can_push": false,
+      "commit_id": "c68b001",
+      "on_current_head": false
+    },
+    {
+      "by": "anxkhn",
+      "state": "COMMENTED",
+      "at": "2026-07-27T14:42:25Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "3b315d7",
+      "on_current_head": false
+    },
+    {
+      "by": "anxkhn",
+      "state": "COMMENTED",
+      "at": "2026-07-27T18:41:24Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "84ceadc",
+      "on_current_head": true
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-27T18:42:05Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "84ceadc",
+      "on_current_head": true
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": [
+    "maintainer review"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 107,
+    "by_state": {
+      "success": 104,
+      "failure": 1,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 0
+    },
+    "failing": [
+      "integration-app-harness-playwright (redis, 3.12)"
+    ],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "integration-app-harness-playwright (redis, 3.12)",
+      "cause": "tests/integration/tests_playwright/test_memo.py::test_memo_event_handler_raw_pass_through failed: locator #memo-last-value expected text 'typed_value' but stayed empty after 5s (1 failed, 243 passed, 3 rerun); unrelated to reflex/model.py and passes on the other 7 playwright matrix jobs, so almost certainly a flake.",
+      "prs_fault": false
+    }
+  ],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {
+      "by": "anxkhn",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-27T18:41:25Z",
+      "excerpt": "fixed the full-matrix regression in 84ceadc2. the new model migration test now clears its final metadata ... @reflex-dev please take another look when ci completes."
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-15T05:39:34Z",
+      "excerpt": "Confidence Score: 4/5 ... callable evaluation approach can silently assign the same UUID to all existing rows when a unique-constrained callable default is added"
+    }
+  ],
+  "last_author_activity_at": "2026-07-27T18:41:25Z",
+  "last_maintainer_activity_at": null,
+  "days_waiting_on_maintainer": 38,
+  "notes": [
+    "No linked issue via closes/fixes; the news fragment is named news/6706.bugfix.md but #6706 is an unrelated closed issue (ClientStateVar.set_value) -- fragment number looks wrong and should be 6770.",
+    "Title/body describe gating on is_scalar, but per Greptile summary and commit 97e48b5 the code now evaluates callable defaults once for the server_default; body has drifted from code.",
+    "Single CI failure is a playwright test_memo flake on one matrix cell; everything else green (104 success, 2 skipped).",
+    "No human maintainer has reviewed; author explicitly pinged @reflex-dev on 2026-07-27.",
+    "Both bot threads resolved (Greptile retracted its own comment)."
+  ]
+}

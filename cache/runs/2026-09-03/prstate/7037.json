@@ -1,0 +1,52 @@
+{
+  "number": 7037,
+  "fetched_at": "2026-09-03T18:44:55Z",
+  "head_sha": "858494ea66a920d1ce7dfa3d5c9128199789692c",
+  "title": "Replace the outdated-dependency shell filters with a configured script",
+  "author": "masenf",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-02T18:03:51Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "3250007", "on_current_head": false},
+    {"by": "FarhanAliRaza", "state": "APPROVED", "at": "2026-09-03T16:22:06Z", "association": "MEMBER", "can_push": true, "commit_id": "858494e", "on_current_head": true}
+  ],
+  "counting_approval": true,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [],
+  "threads": {"total": 0, "unresolved": []},
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {"success": 109, "failure": 0, "pending": 0, "skipped": 2, "cancelled": 0, "action_required": 0, "neutral": 0},
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-02T18:00:54Z", "excerpt": "Greptile Summary: replaces shell filtering with a locally runnable Python checker. Confidence Score 5/5; appears safe to merge."},
+    {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-02T18:02:20Z", "excerpt": "Merging this PR will improve performance by 5.66% (1 improved benchmark, different runtime environments detected)"}
+  ],
+  "last_author_activity_at": "2026-09-02T18:10:19Z",
+  "last_maintainer_activity_at": "2026-09-03T16:22:06Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "First `get` returned mergeable_state=unknown; second call returned clean.",
+    "Skipped checks are unit-tests-macos and reflex-docs-macos, which are conditionally skipped in this repo, not failures.",
+    "Cubic review ('No issues found') was on an earlier commit 3250007; the current head 858494e only fixed a codespell finding.",
+    "PR #7019 stacks on this one (its diff currently contains these commits); merging this first shrinks #7019.",
+    "Body says the check_outdated_dependencies workflow only triggers on release/** pushes and workflow_dispatch, so the changed workflow itself is not exercised by this PR's CI."
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "number": 6898,
+  "fetched_at": "2026-09-03T18:49:20Z",
+  "head_sha": "d8a78e6cff738b24f75fd4e7e0129acebda5771c",
+  "title": "docs: add guidance for scaling state",
+  "author": "Alek99",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-17T21:07:35Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "ce1cd12",
+      "on_current_head": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "APPROVED",
+      "at": "2026-08-17T21:56:24Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "d8a78e6",
+      "on_current_head": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-18T02:43:25Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "d8a78e6",
+      "on_current_head": true
+    },
+    {
+      "by": "adhami3310",
+      "state": "COMMENTED",
+      "at": "2026-08-18T02:47:38Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "d8a78e6",
+      "on_current_head": true
+    }
+  ],
+  "counting_approval": true,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "author to address/resolve masenf+adhami3310 thread on decentralized handlers"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "this is the only one that i'm hesitant on because decentralized handlers are defined in a weird way and don't feel very reflexy to me, so idk if we should recommend them. (adhami3310: I agree, decentralized handlers if anything is an anti pattern that masks having too large of a state.)"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 112,
+    "by_state": {
+      "success": 110,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 0
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-18T02:43:25Z",
+      "ask": "Reconsider recommending decentralized handlers in docs/state_structure/scaling_state.md (line 61); adhami3310 concurs they are an anti-pattern",
+      "addressed": false,
+      "evidence": "No commits after 2026-08-17T21:18 and no author reply in the thread; thread unresolved"
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T20:43:51Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot; not evidence)"
+    },
+    {
+      "by": "codspeed-hq[bot]",
+      "association": "NONE",
+      "at": "2026-08-17T20:43:11Z",
+      "excerpt": "Merging this PR will not alter performance"
+    }
+  ],
+  "last_author_activity_at": "2026-08-17T21:18:11Z",
+  "last_maintainer_activity_at": "2026-08-18T02:47:38Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "mergeable boolean not exposed by MCP get; inferred MERGEABLE from mergeable_state=blocked (first get said unknown)",
+    "Has a counting approval (FarhanAliRaza, MEMBER, on head) and green CI, yet merge_state=BLOCKED -> the unresolved masenf/adhami3310 thread is the likely blocker (conversation-resolution rule)",
+    "Ball is with the author: two maintainers object to one section of the new guide"
+  ]
+}

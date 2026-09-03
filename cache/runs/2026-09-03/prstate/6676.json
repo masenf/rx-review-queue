@@ -1,0 +1,109 @@
+{
+  "number": 6676,
+  "fetched_at": "2026-09-03T18:50:31Z",
+  "head_sha": "6ea5a31a9223142baba670afcac97748b5c53b63",
+  "title": "fix(match): bind useContext for state vars used in rx.match case conditions",
+  "author": "picklelo",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": true,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [
+    {
+      "number": 6675,
+      "title": "rx.match: state vars in case conditions (component branches) emit unbound useContext → ReferenceError: Can't find variable:",
+      "filed_by": "picklelo",
+      "filer_is_author": true
+    }
+  ],
+  "reviews": [],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": [
+    "author: respond to masenf's design concern (memoization of stateful match children)",
+    "author: investigate/rerun failing playwright job (redis, 3.11)",
+    "maintainer approval"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 106,
+    "by_state": {
+      "success": 102,
+      "failure": 1,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 1
+    },
+    "failing": [
+      "integration-app-harness-playwright (redis, 3.11)"
+    ],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "integration-app-harness-playwright (redis, 3.11)",
+      "cause": "tests/integration/tests_playwright/test_memo.py::test_memo_event_handler_raw_pass_through[chromium] failed after 3 reruns: locator #memo-last-value expected text 'typed_value' but stayed empty (1 failed, 237 passed); the same test passed on the other 7 playwright matrix jobs, so likely flaky, though the PR touches memoization.",
+      "prs_fault": null
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-06-23T19:01:31Z",
+      "ask": "Don't force MemoizationMode(recursive=False) on Match; instead update statefulness detection so Match memoizes when any condition is stateful while children can still be memoized separately",
+      "addressed": false,
+      "evidence": "No author reply and no commits after 2026-06-23T18:08:41Z; PR has a single commit."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-06-23T18:11:54Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 5/5 Safe to merge (bot summary, not evidence)"
+    },
+    {
+      "by": "codspeed-hq[bot]",
+      "association": "NONE",
+      "at": "2026-06-23T18:12:41Z",
+      "excerpt": "Merging this PR will not alter performance"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-06-23T19:01:31Z",
+      "excerpt": "This does seem to work, but now that memoization mode is MemoizationMode(recursive=False), the compiler will never memoize the stateful values returned by the match..."
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-08T07:24:56Z",
+      "excerpt": "The approach looks correct ... only improvement I'd suggest is factoring the repeated condition-var traversal into a helper so _get_vars() and add_imports() stay in sync."
+    }
+  ],
+  "last_author_activity_at": "2026-06-23T18:08:41Z",
+  "last_maintainer_activity_at": "2026-06-23T19:01:31Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "mergeable_state 'unknown' on first get, 'blocked' on second; no conflicts indicated, so mergeable recorded as MERGEABLE (raw boolean not exposed by tool). BLOCKED = branch protection (no approval + failing check).",
+    "human_reviewed=false by the strict definition (no formal review or review-thread comment), but masenf left a substantive design objection as an issue comment which is effectively a review; treat as maintainer pushback pending author response.",
+    "Body drift: PR body describes setting _memoization_mode=MemoizationMode(recursive=False) while the commit message says 'Keeps the existing passthrough strategy'; do not rely on the body for the mechanism.",
+    "Author picklelo is MEMBER (association taken from issue #6675 author_association); author_association not directly exposed in PR get output."
+  ]
+}

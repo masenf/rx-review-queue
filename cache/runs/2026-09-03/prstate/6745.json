@@ -1,0 +1,176 @@
+{
+  "number": 6745,
+  "fetched_at": "2026-09-03T18:50:19Z",
+  "head_sha": "f075c5f7bb4d6839cafdf4a3d0301edd80dd26be",
+  "title": "perf: pipeline redis set_state writes, cache required-state classes",
+  "author": "Alek99",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-10T20:51:52Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "c4b7b46",
+      "on_current_head": false
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-10T20:55:11Z",
+      "association": "NONE",
+      "can_push": false,
+      "commit_id": "9cd59d2",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-07-13T22:41:58Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "c4b7b46",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-07-13T22:42:36Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "c4b7b46",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-07-13T22:45:25Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "c4b7b46",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-13T22:46:38Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "c4b7b46",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-12T23:34:38Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "b7ce2f3",
+      "on_current_head": false
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-13T17:26:40Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "f075c5f",
+      "on_current_head": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-13T17:26:42Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "f075c5f",
+      "on_current_head": true
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "masenf re-review after fixes"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 5,
+    "by_state": {
+      "success": 4,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 1
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-07-13T22:45:25Z",
+      "ask": "Questioned asyncio.to_thread pickling (GIL-bound, no benefit; batch if anything)",
+      "addressed": true,
+      "evidence": "Author reply 2026-08-13 and commit f075c5f remove the to_thread offload; thread resolved"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-07-13T22:41:58Z",
+      "ask": "_was_touched reset is redundant overhead (already dropped by __getstate__)",
+      "addressed": true,
+      "evidence": "Author reply 2026-08-13: reset removed, test updated; thread resolved"
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "Alek99",
+      "association": "MEMBER",
+      "at": "2026-07-18T01:53:07Z",
+      "excerpt": "Root cause of the unit-tests failures (4x test_app_modify_state_clean): pipelined set_state resets _was_touched... flagging rather than pushing"
+    },
+    {
+      "by": "codspeed-hq[bot]",
+      "association": "NONE",
+      "at": "2026-07-10T20:52:57Z",
+      "excerpt": "Merging this PR will not alter performance; 27 untouched benchmarks"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-10T20:51:44Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot summary, not evidence; updated 2026-08-13)"
+    }
+  ],
+  "last_author_activity_at": "2026-08-13T17:26:42Z",
+  "last_maintainer_activity_at": "2026-07-13T22:45:25Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "Stacked PR: base is claude/reflex-perf-optimizations-21kg8y-socket, not main; #6798 and #6751 are stacked on top of this branch.",
+    "Only performance-workflow check runs exist on head; the unit-tests job that previously failed (test_app_modify_state_clean, per author's 07-18 comment) has not run on head f075c5f, though the _was_touched reset that caused it was removed in f075c5f.",
+    "masenf reviewed on 2026-07-13 (COMMENTED, on older commit c4b7b46); all his threads were answered by the author on 2026-08-13 and resolved; no re-review since.",
+    "Overlaps with community PR #6853 (same set_state lock-check dedupe, ENG-10097)."
+  ]
+}

@@ -283,6 +283,7 @@ def main():
     print(f"wrote {out} ({out.stat().st_size // 1024} KB)")
     if not args.no_history:
         hist = ROOT / "artifacts" / "history" / f"{Path(args.run_dir).name}.html"
+        hist.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(out, hist)
         print(f"copied to {hist}")
 

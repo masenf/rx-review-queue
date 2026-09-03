@@ -1,0 +1,106 @@
+{
+ "fetched_at": "2026-09-03T18:48:10Z",
+ "body_has_repro": false,
+ "conflicting_files": [],
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "changes_requested_outstanding": false,
+ "awaiting": [],
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "number": 6960,
+ "head_sha": "b048aaba7047ffd8ae5a38a4ff3169faa6b0c5af",
+ "title": "Preserve RegistrationContext in telemetry worker threads",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "update_branch_offered": false,
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-27T21:29:35Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "d1ea6d2",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-27T21:33:58Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "af53546",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-08-27T23:10:16Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "b048aab",
+   "on_current_head": true
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-27T23:10:47Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b048aab",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-08-27T21:46:56Z",
+   "excerpt": "resolved issues via documenting the edge case instead of adding a bunch of complexity for a case which is rarely hit and doesn't really cause significant issue"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-27T21:56:40Z",
+   "excerpt": "Confidence Score: 4/5 - context-free telemetry jobs can still leak worker-local config (bot summary; greptile later withdrew the finding in-thread)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-27T23:10:16Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Author is MEMBER (masenf); no other maintainer has reviewed or commented.",
+  "mergeable_state 'unknown' then 'blocked': no conflicts, needs approval.",
+  "Both bot threads (greptile P1, cubic P2 about context-free job leak) resolved: author rebutted as intentional and documented in b048aab; greptile explicitly withdrew its finding.",
+  "Commits are authored by 'Claude <noreply@anthropic.com>' on a claude/ branch in the main repo; CI green (2 skipped macos)."
+ ]
+}

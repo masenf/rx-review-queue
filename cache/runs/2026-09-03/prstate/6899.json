@@ -1,0 +1,143 @@
+{
+  "number": 6899,
+  "fetched_at": "2026-09-03T18:47:57Z",
+  "head_sha": "aa01b4d67c153f3679b3b687c7474a8e4fa4dc2b",
+  "title": "ENG-9166 feat(otel): built-in OpenTelemetry trace points, metrics and the reflex-otel instrumentor (1/3)",
+  "author": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [
+    {
+      "number": 6227,
+      "title": "`opentelemetry-instrumentation-reflex`: full-stack OTel package",
+      "filed_by": "masenf",
+      "filer_is_author": false,
+      "relation": "Part of (not closes)"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-18T05:44:16Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "b0d7618",
+      "on_current_head": false
+    },
+    {
+      "by": "Alek99",
+      "state": "DISMISSED",
+      "at": "2026-08-18T22:25:06Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "2f9b04d",
+      "on_current_head": false,
+      "body": "Working for me tried on flexgen"
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-17T21:01:48Z",
+      "association": "NONE",
+      "can_push": false,
+      "commit_id": "b243589",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-17T21:54:38Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "b0d7618",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-17T21:57:51Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "b0d7618",
+      "on_current_head": false
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "maintainer approval on current head aa01b4d (Alek99's 'Working for me' review is DISMISSED)",
+    "CI: 2 failing jobs (infra + flaky)"
+  ],
+  "threads": {
+    "total": 12,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 114,
+    "by_state": {
+      "success": 109,
+      "failure": 2,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 1
+    },
+    "failing": [
+      "unit-tests (ubuntu-latest, 3.11)",
+      "integration-app-harness (redis, 3.11, 1)"
+    ],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.11)",
+      "cause": "astral-sh/setup-uv action failed with '##[error]fetch failed' while downloading the uv version manifest from raw.githubusercontent.com; no tests ran (GitHub Actions infra/network hiccup).",
+      "prs_fault": false
+    },
+    {
+      "check": "integration-app-harness (redis, 3.11, 1)",
+      "cause": "test_on_load_navigate[dev] AssertionError: expected '/404-no page id' at position 13 but got '/page/[page_id]-11' after 3 reruns (78 passed). tests/integration/test_dynamic_routes.py::test_on_load_navigate[dev] failed on on_load event ordering assertion after 3 reruns; same test fails on unrelated PRs (#6899, #7033, #6807) on the same day, so this is a flaky test, not this PR.",
+      "prs_fault": false
+    }
+  ],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T21:02:16Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 5/5 The PR appears safe to merge. (bot; not evidence)"
+    },
+    {
+      "by": "codspeed-hq[bot]",
+      "association": "NONE",
+      "at": "2026-08-17T21:07:22Z",
+      "excerpt": "Merging this PR will improve performance by 5.4% (different runtime environments detected)"
+    }
+  ],
+  "last_author_activity_at": "2026-08-18T16:41:58Z",
+  "last_maintainer_activity_at": "2026-08-18T22:25:06Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "GitHub MCP `get` does not expose the boolean `mergeable` field; mergeable inferred from mergeable_state (blocked != dirty => MERGEABLE).",
+    "Stacked PR 1/3 targeting main; #6900 and #6901 depend on it.",
+    "Alek99's review 'Working for me tried on flexgen' (2026-08-18T22:25Z) is state DISMISSED on commit 2f9b04d; current head aa01b4d has no approval.",
+    "All 12 review threads resolved (author fixed Alek99's P1/P2 in 2f9b04d/aa01b4d).",
+    "Both failing checks are non-PR causes (setup-uv fetch failure; flaky dynamic-routes integration test); a re-run should go green.",
+    "Head commit aa01b4d authored 2026-08-18; checks re-ran 2026-09-02 17:56Z (likely main merge-ref refresh)."
+  ]
+}

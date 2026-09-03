@@ -1,0 +1,136 @@
+{
+ "number": 7004,
+ "fetched_at": "2026-09-03T18:48:23Z",
+ "head_sha": "77837d31f542ab6884f0189dbf10e225ce2ab0a7",
+ "title": "fix: avoid duplicating inner tag in MemoComponent wrapper tag",
+ "author": "LeonxLJX",
+ "author_association": "NONE",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6955,
+   "title": "Auto-memo wrapper tags for @rx.memo components repeat the inner tag",
+   "filed_by": "FarhanAliRaza",
+   "filer_is_author": false,
+   "filer_association": "MEMBER",
+   "relation": "closes",
+   "note": "issue is assigned to LeonxLJX"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-29T03:59:11Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "be22a5c",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-29T04:00:38Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "be22a5c",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-29T04:46:42Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "11d8c74",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-01T09:55:52Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "77837d3",
+   "on_current_head": true,
+   "bot": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "CI never ran on head 77837d3 - a maintainer must approve the workflow runs (fork PR, author association NONE)",
+  "maintainer review (no human has reviewed)",
+  "resolve 1 open greptile thread (news fragment filename)",
+  "approval from a write-access reviewer"
+ ],
+ "threads": {
+  "total": 2,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "opened_at": "2026-09-01T09:55:51Z",
+    "path": "packages/reflex-base/news/6955.bugfix.md",
+    "first_comment": "P1 Release note links wrong PR: When the reflex-base changelog is materialized, the `6955.bugfix.md` filename associates this change with PR 6955 instead of the current PR 7004, causing the generated release note to link to the wrong pull request."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "PENDING",
+  "total": 2,
+  "by_state": {
+   "success": 2,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "LeonxLJX",
+   "association": "NONE",
+   "at": "2026-09-01T09:53:58Z",
+   "excerpt": "Added the missing reflex-base news fragment (news/7004.bugfix.md) so the release workflow is satisfied. Root cause ... Fix ..."
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-29T03:59:06Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 4/5 ... the reflex-base news fragment must be renamed ... Files Needing Attention: packages/reflex-base/news/6955.bugfix.md (bot)"
+  }
+ ],
+ "last_author_activity_at": "2026-09-01T09:53:58Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 2.4,
+ "notes": [
+  "CI NEVER RAN: only 2 check runs on head 77837d3 (cubic, Greptile); no build/unit/integration/changelog jobs exist for this commit. Fork PR from an author with association NONE - workflows need maintainer approval. Rollup marked PENDING for that reason; it is NOT green.",
+  "Unresolved greptile thread on packages/reflex-base/news/6955.bugfix.md (misnamed after the issue rather than the PR) was opened on the current head, so the misnamed fragment appears to still exist despite the author's comment claiming news/7004.bugfix.md was added (commit 77837d3 'chore: add reflex-base news fragment for #7004'). Could not verify file list (out of budget scope). The changelog CI job has never run to confirm either way.",
+  "Issue #6955 filed by maintainer FarhanAliRaza and assigned to the PR author; issue lists PR 7004 in closed_by_pull_requests.",
+  "No human review, no requested reviewers.",
+  "GitHub MCP `get` omits the boolean `mergeable` field entirely (called twice); only mergeable_state was available, so mergeable is UNKNOWN. mergeable_state=blocked is consistent with a required-approval branch rule, not a conflict.",
+  "Normalised by the run: mergeable set to MERGEABLE because mergeable_state=blocked (not dirty); the MCP get omitted the boolean."
+ ]
+}

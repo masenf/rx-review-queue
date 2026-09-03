@@ -1,0 +1,151 @@
+{
+ "baseline": "2026-08-29T06:30:00Z (Aug 28 23:30 PT Cowork run; see cache/runs/2026-08-28/NOTES.md)",
+ "queried_at": "2026-09-03T18:50Z",
+ "merged_since": [
+  {
+   "number": 7039,
+   "title": "fix(assets): link shared assets atomically instead of check-then-act",
+   "author": "adhami3310",
+   "merged_at": "2026-09-03T01:24:44Z"
+  },
+  {
+   "number": 7031,
+   "title": "Record the post-release changelog sections on main and require reflex-base 0.9.10.post1",
+   "author": "masenf",
+   "merged_at": "2026-09-02T02:03:42Z"
+  },
+  {
+   "number": 7030,
+   "title": "Release reflex@0.9.10.post1, reflex-base@0.9.10.post1",
+   "author": "github-actions[bot]",
+   "merged_at": "2026-09-02T01:46:26Z"
+  },
+  {
+   "number": 7029,
+   "title": "Release reflex@0.9.9.post1, reflex-base@0.9.9.post1",
+   "author": "github-actions[bot]",
+   "merged_at": "2026-09-02T01:44:24Z"
+  },
+  {
+   "number": 7027,
+   "title": "Fix IPv6 availability detection in process port tests",
+   "author": "masenf",
+   "merged_at": "2026-09-02T17:36:33Z"
+  },
+  {
+   "number": 7025,
+   "title": "perf: cut per-event overhead on the state/event hot path",
+   "author": "Alek99",
+   "merged_at": "2026-09-02T20:59:40Z"
+  },
+  {
+   "number": 7021,
+   "title": "perf(dev): opt-in production React under the Vite dev server + route warmup",
+   "author": "Alek99",
+   "merged_at": "2026-09-02T16:49:58Z"
+  },
+  {
+   "number": 7018,
+   "title": "Release reflex@0.9.10, reflex-base@0.9.10",
+   "author": "github-actions[bot]",
+   "merged_at": "2026-09-01T18:15:44Z"
+  },
+  {
+   "number": 7014,
+   "title": "fix(proxy): carry dataclass class-level metadata onto synthesized proxy classes",
+   "author": "masenf",
+   "merged_at": "2026-09-02T16:43:18Z"
+  },
+  {
+   "number": 7012,
+   "title": "perf: deduplicate imports as they merge, not once at the end",
+   "author": "adhami3310",
+   "merged_at": "2026-09-01T01:33:04Z"
+  },
+  {
+   "number": 7011,
+   "title": "Remove errant double slash",
+   "author": "masenf",
+   "merged_at": "2026-08-31T21:30:10Z"
+  },
+  {
+   "number": 7010,
+   "title": "docs: add a complete auth example app and sharpen authentication-vs-authorization framing",
+   "author": "FarhanAliRaza",
+   "merged_at": "2026-09-01T19:09:51Z"
+  },
+  {
+   "number": 7009,
+   "title": "test_media: Replace URL we don't control",
+   "author": "masenf",
+   "merged_at": "2026-08-31T20:55:33Z"
+  },
+  {
+   "number": 7005,
+   "title": "fix: allow static IDs in document-root head components",
+   "author": "mameikagou",
+   "merged_at": "2026-09-01T15:25:44Z"
+  },
+  {
+   "number": 7001,
+   "title": "Add prerelease-test skill for release QA campaigns",
+   "author": "masenf",
+   "merged_at": "2026-09-03T18:40:32Z",
+   "note": "merged during this run's listing scrape"
+  },
+  {
+   "number": 6995,
+   "title": "fix(events): run the no-context background flush when the handler raises",
+   "author": "FarhanAliRaza",
+   "merged_at": "2026-09-02T16:43:04Z"
+  },
+  {
+   "number": 6961,
+   "title": "Add verify_pyi script to validate .pyi stubs in distributions",
+   "author": "masenf",
+   "merged_at": "2026-09-02T16:41:03Z"
+  },
+  {
+   "number": 6947,
+   "title": "Speed up memo-name hashing, move it into its own module, fix seven tag collisions",
+   "author": "masenf",
+   "merged_at": "2026-09-01T20:37:34Z"
+  },
+  {
+   "number": 6933,
+   "title": "fix(config): load rxconfig with cwd prepended",
+   "author": "benedikt-bartscher",
+   "merged_at": "2026-09-02T01:03:44Z"
+  }
+ ],
+ "created_since_open": [
+  7040,
+  7038,
+  7037,
+  7036,
+  7035,
+  7033,
+  7019,
+  7016,
+  7015,
+  7008,
+  7007,
+  7006
+ ],
+ "created_since_total": 27,
+ "closed_unmerged_search_total": 0,
+ "closed_unmerged": [
+  {
+   "number": 7020,
+   "title": "fix: stop emptying sys.path while loading rxconfig",
+   "author": "Alek99",
+   "closed_at": "2026-09-01T22:42:50Z",
+   "closed_by": "masenf",
+   "note": "confirmed via issue_read: state closed, not merged; is:unmerged search returned 0 (search index unreliable)"
+  }
+ ],
+ "baseline_approvals_check": {
+  "6963": "closed 2026-08-28T23:43:33Z (before baseline)",
+  "6927": "closed 2026-08-28T23:14:03Z (before baseline)"
+ }
+}

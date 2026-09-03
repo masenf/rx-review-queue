@@ -1,0 +1,64 @@
+{
+  "number": 6946,
+  "fetched_at": "2026-09-03T18:44:55Z",
+  "head_sha": "0b5912a3e1f2bcab67021a59dd9819c80585da61",
+  "title": "Deduplicate unchanged uncached computed var deltas",
+  "author": "masenf",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": ["Alek99"],
+  "linked_issues": [],
+  "reviews": [
+    {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-25T19:20:52Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "1a84c2a", "on_current_head": false},
+    {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-25T19:33:02Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "1a84c2a", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-08-27T20:59:00Z", "association": "MEMBER", "can_push": true, "commit_id": "a9748a8", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-08-27T21:00:01Z", "association": "MEMBER", "can_push": true, "commit_id": "a9748a8", "on_current_head": false},
+    {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-27T21:00:01Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "a9748a8", "on_current_head": false},
+    {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-27T21:00:26Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "a9748a8", "on_current_head": false}
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": ["maintainer review/approval (requested: Alek99); no non-author human has reviewed", "resolve 4 cubic bot threads the author has already rebutted (one click each)"],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P1: Derive the delta token from the root state rather than the patched shared substate. During linked-state fan-out, self.router can still belong to the origin state, causing the recipient to reuse the origin's recorded key"},
+      {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P2: This dynamically generated tracking attribute bypasses BaseState's reserved-field checks, allowing a colliding internal name to overwrite delta bookkeeping silently."},
+      {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P2: When linked clients alternate deltas, this stores only the most recent client token rather than one key per client. After both clients receive the same value, alternating requests resend it indefinitely"},
+      {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P2: When a value has no registered serializer, json_dumps converts it to null instead of raising. _delta_value_key then reuses the null digest and drops later values"}
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 112,
+    "by_state": {"success": 110, "failure": 0, "pending": 0, "skipped": 2, "cancelled": 0, "action_required": 0, "neutral": 0},
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-08-25T19:20:19Z", "excerpt": "Merging this PR will not alter performance (32 untouched, 8 skipped benchmarks)"},
+    {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-08-25T19:20:45Z", "excerpt": "Greptile Summary (through 0b5912a): Confidence Score 5/5; appears safe to merge; previously reported scalar collision is fixed."},
+    {"by": "masenf", "association": "MEMBER", "at": "2026-08-27T21:00:26Z", "excerpt": "Review pass + follow-up work: fixed missing reflex-base news fragment, scalar key type conflation, shallow persistence test; pushed back on 4 bot threads; lists 4 follow-ups."}
+  ],
+  "last_author_activity_at": "2026-09-02T22:41:24Z",
+  "last_maintainer_activity_at": null,
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "First `get` returned mergeable_state=unknown; second call returned blocked.",
+    "Open since 2026-08-25 (9 days); no human other than the author has reviewed or commented. All 4 unresolved threads are cubic bot threads that the author rebutted on 2026-08-27 but did not resolve; the greptile threads on the same points were withdrawn by greptile and resolved.",
+    "Head 0b5912a is a merge of origin/main pushed 2026-09-02T22:41Z; full CI (112 checks) green on it. 2 skipped checks are the conditionally-skipped macOS jobs.",
+    "days_waiting_on_maintainer is 0 by rule because the author is a MEMBER, though the PR has effectively been waiting on a second maintainer since 2026-08-27."
+  ]
+}

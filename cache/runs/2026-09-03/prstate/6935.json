@@ -1,0 +1,54 @@
+{
+  "number": 6935,
+  "fetched_at": "2026-09-03T18:47:28Z",
+  "head_sha": "a209a40ae3174e9ea036b5cb8ad087f695259bad",
+  "title": "Fix client state setter event var args",
+  "author": "wantosure",
+  "author_association": "NONE",
+  "body_present": true,
+  "body_has_repro": true,
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [
+    {"number": 5741, "title": "Invalid JavaScript Code Generation with EventHandler args_spec Using rx.Var Expressions", "filed_by": "LeoGrosjean", "filer_is_author": false}
+  ],
+  "reviews": [
+    {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-24T13:53:55Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "eee5f4c", "on_current_head": false}
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": ["author: resolve merge conflicts with main", "maintainer: approve workflow runs (CI never ran)", "maintainer review"],
+  "threads": {"total": 1, "unresolved": []},
+  "checks": {
+    "rollup": null,
+    "total": 2,
+    "by_state": {"success": 2, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": true
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-08-24T13:47:11Z", "excerpt": "Greptile Summary ... Confidence Score: 5/5 The PR appears safe to merge (bot; not evidence)"},
+    {"by": "wantosure", "association": "NONE", "at": "2026-08-24T14:20:35Z", "excerpt": "Thanks, this was a valid catch ... replaced that with a small Unicode-aware JS identifier scanner and added a regression test for the non-ASCII event arg case"}
+  ],
+  "last_author_activity_at": "2026-08-24T14:20:35Z",
+  "last_maintainer_activity_at": null,
+  "days_waiting_on_maintainer": 10,
+  "notes": [
+    "mergeable_state was 'unknown' on first get, 'dirty' on retry; branch conflicts with main (base d86f167 from 2026-08-21).",
+    "Fork PR (wantosure/reflex). Only cubic and Greptile check runs exist on head a209a40; no CI suites and no commit statuses. CI has never run.",
+    "Body contains a before/after JS snippet and a description of the bug (body_has_repro=true) but no runnable app; body says tests were run locally on Windows.",
+    "The single cubic thread (ASCII-only identifier regex) is resolved and marked addressed in a209a40; the author replied in an issue comment.",
+    "Linked issue #5741 was previously targeted by closed PR #5978.",
+    "No maintainer has commented or reviewed."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+ "fetched_at": "2026-09-03T18:48:10Z",
+ "body_has_repro": false,
+ "conflicting_files": [],
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "changes_requested_outstanding": false,
+ "awaiting": [],
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "number": 6932,
+ "head_sha": "64396a2bd0eb805c791e9c7d346cb9e2855df569",
+ "title": "bare websockets",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "update_branch_offered": false,
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-22T21:04:14Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "24d8a2b",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-23T16:21:19Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "49f323b",
+   "on_current_head": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-08-23T16:46:57Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "3ed074a",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 31,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "outstanding_asks": [
+  {
+   "by": "abulvenz",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-24T11:15:55Z",
+   "ask": "Confirm whether HTTP long-polling fallback is dropped with bare websockets",
+   "addressed": true,
+   "evidence": "Author replied 2026-08-24T11:41 that long-polling is not supported in the new transport but the socketio transport remains selectable"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "abulvenz",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-24T11:15:55Z",
+   "excerpt": "I really like this lightweight approach. One thing that is dropped: socketio supports HTTP long-polling in case a websocket connection cannot be established"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-24T11:41:09Z",
+   "excerpt": "Yes, the new bare websockets implementation does not support http long-polling yet. However one could still choose the old socketio based transport"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-28T18:21:55Z",
+   "excerpt": "check out #6984 -- edit: done in 9caa24b"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-29T10:23:35Z",
+   "excerpt": "Confidence Score: 5/5 - The PR appears safe to merge (bot summary; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-29T10:21:10Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 5,
+ "notes": [
+  "mergeable_state was 'unknown' on first get, 'dirty' on second: branch now conflicts with main (merged main 2026-08-29 but base has moved again).",
+  "31 review threads (greptile/cubic), all resolved; author rebutted several bot findings in-thread.",
+  "No MEMBER/OWNER review or comment at all; only human interaction is CONTRIBUTOR abulvenz's issue comment. Large change (22 files, +2399/-607, 33 commits) with no maintainer engagement.",
+  "Fork PR but CI ran fully (111 check runs on head, all green except 2 skipped macos jobs); check-run page 2 not fetched, counts assume same pattern.",
+  "Body is short; no linked issue. Drops python-socketio/engineio/wsproto deps and migrates AppHarness to granian per body."
+ ]
+}

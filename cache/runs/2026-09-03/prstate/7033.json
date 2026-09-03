@@ -1,0 +1,145 @@
+{
+  "number": 7033,
+  "fetched_at": "2026-09-03T18:47:57Z",
+  "head_sha": "945a53fe3be10c6ff17e079a6fe724a2525f5307",
+  "title": "feat: allow explicit only event handlers",
+  "author": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [
+    "Alek99"
+  ],
+  "linked_issues": [
+    {
+      "number": 7032,
+      "title": "disable implicit @rx.event handlers",
+      "filed_by": "benedikt-bartscher",
+      "filer_is_author": true
+    }
+  ],
+  "reviews": [
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-02T16:35:00Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "945a53f",
+      "on_current_head": true
+    },
+    {
+      "by": "abulvenz",
+      "state": "APPROVED",
+      "at": "2026-09-02T17:56:44Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "945a53f",
+      "on_current_head": true
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-02T10:24:02Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "4997210",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-02T12:04:30Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "945a53f",
+      "on_current_head": true
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "approval from a MEMBER (abulvenz approval is CONTRIBUTOR, does not count)",
+    "Alek99 requested review",
+    "resolve 1 thread (abulvenz docs musing, author replied)",
+    "CI: 1 flaky integration job failing"
+  ],
+  "threads": {
+    "total": 10,
+    "unresolved": [
+      {
+        "by": "abulvenz",
+        "outdated": false,
+        "author_replied": true,
+        "first_comment": "Might also become default one day, following the Zen of Python > Explicit is better than implicit. (docs/events/events_overview.md:49)"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 112,
+    "by_state": {
+      "success": 109,
+      "failure": 1,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 0
+    },
+    "failing": [
+      "integration-app-harness (redis, 3.13, 1)"
+    ],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "integration-app-harness (redis, 3.13, 1)",
+      "cause": "test_on_load_navigate[dev] AssertionError: expected '/page/[page_id]-5' at position 5 but got '/page/[page_id]-6' after 3 reruns (78 passed). tests/integration/test_dynamic_routes.py::test_on_load_navigate[dev] failed on on_load event ordering assertion after 3 reruns; same test fails on unrelated PRs (#6899, #7033, #6807) on the same day, so this is a flaky test, not this PR.",
+      "prs_fault": false
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-02T16:35:00Z",
+      "ask": "Ensure reflex-enterprise's auth plugin and other integration points still work with the new structure (masenf says it seems like it would at first glance).",
+      "addressed": false,
+      "evidence": "No follow-up from author or masenf on this point after the review; no new commit since."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-02T16:35:00Z",
+      "excerpt": "great, this gives us a lever and a chicken switch for eventually defaulting to requiring the decorator... need to ensure reflex-enterprise's auth plugin... can still work"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T18:06:01Z",
+      "excerpt": "yeah, i wanted to go the same route as i did with state_auto_setters. 1. introduce a flag... 2. change the default to explicit 3. drop implicit mode"
+    }
+  ],
+  "last_author_activity_at": "2026-09-02T18:06:01Z",
+  "last_maintainer_activity_at": "2026-09-02T16:35:00Z",
+  "days_waiting_on_maintainer": 1.0,
+  "notes": [
+    "GitHub MCP `get` does not expose the boolean `mergeable` field; mergeable inferred from mergeable_state (blocked != dirty => MERGEABLE).",
+    "First `get` returned mergeable_state=unknown; second call returned blocked.",
+    "Fork PR (benedikt-bartscher/reflex) but CI ran fully.",
+    "Single squashed commit; 9 of 10 bot threads resolved with fixes or author rebuttal; the only open thread is a non-blocking comment from abulvenz that the author already answered (one click to resolve).",
+    "abulvenz APPROVED but author_association CONTRIBUTOR: does not count."
+  ]
+}

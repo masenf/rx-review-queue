@@ -1,0 +1,177 @@
+{
+ "number": 7006,
+ "fetched_at": "2026-09-03T18:48:23Z",
+ "head_sha": "6c2b5286f01ab1661f61efd45d7809dd89109849",
+ "title": "Migrate react-moment to 2.0.2",
+ "author": "harsh21234i",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [
+  {
+   "number": 7003,
+   "title": "Migrate `rx.moment` to react-moment 2.x (prop restructure + new peer dep)",
+   "filed_by": "masenf",
+   "filer_is_author": false,
+   "filer_association": "MEMBER",
+   "relation": "related (body says 'Related issue', not closes)"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-30T15:32:35Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "6ab85d3",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-30T16:00:58Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "f18753f",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "CHANGES_REQUESTED",
+   "at": "2026-09-01T07:08:57Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "c85abb2",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-01T09:19:49Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "bd58635",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "DISMISSED",
+   "at": "2026-09-01T15:37:54Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "054c45c",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-01T16:42:30Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "054c45c",
+   "on_current_head": false
+  },
+  {
+   "by": "harsh21234i",
+   "state": "COMMENTED",
+   "at": "2026-09-02T05:20:45Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "054c45c",
+   "on_current_head": false,
+   "is_author": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": true,
+ "human_reviewed": true,
+ "awaiting": [
+  "FarhanAliRaza re-review: CHANGES_REQUESTED (on c85abb2) still stands although the asks appear addressed",
+  "Alek99 review (requested)",
+  "approval from a write-access reviewer"
+ ],
+ "threads": {
+  "total": 6,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 165,
+  "by_state": {
+   "success": 163,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-09-01T07:08:57Z",
+   "ask": "react-moment 2.x drops bundled moment-duration-format: add the import in add_imports() using ImportVar(tag=None) (not lib_dependencies alone); add a duration case to the integration test; fix invalid trim='h [hours]' value; correct the docstring rationale for widened trim/parse types",
+   "addressed": true,
+   "evidence": "Author pushed bd58635 'Fix react-moment duration plugin loading', 1b67baa 'Strengthen moment duration regression coverage', 740c5d5 'Cover moment duration trim behavior'; Farhan himself pushed 054c45c tightening parse type/docs; all 3 of Farhan's threads are resolved. The CHANGES_REQUESTED review has not been re-submitted/dismissed so it still blocks."
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-01T16:42:26Z",
+   "ask": "Drop moment-duration-format from unconditional lib_dependencies; does it still work as a conditional dep only?",
+   "addressed": true,
+   "evidence": "Author replied 2026-09-02T05:20 agreeing, then pushed 6c2b528 'Make Moment duration dependency conditional' (current head); thread resolved; CI green on head."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-09-01T07:08:57Z",
+   "excerpt": "(review) Request changes: This PR breaks the duration and duration_from_now props of rx.moment ... Add the import in add_imports() ... Add a duration case to the integration test."
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-02T05:20:45Z",
+   "excerpt": "(thread reply) Yes, you're right. lib_dependencies is unconditional ... I'll remove it from lib_dependencies, keep the conditional ImportVar(tag=None) in add_imports()"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-30T15:30:24Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-09-02T06:18:25Z",
+ "last_maintainer_activity_at": "2026-09-01T16:42:30Z",
+ "days_waiting_on_maintainer": 1.5,
+ "notes": [
+  "Fork PR. Two MEMBERs (FarhanAliRaza, masenf) have engaged; Farhan also pushed two commits (c85abb2, 054c45c) directly to the contributor's branch.",
+  "Farhan's CHANGES_REQUESTED review (5074975910) is still in CHANGES_REQUESTED state; a later review by Farhan (5080039873, 2026-09-01T15:37:54Z) shows state DISMISSED with no body. The original request is on an earlier commit and every thread it opened is resolved, so this is effectively 'waiting on re-review', one click away if Farhan is satisfied.",
+  "Head 6c2b528 was pushed after masenf's last comment; CI (165 checks incl. changelog) is green on it. Skipped: reflex-docs-macos, unit-tests-macos.",
+  "Issue #7003 has a checklist (deprecation paths, drop react-moment from outdated-deps ignore list, news fragment under packages/reflex-components-moment/news/) - not verified whether all items are covered; body says 'Related issue', so merging will not auto-close it.",
+  "GitHub MCP `get` omits the boolean `mergeable` field entirely (called twice); only mergeable_state was available, so mergeable is UNKNOWN. mergeable_state=blocked is consistent with a required-approval branch rule, not a conflict.",
+  "Normalised by the run: mergeable set to MERGEABLE because mergeable_state=blocked (not dirty); the MCP get omitted the boolean."
+ ]
+}

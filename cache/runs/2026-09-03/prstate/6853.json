@@ -1,0 +1,145 @@
+{
+  "number": 6853,
+  "fetched_at": "2026-09-03T18:50:19Z",
+  "head_sha": "cff19a4ce8bf42c6be15fae50c0d6dfd92dfa3f9",
+  "title": "[fix] Only check the redis session lock once per set_state fan-out",
+  "author": "qubydev",
+  "author_association": "CONTRIBUTOR",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [
+    {
+      "number": 6848,
+      "title": "Redundant per-substate lock checks in `set_state`",
+      "filed_by": "PJ-Snap",
+      "filer_is_author": false
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-06T20:51:37Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "cff19a4",
+      "on_current_head": true
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-06T20:53:54Z",
+      "association": "NONE",
+      "can_push": false,
+      "commit_id": "cff19a4",
+      "on_current_head": true
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-06T21:10:58Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "cff19a4",
+      "on_current_head": true
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": [
+    "author: resolve merge conflicts",
+    "author: address lock-expiry-during-fan-out concern (promised 2026-08-07, no push since)",
+    "maintainer: approve CI workflows (never ran)",
+    "maintainer review"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P1 Lock ownership expires during fan-out: if the session lock expires and another event acquires it while the async fan-out is running, recursive calls with lock_checked=True persist state without validating the current owner (redis.py:459)"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P1 Preserve lock checks for recursive writes: forwarding lock_checked=True lets dirty substates SET after the session lock expired or was reacquired by another worker; previously each branch raised LockExpiredError (redis.py:457)"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": null,
+    "total": 2,
+    "by_state": {
+      "success": 2,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 0
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": true
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-07T07:17:44Z",
+      "ask": "lock_checked=True propagation is unsafe if the lock expires/is reacquired mid fan-out; keep an ownership check at persistence time (or atomic equivalent) and add regression tests for expiry and ownership replacement",
+      "addressed": false,
+      "evidence": "Author replied 2026-08-07 'valid concern, I'll take a deeper look and apply changes' but no commits since (single commit cff19a4 from 2026-08-06)"
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-07T07:25:21Z",
+      "excerpt": "Yeah that's a valid concern, I'll take a deeper look and apply changes. Thanks."
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-07T07:17:44Z",
+      "excerpt": "the current lock_checked=True propagation appears unsafe because the lock may expire or be reacquired by another worker during the fan-out... add regression coverage"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T20:51:33Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 4/5; should not merge until recursive writes remain protected against lock expiry (bot summary)"
+    },
+    {
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T20:50:04Z",
+      "excerpt": "Would love to know your thoughts on this @harsh21234i"
+    }
+  ],
+  "last_author_activity_at": "2026-08-07T07:25:21Z",
+  "last_maintainer_activity_at": null,
+  "days_waiting_on_maintainer": 27,
+  "notes": [
+    "Fork PR (qubydev/reflex). Only the two AI-reviewer checks (cubic, Greptile) completed on head; no GitHub Actions workflows ran: CI never ran / awaiting workflow approval.",
+    "mergeable_state was 'unknown' on first get and 'dirty' on second: merge conflicts with main.",
+    "No maintainer (MEMBER/OWNER) has commented or reviewed; harsh21234i (CONTRIBUTOR, not a maintainer) raised a substantive safety concern that the author acknowledged but has not yet addressed. days_waiting_on_maintainer computed per rule (27), but the author also owes a fix, so this is not purely maintainer-blocked.",
+    "Both unresolved bot threads raise the same lock-expiry-during-fan-out issue as harsh21234i.",
+    "Overlaps with maintainer PR #6745 (Alek99), which pipelines set_state writes and verifies the lock once; #6745 may supersede this change.",
+    "Linked issue #6848 filed by PJ-Snap (association NONE), not the PR author."
+  ]
+}

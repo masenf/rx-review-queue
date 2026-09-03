@@ -41,7 +41,7 @@ def main():
     ap.add_argument("run_dir")
     ap.add_argument("--previous")
     args = ap.parse_args()
-    cur = Path(args.run_dir)
+    cur = Path(args.run_dir).resolve()
     if args.previous:
         prev = Path(args.previous)
     else:

@@ -1,0 +1,110 @@
+{
+  "number": 6757,
+  "fetched_at": "2026-09-03T18:49:20Z",
+  "head_sha": "092cf41b0e34e4dc930a5f1281bed6fa3b073286",
+  "title": "Fast-path framework bookkeeping fields in state attribute access",
+  "author": "Alek99",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-14T00:39:17Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "97e9e37",
+      "on_current_head": false
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-14T00:42:43Z",
+      "association": "NONE",
+      "can_push": false,
+      "commit_id": "483d2d1",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-13T01:14:44Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "932c1fd",
+      "on_current_head": false
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-13T17:26:53Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "092cf41",
+      "on_current_head": true
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": [
+    "first human review / maintainer approval",
+    "full CI (only benchmark workflows ran; base is a feature branch, not main)"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 6,
+    "by_state": {
+      "success": 5,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 1
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {
+      "by": "codspeed-hq[bot]",
+      "association": "NONE",
+      "at": "2026-07-14T00:38:33Z",
+      "excerpt": "Merging this PR will improve performance by 20% - 30 improved benchmarks, 58 untouched (bot)"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-14T00:39:13Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 5/5 The updated fix looks safe to merge. (bot; not evidence)"
+    }
+  ],
+  "last_author_activity_at": "2026-08-13T17:26:53Z",
+  "last_maintainer_activity_at": null,
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "STACKED PR: base is agent/event-loop-performance-benchmarks, not main",
+    "Only 6 check runs on head (CodSpeed, Greptile, browser perf smoke, Lighthouse, Run benchmarks, cubic); unit/integration/pre-commit workflows did not run -> CLEAN does not mean the full suite passed",
+    "mergeable boolean not exposed by MCP get; inferred MERGEABLE from mergeable_state=clean",
+    "No human other than the author has reviewed or commented; all 4 bot threads addressed and resolved",
+    "Linear ENG-10096 (no GitHub issue)"
+  ]
+}

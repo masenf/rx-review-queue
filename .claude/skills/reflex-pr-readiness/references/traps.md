@@ -10,6 +10,14 @@ the memory the job otherwise lacks.
 
 ## Listing
 - Page text of the PR list drops draft and role badges; read the DOM or the API.
+- Sep 3: the listing page returned 92 rows and the search counter said 91
+  two minutes later; #7001 had merged at 18:40:32Z between the two calls.
+  Confirm the odd one out with `pull_request_read(get)` and drop it; then
+  re-fetch main before measuring, or every behind-main figure is off by one.
+- `search_pull_requests(... is:closed is:unmerged closed:>TS)` returned 0
+  although #7020 was closed unmerged in the window. Recover closed-unmerged
+  PRs from the `created:>TS` list (state closed, absent from `is:merged`)
+  and confirm each with `issue_read`.
 - Row count vs the "N Open" counter differing by one or two means a merge landed
   mid-scrape. Re-read and reconcile.
 - Count author concentration from the role badge / `author_association`, not
@@ -48,6 +56,26 @@ the memory the job otherwise lacks.
 - Compiled `CHANGELOG.md` edits mark release/backport PRs, not docs work.
 
 ## Merge box / API state
+- The GitHub MCP `pull_request_read(get)` does **not** return the
+  `mergeable` boolean. Derive it from `mergeable_state`: `dirty` =
+  conflicts, `unknown` = re-fetch once, anything else = no conflicts. Do not
+  write UNKNOWN for a PR whose state is `blocked`.
+- A head pushed minutes before the scan shows only the two AI-reviewer check
+  runs and looks exactly like "workflows awaiting approval" (#7036, pushed
+  18:35Z, scanned 18:41Z). Check the head push time before flagging
+  `ci_never_ran` on a non-first-timer.
+- Stacked PRs whose base is another branch report `mergeable_state: clean`
+  even when only the benchmark workflow ran on the head (Alek99's July perf
+  stack). CLEAN is relative to the base branch and says nothing about unit
+  tests, pre-commit or changelog: list which workflows actually ran.
+- `CHANGES_REQUESTED` survives the pushes that address it (#7006, #6968 on
+  Sep 3). Report it as "stale changes-requested: dismiss or re-review", a
+  maintainer click, not an author blocker.
+- Greptile flags a fragment named after the linked issue as "release note
+  links wrong PR" (#7004). Issue-naming resolves through towncrier's issue
+  link, but check the *count* too: #7004 also carried a root
+  `news/7004.bugfix.md` for a package it does not touch. Read the fragment
+  paths against `packages_touched` before calling the thread a false alarm.
 - **Bot summary comments go stale.** greptile has posted "5/5, safe to merge"
   on unmergeable PRs, on PRs with red checks, and on PRs with open maintainer
   objections, and "not safe to merge" over a finding it had already withdrawn.
@@ -87,6 +115,13 @@ the memory the job otherwise lacks.
   the board when audit and live data disagree.
 
 ## Runner
+- Claude Code remote: background subagents die with a spend-limit 429 and
+  report "failed" even after writing most of their files. Check which
+  `prstate/N.json` exist and validate them (number, head SHA vs listing)
+  before re-running anything; on Sep 3 all 64 files were on disk despite
+  four "failed" batches.
+- `scripts/render.py` and `scripts/delta.py` were committed without the
+  executable bit; run them as `python3 scripts/render.py` if the bit is lost.
 - Cowork: never `tabs_close`; leave a tab open; subagents default to cleaning
   up tabs, so tell them not to. `gh` and the API were unreachable there.
 - Claude Code remote: the GitHub MCP only covers repos attached to the

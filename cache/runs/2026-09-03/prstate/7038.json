@@ -1,0 +1,57 @@
+{
+  "number": 7038,
+  "fetched_at": "2026-09-03T18:44:55Z",
+  "head_sha": "9851ca6e2da5a9c8ec8e49195fc1cbe24f01e244",
+  "title": "docs: describe the custom domain records and the verification states the dashboard now reports",
+  "author": "Darksinian",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": ["Alek99"],
+  "linked_issues": [],
+  "reviews": [
+    {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-02T21:31:22Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "9851ca6", "on_current_head": true},
+    {"by": "FarhanAliRaza", "state": "APPROVED", "at": "2026-09-03T16:22:34Z", "association": "MEMBER", "can_push": true, "commit_id": "9851ca6", "on_current_head": true}
+  ],
+  "counting_approval": true,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": ["resolve 1 cubic bot thread (P3 wording suggestion)", "requested review from Alek99 still pending (merge_state BLOCKED despite MEMBER approval)"],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P3: The redirect guidance relies on a provider feature most DNS hosts don't offer. DNS records alone can't perform an HTTP redirect, so 'set up a redirect for the other at your DNS provider' is only possible where the provider/registrar offers URL forwarding"}
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 33,
+    "by_state": {"success": 33, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {"by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-09-02T21:23:47Z", "excerpt": "You have reached your Codex usage limits for code reviews."},
+    {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-02T21:25:20Z", "excerpt": "Greptile Summary: documentation-only PR; Confidence Score 5/5; appears safe to merge."},
+    {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-02T21:27:19Z", "excerpt": "Merging this PR will not alter performance (32 untouched, 8 skipped benchmarks)"}
+  ],
+  "last_author_activity_at": "2026-09-02T21:23:39Z",
+  "last_maintainer_activity_at": "2026-09-03T16:22:34Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "First `get` returned mergeable_state=unknown; a second call returned blocked, so merge_state=BLOCKED.",
+    "Docs-only change (1 file, docs/hosting/custom-domains.md); the CI that ran is the docs-tests/build/pre-commit/changelog set (33 checks, all green), not the unit/integration matrix.",
+    "Approval from FarhanAliRaza (MEMBER) is on the current head and counts; merge_state is still BLOCKED, most likely because Alek99 is a requested reviewer and/or the unresolved cubic thread.",
+    "Body references an internal Linear ticket (ENG-11913) and a flexgen PR, no reflex issue linked."
+  ]
+}

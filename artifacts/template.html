@@ -56,10 +56,10 @@
   function show(id) {
     tabs.forEach(b => b.classList.toggle('active', b.dataset.pane === id));
     panes.forEach(p => p.classList.toggle('active', p.id === id));
-    try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    try { history.replaceState(null, '', '#/' + id); } catch (e) {}  // '#/x' matches no element id, so a reload does not scroll past the header
   }
   tabs.forEach(b => b.addEventListener('click', () => show(b.dataset.pane)));
-  const initial = location.hash.slice(1);
+  const initial = location.hash.replace(/^#\/?/, '');
   show(document.getElementById(initial) ? initial : tabs[0].dataset.pane);
 </script>
 </body>

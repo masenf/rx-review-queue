@@ -1,0 +1,109 @@
+{
+  "number": 6125,
+  "fetched_at": "2026-09-03T18:49:33Z",
+  "head_sha": "f18922ac53509a66d715454d001bf0002bbd5643",
+  "title": "feat: Add Redis Sentinel support for HA",
+  "author": "timon0305",
+  "author_association": null,
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [
+    {
+      "number": 5830,
+      "title": "support redis sentinel for HA",
+      "filed_by": "benedikt-bartscher",
+      "filer_is_author": false
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-02-11T12:22:22Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "e993201",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-02-12T20:48:41Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "f18922a",
+      "on_current_head": true
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "author: answer/implement runtime failover to a new master via sentinel (masenf)",
+    "author: rebase to resolve merge conflicts",
+    "CI has never run on this fork PR"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": null,
+    "total": 0,
+    "by_state": {
+      "success": 0,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 0
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-02-12T20:48:41Z",
+      "ask": "StateManagerRedis is bound to one redis instance at startup; what is the mechanism for failing over to a new master while running? Probably needs error-path handling that re-queries sentinel for the master",
+      "addressed": false,
+      "evidence": "No commits or comments from the author after 2026-02-11T12:31:40Z."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-02-11T12:22:15Z",
+      "excerpt": "Greptile Summary ... Confidence Score 3/5 ... password handling conflates sentinel and master auth"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-02-12T20:48:41Z",
+      "excerpt": "the StateManagerRedis is created and bound to the redis instance when the app starts. What is the mechanism for failing over to a different redis instance..."
+    }
+  ],
+  "last_author_activity_at": "2026-02-11T12:31:40Z",
+  "last_maintainer_activity_at": "2026-02-12T20:48:41Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "mergeable_state 'unknown' then 'dirty' -> CONFLICTING/DIRTY.",
+    "Zero check runs and zero commit statuses on head f18922a: CI never ran on this fork PR (or runs gone); not green.",
+    "All 3 greptile threads resolved; author pushed follow-up commits addressing each (separate passwords, empty-host validation, public get_sentinel_config).",
+    "Open design question from masenf about runtime failover is unanswered for ~6.5 months; waiting on author.",
+    "author_association not returned by the API for the PR author; fork PR."
+  ]
+}

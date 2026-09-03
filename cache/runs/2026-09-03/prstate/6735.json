@@ -1,0 +1,52 @@
+{
+  "number": 6735,
+  "fetched_at": "2026-09-03T18:47:28Z",
+  "head_sha": "460c941b5abb4924be0d9eaede3638356747a01f",
+  "title": "Dedup auto-memoize passthrough definitions during compile",
+  "author": "Alek99",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {"by": "FarhanAliRaza", "state": "DISMISSED", "at": "2026-07-10T21:28:21Z", "association": "MEMBER", "can_push": true, "commit_id": "0390d78", "on_current_head": false}
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": ["author: resolve merge conflicts with main", "maintainer review on current head"],
+  "threads": {"total": 0, "unresolved": []},
+  "checks": {
+    "rollup": null,
+    "total": 5,
+    "by_state": {"success": 4, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 1},
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-07-10T19:34:11Z", "excerpt": "Greptile Summary ... Confidence Score: 5/5 This looks safe to merge. (bot; not evidence)"},
+    {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-07-10T19:36:16Z", "excerpt": "Merging this PR will improve performance by 28.47% (3 improved, 23 untouched, 1 new benchmark)"},
+    {"by": "linear-code[bot]", "association": "NONE", "at": "2026-07-10T19:59:29Z", "excerpt": "ENG-10101"}
+  ],
+  "last_author_activity_at": "2026-07-18T01:44:24Z",
+  "last_maintainer_activity_at": "2026-07-10T21:28:21Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "mergeable_state was 'unknown' on first get, 'dirty' on retry; conflicts with main. Base sha d3a17c7 is stale (PR untouched since 2026-07-18).",
+    "author_association not returned by the get endpoint; MEMBER inferred because the head branch lives in reflex-dev/reflex (write access required) and the author commits as alek@reflex.dev.",
+    "Only the benchmark workflow (Run benchmarks, Run Lighthouse benchmark, CodSpeed) plus Greptile/cubic ran on head 460c941; unit-tests, integration, pre-commit, changelog and build checks are absent for this head. Rollup left null rather than SUCCESS because the required-looking suites never reported.",
+    "FarhanAliRaza (MEMBER) also pushed commit de87338 to the branch on 2026-07-10 and his review was dismissed; no human review exists on the current head.",
+    "No issue comments from any human; only bots."
+  ]
+}

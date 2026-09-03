@@ -1,0 +1,187 @@
+{
+  "fetched_at": "2026-09-03T18:49:00Z",
+  "conflicting_files": [],
+  "auto_merge": false,
+  "review_decision": null,
+  "ci_never_ran": false,
+  "awaiting": [],
+  "number": 6812,
+  "head_sha": "6e82ba899cd8cd51282b66720e4b299f99d01b47",
+  "title": "improve hybrid property",
+  "author": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "body_present": false,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "update_branch_offered": false,
+  "requested_reviewers": [
+    "Alek99"
+  ],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-26T00:49:17Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "0fef927",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-22T21:06:58Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "b78bd1d",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-23T10:43:53Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "446ff64",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-26T21:42:28Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "5b8dcbb",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-26T21:45:37Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "5b8dcbb",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T17:45:38Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "7d5d1f2",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-27T17:53:21Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "907bb2a",
+      "on_current_head": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-08-27T18:00:35Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "907bb2a",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-27T22:06:02Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "8c2010a",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-28T07:46:29Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "70ea1d4",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-28T07:48:43Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "70ea1d4",
+      "on_current_head": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-08-28T08:14:08Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "310e0df",
+      "on_current_head": false
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "threads": {
+    "total": 15,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 112,
+    "by_state": {
+      "success": 110,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 0
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {
+      "by": "abulvenz",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-29T16:08:03Z",
+      "excerpt": "Nice one, let's merge it!"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-27T17:45:38Z",
+      "excerpt": "(review) this does seem like some very nice improvements"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-26T00:49:12Z",
+      "excerpt": "Confidence Score: 4/5 ... should not merge until the same-name functional-fork behavior is corrected or accepted as intentional. (bot summary, not evidence)"
+    }
+  ],
+  "last_author_activity_at": "2026-08-28T19:14:12Z",
+  "last_maintainer_activity_at": "2026-08-27T17:45:38Z",
+  "days_waiting_on_maintainer": 6,
+  "notes": [
+    "All 15 review threads resolved; author rebutted several greptile P1s with reproductions and fixed the valid cubic ones (310e0df, 70ea1d4).",
+    "masenf reviewed positively (COMMENTED, not APPROVED) on 7d5d1f2; head has moved since (merge of main 6e82ba8). No approval on record.",
+    "merge_state BLOCKED = waiting on required approval; no conflicts (mergeable derived; first `get` returned unknown).",
+    "No PR body.",
+    "last_author_activity_at approximated from CI start on head commit 6e82ba8 (merge branch 'main')."
+  ]
+}

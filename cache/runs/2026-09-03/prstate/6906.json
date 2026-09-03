@@ -1,0 +1,142 @@
+{
+  "number": 6906,
+  "fetched_at": "2026-09-03T18:49:20Z",
+  "head_sha": "7f506e8d7dadcc87f23c22935e413e042d16dc54",
+  "title": "perf: elide unchanged connection-scoped router fields from deltas",
+  "author": "Alek99",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-18T00:19:42Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "3777503",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-18T00:24:47Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "12f68db",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-18T01:39:17Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "2902855",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-18T01:51:57Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "7e5f7bb",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-18T02:00:06Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "2902855",
+      "on_current_head": false
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-18T01:53:42Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "36cdaf1",
+      "on_current_head": false
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "maintainer approval",
+    "author response to masenf design objection"
+  ],
+  "threads": {
+    "total": 10,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "success": 108,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 1
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-18T02:00:06Z",
+      "ask": "Break router data into separate base vars instead of special-casing partial router deltas; not a fan of the special case",
+      "addressed": false,
+      "evidence": "No commits after 2026-08-18T01:53 and no author reply to the review body; author's only later comment (08-19) is about a flaky integration shard"
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "Alek99",
+      "association": "MEMBER",
+      "at": "2026-08-19T18:17:27Z",
+      "excerpt": "The integration-app-harness (memory, 3.14, 1) failure is the known pre-existing react-helmet race ... fixed in #6905 ... Rerun triggered."
+    },
+    {
+      "by": "Alek99",
+      "association": "MEMBER",
+      "at": "2026-08-18T02:00:04Z",
+      "excerpt": "On the CodSpeed regression (test_var_access[non_mutable_scalar], -4.72%) ... Suggest acknowledging on CodSpeed"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-18T00:19:38Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 5/5 The PR appears safe to merge. (bot; not evidence)"
+    }
+  ],
+  "last_author_activity_at": "2026-08-19T18:17:27Z",
+  "last_maintainer_activity_at": "2026-08-18T02:00:06Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "mergeable boolean not exposed by MCP get; inferred MERGEABLE from mergeable_state=blocked",
+    "All 10 bot review threads resolved; all CI green after rerun (earlier memory/3.14 shard flake per author)",
+    "masenf's review is COMMENTED not CHANGES_REQUESTED but is a design-level objection to the whole approach; unanswered",
+    "Blocked = no approving review"
+  ]
+}

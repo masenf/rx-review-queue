@@ -1,0 +1,217 @@
+{
+  "fetched_at": "2026-09-03T18:49:00Z",
+  "conflicting_files": [],
+  "auto_merge": false,
+  "review_decision": null,
+  "ci_never_ran": false,
+  "awaiting": [],
+  "number": 6917,
+  "head_sha": "c4d13ae8b8912e9e3109ec0dd216efae3ada6c87",
+  "title": "ENG-11018: Make the cloud CLI agent-usable (--json everywhere, non-interactive off a TTY, --follow opt-in)",
+  "author": "amsraman",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "update_branch_offered": false,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-19T21:47:16Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "4aa7eaa",
+      "on_current_head": false
+    },
+    {
+      "by": "amsraman",
+      "state": "COMMENTED",
+      "at": "2026-08-19T22:38:41Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "8f690bb",
+      "on_current_head": false
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-19T23:03:54Z",
+      "association": "NONE",
+      "can_push": false,
+      "commit_id": "8f690bb",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-19T23:15:04Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "8f690bb",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-31T19:00:39Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "1176039",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-31T20:02:01Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "144e398",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-31T21:39:22Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "f4e107b",
+      "on_current_head": false
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "threads": {
+    "total": 13,
+    "unresolved": [
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P2 Report error deployment statuses as unsuccessful: when the API returns a failure status such as `build error` (contains `error` but not `failed`), the JSON path in apps.py:392 reports \"success\": true; use the same failure predicates as watch_deployment_status."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P1: When fetching the selected project fails, `--json` produces no document and still returns success because the broad exception handler swallows the error (project.py:207). Emit the JSON error result and a nonzero exit."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P1: When the invite endpoint returns an error detail without the word `failed`, this JSON branch reports `invited: true` and exits successfully (project.py:109). Detect the hosting error structurally."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P1: When `get_deployment_status` returns an error status such as `build error`, \"success\": \"failed\" not in status reports success (apps.py:392). Reuse the same failure predicate as `watch_deployment_status`."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P2: When stdout is reserved, a record carrying `extra={\"progress\": progress}` still replaces the reserved console with `progress.console` (reflex-base log.py:205). Route progress-bound records through the reserved stderr console."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P2: When `--json` deletes a missing app, `delete_app` exits from the not-found branches without emitting a document (apps.py:643). Emit a `deleted: false` payload before those exits."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P2: When `get_app_logs` returns `[]` after a request or decoding failure, this branch reports `error: null` as if no logs existed (apps.py:779). Preserve an error signal for those failure paths."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P2: The new --json output hardcodes \"deleted\": True instead of reflecting the actual server response (secrets.py:236); a 404/400 detail such as \"secret not found\" reports a deleted secret with exit code 0."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P2: In --json mode, when rollback/describe fail, the command raises Exit(1) before reaching the `if as_json:` block, so stdout stays empty (apps.py:202). Emit a document on the failure path too."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "author_replied": false,
+        "first_comment": "P3: This fragment is filed as `.feature` even though the change is breaking (default interactivity and JSON/output semantics change); rename to `+eng-11018-agent-friendly-cli.breaking.md`."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "success": 109,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 0
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-31T19:00:39Z",
+      "ask": "Must stay compatible with older reflex versions (anything imported from reflex_base treated specially); do compatibility testing of deploy with reflex 0.6.6.post1 and 0.7.7; refresh branch from main so the hosting-cli version is not older than published.",
+      "addressed": false,
+      "evidence": "Three commits landed after the review (144e398, f4e107b, merge-main c4d13ae at ~21:40Z) and cubic's re-review says its earlier issues were addressed; masenf's 21:39Z thread reply dismissed one compat concern. No comment or evidence of the requested 0.6.6/0.7.7 compatibility testing is visible, and masenf has not signalled the ask is satisfied."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-31T21:39:22Z",
+      "excerpt": "(review thread) a reflex_base that has the logging APIs writes to stderr by default anyway, so not really a concern."
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-31T20:02:01Z",
+      "excerpt": "All reported issues were addressed across 3 files (changes from recent commits)."
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-31T19:00:39Z",
+      "excerpt": "this needs to remain compatible with older reflex versions, otherwise they will lose the ability to deploy... test with reflex 0.6.6.post1 and 0.7.7... you just need to refresh from main"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-19T21:47:10Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 5/5 The PR appears safe to merge. (bot summary, not evidence)"
+    }
+  ],
+  "last_author_activity_at": "2026-08-31T21:40:10Z",
+  "last_maintainer_activity_at": "2026-08-31T21:39:22Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "MCP `get` does not expose the `mergeable` boolean; mergeable derived from mergeable_state (blocked => no conflicts).",
+    "First `get` returned mergeable_state=unknown; second call returned blocked.",
+    "Author is a MEMBER; branch lives in reflex-dev/reflex (not a fork).",
+    "10 unresolved bot threads (1 codex, 9 cubic), none replied to by author; cubic's later summary claims issues addressed but the threads themselves remain open.",
+    "last_author_activity_at approximated from the CI start time of head commit c4d13ae (merge of main).",
+    "Linked to Linear ENG-11018 only; no GitHub issue linked."
+  ]
+}

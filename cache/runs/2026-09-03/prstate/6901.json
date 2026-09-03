@@ -1,0 +1,112 @@
+{
+  "number": 6901,
+  "fetched_at": "2026-09-03T18:47:57Z",
+  "head_sha": "d1c4d05f77d7086057ce623a681bf930a0273593",
+  "title": "ENG-9166 feat(otel): browser tracing plugin \u2014 traceparent per event, web vitals, render timing (3/3)",
+  "author": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [
+    {
+      "number": 6227,
+      "title": "`opentelemetry-instrumentation-reflex`: full-stack OTel package",
+      "filed_by": "masenf",
+      "filer_is_author": false,
+      "relation": "Part of (not closes)"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-18T05:44:25Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "e8571d8",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-17T21:01:33Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "81df350",
+      "on_current_head": false
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-17T21:03:21Z",
+      "association": "NONE",
+      "can_push": false,
+      "commit_id": "81df350",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-18T22:18:13Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "2c0c192",
+      "on_current_head": false
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "maintainer approval (Alek99 reviewed, no approval)",
+    "stack: base is PR #6900 branch, not main"
+  ],
+  "threads": {
+    "total": 10,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 115,
+    "by_state": {
+      "success": 113,
+      "failure": 0,
+      "pending": 0,
+      "skipped": 2,
+      "cancelled": 0,
+      "action_required": 0,
+      "neutral": 0
+    },
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T21:01:27Z",
+      "excerpt": "Greptile Summary ... Confidence Score: 5/5 The PR appears safe to merge. (bot; not evidence)"
+    }
+  ],
+  "last_author_activity_at": "2026-09-02T19:23:19Z",
+  "last_maintainer_activity_at": "2026-08-18T05:44:25Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "GitHub MCP `get` does not expose the boolean `mergeable` field; mergeable inferred from mergeable_state (blocked != dirty => MERGEABLE).",
+    "Stacked PR 3/3: base branch is farhan/eng-9166-reflex-otel-3 (PR #6900), not main; cannot merge before #6899 and #6900.",
+    "All 10 review threads (bots + Alek99 P2s) resolved; author fixed or rebutted each.",
+    "New head commit d1c4d05 pushed 2026-09-02 after Alek99's last review; no re-review yet.",
+    "No requested reviewers."
+  ]
+}

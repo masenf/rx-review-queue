@@ -1,0 +1,72 @@
+{
+  "number": 7019,
+  "fetched_at": "2026-09-03T18:44:55Z",
+  "head_sha": "84808d64b1804b235b72ac4e7d9dd9994309ad2b",
+  "title": "Refresh outdated dependencies flagged on the release branch",
+  "author": "masenf",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": ["Alek99"],
+  "linked_issues": [],
+  "reviews": [
+    {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-01T19:25:23Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "0e7d0d9", "on_current_head": false},
+    {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-01T19:34:11Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "0e7d0d9", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-09-01T20:54:58Z", "association": "MEMBER", "can_push": true, "commit_id": "6cbffbc", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-09-02T06:09:33Z", "association": "MEMBER", "can_push": true, "commit_id": "a8f034e", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-09-02T06:11:33Z", "association": "MEMBER", "can_push": true, "commit_id": "a620bb7", "on_current_head": false},
+    {"by": "FarhanAliRaza", "state": "DISMISSED", "at": "2026-09-02T16:44:40Z", "association": "MEMBER", "can_push": true, "commit_id": "a620bb7", "on_current_head": false},
+    {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-02T17:04:37Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "21c566a", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-09-02T17:05:59Z", "association": "MEMBER", "can_push": true, "commit_id": "21c566a", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-09-02T17:35:27Z", "association": "MEMBER", "can_push": true, "commit_id": "21c566a", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-09-02T17:45:16Z", "association": "MEMBER", "can_push": true, "commit_id": "0ea239e", "on_current_head": false},
+    {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-02T17:50:10Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "0ea239e", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-09-02T17:52:38Z", "association": "MEMBER", "can_push": true, "commit_id": "f01712b", "on_current_head": false},
+    {"by": "masenf", "state": "COMMENTED", "at": "2026-09-02T18:07:35Z", "association": "MEMBER", "can_push": true, "commit_id": "c8f3e2f", "on_current_head": false}
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": ["re-approval from a maintainer with write access (FarhanAliRaza's approval was dismissed by a later push)", "requested review from Alek99", "merge of #7037 first (this diff still contains #7037's commits)"],
+  "threads": {"total": 9, "unresolved": []},
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 112,
+    "by_state": {"success": 110, "failure": 0, "pending": 0, "skipped": 2, "cancelled": 0, "action_required": 0, "neutral": 0},
+    "failing": [],
+    "pending": [],
+    "ai_reviewer_only": false
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {"by": "masenf", "association": "MEMBER", "at": "2026-09-02T17:35:27Z", "ask": "Move the outdated-pin checking logic into its own script runnable outside CI, define ignored package names in pyproject.toml, and error when a held package is at its latest version.", "addressed": true, "evidence": "Author replied on the thread that it was done in 0ea239e/f01712b and split out as #7037; thread is resolved."},
+    {"by": "masenf", "association": "MEMBER", "at": "2026-09-02T06:09:34Z", "ask": "Remove the es-toolkit pin in docs/app/rxconfig.py (was a workaround).", "addressed": true, "evidence": "Reply says removed in a620bb7; thread resolved and outdated."}
+  ],
+  "recent_comments": [
+    {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-01T19:25:19Z", "excerpt": "Greptile Summary (updated through 84808d6): Confidence Score 5/5, appears safe to merge, no blocking failure remains."},
+    {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-01T20:58:51Z", "excerpt": "Merging this PR will not alter performance (32 untouched, 8 skipped)"},
+    {"by": "masenf", "association": "MEMBER", "at": "2026-09-01T22:05:13Z", "excerpt": "CI status on 2d90cdf: one failure (unit-tests windows 3.14, test_get_config_loads_once_for_shared_context) and it is not this PR's; root cause is an order-dependent test."},
+    {"by": "masenf", "association": "MEMBER", "at": "2026-09-02T06:24:10Z", "excerpt": "Status on a620bb7: all CI green, all review threads resolved. Not blocked on anything I can act on; mergeable_state blocked is the required review from @Alek99."},
+    {"by": "masenf", "association": "MEMBER", "at": "2026-09-02T17:01:39Z", "excerpt": "Correcting an overstated claim about the Bun 1.4 lockfile... Your push reset FarhanAliRaza's approval, and 21c566a resets it again."},
+    {"by": "masenf", "association": "MEMBER", "at": "2026-09-02T18:36:05Z", "excerpt": "Reverted this PR's base back to main; stacking it on #7037's branch silently disabled almost all of its CI. Review #7037 first."}
+  ],
+  "last_author_activity_at": "2026-09-02T21:27:13Z",
+  "last_maintainer_activity_at": "2026-09-02T16:44:40Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "First `get` returned mergeable_state=unknown; second call returned blocked.",
+    "All review activity by a non-author human is FarhanAliRaza's now-DISMISSED review (approval reset by a subsequent push); every other review/thread is the author (masenf) replying to bots. human_reviewed=false reflects that no non-author human review or thread comment currently stands.",
+    "Head 84808d6 is a merge of origin/main pushed 2026-09-02T21:27Z; full CI (112 checks) ran on it and is green, which closes the 'no full CI on current head' gap the author flagged in the 18:36Z comment.",
+    "The 2 skipped checks are the conditionally-skipped macOS jobs (unit-tests-macos, reflex-docs-macos).",
+    "The diff still contains #7037's commits; the author asks that #7037 be reviewed and merged first.",
+    "Body declares a breaking change (Bun MIN_VERSION -> 1.4.0) with a reflex-base news/7019.breaking.md fragment.",
+    "Issues referenced in the body (#7002, #7003, #7022, #7023, #7024, #7026, #6764) are follow-up/blocker trackers, not closes/fixes links, so they are not listed as linked_issues."
+  ]
+}
