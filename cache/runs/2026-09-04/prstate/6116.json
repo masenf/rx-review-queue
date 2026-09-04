@@ -1,0 +1,244 @@
+{
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "conflicting_files": [
+  "pyproject.toml",
+  "tests/units/test_config.py",
+  "uv.lock"
+ ],
+ "auto_merge": false,
+ "review_decision": null,
+ "ci_never_ran": false,
+ "awaiting": [],
+ "number": 6116,
+ "head_sha": "78070444a442e5d1f14dc94ca591e0f11591ed9f",
+ "title": "add orjson",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": false,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "update_branch_offered": false,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-02-07T13:41:05Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "1d44fd4",
+   "on_current_head": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-02-12T21:21:52Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "1d44fd4",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-09T21:27:19Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "18ae582",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-31T19:37:18Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "5acd310",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-04T21:19:19Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "bcd6574",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-06T20:36:16Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "c9300be",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-20T20:29:01Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "f6a00e0",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-20T21:17:49Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "d85ddfb",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-20T22:30:24Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "cd86672",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-28T19:21:39Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "67bd72c",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-29T19:58:01Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "cec760f",
+   "on_current_head": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-08-29T20:46:35Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "7807044",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 41,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": true,
+    "author_replied": true,
+    "first_comment": "P2: The socket fast-path shortcut is defeated by the very payloads this PR is optimizing. The `b\"null\" not in out` check is meant to catch NaN/Inf (which orjson serializes as `null`), but it also fire",
+    "author_reply_excerpt": "Measured this. A 10 KB state delta with `None` values and no non-finite floats (200 rows), i.e. exactly the payload where the `b\"null\"` check fires unnecessarily: ``` orjson.dumps 7.8 us stdlib socket"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": true,
+    "first_comment": "P2: When a valid socket payload contains a literal `__reflex_nan__` string, this call routes it through the reviver and changes the string to `NaN`. Parse valid JSON without a reviver first, and only ",
+    "author_reply_excerpt": "The premise does not hold, and the suggested order would introduce the bug it is guarding against. Sentinels do not only arrive as bare tokens. The backend emits them as ordinary JSON strings, and esc"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "P2: The `orjson` optional dependency is declared on `reflex`, but the module that actually imports orjson is `reflex-base` (`packages/reflex-base/src/reflex_base/utils/format.py` does `import orjson` ",
+    "author_reply_excerpt": null
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "success": 107,
+   "failure": 2,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [
+   "example-counter-and-nba-proxy (ubuntu-latest, 3.14)",
+   "example-counter-and-nba-proxy (windows-latest, 3.14)"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "failing_job_findings": [
+  {
+   "check": "example-counter-and-nba-proxy (ubuntu-latest, 3.14); example-counter-and-nba-proxy (windows-latest, 3.14)",
+   "cause": "Backend never starts: `import reflex.app` raises `ModuleNotFoundError: No module named 'engineio'` at reflex/app.py:31 (`from engineio import json as engineio_json`) in the example-app environment, so port 8000 never listens and the job fails after 900s.",
+   "prs_fault": true
+  }
+ ],
+ "outstanding_asks": [
+  {
+   "by": "adhami3310",
+   "association": "MEMBER",
+   "at": "2026-02-12T18:59:47Z",
+   "ask": "orjson loses NaN handling, which matters for numpy (why JSON5 was used).",
+   "addressed": true,
+   "evidence": "Author replied the same day that orjson was deliberately not used everywhere; later commits added non-finite float sentinel handling (`__reflex_nan__`) and tests, and masenf (2026-06-04) said this PR is the next step now that JSON5 is gone from the frontend."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "benedikt-bartscher",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-29T21:11:12Z",
+   "excerpt": "blocked by https://github.com/reflex-dev/reflex/pull/6933"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-06-04T04:32:48Z",
+   "excerpt": "now that we've eliminated JSON5 in the frontend code, I think this PR is the next step for optimizing the serialization path."
+  },
+  {
+   "by": "benedikt-bartscher",
+   "association": "CONTRIBUTOR",
+   "at": "2026-04-25T21:12:04Z",
+   "excerpt": "related https://github.com/reflex-dev/reflex/pull/6339"
+  },
+  {
+   "by": "adhami3310",
+   "association": "MEMBER",
+   "at": "2026-02-12T18:59:47Z",
+   "excerpt": "the issue with orjson is that we lose NaN handling which is relevant for numpy, which is why we were using JSON5 as well"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-02-07T13:41:01Z",
+   "excerpt": "Confidence Score: 5/5 This looks safe to merge. (bot summary, not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-29T21:11:12Z",
+ "last_maintainer_activity_at": "2026-06-04T04:32:48Z",
+ "days_waiting_on_maintainer": 5.3,
+ "notes": [
+  "Author declares the PR blocked by #6933 (2026-08-29); treat as not ready regardless of review state.",
+  "merge_state DIRTY: has merge conflicts with main (first `get` returned unknown, second returned dirty).",
+  "No PR body.",
+  "Maintainers (adhami3310, masenf) only left issue comments, no reviews or review-thread comments, so human_reviewed=false per the rule.",
+  "3 unresolved cubic threads; author rebutted 2 of them (one-click resolves), 1 (orjson extra declared on reflex not reflex-base, outdated) has no reply.",
+  "example-counter-and-nba-proxy fails on both OSes with the same engineio import error introduced by this PR.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

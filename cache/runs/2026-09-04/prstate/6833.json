@@ -1,0 +1,143 @@
+{
+ "number": 6833,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "65083f476a4470f9ee2b1ee68f8f6b1c7e581b57",
+ "title": "fix(recharts): stop routing component props to wrapperStyle",
+ "author": "YoussefMohamed2k19",
+ "author_association": null,
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "pyi_hashes.json"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6575,
+   "title": "Recharts component props (strokeDasharray, tickFormatter) are routed to wrapperStyle and never reach the Recharts component",
+   "filed_by": "masonse",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-03T10:37:29Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "23d2192",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-03T10:42:22Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "23d2192",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-03T11:03:23Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b2b834c",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-03T11:14:13Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4c9fa10",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-03T11:17:31Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4c9fa10",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-03T11:33:07Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "65083f4",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 9,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: A reactive string such as `State.formatter` still reaches Recharts as `tickFormatter={state.formatter}`, where Recharts expects a function. The `Var` branch should validate a callable `_var_type` instead of allowing every `Var`."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P3: Type checkers still accept the Python callables this branch now rejects at runtime because the generated `create` signature includes bare `Callable`. An explicit typed `tick_formatter` parameter/overload should expose only raw `str` and function-valued `Var` inputs."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": null,
+  "total": 2,
+  "by_state": {
+   "success": 2,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-03T10:37:25Z",
+   "excerpt": "Confidence Score: 4/5. Not yet safe to merge because reactive string Vars remain accepted for tick_formatter even though they reach Recharts as non-callable values."
+  }
+ ],
+ "last_author_activity_at": "2026-08-03T11:25:02Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 31.7,
+ "notes": [
+  "Fork PR; only cubic and Greptile check runs on head 65083f4 -- Actions workflows never ran.",
+  "Merge conflicts with main (mergeable_state=dirty).",
+  "author_association unknown: author has no comments or reviews on the PR to read it from.",
+  "Author pushed 4 commits in ~1h responding to bot review threads; 7 of 9 bot threads resolved, 2 cubic threads on the final commit remain open with no author reply.",
+  "No human has reviewed.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

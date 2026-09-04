@@ -1,0 +1,47 @@
+{
+ "number": 7036,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "4ed537a69f40f3b8549a622561c2d15308136869",
+ "title": "perf(state): skip unchanged scalar writes and resolve stale computed vars lazily",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": ["reflex/state.py"],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {"total": 6, "unresolved": [
+   {"by": "greptile-apps", "outdated": false, "author_replied": false, "first_comment": "P1 Failed recomputation loses stale state: when a stale computed getter raises, _resolve_stale has already removed its stale marker while leaving the old cache intact."},
+   {"by": "chatgpt-codex-connector", "outdated": false, "author_replied": false, "first_comment": "P1 Keep dynamically added dependencies in the forward map: add_dependency() after class init updates _var_dependencies but not _computed_var_deps, so a write to the added dependency never recomputes it."},
+   {"by": "chatgpt-codex-connector", "outdated": false, "author_replied": false, "first_comment": "P2 Skip dependencies already resolved from the stale snapshot: a dependent resolved before its dependency causes the getter to run twice, defeating the optimization."},
+   {"by": "chatgpt-codex-connector", "outdated": false, "author_replied": false, "first_comment": "P2 Preserve the sign when comparing zero-valued floats: 0.0 == -0.0 so assigning one over the other now returns early and a computed var changing only between these values keeps its stale cache."},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P1 duplicate of the add_dependency forward-map finding."},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 duplicate of the failed-recomputation-loses-stale-state finding."}
+ ]},
+ "checks": {"rollup": "PENDING", "total": 2, "by_state": {"success": 1, "neutral": 1}, "failing": [], "pending": [], "ai_reviewer_only": true},
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+   {"by": "masenf", "association": "MEMBER", "at": "2026-09-02T18:39:30Z", "excerpt": "this is definitely a behavior change that will affect some apps ... that use self-assignment to manually trigger a cascade of dependent computed vars ... the API for doing that is not currently very nice."},
+   {"by": "FarhanAliRaza", "association": "MEMBER", "at": "2026-09-02T19:02:57Z", "excerpt": "@masenf droped that. Other changes are worth a look i think."}
+ ],
+ "last_author_activity_at": "2026-09-02T19:02:57Z",
+ "last_maintainer_activity_at": "2026-09-02T18:39:30Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+   "head_sha unchanged since yesterday (4ed537a); only new conversation. masenf raised that self-assignment (self.x = self.x) is used in the wild to force-cascade dependent computed vars with untracked dependencies, and this PR's scalar cutoff silently breaks that. FarhanAliRaza replied the concerning behavior was 'dropped' and asked masenf to look at the rest — but the head commit is unchanged, so this likely refers to something already in this head rather than a new push; unverified which specific mechanism he means.",
+   "Still exactly the same 6 unresolved bot threads as yesterday (2 P1s: failed-recomputation loses stale state on a raising getter, and add_dependency() not updating the reverse dependency map — both would need fixes before this is safe). Still only 2 AI-reviewer check runs on this head 2+ days after push: CI has never run (workflows awaiting approval), independent of the conflict.",
+   "Still conflicting with main (reflex/state.py) — base recorded on the PR (174f2c5) is far behind today's main (8853e145)."
+ ]
+}

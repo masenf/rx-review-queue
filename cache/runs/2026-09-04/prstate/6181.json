@@ -1,0 +1,92 @@
+{
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "body_has_repro": false,
+ "conflicting_files": [
+  "tests/units/compiler/test_compiler.py"
+ ],
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "changes_requested_outstanding": false,
+ "awaiting": [],
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "number": 6181,
+ "head_sha": "74730305f3e0f5f39ad73328d3758f8a7abf8eb8",
+ "title": "Create separate context providing components for each state",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "update_branch_offered": false,
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-03-16T16:34:21Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b78ebc6",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-26T07:45:56Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "7473030",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-26T07:15:24Z",
+   "excerpt": "Confidence Score: 5/5 - The PR appears safe to merge (bot summary; not evidence)"
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-08-26T07:16:48Z",
+   "excerpt": "Merging this PR will not alter performance"
+  }
+ ],
+ "last_author_activity_at": "2026-08-26T07:12:33Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Opened 2026-03-16; force-pushed/rewritten to a single commit on 2026-08-26 addressing both March greptile threads (both now resolved, outdated).",
+  "mergeable_state 'unknown' then 'dirty': conflicts with main as of today despite the 08-26 rewrite (base sha 12d29c7 is stale).",
+  "No human comments or reviews at all besides the author; author is MEMBER.",
+  "CI green on head (111 check runs, 2 skipped macos); page 2 not fetched.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

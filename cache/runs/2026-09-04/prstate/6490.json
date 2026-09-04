@@ -1,0 +1,89 @@
+{
+ "number": 6490,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "62019f3edc491eaebf30885a24325854a918346b",
+ "title": "Support Redis Cluster",
+ "author": "riebecj",
+ "author_association": null,
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/config.py",
+  "reflex/istate/manager/redis.py",
+  "reflex/utils/token_manager.py",
+  "tests/units/reflex_cli/conftest.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-05-11T23:09:52Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b58c1c6",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "maintainer: first human review (none in ~4 months)",
+  "author: resolve merge conflicts with main"
+ ],
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 70,
+  "by_state": {
+   "success": 67,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 1
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-05-11T23:01:45Z",
+   "excerpt": "Merging this PR will not alter performance"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-05-11T23:09:46Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 4/5 Safe to merge (bot summary, not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-05-26T14:19:21Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 100.6,
+ "notes": [
+  "mergeable_state 'unknown' then 'dirty' (conflicts); raw mergeable boolean not exposed by tool. CI was green on head 62019f3 (2026-05-26) before conflicts appeared.",
+  "Author association could not be determined: riebecj has no comments/reviews on the PR and the get output does not expose author_association; fork PR (riebecj/reflex), treated as external contributor.",
+  "No human has reviewed or commented since the PR opened 2026-05-11; both greptile threads were resolved by the author applying suggestions.",
+  "days_waiting_on_maintainer computed from last author activity 2026-05-26 to 2026-09-03.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

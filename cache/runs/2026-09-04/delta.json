@@ -1,0 +1,44 @@
+{
+ "previous_run": "2026-09-03",
+ "disappeared": [
+  {
+   "number": 7019,
+   "title": "Refresh outdated dependencies flagged on the release branch",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7037,
+   "title": "Replace the outdated-dependency shell filters with a configured script",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7038,
+   "title": "docs: describe the custom domain records and the verification states the dashboard now reports",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [],
+ "draft_flips": [],
+ "entered_top15": [],
+ "left_top15": [
+  7037,
+  7008,
+  7016,
+  6996,
+  7035,
+  7006,
+  7038,
+  6960,
+  6929,
+  6898,
+  6946,
+  6861,
+  6708,
+  6841,
+  6968
+ ],
+ "counts": {
+  "previous_open": 91,
+  "current_open": 88
+ }
+}

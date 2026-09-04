@@ -1,0 +1,123 @@
+{
+ "number": 6723,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "c68712542c0cf3d1c764b4a8db68a1ebbb76fbbb",
+ "title": "feat(docs): improve a11y and lazy-load Inkeep search widget",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "docs/app/reflex_docs/templates/docpage/docpage.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-09T07:49:58Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "db24551",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-09T22:43:08Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "b377236",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-07-10T14:24:31Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "b377236",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author: resolve merge conflicts with main",
+  "masenf: re-review / resolve open thread after author's fix",
+  "Alek99: requested review outstanding"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "masenf",
+    "outdated": false,
+    "author_replied": true,
+    "first_comment": "the text color in the placeholder doesn't quite match the text color after the widget loads (before/after screenshots). There's also a little blip between the hiding of the placeholder and the showing of the actual widget that would be nice to eliminate if possible"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 108,
+  "by_state": {
+   "success": 106,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-09T22:43:03Z",
+   "ask": "Match placeholder text color to loaded widget and remove the blip during placeholder->widget handoff",
+   "addressed": true,
+   "evidence": "Author replied 'fixed' on 2026-07-10T14:24:31Z and pushed 18f162c ('smooth Inkeep search handoff') and c687125 ('match Inkeep kbd hint'); thread still unresolved (one click to resolve)."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-07-09T07:48:38Z",
+   "excerpt": "Merging this PR will not alter performance (26 untouched, 8 skipped benchmarks)"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-09T07:49:53Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 Safe to merge (bot summary, not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-07-10T14:24:31Z",
+ "last_maintainer_activity_at": "2026-07-09T22:43:08Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "mergeable_state was 'unknown' on first get; second get returned 'dirty' (merge conflicts with main). The MCP get output does not expose the raw `mergeable` boolean; CONFLICTING inferred from mergeable_state=dirty.",
+  "Label skip-changelog present; changelog check not in check list.",
+  "Only unresolved thread is masenf's; author replied 'fixed' and pushed follow-up commits, so it is one click to resolve.",
+  "No counting approval; masenf's review is COMMENTED on an earlier commit b377236.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

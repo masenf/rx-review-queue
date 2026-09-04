@@ -1,0 +1,135 @@
+{
+ "number": 6733,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "f315ecfab5eef15419323762708115492007d458",
+ "title": "ENG-9917 fix: run plugin post_compile hooks at most once per app instance",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "reflex/app.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-10T18:52:26Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "a92422e",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-10T18:57:13Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "3373417",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-10T19:46:30Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "bea1145",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-23T18:34:29Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "bea1145",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author response to masenf design concern",
+  "conflict resolution"
+ ],
+ "threads": {
+  "total": 4,
+  "unresolved": [
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "P2: Track completed post_compile hooks individually. Because the latch is only set after the whole plugin loop succeeds, a retry after a later plugin raises will start from the first plugin again ... duplicates the earlier mutation"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1: Cached plugins stay skipped. After the first successful app() call, this gate returns the cached ASGI app and never enters _assemble_asgi_app() again. If get_config().plugins is changed on the same App instance ... the new plugin is never inspected"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 107,
+  "by_state": {
+   "success": 105,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-23T18:34:29Z",
+   "ask": "Questions the design: recompiling on the same instance without re-running post_compile hooks means newly added pages miss plugin effects; asks whether a legit use case hits this or only tests; suggests running hooks whenever _compile runs, or resetting app state (pages/routes/middleware/lifespan) to make re-__call__ safe",
+   "addressed": false,
+   "evidence": "Head commit f315ecf (pushed 2026-07-23T20:16, ~1h40m after the review) only fixes unhashable-plugin tracking and adds a news fragment; no reply from author to masenf"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-23T18:34:29Z",
+   "excerpt": "It's potentially problematic that we allow a recompile on the same instance, but don't re-run the hooks ... Is there a legit use case where this hits? or does it just happen in testing?"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-10T18:52:20Z",
+   "excerpt": "Confidence Score: 5/5. This looks safe to merge."
+  }
+ ],
+ "last_author_activity_at": "2026-07-23T20:16:55Z",
+ "last_maintainer_activity_at": "2026-07-23T18:34:29Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Author is a MEMBER (maintainer PR). Merge conflicts with main (mergeable_state=dirty).",
+  "CI green on head f315ecf (105 success, 2 skipped macos jobs).",
+  "masenf's design review (on bea1145, one commit before head) is unanswered; the codex outdated thread was addressed by commit bea1145 per its message but was never resolved.",
+  "Linked issue is Linear ENG-9917, not a GitHub issue.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

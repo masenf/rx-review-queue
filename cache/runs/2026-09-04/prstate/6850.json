@@ -1,0 +1,137 @@
+{
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "body_has_repro": false,
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/components/memo.py",
+  "packages/reflex-base/src/reflex_base/constants/installer.py",
+  "pyi_hashes.json"
+ ],
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "changes_requested_outstanding": false,
+ "awaiting": [],
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "number": 6850,
+ "head_sha": "77dbebf715d2001d7744dd1596d0ea7ba020134e",
+ "title": "ENG-10883: Make auto-memoized component wrappers transparent to injected props and refs",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "update_branch_offered": false,
+ "linked_issues": [
+  {
+   "number": 6849,
+   "title": "Auto-memoized stateful components drop props/refs injected by Radix `asChild` Slot (form field submits empty form_data)",
+   "filed_by": "masenf",
+   "filer_is_author": true
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-05T20:35:13Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "5d326d7",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-05T22:20:52Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "a588fdd",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-26T01:14:27Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "77dbebf",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 5,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: When an own event handler is falsy, this null-only guard composes it and `composeHandlers` later calls the falsy value as a function. Preserve falsy handlers as absent, or only compose callable handler values (state.js:1443)"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: \"reflex-base >= 0.9.8.post63.dev0\" is a development-release lower bound in plotly's published metadata. The release gate check_dev_pins rejects any .dev lower-bound pin and will fail when publishing reflex-components-plotly (pyproject.toml:13)"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P3: This guard matches a hard-coded, spacing-sensitive substring of the generated wrapper source, so any cosmetic compiler/formatting change silently turns the count to 0 and fails the test (test_memoize_edge_cases.py:629)"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-08-26T01:11:23Z",
+   "excerpt": "Follow-up: production-readiness pass. main merged in (the branch was ~50 commits behind), plus four defects found reviewing the design against the emitted code"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-26T01:13:54Z",
+   "excerpt": "Confidence Score: 5/5 - The PR appears safe to merge (bot summary; not evidence)"
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-26T01:14:27Z",
+   "excerpt": "3 issues found across 8 files (changes from recent commits)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-26T01:11:23Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "mergeable_state 'unknown' then 'dirty': conflicts with main again (merged main 2026-08-25, base moved since).",
+  "3 unresolved cubic threads on the current head (2x P2, 1x P3), no author reply yet; the .dev pin one is acknowledged pre-emptively in the author's 08-26 comment ('--check-dev-pins correctly flags it for re-pinning at release') but the thread itself is untouched.",
+  "Closes #6849 which the author filed himself (ENG-10883 linear link).",
+  "No other maintainer review or comment; author is MEMBER.",
+  "CI green (111 check runs, 2 skipped macos); page 2 not fetched.",
+  "Very large body with performance analysis; body_has_repro false (repro lives in the linked issue).",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

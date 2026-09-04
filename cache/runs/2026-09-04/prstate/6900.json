@@ -1,0 +1,132 @@
+{
+ "number": 6900,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "932444badfaff724e8bc42a4f6818a7b18985c7a",
+ "title": "ENG-9166 feat(otel): compile spans (2/3)",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "uv.lock"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6227,
+   "title": "`opentelemetry-instrumentation-reflex`: full-stack OTel package",
+   "filed_by": "masenf",
+   "filer_is_author": false,
+   "relation": "Part of (not closes)"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-08-18T05:44:21Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "acf9a22",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-17T21:00:23Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e88ec4f",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-17T21:02:34Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "e88ec4f",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-17T21:09:47Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e88ec4f",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author: address Alek99 P2 (wrap stateful-marker evaluate_pages path in span) - unanswered since 2026-08-18",
+  "maintainer approval",
+  "stack: base is PR #6899 branch"
+ ],
+ "threads": {
+  "total": 12,
+  "unresolved": [
+   {
+    "by": "Alek99",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "[P2] Include the stateful-marker backend evaluation in `reflex.compile.evaluate_pages`. When `.web/backend` exists and `stateful_pages.json` is present, the earlier branch evaluates each marked page ... and returns at line 1171 before this span is entered. I reproduced that normal `backend_startup` path..."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 114,
+  "by_state": {
+   "success": 111,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 1
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "Alek99",
+   "association": "MEMBER",
+   "at": "2026-08-18T05:44:21Z",
+   "ask": "Wrap the stateful-marker page-evaluation loop in the reflex.compile.evaluate_pages span (or share a helper) and add coverage for the early-return marker path.",
+   "addressed": false,
+   "evidence": "Thread unresolved, no author reply, head commit predates the review (single commit 932444b authored 2026-08-17; commit_id reviewed was acf9a22, branch since rebased)."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-17T21:00:19Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-17T21:54:41Z",
+ "last_maintainer_activity_at": "2026-08-18T05:44:21Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "GitHub MCP `get` does not expose the boolean `mergeable` field; mergeable inferred from mergeable_state (blocked != dirty => MERGEABLE).",
+  "Stacked PR 2/3: base branch farhan/eng-9166-reflex-otel (PR #6899); one commit on top.",
+  "cubic AI reviewer check concluded neutral (not a failure).",
+  "Ball is with the author: Alek99's P2 thread from 2026-08-18 has no reply and remains unresolved.",
+  "Checks re-ran 2026-09-02 (base branch updated) and are green.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

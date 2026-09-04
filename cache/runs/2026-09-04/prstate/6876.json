@@ -1,0 +1,134 @@
+{
+ "number": 6876,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "0441c5a562418cdf283b5b8e77d9155cc0173d06",
+ "title": "fix: render a hidden rx.input without the Radix wrapper",
+ "author": "rawsun007",
+ "author_association": "NONE",
+ "body_present": true,
+ "body_has_repro": true,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6874,
+   "title": "Hidden rx.input is not properly hidden",
+   "filed_by": "luator",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-12T08:36:22Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "82dfb96",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-12T08:38:28Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "82dfb96",
+   "on_current_head": false
+  },
+  {
+   "by": "rawsun007",
+   "state": "COMMENTED",
+   "at": "2026-08-12T08:42:52Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "0441c5a",
+   "on_current_head": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-08-14T17:07:17Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "0441c5a",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "maintainer decision on approach (masenf questioned need; author replied 08-15)",
+  "maintainer to approve fork workflow runs (CI never ran)",
+  "resolve 1 stale cubic thread"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": true,
+    "first_comment": "P2: Static hidden inputs now fail when used as `rx.form.control` children: this return produces `elements.Input`, but `FormControl.create` only accepts `TextFieldRoot` or `DebounceInput` and raises `TypeError`."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": null,
+  "total": 2,
+  "by_state": {
+   "success": 2,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-08-14T17:07:17Z",
+   "ask": "Is this just discoverability? rx.el.input(type=\"hidden\") already works today",
+   "addressed": true,
+   "evidence": "Author replied 2026-08-15T04:33 explaining rx.input(type=hidden) silently renders a visible bar, offered to switch to docs/warning or close; no maintainer follow-up since"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "rawsun007",
+   "association": "NONE",
+   "at": "2026-08-15T04:33:23Z",
+   "excerpt": "Yeah, rx.el.input(type=\"hidden\") works fine ... What #6874 runs into is that rx.input(type=\"hidden\") accepts the prop and still renders a visible bar ... not attached to this approach."
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-12T08:36:18Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-15T04:33:23Z",
+ "last_maintainer_activity_at": "2026-08-14T17:07:17Z",
+ "days_waiting_on_maintainer": 20.0,
+ "notes": [
+  "Fork PR (rawsun007/reflex); only cubic + Greptile check runs on head -> real CI never ran",
+  "First get returned mergeable_state=unknown; second get returned blocked",
+  "Unresolved cubic thread is stale: author fixed FormControl in 0441c5a and replied; one click to resolve",
+  "Author flags the FormControl loosening (accept any input child) is wider than the bug strictly needs; maintainer has not weighed in",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "number": 6840,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "2dceb071d93f25464a92e75d9551daed62382a5e",
+ "title": "fix: replace queued write with latest state in StateManagerDisk",
+ "author": "honma89",
+ "author_association": "NONE",
+ "body_present": true,
+ "body_has_repro": true,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "tests/units/test_state.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6839,
+   "title": "StateManagerDisk debounced writes can persist stale state after repeated set_state calls",
+   "filed_by": "harsh21234i",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-04T10:02:23Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "fb756ae",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 0,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": null,
+  "total": 2,
+  "by_state": {
+   "success": 2,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-04T11:17:06Z",
+   "ask": "Fix pyright error in test (use object.__setattr__ instead of __dict__) and actually add the news fragment mentioned in the body",
+   "addressed": null,
+   "evidence": "Author replied 2026-08-06 saying both were fixed and pushed 2dceb07; changed_files is still 2 so whether the news fragment landed is unverified (no CI ran to check)"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-04T11:17:06Z",
+   "excerpt": "Implementation looks correct. One CI issue remains: pyright flags the test because it assigns through state_manager.__dict__ ... PR body mentions a news fragment, but I don't see one"
+  },
+  {
+   "by": "honma89",
+   "association": "NONE",
+   "at": "2026-08-06T02:58:48Z",
+   "excerpt": "Swapped both occurrences [to object.__setattr__] ... I did write [the news fragment] locally but never git added it ... Staged it properly now"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-04T09:55:58Z",
+   "excerpt": "Confidence Score: 5/5. The PR appears safe to merge."
+  }
+ ],
+ "last_author_activity_at": "2026-08-06T02:58:48Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 29.1,
+ "notes": [
+  "Fork PR; only cubic and Greptile check runs exist on head 2dceb07 -- GitHub Actions workflows never ran (awaiting approval).",
+  "Merge conflicts with main (mergeable_state=dirty).",
+  "Issue #6839 filer harsh21234i is the only reviewer so far (CONTRIBUTOR, not a maintainer).",
+  "No human maintainer has engaged.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

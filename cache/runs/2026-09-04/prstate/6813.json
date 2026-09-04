@@ -1,0 +1,97 @@
+{
+ "number": 6813,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "974bdb5d925d227e30d17d6b9408078b1b1f1523",
+ "title": "fix(format): recognize quote and backtick wrapping in is_wrapped",
+ "author": "eeshsaxena",
+ "author_association": null,
+ "body_present": true,
+ "body_has_repro": true,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-26T15:27:03Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "804d7c6",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-31T20:31:20Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "974bdb5",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 2,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: Already-wrapped strings containing escaped quotes/backticks are still double-wrapped because this rejects every interior delimiter, including escaped ones. Consider rejecting only unescaped interior delimiters (and ensuring the final delimiter itself is unescaped)."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": null,
+  "total": 2,
+  "by_state": {
+   "success": 2,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-26T15:26:58Z",
+   "excerpt": "Confidence Score: 4/5. Does not appear safe to merge until escaped quote and backtick delimiters are recognized without double-wrapping valid content."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-07-30T19:05:42Z",
+   "excerpt": "Merging this PR will not alter performance (comparing 804d7c6 with main 416eb34)"
+  }
+ ],
+ "last_author_activity_at": "2026-07-31T20:25:18Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 34.3,
+ "notes": [
+  "Fork PR; only cubic and Greptile check runs on head 974bdb5 -- Actions workflows never ran for the head commit (CodSpeed did run on the earlier commit 804d7c6 on 2026-07-30).",
+  "author_association unknown: author has no comments or reviews on the PR.",
+  "Greptile's identical escaped-delimiter finding (P1) on the first commit was resolved without a code change; cubic re-raised it on the head commit and it is open.",
+  "Author noted they could not run the full unit suite locally (Python 3.14 / pydantic v1).",
+  "No human has reviewed.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

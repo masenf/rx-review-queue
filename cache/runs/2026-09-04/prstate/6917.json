@@ -1,0 +1,48 @@
+{
+ "number": 6917,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "128ae63e801bfbe95f6ea65f13857b80b5396e3b",
+ "title": "ENG-11018: Make the cloud CLI agent-usable (--json everywhere, non-interactive off a TTY, --follow opt-in)",
+ "author": "amsraman",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "CLEAN",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": "APPROVED",
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+   {"by": "greptile-apps", "state": "COMMENTED", "at": "2026-08-19T21:47:16Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "4aa7eaae", "on_current_head": false},
+   {"by": "amsraman", "state": "COMMENTED", "at": "2026-08-19T22:38:30Z", "association": "MEMBER", "can_push": true, "commit_id": "8f690bb0", "on_current_head": false},
+   {"by": "cubic-dev-ai", "state": "COMMENTED", "at": "2026-08-19T23:15:04Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "8f690bb0", "on_current_head": false},
+   {"by": "masenf", "state": "COMMENTED", "at": "2026-08-31T19:00:39Z", "association": "MEMBER", "can_push": true, "commit_id": "11760391", "on_current_head": false, "note": "flagged backward-compat risk with older reflex/reflex-base; asked for compat testing against 0.6.6.post1 and 0.7.7"},
+   {"by": "masenf", "state": "DISMISSED", "at": "2026-09-03T23:25:58Z", "association": "MEMBER", "can_push": true, "commit_id": "c4d13ae8", "on_current_head": false},
+   {"by": "amsraman", "state": "COMMENTED", "at": "2026-09-03T23:39:00Z", "association": "MEMBER", "can_push": true, "commit_id": "128ae63e", "on_current_head": true, "note": "walked every cubic/codex finding one by one: fixed 5, declined 4 with written reasoning (each tied to a real return-type ambiguity in the hosting client, filed rather than half-fixed)"},
+   {"by": "masenf", "state": "APPROVED", "at": "2026-09-04T00:15:22Z", "association": "MEMBER", "can_push": true, "commit_id": "128ae63e", "on_current_head": true}
+ ],
+ "counting_approval": true,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [],
+ "threads": {"total": 13, "unresolved": []},
+ "checks": {"rollup": "SUCCESS", "total": 112, "by_state": {"success": 110, "skipped": 2}, "failing": [], "pending": [], "ai_reviewer_only": false},
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+   {"by": "amsraman", "association": "MEMBER", "at": "2026-09-03T23:16:56Z", "excerpt": "Ran the compatibility check masenf asked for (0.6.6.post1, 0.7.7, published reflex-base 0.9.10.post1). No difference on any probe except one gap: --loglevel debug against a reflex-base that predates the reservation writes two debug lines ahead of the JSON document. Narrow, documented in the news fragment."}
+ ],
+ "last_author_activity_at": "2026-09-03T23:41:56Z",
+ "last_maintainer_activity_at": "2026-09-04T00:15:22Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+   "Major change since 2026-09-03: masenf dismissed his own Aug 31 review after amsraman's compatibility write-up, then walked all 13 review threads (all now resolved) and APPROVED on the current head 128ae63e at 2026-09-04T00:15:22Z. This is now a counting approval on a green, conflict-free, fully-threaded-resolved PR.",
+   "The compat testing masenf asked for is done and posted as a comment with a results table across 0.6.6.post1 / 0.7.7 / 0.9.10.post1, both with and without this branch's reflex-base build; one narrow documented gap (debug-level logs before the JSON document on an old reflex-base) is written into the news fragment rather than left silent.",
+   "3 fragments present for 2 expected (reflex-base, reflex-hosting-cli): the single feature fragment was split into +agent-friendly-cli.feature.md and +agent-friendly-cli.breaking.md after cubic flagged the breaking defaults (interactivity, --follow) as misfiled under 'feature'; not a collision.",
+   "0 commits behind main; 12 commits ahead. No linked GitHub issue (Linear ENG-11018 only)."
+ ]
+}

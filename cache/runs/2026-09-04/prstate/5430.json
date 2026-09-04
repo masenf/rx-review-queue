@@ -1,0 +1,89 @@
+{
+ "number": 5430,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "32ff737d75542cbf0e840ab144a256d1661c8beb",
+ "title": "[0.9] remove ids refs from form_data",
+ "author": "Lendemor",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "pyi_hashes.json"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 5418,
+   "title": "Exception: \"ReferenceError: refs is not defined\"",
+   "filed_by": "bertbarabas",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2025-06-10T16:36:59Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "32ff737",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "author: rebase onto current main (15-month-old branch, conflicts)",
+  "maintainer: human review",
+  "CI re-run on a fresh head"
+ ],
+ "threads": {
+  "total": 0,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": null,
+  "total": 0,
+  "by_state": {
+   "success": 0,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2025-06-10T15:34:44Z",
+   "excerpt": "Merging #5430 will not alter performance; 8 untouched benchmarks"
+  }
+ ],
+ "last_author_activity_at": "2025-06-10T16:32:47Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "mergeable_state 'unknown' then 'dirty' -> CONFLICTING/DIRTY.",
+  "author_association not returned by the API; inferred MEMBER because the head branch lives in reflex-dev/reflex itself (author has push access).",
+  "Zero check runs currently attached to head 32ff737 although codspeed commented on it in June 2025 -> CI did run then but results are no longer available; rollup unknown.",
+  "Title tag '[0.9]' marks this as a breaking change parked for the 0.9 release; no human review or comment in 15 months; only bot activity.",
+  "Linked issue #5418 filer is bertbarabas (NONE), body includes a repro zip; PR body itself has no repro.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

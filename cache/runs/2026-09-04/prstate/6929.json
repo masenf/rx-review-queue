@@ -1,0 +1,90 @@
+{
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "body_has_repro": false,
+ "conflicting_files": [],
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "changes_requested_outstanding": false,
+ "awaiting": [],
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "number": 6929,
+ "head_sha": "dc3bc6a23eee6cccc30e62094eee1c9c20503d74",
+ "title": "fix(types): skip ForwardRef resolution for unannotated attribute probes",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "update_branch_offered": false,
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-22T12:29:25Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b3c157a",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-22T12:44:06Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b3c157a",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-28T08:21:57Z",
+   "excerpt": "Confidence Score: 4/5 - not yet safe to merge because the annotation-name snapshot remains stale when annotations change after the first probe (bot; not evidence)"
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-08-28T08:23:28Z",
+   "excerpt": "Merging this PR will not alter performance"
+  }
+ ],
+ "last_author_activity_at": "2026-08-28T08:20:11Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 6.8,
+ "notes": [
+  "PR body is empty apart from the cubic badge; title is the only description. No linked issue.",
+  "mergeable_state 'unknown' then 'blocked': no conflicts, waiting on review.",
+  "Both bot threads resolved (greptile stale-cache concern resolved without a visible author reply; cubic py3.10-3.13 exec NameError fixed in a6b988d).",
+  "Zero human/maintainer activity since opening 2026-08-22; author merged main twice (08-24, 08-28).",
+  "CI green (111 check runs, 2 skipped macos); page 2 of check runs not fetched.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

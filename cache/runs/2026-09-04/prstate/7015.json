@@ -1,0 +1,113 @@
+{
+ "number": 7015,
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "head_sha": "8336f9b7486010410c5fe4b0591ece84ebc42bb8",
+ "title": "Fix Var hashing to prevent silent data loss and enable hashability",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-01T08:23:11Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "daf6fdf",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-01T08:31:25Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "8336f9b",
+   "on_current_head": true,
+   "is_author": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "maintainer review (no non-author human has reviewed)",
+  "approval from a write-access reviewer",
+  "CI: 1 failing job (integration-app-harness (redis, 3.12, 1)) - needs re-run by someone with permission; author could not re-run (403)"
+ ],
+ "threads": {
+  "total": 1,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "success": 108,
+   "failure": 1,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [
+   "integration-app-harness (redis, 3.12, 1)"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "integration-app-harness (redis, 3.12, 1)",
+   "job_id": 99790754535,
+   "run_id": 33487456016,
+   "cause": "tests/integration/test_dynamic_routes.py::test_on_load_navigate_non_dynamic[prod] failed after 3 reruns with selenium StaleElementReferenceException ('stale element not found in the current frame', chrome 151); 78 other tests in the job passed.",
+   "prs_fault": false,
+   "evidence": "Known Selenium timing flake in a test unrelated to Var hashing; the same job passed on previous head daf6fdf whose diff to 8336f9b is a comment + a new unit test; the identical flake is what #6968 fixes. Author documented this in two comments and did not modify the test."
+  }
+ ],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-01T08:39:46Z",
+   "excerpt": "CI is red on 8336f9b7 with one failure, and I don't believe it belongs to this PR ... test_on_load_navigate_non_dynamic[prod] StaleElementReferenceException ... same check passed on the previous head."
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-01T08:40:32Z",
+   "excerpt": "Correction: I attempted a re-run and the API refused - 403 Resource not accessible by integration. So the re-run did not happen and the flake is unconfirmed ... A maintainer with re-run permission can settle it."
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-01T08:16:57Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-09-01T08:40:32Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Author is a MEMBER; branch in reflex-dev/reflex. The only cubic thread (NumberVar __hash__ / VarTypeError on collision) was rebutted at length by the author and is resolved.",
+  "Checks rollup is FAILURE because of one Selenium flake (see failing_job_findings); the other 108 checks are green (skipped: unit-tests-macos, reflex-docs-macos). A re-run of job 99790754535 would very likely turn it green; #6968 (same author) fixes the underlying flake.",
+  "No human reviewer has engaged; no requested reviewers. Core reflex-base vars change (+194/-103, 7 files).",
+  "GitHub MCP `get` omits the boolean `mergeable` field entirely (called twice); only mergeable_state was available, so mergeable is UNKNOWN. mergeable_state=blocked is consistent with a required-approval branch rule, not a conflict.",
+  "Normalised by the run: mergeable set to MERGEABLE because mergeable_state=blocked (not dirty); the MCP get omitted the boolean.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}

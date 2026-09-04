@@ -1,0 +1,124 @@
+{
+ "fetched_at": "2026-09-04T04:40:00Z",
+ "body_has_repro": false,
+ "conflicting_files": [],
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "changes_requested_outstanding": false,
+ "awaiting": [],
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "number": 6996,
+ "head_sha": "319b3eb129780c544af8649371b72bac81277a66",
+ "title": "Serve SPA fallback with 200 for routable paths in prod static serving",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "update_branch_offered": false,
+ "linked_issues": [
+  {
+   "number": 6983,
+   "title": "Prod mode serves HTTP 404 status for direct loads of valid dynamic-route URLs (SPA fallback body renders fine)",
+   "filed_by": "masenf",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-28T21:01:08Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "139ba3c",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-28T21:03:20Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "139ba3c",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-28T21:03:35Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "139ba3c",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-08-28T21:28:30Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "139ba3c",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 4,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-08-28T22:32:54Z",
+   "ask": "Check overlap with superseded #6469, integrate anything missed, then close the old PR",
+   "addressed": null,
+   "evidence": "Author pushed 319b3eb at 22:51 porting the one uncovered test scenario from #6469; no reply confirming #6469 was closed"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-08-28T22:32:54Z",
+   "excerpt": "seems like this one supersedes #6469 ? can you check to see if there is any overlap or anything missed in the earlier PR, integrate it here, then close the old one"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-28T22:53:25Z",
+   "excerpt": "Confidence Score: 5/5 - The PR appears safe to merge (bot summary; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-28T22:51:52Z",
+ "last_maintainer_activity_at": "2026-08-28T22:32:54Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "mergeable_state 'unknown' on first get, 'blocked' on second: no conflicts, blocked on missing approval.",
+  "All 4 bot threads (greptile, codex, cubic x2) resolved; author (MEMBER) replied to each with fix commits.",
+  "Fork branch (FarhanAliRaza/reflex) but author is MEMBER; CI ran fully and is green (2 skipped macos jobs).",
+  "Closes #6983, filed by masenf (MEMBER) during 0.9.9a1 pre-release testing; issue body has curl repro.",
+  "Needs a human approval; masenf engaged with a follow-up ask about #6469 which appears at least partly addressed by the head commit.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+ ]
+}
