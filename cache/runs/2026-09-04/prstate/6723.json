@@ -10,7 +10,8 @@
  "mergeable": "CONFLICTING",
  "merge_state": "DIRTY",
  "conflicting_files": [
-  "docs/app/reflex_docs/templates/docpage/docpage.py"
+  "docs/app/reflex_docs/templates/docpage/docpage.py",
+  "docs/app/reflex_docs/views/inkeep.py"
  ],
  "update_branch_offered": false,
  "auto_merge": false,
@@ -118,6 +119,7 @@
   "Only unresolved thread is masenf's; author replied 'fixed' and pushed follow-up commits, so it is one click to resolve.",
   "No counting approval; masenf's review is COMMENTED on an earlier commit b377236.",
   "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
-  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged."
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Fact-check (2026-09-04): conflicting_files was missing docs/app/reflex_docs/views/inkeep.py, a modify/delete conflict that the original CONFLICT-message regex didn't match (only 'CONFLICT (content): Merge conflict in <path>' was parsed). Re-derived from git merge-tree's staged-entry output directly."
  ]
 }

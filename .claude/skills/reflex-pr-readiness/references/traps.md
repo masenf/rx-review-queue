@@ -54,6 +54,17 @@ the memory the job otherwise lacks.
   parent-relative diff only when parent and child share a merge-base;
   otherwise quote vs-main and label it.
 - Compiled `CHANGELOG.md` edits mark release/backport PRs, not docs work.
+- Don't regex git's English conflict messages to extract file paths — the
+  wording varies by conflict type (`CONFLICT (content): Merge conflict in
+  <path>` has no trailing period; `CONFLICT (modify/delete): <path> deleted
+  in ... and modified in ...` doesn't match a content-conflict regex at all)
+  and each new shape silently drops files instead of erroring. Sep 4: a
+  trailing-period assumption missed 5 PRs' conflicts entirely; the fix for
+  that still missed #5430's and #6723's modify/delete conflicts. Parse
+  `git merge-tree --write-tree`'s own staged-entry lines instead: the tree-OID
+  line, then one `<mode> <sha> <stage>\t<path>` line per conflicted path up to
+  the first blank line — every conflict type lands there regardless of the
+  prose that follows.
 
 ## Merge box / API state
 - The GitHub MCP `pull_request_read(get)` does **not** return the
@@ -100,6 +111,35 @@ the memory the job otherwise lacks.
   missing towncrier fragment; "flaky" → the PR's own new docs page failing to
   build; a failing Lighthouse job → a `bun` download network error; a
   windows-only unit failure → in a file the PR does not touch.
+- A `DISMISSED` review is not automatically a live objection or automatically
+  stale — read the ordering. #6917 (Sep 4): masenf's own Aug 31 review was
+  self-dismissed by masenf on Sep 3, immediately followed by the author
+  addressing every thread and a fresh masenf `APPROVED` on the new head.
+  Stopping at "there's a DISMISSED entry" misreads a completed, fully-resolved
+  approval as still-contested. Read the full ordered review timeline, not the
+  presence of any one state.
+
+## Incremental runs
+- From the second run on, a PR whose `listing.updated_at` is unchanged since
+  the last run genuinely has no new comments/reviews/threads/checks — safe to
+  carry its prstate forward. But **mergeable/conflicting_files can change with
+  zero activity on the PR itself**: main moving is enough. Sep 4: #7019
+  merging flipped 5 untouched PRs from clean to conflicting overnight.
+  Recompute mergeable/conflicting_files (cheap: local `git merge-tree`) and
+  days_waiting_on_maintainer fresh for every PR, every run, regardless of
+  updated_at. As an integrity check, re-fetch check-runs for any carried-forward
+  PR that was non-green last run and confirm it matches before trusting the rest.
+- Recompute a since-merged PR's own diff against its real merge commit
+  (`diff --stat <first-parent>..<merge-commit>`) before citing its size in
+  prose — don't reuse the last pre-merge measurement. #7019 was stacked on
+  unmerged #7037 the day before (36 files, including #7037's), and shrank to
+  its true 33-file contribution once #7037 landed first. Same root cause as
+  "recompute against today's main," applied to something that already merged.
+- Run `scripts/delta.py` only after `report.json` exists for the run. Run
+  before, and its entered_top15/left_top15 silently compute against an empty
+  current-top15 (`entered_top15: []`, `left_top15: <all of yesterday's>`) with
+  no error. If a delta looks like nothing entered and everything left the
+  top 15, re-run it — don't trust it.
 
 ## Scoring / presentation
 - Where CI never ran, the workflow-approval click is the binding blocker; do
