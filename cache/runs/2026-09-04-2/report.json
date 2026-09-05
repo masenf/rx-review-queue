@@ -1,0 +1,679 @@
+{
+ "run": {
+  "date": "2026-09-04-2",
+  "started_at": "2026-09-04 23:40 UTC",
+  "runner": "claude-code-remote",
+  "github_login": "masenf",
+  "review_ci_layer": "present",
+  "session": "https://claude.ai/code/session_01Fs5ZDp9a4S8WAQwWRyBPsL"
+ },
+ "stats": {
+  "open": 88,
+  "nondraft": 62,
+  "drafts": 25,
+  "counting_approvals": 1,
+  "fast_lane": 2,
+  "one_fix_away": 19,
+  "fork_ci_unrun": 12,
+  "never_human_reviewed": 32
+ },
+ "attention": [
+  "#7006 (react-moment 2.0.2 migration) is now approved by FarhanAliRaza on the current head, green across 112 checks, no conflicts, all 6 review threads resolved. This morning it was stuck on a stale changes-requested; Farhan merged main into it himself and approved twice after CI went green. Ready to merge.",
+  "#7043 (docs footer edit links) merged mid-scan: masenf self-merged it 2-3 minutes after this run's listing snapshot. Excluded from the ranked board; classic 'merge landed mid-scrape' case per traps.md.",
+  "Cheap unblocks: #6861 and #6875 are fork PRs needing only the 'Approve workflows' click, each fixing an issue filed by someone else, zero unresolved threads. #6841 has every thread resolved and 5 follow-up commits already addressing masenf's own finding \u2014 just needs a re-look (his 2026-08-20 ping to masenf misspelled the handle, so it likely never landed).",
+  "#6100 (explicit state/event id minification) has been open 7+ months, fully green, all 28 threads resolved, and has still never received a formal approving review from anyone with write access \u2014 a large, high-risk surface (new minify module, new CLI group, frontend dispatch changes) that deserves a maintainer's look.",
+  "masenf found a real, reproduced blocking bug in #6996 today (Windows path separators break multi-segment routable paths); a fix and regression tests are ready to cherry-pick from his own branch but not yet applied to the PR.",
+  "#6898 lost its counting approval today: masenf pushed a fix for his own review objection, but it dismissed FarhanAliRaza's prior approval and cubic immediately flagged a new contradiction the fix introduces.",
+  "#7004 (first-time contributor, MemoComponent tag dedup) finally got its CI-approval click today \u2014 and failed for real: 11 checks red, all traced to the PR's own regression test being wrong for its own fix. FarhanAliRaza filed a matching CHANGES_REQUESTED.",
+  "Contributors past two weeks with zero maintainer contact: #6925 (7.5d), #6813 (35d), #6833 (32.5d), #6840 (30d), #6853 (28.7d), #6490 (101d), #6553 (106d), #5430 (451d)."
+ ],
+ "top15": [
+  {
+   "number": 7006,
+   "score": 9.0,
+   "summary": "react-moment 2.0.2 migration, now approved on the current head, green, no conflicts, zero open threads.",
+   "evidence": [
+    "Counting approval from FarhanAliRaza (MEMBER) on head b2c144f1, submitted twice (18:11:37Z and 18:24:01Z) after he merged main into the branch himself",
+    "112 checks green (110 success + 2 conditionally-skipped macOS jobs), no conflicts, merge_state CLEAN",
+    "All 6 review threads resolved; the original CHANGES_REQUESTED from Farhan (on an earlier head) and the fixes for it are both already resolved",
+    "This morning this PR was stuck on a stale changes-requested with no counting approval; Farhan's own main-merge + fresh approval today mirrors the #6917 pattern from this morning (self-dismiss/re-approve, not a live objection)"
+   ],
+   "blocker": "None. Click merge.",
+   "whose_move": "maintainer",
+   "chips": [
+    "counting approval"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 6841,
+   "score": 6.5,
+   "summary": "Avoid root dirty delta for shared state events; every thread resolved, masenf's own finding already addressed by 5 follow-up commits.",
+   "evidence": [
+    "Fork PR, but full CI ran and is green (111 checks, 2 skipped)",
+    "All 14 review threads (bot-filed) resolved",
+    "masenf's 2026-08-14 review body flagged a real bug (broken delta calc for computed vars depending on root state via a linked repro script); author pushed 5 follow-up commits the next day fixing it",
+    "Author's 2026-08-20 ping to masenf misspelled the handle (@mansef) \u2014 likely never delivered a notification, which would explain 3 weeks of silence despite the fix already existing"
+   ],
+   "blocker": "masenf needs to re-look at the 5 follow-up commits against his own repro and approve.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6100,
+   "score": 6.3,
+   "summary": "Explicit state/event id minification: fully green, all 28 threads resolved, never formally approved in 7+ months.",
+   "evidence": [
+    "111 checks green (109 success + 2 skipped)",
+    "All 28 review threads resolved, including 2 fresh P1/P2 findings from cubic/greptile today, fixed within the hour",
+    "masenf (MEMBER) last substantively reviewed back in February and never returned; no APPROVED or CHANGES_REQUESTED review exists from anyone with write access",
+    "Large, high-risk surface (new reflex.minify module, new CLI command group, frontend dispatch changes) \u2014 worth a maintainer's look precisely because of the size, not despite it"
+   ],
+   "blocker": "Needs its first-ever approving review from someone with write access.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6968,
+   "score": 6.1,
+   "summary": "Add click_element utility for robust Selenium clicking; every thread resolved, one re-review away from unblocked.",
+   "evidence": [
+    "111 checks green (2 skipped)",
+    "All 8 review threads resolved; author pushed 2 commits after Farhan's CHANGES_REQUESTED addressing every point he raised (narrowed exception handling, replaced dead raise, used public API, extended to more test files)",
+    "Fixes the exact Selenium flake (test_on_load_navigate_non_dynamic[prod] StaleElementReferenceException) currently failing CI on #7015, also in this list",
+    "Test-only change; no news fragment needed"
+   ],
+   "blocker": "FarhanAliRaza needs to re-review and clear his stale CHANGES_REQUESTED.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7046,
+   "score": 5.9,
+   "summary": "New docs page for brokered app sign-in (User Authentication); clean, green, small, no reviewer yet.",
+   "evidence": [
+    "Docs-only (3 files, +218/-1), created today",
+    "Two real greptile findings (wrong auth API field names, missing import in a code sample) both fixed by the author within minutes; all threads resolved",
+    "112 checks green (2 skipped); no conflicts",
+    "No human has looked at it yet; Alek99 requested as reviewer"
+   ],
+   "blocker": "Needs a first review.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7048,
+   "score": 5.8,
+   "summary": "Fix Safari cache-busting plugin for React Router 8 Uint8Array chunks; self-authored bugfix, clean, green, no reviewer yet.",
+   "evidence": [
+    "4 files changed, created today by masenf",
+    "All 5 review threads resolved: 3 real cubic findings fixed with code changes, 2 explained as non-issues given the new design",
+    "111 checks green (2 skipped); no conflicts",
+    "No independent human sign-off yet beyond the author's own replies to bots"
+   ],
+   "blocker": "Needs a first independent review.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6929,
+   "score": 5.6,
+   "summary": "Skip ForwardRef resolution for unannotated attribute probes; small, clean, green, zero maintainer contact in 7.5 days.",
+   "evidence": [
+    "111 checks green, no conflicts, 2 resolved review threads",
+    "No substantive change since Aug 22 besides a no-op main-merge; genuinely simple fix sitting untouched"
+   ],
+   "blocker": "Needs a first review.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6930,
+   "score": 5.5,
+   "summary": "Port lazy_loader perf + native PEP810 + Python 3.15 support; clean, green, waiting on the requested reviewer.",
+   "evidence": [
+    "120 checks green, no conflicts, 1 resolved review thread",
+    "Alek99 requested as reviewer on 2026-08-22, has not responded since"
+   ],
+   "blocker": "Alek99 needs to review.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7033,
+   "score": 5.3,
+   "summary": "Allow explicit-only event handlers; green, one CONTRIBUTOR approval, masenf's compat question unanswered.",
+   "evidence": [
+    "112 checks green, no conflicts; 9 of 10 threads resolved (the 1 open is a philosophical aside, already replied to)",
+    "abulvenz (CONTRIBUTOR, non-counting) approved on the current head; Alek99 (requested, presumably counting) has not reviewed",
+    "masenf's 2026-09-02 question about reflex-enterprise auth-plugin compatibility is still unanswered; today's activity is only a bump comment, no new substance"
+   ],
+   "blocker": "Author needs to answer masenf's reflex-enterprise compatibility question, or Alek99/a maintainer needs to review.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7016,
+   "score": 5.1,
+   "summary": "Fix bundled library subpath serialization; green, clean, masenf's clarifying question unanswered.",
+   "evidence": [
+    "112 checks green, no conflicts, all 7 threads resolved",
+    "masenf's first engagement today: a plain comment asking the author to justify the real-world trigger scenario, questioning whether hot-reload already covers it",
+    "No reply or new commit from harsh21234i since"
+   ],
+   "blocker": "Author needs to answer masenf's question about the trigger scenario.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6946,
+   "score": 5.0,
+   "summary": "Deduplicate unchanged uncached computed var deltas; green, clean, 4 real bot findings replied-to but not resolved.",
+   "evidence": [
+    "111+ checks green, no conflicts",
+    "4 unresolved cubic threads (2 P1/P2 real findings about shared-state delta tokens and reserved-field collisions); author has replied to all 4 but none are marked resolved",
+    "No human reviewer has engaged yet"
+   ],
+   "blocker": "A human needs to check the author's replies and resolve the threads (or ask for more).",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6116,
+   "score": 4.8,
+   "summary": "add orjson; self-declared unblocked today, green, only a uv.lock conflict.",
+   "evidence": [
+    "Author edited an old comment today noting the blocking PR #6933 has merged",
+    "CI flipped FAILURE\u2192SUCCESS; the earlier engineio failure confirmed flaky (no PR-authored commits between the failing and passing runs)",
+    "Only conflicting file is uv.lock \u2014 a simple rebase away from clean"
+   ],
+   "blocker": "Rebase to resolve the uv.lock conflict.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6807,
+   "score": 4.6,
+   "summary": "Fix disk state manager debounced writes; zero threads, blocked only by CI (pre-commit + one flaky integration job).",
+   "evidence": [
+    "6 resolved review threads, no conflicts",
+    "Rollup FAILURE from pre-commit and integration-app-harness (redis, 3.12, 1) only; no substantive review blocker"
+   ],
+   "blocker": "Fix or re-run the two failing checks.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6925,
+   "score": 4.5,
+   "summary": "Allow Vars in page metadata; fork PR, everything green except a pyright pre-commit failure.",
+   "evidence": [
+    "Full CI ran and is green apart from pre-commit (pyright)",
+    "Zero review threads"
+   ],
+   "blocker": "Fix the pyright finding pre-commit is catching.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6708,
+   "score": 4.3,
+   "summary": "Wrap Recharts Sankey chart; 'In Review' label, zero threads, blocked by the PR's own docs-build bug.",
+   "evidence": [
+    "20 resolved review threads, no conflicts",
+    "reflex-docs (3.11/3.12) fail: the sankey custom_node example passes a float where Text.y expects str|int, so the docs server never starts \u2014 the PR's own bug, not infra"
+   ],
+   "blocker": "Fix the sankey example's Text.y type so the docs build compiles.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  }
+ ],
+ "one_fix_away": {
+  "maintainer": [
+   {
+    "number": 6100,
+    "summary": "7+ months open, fully green and resolved, never formally reviewed.",
+    "blocker": "First approving review from someone with write access."
+   },
+   {
+    "number": 6841,
+    "summary": "masenf's own finding addressed by 5 follow-up commits; ping to him was misspelled.",
+    "blocker": "Re-look and approve."
+   },
+   {
+    "number": 6929,
+    "summary": "Small, clean, green, 7.5 days with zero maintainer contact.",
+    "blocker": "First review."
+   },
+   {
+    "number": 6930,
+    "summary": "Clean, green, Alek99 requested 13 days ago.",
+    "blocker": "Alek99 (or any maintainer) reviews."
+   },
+   {
+    "number": 6968,
+    "summary": "Every point in Farhan's changes-requested addressed by 2 follow-up commits.",
+    "blocker": "Farhan re-reviews and clears it."
+   },
+   {
+    "number": 7046,
+    "summary": "New docs PR, clean, green, both bot findings fixed.",
+    "blocker": "First review."
+   },
+   {
+    "number": 7048,
+    "summary": "New bugfix, clean, green, all bot findings resolved.",
+    "blocker": "First independent review."
+   },
+   {
+    "number": 6876,
+    "summary": "Fork fix for #6874 (hidden input wrapper); author already replied to cubic's P2, thread just needs resolving.",
+    "blocker": "Check the reply and resolve the thread (plus the approve-workflows click already done)."
+   },
+   {
+    "number": 6813,
+    "summary": "Fork fix for is_wrapped quote/backtick handling; CI never ran, one unaddressed cubic P2.",
+    "blocker": "Approve workflows, and someone needs to weigh cubic's escaped-delimiter finding."
+   }
+  ],
+  "author": [
+   {
+    "number": 7033,
+    "summary": "Green, one non-counting approval, masenf's compat question unanswered.",
+    "blocker": "Answer the reflex-enterprise compatibility question."
+   },
+   {
+    "number": 7016,
+    "summary": "Green, clean, masenf asked for the real-world trigger scenario.",
+    "blocker": "Answer masenf's question."
+   },
+   {
+    "number": 7004,
+    "summary": "First-time contributor; CI ran for real today and failed on the PR's own regression test.",
+    "blocker": "Fix test_memo_wrapper_tag_contains_inner_tag_once for the Bare-wrapped case, and the pyright finding."
+   },
+   {
+    "number": 6116,
+    "summary": "Self-declared unblocked, CI green, one file conflicting.",
+    "blocker": "Rebase past uv.lock."
+   },
+   {
+    "number": 6925,
+    "summary": "Fork PR, everything green except pre-commit.",
+    "blocker": "Fix the pyright finding."
+   },
+   {
+    "number": 6807,
+    "summary": "Zero threads, CI failing on pre-commit + one flaky job.",
+    "blocker": "Fix pre-commit and confirm the integration job."
+   },
+   {
+    "number": 6708,
+    "summary": "Zero threads, docs build fails on the PR's own sankey example.",
+    "blocker": "Fix the Text.y type in the custom_node example."
+   },
+   {
+    "number": 6996,
+    "summary": "masenf found a real Windows path-separator bug; a fix is already written on his branch.",
+    "blocker": "Cherry-pick commit 47b9992a from claude/pr-6996-review-97oxj9."
+   },
+   {
+    "number": 6932,
+    "summary": "Two real commits landed today addressing greptile's log-flooding findings, but greptile's own re-review still calls it unsafe.",
+    "blocker": "Address the remaining version-mismatch log-flooding case greptile flagged at 11:23Z."
+   },
+   {
+    "number": 6850,
+    "summary": "Conflicting with main again; 3 unresolved cubic threads with no reply yet.",
+    "blocker": "Rebase and answer the 3 open cubic threads."
+   }
+  ]
+ },
+ "fast_lane": [
+  {
+   "number": 6861,
+   "summary": "Fixes #6860 (upload endpoint 500), fork PR, zero unresolved threads. Only needs the 'Approve workflows' click."
+  },
+  {
+   "number": 6875,
+   "summary": "Docs-only fix for #6816 (submit button validation), fork PR, zero unresolved threads. Only needs the 'Approve workflows' click."
+  }
+ ],
+ "closure": [
+  {
+   "number": 5430,
+   "summary": "[0.9] remove ids refs from form_data (Lendemor): 868 behind, conflicting (now also a modify/delete conflict on forms.py), no check runs left on the head, 451 days since any human activity.",
+   "keep_issue": 5418
+  },
+  {
+   "number": 6125,
+   "summary": "feat: Add Redis Sentinel support for HA (timon0305): 533 behind, CI never ran, conflicting, dormant since February.",
+   "keep_issue": 5830
+  },
+  {
+   "number": 6126,
+   "summary": "feat: Expose TokenManager with lifecycle APIs (timon0305): 533 behind, CI never ran, conflicting, dormant since February.",
+   "keep_issue": 5669
+  },
+  {
+   "number": 6490,
+   "summary": "Support Redis Cluster (riebecj): 299 behind, conflicting across 4 files, 101 days with no maintainer contact, no linked issue.",
+   "keep_issue": null
+  },
+  {
+   "number": 6553,
+   "summary": "refactor(reflex-base): consolidate BaseContext (BABTUNA): 355 behind, conflicting, 106 days with no maintainer contact.",
+   "keep_issue": 6514
+  },
+  {
+   "number": 6468,
+   "summary": "refactor: freeze components after create (FarhanAliRaza): 288 behind, CI FAILURE, conflicting across 4 files including pyi_hashes.json, 98 days waiting.",
+   "keep_issue": 6214
+  },
+  {
+   "number": 6563,
+   "summary": "lighthouse: tree-shake bundled libs (FarhanAliRaza): 220 behind, CI FAILURE, conflicting (compiler.py), 71 days waiting, likely superseded by later perf work.",
+   "keep_issue": null
+  },
+  {
+   "number": 6597,
+   "summary": "feat: add rx.google_font (FarhanAliRaza): 284 behind, CI FAILURE, conflicting (pyi_hashes.json), 94 days waiting.",
+   "keep_issue": null
+  }
+ ],
+ "stacks": [
+  {
+   "chain": [
+    6899,
+    6900,
+    6901
+   ],
+   "note": "OpenTelemetry 3-part stack; all three conflicting on uv.lock (each adds its own otel dependency, main's lock keeps moving). Alek99's only engagement on #6901 is a COMMENTED review from Aug 18 (never an approval, nothing to dismiss); no maintainer review since."
+  },
+  {
+   "chain": [
+    6735,
+    6743,
+    6744,
+    6745,
+    6798,
+    6751,
+    6757
+   ],
+   "note": "Perf-optimization stack; every member conflicts with main on component.py/memo.py/pyi_hashes.json, and six of the seven (all but #6735) also share reflex/state.py, vars/base.py, utils/types.py and three test files. Whichever lands first, the rest rebase through all of it."
+  }
+ ],
+ "conflict_clusters": [
+  {
+   "prs": [
+    6116,
+    6899,
+    6900,
+    6901,
+    6932,
+    7007
+   ],
+   "files": [
+    "uv.lock"
+   ],
+   "note": "Six unrelated PRs each add their own dependency and all collide on uv.lock as main's lockfile keeps moving. Not main's fault this time (each PR's own diff touches uv.lock) \u2014 just the generic lockfile-churn problem."
+  },
+  {
+   "prs": [
+    6468,
+    6735,
+    6743,
+    6744,
+    6745,
+    6751,
+    6757,
+    6798,
+    6850
+   ],
+   "files": [
+    "pyi_hashes.json"
+   ],
+   "note": "pyi_hashes.json is genuinely shared by all nine (the freeze-components refactor #6468, the memo-wrapper-transparency fix #6850, and the whole perf stack). component.py is shared by all but #6850; memo.py is shared by all but #6468. The perf stack additionally collides among itself on reflex/state.py, vars/base.py, utils/types.py and three test files."
+  },
+  {
+   "prs": [
+    6126,
+    6490
+   ],
+   "files": [
+    "reflex/utils/token_manager.py"
+   ],
+   "note": "Two old, unrelated feature PRs (TokenManager lifecycle API, Redis Cluster support) both touch token manager internals and are each individually stale."
+  }
+ ],
+ "structural": [
+  {
+   "number": 6996,
+   "summary": "masenf reproduced a real blocking bug (Windows path separators break multi-segment routable paths) with a working fix and regression tests ready on his own branch, but not yet cherry-picked into this PR. Downgraded out of top15 for that reason, not because anything got worse\u2014the ball just moved decisively to a specific, unapplied patch."
+  },
+  {
+   "number": 7040,
+   "summary": "masenf raised a design-level objection to the whole dual-import approach (argues for a hard switch to httpx2 rather than a try/except fallback), on top of two pre-existing cubic threads making the same point. CI still has never run on this head 18+ hours after the push. This needs a maintainer decision on the approach, not a small fix."
+  },
+  {
+   "number": 7036,
+   "summary": "Two unresolved P1 bot findings (failed recomputation loses stale state; add_dependency() doesn't update the reverse dependency map) plus a new maintainer concern about self-assignment cascades, still conflicting with main (state.py), and CI has still never run 2+ days after push."
+  },
+  {
+   "number": 6796,
+   "summary": "Large new i18n package (56 files, 6234 insertions) has never gotten the full architectural/DX review the author explicitly asked masenf for on Jul 29. Three fresh cubic routing-edge-case findings today were all substantively answered within the hour but not marked resolved, so GitHub still counts them as blocking."
+  },
+  {
+   "number": 7004,
+   "summary": "First-time contributor's fork finally got CI-approved today and failed for real: 11 checks red, traced to the PR's own regression test being wrong, plus a matching CHANGES_REQUESTED from FarhanAliRaza."
+  }
+ ],
+ "patterns": [
+  {
+   "title": "Counting approvals repo-wide: 1",
+   "detail": "#7006 only. Yesterday's two (#6917, #6898) are both gone: #6917 merged, #6898's approval was dismissed by the author's own fix commit."
+  },
+  {
+   "title": "Never reviewed by a human: 32 of 62",
+   "detail": "5430, 6116, 6181, 6468, 6490, 6553, 6676, 6751, 6757, 6770, 6798, 6813, 6815, 6833, 6840, 6850, 6853, 6861, 6875, 6925, 6929, 6930, 6932, 6935, 6946, 7007, 7015, 7016, 7036, 7044, 7046, 7048."
+  },
+  {
+   "title": "Contributors waiting on a maintainer reply",
+   "detail": "#5430 451 days, #6553 106 days, #6490 101 days, #6468 98 days, #6597 94 days, #6563 71 days, #6181 9.7 days, #6850 9.9 days, #6116 0.6 days (just unblocked), #6932 0.4 days, #6929 7.5 days, #6930 5.8 days, #6813 35 days, #6833 32.5 days, #6840 29.9 days, #6853 28.7 days, #6935 11.4 days. Days count from the author's last activity."
+  },
+  {
+   "title": "Fork PRs whose CI never ran: 12",
+   "detail": "6125, 6126, 6813, 6833, 6840, 6853, 6861, 6875, 6876, 6935, 7036, 7040. #6861 and #6875 have nothing else in the way once approved."
+  },
+  {
+   "title": "Mid-scan merge",
+   "detail": "#7043 was open in this run's listing snapshot (23:40:00Z) and merged by its own author (masenf) at 23:42:44Z, 2-3 minutes later. Excluded from the ranked board per traps.md's mid-scrape reconciliation rule; nondraft count adjusted from 63 to 62."
+  },
+  {
+   "title": "Same-day open-and-merge",
+   "detail": "Three PRs (#7042, #7045, #7047) were opened and merged entirely within today's window and were never seen by any run; not counted in this run's delta as 'opened' or in top15/buckets, only in the merged tally."
+  },
+  {
+   "title": "Author concentration (non-draft, from author_association)",
+   "detail": "FarhanAliRaza 12 (MEMBER), Alek99 9 (MEMBER, 7 in the perf stack), benedikt-bartscher 8 (CONTRIBUTOR, plus 8 of the 25 drafts), masenf 7 (MEMBER), harsh21234i 7 (CONTRIBUTOR). Members hold 30 of 62 non-draft PRs (contributors 21, first-time contributors 11); 40 of 63 (incl. #7043) came from fork branches."
+  },
+  {
+   "title": "Bot summary vs re-review disagreement",
+   "detail": "#6932: greptile's own confidence score dropped from 5/5 to 3/5 today after the author's latest commit, saying the log-flooding fix is still incomplete \u2014 the rare case where trusting a *fresh* bot summary over an *old* one is correct, since it is corroborated by no follow-up commit or reply since."
+  }
+ ],
+ "delta": {
+  "previous_run": "2026-09-04",
+  "merged": [
+   {
+    "number": 6812,
+    "note": "merged 2026-09-04T20:05:26Z"
+   },
+   {
+    "number": 6917,
+    "note": "merged 2026-09-04T18:01:54Z"
+   },
+   {
+    "number": 6960,
+    "note": "merged 2026-09-04T20:06:11Z"
+   },
+   {
+    "number": 7008,
+    "note": "merged 2026-09-04T18:02:47Z"
+   },
+   {
+    "number": 7043,
+    "note": "opened and merged same day (self-merged by author masenf at 23:42:44Z), 2-3 minutes after this run's scan"
+   },
+   {
+    "number": 7042,
+    "note": "opened and merged same day, never seen by any run"
+   },
+   {
+    "number": 7045,
+    "note": "opened and merged same day, never seen by any run"
+   },
+   {
+    "number": 7047,
+    "note": "opened and merged same day, never seen by any run"
+   }
+  ],
+  "closed": [],
+  "opened": [
+   {
+    "number": 7044,
+    "title": "Fix build failure when frontend_path is set without prerendering",
+    "author": "masenf",
+    "draft": false
+   },
+   {
+    "number": 7046,
+    "title": "docs: add a User Authentication page for brokered app sign-in",
+    "author": "adhami3310",
+    "draft": false
+   },
+   {
+    "number": 7048,
+    "title": "Fix Safari cache-busting plugin to handle React Router 8 Uint8Array chunks",
+    "author": "masenf",
+    "draft": false
+   }
+  ],
+  "entered_top15": [
+   7006,
+   6100,
+   7046,
+   7048,
+   6930,
+   6116,
+   6807,
+   6925
+  ],
+  "left_top15": [
+   {
+    "number": 6917,
+    "note": "merged"
+   },
+   {
+    "number": 7008,
+    "note": "merged"
+   },
+   {
+    "number": 6812,
+    "note": "merged"
+   },
+   {
+    "number": 6960,
+    "note": "merged"
+   },
+   {
+    "number": 6996,
+    "note": "downgraded to structural: real Windows bug found, fix not yet applied"
+   },
+   {
+    "number": 6898,
+    "note": "downgraded: counting approval dismissed by the author's own fix commit"
+   },
+   {
+    "number": 6861,
+    "note": "moved to fast_lane: fixes an issue filed by another, zero threads, needs only the workflow-approval click"
+   },
+   {
+    "number": 7015,
+    "note": "downgraded: displaced by cleaner candidates; still blocked on its own flake, which #6968 (still in top15) fixes"
+   }
+  ],
+  "newly_blocked": [
+   {
+    "number": 6898,
+    "note": "lost its only counting approval"
+   }
+  ],
+  "newly_unblocked": [
+   {
+    "number": 7006,
+    "note": "stale changes-requested cleared, gained a counting approval"
+   },
+   {
+    "number": 6930,
+    "note": "conflict with main resolved by a no-op main-merge"
+   },
+   {
+    "number": 6116,
+    "note": "self-declared blocker (#6933) merged; CI flake resolved"
+   }
+  ],
+  "draft_flips": [
+   {
+    "number": 6100,
+    "now_draft": false
+   },
+   {
+    "number": 6796,
+    "now_draft": false
+   }
+  ]
+ },
+ "method": {
+  "notes": [
+   "Second run today (2026-09-04-2), ~19 hours after the morning run (2026-09-04, fetched ~04:31 UTC). This run fetched at 2026-09-04T23:40:00Z.",
+   "Listing: 88 open PRs matched the search open-counter exactly at scan time. Non-draft was 63 at the scan instant; #7043 merged 2-3 minutes later (self-merge by its author) and was excluded from the ranked board, leaving 62.",
+   "Incremental refresh vs the morning run: 45 of 62 ranked non-draft PRs had unchanged listing.updated_at and were carried forward with mergeable/conflicting_files (fresh git merge-tree against today's main 7ab704d6) and days_waiting_on_maintainer recomputed; the rest of each file (reviews/threads/checks/comments) is the morning's data, confirmed identical. 18 PRs (6 new, 12 with changed updated_at) got a full fresh fetch via 3 parallel subagent batches of 6.",
+   "Conflict detection used the staged-entry parser from cache/SCHEMA.md's traps.md fix (git merge-tree --write-tree's own tree-OID + stage-1/2/3 lines), not the English CONFLICT(...) messages, per today's earlier bug. Recomputed for all 62 ranked PRs against main 7ab704d6; 31 conflicting (down from 33 this morning) as #6930 and #7006 resolved their conflicts via a main-merge.",
+   "Every prstate file's conflicting_files/mergeable was reconciled against this run's single master conflicts.json after both the carry-forward pass and the subagent batches wrote their files; zero discrepancies found.",
+   "Scoring per references/scoring.md. #6996 dropped from top15 to structural because a specific, reproduced, not-yet-applied fix is a materially different situation from a generic review gap; #6946 stayed out of yesterday's exact ranking position but is back in today's top15 on its own unchanged merits (green, clean, only needs its already-answered bot threads resolved) as other yesterday-top15 PRs merged or were displaced.",
+   "Delta computed directly against 2026-09-04's real listing.json/report.json. scripts/delta.py's own JSON output undercounted (its git-side merge check can't confirm squash-merges, same as this morning); merged/closed reconciled by search_pull_requests(is:merged merged:>2026-09-04T04:33:00Z) and (is:closed is:unmerged closed:>same), which is authoritative here."
+  ],
+  "audit_corrections": [
+   "top15 #6930 evidence: '111 checks... zero review threads' -> '120 checks... 1 resolved review thread' (prstate/6930.json has checks.total=120 and 1 resolved thread, not 0; 111 and 0 were copy-paste errors).",
+   "top15 #6929 evidence: 'zero review threads' -> '2 resolved review threads' (prstate/6929.json has threads.total=2, both resolved, not 0).",
+   "top15 #6807 evidence: 'Zero review threads' -> '6 resolved review threads' (prstate/6807.json has threads.total=6, all resolved, not 0; conflated 'zero unresolved' with 'zero threads').",
+   "top15 #6708 evidence: 'Zero review threads' -> '20 resolved review threads' (prstate/6708.json has threads.total=20, all resolved, not 0; same conflation as #6807).",
+   "conflict_clusters (component/memo/pyi_hashes, 9 PRs): note and files[] claimed component.py, memo.py and pyi_hashes.json were all shared by every member. #6468's conflicting_files omits memo.py and #6850's omits component.py. files[] trimmed to the one path (pyi_hashes.json) every member actually shares; note rewritten to state the partial overlaps precisely (same bug class as the previous run's state-hot-path cluster).",
+   "stacks (perf stack): 'the tip five also on reflex/state.py, vars/base.py' -> 'six of the seven (all but #6735)' (verified against conflicts.json: only #6735 lacks state.py/vars/base.py among the 7 chain members).",
+   "stacks (otel stack): '#6901 has a dismissed Alek99 approval' was fabricated -- prstate/6901.json's reviews array contains no APPROVED or DISMISSED state from Alek99 at all, only a COMMENTED review. Corrected.",
+   "patterns (author concentration): benedikt-bartscher's draft count was 10, actually 8 (recounted directly from listing.json's 25 draft entries).",
+   "Added a caveat: checks.by_state for the 6116/6815/6898/6929/6930/6932 batch is likely truncated (doesn't sum to checks.total); rollup/total look correct and are what scoring used."
+  ],
+  "caveats": [
+   "25 drafts excluded from ranking; #6100 and #6796 flipped from draft to non-draft since this morning and are included in full for the first time.",
+   "#7040's two open cubic threads and its body text are still written against an older commit (b965d6f8); the branch was fully rebased onto new main rather than incrementally pushed, so whether they still apply to 471b42b5 is unverified pending a CI run that has not happened in 18+ hours.",
+   "author_association not returned by the MCP get for a few fork authors; carried forward from listing-search values where unchanged (same set as this morning: 6735, 6490, 6553, 6126, 6125, 5430).",
+   "The subagent batch covering 6116/6815/6898/6929/6930/6932 returned checks.by_state breakdowns that don't sum to checks.total for several of these (e.g. 6929/6930 both show a flat success:27 regardless of the PR's real total) -- looks like a truncated/paginated check-run fetch. checks.rollup and checks.total look independently correct (6930's 120 matches the morning run exactly) and were used for scoring, but by_state for this batch should not be trusted for anything finer-grained."
+  ]
+ }
+}

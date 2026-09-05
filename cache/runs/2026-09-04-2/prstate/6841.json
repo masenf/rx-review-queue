@@ -1,0 +1,220 @@
+{
+ "number": 6841,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "12ba89d7593a51c1154961dd184814a04572314f",
+ "title": "Avoid root dirty delta for shared state events",
+ "author": "harsh21234i",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6392,
+   "title": "Events against SharedState should not mark root state dirty all the time",
+   "filed_by": "masenf",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-04T11:10:06Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "915dd92",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-04T11:22:27Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "915dd92",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-08T04:16:35Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "88aa964",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-13T03:17:10Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "43baadd",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-14T07:53:34Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "d57f541",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-08-14T18:51:58Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "d57f541",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-15T02:51:42Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "6c184a1",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-15T02:52:14Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "6c184a1",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-15T03:54:55Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "ca786a4",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-15T03:57:58Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "ca786a4",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-15T04:51:36Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "ced3113",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-15T07:21:29Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e119614",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-15T07:23:13Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e119614",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "maintainer re-review by masenf of commits 6c184a1..12ba89d that claim to fix the computed-var delta regression he reported"
+ ],
+ "threads": {
+  "total": 14,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-08-14T18:51:58Z",
+   "ask": "patch breaks delta calculation for computed vars in shared state that depend on root state (linked repro script shared_state_router_delta_repro.py)",
+   "addressed": false,
+   "evidence": "Author pushed 5 follow-up commits on 2026-08-15 ('Preserve computed refreshes during shared state patching', 'Preserve linked computed refresh paths', 'Restore computed caches after shared patch failure', 'Restore touched state...', 'Handle non-scalar computed cache snapshots') and pinged masenf on 08-20; no maintainer response yet, so the fix is unverified by the asker."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "association": "NONE",
+   "at": "2026-08-04T11:06:59Z",
+   "excerpt": "Codex usage limits have been reached for code reviews."
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-04T11:09:59Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 The PR appears safe to merge (bot; not evidence; updated 2026-08-15)"
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-12T18:46:31Z",
+   "excerpt": "hey @masenf ... reflex-install-and-init is failing. Could you confirm whether that failure is infrastructure-related ... could you please review the latest commit?"
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-20T07:44:51Z",
+   "excerpt": "hey @mansef could you please review the latest commit? (note: @mention typo, masenf not pinged)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-20T07:44:51Z",
+ "last_maintainer_activity_at": "2026-08-14T18:51:58Z",
+ "days_waiting_on_maintainer": 15.7,
+ "notes": [
+  "mergeable_state was 'unknown' on first get, 'blocked' on retry.",
+  "Fork PR (harsh21234i/reflex) but full CI ran on head 12ba89d and is fully green (reflex-install-and-init, which the author asked about on 08-12, passes on the current head).",
+  "masenf's 2026-08-14 review is state COMMENTED (not CHANGES_REQUESTED) but is substantively a blocking finding: the patch broke delta calculation for computed vars depending on root state. All 14 review threads are bot threads and resolved; masenf's finding was a top-level review body, not a thread.",
+  "The 2026-08-20 ping misspells the maintainer's handle (@mansef), so masenf likely received no notification.",
+  "Changed files: reflex/istate/shared.py, tests/units/test_state.py, news/6841.bugfix.md (per bot summary; not verified via file list).",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

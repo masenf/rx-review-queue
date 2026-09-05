@@ -1,0 +1,84 @@
+{
+ "number": 6932,
+ "fetched_at": "2026-09-04T21:30:00Z",
+ "title": "bare websockets",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "head_sha": "1120e0e2c454af7a2ddf8fa562070316d1cb7b63",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "pyproject.toml",
+  "reflex/testing.py",
+  "uv.lock"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-22T21:04:14Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "24d8a2b", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-23T16:21:19Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "49f323b", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-08-23T16:46:57Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "3ed074a", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T07:22:00Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "e132bdd", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T08:14:40Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "c695256", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "author to address greptile's live confidence-3/5 concern about unbudgeted version-mismatch log warnings in reflex/event_namespace.py"
+ ],
+ "threads": {
+  "total": 34,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {"success": 27, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "abulvenz",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-24T11:15:55Z",
+   "ask": "Confirm whether HTTP long-polling fallback is dropped with bare websockets",
+   "addressed": true,
+   "evidence": "Author replied 2026-08-24T11:41 that long-polling is not supported in the new transport but the socketio transport remains selectable"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-04T11:23:52Z",
+   "ask": "Latest greptile PR-level summary (posted after author's own fix commit 1120e0e) downgrades confidence to 3/5 and says the PR does NOT yet appear safe to merge: unauthenticated/mismatched-version clients can still generate unrestricted version-mismatch log warnings via repeated reconnects in reflex/event_namespace.py, defeating the shared logging budget. Three earlier, narrower versions of this same log-flooding concern (P1, security-tagged) were each individually resolved as greptile filed and re-filed them through the day (08-23, 09-04T07:22, 09-04T08:14), but this final summary -- filed after the day's last commit -- says the concern still stands overall.",
+   "addressed": false,
+   "evidence": "No commit or reply after 2026-09-04T11:23:52Z (the summary) or the 11:21:01Z commit it reviewed."
+  }
+ ],
+ "recent_comments": [
+  {"by": "abulvenz", "association": "CONTRIBUTOR", "at": "2026-08-24T11:15:55Z", "excerpt": "I really like this lightweight approach. One thing that is dropped: socketio supports HTTP long-polling in case a websocket connection cannot be established"},
+  {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-08-24T11:41:09Z", "excerpt": "Yes, the new bare websockets implementation does not support http long-polling yet. However one could still choose the old socketio based transport"},
+  {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-08-28T18:21:55Z", "excerpt": "check out #6984 -- edit: done in 9caa24b"},
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-04T11:23:52Z", "excerpt": "Confidence Score: 3/5 -- The PR does not yet appear safe to merge because linked clients can still generate unrestricted version-mismatch warnings through repeated reconnects. Files Needing Attention: reflex/event_namespace.py"}
+ ],
+ "last_author_activity_at": "2026-09-04T11:21:01Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0.42,
+ "notes": [
+  "CHANGED since this morning: two real (non-merge) commits landed today -- c695256 (\"less verbose\", 08:10Z) and 1120e0e (\"only warn about version mismatch for linked sessions and reject string event payloads\", 11:21Z) -- the author actively iterating on greptile's log-flooding findings, not just a main-merge.",
+  "CHANGED: greptile's confidence score dropped from 5/5 (\"safe to merge\", all-addressed, as of 2026-08-23) to 3/5 (\"does NOT yet appear safe to merge\") in its 09-04T11:23:52Z PR-level summary, posted after the day's final commit -- it says the version-mismatch log-flooding fix is still incomplete. Per traps.md, don't trust bot summaries blindly, but this one is corroborated by the fact that no commit or reply followed it, and its inline threads for the same file were individually marked resolved throughout the day even as new, narrower variants kept appearing (08-23 nested-payload flood -> 09-04T07:22 tokenless-reconnect flood -> 09-04T08:14 version-warning flood -- each 'fixed' but reopened in a new shape). Read as a live, unresolved concern, not stale bot noise.",
+  "CHANGED: conflicting_files changed shape entirely -- this morning it was [reflex/app.py, uv.lock]; now (after today's commits + main moving) it's [pyproject.toml, reflex/testing.py, uv.lock]. Recomputed fresh via git merge-tree against origin/main 7ab704d6.",
+  "CHANGED: thread total rose from 31 to 34 (3 new greptile threads today, all individually clicked resolved -- see note above on the log-flooding whack-a-mole pattern).",
+  "Still zero MEMBER/OWNER engagement ever on this 22-file, now ~37-commit PR; only human interaction remains CONTRIBUTOR abulvenz's 08-24 comment.",
+  "CI green (fork PR, ran fully); conflicting_files from git merge-tree --write-tree origin/main refs/pr/6932, not the API."
+ ]
+}

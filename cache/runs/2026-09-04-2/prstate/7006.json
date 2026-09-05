@@ -1,0 +1,73 @@
+{
+ "number": 7006,
+ "fetched_at": "2026-09-04T20:00:00Z",
+ "head_sha": "b2c144f1c042ba1238edb0c330173b5c420b5c06",
+ "title": "Migrate react-moment to 2.0.2",
+ "author": "harsh21234i",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "CLEAN",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": "APPROVED",
+ "requested_reviewers": ["Alek99"],
+ "linked_issues": [
+  {
+   "number": 7003,
+   "title": "Migrate `rx.moment` to react-moment 2.x (prop restructure + new peer dep)",
+   "filed_by": "masenf",
+   "filer_is_author": false,
+   "filer_association": "MEMBER",
+   "relation": "related (body says 'Related issue', not closes)"
+  }
+ ],
+ "reviews": [
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-30T15:32:35Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "6ab85d3", "on_current_head": false, "bot": true},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-30T16:00:58Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "f18753f", "on_current_head": false, "bot": true},
+  {"by": "FarhanAliRaza", "state": "CHANGES_REQUESTED", "at": "2026-09-01T07:08:57Z", "association": "MEMBER", "can_push": true, "commit_id": "c85abb2", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-01T09:19:49Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "bd58635", "on_current_head": false, "bot": true},
+  {"by": "FarhanAliRaza", "state": "DISMISSED", "at": "2026-09-01T15:37:54Z", "association": "MEMBER", "can_push": true, "commit_id": "054c45c", "on_current_head": false},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-01T16:42:30Z", "association": "MEMBER", "can_push": true, "commit_id": "054c45c", "on_current_head": false},
+  {"by": "harsh21234i", "state": "COMMENTED", "at": "2026-09-02T05:20:45Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "054c45c", "on_current_head": false, "is_author": true},
+  {"by": "FarhanAliRaza", "state": "DISMISSED", "at": "2026-09-04T16:48:30Z", "association": "MEMBER", "can_push": true, "commit_id": "6c2b528", "on_current_head": false, "note": "self-dismissed own earlier stance on the pre-merge head, right before pushing the main-merge and approving"},
+  {"by": "FarhanAliRaza", "state": "APPROVED", "at": "2026-09-04T18:11:37Z", "association": "MEMBER", "can_push": true, "commit_id": "b2c144f1", "on_current_head": true},
+  {"by": "FarhanAliRaza", "state": "APPROVED", "at": "2026-09-04T18:24:01Z", "association": "MEMBER", "can_push": true, "commit_id": "b2c144f1", "on_current_head": true, "note": "second approve, same head, after CI finished green"}
+ ],
+ "counting_approval": true,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": ["Alek99 review (requested, not yet reviewed) - not blocking since a counting approval already exists"],
+ "threads": {
+  "total": 6,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {"SUCCESS": 110, "FAILURE": 0, "PENDING": 0, "SKIPPED": 2},
+  "failing": [],
+  "pending": []
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-08-30T15:30:24Z", "excerpt": "Greptile Summary... Confidence Score: 5/5 (bot; last reviewed commit is the new merge head b2c144f1 per updated_at)"},
+  {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-08-30T15:32:15Z", "excerpt": "Merging this PR will not alter performance"}
+ ],
+ "last_author_activity_at": "2026-09-02T06:18:25Z",
+ "last_maintainer_activity_at": "2026-09-04T18:24:01Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "MAJOR change since this morning: FarhanAliRaza (MEMBER) merged main into the PR branch himself (commit b2c144f1, pushed 2026-09-04T16:52:04Z, new head), then approved it TWICE (18:11:37Z and 18:24:01Z) after CI finished green. This morning's file had this PR at CHANGES_REQUESTED (stale, per traps.md pattern) with no counting approval; it is now APPROVED by a MEMBER on the current head. counting_approval flipped from false to true.",
+  "head_sha changed: 6c2b5286... (this morning) -> b2c144f1... (merge-main commit, this run). merge_state improved from BLOCKED to CLEAN.",
+  "Farhan's original CHANGES_REQUESTED review (5074975910, on c85abb2) and the harsh21234i-authored fixes for it were already resolved as of this morning; Farhan additionally self-DISMISSED a review on the immediately-prior head (6c2b528) at 16:48:30Z, just before doing the main-merge and approving — consistent with the #6917 pattern in traps.md (a maintainer clearing their own earlier stance right before a fresh approval, not a live objection).",
+  "All 6 review threads remain resolved; no new threads opened. All 112 checks green (110 success + 2 skipped: reflex-docs-macos, unit-tests-macos).",
+  "Alek99 (requested reviewer) still has not reviewed, but this is no longer blocking since a counting MEMBER approval exists on the current head.",
+  "This PR moved from 'blocked, stale changes-requested, one click away' to essentially merge-ready pending only the requested-but-optional Alek99 review and whatever remaining human process gate applies.",
+  "mergeable/conflicting_files recomputed fresh via git merge-tree --write-tree against current origin/main (7ab704d6) — clean, no conflicts, consistent with the API's mergeable_state=clean."
+ ]
+}

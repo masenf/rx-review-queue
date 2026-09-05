@@ -1,0 +1,407 @@
+{
+ "main": "7ab704d630dbad5abd85e7330f4b538095ba8ad6",
+ "method": "git merge-tree --write-tree origin/main refs/pr/N (git 2.43); files = paths with staged (non-zero) entries in the write-tree output",
+ "prs": {
+  "5430": {
+   "conflicts": true,
+   "files": [
+    "pyi_hashes.json",
+    "reflex/components/el/elements/forms.py"
+   ]
+  },
+  "6100": {
+   "conflicts": false,
+   "files": []
+  },
+  "6116": {
+   "conflicts": true,
+   "files": [
+    "uv.lock"
+   ]
+  },
+  "6125": {
+   "conflicts": true,
+   "files": [
+    "reflex/config.py",
+    "reflex/istate/manager/__init__.py"
+   ]
+  },
+  "6126": {
+   "conflicts": true,
+   "files": [
+    "reflex/__init__.py",
+    "reflex/utils/token_manager.py"
+   ]
+  },
+  "6181": {
+   "conflicts": true,
+   "files": [
+    "tests/units/compiler/test_compiler.py"
+   ]
+  },
+  "6468": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+    "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+    "pyi_hashes.json"
+   ]
+  },
+  "6490": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/config.py",
+    "reflex/istate/manager/redis.py",
+    "reflex/utils/token_manager.py",
+    "tests/units/reflex_cli/conftest.py"
+   ]
+  },
+  "6553": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/context/base.py"
+   ]
+  },
+  "6563": {
+   "conflicts": true,
+   "files": [
+    "reflex/compiler/compiler.py"
+   ]
+  },
+  "6597": {
+   "conflicts": true,
+   "files": [
+    "pyi_hashes.json"
+   ]
+  },
+  "6676": {
+   "conflicts": false,
+   "files": []
+  },
+  "6688": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/utils/imports.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "reflex/compiler/compiler.py",
+    "reflex/utils/prerequisites.py",
+    "tests/units/compiler/test_compiler_utils.py",
+    "tests/units/utils/test_imports.py"
+   ]
+  },
+  "6708": {
+   "conflicts": false,
+   "files": []
+  },
+  "6723": {
+   "conflicts": true,
+   "files": [
+    "docs/app/reflex_docs/templates/docpage/docpage.py",
+    "docs/app/reflex_docs/views/inkeep.py"
+   ]
+  },
+  "6733": {
+   "conflicts": true,
+   "files": [
+    "reflex/app.py"
+   ]
+  },
+  "6735": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "pyi_hashes.json"
+   ]
+  },
+  "6743": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/utils/types.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "pyi_hashes.json",
+    "reflex/state.py",
+    "tests/units/istate/test_proxy.py",
+    "tests/units/reflex_base/utils/test_types.py",
+    "tests/units/reflex_base/vars/test_base.py"
+   ]
+  },
+  "6744": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+    "packages/reflex-base/src/reflex_base/utils/types.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "pyi_hashes.json",
+    "reflex/route.py",
+    "reflex/state.py",
+    "tests/units/istate/test_proxy.py",
+    "tests/units/reflex_base/utils/test_types.py",
+    "tests/units/reflex_base/vars/test_base.py"
+   ]
+  },
+  "6745": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+    "packages/reflex-base/src/reflex_base/utils/types.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "pyi_hashes.json",
+    "reflex/istate/manager/redis.py",
+    "reflex/route.py",
+    "reflex/state.py",
+    "tests/units/istate/test_proxy.py",
+    "tests/units/reflex_base/utils/test_types.py",
+    "tests/units/reflex_base/vars/test_base.py",
+    "tests/units/test_state.py"
+   ]
+  },
+  "6751": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+    "packages/reflex-base/src/reflex_base/utils/types.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "pyi_hashes.json",
+    "reflex/istate/manager/redis.py",
+    "reflex/route.py",
+    "reflex/state.py",
+    "tests/units/istate/test_proxy.py",
+    "tests/units/reflex_base/utils/test_types.py",
+    "tests/units/reflex_base/vars/test_base.py",
+    "tests/units/test_state.py"
+   ]
+  },
+  "6757": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+    "packages/reflex-base/src/reflex_base/utils/types.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "pyi_hashes.json",
+    "reflex/istate/manager/redis.py",
+    "reflex/route.py",
+    "reflex/state.py",
+    "tests/units/istate/test_proxy.py",
+    "tests/units/reflex_base/utils/test_types.py",
+    "tests/units/reflex_base/vars/test_base.py",
+    "tests/units/test_state.py"
+   ]
+  },
+  "6768": {
+   "conflicts": false,
+   "files": []
+  },
+  "6770": {
+   "conflicts": false,
+   "files": []
+  },
+  "6796": {
+   "conflicts": false,
+   "files": []
+  },
+  "6798": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+    "packages/reflex-base/src/reflex_base/utils/types.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "pyi_hashes.json",
+    "reflex/istate/manager/redis.py",
+    "reflex/route.py",
+    "reflex/state.py",
+    "tests/units/istate/test_proxy.py",
+    "tests/units/reflex_base/utils/test_types.py",
+    "tests/units/reflex_base/vars/test_base.py",
+    "tests/units/test_state.py"
+   ]
+  },
+  "6807": {
+   "conflicts": false,
+   "files": []
+  },
+  "6813": {
+   "conflicts": false,
+   "files": []
+  },
+  "6815": {
+   "conflicts": false,
+   "files": []
+  },
+  "6833": {
+   "conflicts": true,
+   "files": [
+    "pyi_hashes.json"
+   ]
+  },
+  "6840": {
+   "conflicts": true,
+   "files": [
+    "tests/units/test_state.py"
+   ]
+  },
+  "6841": {
+   "conflicts": false,
+   "files": []
+  },
+  "6850": {
+   "conflicts": true,
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/constants/installer.py",
+    "pyi_hashes.json"
+   ]
+  },
+  "6853": {
+   "conflicts": true,
+   "files": [
+    "tests/units/test_state.py"
+   ]
+  },
+  "6861": {
+   "conflicts": false,
+   "files": []
+  },
+  "6875": {
+   "conflicts": false,
+   "files": []
+  },
+  "6876": {
+   "conflicts": false,
+   "files": []
+  },
+  "6898": {
+   "conflicts": false,
+   "files": []
+  },
+  "6899": {
+   "conflicts": true,
+   "files": [
+    "uv.lock"
+   ]
+  },
+  "6900": {
+   "conflicts": true,
+   "files": [
+    "uv.lock"
+   ]
+  },
+  "6901": {
+   "conflicts": true,
+   "files": [
+    "uv.lock"
+   ]
+  },
+  "6906": {
+   "conflicts": false,
+   "files": []
+  },
+  "6925": {
+   "conflicts": false,
+   "files": []
+  },
+  "6929": {
+   "conflicts": false,
+   "files": []
+  },
+  "6930": {
+   "conflicts": false,
+   "files": []
+  },
+  "6932": {
+   "conflicts": true,
+   "files": [
+    "pyproject.toml",
+    "reflex/testing.py",
+    "uv.lock"
+   ]
+  },
+  "6935": {
+   "conflicts": true,
+   "files": [
+    "tests/units/test_event.py"
+   ]
+  },
+  "6946": {
+   "conflicts": false,
+   "files": []
+  },
+  "6968": {
+   "conflicts": false,
+   "files": []
+  },
+  "6996": {
+   "conflicts": false,
+   "files": []
+  },
+  "7004": {
+   "conflicts": false,
+   "files": []
+  },
+  "7006": {
+   "conflicts": false,
+   "files": []
+  },
+  "7007": {
+   "conflicts": true,
+   "files": [
+    "uv.lock"
+   ]
+  },
+  "7015": {
+   "conflicts": false,
+   "files": []
+  },
+  "7016": {
+   "conflicts": false,
+   "files": []
+  },
+  "7033": {
+   "conflicts": false,
+   "files": []
+  },
+  "7035": {
+   "conflicts": false,
+   "files": []
+  },
+  "7036": {
+   "conflicts": true,
+   "files": [
+    "reflex/state.py"
+   ]
+  },
+  "7040": {
+   "conflicts": false,
+   "files": []
+  },
+  "7043": {
+   "conflicts": false,
+   "files": []
+  },
+  "7044": {
+   "conflicts": false,
+   "files": []
+  },
+  "7046": {
+   "conflicts": false,
+   "files": []
+  },
+  "7048": {
+   "conflicts": false,
+   "files": []
+  }
+ }
+}

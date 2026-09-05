@@ -1,0 +1,70 @@
+{
+ "number": 6815,
+ "fetched_at": "2026-09-04T21:30:00Z",
+ "title": "Add env var uppercase validation",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "head_sha": "1d4573f26b8b74d37fa194ac63afef74f8a5b0ef",
+ "body_present": false,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-07-27T14:45:29Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "5844415", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-08-04T18:03:38Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "5844415", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-04T18:04:29Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "7521664", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-04T18:09:42Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "324697c", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-08-29T10:26:34Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "324697c", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 2,
+  "unresolved": [
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P2: This validation turns a previously-accepted configuration into a hard runtime failure for any downstream user. EnvVar is a public class ... a snake_case or mixed-case variable name will now hit a ValueError. Consider a deprecation window (console.deprecate) instead of a hard failure.", "author_reply_excerpt": "i think the hard cut is fine, but the maintainers have to decide (2026-08-29T10:26:34Z)"}
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {"success": 27, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "benedikt-bartscher",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-29T10:26:34Z",
+   "ask": "Author asks maintainers to decide whether a hard ValueError (no deprecation window) is acceptable for non-uppercase EnvVar names.",
+   "addressed": false,
+   "evidence": "No maintainer has commented or reviewed on this PR, before or since."
+  }
+ ],
+ "recent_comments": [
+  {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-08-29T10:26:34Z", "excerpt": "(review thread) i think the hard cut is fine, but the maintainers have to decide"},
+  {"by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-07-28T17:47:54Z", "excerpt": "Codex usage limits have been reached for code reviews."},
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-07-27T14:45:24Z", "excerpt": "Confidence Score: 5/5 The PR appears safe to merge. (bot summary, not evidence)"}
+ ],
+ "last_author_activity_at": "2026-09-04T17:18:27Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 6.46,
+ "notes": [
+  "No substantive change since this morning: updated_at moved only because the author's branch auto-merged main twice today (245f479 at 07:10Z, 1d4573f at 17:18Z), both no-op merge commits with zero diff to the PR's own content. head_sha changed (d9d76dad -> 1d4573f) but conflicting_files, reviews, and threads are identical to the morning run.",
+  "days_waiting_on_maintainer computed from the last SUBSTANTIVE author activity (2026-08-29T10:26:34Z review-thread reply asking for a maintainer decision), not from today's merge-noop commit, since the ask itself hasn't moved.",
+  "Still no maintainer engagement at all (no review, no comment) since PR opened 2026-07-27 -- the deprecation-policy question is unanswered for 6+ days running.",
+  "1 unresolved cubic thread already answered by author; one click to resolve once maintainers decide on hard-cut vs deprecation window.",
+  "merge_state BLOCKED (no conflicts; blocked on required review/approval)."
+ ]
+}

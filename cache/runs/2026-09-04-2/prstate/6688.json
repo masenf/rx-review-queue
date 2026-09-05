@@ -1,0 +1,216 @@
+{
+ "number": 6688,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "e76592142f1394f8c31bcb674a950122116ec72e",
+ "title": "ENG-9148: feat(compiler): incremental compile cache & warm hot-reload daemon (REFLEX_COMPILE_CACHE)",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/utils/imports.py",
+  "packages/reflex-base/src/reflex_base/vars/base.py",
+  "reflex/compiler/compiler.py",
+  "reflex/utils/prerequisites.py",
+  "tests/units/compiler/test_compiler_utils.py",
+  "tests/units/utils/test_imports.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-06-28T15:41:08Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "a453ccb",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-06-28T15:41:53Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "a453ccb",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-14T18:25:08Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "516d9fe",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-28T23:23:07Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "17a31ac",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-09T15:13:05Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e765921",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author: resolve merge conflicts",
+  "author: address masenf's 3 open asks",
+  "author: resolve/rebut 7 unresolved threads",
+  "fix reflex-install-and-init CI failure"
+ ],
+ "threads": {
+  "total": 32,
+  "unresolved": [
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 Watch all recorded in-project data dependencies: editing a .json/.yaml/.toml/.txt/.csv data file a page reads does not wake the compile daemon; watched suffix list only includes .py, .md, .mdx (reflex/utils/compile_daemon.py:38)"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 Hash include-path modules before reusing pages: with REFLEX_HOT_RELOAD_INCLUDE_PATHS the dependency graph keeps only modules under Path.cwd(), so sibling-package edits reuse stale .web output (page_cache.py:595)"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 Hash transitive deps of warm dynamic imports: only the module returned by a runtime import is recorded; its own imports are not added to the page dependency set (page_cache.py:261)"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Preloaded app untracked: when config.app_module is already populated, record_app_import() captures no reads, so dynamically loaded theme/app wrap edits can leave stale app-root output (prerequisites.py:208, 2026-07-14)"
+   },
+   {
+    "by": "masenf",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "the practical problem with resetting this every time is that the generated names are order-dependent... i think we need a little more machinery here; _UNIQUE_NAME_RNG should be re-seeded for each page being compiled, seed based on hash of the page route (plugins/compiler.py:821)"
+   },
+   {
+    "by": "masenf",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "all supported OS provide a mechanism for watching a filesystem for changes without polling. we cannot be walking the filesystem and stat'ing files every 0.05 seconds... we should be subscribing to changes in the file tree (compile_daemon.py:519)"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Preloaded App Untracked: when config.app_module has already been loaded before get_app() runs, this branch returns the cached module inside the recorder instead of replaying the app import (prerequisites.py:208, 2026-08-09, re-raised on current head)"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 109,
+  "by_state": {
+   "success": 106,
+   "failure": 1,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [
+   "reflex-install-and-init"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "reflex-install-and-init",
+   "cause": "`reflex export`/`bun run export` of the blank template app fails in the react-router prerender step with 'Prerender: Request failed for /: ECONNREFUSED' (script \"export\" exited with code 1) after both client and SSR vite builds succeeded.",
+   "prs_fault": null
+  }
+ ],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T23:23:07Z",
+   "ask": "Repro: adding an @rx.memo component from another module while REFLEX_COMPILE_CACHE=1 is running yields vite 'Failed to resolve import $/app_components/ccminimal/m1'; the explicit memo does not get compiled",
+   "addressed": false,
+   "evidence": "No author reply; only commit since is a merge of upstream/main (e765921, 2026-08-09)"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T22:35:55Z",
+   "ask": "Re-seed _UNIQUE_NAME_RNG per page (seed from page route hash) instead of resetting globally, to avoid duplicate 'unique' names across cached/recompiled pages",
+   "addressed": false,
+   "evidence": "Thread unresolved, no reply, no non-merge commit after 2026-07-28"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T23:15:19Z",
+   "ask": "Use OS filesystem change notifications instead of stat-polling every 0.05s in the compile daemon; polling only as fallback",
+   "addressed": false,
+   "evidence": "Thread unresolved, no reply, no non-merge commit after 2026-07-28"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-07-01T16:58:33Z",
+   "excerpt": "@codex pelase review"
+  },
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-06-28T20:29:34Z",
+   "excerpt": "@greptile please rereview"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-06-28T15:41:01Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 4/5; one cache invalidation path should be fixed before merging (bot summary; updated 2026-08-09)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-09T15:07:52Z",
+ "last_maintainer_activity_at": "2026-07-28T23:23:07Z",
+ "days_waiting_on_maintainer": 26.4,
+ "notes": [
+  "Fork PR (FarhanAliRaza/reflex:reflex-hmr) but author association is MEMBER; days_waiting_on_maintainer set to 0 per rule for MEMBER authors. Ball is in the author's court.",
+  "mergeable_state was 'unknown' on first get and 'dirty' on second: merge conflicts with main (last merge of upstream/main on 2026-08-09 conflicted in packages/reflex-base/src/reflex_base/compiler/templates.py).",
+  "Full CI ran on head e765921 (fork PRs do get CI here): 106 green, 2 skipped (macOS jobs), 1 failure (reflex-install-and-init prerender ECONNREFUSED). Cannot tell from the log alone whether the PR's compiler/template changes cause the prerender failure or whether main is also red; prs_fault left null.",
+  "masenf pushed a merge commit on the branch (17a31ac, 2026-07-28) and left a COMMENTED review with a memo-component repro; his two inline threads plus 5 bot threads remain unresolved; the author has not replied to any of them.",
+  "Requested reviewer Alek99 has not reviewed.",
+  "Large PR: +4,562/-72 across 29 files, 21 commits.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

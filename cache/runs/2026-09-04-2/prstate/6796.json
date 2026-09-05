@@ -1,0 +1,89 @@
+{
+ "number": 6796,
+ "fetched_at": "2026-09-04T23:55:00Z",
+ "head_sha": "cfe98b2aeb33e60379d79b3a77d63506b4822b39",
+ "title": "add i18n support",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [
+  {"number": 2339, "title": "Internationalization (I18N) and localization (L10N) (Feature Request)", "filed_by": "karndeb"}
+ ],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-07-17T22:42:28Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b0826d51a7860f8fb8f6b9d75c42599a8e649eb9", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-07-17T22:54:23Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "7d90fc419666e0e518c8b5378f3f27f1209d7e23", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-07-17T23:33:55Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "907aaac04925e2c7ddc45b92e5e6a1e5c69d69e1", "on_current_head": false},
+  {"by": "chatgpt-codex-connector[bot]", "state": "COMMENTED", "at": "2026-07-18T11:17:05Z", "association": "NONE", "can_push": false, "commit_id": "6b9a5f53425ea736631cc499bc2f43b8c72af0c9", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-07-18T12:02:27Z", "association": "CONTRIBUTOR", "can_push": true, "commit_id": "6b9a5f53425ea736631cc499bc2f43b8c72af0c9", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-07-18T14:01:54Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "182eab54744da3e879a4ec58157f8f8dcb45bd09", "on_current_head": false},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-07-30T19:34:47Z", "association": "MEMBER", "can_push": true, "commit_id": "c88fd650c1afc4aff133915dc2f26898f615ab21", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-26T20:33:01Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "89c0666bc4f864b3e0ec354327f3ed70e85123ab", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-26T21:14:42Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b9070ed35dc1fa577a683d6723e507906021b373", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-26T21:56:21Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "173fdf14db7803ee1346c700c573c4d6382d1b00", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T11:55:33Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "5ae48c2a86e60857c066f2634ad6eaf1cfdf08e2", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-09-04T12:21:27Z", "association": "CONTRIBUTOR", "can_push": true, "commit_id": "7e0a3842d3abb435db6411f9d4061736f6735fbb", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-04T12:37:13Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "7e0a3842d3abb435db6411f9d4061736f6735fbb", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-09-04T13:06:50Z", "association": "CONTRIBUTOR", "can_push": true, "commit_id": "7e0a3842d3abb435db6411f9d4061736f6735fbb", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "Alek99 (requested reviewer, never reviewed)",
+  "masenf (MEMBER) — explicitly pinged by the author on Jul 29 for an architectural/DX look and has not returned since a single Jul 30 comment"
+ ],
+ "threads": {
+  "total": 43,
+  "unresolved": [
+   {"by": "chatgpt-codex-connector", "outdated": true, "author_replied": true, "first_comment": "P1: Remove development pins before publishing reflex-i18n. With the new dispatch-release option, selecting reflex-i18n's dev pins would be unpublishable."},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P2: With PathPrefixRouting(default_at_root=False), this adds prefixed pages but leaves the original unprefixed app page available at /. Remove or redirect the base page..."},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P2: When a base route starts with a configured locale segment, delocalize and locale_of reserve it as a prefix, so /de/pricing is treated as German instead of a base route."},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P2: When an app already owns a locale-prefixed route such as /de, this expansion raises RouteValueError instead of preserving the app page."}
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 115,
+  "by_state": {
+   "SUCCESS": 113,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {"by": "chatgpt-codex-connector[bot]", "ask": "Remove/resolve unpublishable dev pins in packages/reflex-i18n/pyproject.toml before release.", "addressed": false},
+  {"by": "cubic-dev-ai[bot]", "ask": "PathPrefixRouting(default_at_root=False) can leave the unprefixed base app page reachable at '/' alongside the prefixed locale pages.", "addressed": true},
+  {"by": "cubic-dev-ai[bot]", "ask": "delocalize/locale_of can misclassify an app route that happens to start with a configured locale segment (e.g. /de/pricing).", "addressed": true},
+  {"by": "cubic-dev-ai[bot]", "ask": "Route expansion can raise RouteValueError instead of preserving an app-owned locale-prefixed route like /de.", "addressed": true},
+  {"by": "benedikt-bartscher", "ask": "@masenf could you please take a brief look at this from an architectural design and DX perspective? (Jul 29)", "addressed": false}
+ ],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-07-17T22:42:22Z", "excerpt": "Confidence Score: 5/5 ... safe to merge, and the two remaining findings are minor edge cases with no impact on real-world usage."},
+  {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-07-29T19:20:18Z", "excerpt": "@masenf could you please take a brief look at this from an architectural design and DX perspective? it's totally okay if you have smth completly different in mind"}
+ ],
+ "last_author_activity_at": "2026-09-04T13:07:04Z",
+ "last_maintainer_activity_at": "2026-07-30T19:34:47Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "NEW since routine review: cubic re-reviewed the current head on Sep 4 (11:55-12:37) raising 3 P2 routing-edge-case findings; benedikt-bartscher replied to all 3 with design rationale/fixes within the hour (12:21-13:07), but none of the threads were marked resolved, so GitHub still counts all 3 as hard merge-blocking unresolved threads even though the author has substantively answered each.",
+  "The 4th unresolved thread (dev pins, chatgpt-codex-connector, Jul 18) is explicitly left open by the author 'for the maintainers' — this is a real open decision, not a stale bot nag.",
+  "Author's Jul 29 direct ping to masenf for an architectural/DX review has gone unanswered beyond one Jul 30 comment about SSG/SEO indexability of translated pages — this is the single biggest blocker: a 56-file, 6234-insertion new package (reflex-i18n) has never gotten a full maintainer design review.",
+  "No counting approval; no CHANGES_REQUESTED. Alek99 (requested reviewer) has never engaged.",
+  "CI fully green (115 checks, only the usual 2 macos skips).",
+  "This is the largest of the six PRs in this batch by far (56 files changed) — treat any 'safe to merge' bot summary with extra skepticism per traps.md; greptile's 5/5 confidence score predates today's 3 new cubic findings."
+ ]
+}

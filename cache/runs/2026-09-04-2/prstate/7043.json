@@ -1,0 +1,61 @@
+{
+ "number": 7043,
+ "fetched_at": "2026-09-04T23:55:00Z",
+ "head_sha": "2d97877d3012d2e42262407b84c9edcef44df05b",
+ "title": "Make docs footer edit links point to actual source files",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "state": "MERGED",
+ "merged": true,
+ "merged_at": "2026-09-04T23:42:44Z",
+ "merged_by": "masenf",
+ "mergeable": "MERGEABLE",
+ "merge_state": "MERGED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-04T17:03:06Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "9234bdc26c73299e68096a36f9374ac9ce7b78c2", "on_current_head": false},
+  {"by": "Alek99", "state": "DISMISSED", "at": "2026-09-04T18:32:09Z", "association": "MEMBER", "can_push": true, "commit_id": "9234bdc26c73299e68096a36f9374ac9ce7b78c2", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [],
+ "threads": {
+  "total": null,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {
+   "SUCCESS": 112
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-04T17:01:30Z", "excerpt": "Confidence Score: 5/5. The reviewed changes appear safe to merge, with no actionable new failures remaining."},
+  {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-04T17:03:01Z", "excerpt": "Merging this PR will not alter performance."}
+ ],
+ "last_author_activity_at": "2026-09-04T23:42:44Z",
+ "last_maintainer_activity_at": "2026-09-04T23:42:44Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "MERGED MID-SCAN: this PR was open in the run's listing.json (fetched_at 23:40:00Z) but masenf (author, MEMBER) merged it himself at 23:42:44Z — 2-3 minutes after the listing snapshot. Classic 'merge landed mid-scrape' case per traps.md; do not carry this forward as an open PR in the board, and recheck any behind-main figures for other PRs that used main before this merge landed.",
+  "Alek99's review shows as DISMISSED (submitted 18:32, dismissed at/near merge time) rather than an outstanding CHANGES_REQUESTED — read as part of the merge sequence (self-merge by author with an admin/maintainer's earlier review dismissed), not as a live objection.",
+  "No APPROVED review from anyone ever recorded, yet masenf (author + MEMBER) merged directly — small, low-risk docs/tooling change (4 files, footer edit-link generation) merged by its own MEMBER author.",
+  "CI was fully green at merge (112/112 success).",
+  "Exclude from the active board; if a report references it, mark it merged with the timestamp above rather than 'pending'."
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "number": 6553,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "94c05d26c403759ae3408192d7f7bc0d00996bd1",
+ "title": "refactor(reflex-base): consolidate BaseContext into context.base (#6514)",
+ "author": "BABTUNA",
+ "author_association": null,
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/context/base.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6514,
+   "title": "Consolidate reflex_base.plugins.compiler.BaseContext and reflex_base.context.base.BaseContext",
+   "filed_by": "masenf",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "author: rebase to resolve merge conflicts",
+  "maintainer: first human review"
+ ],
+ "threads": {
+  "total": 0,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 70,
+  "by_state": {
+   "success": 67,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 1
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-05-21T23:20:24Z",
+   "excerpt": "Merging this PR will not alter performance; 24 untouched benchmarks"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-05-21T23:22:21Z",
+   "excerpt": "Greptile Summary ... Confidence Score 4/5 ... P2: ensure_context_attached no longer verifies self is the active context (comment outside diff, not a thread)"
+  }
+ ],
+ "last_author_activity_at": "2026-05-21T23:48:49Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 106.0,
+ "notes": [
+  "mergeable_state was 'unknown' on first get, 'dirty' on second get -> CONFLICTING/DIRTY; conflicting files not exposed by API.",
+  "Full CI ran on head 94c05d2 and is green (67 success, 2 skipped macOS jobs, CodeQL neutral); fork PR from BABTUNA/reflex.",
+  "No human review or comment at all in ~3.5 months; only bots (codspeed, greptile). Greptile's P2 concern about ensure_context_attached is in its summary comment, not a review thread, so nothing to resolve.",
+  "author_association not returned by the API for the PR author; fork PR, treated as non-maintainer for waiting-time purposes.",
+  "Linked issue #6514 was filed by maintainer masenf (MEMBER); PR commit message co-authored by Claude Opus 4.7.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "number": 6743,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "f9e40102854fabdbbd781e2b0bd9d95a23a74c07",
+ "title": "perf: cut state hot-path overhead \u2014 deep-validation skip, proxy caching, dirty-propagation frontier",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/components/component.py",
+  "packages/reflex-base/src/reflex_base/components/memo.py",
+  "packages/reflex-base/src/reflex_base/utils/types.py",
+  "packages/reflex-base/src/reflex_base/vars/base.py",
+  "pyi_hashes.json",
+  "reflex/state.py",
+  "tests/units/istate/test_proxy.py",
+  "tests/units/reflex_base/utils/test_types.py",
+  "tests/units/reflex_base/vars/test_base.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-14T00:14:55Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "923ac6b",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-13T01:09:02Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "36746e4",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-13T01:18:50Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "7d1e9dc",
+   "on_current_head": false
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-08-13T17:26:32Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "f9e4010",
+   "on_current_head": true
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-08-13T17:26:35Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "f9e4010",
+   "on_current_head": true
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-08-13T17:26:37Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "f9e4010",
+   "on_current_head": true
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-13T17:27:38Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "f9e4010",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "masenf re-review after fixes"
+ ],
+ "threads": {
+  "total": 5,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 5,
+  "by_state": {
+   "success": 5,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-14T00:12:38Z",
+   "ask": "If instance_dict is already in hand, write the value there directly",
+   "addressed": true,
+   "evidence": "Author reply 2026-08-13 cites commits 56d4cf57/ad41b4d0; thread resolved"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-14T00:14:52Z",
+   "ask": "Define the new tracking fields as normal BaseState fields, not ad-hoc __dict__ entries",
+   "addressed": true,
+   "evidence": "Author reply 2026-08-13 cites ad41b4d0 declaring reserved state fields; thread resolved"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-07-10T20:24:07Z",
+   "excerpt": "Merging this PR will improve performance by 5.02% (test_process_event 7.6ms -> 7.2ms); different runtime environments warning"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-10T20:23:25Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot summary, not evidence; updated 2026-08-13)"
+  },
+  {
+   "by": "linear-code[bot]",
+   "association": "NONE",
+   "at": "2026-07-10T20:20:49Z",
+   "excerpt": "ENG-10095 linkback"
+  }
+ ],
+ "last_author_activity_at": "2026-08-13T17:26:37Z",
+ "last_maintainer_activity_at": "2026-07-14T00:14:55Z",
+ "days_waiting_on_maintainer": 22.3,
+ "notes": [
+  "Stacked PR: base is claude/reflex-compiler-perf-t8ztc9-11-memoize-dedup, not main (body says stacked on #6735; #6744 continues on top). Consolidates #6738, #6740 and ENG-10095.",
+  "Only performance-workflow check runs exist on head (all green); no unit-tests/pre-commit/changelog runs on this head.",
+  "masenf's 2026-07-14 review threads were both answered and resolved on 2026-08-13; no maintainer re-review since.",
+  "Linked Linear ENG-10095/10093/10094; no GitHub issue linked.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

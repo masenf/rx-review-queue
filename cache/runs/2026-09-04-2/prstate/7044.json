@@ -1,0 +1,75 @@
+{
+ "number": 7044,
+ "fetched_at": "2026-09-04T23:55:00Z",
+ "head_sha": "04b3cefe7f7e5aa023c7e8173b416fbfec0a2605",
+ "title": "Fix build failure when frontend_path is set without prerendering",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": true,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T19:04:45Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "d148af771c549c50dc0d5aa81c5e35ca1003369d", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-04T19:12:18Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "d148af771c549c50dc0d5aa81c5e35ca1003369d", "on_current_head": false},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T19:25:06Z", "association": "MEMBER", "can_push": true, "commit_id": "04b3cefe7f7e5aa023c7e8173b416fbfec0a2605", "on_current_head": true},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T19:25:09Z", "association": "MEMBER", "can_push": true, "commit_id": "04b3cefe7f7e5aa023c7e8173b416fbfec0a2605", "on_current_head": true}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no reviewer requested; blocked by its own failing CI, not by a human"
+ ],
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 104,
+   "FAILURE": 5,
+   "SKIPPED": 2
+  },
+  "failing": [
+   "unit-tests (windows-latest, 3.10)",
+   "unit-tests (windows-latest, 3.11)",
+   "unit-tests (windows-latest, 3.12)",
+   "unit-tests (windows-latest, 3.13)",
+   "unit-tests (windows-latest, 3.14)"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "unit-tests (windows-latest, 3.10/3.11/3.12/3.13/3.14) — all 5 windows jobs, same 3 tests",
+   "cause": "Real bug introduced by this PR's own fix, not flaky/pre-existing. reflex/utils/build.py:292 does `frontend_path = PosixPath(frontend_path)` unconditionally. pathlib.PosixPath cannot be instantiated on Windows since Python 3.13+ (raises `pathlib.UnsupportedOperation: cannot instantiate 'PosixPath' on your system`), so all 3 of this PR's own new tests (test_build_relocates_static_output_without_prerendered_prefix_dir[/app], [/foo/bar], and test_build_merges_static_output_into_prerendered_prefix_dir) fail on every Windows unit-test job. Needs `pathlib.PurePosixPath` (for path manipulation only, works cross-platform) or platform-neutral handling instead of concrete PosixPath."
+  }
+ ],
+ "outstanding_asks": [
+  {"by": "greptile-apps[bot]", "ask": "Confidence 4/5, PR does NOT yet appear safe to merge: even after masenf's fix rejecting '..' segments, _normalize_paths still forces frontend_path to start with '/', and `static_dir / frontend_path` with an absolute right-hand path discards static_dir entirely (pathlib semantics) — so ordinary values like '/app' can still create/populate an output directory outside .web/build/client, not just deliberate traversal.", "addressed": false}
+ ],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-04T19:04:41Z", "excerpt": "The PR does not yet appear safe to merge because the existing output-containment issue remains unresolved ... static_dir / frontend_path discards static_dir."}
+ ],
+ "last_author_activity_at": "2026-09-04T19:25:09Z",
+ "last_maintainer_activity_at": "2026-09-04T19:25:09Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "NEW PR since this morning's run (created 2026-09-04T18:58:56Z).",
+  "Self-authored by masenf (MEMBER) — blocked purely by CI, not by a missing reviewer or human approval.",
+  "Real, reproducible CI failure caused by this PR's own code: reflex/utils/build.py:292 instantiates a concrete pathlib.PosixPath from a config string, which raises on Windows Python 3.13+. All 5 windows unit-test jobs fail on the 3 new tests this PR adds. This is a one-fix-away situation but the fix is not yet pushed.",
+  "greptile's most recent review (19:04, same head 04b3cefe that masenf's thread replies cite as 'fixed') says the path-containment concern is only partially fixed: rejecting '..' stops literal traversal, but joining an absolute frontend_path onto static_dir via pathlib's '/' operator silently discards static_dir for ordinary values like '/app', which is a second, still-open correctness issue in the same code region as the Windows CI failure.",
+  "Two review threads exist, both marked resolved by masenf's replies (citing the same 04b3cefe commit) — but the CI failure and greptile's newer finding suggest the fix is incomplete; do not treat 'resolved threads' as equivalent to 'actually fixed' here."
+ ]
+}

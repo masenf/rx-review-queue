@@ -1,0 +1,64 @@
+{
+ "number": 7046,
+ "fetched_at": "2026-09-04T23:55:00Z",
+ "head_sha": "b9987cfaddd3c4e0f53eca14d9431be33e74380a",
+ "title": "docs: add a User Authentication page for brokered app sign-in",
+ "author": "adhami3310",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T19:38:59Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "733f1df012c966e51b803c207e6d955808a1241a", "on_current_head": false},
+  {"by": "adhami3310", "state": "COMMENTED", "at": "2026-09-04T19:45:02Z", "association": "MEMBER", "can_push": true, "commit_id": "2a2bae1d1d6663907afcfd4fec1bf138c96028fb", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T19:47:08Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "2a2bae1d1d6663907afcfd4fec1bf138c96028fb", "on_current_head": false},
+  {"by": "adhami3310", "state": "COMMENTED", "at": "2026-09-04T19:51:22Z", "association": "MEMBER", "can_push": true, "commit_id": "b9987cfaddd3c4e0f53eca14d9431be33e74380a", "on_current_head": true},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-04T19:59:02Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b9987cfaddd3c4e0f53eca14d9431be33e74380a", "on_current_head": true}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "Alek99 (requested reviewer, never engaged)"
+ ],
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {
+   "SUCCESS": 110,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-04T19:38:55Z", "excerpt": "Confidence Score: 5/5. Both previous findings are resolved: the documented user API now distinguishes frontend Vars from User.current(), and the backend example imports the rxe decorator alias."}
+ ],
+ "last_author_activity_at": "2026-09-04T19:51:22Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "NEW PR since this morning's run (created 2026-09-04T19:36:30Z).",
+  "Docs-only PR (3 files, +218/-1). Two real correctness findings from greptile were both fixed by the author within minutes: (1) documented auth_user.email/.name/.sub/.picture API didn't match the real reflex-enterprise API (mixed up Var-level fields vs the await User.current() claims dict) and (2) a backend code sample used @rxe.event without importing reflex_enterprise as rxe. Both threads resolved with code fixes to the doc page, verified by the author against reflex_enterprise/auth/user_state.py.",
+  "No human maintainer has touched this PR at all — only the author (adhami3310, MEMBER) and bots. Alek99 was requested as reviewer but has not reviewed.",
+  "CI fully green (112 checks, usual 2 macos skips). No counting approval yet (none requested/given), but nothing blocking besides waiting on Alek99 to actually look at it — this is a fast-lane, low-risk docs PR.",
+  "No linked issue in the body (references an external flexgen PR and Linear tickets, not a reflex-dev/reflex issue number)."
+ ]
+}

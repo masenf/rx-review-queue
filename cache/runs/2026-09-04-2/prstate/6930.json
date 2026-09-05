@@ -1,0 +1,55 @@
+{
+ "number": 6930,
+ "fetched_at": "2026-09-04T21:30:00Z",
+ "title": "port lazy_loader perf and native PEP810 + add python3.15 support",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "head_sha": "7764f16e963353f7c6e0eba91401e5cf2c0d8bcd",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-22T14:43:27Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "dc490e9", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 1,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 120,
+  "by_state": {"success": 27, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-08-22T13:06:01Z", "excerpt": "Confidence Score: 5/5 The PR appears safe to merge. (bot summary, not evidence)"},
+  {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-08-22T13:03:55Z", "excerpt": "Merging this PR will improve performance by 4.57% (5 improved benchmarks) -- updated figure vs this morning's 5.22%/4 benchmarks, from today's rerun on the same effective diff"}
+ ],
+ "last_author_activity_at": "2026-09-04T17:18:22Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 5.8,
+ "notes": [
+  "No substantive change since this morning: updated_at moved only because the branch auto-merged main twice today (05f50570 at 07:17Z, 7764f16 at 17:18Z), both no-op merge commits with zero diff to the PR's own content. Reviews, threads, and CI outcome are the same as the morning run (still green, still Alek99 requested as reviewer with no response).",
+  "days_waiting_on_maintainer computed from the last real author commit (2026-08-29T10:21:14Z, bd08a51 merge-with-fixes), not today's no-op merges -- zero maintainer/reviewer engagement since Alek99 was requested for review on 2026-08-22.",
+  "The single cubic thread (psycopg[binary] has no cp315 wheel) remains resolved.",
+  "mergeable_state blocked (no conflicts; waiting on Alek99's requested review)."
+ ]
+}

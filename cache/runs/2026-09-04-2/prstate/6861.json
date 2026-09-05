@@ -1,0 +1,127 @@
+{
+ "number": 6861,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "aa4fdb4b3bfe2a71e754fc336381a019cc0cb9b1",
+ "title": "fix(upload): handle unknown event handlers",
+ "author": "hariomlohardev",
+ "author_association": "NONE",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6860,
+   "title": "Upload endpoint returns 500 for unknown Reflex-Event-Handler header",
+   "filed_by": "harsh21234i",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-08T19:15:11Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "0971868",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-08T19:18:12Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "0971868",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "maintainer: approve workflow runs (CI never ran on head)",
+  "maintainer review"
+ ],
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": null,
+  "total": 2,
+  "by_state": {
+   "success": 2,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-09T02:40:38Z",
+   "ask": "fix .get([handler_name]) list-key bug (TypeError) and add a news fragment",
+   "addressed": true,
+   "evidence": "commit 7093ac7 fixed the lookup (cubic thread marked addressed), commit 3232a81 added packages/reflex-components-core/news/6860.bugfix.md; asker replied 'LGTM!' 2026-08-11. Asker is a CONTRIBUTOR, not a maintainer."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-09T02:40:38Z",
+   "excerpt": "one blocker before this can merge ... .get([handler_name]) ... raises TypeError ... Also ... towncrier check currently fails because there is no news fragment"
+  },
+  {
+   "by": "hariomlohardev",
+   "association": "NONE",
+   "at": "2026-08-10T20:30:29Z",
+   "excerpt": "Done"
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-11T04:42:14Z",
+   "excerpt": "please add a package news fragment at packages/reflex-components-core/news/6860.bugfix.md ... I also don't see unit or integration CI results for the current commit yet"
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-11T07:52:23Z",
+   "excerpt": "LGTM!"
+  },
+  {
+   "by": "hariomlohardev",
+   "association": "NONE",
+   "at": "2026-08-23T16:26:05Z",
+   "excerpt": "When it will be merged"
+  }
+ ],
+ "last_author_activity_at": "2026-08-23T16:26:05Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 12.3,
+ "notes": [
+  "mergeable_state was 'unknown' on first get, 'blocked' on retry.",
+  "Fork PR (hariomlohardev/reflex). Only Greptile Review and cubic check runs exist on head aa4fdb4; no unit-tests/integration/pre-commit/changelog checks and no commit statuses. CI has never run on this head; the 'safe to merge' bot summary is not evidence.",
+  "No maintainer (MEMBER/OWNER) has commented or reviewed. All human feedback came from harsh21234i (CONTRIBUTOR), who is also the filer of the linked issue #6860.",
+  "Both review threads (greptile, cubic) are resolved and outdated; they pointed at the same list-key bug fixed in 7093ac7.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

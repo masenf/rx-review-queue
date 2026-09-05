@@ -1,0 +1,46 @@
+{
+ "number": 7033,
+ "fetched_at": "2026-09-04T20:00:00Z",
+ "head_sha": "689dc480fe0c2e0fe83aaac2d4c177508b9f96e2",
+ "title": "feat: allow explicit only event handlers",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": ["Alek99"],
+ "linked_issues": [{"number": 7032, "title": "disable implicit @rx.event handlers", "filed_by": "benedikt-bartscher", "filer_is_author": true}],
+ "reviews": [
+   {"by": "masenf", "state": "COMMENTED", "at": "2026-09-02T16:35:00Z", "association": "MEMBER", "can_push": true, "commit_id": "945a53fe", "on_current_head": false, "note": "supportive in principle; asked that reflex-enterprise's auth plugin and other integration points be checked"},
+   {"by": "abulvenz", "state": "APPROVED", "at": "2026-09-02T17:56:44Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "689dc480", "on_current_head": true}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": ["Alek99 (requested reviewer, not yet reviewed)", "masenf's reflex-enterprise compatibility question is still unaddressed"],
+ "threads": {"total": 10, "unresolved": [
+   {"by": "abulvenz", "outdated": false, "author_replied": true, "first_comment": "Might also become default one day, following the Zen of Python > Explicit is better than implicit."}
+ ]},
+ "checks": {"rollup": "SUCCESS", "total": 112, "by_state": {"SUCCESS": 110, "FAILURE": 0, "PENDING": 0, "SKIPPED": 2}, "failing": [], "pending": []},
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [{"by": "masenf", "association": "MEMBER", "at": "2026-09-02T16:35:00Z", "ask": "Confirm reflex-enterprise's auth plugin and other integration points still work with the new explicit-handler structure", "addressed": false, "evidence": "No reply from the author on this specific point since 09-02; abulvenz approved without addressing it; author's 09-04 bump comment does not mention it either"}],
+ "recent_comments": [
+   {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-09-04T18:16:42Z", "excerpt": "@masenf i think this PR is important from a security perspective - can we get it in?"},
+   {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-09-02T18:06:01Z", "excerpt": "yeah, i wanted to go the same route as i did with state_auto_setters: 1. introduce flag 2. change default to explicit 3. drop implicit mode"}
+ ],
+ "last_author_activity_at": "2026-09-04T18:16:42Z",
+ "last_maintainer_activity_at": "2026-09-02T16:35:00Z",
+ "days_waiting_on_maintainer": 0.07,
+ "notes": [
+  "Changed since this morning: author benedikt-bartscher posted a bump comment at 2026-09-04T18:16:42Z directly pinging @masenf, framing the PR as security-relevant and asking for it to be merged. No code change, no head sha change, no new reviews, no check changes since this morning (still 112 checks, all green; still 10 threads, 9 resolved, 1 unresolved (the known Zen-of-Python exchange, already replied to)).",
+  "This flips who is 'waiting': this morning the author had last acted (09-02) and the ball was arguably with the maintainer already; the bump comment refreshes last_author_activity_at to today, but the substance is unchanged and masenf's reflex-enterprise compatibility question from 09-02 is still unanswered.",
+  "counting_approval remains false: only abulvenz (CONTRIBUTOR) has approved on the current head; Alek99 (requested reviewer, presumably has write access) has still not reviewed.",
+  "mergeable/conflicting_files recomputed fresh via git merge-tree --write-tree against current origin/main (7ab704d6) — clean, no conflicts."
+ ]
+}

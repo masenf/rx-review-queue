@@ -1,0 +1,194 @@
+{
+ "number": 6708,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "46b2b5e8626da0d7f2445fc61536aa91517ec695",
+ "title": "Wrap Recharts Sankey chart",
+ "author": "harsh21234i",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "masenf",
+  "Alek99"
+ ],
+ "linked_issues": [
+  {
+   "number": 6558,
+   "title": "Wrap recharts SankeyChart",
+   "filed_by": "masenf",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-06T16:17:41Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e94c110",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-06T16:23:45Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "e94c110",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-09T22:28:19Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "574f851",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-30T00:54:43Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "6c9066d",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-01T12:19:29Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "ad5de4f",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-01T12:24:32Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "ad5de4f",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-01T16:38:35Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "7a9c158",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-01T18:12:11Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "6a09841",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author: fix reflex-docs build failure (sankeychart.md custom_node Text.y type error)",
+  "maintainer re-review (masenf, Alek99 requested)"
+ ],
+ "threads": {
+  "total": 20,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 112,
+  "by_state": {
+   "success": 108,
+   "failure": 2,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [
+   "reflex-docs (3.11)",
+   "reflex-docs (3.12)"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "reflex-docs (3.11), reflex-docs (3.12)",
+   "cause": "Docs app compile fails on docs/library/graphing/charts/sankeychart.md custom_node example: TypeError 'Invalid var passed for prop Text.y, expected type str | int, got value (rest?.[\"y\"] + (rest?.[\"height\"] / 2)) of type typing.Union[int, float]' raised from the sankey renderer wrapper, so the docs server never starts.",
+   "prs_fault": true
+  }
+ ],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-09T22:28:19Z",
+   "ask": "needs a changelog entry; docs page doesn't build (SankeyChart.data rejects State var)",
+   "addressed": true,
+   "evidence": "commit cc9bd95 added a changelog fragment; author comment 2026-07-10 says data prop widened to accept mapping-shaped state vars; that specific TypeError is gone but reflex-docs now fails on a different Text.y type error on the current head"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-10T03:17:21Z",
+   "excerpt": "Removed link_width ... Widened SankeyChart.data to accept mapping-shaped state vars ... Added regression coverage"
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-13T07:32:52Z",
+   "excerpt": "hey @masenf @FarhanAliRaza can someone look into this ?"
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-01T13:28:07Z",
+   "excerpt": "Pushed ad5de4fa with two fixes: added missing reflex-components-core dependency ... updated Sankey custom link payload types"
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-13T03:08:31Z",
+   "excerpt": "Hey @masenf The failing check is test_call_script[inline] ... Could this be rerun or compared against main to confirm whether it is a baseline/flaky CI failure?"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-06T16:17:36Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 This PR is safe to merge (bot; not evidence; last updated 2026-08-25)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-25T17:50:04Z",
+ "last_maintainer_activity_at": "2026-07-30T00:48:01Z",
+ "days_waiting_on_maintainer": 10.2,
+ "notes": [
+  "mergeable_state was 'unknown' on first get, 'blocked' on retry.",
+  "masenf (MEMBER) pushed directly to the branch on 2026-07-29/30 (merge main, 'Enable proper custom sankey node and link renderers', 'reflex-components-recharts depends on reflex-base use_hook_var and use_id'); last maintainer activity is taken from that commit, later than his 2026-07-09 review.",
+  "Author has since merged main into the branch four times (08-07, 08-09, 08-13, 08-21, 08-25); the head commit is a merge commit.",
+  "The 2026-08-13 author comment about a flaky test_call_script[inline] integration failure is moot on the current head: all integration-app-harness jobs pass; the only failures are the two reflex-docs jobs with an identical cause.",
+  "Label 'In Review' present. Fork PR (harsh21234i/reflex) but full CI ran on the head.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

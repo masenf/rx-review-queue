@@ -1,0 +1,63 @@
+{
+ "number": 7048,
+ "fetched_at": "2026-09-04T23:55:00Z",
+ "head_sha": "80caeea37e45ac4fb808dc1fa8fdf4c0e2c865dd",
+ "title": "Fix Safari cache-busting plugin to handle React Router 8 Uint8Array chunks",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": true,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-04T22:59:13Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b6095104aa59240ac5f0d932e2da53b680d6b9c3", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-04T23:00:11Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b6095104aa59240ac5f0d932e2da53b680d6b9c3", "on_current_head": false},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T23:28:20Z", "association": "MEMBER", "can_push": true, "commit_id": "80caeea37e45ac4fb808dc1fa8fdf4c0e2c865dd", "on_current_head": true},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T23:28:24Z", "association": "MEMBER", "can_push": true, "commit_id": "80caeea37e45ac4fb808dc1fa8fdf4c0e2c865dd", "on_current_head": true},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T23:28:26Z", "association": "MEMBER", "can_push": true, "commit_id": "80caeea37e45ac4fb808dc1fa8fdf4c0e2c865dd", "on_current_head": true},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T23:28:30Z", "association": "MEMBER", "can_push": true, "commit_id": "80caeea37e45ac4fb808dc1fa8fdf4c0e2c865dd", "on_current_head": true},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T23:28:33Z", "association": "MEMBER", "can_push": true, "commit_id": "80caeea37e45ac4fb808dc1fa8fdf4c0e2c865dd", "on_current_head": true}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no reviewer requested; author is a MEMBER and has already addressed every bot finding on the current head"
+ ],
+ "threads": {
+  "total": 5,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 109,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-04T22:59:36Z", "excerpt": "Confidence Score: 5/5. No accepted new issue or outstanding blocking failure remains; the recent overlap-handling changes preserve the normal single-pass middleware flow."}
+ ],
+ "last_author_activity_at": "2026-09-04T23:28:33Z",
+ "last_maintainer_activity_at": "2026-09-04T23:28:33Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "NEW PR since this morning's run (created 2026-09-04T22:53:48Z, ~1 hour before this fetch).",
+  "Self-authored by masenf (MEMBER). All 5 review threads resolved: 3 real cubic findings (href-prefix rewrite collision, a now-removed __reflex_ts substring guard, decoder-flush-on-string-chunk ordering bug) were fixed with code changes in the current head (80caeea3), and 2 more (crossorigin-before-href tag matching, and a since-fixed already-rewritten-occurrence re-scan concern) were explained as non-issues given React Router's fixed attribute-serialization order and the new single-pass rewrite design.",
+  "CI fully green (111 checks, usual 2 macos skips). No reviewer requested and no human review yet beyond the author's own replies to bots — this is a fast, low-risk-looking bugfix (4 files) but has zero independent human sign-off.",
+  "mergeable_state resolved to 'blocked' (not conflicting) on re-fetch; local git merge-tree against today's main confirms no conflicts."
+ ]
+}

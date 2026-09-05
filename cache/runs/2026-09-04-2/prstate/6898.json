@@ -1,0 +1,90 @@
+{
+ "number": 6898,
+ "fetched_at": "2026-09-04T21:30:00Z",
+ "title": "docs: add guidance for scaling state",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "head_sha": "7c580aaba195f0fec2461852f7e493c64124804d",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-17T21:07:35Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "ce1cd12", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "DISMISSED", "at": "2026-08-17T21:56:24Z", "association": "MEMBER", "can_push": true, "commit_id": "d8a78e6", "on_current_head": false},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-08-18T02:43:25Z", "association": "MEMBER", "can_push": true, "commit_id": "d8a78e6", "on_current_head": false},
+  {"by": "adhami3310", "state": "COMMENTED", "at": "2026-08-18T02:47:38Z", "association": "MEMBER", "can_push": true, "commit_id": "d8a78e6", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-04T20:13:09Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "7c580aa", "on_current_head": true}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author/masenf to resolve the new cubic-flagged contradiction in scaling_state.md before this can merge"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "masenf",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "this is the only one that i'm hesitant on because decentralized handlers are defined in a weird way and don't feel very reflexy to me, so idk if we should recommend them. (adhami3310: I agree, decentralized handlers if anything is an anti pattern that masks having too large of a state.)"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: This change removes `events.py` from the feature directory tree and updates the bullet to say `state.py` owns the event handlers, but the 'Separate Schema from Large Handler Sets' section later in the same file still instructs readers to put large handler sets into a feature's `events.py` module (line 223) and provides an example handler bound to that State. The directory tree and the guidance now contradict each other."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {"success": 27, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-08-18T02:43:25Z",
+   "ask": "Reconsider recommending decentralized handlers in docs/state_structure/scaling_state.md; adhami3310 concurred it's an anti-pattern",
+   "addressed": true,
+   "evidence": "masenf himself pushed commit 7c580aab (2026-09-04T20:09:36Z) titled \"Update scaling_state.md to remove events.py reference\" -- directly removes the decentralized-handlers line from the directory tree and clarifies state.py owns event handlers. The review thread has not been clicked resolved yet, but the code change matches the objection."
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-04T20:13:09Z",
+   "ask": "masenf's fix (removing events.py from the directory tree) now contradicts a later section of the same doc (line ~223, 'Separate Schema from Large Handler Sets') which still tells readers to put large handler sets in events.py. Needs reconciling.",
+   "addressed": false,
+   "evidence": "Filed 4 minutes after masenf's commit; no follow-up commit or reply yet."
+  }
+ ],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-04T20:13:09Z", "excerpt": "Greptile Summary (updated) -- Confidence Score: 5/5, The PR appears safe to merge, no blocking failure remains (bot; not evidence -- contradicts cubic's same-minute P2 finding)"},
+  {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-08-17T20:43:11Z", "excerpt": "Merging this PR will not alter performance"}
+ ],
+ "last_author_activity_at": "2026-08-17T21:18:11Z",
+ "last_maintainer_activity_at": "2026-09-04T20:09:36Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "MAJOR CHANGE since this morning: masenf (MEMBER) pushed a commit directly to this PR's branch (7c580aaba, 2026-09-04T20:09:36Z, \"Update scaling_state.md to remove events.py reference\") that appears to resolve his own and adhami3310's decentralized-handlers objection from 2026-08-18. Ball is now essentially back with a maintainer/author to fix a follow-on issue, not with Alek99 -- days_waiting_on_maintainer reset to 0 since a maintainer was the last human to act.",
+  "CHANGED: FarhanAliRaza's APPROVED review from 2026-08-17 is now shown as DISMISSED (was counted as the approval this morning). counting_approval flipped from true -> false. Likely auto-dismissed by branch protection when masenf's new commit landed on the same branch; there is no live approval on the current head 7c580aab.",
+  "CHANGED: cubic posted a fresh P2 review comment 4 minutes after masenf's fix commit, flagging that the fix created a NEW internal contradiction: the directory tree no longer shows events.py for decentralized handlers, but a later section of the same doc still instructs readers to create one. This is a real, specific, unaddressed finding -- not a stale bot summary (cubic's own PR-level summary comment posted in the same window still says \"5/5, appears safe to merge\", which is stale/wrong relative to its own inline finding; do not trust the summary here per traps.md).",
+  "The original masenf/adhami3310 thread is technically still marked unresolved (never clicked resolved) but its content is superseded by the code change -- read as addressed-in-code, not a live blocker.",
+  "No conflicts with main; CI green (112 checks)."
+ ]
+}

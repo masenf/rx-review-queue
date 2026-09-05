@@ -1,0 +1,159 @@
+{
+ "number": 6768,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "e4123be238ea749bf0cca692265b312a260f01ba",
+ "title": "fix(vars): use monotonic time for computed var intervals",
+ "author": "anxkhn",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-15T04:51:34Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "9339a6c",
+   "on_current_head": false
+  },
+  {
+   "by": "anxkhn",
+   "state": "COMMENTED",
+   "at": "2026-07-27T14:42:30Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "98b18e3",
+   "on_current_head": false
+  },
+  {
+   "by": "anxkhn",
+   "state": "COMMENTED",
+   "at": "2026-07-27T14:42:32Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "98b18e3",
+   "on_current_head": false
+  },
+  {
+   "by": "anxkhn",
+   "state": "COMMENTED",
+   "at": "2026-07-27T14:42:47Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "98b18e3",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-07-29T22:36:17Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "e4123be",
+   "on_current_head": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-30T19:13:42Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "e4123be",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "maintainer decision (masenf holding off)"
+ ],
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 107,
+  "by_state": {
+   "success": 105,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-07-29T22:36:17Z",
+   "ask": "Change breaks rolling deployment (old workers still use datetime-based markers); needs a better solution or evidence alternatives were considered",
+   "addressed": null,
+   "evidence": "Farhan himself pushed 15acd1c/e4123be (2026-07-29 21:52-22:11) keeping the persisted datetime for rolling-deploy compat, then still posted this review on e4123be; no author response since"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-30T19:13:42Z",
+   "ask": "Holding off on merging due to potential over-recomputing when a client bounces between instances; may take it later for correctness",
+   "addressed": false,
+   "evidence": "Last activity on the PR; no follow-up from anyone"
+  },
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-07-29T22:38:36Z",
+   "ask": "(quoting masenf) probably don't need to save the last-updated marker for vars that don't define _update_interval",
+   "addressed": false,
+   "evidence": "No commits after 2026-07-29T22:11"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-07-29T22:36:17Z",
+   "excerpt": "This change actually breaks rolling deployment as old worker can still use old datetime based time for computed vars. Need better solution."
+  },
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-07-29T22:38:36Z",
+   "excerpt": "@masenf >we probably don't need to save the last updated marker for vars that don't define _update_interval either"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-30T19:13:42Z",
+   "excerpt": "holding off on this one due to the potential for over-recomputing when a client bounces between different instances. probably we will take it for correctness eventually"
+  }
+ ],
+ "last_author_activity_at": "2026-07-27T14:42:47Z",
+ "last_maintainer_activity_at": "2026-07-30T19:13:42Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "CI fully green on head e4123be (105 success, 2 skipped macos jobs); merge_state BLOCKED only because no approving review.",
+  "The two most recent commits (15acd1c, e4123be) were authored by maintainer Farhan, not the PR author; head commit date 2026-07-29T22:11:06Z.",
+  "Explicitly parked by masenf (MEMBER) on 2026-07-30: 'holding off'. Not waiting on the author.",
+  "Both Greptile threads resolved with author replies.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

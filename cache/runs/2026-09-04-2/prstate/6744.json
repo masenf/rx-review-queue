@@ -1,0 +1,131 @@
+{
+ "number": 6744,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "ab21ed37976ac56f42fb578c8d0a76ffe849ea9b",
+ "title": "perf: cut socket-layer per-event overhead (header cache, route LRU, deferred event routing)",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/components/component.py",
+  "packages/reflex-base/src/reflex_base/components/memo.py",
+  "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+  "packages/reflex-base/src/reflex_base/utils/types.py",
+  "packages/reflex-base/src/reflex_base/vars/base.py",
+  "pyi_hashes.json",
+  "reflex/route.py",
+  "reflex/state.py",
+  "tests/units/istate/test_proxy.py",
+  "tests/units/reflex_base/utils/test_types.py",
+  "tests/units/reflex_base/vars/test_base.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-10T20:29:23Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "bbf451d",
+   "on_current_head": false
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-07-10T20:39:38Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "ac961f3",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-14T00:05:56Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "ac961f3",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "maintainer approval (masenf's only ask was addressed 07-14; no review since)",
+  "full CI (only benchmark workflows ran; base is a feature branch, not main)"
+ ],
+ "threads": {
+  "total": 1,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 5,
+  "by_state": {
+   "success": 4,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 1
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-14T00:05:56Z",
+   "ask": "Decouple the orjson changes from this patch; take them through benedikt-bartscher's PR (#6116)",
+   "addressed": true,
+   "evidence": "Commit ab21ed3 (2026-07-14T00:08) 'drop orjson wire encoder from socket PR' and author comment confirming; PR body updated"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "Alek99",
+   "association": "MEMBER",
+   "at": "2026-07-14T00:08:53Z",
+   "excerpt": "Done - dropped the orjson wire encoder (and its parity tests, benchmark, and dependency edge) in 0c8d27e, so it can go through @benedikt-bartscher's PR instead."
+  },
+  {
+   "by": "benedikt-bartscher",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-11T11:05:03Z",
+   "excerpt": "related to my orjson pr #6116"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-07-10T20:25:05Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 This looks safe to merge. (bot; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-07-14T00:08:53Z",
+ "last_maintainer_activity_at": "2026-07-14T00:05:56Z",
+ "days_waiting_on_maintainer": 53.0,
+ "notes": [
+  "STACKED PR: base is claude/reflex-perf-optimizations-01l7a3-eng-10095, not main",
+  "Only 5 check runs on head (CodSpeed, Greptile, Run benchmarks, Lighthouse, cubic); unit/integration/pre-commit workflows did not run -> merge_state=CLEAN does not mean the full suite passed",
+  "mergeable boolean not exposed by MCP get; inferred MERGEABLE from mergeable_state=clean",
+  "Idle since 2026-07-14 (7 weeks); checks re-ran 2026-08-13 presumably from base-branch update",
+  "Linear ENG-10098 (no GitHub issue)",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

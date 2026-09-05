@@ -1,0 +1,64 @@
+{
+ "number": 7040,
+ "fetched_at": "2026-09-04T20:00:00Z",
+ "head_sha": "471b42b5a67cab28463db55af18c9f54a8e5349e",
+ "title": "migrate httpx to httpx2 (dual import)",
+ "author": "ProgrammerPlus1998",
+ "author_association": "FIRST_TIME_CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [{"number": 7034, "title": "[HTTPXodus] Consider migrating from httpx to httpx2 (the actively maintained fork)", "filed_by": "ProgrammerPlus1998", "filer_is_author": true}],
+ "reviews": [
+   {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-03T04:18:16Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b965d6f8", "on_current_head": false, "bot": true},
+   {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T18:33:53Z", "association": "MEMBER", "can_push": true, "commit_id": "471b42b5", "on_current_head": true, "note": "pushes back on the dual-import approach itself: since httpx2 would be a required dep anyway, why not just import httpx2 directly instead of a try/except fallback"}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "workflow-approval click never happened again on the new head (still only 2 bot checks 2+ days after push)",
+  "author needs to respond to masenf's design pushback on the dual-import approach",
+  "resolve 2 open cubic threads (optional-vs-required httpx2 dependency; duplicated dual-import block)",
+  "approval from a write-access reviewer"
+ ],
+ "threads": {"total": 2, "unresolved": [
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2: httpx2 is added to the required dependencies, but the dual-import code relies on httpx2 being optional. Every reflex install is forced to pull httpx2, contradicting the PR's stated Option A."},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P3: This try/except dual-import block is duplicated verbatim in 7+ files (net.py has 4 copies). Extract it into a shared helper."}
+ ]},
+ "checks": {"rollup": "PENDING", "total": 2, "by_state": {"SUCCESS": 1, "NEUTRAL": 1}, "failing": [], "pending": []},
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+   {
+     "by": "masenf",
+     "association": "MEMBER",
+     "at": "2026-09-04T18:33:53Z",
+     "ask": "I don't understand how the 'dual import' thing really helps us here. If we're adding httpx2 to the framework deps, it will always be installed and thus we should just import httpx2. If downstream code was depending on httpx and not declaring it as their own dependency, then they will be broken, but i'm okay with that.",
+     "addressed": false,
+     "evidence": "Posted 2026-09-04T18:33:53Z on the current head 471b42b5; no reply yet from ProgrammerPlus1998"
+   }
+ ],
+ "recent_comments": [
+   {"by": "masenf", "association": "MEMBER", "at": "2026-09-04T18:33:53Z", "excerpt": "i dont understand how the \"dual import\" thing really helps us here. if we're adding httpx2 to the framework deps, it will always be installed and thus we should just import httpx2..."},
+   {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-03T15:46:55Z", "excerpt": "Merging this PR will improve performance by 4.63% (comment against the OLD head b965d6f8, before the 2026-09-04 push; stale)"}
+ ],
+ "last_author_activity_at": "2026-09-04T02:28:42Z",
+ "last_maintainer_activity_at": "2026-09-04T18:33:53Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Checked carefully per instructions whether CI actually ran on the new head, as this is a fork PR from a first-time contributor with a same-day fresh push and CI-approval-gate re-click history. Verdict: CI did NOT run this time either. get_check_runs on head 471b42b5 returns only 2 checks (cubic-dev-ai: neutral, Greptile Review: success), exactly the AI-reviewer-only pattern from before the push. This is now more than 18 hours after the 2026-09-04T02:28:42Z push, so this is not the '2 minutes after push, still settling' case from this morning's note — it looks like the maintainer approval-to-run click has genuinely not happened again for this head. ci_never_ran stays true.",
+  "MAJOR change since this morning: masenf (MEMBER) engaged directly on the new head at 18:33:53Z, but as substantive design pushback rather than a CI-driven review — he questions the entire premise of the dual-import (try httpx2/except httpx) approach, arguing that since httpx2 would become a hard runtime dependency anyway, Reflex should just import httpx2 directly (hard switch, PR's 'Option B') rather than keep httpx as a fallback. This is now the primary open question, layered on top of the two pre-existing unresolved cubic threads which make essentially the same point (httpx2 in required deps contradicts the optional-fallback code).",
+  "human_reviewed flips from false to true: masenf is the first maintainer/human to engage with this PR (previously only bots had commented).",
+  "No code push since 2026-09-04T02:28:42Z (this morning's push). Threads unchanged: still 2, both unresolved, neither addressed by the author.",
+  "This PR's readiness did not improve: it remains blocked on the CI-approval gate never having been re-clicked, and now also carries an open maintainer objection to the PR's core design choice that goes beyond a simple code fix.",
+  "mergeable/conflicting_files recomputed fresh via git merge-tree --write-tree against current origin/main (7ab704d6) — clean, no conflicts.",
+  "Linked issue #7034 confirmed this run: it IS a reflex-dev/reflex issue (not cross-project), filed by ProgrammerPlus1998 (same as PR author) as part of the community 'HTTPXodus' campaign; closed_by_pull_requests correctly references #7040."
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "number": 6996,
+ "fetched_at": "2026-09-04T20:00:00Z",
+ "head_sha": "319b3eb129780c544af8649371b72bac81277a66",
+ "title": "Serve SPA fallback with 200 for routable paths in prod static serving",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6983,
+   "title": "Prod mode serves HTTP 404 status for direct loads of valid dynamic-route URLs (SPA fallback body renders fine)",
+   "filed_by": "masenf",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-28T21:01:08Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "139ba3c", "on_current_head": false, "bot": true},
+  {"by": "chatgpt-codex-connector[bot]", "state": "COMMENTED", "at": "2026-08-28T21:03:20Z", "association": "NONE", "can_push": false, "commit_id": "139ba3c", "on_current_head": false, "bot": true},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-28T21:03:35Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "139ba3c", "on_current_head": false, "bot": true},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-08-28T21:28:30Z", "association": "MEMBER", "can_push": true, "commit_id": "139ba3c", "on_current_head": false},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T18:32:27Z", "association": "MEMBER", "can_push": true, "commit_id": "319b3eb1", "on_current_head": true, "note": "production-readiness review: built a sample app with every route shape and drove reflex run --env prod; found a blocking Windows path-separator bug plus 3 nits"}
+ ],
+ "counting_approval": false,
+ "human_reviewed": true,
+ "changes_requested_outstanding": false,
+ "threads": {
+  "total": 5,
+  "unresolved": [
+   {
+    "by": "masenf",
+    "outdated": false,
+    "author_replied": false,
+    "opened_at": "2026-09-04T18:32:08Z",
+    "path": "reflex/utils/precompressed_staticfiles.py",
+    "first_comment": "Blocking on Windows: path comes from StaticFiles.get_path, normalized with os.path.normpath, so on Windows it arrives as 'articles\\7'; the route regexes only understand '/', so every multi-segment routable path keeps its 404 status there. Fix + 2 regression tests ready in 47b9992a on claude/pr-6996-review-97oxj9, not yet cherry-picked into this PR."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {"SUCCESS": 109, "FAILURE": 0, "PENDING": 0, "SKIPPED": 2},
+  "failing": [],
+  "pending": []
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-08-28T22:32:54Z",
+   "ask": "Check overlap with superseded #6469, integrate anything missed, then close the old PR",
+   "addressed": true,
+   "evidence": "Author pushed 319b3eb at 22:51 on 08-28 porting the one uncovered test scenario from #6469; unchanged since, no new maintainer follow-up on this specific point"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-04T18:32:08Z",
+   "ask": "Blocking: restore URL-form path (replace os.sep with '/') before matching against the route table, so multi-segment routable paths get 200 on Windows too. Regression tests are ready to cherry-pick from 47b9992a on claude/pr-6996-review-97oxj9.",
+   "addressed": false,
+   "evidence": "Posted 2026-09-04T18:32Z as an unresolved review thread; head sha unchanged since (319b3eb), no reply or new commit from FarhanAliRaza yet"
+  }
+ ],
+ "recent_comments": [
+  {"by": "masenf", "association": "MEMBER", "at": "2026-09-04T18:32:27Z", "excerpt": "Production-readiness review. Built a sample app registering every route shape and drove reflex run --env prod... Findings: 1. Blocking: no effect on Windows for multi-segment paths... 2. Nit: /index answers 200 but renders the 404 page. 3. Nit: a corrupt manifest is silent. 4. Nit: news fragment type."},
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-08-28T22:53:25Z", "excerpt": "Confidence Score: 5/5 - The PR appears safe to merge (bot summary; not evidence; stale re: the new Windows finding)"}
+ ],
+ "last_author_activity_at": "2026-08-28T22:51:52Z",
+ "last_maintainer_activity_at": "2026-09-04T18:32:27Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Changed since this morning: masenf (MEMBER) posted a thorough production-readiness review at 2026-09-04T18:32Z (self-built a sample app with 10 route shapes, drove reflex run --env prod with curl + headless Chromium across 6 configurations). Found one BLOCKING bug: on Windows, StaticFiles.get_path normalizes with os.path.normpath so multi-segment routable paths (e.g. /articles/7) arrive as 'articles\\\\7' and never match the route regexes, so the fix has no effect there for anything but single-segment routes. A fix + 2 regression tests are ready to cherry-pick (commit 47b9992a on branch claude/pr-6996-review-97oxj9) but NOT yet applied to this PR's branch (head sha unchanged: 319b3eb).",
+  "Also flagged as nits (non-blocking): /index reports 200 but still renders the 404 page; a corrupt routes.json manifest silently reverts to old 404 behavior with no warning log; the reflex-base news fragment is typed 'bugfix' but describes a constant addition (more like 'misc').",
+  "Thread count went from 4 (all resolved) to 5 (1 new, unresolved, not outdated) because of this review.",
+  "No new commits, no change to mergeable_state (still BLOCKED on missing approval, no conflicts), no CI change (still 111 checks, all green) since this morning. Ball is now with FarhanAliRaza to address the Windows bug before this can be considered ready.",
+  "Carried forward reasoning from prior runs: mergeable/conflicting_files recomputed fresh via git merge-tree --write-tree against current origin/main (7ab704d6) — clean, no conflicts."
+ ]
+}

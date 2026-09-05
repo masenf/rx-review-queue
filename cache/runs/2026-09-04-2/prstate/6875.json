@@ -1,0 +1,102 @@
+{
+ "number": 6875,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "321ed07981f417b5bfbe9d156f26ced25d989a5a",
+ "title": "fix(docs): preserve dashboard dialog validation",
+ "author": "rohit-jsfreaky",
+ "author_association": "NONE",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [
+  {
+   "number": 6816,
+   "title": "Submit button doesn't wait for required fields",
+   "filed_by": "gergelyk",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-12T08:15:47Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "0b8a1ff",
+   "on_current_head": false
+  },
+  {
+   "by": "rohit-jsfreaky",
+   "state": "COMMENTED",
+   "at": "2026-08-12T08:53:38Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "0b8a1ff",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "maintainer to approve fork workflow runs (CI never ran)",
+  "first human review (Alek99 requested)"
+ ],
+ "threads": {
+  "total": 1,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": null,
+  "total": 2,
+  "by_state": {
+   "success": 1,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 1
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "rohit-jsfreaky",
+   "association": "NONE",
+   "at": "2026-08-18T22:16:10Z",
+   "excerpt": "Hi! Just checking if a maintainer could take a look at this PR when they get a chance. Happy to make any changes needed."
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-12T08:07:16Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-08-18T22:16:10Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 17.1,
+ "notes": [
+  "Fork PR (rohit-jsfreaky/reflex); only Greptile + cubic check runs exist on head -> real CI never ran",
+  "First get returned mergeable_state=unknown; second get returned blocked",
+  "Single commit 321ed07 (2026-08-12); the one bot thread was addressed and resolved",
+  "No maintainer has commented or reviewed in 22 days; author pinged 08-18",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

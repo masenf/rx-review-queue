@@ -1,0 +1,54 @@
+{
+ "number": 6929,
+ "fetched_at": "2026-09-04T21:30:00Z",
+ "title": "fix(types): skip ForwardRef resolution for unannotated attribute probes",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "head_sha": "d87ed2f5060054778c08ea44da8fbdaecf2bf197",
+ "body_present": false,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-22T12:29:25Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b3c157a", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-22T12:44:06Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b3c157a", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 2,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {"success": 27, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-08-22T12:29:22Z", "excerpt": "Confidence Score: 5/5, The PR appears safe to merge (bot; not evidence)"},
+  {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-08-22T12:30:31Z", "excerpt": "Merging this PR will not alter performance"}
+ ],
+ "last_author_activity_at": "2026-08-28T08:20:11Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 7.55,
+ "notes": [
+  "No substantive change since this morning: updated_at moved only because the branch auto-merged main today (d87ed2f, 2026-09-04T07:10:30Z, no-op merge commit, zero diff to PR content). Reviews, threads, checks all identical to the morning run.",
+  "days_waiting_on_maintainer computed from the last real author commit (2026-08-28T08:20:11Z merge-with-fixes), not today's no-op merge -- zero human/maintainer engagement since PR opened 2026-08-22, now over a week.",
+  "Both bot review threads remain resolved; no unresolved threads.",
+  "mergeable_state blocked (no conflicts; waiting on required review)."
+ ]
+}

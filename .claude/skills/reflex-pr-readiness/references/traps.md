@@ -100,6 +100,17 @@ the memory the job otherwise lacks.
 - **"N workflows awaiting approval"** means CI has *never run*: common on fork
   PRs from first-time contributors, who cannot fix it. Not green, not passing.
   Expect ~106 checks "pending" behind the gate with only two bot reviewers green.
+- `get_check_runs` can silently paginate: on Sep 4's second run, a subagent
+  batch reported `checks.total: 111/120` correctly but `checks.by_state` for
+  the same PRs summed to a flat `success: 27` regardless of the real total —
+  a truncated first page treated as the whole set. `rollup` and `total` came
+  from elsewhere and were fine; only the breakdown was wrong. Sum
+  `by_state` and compare it to `total` before trusting either; a mismatch
+  means re-fetch with pagination, don't just take the rollup on faith either.
+- Distinguish "zero threads" from "zero **unresolved** threads" in prose: a
+  PR can have 6, 20, even 28 threads, all resolved. Writing "zero review
+  threads" when the true count is nonzero (just all-resolved) is a copy-paste
+  trap that survived into report.json twice on Sep 4's second run.
 - Check totals are not comparable across PRs: current PRs run ~110 checks,
   older ones ~67. A low success count can mean an old run, not a narrow one.
 - "Auto-merge enabled" does not mean it will fire; verify the required
@@ -147,6 +158,15 @@ the memory the job otherwise lacks.
 - Keep the ranking monotonic in its own score; explain overrides on the card.
 - Stat tiles must equal tab counts must equal card counts.
 - Never put actively pushed drafts in closure candidates.
+- **A `conflict_clusters`/`stacks` note claiming N PRs "all share file X" needs
+  every member's `conflicting_files` checked, not eyeballed from one or two.**
+  This has overstated universal overlap twice now (Sep 4 morning: a 9-PR
+  state-hot-path cluster where 4 members didn't touch one of the claimed
+  files; Sep 4 evening: a 9-PR component/memo cluster where 2 members each
+  lacked one of three claimed files). Compute the actual intersection
+  programmatically (which files appear in *every* listed PR's
+  `conflicting_files`) before writing the note, and call out partial overlaps
+  explicitly rather than rounding up to "all of them."
 
 ## Fact-check
 - Git and merge-box figures are taken minutes apart. On Aug 28 23:30 the

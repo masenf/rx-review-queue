@@ -1,0 +1,77 @@
+{
+ "number": 7016,
+ "fetched_at": "2026-09-04T20:00:00Z",
+ "head_sha": "f8b7f638db3a2d9387f15fec9d9a3ae935174912",
+ "title": "Fix bundled library subpath serialization",
+ "author": "harsh21234i",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 6975,
+   "title": "compile_app() discards user bundle_library() registrations, and the dynamic serializer never rewrites subpath imports of bundled libs",
+   "filed_by": "masenf",
+   "filer_is_author": false,
+   "filer_association": "MEMBER",
+   "relation": "fixes"
+  }
+ ],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-01T13:47:19Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "e374302", "on_current_head": false, "bot": true},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-01T13:55:37Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "e374302", "on_current_head": false, "bot": true},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-01T18:47:12Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "93b4181", "on_current_head": false, "bot": true}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "masenf's question about trigger scenarios (hot-reload) is unanswered by the author",
+  "maintainer review (no human review yet)",
+  "approval from a write-access reviewer"
+ ],
+ "threads": {
+  "total": 7,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {"SUCCESS": 110, "FAILURE": 0, "PENDING": 0, "SKIPPED": 2},
+  "failing": [],
+  "pending": []
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-04T18:11:07Z",
+   "ask": "Can you explain what scenarios result in triggering this bug? Most situations that matter, like hot-reload, would end up re-bundling the needed libraries anyway.",
+   "addressed": false,
+   "evidence": "Posted as a plain PR comment (not a review) at 18:11:07Z; no reply from harsh21234i since, and no new commit"
+  }
+ ],
+ "recent_comments": [
+  {"by": "masenf", "association": "MEMBER", "at": "2026-09-04T18:11:07Z", "excerpt": "can you explain what scenarios result in triggering this bug? i understand what's going on, but it seems like most situations that matter, like hot-reload would end up re-bundling the needed libraries anyway."},
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-01T13:47:15Z", "excerpt": "Confidence Score: 5/5 The PR appears safe to merge (bot; not evidence)"}
+ ],
+ "last_author_activity_at": "2026-09-02T06:43:46Z",
+ "last_maintainer_activity_at": "2026-09-04T18:11:07Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Changed since this morning: masenf (MEMBER) left the first human engagement on this PR, a plain comment (not a formal review) asking the author to justify the real-world trigger scenario for the bug, specifically questioning whether hot-reload already covers the case this PR fixes. This is a substantive open question, not yet answered.",
+  "No code changes, no new reviews, no change to checks (still 112, all green: 110 success + 2 skipped) or threads (still 7, all resolved) since this morning.",
+  "human_reviewed flipped from false to... still effectively unreviewed in the formal sense (masenf's comment carries no review state/approval), but it is the first maintainer engagement on this previously silent, unreviewed 10-file core-compiler change.",
+  "Ball is now with the author (harsh21234i) to answer masenf's question before this can move toward approval.",
+  "mergeable/conflicting_files recomputed fresh via git merge-tree --write-tree against current origin/main (7ab704d6) — clean, no conflicts."
+ ]
+}

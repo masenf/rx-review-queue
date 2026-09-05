@@ -1,0 +1,84 @@
+{
+ "number": 6116,
+ "fetched_at": "2026-09-04T21:30:00Z",
+ "title": "add orjson",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "head_sha": "47cd571a548be1b7b3742793f91cdb1c04e53229",
+ "body_present": false,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "uv.lock"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-02-07T13:41:05Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "1d44fd4", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-02-12T21:21:52Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "1d44fd4", "on_current_head": false},
+  {"by": "chatgpt-codex-connector[bot]", "state": "COMMENTED", "at": "2026-07-09T21:27:19Z", "association": "NONE", "can_push": false, "commit_id": "18ae582", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-07-31T19:37:18Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "5acd310", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-04T21:19:19Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "bcd6574", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-06T20:36:16Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "c9300be", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-20T20:29:01Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "f6a00e0", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-20T21:17:49Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "d85ddfb", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-20T22:30:24Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "cd86672", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-28T19:21:39Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "67bd72c", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-29T19:58:01Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "cec760f", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-08-29T20:46:35Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "7807044", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 41,
+  "unresolved": [
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": true, "first_comment": "P2: The socket fast-path shortcut is defeated by the very payloads this PR is optimizing. The `b\"null\" not in out` check is meant to catch NaN/Inf (which orjson serializes as `null`), but it also fire"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": true, "first_comment": "P2: When a valid socket payload contains a literal `__reflex_nan__` string, this call routes it through the reviver and changes the string to `NaN`. Parse valid JSON without a reviver first, and only "},
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": false, "first_comment": "P2: The `orjson` optional dependency is declared on `reflex`, but the module that actually imports orjson is `reflex-base` (`packages/reflex-base/src/reflex_base/utils/format.py` does `import orjson` "}
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {"success": 40, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "adhami3310",
+   "association": "MEMBER",
+   "at": "2026-02-12T18:59:47Z",
+   "ask": "orjson loses NaN handling, which matters for numpy (why JSON5 was used).",
+   "addressed": true,
+   "evidence": "Author replied the same day; non-finite float sentinel handling (__reflex_nan__) was added and masenf (2026-06-04) endorsed this as the next optimization step."
+  }
+ ],
+ "recent_comments": [
+  {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-08-29T21:11:12Z", "excerpt": "blocked by https://github.com/reflex-dev/reflex/pull/6933 -- edited 2026-09-04T07:12:10Z to add: \"edit: merged/unblocked now\""},
+  {"by": "masenf", "association": "MEMBER", "at": "2026-06-04T04:32:48Z", "excerpt": "now that we've eliminated JSON5 in the frontend code, I think this PR is the next step for optimizing the serialization path."},
+  {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-04-25T21:12:04Z", "excerpt": "related https://github.com/reflex-dev/reflex/pull/6339"},
+  {"by": "adhami3310", "association": "MEMBER", "at": "2026-02-12T18:59:47Z", "excerpt": "the issue with orjson is that we lose NaN handling which is relevant for numpy, which is why we were using JSON5 as well"}
+ ],
+ "last_author_activity_at": "2026-09-04T17:18:17Z",
+ "last_maintainer_activity_at": "2026-06-04T04:32:48Z",
+ "days_waiting_on_maintainer": 0.6,
+ "notes": [
+  "CHANGED since this morning: the author edited the 2026-08-29 \"blocked by #6933\" comment on 2026-09-04T07:12:10Z to add \"edit: merged/unblocked now\" -- #6933 has merged, so this PR is no longer self-declared blocked. Treat as ready-for-review again.",
+  "CHANGED since this morning: CI flipped from FAILURE to SUCCESS. Head 78070444 (this morning) had integration-tests conclusion=failure (run 33273689430); both subsequent reruns on 27fc301a (07:10Z merge-main) and now 47cd571a (17:18Z merge-main) show integration-tests conclusion=success, confirming the example-counter-and-nba-proxy engineio failure noted this morning was transient/flaky, not a real regression from this PR's code (no PR-authored commits landed between the failing and passing runs -- only merge-main no-ops).",
+  "CHANGED: conflicting_files narrowed from [pyproject.toml, tests/units/test_config.py, uv.lock] this morning to just [uv.lock] now (main moved further; git merge-tree recomputed against origin/main 7ab704d6).",
+  "The only new activity today (2 merge-main commits + 1 comment edit) is author-side housekeeping; no new review or maintainer comment. days_waiting_on_maintainer is computed from the comment edit (0.6d) but the substantive ask (this PR being ready) has effectively been outstanding since 2026-08-29 with zero maintainer response even before today's unblock.",
+  "3 unresolved cubic threads carried forward unchanged (no new review activity): 2 rebutted by author (one-click resolves), 1 (orjson extra declared on reflex not reflex-base) has no reply.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/6116 (STAGED-ENTRY lines only, not the CONFLICT prose).",
+  "Maintainers (adhami3310, masenf) have only ever left issue comments on this PR, no reviews -- human_reviewed=false stands."
+ ]
+}

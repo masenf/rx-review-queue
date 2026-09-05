@@ -1,0 +1,156 @@
+{
+ "number": 6563,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "f697d5f0e11c3ef073d64161377d5a133c9b26b3",
+ "title": "lighthouse: tree-shake bundled libs",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "reflex/compiler/compiler.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-05-25T19:58:05Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "1119e34",
+   "on_current_head": false
+  },
+  {
+   "by": "adhami3310",
+   "state": "COMMENTED",
+   "at": "2026-06-25T17:34:09Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "36f6750",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author: resolve merge conflicts with main",
+  "author: add news fragments for reflex and reflex-base (changelog check failing)",
+  "author: address adhami3310's tailwind/radix coupling concern",
+  "adhami3310: resolve the two outdated threads addressed by f697d5f and re-review"
+ ],
+ "threads": {
+  "total": 4,
+  "unresolved": [
+   {
+    "by": "adhami3310",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "can we figure a way such that tailwind doesn't conceptually depend on radix themes?"
+   },
+   {
+    "by": "adhami3310",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "please avoid uncommon abbreviations like `ivs` in variable names"
+   },
+   {
+    "by": "adhami3310",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "what does `any(not _JS_IDENTIFIER_RE.match(n) for n in names)` mean? can we create a private helper function with a name for it?"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 106,
+  "by_state": {
+   "success": 102,
+   "failure": 1,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 1
+  },
+  "failing": [
+   "changelog"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "changelog",
+   "cause": "towncrier check found no new news fragment for the affected packages '.' (reflex) and 'packages/reflex-base' and no skip-changelog label.",
+   "prs_fault": true
+  }
+ ],
+ "outstanding_asks": [
+  {
+   "by": "adhami3310",
+   "association": "MEMBER",
+   "at": "2026-06-25T17:30:54Z",
+   "ask": "Decouple tailwind plugin from radix themes (tailwind_v3.py line 67)",
+   "addressed": false,
+   "evidence": "Follow-up commit f697d5f only touched templates.py and dynamic.py; no reply in thread."
+  },
+  {
+   "by": "adhami3310",
+   "association": "MEMBER",
+   "at": "2026-06-25T17:32:08Z",
+   "ask": "Rename abbreviation `ivs` in dynamic.py",
+   "addressed": true,
+   "evidence": "Commit f697d5f renames ivs/iv -> import_vars/import_var; thread outdated but not resolved."
+  },
+  {
+   "by": "adhami3310",
+   "association": "MEMBER",
+   "at": "2026-06-25T17:33:44Z",
+   "ask": "Extract named helper for the JS-identifier check in templates.py",
+   "addressed": true,
+   "evidence": "Commit f697d5f extracts _all_valid_js_identifiers; thread outdated but not resolved."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-05-25T19:50:58Z",
+   "excerpt": "Merging this PR will not alter performance"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-05-25T19:57:57Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 4/5 (bot summary, not evidence)"
+  },
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-05-26T16:22:03Z",
+   "excerpt": "Add more tests for dynamic components."
+  }
+ ],
+ "last_author_activity_at": "2026-06-25T17:52:50Z",
+ "last_maintainer_activity_at": "2026-06-25T17:34:09Z",
+ "days_waiting_on_maintainer": 71.2,
+ "notes": [
+  "mergeable_state 'unknown' then 'dirty' (conflicts); raw mergeable boolean not exposed by tool.",
+  "Body references Linear ticket ENG-9323 only; no GitHub issue linked.",
+  "Body drift: body still describes Radix per-color stylesheet tree-shaking / theme_roots, but commit 36f6750 ('revert: ship monolithic Radix Themes stylesheet again') removed that part.",
+  "Two of adhami3310's three threads appear addressed by commit f697d5f (outdated) but remain unresolved; the tailwind/radix coupling thread is unaddressed.",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/N (conflicts.json), not from the API.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

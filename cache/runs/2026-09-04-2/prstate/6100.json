@@ -1,0 +1,81 @@
+{
+ "number": 6100,
+ "fetched_at": "2026-09-04T23:55:00Z",
+ "head_sha": "0ed529b20fae7b281c3bb05c492544e6e8f46a05",
+ "title": "Explicit state and event id minification",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "abulvenz"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "abulvenz", "state": "COMMENTED", "at": "2026-01-27T20:37:21Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b2c3f58fd83b641c4f61a7091fc457b4bfec5b1c", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-02-04T21:31:02Z", "association": "CONTRIBUTOR", "can_push": true, "commit_id": "cf7b614d9fc1dc0e3b45211132d12506c95436ae", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-02-05T23:54:44Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "3074c84e5badad414a8cb5e6993521925dcadbaa", "on_current_head": false},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-02-12T19:02:34Z", "association": "MEMBER", "can_push": true, "commit_id": "f964c7aa78b41cfcba64c9c0f4a2e0d051f99aa1", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-02-12T19:21:56Z", "association": "CONTRIBUTOR", "can_push": true, "commit_id": "f964c7aa78b41cfcba64c9c0f4a2e0d051f99aa1", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-04-25T20:57:54Z", "association": "CONTRIBUTOR", "can_push": true, "commit_id": "f964c7aa78b41cfcba64c9c0f4a2e0d051f99aa1", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-07-09T20:28:28Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "f83afad761582bbd94d52959f81e160676991f96", "on_current_head": false},
+  {"by": "chatgpt-codex-connector[bot]", "state": "COMMENTED", "at": "2026-07-09T22:57:26Z", "association": "NONE", "can_push": false, "commit_id": "af4219fac8cb8832bedfa843e847c441eb72db75", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-07-20T18:48:15Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "1bafa2d0f907f3486dc51b3666e8122f250f9d56", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-07-20T19:33:51Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "c3e0f1c00d3884ab477b5076a900d9b547ad9c7b", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-20T22:10:17Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "958d9f0564371c49bbbb1e735a1d7ff03401c144", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-20T22:31:00Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "e048451ebc08053ebc7ae9f8e6d4c84dc95e05bb", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-22T10:39:23Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "81474e2042103a3b688693ff1771976d3632b9df", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-26T22:29:23Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "d5107c1861e68a278eb6d99801eed2f9ba60c734", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-04T17:43:18Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "746fe70ee320593a337ea15e97f610d68de207b3", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T18:05:40Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "5a69bbd6bfc9eff8e9b6d52fb1a353190ff54abd", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-09-04T18:27:40Z", "association": "CONTRIBUTOR", "can_push": true, "commit_id": "c9a16a5297ca738513f1dda73e247de412cd505c", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "abulvenz (requested reviewer, never returned after initial Jan 27 pass)",
+  "masenf (MEMBER, last substantive review Feb 12; has not re-reviewed the current head despite months of iteration)"
+ ],
+ "threads": {
+  "total": 28,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 109,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "body_has_repro_detail": null,
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-02-05T23:54:39Z", "excerpt": "Confidence Score: 4/5 ... minify list --json can still print non-JSON log text on stdout during app loading."},
+  {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-02-12T19:28:11Z", "excerpt": "the minify.json should be persisted/committed to have stable ids. However if we decide that minify becomes default, we can certainly auto-update it during reflex run/compile"},
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-07-09T21:23:25Z", "excerpt": "Want your agent to iterate on Greptile's feedback? Try greploops."}
+ ],
+ "last_author_activity_at": "2026-09-04T18:27:42Z",
+ "last_maintainer_activity_at": "2026-02-12T19:02:34Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "NEW since routine review: head unchanged in SHA but heavy fresh activity today (Sep 4) — cubic and greptile re-reviewed the current head at 17:43 and 18:05, each raising a P1/P2, and benedikt-bartscher replied to both plus two older cubic threads within the hour, all now resolved via explanation or a follow-up commit (c9a16a5, 5a69bbd, 58658697).",
+  "All 28 review threads are resolved; zero unresolved. No CHANGES_REQUESTED review exists and no APPROVED review exists either — this PR has never received a formal approving review from anyone with write access despite 7+ months open and 102 commits.",
+  "masenf (MEMBER) last substantively reviewed Feb 12 ('a lot of extra API surface area for a mostly under-the-covers feature') and never returned; abulvenz (requested reviewer, no write access shown) only ever left one Jan 27 nit. The PR is effectively unreviewed by anyone who can approve it, despite very active bot-driven iteration.",
+  "CI fully green (111 checks, 2 macos jobs skipped as usual, no failures).",
+  "Large, high-risk surface: new reflex.minify module, new CLI command group, registry/resolver changes affecting every event handler's formatted name, and frontend JS changes to state.js's isStateful/dispatch logic — several cubic P1/P2 findings on exactly this hot path were addressed only today.",
+  "git merge-tree against today's main (7ab704d6) is clean — GitHub's stale 'unknown' mergeable_state resolved to 'blocked' (not dirty) on re-fetch; blocked here is the review/approval gate, not a merge conflict."
+ ]
+}

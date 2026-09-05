@@ -1,0 +1,166 @@
+{
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "conflicting_files": [
+  "uv.lock"
+ ],
+ "auto_merge": false,
+ "review_decision": null,
+ "ci_never_ran": false,
+ "awaiting": [],
+ "number": 7007,
+ "head_sha": "dd8c0080693bccb50966571d1ba134e876a1a8ce",
+ "title": "Add reflex-webmcp package with WebMCPPlugin",
+ "author": "FarhanAliRaza",
+ "author_association": null,
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "update_branch_offered": false,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-30T18:26:42Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "5a700c2",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-30T18:28:51Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "5a700c2",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-30T18:29:37Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "5a700c2",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "threads": {
+  "total": 9,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Registrations outlive their routes: when client-side navigation unmounts a route-specific component tree, its tool remains in the document-global registry with an executable closure (reflex_webmcp/__init__.py:389-393)."
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Qualified state names collide: when different modules define State classes and handlers with the same names, `_tool_name` collapses them into one global tool name and the second registration is suppressed (__init__.py:369)."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: The new workspace package `reflex-webmcp` was added, but `reflex_webmcp` was not added to `[tool.coverage.run] source` in pyproject.toml, so its tests will not be measured against the 72% gate."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: When two state classes in different modules share a class and handler name, this generates the same WebMCP name and the global deduplication set skips the second tool (__init__.py:369). Use a sanitized qualified state name."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: When a route component is unmounted, this registration remains in `document.modelContext` because it passes no `AbortSignal` (__init__.py:393). Register each tool with a route-scoped signal and abort on cleanup."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P3: The docs example (docs/api-reference/plugins.md:88) calls `search_products(query, limit=limit)` but never defines or imports it, so copying the snippet raises NameError."
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Include the full state identity in tool names: two page modules defining the same class/handler names both reduce to `reflex_State_submit`; derive the tool name from the qualified state/event identity (__init__.py:369)."
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Scope registered tools to the active route: top-level `document.modelContext` registrations are never removed on client-side navigation; register/unregister with the route lifecycle (__init__.py:389-393)."
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 Unwrap TypedDict field requirement annotations: `Required[T]`/`NotRequired[T]` fall through to `{}` so the field type is lost in the generated schema (__init__.py:159-160)."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 115,
+  "by_state": {
+   "success": 113,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-30T18:26:37Z",
+   "excerpt": "Confidence Score: 3/5 ... does not yet appear safe to merge because route-specific tools remain registered after navigation and ... collide under one global tool name. (bot)"
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-08-30T18:27:28Z",
+   "excerpt": "Merging this PR will not alter performance"
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "association": "NONE",
+   "at": "2026-08-30T18:24:18Z",
+   "excerpt": "Codex Review Summary: Code Review Completed on 5a700c2"
+  }
+ ],
+ "last_author_activity_at": "2026-08-30T18:34:20Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 5.2,
+ "notes": [
+  "Fork PR (FarhanAliRaza/reflex); CI did run fully (not the awaiting-approval pattern).",
+  "author_association not exposed by `get` and the author has posted no comments/reviews, so it is unknown (null); treated as non-maintainer for days_waiting.",
+  "mergeable derived from mergeable_state=blocked (first `get` returned unknown).",
+  "All 9 review threads are unresolved bot threads (2 greptile, 4 cubic, 3 codex) sharing two root causes (tool-name collision, registrations outliving routes) plus coverage config, docs example, Required/NotRequired schema.",
+  "No human has reviewed or commented; Alek99 review requested.",
+  "last_author_activity_at approximated from CI start on head commit dd8c008 (PR has 2 commits, opened 2026-08-30T18:24:05Z).",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}

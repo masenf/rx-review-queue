@@ -1,0 +1,165 @@
+{
+ "number": 6968,
+ "fetched_at": "2026-09-04T23:40:00Z",
+ "head_sha": "a4be554d48b200a9b0ba3ef2283d9e3db2112853",
+ "title": "Add click_element utility for robust element clicking in tests",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": true,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "FarhanAliRaza"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-28T08:33:16Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "8ed21c5",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-28T08:38:54Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "8ed21c5",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-01T15:47:51Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "8ed21c5",
+   "on_current_head": false,
+   "note": "5 single-comment COMMENTED reviews 15:47:51-15:48:15"
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "CHANGES_REQUESTED",
+   "at": "2026-09-01T15:48:27Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "8ed21c5",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-02T02:10:59Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "46d814f",
+   "on_current_head": false,
+   "is_author": true,
+   "note": "9 reply reviews 02:10:59-02:12:03"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-02T02:11:43Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "46d814f",
+   "on_current_head": false,
+   "bot": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-02T02:21:55Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "a4be554",
+   "on_current_head": true,
+   "is_author": true,
+   "note": "3 reply reviews 02:21:41-02:21:55"
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": true,
+ "human_reviewed": true,
+ "awaiting": [
+  "FarhanAliRaza re-review: CHANGES_REQUESTED on 8ed21c5 still stands; author pushed 46d814f + a4be554 and replied to every thread",
+  "approval from a write-access reviewer"
+ ],
+ "threads": {
+  "total": 8,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-09-01T15:48:27Z",
+   "ask": "Narrow `except Exception` to retryable exceptions (stale/not-found) so clicks are never re-dispatched and bad locators fail fast; replace dead `raise` with `return False`; use public AppHarness API instead of `_poll_for`; apply click_element to the remaining click sites in test_dynamic_routes.py",
+   "addressed": true,
+   "evidence": "46d814f narrows retry to StaleElementReferenceException, drops _poll_for for a plain deadline loop, converts remaining sites in test_dynamic_routes.py; a4be554 extends to test_navigation/test_login_flow/test_event_chain and re-adds NoSuchElementException with rationale. Author replied in all 8 threads; all resolved. CHANGES_REQUESTED review not yet re-submitted."
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-09-01T15:48:27Z",
+   "excerpt": "(review) I ran tests/integration/test_dynamic_routes.py ... flake reproduced twice in 16 runs ... The change fixes a real fault. My concerns are with the shape of the new helper and how completely it is applied."
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-02T02:21:55Z",
+   "excerpt": "(thread reply) Follow-up (1) is no longer a follow-up - it's in this PR as of a4be554d4 ... test_navigation.py, test_login_flow.py, test_event_chain.py"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-28T08:33:12Z",
+   "excerpt": "Greptile Summary ... Confidence Score: 5/5 (bot; not evidence)"
+  }
+ ],
+ "last_author_activity_at": "2026-09-02T02:21:55Z",
+ "last_maintainer_activity_at": "2026-09-01T15:48:27Z",
+ "days_waiting_on_maintainer": 2.9,
+ "notes": [
+  "Author is a MEMBER; branch lives in reflex-dev/reflex. CI green on head a4be554 (skipped: unit-tests-macos, reflex-docs-macos).",
+  "Farhan's CHANGES_REQUESTED (on 8ed21c5) is the only blocker besides the missing approval; every thread he opened has an author reply and is resolved, and two commits landed after his review - one click from unblocked if he agrees.",
+  "This PR fixes the exact Selenium flake (test_on_load_navigate_non_dynamic[prod] StaleElementReferenceException) that is currently failing CI on #7015.",
+  "Test-only change (tests/integration/*); no news fragment needed.",
+  "GitHub MCP `get` omits the boolean `mergeable` field entirely (called twice); only mergeable_state was available, so mergeable is UNKNOWN. mergeable_state=blocked is consistent with a required-approval branch rule, not a conflict.",
+  "Normalised by the run: mergeable set to MERGEABLE because mergeable_state=blocked (not dirty); the MCP get omitted the boolean.",
+  "Carried forward from 2026-09-03 prstate: PR untouched since then (listing updated_at unchanged). mergeable/conflicting_files recomputed fresh via git merge-tree against main 8853e145; days_waiting_on_maintainer recomputed against 2026-09-04. Check-runs spot-checked directly via API for any PR with a non-green rollup yesterday; all confirmed unchanged.",
+  "Carried forward from this morning's run (2026-09-04): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 7ab704d6."
+ ]
+}
