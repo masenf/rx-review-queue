@@ -1,0 +1,55 @@
+{
+ "number": 7055,
+ "fetched_at": "2026-09-08T16:40:00Z",
+ "title": "docs: fix broken anchor links in low-level form guide",
+ "author": "Jacky-J126",
+ "author_association": "FIRST_TIME_CONTRIBUTOR",
+ "head_sha": "8506ada850f4f224d5d97565afba00fb85712a6c",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": "APPROVED",
+ "requested_reviewers": ["Alek99"],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-07T04:48:29Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "a5f11f3ff40babefc3f54f5ae7ee6ebd67e35db2", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "APPROVED", "at": "2026-09-07T17:14:10Z", "association": "MEMBER", "can_push": true, "commit_id": "8506ada850f4f224d5d97565afba00fb85712a6c", "on_current_head": true}
+ ],
+ "counting_approval": true,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": ["Alek99"],
+ "threads": {
+  "total": 0,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 33,
+  "by_state": {"success": 33, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T04:48:43Z", "excerpt": "Repairs validation anchors and improves the accuracy and organization of the form-validation documentation. Confidence Score: 5/5."},
+  {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-07T10:15:01Z", "excerpt": "Merging this PR will not alter performance (32 untouched, 8 skipped benchmarks)."}
+ ],
+ "last_author_activity_at": "2026-09-07T04:48:00Z",
+ "last_maintainer_activity_at": "2026-09-07T17:14:10Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "1-file docs fix (docs/library/forms/form-ll.md): repoints two dead #client-side-validation/#server-side-validation anchors in the Form Message paragraph to the existing ## Validation section. First-time contributor (Jacky-J126), fork PR (Jacky-J126/reflex).",
+  "Has a counting approval: FarhanAliRaza (MEMBER) approved on the current head (8506ada) at 17:14:10Z, ~12.5h after the PR opened. All 33 checks green (CodSpeed, CodeQL, cubic, Greptile, all package builds), zero review threads.",
+  "merge_state is BLOCKED despite the approval and green CI: a second reviewer, Alek99, is still listed under requested_reviewers and has not reviewed. That pending review request -- not any code or CI issue -- is the only thing standing between this PR and mergeable=CLEAN.",
+  "Only 1 changed file, both cubic and Greptile found zero issues. This is one of the cleanest PRs in the queue; the sole blocker is a maintainer click (dismiss or complete Alek99's review request).",
+  "Likely opened in the same window as the ~15-PR Alek99/FarhanAliRaza performance push (Sep 5-7) but is unrelated in content -- a docs anchor fix, not a perf change. No cross-reference needed beyond noting the coincidental timing and that a MEMBER (FarhanAliRaza) is actively reviewing across that batch."
+ ]
+}

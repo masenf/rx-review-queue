@@ -1,0 +1,99 @@
+{
+ "number": 7049,
+ "fetched_at": "2026-09-08T16:35:00Z",
+ "head_sha": "4ee7a1c5674ed5be990194ecce141daa6ed6f334",
+ "title": "Reduce dev startup memory by deferring unused integrations",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": true,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T21:29:54Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "cc9107032f71aa83b31427764d3cd2a0694899ec",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T23:53:49Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4ee7a1c5674ed5be990194ecce141daa6ed6f334",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no human reviewer has looked yet; only cubic (AI) has reviewed"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: When a SQLModel class is checked for ObjectVar support, can_use_in_object_var rejects it because this dict[str, Any] marker does not equal the requested dict type. Normalize generic-dict output types in has_serializer, or keep the SQLModel marker compatible with the existing dict check."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: This assertion fails: only CustomBase is a nonempty registered base, so get_models() (include_empty=False) filters out EmptyBase and returns length 1, not 2. Change the expected count to 1 (or register a second nonempty base)."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 109,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-05T21:29:16Z",
+   "excerpt": "Confidence Score: 5/5. The PR appears safe to merge, with no actionable new correctness, security, or repository-rule violations identified."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-05T21:29:22Z",
+   "excerpt": "Merging this PR will improve performance by 15.98% (test_import_reflex benchmark)."
+  }
+ ],
+ "last_author_activity_at": "2026-09-05T23:53:50Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 2,
+ "notes": [
+  "Brand new PR, opened 2026-09-05T21:25:30Z by Alek99 (MEMBER). Part of a Sep 5-7 batch of ~15 similarly-named performance PRs from Alek99/FarhanAliRaza/codex bots; this one specifically targets dev-mode startup memory/time by deferring optional integrations (pandas/plotly/database/admin), preloading the app only for forked Granian workers, and moving a helper out of the compiler module.",
+  "PR body itself calls out overlap with #7050 (CLI startup performance) around type/prerequisite tests and says the two 'may need rebase ordering if both land' — worth checking for conflicts once one merges.",
+  "No human has reviewed yet: reviews so far are two cubic-dev-ai (bot) passes and one greptile summary comment (also a bot). cubic's second pass (on the current head) left two open P2 findings that have not been addressed or replied to: a SQLModel/dict ObjectVar-serializer mismatch in packages/reflex-base/src/reflex_base/utils/serializers.py:608, and a test assertion in test_telemetry_accounting.py that the bot says will fail (expects ==2 where only 1 nonempty model base is registered).",
+  "All CI is green: 111 checks, 109 success + 2 skipped (macos jobs skipped as usual), 0 failing, 0 pending. mergeable_state is 'blocked' (missing required human review/approval), not a merge conflict — confirmed no conflicts via git merge-tree against current main.",
+  "mergeable/conflicting_files freshly recomputed against today's main (a7e1ce33) via git merge-tree; base_sha on the PR (c49a85d) is behind current main by many commits, consistent with the other 5 PRs in this batch which share the same stale base."
+ ]
+}

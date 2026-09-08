@@ -1,0 +1,338 @@
+{
+ "number": 6688,
+ "fetched_at": "2026-09-08T16:45:00Z",
+ "head_sha": "8c11a8e04e3f38e2809279c111a074f2528d304d",
+ "title": "ENG-9148: feat(compiler): incremental compile cache & warm hot-reload daemon (REFLEX_COMPILE_CACHE)",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/components/memo.py",
+  "packages/reflex-base/src/reflex_base/utils/imports.py",
+  "packages/reflex-base/src/reflex_base/vars/base.py",
+  "pyi_hashes.json",
+  "reflex/compiler/compiler.py",
+  "reflex/utils/prerequisites.py",
+  "tests/units/compiler/test_compiler_utils.py",
+  "tests/units/components/test_memo.py",
+  "tests/units/utils/test_imports.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-06-28T15:41:08Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "a453ccb",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-06-28T15:41:53Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "a453ccb",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-28T23:23:07Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "17a31ac",
+   "on_current_head": false,
+   "note": "memo-component repro (adding @rx.memo from another module under REFLEX_COMPILE_CACHE=1 fails vite import)"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-09T15:13:05Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e765921",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T16:21:10Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "8c11a8e",
+   "on_current_head": true,
+   "note": "Confidence Score 2/5: PR not yet safe to merge; daemon marker/ownership-liveness race and a watcher rearm gap can leave dev frontend and state markers stale; preloaded-app finding from July still unresolved"
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T16:24:45Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "8c11a8e",
+   "on_current_head": true,
+   "note": "17 new issues found across 34 files (4 x P1, 12 x P2, wrong-type news fragment, tautological test assertion)"
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author to resolve 9-file merge conflict with main (widened from 6 to 9 files)",
+  "CI to actually run on the new head (still gated/never triggered 3 days after push)",
+  "author to address 17 new cubic findings + 2 new greptile P1s from the 09-05 rework, plus the 7 pre-existing unresolved threads",
+  "requested reviewer Alek99 has still never reviewed"
+ ],
+ "threads": {
+  "total": 51,
+  "unresolved": [
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 Watch all recorded in-project data dependencies: editing a .json/.yaml/.toml/.txt/.csv data file a page reads does not wake the compile daemon"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "P2 Hash include-path modules before reusing pages (REFLEX_HOT_RELOAD_INCLUDE_PATHS sibling-package staleness)"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 Hash transitive deps of warm dynamic imports: only the module returned by a runtime import is recorded, not its own imports"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Preloaded app untracked: config.app_module already populated -> record_app_import() captures no reads (older instance, 2026-08-09)"
+   },
+   {
+    "by": "masenf",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "generated unique-name reset needs to be per-page seeded from route hash, not a global reset (order-dependent duplicate names)"
+   },
+   {
+    "by": "masenf",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "compile daemon should use OS filesystem-change notifications, not 0.05s stat-polling"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 Preloaded App Untracked (re-raised on a later head, 2026-08-09)"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 NEW (09-05): Daemon Marker Outlives Daemon -- ownership marker written before daemon exists; backend workers can skip compilation indefinitely if startup fails"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 NEW (09-05): Watcher Gap Loses Edits -- gap between watcher unsubscribe and catch-up baseline capture can drop an edit"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 NEW (09-05): incremental early-return skips configured plugin lifecycle hooks / static-asset outputs, can leave plugin-generated files stale"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 NEW (09-05): rx.App + page in same module -- edits to app-wide config invalidate only the page dependency, stale app root/theme/stylesheet reused"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 NEW (09-05): daemon restart after a global-input change compiles without the lock backend workers wait on -- race on concurrent reload"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 NEW (09-05): if daemon exits unexpectedly, backend workers keep REFLEX_SKIP_COMPILE set forever -- edits stop regenerating .web"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 NEW (09-05): PropDocsState ID sequence restarts per recompiled component-doc page -- cached pages can collide/update the wrong control"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 NEW (09-05): new source file created directly under project root is missed by watchfiles (only watches existing children)"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 NEW (09-05): package __init__.py relative imports resolved against wrong package in the static import graph"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 NEW (09-05): importlib.import_module of a submodule omits its parent packages from tracked dependencies"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 NEW (09-05): page_dependency_entries drops unreadable-file paths from deps, so a later-appearing file is missed"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 NEW (09-05): TypeError fallback for unorderable sets returns hash-seed-ordered list, non-deterministic across processes -- breaks fingerprint determinism"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 NEW (09-05): REFLEX_COMPILE_CACHE startup compiles twice (precompile + daemon's own initial compile)"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 NEW (09-05): disk_cache successful incremental rebuild does not restore in-memory compiled-page bookkeeping used by telemetry/consumers"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 NEW (09-05): reload-watch change for .md/.mdx applies unconditionally even with the feature flag off, contradicting the 'no default behavior change' claim"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P3 NEW (09-05): tautological test assertion `assert x is False or True` always passes regardless of the real result"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P3 NEW (09-05): news/6688.fix.md uses towncrier type 'fix' which is not a configured type -- dropped from changelog / build fails"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "(duplicate of transitive-deps finding above, separately filed)"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "(duplicate P2 module-key finding, separately filed on 09-05 review)"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 2,
+  "by_state": {
+   "success": 2,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": true
+ },
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T23:23:07Z",
+   "ask": "Repro: adding an @rx.memo component from another module while REFLEX_COMPILE_CACHE=1 is running yields a vite import-resolution error",
+   "addressed": true,
+   "evidence": "Commit 4cbe7b6c (2026-08-09) 'emit user memo files for modules new to the compile cache' cites this exact repro and reworks memo-emission dirtiness detection"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T22:35:55Z",
+   "ask": "Re-seed _UNIQUE_NAME_RNG per page instead of resetting globally",
+   "addressed": true,
+   "evidence": "Commit 7e38b655 (2026-09-05) 'seed generated names per page so partial recompiles stay unique' addresses this directly, citing masenf's review"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T23:15:19Z",
+   "ask": "Use OS filesystem change notifications instead of stat-polling every 0.05s",
+   "addressed": true,
+   "evidence": "Commit 510f1387 (2026-09-05) replaces stat-polling with watchfiles notifications, polling only as fallback"
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-05T16:24:45Z",
+   "ask": "17 new issues (4 P1) found on the 09-05 rework itself, incl. plugin lifecycle hooks skipped on cache hit, daemon-restart lock race, PropDocsState ID collisions",
+   "addressed": false,
+   "evidence": "No commit or reply since the 2026-09-05T16:24:45Z review; this is the current head"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-07-01T16:58:33Z",
+   "excerpt": "@codex pelase review"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-05T16:21:06Z",
+   "excerpt": "Confidence Score: 2/5 -- not yet safe to merge because daemon failure or a narrowly timed edit can leave the dev frontend and state markers stale (bot; corroborated by cubic's independent P1 findings on the same commits)"
+  }
+ ],
+ "last_author_activity_at": "2026-09-05T16:17:27Z",
+ "last_maintainer_activity_at": "2026-07-28T23:23:07Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "CHANGED since 2026-09-04: three of masenf's July asks that were previously reported unaddressed are now actually addressed by a large 5-commit rework pushed 2026-09-05 03:56-16:17 (memo emission, per-page name seeding, watchfiles instead of polling, real warm-fork daemon, staleness gaps closed) -- three commits are attributed to 'Claude' (Claude-Session links) and two to Farhan directly.",
+  "CHANGED and WORSE: that same rework immediately drew 17 new cubic findings (4 P1) and 2 new greptile P1s on the new head 8c11a8e, none addressed yet. Thread total rose from 32 to 51; unresolved rose from 7 to 26 (old 7 unresolved carried forward untouched, plus 19 new).",
+  "CHANGED and WORSE: full CI has stopped running entirely on this PR. Head e765921 (09-04) had 109 checks (106 success/1 failure/2 skipped); the new head 8c11a8e (pushed 2026-09-05T16:17:27Z, now 3 days old) shows only 2 check runs (cubic + greptile, both success) -- confirmed via actions_list: no workflow_run exists at all for 8c11a8e on branch reflex-hmr (the listed runs are all still against the old e765921 head from 08-09). ci_never_ran flips false -> true.",
+  "CHANGED: conflicting_files widened from 6 to 9 files -- pyi_hashes.json, memo.py, and test_memo.py are newly conflicting (side effects of the 09-05 memo-emission rework); the old reflex-install-and-init CI failure can no longer be evaluated since CI isn't running.",
+  "Author is MEMBER; days_waiting_on_maintainer held at 0 per convention even though the ball is arguably now with reviewers given the volume of fresh, unaddressed automated findings.",
+  "Large PR now +6739/-89 across 34 files, 27 commits (was +4562/-72, 29 files, 21 commits on 09-04).",
+  "conflicting_files from git merge-tree --write-tree origin/main refs/pr/6688 (matches cache/runs/2026-09-08/conflicts.json), not the API.",
+  "Requested reviewer Alek99 still has never reviewed, across the entire ~2.5 month life of this PR."
+ ]
+}

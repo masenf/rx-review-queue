@@ -1,0 +1,64 @@
+{
+ "number": 7061,
+ "fetched_at": "2026-09-08T16:40:00Z",
+ "title": "Add holistic table event processing benchmark",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "head_sha": "d2f681a69479d5c169bdcc67dd7da17464248a50",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-07T17:58:25Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "d2f681a69479d5c169bdcc67dd7da17464248a50", "on_current_head": true},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-07T18:02:45Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "d2f681a69479d5c169bdcc67dd7da17464248a50", "on_current_head": true}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 2,
+  "unresolved": [
+   {"by": "greptile-apps", "outdated": false, "author_replied": false, "first_comment": "P2: Hardcoded State Field Keys -- these assertions use \"status\", \"sort_reverse\", \"filtered_orders\", and \"total_amount\" directly as dictionary keys. This violates the repository directive that string literals used as identifiers or keys must be extracted into named constants..."},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P3: The wire-encoding logic is duplicated in table_event_harness.encode and test_table_event_deltas.record: both call json_dumps(StateUpdate(delta=delta), separators=(\",\", \":\")). ... Extract a single _encode_delta(delta) helper used by both call sites..."}
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {"success": 108, "failure": 1, "pending": 0, "skipped": 2, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": ["CodSpeed Performance Analysis"],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {"check": "CodSpeed Performance Analysis", "cause": "Not a job with logs -- CodSpeed's own check-run failed the gate over a -4.74% regression on test_collect_imports[_complicated_page], a compilation benchmark this PR does not touch (it only adds a new event-processing benchmark). CodSpeed's own comment flags 'different runtime environments detected' for the compared benchmarks, i.e. likely measurement noise rather than a real regression from this PR's diff (tests/benchmarks/{README.md,fixtures.py,test_event_processing.py} only)."}
+ ],
+ "outstanding_asks": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T17:58:25Z", "ask": "Extract hardcoded state field keys (\"status\", \"sort_reverse\", \"filtered_orders\", \"total_amount\") in the new benchmark's assertions into named constants per repo convention.", "addressed": false},
+  {"by": "cubic-dev-ai[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T18:02:45Z", "ask": "Extract a shared _encode_delta() helper so the correctness test and the timed benchmark can't silently diverge on wire encoding.", "addressed": false}
+ ],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T17:58:22Z", "excerpt": "Confidence Score: 4/5. The only accepted issue is the repository-rule violation in the new correctness assertions (hardcoded field keys)."},
+  {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-07T18:00:23Z", "excerpt": "Merging this PR will degrade performance by 4.74% -- 1 regressed benchmark (test_collect_imports), 1 new benchmark (test_process_table_event)."},
+  {"by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-09-07T17:56:10Z", "excerpt": "You have reached your Codex usage limits for code reviews."}
+ ],
+ "last_author_activity_at": "2026-09-07T17:56:01Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0.95,
+ "notes": [
+  "Test/benchmark-only PR (tests/benchmarks/README.md, fixtures.py, test_event_processing.py -- 3 files, no package source changed, no changelog fragment needed). Adds a 1000-row order-management benchmark exercising filter/sort/computed-totals/delta/JSON-encode, refactored out of #7056's original inline benchmark per its own description ('Related to #7056').",
+  "mergeable is clean (no git conflicts) but merge_state is BLOCKED and the CodSpeed check is red. The CodSpeed failure is a benchmark-regression gate, not a test failure -- read its own comment before treating it as a code defect: it explicitly warns of cross-environment comparison noise on an unrelated compilation benchmark (test_collect_imports), and this PR touches no compiler code.",
+  "2 unresolved bot threads, neither addressed yet: a P2 (hardcoded dict keys as string literals, a repo-wide convention greptile enforces) and a P3 (duplicated wire-encoding logic between the correctness test and the timed benchmark, which the PR's own description already calls out as a maintenance risk).",
+  "Self-authored MEMBER PR with zero human review so far; last_maintainer_activity_at is null (only bots have commented) so days_waiting_on_maintainer (0.95d) measures time since the PR was opened/last touched by the author, not staleness after a maintainer response.",
+  "Part of the ~15-PR Alek99/FarhanAliRaza Sep 5-7 performance push; most directly coupled to #7056 (shares the benchmark this PR extracts) -- no other cross-PR file overlap checked."
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "number": 6875,
+ "fetched_at": "2026-09-08T16:45:00Z",
+ "head_sha": "3ccdc97ed3f8999ba3537b47f62d8900e4b5f138",
+ "title": "fix(docs): preserve dashboard dialog validation",
+ "author": "rohit-jsfreaky",
+ "author_association": "FIRST_TIME_CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": "APPROVED",
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [
+  {
+   "number": 6816,
+   "title": "Submit button doesn't wait for required fields",
+   "filed_by": "gergelyk",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-12T08:15:47Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "0b8a1ff",
+   "on_current_head": false
+  },
+  {
+   "by": "rohit-jsfreaky",
+   "state": "COMMENTED",
+   "at": "2026-08-12T08:53:38Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "0b8a1ff",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "APPROVED",
+   "at": "2026-09-04T23:40:10Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "3ccdc97",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": true,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "someone with merge rights to click merge (approved, CI green, no open threads)"
+ ],
+ "threads": {
+  "total": 1,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 33,
+  "by_state": {
+   "success": 33,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-04T23:42:54Z",
+   "excerpt": "Confidence Score: 5/5 -- the PR appears safe to merge, no blocking failure remains (bot; re-run on masenf's merge-commit head)"
+  },
+  {
+   "by": "rohit-jsfreaky",
+   "association": "NONE",
+   "at": "2026-08-18T22:16:10Z",
+   "excerpt": "Hi! Just checking if a maintainer could take a look at this PR when they get a chance. Happy to make any changes needed."
+  }
+ ],
+ "last_author_activity_at": "2026-08-18T22:16:10Z",
+ "last_maintainer_activity_at": "2026-09-04T23:40:10Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "MAJOR CHANGE since 2026-09-04: masenf (MEMBER) pushed a merge commit of origin/main onto this fork branch himself (3ccdc97, 2026-09-04T23:35:42Z) and then APPROVED on that same commit (23:40:10Z) -- the first human review this PR ever received.",
+  "CHANGED: a maintainer pushing to (rather than just commenting on) a fork branch caused the full CI suite to run for the first time -- checks went from 2 (bot-only, ci_never_ran=true) to 33/33 green (build x21, docs-tests, pre-commit, changelog, Analyze x2, discover, Lighthouse, benchmarks, Greptile, cubic). ci_never_ran flips true -> false.",
+  "review_decision is now APPROVED (was null); counting_approval flips false -> true (masenf is MEMBER, on current head, not dismissed).",
+  "This PR looks fully merge-ready: approved, CI green, single thread already resolved, no open asks. merge_state is still BLOCKED though masenf already approved and requested reviewer Alek99 never reviewed -- likely just needs someone with merge rights to click the button, or GitHub's branch protection wants a second approval; flag for Masen as a one-click merge candidate.",
+  "conflicting_files recomputed fresh via git merge-tree against current origin/main -- clean, no conflicts."
+ ]
+}

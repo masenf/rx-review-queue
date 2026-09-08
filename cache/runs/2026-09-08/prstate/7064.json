@@ -1,0 +1,72 @@
+{
+ "number": 7064,
+ "fetched_at": "2026-09-08T16:40:00Z",
+ "title": "Faster first page load: one-lock hydrate from the connect packet, diffed against compiled defaults",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "head_sha": "8a5abccbeaaf038227936ca56bac39142188bfe1",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-07T20:45:35Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "2d9abce959bcd93156b1105b577ceb06cfe297a4", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-07T20:48:47Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "2d9abce959bcd93156b1105b577ceb06cfe297a4", "on_current_head": false},
+  {"by": "chatgpt-codex-connector[bot]", "state": "COMMENTED", "at": "2026-09-07T20:51:00Z", "association": "NONE", "can_push": false, "commit_id": "2d9abce959bcd93156b1105b577ceb06cfe297a4", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T20:59:34Z", "association": "MEMBER", "can_push": true, "commit_id": "16d25bbd1facc97811361f5704e0cc7faaa6717d", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T20:59:35Z", "association": "MEMBER", "can_push": true, "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T20:59:38Z", "association": "MEMBER", "can_push": true, "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T20:59:40Z", "association": "MEMBER", "can_push": true, "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T20:59:41Z", "association": "MEMBER", "can_push": true, "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T20:59:44Z", "association": "MEMBER", "can_push": true, "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T20:59:46Z", "association": "MEMBER", "can_push": true, "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T20:59:47Z", "association": "MEMBER", "can_push": true, "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-07T21:07:12Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "48f9c5cdeef7459a8e620850d22ff3660fefa087", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T21:11:44Z", "association": "MEMBER", "can_push": true, "commit_id": "e923225dd31bbbfd6e237037d9d1a8f536d33667", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T21:11:48Z", "association": "MEMBER", "can_push": true, "commit_id": "e923225dd31bbbfd6e237037d9d1a8f536d33667", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-07T21:20:04Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "e923225dd31bbbfd6e237037d9d1a8f536d33667", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-07T21:27:53Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b7295cc4638f2c245615cb4716703ba177cecb1d", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T21:32:44Z", "association": "MEMBER", "can_push": true, "commit_id": "e3975ac661d37c567b6ab9634a3dc1d57ebaf387", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T21:32:46Z", "association": "MEMBER", "can_push": true, "commit_id": "e3975ac661d37c567b6ab9634a3dc1d57ebaf387", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T21:33:54Z", "association": "MEMBER", "can_push": true, "commit_id": "62280c0ea6053bc778a2546ed3b304c65b1aec4d", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 17,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {"success": 111, "failure": 0, "pending": 0, "skipped": 0, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T20:45:31Z", "excerpt": "Confidence Score: 5/5. The atomic Redis script checks ownership and writes the state tree as one server-side operation; malformed hash lists now reliably fall back to a full snapshot."},
+  {"by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-09-07T20:41:15Z", "excerpt": "Codex Review Summary -- Code Review completed on commit 2d9abce."}
+ ],
+ "last_author_activity_at": "2026-09-07T21:33:54Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0.8,
+ "notes": [
+  "Largest and most invasive of the batch: combines hydrate+on_load into one connect-packet event, diffs first hydrate against compiled defaults (only sends vars that differ), and replaces the redis state-tree save with one lock-checked Lua script. 19 files changed across reflex, reflex-base and packages/reflex-components-core equivalents (compiler templates, event processor, app.py, redis manager). Author claims hydrate payload 36.5KB -> 2.1KB and redis commands per first load 291 -> 55 on a 20-substate benchmark app.",
+  "Very active single-session review/fix loop: 17 review threads opened by greptile/cubic/codex across 5 head-commits between 20:45 and 21:33Z, every one addressed and marked resolved by the author in the same window (0 unresolved). Includes a real cubic P0 that was investigated and rebutted with evidence rather than blindly accepted (CompileVars.CONNECT_AUTH_EVENT genuinely exists in reflex-base, not reflex, per commit e923225) -- worth a human double-check given the severity label, even though the author's rebuttal cites a passing unit test and CI is fully green.",
+  "All 111 checks green, including the full integration-app-harness/playwright matrix across memory/redis state managers and Python 3.10-3.14 -- unusually thorough coverage for same-day review, but still zero human (non-author) review to date.",
+  "Self-authored MEMBER PR; last_maintainer_activity_at is null (no MEMBER besides the author has commented), so days_waiting_on_maintainer (0.8d) is time since the author's last push, not a maintainer going quiet. Given the size and protocol-level change (frontend/backend boot handshake), this is the PR in the batch most in need of an actual maintainer read before merge, not just green CI.",
+  "Part of the ~15-PR Alek99/FarhanAliRaza Sep 5-7 performance push. No direct file overlap checked against sibling PRs beyond noting the shared authorship and theme."
+ ]
+}

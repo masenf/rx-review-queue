@@ -1,0 +1,64 @@
+{
+ "number": 7056,
+ "fetched_at": "2026-09-08T16:40:00Z",
+ "title": "Optimize runtime type checks and state delta encoding",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "head_sha": "6907824df4fde9950157c5356d623eba852f0c7f",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-07T17:04:26Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "a2d92b8a9f1e877c5c4e4383c8f9003c7b50c686", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-07T17:10:01Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "a2d92b8a9f1e877c5c4e4383c8f9003c7b50c686", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T17:12:02Z", "association": "MEMBER", "can_push": true, "commit_id": "0f97c66ada0b17f26aedb175695d189e698263e5", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T17:12:08Z", "association": "MEMBER", "can_push": true, "commit_id": "0f97c66ada0b17f26aedb175695d189e698263e5", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T17:17:54Z", "association": "MEMBER", "can_push": true, "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T17:18:00Z", "association": "MEMBER", "can_push": true, "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T17:18:06Z", "association": "MEMBER", "can_push": true, "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-07T17:20:11Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T17:20:59Z", "association": "MEMBER", "can_push": true, "commit_id": "e84cc6129a533f34270065d55e35acef3040cad3", "on_current_head": false},
+  {"by": "FarhanAliRaza", "state": "COMMENTED", "at": "2026-09-07T17:21:12Z", "association": "MEMBER", "can_push": true, "commit_id": "e84cc6129a533f34270065d55e35acef3040cad3", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 8,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {"success": 109, "failure": 0, "pending": 0, "skipped": 2, "cancelled": 0, "action_required": 0, "neutral": 0},
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T17:04:19Z", "excerpt": "Confidence Score: 5/5. The changes since the previous review only restructure and extend benchmarks; safe to merge."},
+  {"by": "codspeed-hq[bot]", "association": "NONE", "at": "2026-09-07T16:59:40Z", "excerpt": "Merging this PR will improve performance by 80.06% (4 improved benchmarks, e.g. test_var_access[mutable_dataclass_list] 197.9ms -> 64.3ms)."},
+  {"by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-09-07T16:56:12Z", "excerpt": "You have reached your Codex usage limits for code reviews."}
+ ],
+ "last_author_activity_at": "2026-09-07T17:21:12Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0.97,
+ "notes": [
+  "Adds pydantic-core-compiled runtime_isinstance() for state var/computed var type checks, an orjson-backed json_dumps_compact() for socket.io state deltas (adds orjson as a reflex-base dependency), and MutableProxy construction/iteration fast paths. Touches reflex, reflex-base and reflex-components-core; author claims 80% faster event processing end-to-end on a 10k-row template app.",
+  "Self-authored MEMBER PR (FarhanAliRaza) with no human reviewer yet -- every review/comment on the thread is either a bot (greptile, cubic, chatgpt-codex which hit its usage limit) or the author replying to bot findings. last_maintainer_activity_at is null because no MEMBER other than the author has looked at it; days_waiting_on_maintainer (0.97d) is time since the author's last push/reply, not time since a maintainer went silent -- treat this as 'awaiting first outside review', not 'stale response'.",
+  "All 8 review threads (6 greptile/cubic P1-P3 findings plus 2 duplicate-content threads) were opened and resolved by the author within the same session (17:04-17:21Z) across 3 follow-up commits (0f97c66, 375bb440, e84cc612). Zero unresolved threads.",
+  "111/111 checks reporting, 109 success + 2 skipped (unit-tests-macos, reflex-docs-macos -- consistent with other PRs in this batch), 0 failing, 0 pending. CodSpeed reports a genuine improvement, not just no-regression.",
+  "One of the ~15-PR Alek99/FarhanAliRaza coordinated performance push opened Sep 5-7. Explicitly related to #7061 (which extracts/isolates the holistic benchmark this PR introduced) per that PR's description -- no other cross-PR conflict investigated."
+ ]
+}

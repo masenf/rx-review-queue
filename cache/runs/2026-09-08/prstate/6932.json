@@ -1,0 +1,78 @@
+{
+ "number": 6932,
+ "fetched_at": "2026-09-08T16:45:00Z",
+ "head_sha": "5e739cc1f3d353d5381ca5690b69970ea18b1904",
+ "title": "bare websockets",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-22T21:04:14Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "24d8a2b", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-08-23T16:21:19Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "49f323b", "on_current_head": false},
+  {"by": "benedikt-bartscher", "state": "COMMENTED", "at": "2026-08-23T16:46:57Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "3ed074a", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T07:22:00Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "e132bdd", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-04T08:14:40Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "c695256", "on_current_head": false}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "first human/MEMBER review -- still zero MEMBER/OWNER engagement ever on this 22-file PR",
+  "someone to click merge on an otherwise green, fully-resolved fork PR"
+ ],
+ "threads": {
+  "total": 34,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "abulvenz",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-24T11:15:55Z",
+   "ask": "Confirm whether HTTP long-polling fallback is dropped with bare websockets",
+   "addressed": true,
+   "evidence": "Author replied 2026-08-24T11:41 that long-polling is not supported in the new transport but socketio transport remains selectable"
+  }
+ ],
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T11:02:23Z", "excerpt": "Confidence Score: 5/5 -- the PR appears safe to merge; no new actionable regressions or outstanding previous findings remain; every previous Greptile thread is resolved and therefore not outstanding (bot, re-run on the final merge-upstream commit)"},
+  {"by": "benedikt-bartscher", "association": "CONTRIBUTOR", "at": "2026-08-28T18:21:55Z", "excerpt": "check out #6984 -- edit: done in 9caa24b"}
+ ],
+ "last_author_activity_at": "2026-09-07T10:59:53Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 1.23,
+ "notes": [
+  "RESOLVED since 2026-09-04: the 09-04 run flagged greptile's confidence score dropping to 3/5 over an unbudgeted version-mismatch log-flooding concern in reflex/event_namespace.py as a live, unresolved objection. Since then the author merged upstream/main twice more (3bb1f76, 4ba8712, 64396a2, 9c97c0e, e132bdd, 5e739cc -- all merge commits, no further feature commits) and greptile's PR-level summary, re-run against the final head 5e739cc on 2026-09-07T11:02:23Z, now reads Confidence 5/5 'appears safe to merge... every previous Greptile thread is resolved.' Per traps.md this is a bot summary and not proof by itself, but it is corroborated by thread state: all 34 threads (up from resolved-count basis unchanged at 34; no new threads since 09-04) show is_resolved=true with zero unresolved.",
+  "mergeable_state CHANGED from dirty/CONFLICTING to blocked/MERGEABLE: the conflicts reported 09-04 (pyproject.toml, reflex/testing.py, uv.lock) are gone after the later upstream merges. conflicting_files is now [].",
+  "Checks unchanged in shape (111 total, 109 success + 2 skipped, 0 failing) -- reconfirmed with a fresh, fully-paginated get_check_runs (two pages) against the new head to guard against the by_state pagination trap; sums to 111.",
+  "Still zero MEMBER/OWNER engagement in the PR's entire ~2.5-week life; only CONTRIBUTOR-level human comments (author + abulvenz). This is now a fully green, fully-resolved, conflict-free 38-commit PR with no human reviewer ever assigned or self-requested -- worth surfacing as a cheap first-review candidate.",
+  "days_waiting_on_maintainer computed from last_author_activity_at (last merge commit, 2026-09-07T10:59:53Z) to now, since no maintainer has ever engaged and the PR has sat ready since that merge."
+ ]
+}

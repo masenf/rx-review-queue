@@ -1,0 +1,95 @@
+{
+ "number": 7052,
+ "fetched_at": "2026-09-08T16:35:00Z",
+ "head_sha": "2240413f9853c139ccf8510291825628a9e33abc",
+ "title": "Prevent concurrent reflex.json update corruption",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": true,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T08:03:02Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "7856d58723e4364f9dc42503b764ea029e493db2",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T08:12:44Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "7856d58723e4364f9dc42503b764ea029e493db2",
+   "on_current_head": false
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-06T08:18:44Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2240413f9853c139ccf8510291825628a9e33abc",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no human reviewer has looked yet; only cubic and greptile (AI bots) have reviewed"
+ ],
+ "threads": {
+  "total": 4,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 109,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-06T08:02:57Z",
+   "excerpt": "Confidence Score: 5/5. The PR appears safe to merge; the previously outstanding cleanup race is fully protected and no new actionable failures were identified."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-06T08:02:59Z",
+   "excerpt": "Merging this PR will not alter performance. 32 untouched benchmarks, 8 skipped."
+  }
+ ],
+ "last_author_activity_at": "2026-09-06T08:18:44Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 2,
+ "notes": [
+  "Brand new PR, opened 2026-09-06T07:59:40Z by Alek99 (MEMBER). Part of the Sep 5-7 performance/reliability-PR batch; serializes reflex.json (and similar JSON metadata) read-modify-write operations behind a cross-process hard lock keyed by the normalized target path, and writes complete JSON documents through an atomic staging-file replace. Frontend reinitialization acquires the same locks before replacing .web so a concurrent rebuild can't delete an in-flight staging file.",
+  "All 4 review threads resolved: greptile flagged a cleanup-can-remove-staging-file race and a hardcoded lock-directory path, both fixed (locks now acquired by frontend cleanup too; directory now a named constant); cubic flagged a cross-platform lock-key case-sensitivity bug on macOS and the same staging-file race, both fixed. greptile's final pass gives Confidence 5/5.",
+  "No human has reviewed yet — only greptile-apps and cubic-dev-ai (bots) plus the author's own reply comments.",
+  "All CI is green: 111 checks, 109 success + 2 skipped, 0 failing, 0 pending.",
+  "mergeable_state is 'blocked' (no human approval yet), not a conflict — confirmed no merge conflicts via git merge-tree against current main. base_sha (c49a85d) is behind current main, same as the rest of this batch. Touches reflex/utils/path_ops.py and reflex/constants/base.py, which overlaps with the locking work in #7051 and #7054 — same 'add a process lock in utils/' pattern across three sibling PRs, worth checking together for redundant lock schemes rather than three independent lock files."
+ ]
+}

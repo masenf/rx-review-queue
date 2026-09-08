@@ -167,6 +167,24 @@ the memory the job otherwise lacks.
   programmatically (which files appear in *every* listed PR's
   `conflicting_files`) before writing the note, and call out partial overlaps
   explicitly rather than rounding up to "all of them."
+- Don't write "today"/"just happened" for an action pulled from a carried-forward
+  or lightly-changed prstate file without checking the actual timestamp against
+  the run date. Sep 8: a top15 card credited masenf with approving a PR "today"
+  when the review was dated Sep 4 (four days earlier) — the PR's `updated_at`
+  had changed for an unrelated reason, and the fetch correctly pulled the old
+  approval into a fresh file, but the prose reused "today" as if the fetch date
+  were the event date. Two more cards understated the gap by only a day the
+  same way. Always diff the cited timestamp against `run.date`.
+- Cross-check `patterns` entries against `top15`/`one_fix_away`'s own
+  `whose_move` before publishing: Sep 8 listed a PR under "waiting on a
+  maintainer reply" while its own top15 card said the ball was with the
+  *author* (an unanswered design objection). The two lists are built from the
+  same underlying fact and must agree.
+- A prstate file's own `author_association` field can be stale even when
+  everything else in it is correct — one carried forward MEMBER for a PR
+  listing.json (the authoritative source) has always called CONTRIBUTOR.
+  Never read association off a prstate file; always re-derive author
+  concentration from listing.json, per the rule in `## Listing`.
 
 ## Fact-check
 - Git and merge-box figures are taken minutes apart. On Aug 28 23:30 the

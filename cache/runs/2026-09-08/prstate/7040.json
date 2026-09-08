@@ -1,0 +1,66 @@
+{
+ "number": 7040,
+ "fetched_at": "2026-09-08T16:45:00Z",
+ "head_sha": "fb487050ebf438eb154d3dfa44c9504ad97dbd1c",
+ "title": "migrate httpx to httpx2",
+ "author": "ProgrammerPlus1998",
+ "author_association": "FIRST_TIME_CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [{"number": 7034, "title": "[HTTPXodus] Consider migrating from httpx to httpx2 (the actively maintained fork)", "filed_by": "ProgrammerPlus1998", "filer_is_author": true}],
+ "reviews": [
+   {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-03T04:18:16Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "b965d6f", "on_current_head": false, "bot": true},
+   {"by": "masenf", "state": "COMMENTED", "at": "2026-09-04T18:33:53Z", "association": "MEMBER", "can_push": true, "commit_id": "471b42b", "on_current_head": false,
+    "note": "design pushback on the dual-import (try httpx2/except httpx) approach: since httpx2 would be a required dep anyway, just import httpx2 directly"},
+   {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-07T10:36:47Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "fb48705", "on_current_head": true, "bot": true}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "masenf to review the rewritten hard-switch approach and confirm his design objection is satisfied",
+  "workflow-approval click to ever happen for this fork/first-time-contributor PR (still only 2 bot checks, 5 days after the original push)",
+  "one minor doc nit: stale dual-import comments/type-ignores left in reflex/utils/net.py"
+ ],
+ "threads": {"total": 3, "unresolved": [
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2: httpx2 is added to the required dependencies, but the dual-import code relies on httpx2 being optional. Every reflex install is forced to pull httpx2, contradicting the PR's stated Option A. -- NOTE: this comment predates the 09-07 rewrite; the dual-import code it describes no longer exists (the PR now hard-imports httpx2 with no fallback), so the underlying contradiction it flagged is moot even though the thread itself was never explicitly resolved."},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P3 NEW (09-07): stale comment block in reflex/utils/net.py still describes the removed try/except fallback ('falls back to real httpx on 3.8/3.9', 'union of the two modules') and now-unneeded # type: ignore suppressions"}
+ ]},
+ "checks": {"rollup": "SUCCESS", "total": 2, "by_state": {"SUCCESS": 2, "NEUTRAL": 0}, "failing": [], "pending": []},
+ "ci_never_ran": true,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+   {
+     "by": "masenf",
+     "association": "MEMBER",
+     "at": "2026-09-04T18:33:53Z",
+     "ask": "I don't understand how the 'dual import' thing really helps us here. If we're adding httpx2 to the framework deps, it will always be installed and thus we should just import httpx2.",
+     "addressed": true,
+     "evidence": "Author pushed commit fb487050 (2026-09-07T10:33:04Z) titled 'hard switch to httpx2 (no dual-import shim)': dropped all try/except fallbacks, PR body rewritten to describe exactly masenf's suggested Option B (direct import, no fallback), removed as a required dep any dual-import ambiguity. Not yet acknowledged by masenf."
+   }
+ ],
+ "recent_comments": [
+   {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T10:35:19Z", "excerpt": "Confidence Score: 5/5 -- the changes since the previous review appear safe to merge, with no outstanding actionable failure established. The removed compatibility fallbacks are unnecessary because Reflex supports Python 3.10+ and declares httpx2 as a required base dependency throughout that range."},
+   {"by": "cubic-dev-ai[bot]", "association": "CONTRIBUTOR", "at": "2026-09-07T10:36:47Z", "excerpt": "1 issue found across 12 files (changes from recent commits) -- stale dual-import comments in net.py (P3, doc-only)"}
+ ],
+ "last_author_activity_at": "2026-09-07T10:33:04Z",
+ "last_maintainer_activity_at": "2026-09-04T18:33:53Z",
+ "days_waiting_on_maintainer": 1.25,
+ "notes": [
+  "MAJOR CHANGE since 2026-09-04: the author (ProgrammerPlus1998, commits authored under the name 'xic') directly capitulated to masenf's 09-04 design objection. Commit fb487050 (2026-09-07T10:33:04Z), 'fix(reflex): hard switch to httpx2 (no dual-import shim)', rewrites the PR from the original try/except dual-import ('Option A') to exactly the direct-import hard switch masenf argued for ('Option B') -- dropping all try/except fallbacks and the PR description/table were both rewritten to match. This directly answers masenf's outstanding ask.",
+  "head_sha changed 471b42b5 -> fb487050. PR body completely rewritten (was 'dual import' framing, now 'Hard switch... Removes try/except ImportError dual-import blocks').",
+  "greptile's fresh PR-level summary on the new head (2026-09-07T10:35:19Z) confirms confidence rose back to 5/5 and explicitly endorses dropping the fallbacks as correct given httpx2 is now a hard runtime dependency across the whole supported Python range -- corroborating that masenf's objection is structurally resolved, not just bot noise.",
+  "Thread count dropped from 2 to 3 net (one of the two original cubic threads -- 'duplicated dual-import block across 7+ files' -- is now marked resolved, addressed in fb487050, since that duplicated code no longer exists at all under the hard-switch approach; the other original thread, about httpx2 being a required dep while the code was optional, is technically still open but its premise (the optional-dependency contradiction) no longer applies to the new code; one new minor P3 doc-nit thread appeared about stale dual-import comments left in net.py).",
+  "ci_never_ran remains true: this is still a fork PR from a first-time contributor and the workflow-approval gate has still never been clicked, now across two separate pushes (09-03 and 09-07) five days apart. Only cubic + greptile bot checks exist on the new head.",
+  "masenf has not yet responded to the redesigned PR; this is the single most actionable item on the board for him -- a maintainer objection that was fully addressed and just needs a look.",
+  "mergeable/conflicting_files recomputed fresh via git merge-tree against current origin/main -- clean, no conflicts.",
+  "Linked issue #7034 unchanged: filed by ProgrammerPlus1998 (same as PR author) as part of the community 'HTTPXodus' campaign."
+ ]
+}

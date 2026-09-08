@@ -1,0 +1,128 @@
+{
+ "number": 7050,
+ "fetched_at": "2026-09-08T16:35:00Z",
+ "head_sha": "b940375bb100039a9c7277bec768e430385e9093",
+ "title": "Make CLI startup lazy and benchmark command paths",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": true,
+ "auto_merge": false,
+ "review_decision": "APPROVED",
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T23:54:15Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "44661b16ff95212691764dcfbbeaccaf93967016",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T23:54:29Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "44661b16ff95212691764dcfbbeaccaf93967016",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T00:09:35Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "0c3bc9536518e8fd6f05bc83e96fef644b75bd8f",
+   "on_current_head": false
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-06T00:25:50Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "b940375bb100039a9c7277bec768e430385e9093",
+   "on_current_head": true
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T00:26:25Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b940375bb100039a9c7277bec768e430385e9093",
+   "on_current_head": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "APPROVED",
+   "at": "2026-09-07T17:44:21Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "b940375bb100039a9c7277bec768e430385e9093",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": true,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [],
+ "threads": {
+  "total": 2,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": true,
+    "first_comment": "Duration Comments Missing: the new one-day success interval and one-hour failure interval use time-based calculations without human-readable comments (repository style rule)."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 109,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-05T23:54:26Z",
+   "excerpt": "Confidence Score: 4/5. The persisted-key finding was manually resolved; the duration-comment finding remains unresolved because the timedelta constants still lack the comments required by the repository rule."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-06T00:20:33Z",
+   "excerpt": "Merging this PR will not alter performance. 32 untouched benchmarks, 8 skipped."
+  }
+ ],
+ "last_author_activity_at": "2026-09-06T00:25:50Z",
+ "last_maintainer_activity_at": "2026-09-07T17:44:21Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Brand new PR, opened 2026-09-05T23:51:07Z by Alek99 (MEMBER). Part of the Sep 5-7 performance-PR batch; this one makes CLI startup lazy (deferred component/cloud/deploy command imports, lazy plugin/compiler and SQLAlchemy-aware helper resolution), narrows the frontend dependency cache key, and adds version-check TTLs. Reports a 7x faster `reflex --version` (460.8ms -> 66.2ms) and ~76% lower root-CLI RSS.",
+  "Has a real counting approval: FarhanAliRaza (MEMBER) approved on the current head (b940375, matches head_sha) on 2026-09-07T17:44:21Z, with a minor non-blocking note ('Will need to set reflex-base floor on release'). This is the only one of the six brand-new PRs in this run with a human approval.",
+  "One unresolved review thread is a live, unresolved disagreement rather than an oversight: greptile asked for inline human-readable comments on the two timedelta constants (repo style rule); Alek99 pushed back that the public docstring already documents the durations; greptile reiterated the rule requires comments at the point of definition, not just a docstring. This is a genuine open disagreement between the author and a bot reviewer, not a stale/addressed thread — worth a maintainer's read to settle either way, but it's a one-line style nit, not a functional blocker.",
+  "PR body explicitly flags overlap with #7049 (backend/dev-process import overhead) in type/prerequisite tests and says the two may need rebase ordering if both land.",
+  "All CI is green: 111 checks, 109 success + 2 skipped, 0 failing, 0 pending.",
+  "mergeable_state is 'blocked' even with an approval — likely still short a second/CODEOWNERS approval or another required check gate; confirmed no merge conflicts via git merge-tree against current main. base_sha (c49a85d) is behind current main, same as the rest of this batch."
+ ]
+}
