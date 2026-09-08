@@ -77,6 +77,8 @@ class Board:
             bits.append(f"by <b>{esc(p['author'])}</b>" + (f" ({role})" if role else ""))
         if p.get("is_fork"):
             bits.append("fork")
+        if p.get("updated_at"):
+            bits.append(f"updated {esc(p['updated_at'].replace('T', ' ').replace('Z', ' UTC'))}")
         if "files" in m:
             bits.append(f"{m['files']} files, +{m['insertions']}/−{m['deletions']}")
             bits.append(f"{m['commits_ahead']} ahead / {m['behind_main']} behind main")
