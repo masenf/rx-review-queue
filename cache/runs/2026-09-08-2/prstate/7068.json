@@ -1,0 +1,83 @@
+{
+ "number": 7068,
+ "fetched_at": "2026-09-08T23:15:00Z",
+ "head_sha": "d5c82f468a7c28363280b8b92c77c17ac09ebfaf",
+ "title": "perf: split router into per-field base vars; gather connection-static router data at connect",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-08T22:22:44Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "608f448", "on_current_head": false},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-08T22:26:45Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "608f448", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-08T23:13:14Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "d5c82f4", "on_current_head": true, "note": "Confidence 4/5: duplicate-token handling leaves router_session.client_token stale under the new identity; router-identifier constants finding also outstanding"}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "author (masenf, self) to address remaining bot findings: duplicate-token session staleness (new, on current head), cached-headers mutability, per-field vs whole-router dep expansion, router identifier constants, navigation-vs-full-payload dirtying edge cases",
+  "CI to finish: several jobs still in_progress at fetch time; 1 confirmed unrelated flaky failure and 1 perf regression to acknowledge"
+ ],
+ "threads": {
+  "total": 9,
+  "unresolved": [
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 destructive delta: navigation-only router_data following a full payload can be read as omitted sid/token/IP/headers changing, resetting connection-scoped vars to empty defaults"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 modify_state_with_links marks all five router base vars dirty on every shared-state event, resending connection-static session/headers"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 headers_changed also fires on non-origin header changes, rebuilding page/url/route_id unnecessarily"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 router_data.update(static_router_data) reuses cached headers dict by reference; a handler mutating self.router_data[\"headers\"] corrupts the connection cache"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 deps=[State.router] (Var form) only propagates _url_var's field metadata, so cached vars stay stale for session/headers/page/route_id changes"},
+   {"by": "greptile-apps", "outdated": false, "author_replied": false, "first_comment": "P2 router identifiers hardcoded as string literals in _get_router_var / dynamic dependency declaration instead of named constants"},
+   {"by": "greptile-apps", "outdated": false, "author_replied": false, "first_comment": "P1 NEW (23:13, current head d5c82f4): duplicate-token handling loads state under new_token but only updates SESSION_ID in router_data, so router_session.client_token stays stale/empty"}
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "success": 85,
+   "failure": 2,
+   "pending": 22,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": ["CodSpeed Performance Analysis", "unit-tests (windows-latest, 3.14)"],
+  "pending": ["many unit-tests/integration-app-harness/integration-app-harness-playwright jobs still in_progress at fetch time (23:15Z, head pushed 22:45-23:13Z)"],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {"check": "unit-tests (windows-latest, 3.14)", "cause": "test_check_latest_package_version_refreshes_expired_check fails because the mocked PyPI 'version' lookup is called twice (for 'reflex' and 'reflex-enterprise') on this runner image; unrelated to this PR's router/vars changes, not a file this PR touches."},
+  {"check": "CodSpeed Performance Analysis", "cause": "flagged a -3.21% regression on test_from_event_type[lambda_event] (offset by a +3.17% improvement elsewhere and a new benchmark); real but modest, needs an ack/investigation rather than a code fix before merge."}
+ ],
+ "outstanding_asks": [
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-08T22:22:44Z", "ask": "Router identifiers hardcoded as string literals; repo convention requires named constants", "addressed": false},
+  {"by": "cubic-dev-ai[bot]", "association": "CONTRIBUTOR", "at": "2026-09-08T22:26:45Z", "ask": "5 P2 findings: destructive partial-payload delta, shared-state over-dirtying, header-change over-rebuilding, mutable cached headers dict, incomplete Var-form router dependency", "addressed": false},
+  {"by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-09-08T23:13:14Z", "ask": "P1 duplicate-token handling leaves router_session.client_token stale under the new identity", "addressed": false, "evidence": "raised on current head d5c82f4, no reply yet"}
+ ],
+ "body_has_repro": false,
+ "recent_comments": [
+  {"by": "greptile-apps[bot]", "at": "2026-09-08T22:22:39Z", "excerpt": "Confidence Score: 4/5 -- not yet safe to merge because duplicate-token connection handling can temporarily assign the wrong client identity, and the router-identifier-constants requirement remains unsatisfied"},
+  {"by": "masenf", "at": "2026-09-08T23:10:45Z", "excerpt": "CI caught three things on the first push... Fixed and pushed (d5c82f4): missing reflex-base news fragment, dataclasses.replace() on a mocked state in redis token-manager tests, and a var could be dirtied when its value had not changed (restored pre-split equality check, regression test added)"}
+ ],
+ "last_author_activity_at": "2026-09-08T23:10:45Z",
+ "last_maintainer_activity_at": "2026-09-08T23:10:45Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Brand-new PR opened today 2026-09-08T22:18:23Z by masenf. Explicitly supersedes and closes #6906 (reworked per masenf's own review comment there on the design of eliding unchanged RouterData fields vs. splitting the router into per-field base vars).",
+  "head_sha drifted from the listing.json snapshot (a2af873b, captured 22:45:59Z) to d5c82f4 (pushed ~23:10Z, after listing was scraped) -- masenf pushed a follow-up commit fixing 3 issues CI caught on the first push (missing news fragment, a mock-vs-dataclass test bug, and a real dirty-var-when-value-unchanged bug that was over-persisting to redis). Used the fresh head for all fields in this file.",
+  "mergeable_state is 'blocked', not 'dirty': no merge conflicts (conflicting_files empty), but required checks are still settling (~22 jobs in_progress at fetch time, head pushed only 2-30 minutes earlier).",
+  "No human review yet (author is the sole MEMBER and wrote the PR); ball is entirely with bot findings. 6 of 9 threads are pre-existing cubic/greptile findings on the superseded commit 608f448; one new P1 (duplicate-token session staleness) landed on the just-pushed d5c82f4 and is unaddressed.",
+  "Reviewer-notes section in the PR body itself flags 5 known judgment calls (Var-form dep expansion picking one field, by-reference header cache mutation, URLData() default cosmetic diff, router_page redundancy pending 'page' removal, and a pre-existing cross-test isolation bug fixed in the last commit) -- worth reading before triaging the bot threads, several overlap."
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "number": 7051,
+ "fetched_at": "2026-09-08T23:15:00Z",
+ "head_sha": "7c6ffe56e97016fb0c918dd95f6b73297e93edd2",
+ "title": "Serialize concurrent frontend dependency installs",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "reflex/utils/js_runtimes.py",
+  "tests/units/test_prerequisites.py"
+ ],
+ "update_branch_offered": true,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T08:02:24Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "7020987e3a343b0b1bb13c709fe8fb4a756ad9b5",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T08:03:39Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "7020987e3a343b0b1bb13c709fe8fb4a756ad9b5",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T08:36:51Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "a1c9efdda5dbbc306dde02ef8fb4131e66cbce96",
+   "on_current_head": false
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-06T08:48:26Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "7c6ffe56e97016fb0c918dd95f6b73297e93edd2",
+   "on_current_head": true
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-06T09:02:00Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "7c6ffe56e97016fb0c918dd95f6b73297e93edd2",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no human reviewer has looked yet; only cubic and greptile (AI bots) have reviewed"
+ ],
+ "threads": {
+  "total": 5,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 109,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-06T08:03:35Z",
+   "excerpt": "Confidence Score: 5/5. The PR appears safe to merge; both previous review findings (fork-safety, cache-corruption handling) are now fully addressed."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-06T08:03:12Z",
+   "excerpt": "Merging this PR will not alter performance. 32 untouched benchmarks, 8 skipped."
+  }
+ ],
+ "last_author_activity_at": "2026-09-06T09:02:00Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 2.6,
+ "notes": [
+  "Brand new PR, opened 2026-09-06T07:59:25Z by Alek99 (MEMBER). Part of the Sep 5-7 performance-PR batch; adds a per-project frontend install lock (POSIX flock / Windows msvcrt retry lock) held across the full install transaction, so two concurrent Reflex processes can't corrupt .web / the procedure cache / lockfiles by installing at the same time. Also makes procedure-cache and package-manager file writes atomic.",
+  "All 5 review threads are resolved: cubic flagged a fork-safety issue (child inherits lock ownership) and a narrow-exception-handling issue in the cache reader, both addressed in follow-up commits; greptile flagged an undocumented retry-delay duration and misplaced tests (wrong module), both fixed; a second cubic pass flagged a buffered-I/O deadlock risk in the post-fork cleanup handler, also addressed. greptile's final pass gives Confidence 5/5, no outstanding findings.",
+  "No human has reviewed yet \u2014 only cubic-dev-ai and greptile-apps (both bots) plus the author's own reply comments. Ball is with a maintainer for first human review.",
+  "All CI is green: 111 checks, 109 success + 2 skipped, 0 failing, 0 pending.",
+  "mergeable_state is 'blocked' (no human approval yet), not a conflict \u2014 confirmed no merge conflicts via git merge-tree against current main. base_sha (c49a85d) is behind current main, same as the rest of this batch. Frontend-lock/install-cache code here overlaps conceptually with #7052 (reflex.json locking) and #7054 (build-cache locking) \u2014 all three add process-level locks in reflex/utils/, worth a quick look for redundant or conflicting lock-file schemes if reviewed together.",
+  "Carried forward from 2026-09-08 (morning): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}

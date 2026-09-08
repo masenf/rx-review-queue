@@ -1,0 +1,135 @@
+{
+ "number": 7069,
+ "fetched_at": "2026-09-08T23:15:00Z",
+ "head_sha": "38c2f3372b16f1dea6ae84ba9d9bd65746228421",
+ "title": "ENG-9166: Suggestions for otel 1/3",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "uv.lock"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-08T22:53:06Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "451c002",
+   "on_current_head": true,
+   "note": "Confidence 5/5: safe to merge, only the existing non-blocking retryability concern remains"
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-08T22:55:52Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "38c2f33",
+   "on_current_head": true,
+   "note": "2 issues: P1 http.target token leak, P2 idempotency-guard blocks retry after OTEL_SDK_DISABLED"
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "author (masenf, self) to address cubic's P1 (http.target not redacted, leaks session token) and the P2 idempotency-guard finding (also raised independently by greptile)",
+  "This branch's own base (farhan/eng-9166-reflex-otel, i.e. #6899) to merge before this can land on main -- it is not based on main"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 (non-blocking) OTEL_SDK_DISABLED path leaves the base instrumentor marked initialized, so clearing the var later and re-instrumenting is a silent no-op"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 http.target still contains the websocket query/token under legacy HTTP semantic conventions; redactor only covers http.url/url.full/url.query"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 same OTEL_SDK_DISABLED idempotency-guard issue as greptile's, independently found"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 5,
+  "by_state": {
+   "success": 5,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-08T22:55:52Z",
+   "ask": "P1: redact http.target (not just http.url/url.full/url.query) so the legacy semantic-convention path doesn't leak the session token via the websocket query string",
+   "addressed": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-08T22:55:52Z",
+   "ask": "P2: OTEL_SDK_DISABLED early-return still lets BaseInstrumentor mark itself initialized, blocking a later retry",
+   "addressed": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-08T22:53:07Z",
+   "ask": "Same idempotency-guard concern as cubic, flagged as non-blocking",
+   "addressed": false
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "linear-code[bot]",
+   "at": "2026-09-08T22:49:11Z",
+   "excerpt": "Linked to ENG-9166"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "at": "2026-09-08T22:53:03Z",
+   "excerpt": "Confidence Score 5/5 -- adds event/state-acquisition/websocket/ASGI instrumentation, protects client tokens via pseudonymous session ids and URL redaction, adds env-driven SDK config"
+  }
+ ],
+ "last_author_activity_at": "2026-09-08T22:49:09Z",
+ "last_maintainer_activity_at": "2026-09-08T22:49:09Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Brand-new PR opened today 2026-09-08T22:49:09Z by masenf: review follow-ups on #6899 (built-in otel trace points in reflex-base + reflex-otel instrumentor), one finding per commit (21 commits).",
+  "IMPORTANT: base branch is farhan/eng-9166-reflex-otel (i.e. this stacks directly on #6899), NOT main. Confirmed via git: 6899->7069 is a separate branch off 6899, distinct from the 6899->6900->6901->7070 chain. This PR cannot merge to main until #6899 merges (or this gets rebased onto main).",
+  "No human review yet; both bot reviewers (greptile 5/5, cubic 2 findings) have run on the current head 38c2f33. checks are small (5 total: CodSpeed, cubic, Greptile, Run benchmarks, Run Lighthouse) because this is a doc/security-fix-focused branch off a non-main base -- the full ~110-job matrix does not run against non-main bases the same way.",
+  "cubic's P1 (http.target token leak) is the one finding worth prioritizing before merge: it's a real gap in the token-redaction list this PR itself introduces.",
+  "Author is masenf (MEMBER) on his own PR; days_waiting_on_maintainer held at 0 by convention."
+ ]
+}

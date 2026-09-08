@@ -22,6 +22,13 @@ the memory the job otherwise lacks.
   mid-scrape. Re-read and reconcile.
 - Count author concentration from the role badge / `author_association`, not
   from commit metadata: the head commit is authored "Claude" on many branches.
+- When `list_pull_requests` must be paginated across multiple calls and the
+  results are hand-transcribed into scratch JSON files (Claude Code remote,
+  large PR counts), a row can be silently dropped mid-copy. Sep 8's second
+  run lost PR #6897 (a draft) this way; caught only because the merged
+  `listing.json`'s PR count (96) didn't match `open_count` (97). Always
+  assert the merged count against the search API's `total_count` before
+  writing `listing.json`, not just eyeball the page sizes.
 
 ## Search qualifiers
 - `status:success` returned 8 PRs; 2 were green. Five were fork PRs with "N
@@ -110,7 +117,19 @@ the memory the job otherwise lacks.
 - Distinguish "zero threads" from "zero **unresolved** threads" in prose: a
   PR can have 6, 20, even 28 threads, all resolved. Writing "zero review
   threads" when the true count is nonzero (just all-resolved) is a copy-paste
-  trap that survived into report.json twice on Sep 4's second run.
+  trap that has now hit report.json on three separate runs (twice on Sep 4's
+  second run, three more times on Sep 8's second run: #6807, #6708, #6861).
+  **Before writing any "N threads" phrase, read `threads.total` off the
+  prstate file for that exact PR number in the same breath** — don't
+  reuse a phrase pattern from a neighboring card.
+- Don't credit an action as happening "today" (or narrate it as new) without
+  checking its actual timestamp against the run's own date. Sep 8's second
+  run described #6898 losing its approval "today," but the dismissal was
+  dated 2026-09-04 — four days earlier — and the PR had been carried forward
+  unchanged ever since. This is the same dating-imprecision bug class as the
+  Sep 8 morning run's "approved today" errors; it recurs because report.json
+  prose gets written from memory/pattern-matching rather than re-reading the
+  cited timestamp field every time.
 - Check totals are not comparable across PRs: current PRs run ~110 checks,
   older ones ~67. A low success count can mean an old run, not a narrow one.
 - "Auto-merge enabled" does not mean it will fire; verify the required
@@ -160,13 +179,20 @@ the memory the job otherwise lacks.
 - Never put actively pushed drafts in closure candidates.
 - **A `conflict_clusters`/`stacks` note claiming N PRs "all share file X" needs
   every member's `conflicting_files` checked, not eyeballed from one or two.**
-  This has overstated universal overlap twice now (Sep 4 morning: a 9-PR
-  state-hot-path cluster where 4 members didn't touch one of the claimed
-  files; Sep 4 evening: a 9-PR component/memo cluster where 2 members each
-  lacked one of three claimed files). Compute the actual intersection
-  programmatically (which files appear in *every* listed PR's
-  `conflicting_files`) before writing the note, and call out partial overlaps
-  explicitly rather than rounding up to "all of them."
+  This has now overstated universal overlap **four times**: Sep 4 morning (a
+  9-PR state-hot-path cluster, 4 members missing a claimed file), Sep 4
+  evening (a 9-PR component/memo cluster, 2 members missing a claimed file),
+  Sep 8 second run (the same 9-PR pyi_hashes.json cluster's note claimed "the
+  perf stack" shares state.py/vars/base.py/types.py, but #6735 — a member of
+  that very stack — touches none of them). Writing the general rule once has
+  not stopped the mistake from recurring on the *next* cluster with a similar
+  shape; actually run the intersection as code every time you write one of
+  these notes:
+  `set.intersection(*(set(conflicts[n]['files']) for n in prs))` against
+  `conflicts.json`, and only claim what that computation returns. Never
+  describe a named group (like "the perf stack") as sharing files without
+  re-running this for that exact PR list, even if you already verified a
+  similar-looking cluster earlier in the same run.
 - Don't write "today"/"just happened" for an action pulled from a carried-forward
   or lightly-changed prstate file without checking the actual timestamp against
   the run date. Sep 8: a top15 card credited masenf with approving a PR "today"
@@ -185,6 +211,15 @@ the memory the job otherwise lacks.
   listing.json (the authoritative source) has always called CONTRIBUTOR.
   Never read association off a prstate file; always re-derive author
   concentration from listing.json, per the rule in `## Listing`.
+- `whose_move` is not "whoever raised the open question" — it's whoever has
+  to act *next*. When a maintainer leaves a comment and the author hasn't
+  replied yet, the ball is with the **author**, even though the maintainer's
+  comment is the newest review-level event. Check `last_maintainer_activity_at`
+  vs `last_author_activity_at` (whichever is later = who moved last = the
+  other one owes the next move) before writing `whose_move`, not just "a
+  maintainer raised it, so it's the maintainer's move." Sep 8's second run
+  got this backwards on #6932 while getting the identical situation right on
+  #7016 in the same report.
 
 ## Fact-check
 - Git and merge-box figures are taken minutes apart. On Aug 28 23:30 the

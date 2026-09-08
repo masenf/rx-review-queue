@@ -1,0 +1,130 @@
+{
+ "number": 7044,
+ "fetched_at": "2026-09-08T23:15:00Z",
+ "head_sha": "364143939c84489c0799b57877e2f26c24b257a8",
+ "title": "Fix build failure when frontend_path is set without prerendering",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": true,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-04T19:04:45Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "d148af771c549c50dc0d5aa81c5e35ca1003369d",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-04T19:12:18Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "d148af771c549c50dc0d5aa81c5e35ca1003369d",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-04T19:25:06Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "04b3cefe7f7e5aa023c7e8173b416fbfec0a2605",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-04T19:25:09Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "04b3cefe7f7e5aa023c7e8173b416fbfec0a2605",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-08T22:51:43Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "364143939c84489c0799b57877e2f26c24b257a8",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no reviewer requested; self-authored by masenf, blocked by missing human (non-author) review and by an unresolved greptile Windows-traversal finding on the new head"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "Windows Path Escapes Output: On Windows, a frontend_path such as '..\\\\escaped' passes the slash-only parent-segment validation. Joining that value to the Windows static_dir treats the backslash as a separator and resolves '..', so the build creates a directory outside .web/build/client and moves all static output there. Reject Windows-style parent segments or verify that the resolved prefix remains inside static_dir."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 108,
+   "FAILURE": 1,
+   "SKIPPED": 2
+  },
+  "failing": [
+   "check (reflex-base, 3.14)"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "check (reflex-base, 3.14)",
+   "cause": "Infra/network flake, not a code problem: the job's setup step (astral-sh/setup-uv) failed with '##[error]fetch failed' while fetching https://raw.githubusercontent.com/astral-sh/versions/main/v1/uv.ndjson to resolve the uv version to install, before any repository code ran. All later steps (Setup Node, Install Dependencies) were skipped as a result. This is unrelated to the PR's diff."
+  }
+ ],
+ "outstanding_asks": [
+  {
+   "by": "greptile-apps[bot]",
+   "ask": "New finding posted today at 22:51:43Z on the current head (364143939): the '..' rejection added in 04b3cefe only checks for POSIX-style parent segments (split on '/'), but on Windows a frontend_path like '..\\\\escaped' still passes validation and, once joined to static_dir, escapes the intended .web/build/client output directory (same root cause as the P1 fixed this morning, now shown to be incompletely fixed cross-platform).",
+   "addressed": false
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-08T22:51:46Z",
+   "excerpt": "Confidence Score: 4/5. The PR is not yet safe to merge because Windows builds can still relocate all static output outside the intended client directory when frontend_path contains a backslash-separated parent segment."
+  }
+ ],
+ "last_author_activity_at": "2026-09-08T22:49:38Z",
+ "last_maintainer_activity_at": "2026-09-08T22:49:38Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Real change since this morning: masenf pushed a new commit (head 04b3cefe -> 364143939) that fixes the exact Windows-only unit-test failure flagged this morning -- reflex/utils/build.py no longer unconditionally instantiates a concrete pathlib.PosixPath, so all 5 windows-latest unit-tests jobs (3.10-3.14) now pass. The morning's real, reproducible Windows CI failure is resolved.",
+  "The fix also addressed the two POSIX path-traversal threads (both now resolved, citing a new Config._normalize_paths '..' rejection in 04b3cefe) that greptile/cubic raised this morning.",
+  "However, greptile re-reviewed the new head immediately (22:51:43Z, same day) and found the '..' rejection only covers POSIX-style separators: a Windows-style '..\\\\escaped' frontend_path still slips through and can move build output outside .web/build/client on Windows -- functionally the same P1 as this morning, now scoped specifically to Windows path separators. This thread is unresolved and unaddressed as of fetch time.",
+  "checks.rollup flipped to FAILURE, but the one failing check (check (reflex-base, 3.14)) is an infra/network flake in the job's uv-install setup step (github raw-content fetch failed before any repo code ran) -- confirmed by reading the job log. It is unrelated to this PR's diff and not a real code regression; re-running the job would likely go green.",
+  "Still self-authored by masenf (MEMBER) with no other human reviewer requested or engaged; only bots (greptile, cubic) have looked. review_decision remains null.",
+  "No merge conflicts against today's main (5d9724ea) -- confirmed via git merge-tree, clean.",
+  "days_waiting_on_maintainer is 0 because masenf is both author and the relevant MEMBER; the open item (Windows traversal gap) is his own to fix, not a wait on someone else."
+ ]
+}

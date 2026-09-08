@@ -1,0 +1,736 @@
+{
+ "run": {
+  "date": "2026-09-08-2",
+  "started_at": "2026-09-08 23:15 UTC",
+  "runner": "claude-code-remote",
+  "github_login": "masenf",
+  "review_ci_layer": "present",
+  "session": "https://claude.ai/code/session_01Fs5ZDp9a4S8WAQwWRyBPsL"
+ },
+ "stats": {
+  "open": 97,
+  "nondraft": 67,
+  "drafts": 30,
+  "counting_approvals": 0,
+  "fast_lane": 1,
+  "one_fix_away": 22,
+  "fork_ci_unrun": 10,
+  "never_human_reviewed": 38
+ },
+ "attention": [
+  "Big change since this morning: 5 PRs merged (#6929, #7050, #7055, #6875, #7006) and #6906 was closed (superseded by masenf's own #7068). Zero counting approvals remain on the board right now -- everything genuinely needs a fresh look.",
+  "#7050's CLI-startup-lazy refactor (234 lines in reflex/reflex.py alone) and #6929's ForwardRef fix, both merged today, pushed 7 previously-clean PRs into conflict (#6100, #6796, #6930, #7049, #7051, #7052, #7056) -- none of the 7 were touched themselves.",
+  "#7064 (one-lock hydrate) looked like the cleanest new PR this morning (17/17 threads resolved, fully green). A same-day push broke it: 16 of 111 checks now fail across every integration test, traced to a real regression in its own connect-packet boot flow (tokens never land in token_to_sid). Greptile's 'safe to merge' summary is stale, dated minutes before the failure appeared -- do not trust it.",
+  "#7054 just got its real Windows-only build-lock bug fixed today; all 8 threads resolved, green, clean. Good candidate for a first look.",
+  "#6932 (bare websockets) got its first-ever maintainer engagement today after 2.5 weeks of silence: masenf raised a real, non-blocking compatibility question (reflex-xy depends on socketio multiplexing) rather than approving or rejecting outright.",
+  "#6100 (7+ months open, never approved) also got its first maintainer engagement today -- masenf raised an architectural concern about mismatched frontend/backend minification schemes -- but the PR also newly conflicts with main from #7050's landing.",
+  "masenf opened 3 new PRs today: #7068 (router-vars refactor, supersedes #6906), and #7069/#7070 (otel review follow-ups) which stack on the still-open #6899 chain, not main -- they cannot land until that chain does.",
+  "#6688 got a same-day push that narrowed its conflicts from 9 files to 1, but CI (now running again) shows 5 genuine Windows-only bugs in its own new compile-daemon code.",
+  "#7016: masenf's question now has a detailed rebuttal from harsh21234i (concrete non-hot-reload trigger scenarios). Ball is with masenf.",
+  "Longest-waiting: #5430 (455 days), #6553 (110 days), #6490 (105 days), #6468 (102 days), #6597 (98 days), #6563 (75 days)."
+ ],
+ "top15": [
+  {
+   "number": 7054,
+   "score": 6.0,
+   "summary": "Speed up deploy preparation; today's real Windows build-lock bug is fixed, all threads resolved, clean, green.",
+   "evidence": [
+    "Rebased onto today's main; commit b9230726 adds Windows-compatible workspace locking, resolving this morning's P1",
+    "All 8 review threads resolved, no conflicts, checks green",
+    "days_waiting_on_maintainer effectively 0 -- author just pushed"
+   ],
+   "blocker": "First review.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6768,
+   "score": 5.8,
+   "summary": "Use monotonic time for computed var intervals; fully green, clean, zero unresolved threads, never approved.",
+   "evidence": [
+    "CI fully green (105 success + 2 skipped)",
+    "Both review threads resolved; the two most recent commits were pushed by maintainer FarhanAliRaza himself",
+    "No approving review from anyone with write access"
+   ],
+   "blocker": "First approving review.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6841,
+   "score": 5.6,
+   "summary": "Avoid root dirty delta for shared state events; unchanged, all 14 threads resolved, still needs a maintainer re-look.",
+   "evidence": [
+    "111 checks green, no conflicts, all 14 threads resolved",
+    "masenf's own 2026-08-14 finding was addressed by 5 follow-up commits back in August; his ping was misspelled and likely never landed"
+   ],
+   "blocker": "Re-look and approve.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6932,
+   "score": 5.4,
+   "summary": "bare websockets; all 34 threads resolved, green, clean, but masenf's first-ever review raises a real compatibility question.",
+   "evidence": [
+    "masenf (MEMBER) commented today after 2.5 weeks of silence: reflex-xy depends on socketio's binary multiplexing, so this transport 'can't be brought in directly, yet' -- not a rejection, a real open design question",
+    "111+ checks green, no conflicts, every thread resolved"
+   ],
+   "blocker": "Author needs to respond to masenf's compatibility question (opt-in transport vs. a multiplexing-compatible plan).",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6815,
+   "score": 5.2,
+   "summary": "Add env var uppercase validation; green, clean, one thread awaiting a maintainer decision.",
+   "evidence": [
+    "111 checks green, no conflicts",
+    "1 of 2 threads unresolved: author asked for a deprecation-policy decision on 2026-08-29, still unanswered"
+   ],
+   "blocker": "Maintainer needs to decide the deprecation policy question.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7016,
+   "score": 5.0,
+   "summary": "Fix bundled library subpath serialization; green, clean, author gave a detailed rebuttal to masenf's question.",
+   "evidence": [
+    "111 checks green, all 7 threads resolved, no conflicts",
+    "harsh21234i's 2026-09-05 rebuttal lists concrete non-hot-reload trigger scenarios (first compiles, cached app modules, AppHarness tests, export paths)"
+   ],
+   "blocker": "masenf needs to respond to the rebuttal.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7033,
+   "score": 4.8,
+   "summary": "Allow explicit-only event handlers; green, clean, 9 of 10 threads resolved.",
+   "evidence": [
+    "112 checks green, no conflicts",
+    "masenf's reflex-enterprise compatibility question from Sep 2 is still unanswered; author's Sep 4 bump comment did not address it"
+   ],
+   "blocker": "Author needs to answer masenf's compatibility question, or a maintainer reviews anyway.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6898,
+   "score": 4.6,
+   "summary": "docs: scaling state; green, clean, but its only approval was dismissed back on Sep 4 when a maintainer's own fix landed on the branch.",
+   "evidence": [
+    "FarhanAliRaza's Aug 17 approval was DISMISSED on 2026-09-04 (branch protection auto-dismiss after masenf's own commit landed on the same branch) and has been unchanged since",
+    "2 of 3 threads unresolved; no conflicts, checks green"
+   ],
+   "blocker": "Needs a fresh approving review on the current head.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6946,
+   "score": 4.4,
+   "summary": "Deduplicate unchanged uncached computed var deltas; green, clean, 4 real bot findings replied-to but not resolved.",
+   "evidence": [
+    "111+ checks green, no conflicts",
+    "4 unresolved cubic threads (real P1/P2 findings); author replied to all 4, none marked resolved; greptile's matching threads were withdrawn and resolved",
+    "No human reviewer has engaged yet"
+   ],
+   "blocker": "A human needs to check the author's replies and resolve the threads.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6708,
+   "score": 4.2,
+   "summary": "Wrap Recharts Sankey chart; 'In Review' label, zero unresolved threads, blocked by the PR's own docs-build bug.",
+   "evidence": [
+    "20 threads all resolved, no conflicts",
+    "reflex-docs (3.11/3.12) fail: the sankey custom_node example passes a float where Text.y expects str|int -- the PR's own bug"
+   ],
+   "blocker": "Fix the sankey example's Text.y type.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6925,
+   "score": 4.0,
+   "summary": "Allow Vars in page metadata; fork PR, everything green except a pyright pre-commit failure.",
+   "evidence": [
+    "Full CI ran and is green apart from pre-commit (pyright)",
+    "Zero review threads"
+   ],
+   "blocker": "Fix the pyright finding.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6807,
+   "score": 3.8,
+   "summary": "Fix disk state manager debounced writes; 6 threads, all resolved, blocked only by CI (pre-commit + one flaky job).",
+   "evidence": [
+    "6 review threads, all resolved, no conflicts",
+    "Rollup FAILURE from pre-commit and one integration job only; no substantive review blocker"
+   ],
+   "blocker": "Fix or re-run the two failing checks.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6116,
+   "score": 3.6,
+   "summary": "add orjson; self-declared unblocked, clean, CI failure is an infra flake.",
+   "evidence": [
+    "All 42 review threads resolved, no conflicts",
+    "Rollup FAILURE is a bun-install 504 fetching an unrelated tarball, not a code regression"
+   ],
+   "blocker": "Re-run the flaky docs build, then a first review.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7053,
+   "score": 3.4,
+   "summary": "perf: avoid draining the event queue when prepending events; all threads resolved, one CI failure looks like infra flake.",
+   "evidence": [
+    "All 3 threads resolved, no conflicts",
+    "Failing integration-app-harness job traced to a setup-uv manifest fetch error before tests ran, not the PR's code"
+   ],
+   "blocker": "Re-run the flaky job, then a first review.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7068,
+   "score": 3.2,
+   "summary": "New router-vars refactor superseding #6906; masenf's own PR, still settling with real findings open.",
+   "evidence": [
+    "Supersedes #6906 with a cleaner design (per-field router base vars instead of partial-delta elision); measured 1898->619 byte navigation-delta reduction",
+    "7 of 9 threads unresolved, including a real P1 about stale token identity on the latest head",
+    "2 real check failures: a CodSpeed regression and a Windows 3.14 unit-test failure"
+   ],
+   "blocker": "Author (masenf) needs to address the open threads and check failures.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  }
+ ],
+ "one_fix_away": {
+  "maintainer": [
+   {
+    "number": 7054,
+    "summary": "Real bug just fixed, all resolved, green.",
+    "blocker": "First review."
+   },
+   {
+    "number": 6768,
+    "summary": "Fully green, clean, maintainer pushed the last commits himself.",
+    "blocker": "First approving review."
+   },
+   {
+    "number": 6841,
+    "summary": "masenf's own finding addressed months ago; ping was misspelled.",
+    "blocker": "Re-look and approve."
+   },
+   {
+    "number": 6932,
+    "summary": "All resolved, green, but a real compatibility question is open.",
+    "blocker": "Decide the transport-compatibility question."
+   },
+   {
+    "number": 6815,
+    "summary": "Green, clean, one deprecation-policy question unanswered since Aug 29.",
+    "blocker": "Decide the deprecation policy."
+   },
+   {
+    "number": 7016,
+    "summary": "Detailed rebuttal posted Sep 5.",
+    "blocker": "masenf responds."
+   },
+   {
+    "number": 6898,
+    "summary": "Lost its only approval when a maintainer's own commit landed on the branch.",
+    "blocker": "Fresh approving review."
+   },
+   {
+    "number": 6946,
+    "summary": "4 real findings, all replied-to, none resolved.",
+    "blocker": "Check the replies and resolve the threads."
+   },
+   {
+    "number": 6116,
+    "summary": "Clean, all threads resolved, CI failure is an infra flake.",
+    "blocker": "Re-run CI, then review."
+   },
+   {
+    "number": 7053,
+    "summary": "All resolved, one CI failure looks like infra flake.",
+    "blocker": "Re-run CI, then review."
+   },
+   {
+    "number": 6861,
+    "summary": "Fixes #6860, fork PR, 2 resolved threads.",
+    "blocker": "Approve workflows."
+   },
+   {
+    "number": 6876,
+    "summary": "Fixes #6874, author already replied to the one open thread.",
+    "blocker": "Approve workflows, check the reply."
+   }
+  ],
+  "author": [
+   {
+    "number": 7033,
+    "summary": "Green, 9/10 resolved, masenf's compat question unanswered.",
+    "blocker": "Answer the reflex-enterprise compatibility question."
+   },
+   {
+    "number": 6708,
+    "summary": "20 threads, all resolved, docs build fails on the PR's own sankey example.",
+    "blocker": "Fix the Text.y type."
+   },
+   {
+    "number": 6925,
+    "summary": "Everything green except pre-commit.",
+    "blocker": "Fix the pyright finding."
+   },
+   {
+    "number": 6807,
+    "summary": "Zero threads, CI failing on pre-commit + one flaky job.",
+    "blocker": "Fix pre-commit and confirm the integration job."
+   },
+   {
+    "number": 7068,
+    "summary": "New PR, 7 unresolved threads including a real P1.",
+    "blocker": "Address the open findings and check failures."
+   },
+   {
+    "number": 7049,
+    "summary": "Just fixed its cubic findings, but now conflicts with main after #7050 landed.",
+    "blocker": "Rebase onto current main."
+   },
+   {
+    "number": 7044,
+    "summary": "Fixed this morning's Windows bug, but greptile found the fix is POSIX-only -- a Windows backslash traversal still escapes.",
+    "blocker": "Fix the Windows-specific path-traversal gap."
+   },
+   {
+    "number": 6996,
+    "summary": "masenf found a real Windows bug; a fix is ready on his own branch but not yet applied.",
+    "blocker": "Cherry-pick commit 47b9992a from claude/pr-6996-review-97oxj9."
+   },
+   {
+    "number": 7007,
+    "summary": "9 threads, all unresolved, from 3 AI reviewers converging on the same 2 root causes.",
+    "blocker": "Address the root causes or explain why they don't apply, and rebase to resolve the uv.lock conflict."
+   },
+   {
+    "number": 6688,
+    "summary": "Same-day push narrowed conflicts to 1 file, but exposed 5 genuine Windows-only compile-daemon bugs.",
+    "blocker": "Fix the Windows path-join and lock/PID-liveness bugs."
+   }
+  ]
+ },
+ "fast_lane": [
+  {
+   "number": 6861,
+   "summary": "Fixes #6860 (upload endpoint 500), fork PR, zero unresolved threads. Only needs the 'Approve workflows' click."
+  }
+ ],
+ "closure": [
+  {
+   "number": 5430,
+   "summary": "[0.9] remove ids refs from form_data (Lendemor): 876 behind, conflicting, no check runs left, 455 days since any human activity.",
+   "keep_issue": 5418
+  },
+  {
+   "number": 6125,
+   "summary": "feat: Add Redis Sentinel support for HA (timon0305): 541 behind, CI never ran, conflicting, dormant since February.",
+   "keep_issue": 5830
+  },
+  {
+   "number": 6126,
+   "summary": "feat: Expose TokenManager with lifecycle APIs (timon0305): 541 behind, CI never ran, conflicting, dormant since February.",
+   "keep_issue": 5669
+  },
+  {
+   "number": 6490,
+   "summary": "Support Redis Cluster (riebecj): 307 behind, conflicting across 4 files, 105 days with no maintainer contact.",
+   "keep_issue": null
+  },
+  {
+   "number": 6553,
+   "summary": "refactor(reflex-base): consolidate BaseContext (BABTUNA): 363 behind, conflicting, 110 days with no maintainer contact.",
+   "keep_issue": 6514
+  },
+  {
+   "number": 6468,
+   "summary": "refactor: freeze components after create (FarhanAliRaza): 296 behind, CI FAILURE, conflicting across 4 files, 102 days waiting.",
+   "keep_issue": 6214
+  },
+  {
+   "number": 6563,
+   "summary": "lighthouse: tree-shake bundled libs (FarhanAliRaza): 228 behind, CI FAILURE, conflicting, 75 days waiting.",
+   "keep_issue": null
+  },
+  {
+   "number": 6597,
+   "summary": "feat: add rx.google_font (FarhanAliRaza): 292 behind, CI FAILURE, conflicting, 98 days waiting.",
+   "keep_issue": null
+  }
+ ],
+ "stacks": [
+  {
+   "chain": [
+    6899,
+    6900,
+    6901,
+    7070
+   ],
+   "note": "OpenTelemetry chain, now 4 deep. All conflicting on uv.lock. #7070 (new today) documents its own plan to rebase onto #7069's fixes once that lands first."
+  },
+  {
+   "chain": [
+    6899,
+    7069
+   ],
+   "note": "A second branch off #6899 (not through #6900/#6901): masenf's review-follow-up PR opened today, one commit per finding. Also conflicting on uv.lock; cannot land until #6899 does."
+  },
+  {
+   "chain": [
+    6735,
+    6743,
+    6744,
+    6745,
+    6798,
+    6751,
+    6757
+   ],
+   "note": "Perf-optimization stack; every member still conflicts with main on component.py/memo.py/pyi_hashes.json, and most of the tip six also on reflex/state.py, vars/base.py and several test files. Unchanged since last run."
+  }
+ ],
+ "conflict_clusters": [
+  {
+   "prs": [
+    6899,
+    6900,
+    6901,
+    7007,
+    7069,
+    7070
+   ],
+   "files": [
+    "uv.lock"
+   ],
+   "note": "Six unrelated PRs (the otel chain plus the unrelated #7007 webmcp PR) each add their own dependency and collide on uv.lock as main's lockfile keeps moving."
+  },
+  {
+   "prs": [
+    6100,
+    6796,
+    6688,
+    6930,
+    7049,
+    7051,
+    7052,
+    7056
+   ],
+   "files": [],
+   "note": "New today: #7050's CLI-startup-lazy refactor (reflex/reflex.py, utils/js_runtimes.py, utils/prerequisites.py, utils/types.py, plus 3 test files) and #6929's ForwardRef fix (reflex_base/utils/types.py, utils/compat.py) both merged and now collide with 8 different PRs, each on a different one of those files: #6100 on reflex.py, #6796/#6688 on tests/units/test_reflex.py, #6930 on utils/compat.py, #7049/#7056 on reflex_base/utils/types.py (and its test), #7051/#7052 on js_runtimes.py/prerequisites.py/test_prerequisites.py. None of the 8 were touched themselves."
+  },
+  {
+   "prs": [
+    6468,
+    6735,
+    6743,
+    6744,
+    6745,
+    6751,
+    6757,
+    6798,
+    6850
+   ],
+   "files": [
+    "pyi_hashes.json"
+   ],
+   "note": "pyi_hashes.json is shared by all nine (the freeze-components refactor #6468, the memo-wrapper-transparency fix #6850, and the whole perf stack). component.py is shared by all but #6850; memo.py by all but #6468. Six of the seven perf-stack members (all but #6735) additionally collide among themselves on reflex/state.py, vars/base.py, utils/types.py and three test files; #6735 touches none of those."
+  },
+  {
+   "prs": [
+    6126,
+    6490
+   ],
+   "files": [
+    "reflex/utils/token_manager.py"
+   ],
+   "note": "Two old, unrelated feature PRs (TokenManager lifecycle API, Redis Cluster support) both touch token manager internals and are each individually stale."
+  }
+ ],
+ "structural": [
+  {
+   "number": 7064,
+   "summary": "This morning's cleanest new PR (17/17 threads resolved, fully green) took a same-day push and is now genuinely broken: 16 of 111 checks fail across every integration test, traced to a real regression in the new connect-packet boot flow (tokens never land in token_to_sid). Greptile's stale 'safe to merge' summary predates the failure -- do not trust it."
+  },
+  {
+   "number": 6100,
+   "summary": "7+ months open, never approved. Today masenf finally engaged (an architectural concern about mismatched frontend/backend minification schemes) but the PR also newly conflicts with main after #7050 landed on reflex.py."
+  },
+  {
+   "number": 6688,
+   "summary": "Today's push narrowed conflicts from 9 files to 1, but exposed 5 genuine Windows-only bugs in its own new compile-daemon code (path-join, lock/PID-liveness timing)."
+  },
+  {
+   "number": 6996,
+   "summary": "masenf's real, reproduced Windows routing bug from Sep 4 is still not fixed on this branch; a working fix and regression tests remain on his own side branch."
+  },
+  {
+   "number": 7040,
+   "summary": "Fully rewritten to a hard httpx2 switch per masenf's design objection; greptile is 5/5, but fork CI still hasn't run after multiple pushes -- needs the workflow-approval click before the redesign can be verified."
+  },
+  {
+   "number": 7007,
+   "summary": "9 review threads, all unresolved, from 3 different AI reviewers independently converging on the same two root causes (tool-name collisions, registrations outliving unmounted routes). Zero author engagement since Aug 30. It is also conflicting with main on uv.lock (part of the otel-family uv.lock cluster) and needs a rebase in addition to addressing the review findings."
+  }
+ ],
+ "patterns": [
+  {
+   "title": "Counting approvals repo-wide: 0",
+   "detail": "For the first time this job has run, nothing on the board has a current, non-dismissed approval from someone with write access. #6898's only approval was dismissed back on 2026-09-04 when a maintainer's fix landed on the branch (unchanged since, carried forward); #6875/#7006/#7050/#7055 (all approved) merged today."
+  },
+  {
+   "title": "New conflicts from two merges landing today",
+   "detail": "#7050 (CLI startup lazy, 234-line change to reflex/reflex.py alone) and #6929 (ForwardRef fix touching reflex_base's utils/types.py and utils/compat.py) collectively pushed 7 other PRs from clean to conflicting: #6100, #6796, #6930, #7049, #7051, #7052, #7056. None of the 7 were touched themselves -- the classic risk of measuring mergeability loosely."
+  },
+  {
+   "title": "A bot summary went stale mid-run",
+   "detail": "#7064's greptile 'safe to merge, no outstanding actionable failures' comment is dated within 1-4 minutes of a push whose CI run then failed 16 of 111 checks for real (confirmed via job logs, not flaky). Never cite a bot summary without checking it postdates the current head's own CI run."
+  },
+  {
+   "title": "Never reviewed by a human: 38 of 67",
+   "detail": "5430, 6116, 6181, 6468, 6490, 6553, 6676, 6751, 6757, 6770, 6798, 6815, 6833, 6840, 6850, 6853, 6861, 6925, 6930, 6935, 6946, 7007, 7015, 7016, 7036, 7044, 7049, 7051, 7052, 7053, 7054, 7056, 7061, 7064, 7065, 7068, 7069, 7070."
+  },
+  {
+   "title": "Fork PRs whose CI never ran: 10",
+   "detail": "6125, 6126, 6833, 6840, 6853, 6861, 6876, 6935, 7036, 7040. #6861 has nothing else in the way once approved."
+  },
+  {
+   "title": "Author concentration (non-draft, from author_association)",
+   "detail": "FarhanAliRaza 16 (MEMBER), Alek99 13 (MEMBER), masenf 9 (MEMBER, up from 6 -- he opened 3 new PRs today), benedikt-bartscher 7 (CONTRIBUTOR), harsh21234i 6 (CONTRIBUTOR). Members hold 39 of 67 non-draft PRs (contributors 19, first-time contributors 9); 37 of 67 come from fork branches."
+  },
+  {
+   "title": "PRs closed as superseded, not for cause",
+   "detail": "#6906 was closed by masenf today in favor of his own #7068, which takes a cleaner architectural approach to the same problem (per-field router base vars instead of partial-delta elision)."
+  }
+ ],
+ "delta": {
+  "previous_run": "2026-09-08",
+  "merged": [
+   {
+    "number": 6929,
+    "note": "merged into main as 5d9724ea"
+   },
+   {
+    "number": 7050,
+    "note": "merged into main as 77cfe61b"
+   },
+   {
+    "number": 7055,
+    "note": "merged into main as 6afa226b"
+   },
+   {
+    "number": 6875,
+    "note": "merged into main as 71dbed16"
+   },
+   {
+    "number": 7006,
+    "note": "merged into main as 0008768b"
+   }
+  ],
+  "closed": [
+   {
+    "number": 6906,
+    "note": "closed by masenf, superseded by his own #7068 (cleaner design for the same router-delta problem)"
+   }
+  ],
+  "opened": [
+   {
+    "number": 7068,
+    "title": "perf: split router into per-field base vars; gather connection-static router data at connect",
+    "author": "masenf",
+    "draft": false
+   },
+   {
+    "number": 7069,
+    "title": "ENG-9166: Suggestions for otel 1/3",
+    "author": "masenf",
+    "draft": false
+   },
+   {
+    "number": 7070,
+    "title": "ENG-9166: suggestions for otel 3/3",
+    "author": "masenf",
+    "draft": false
+   }
+  ],
+  "entered_top15": [
+   6768,
+   6815,
+   6898,
+   6925,
+   6946,
+   6708,
+   6807,
+   7016,
+   7033,
+   7053,
+   7054,
+   7068
+  ],
+  "left_top15": [
+   {
+    "number": 7006,
+    "note": "merged"
+   },
+   {
+    "number": 6875,
+    "note": "merged"
+   },
+   {
+    "number": 7055,
+    "note": "merged"
+   },
+   {
+    "number": 7050,
+    "note": "merged"
+   },
+   {
+    "number": 6929,
+    "note": "merged"
+   },
+   {
+    "number": 6906,
+    "note": "closed, superseded by #7068"
+   },
+   {
+    "number": 6100,
+    "note": "downgraded to structural: newly conflicting + a real unresolved architecture question"
+   },
+   {
+    "number": 7049,
+    "note": "newly conflicting after #7050 landed"
+   },
+   {
+    "number": 7051,
+    "note": "newly conflicting after #7050 landed"
+   },
+   {
+    "number": 7052,
+    "note": "newly conflicting after #7050 landed"
+   },
+   {
+    "number": 7056,
+    "note": "newly conflicting after #6929 landed"
+   },
+   {
+    "number": 7064,
+    "note": "downgraded to structural: a real CI regression appeared today"
+   }
+  ],
+  "newly_blocked": [
+   {
+    "number": 6100,
+    "note": "newly conflicting with main"
+   },
+   {
+    "number": 7049,
+    "note": "newly conflicting with main"
+   },
+   {
+    "number": 7051,
+    "note": "newly conflicting with main"
+   },
+   {
+    "number": 7052,
+    "note": "newly conflicting with main"
+   },
+   {
+    "number": 7056,
+    "note": "newly conflicting with main"
+   },
+   {
+    "number": 6796,
+    "note": "newly conflicting with main"
+   },
+   {
+    "number": 6930,
+    "note": "newly conflicting with main"
+   },
+   {
+    "number": 7064,
+    "note": "genuine CI regression appeared"
+   }
+  ],
+  "newly_unblocked": [
+   {
+    "number": 6688,
+    "note": "same-day push narrowed conflicts from 9 files to 1"
+   },
+   {
+    "number": 7044,
+    "note": "this morning's real Windows unit-test failure fixed (though a narrower Windows-only bug remains)"
+   },
+   {
+    "number": 7054,
+    "note": "this morning's real Windows build-lock P1 fixed"
+   },
+   {
+    "number": 7049,
+    "note": "this morning's 2 unaddressed cubic findings resolved (though now conflicting for an unrelated reason)"
+   }
+  ],
+  "draft_flips": []
+ },
+ "method": {
+  "notes": [
+   "Fifth run overall (2026-09-03, 09-04, 09-04-2, 09-08, 09-08-2), second same-day run, ~6.7 hours after this morning's 2026-09-08 run. Fetched at 2026-09-08T23:15:00Z.",
+   "Listing built from 2 list_pull_requests pages (50 each) + 1 search_pull_requests page (author_association) + 1 title-only search, merged by PR number. One PR (#6897, a draft) was accidentally dropped during manual transcription of the list_pull_requests pages and caught by a count mismatch (96 vs 97 expected); recovered from this morning's unchanged listing entry and verified identical. Recorded as a new trap.",
+   "Incremental refresh vs this morning: 57 of 67 ranked non-draft PRs had unchanged listing.updated_at and were carried forward with mergeable/conflicting_files (fresh git merge-tree against main 5d9724ea) and days_waiting_on_maintainer recomputed; 10 PRs (3 new, 7 changed) got a full fresh fetch via 2 parallel subagent batches.",
+   "#7068's listing.json head_sha (a2af873b, snapshot time) was stale by the time prstate was fetched -- masenf pushed a follow-up (d5c82f4) fixing 3 CI-caught issues in the few minutes between the listing scrape and the prstate fetch. measure.py's diff and conflicts.json both already used the live bare-mirror ref (the fresh head), so only listing.json's head_sha/updated_at fields needed a manual fix to match; no other data was affected.",
+   "Conflict detection used the staged-entry parser. 38 of 67 conflicting (up from 29 this morning) -- 7 previously-clean PRs collided with main after #7050 and #6929 merged (see patterns). Every prstate file's conflicting_files/mergeable was reconciled against this run's master conflicts.json; 2 discrepancies found and fixed (#7069/#7070's subagent-reported conflicting_files were empty, but they stack on a non-main base and do genuinely conflict with main on uv.lock).",
+   "Scoring per references/scoring.md. With zero counting approvals anywhere, top15 this run leans entirely on cleanliness (green + no conflicts + all threads resolved) rather than 'one click from merged.'",
+   "Delta computed against this morning's real listing.json/report.json and against `git log a7e1ce33..5d9724ea` on origin/main, which independently confirmed the exact 5 merges."
+  ],
+  "audit_corrections": [
+   "attention[9]: '#5430' was omitted from the longest-waiting list even though it waits 455 days -- more than 4x #6553's 110 days. Added at the top.",
+   "patterns[0] (counting approvals): '#6898 lost its only approval today' was false -- that happened on 2026-09-04 and #6898 has been unchanged (carried forward) ever since; corrected the dating.",
+   "top15 #6898 summary/evidence: same 'today' dating error as patterns[0], fixed to say Sep 4.",
+   "top15 #6807: 'zero threads' -> '6 threads, all resolved' (prstate/6807.json has threads.total=6, not 0).",
+   "one_fix_away.author #6708: 'Zero threads' -> '20 threads, all resolved' (contradicted #6708's own correct top15 entry and prstate).",
+   "one_fix_away.maintainer #6861: 'zero threads' -> '2 resolved threads' (contradicted #6861's own correct fast_lane entry and prstate, which has threads.total=2).",
+   "conflict_clusters (pyi_hashes.json, 9 PRs): note claimed 'the perf stack' (all 7 members) additionally collides on state.py/vars/base.py/types.py/three test files, but #6735 touches none of those files. Narrowed to 'six of the seven' -- the fourth time this exact overstated-overlap bug class has hit this job.",
+   "structural/#7007 and one_fix_away.author/#7007: omitted that #7007 is also CONFLICTING on uv.lock (part of the otel-family cluster) -- its sibling #7049's entry mentioned the rebase need but #7007's didn't. Added.",
+   "top15 #6932: whose_move 'maintainer' -> 'author' -- masenf already spoke (last_maintainer_activity_at postdates last_author_activity_at) and prstate's own outstanding_asks says the author hasn't responded yet; inconsistent with how #7016's identical situation was handled."
+  ],
+  "caveats": [
+   "30 drafts excluded from ranking; none flipped draft state since this morning.",
+   "checks.by_state for #6815/#6898/#6930 is still a stale truncated stub (flat success:27) inherited from a subagent bug two runs back; rollup and total are correct and are what scoring used.",
+   "#7069/#7070 (stacked on #6899, not main) are counted as conflicting against main in stats/closure math since that is the only meaningful mergeability question for a repo-wide board; they are not comparable to a normal main-based PR's conflict count.",
+   "author_association not returned by the MCP get for a few fork authors; carried forward from listing-search values where unchanged (6735, 6490, 6553, 6126, 6125, 5430)."
+  ]
+ }
+}

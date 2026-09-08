@@ -1,0 +1,155 @@
+{
+ "number": 6688,
+ "fetched_at": "2026-09-08T23:15:00Z",
+ "head_sha": "085e816ec568fb701aa35fa91d1d767f13892a63",
+ "title": "ENG-9148: feat(compiler): incremental compile cache & warm hot-reload daemon (REFLEX_COMPILE_CACHE)",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "tests/units/test_reflex.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-06-28T15:41:08Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "a453ccb", "on_current_head": false},
+  {"by": "chatgpt-codex-connector[bot]", "state": "COMMENTED", "at": "2026-06-28T15:41:53Z", "association": "NONE", "can_push": false, "commit_id": "a453ccb", "on_current_head": false},
+  {"by": "masenf", "state": "COMMENTED", "at": "2026-07-28T23:23:07Z", "association": "MEMBER", "can_push": true, "commit_id": "17a31ac", "on_current_head": false, "note": "memo-component repro (adding @rx.memo from another module under REFLEX_COMPILE_CACHE=1 fails vite import)"},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-08-09T15:13:05Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "e765921", "on_current_head": false},
+  {"by": "greptile-apps[bot]", "state": "COMMENTED", "at": "2026-09-05T16:21:10Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "8c11a8e", "on_current_head": false, "note": "Confidence 3/5 (re-summarized in place for the 09-08 head): PR not yet safe to merge, outstanding app-import tracking issue can allow stale app-wide frontend output"},
+  {"by": "cubic-dev-ai[bot]", "state": "COMMENTED", "at": "2026-09-05T16:24:45Z", "association": "CONTRIBUTOR", "can_push": false, "commit_id": "8c11a8e", "on_current_head": false, "note": "15 issues found across 34 files (4 x P1, 8 x P2, 1 x P3 tautological test, 1 x P3 unconditional .md/.mdx reload-watch)"}
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "author to resolve 1-file merge conflict with main (tests/units/test_reflex.py -- narrowed from 9 files on 09-05/09-08's earlier state as main and this branch both moved)",
+  "author to fix 4 Windows-only unit-test failures in this PR's own new compile-daemon code (real bugs, not flaky/unrelated)",
+  "author to address the 15 cubic findings + 3 remaining greptile P1s from the 09-05 rework (24 of 51 threads still unresolved; 27 now resolved after today's push)",
+  "requested reviewer Alek99 has still never reviewed"
+ ],
+ "threads": {
+  "total": 51,
+  "unresolved": [
+   {"by": "chatgpt-codex-connector", "outdated": false, "author_replied": false, "first_comment": "P2 Watch all recorded in-project data dependencies: editing a .json/.yaml/.toml/.txt/.csv data file a page reads does not wake the compile daemon"},
+   {"by": "chatgpt-codex-connector", "outdated": true, "author_replied": false, "first_comment": "P2 Hash include-path modules before reusing pages (REFLEX_HOT_RELOAD_INCLUDE_PATHS sibling-package staleness)"},
+   {"by": "chatgpt-codex-connector", "outdated": false, "author_replied": false, "first_comment": "P2 Hash transitive deps of warm dynamic imports: only the module returned by a runtime import is recorded, not its own imports"},
+   {"by": "greptile-apps", "outdated": false, "author_replied": false, "first_comment": "P1 Preloaded app untracked: config.app_module already populated -> record_app_import() captures no reads (older instance, 2026-08-09)"},
+   {"by": "masenf", "outdated": true, "author_replied": false, "first_comment": "generated unique-name reset needs to be per-page seeded from route hash, not a global reset (order-dependent duplicate names) -- addressed by commit 7e38b655 on 09-05, thread not closed"},
+   {"by": "masenf", "outdated": true, "author_replied": false, "first_comment": "compile daemon should use OS filesystem-change notifications, not 0.05s stat-polling -- addressed by commit 510f1387 on 09-05, thread not closed"},
+   {"by": "greptile-apps", "outdated": false, "author_replied": false, "first_comment": "P1 Preloaded App Untracked (re-raised on a later head, 2026-08-09)"},
+   {"by": "greptile-apps", "outdated": true, "author_replied": false, "first_comment": "P1 Daemon Marker Outlives Daemon -- ownership marker written before daemon exists (09-05 finding, now marked outdated)"},
+   {"by": "greptile-apps", "outdated": true, "author_replied": false, "first_comment": "P1 Watcher Gap Loses Edits -- gap between watcher unsubscribe and catch-up baseline capture can drop an edit (09-05 finding, now marked outdated)"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P1 incremental early-return skips configured plugin lifecycle hooks / static-asset outputs, can leave plugin-generated files stale"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P1 rx.App + page in same module -- edits to app-wide config invalidate only the page dependency, stale app root/theme/stylesheet reused"},
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": false, "first_comment": "P1 daemon restart after a global-input change compiles without the lock backend workers wait on (now marked outdated)"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P1 if daemon exits unexpectedly, backend workers keep REFLEX_SKIP_COMPILE set forever -- edits stop regenerating .web"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P1 PropDocsState ID sequence restarts per recompiled component-doc page -- cached pages can collide/update the wrong control"},
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": false, "first_comment": "P2 new source file created directly under project root missed by watchfiles (now marked outdated)"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 package __init__.py relative imports resolved against wrong package in the static import graph"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 importlib.import_module of a submodule omits its parent packages from tracked dependencies"},
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": false, "first_comment": "P2 page_dependency_entries drops unreadable-file paths from deps (now marked outdated)"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 TypeError fallback for unorderable sets returns hash-seed-ordered list, non-deterministic across processes -- breaks fingerprint determinism"},
+   {"by": "cubic-dev-ai", "outdated": false, "author_replied": false, "first_comment": "P2 REFLEX_COMPILE_CACHE startup compiles twice (precompile + daemon's own initial compile)"},
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": false, "first_comment": "P2 disk_cache successful incremental rebuild does not restore in-memory compiled-page bookkeeping (now marked outdated)"},
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": false, "first_comment": "P2 reload-watch change for .md/.mdx applies unconditionally even with the feature flag off (now marked outdated)"},
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": false, "first_comment": "P3 tautological test assertion `assert x is False or True` always passes regardless of the real result (now marked outdated)"},
+   {"by": "cubic-dev-ai", "outdated": true, "author_replied": false, "first_comment": "P3 news/6688.fix.md uses towncrier type 'fix' which is not a configured type (now marked outdated)"}
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 112,
+  "by_state": {
+   "success": 105,
+   "failure": 5,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [
+   "unit-tests (windows-latest, 3.10)",
+   "unit-tests (windows-latest, 3.11)",
+   "unit-tests (windows-latest, 3.12)",
+   "unit-tests (windows-latest, 3.13)",
+   "unit-tests (windows-latest, 3.14)"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {"check": "unit-tests (windows-latest, 3.14)", "cause": "test_first_party_roots_include_hot_reload_include_paths: Windows path-joining bug in this PR's own first_party_roots() -- the assembled include-path result concatenates a drive letter fragment ('D:/a/reflex/reflex/C') instead of the resolved sibling path, so the assertion mismatches. Real bug in the PR's REFLEX_HOT_RELOAD_INCLUDE_PATHS code, Windows-specific."},
+  {"check": "unit-tests (windows-latest, 3.14)", "cause": "test_wait_for_compile_respects_lock, test_owns_compilation_follows_the_daemon_marker, test_pid_alive_distinguishes_live_and_exited_processes: all in tests/units/utils/test_compile_daemon.py, all failing on Windows lock/PID-liveness timing for the PR's new compile_daemon module (e.g. wait_for_compile not returning promptly after a dead-holder pid; daemon_active()/_pid_alive() misreporting after a process exits). Same pattern across all 5 windows-latest jobs (3.10-3.14), 4 failures each -- consistent, real Windows compile-daemon bugs, not flaky."}
+ ],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T23:23:07Z",
+   "ask": "Repro: adding an @rx.memo component from another module while REFLEX_COMPILE_CACHE=1 is running yields a vite import-resolution error",
+   "addressed": true,
+   "evidence": "Commit 4cbe7b6c (2026-08-09) 'emit user memo files for modules new to the compile cache' cites this exact repro and reworks memo-emission dirtiness detection"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T22:35:55Z",
+   "ask": "Re-seed _UNIQUE_NAME_RNG per page instead of resetting globally",
+   "addressed": true,
+   "evidence": "Commit 7e38b655 (2026-09-05) 'seed generated names per page so partial recompiles stay unique' addresses this directly, citing masenf's review"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-07-28T23:15:19Z",
+   "ask": "Use OS filesystem change notifications instead of stat-polling every 0.05s",
+   "addressed": true,
+   "evidence": "Commit 510f1387 (2026-09-05) replaces stat-polling with watchfiles notifications, polling only as fallback"
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-05T16:24:45Z",
+   "ask": "15 issues (4 P1) on the 09-05 rework: plugin lifecycle hooks skipped on cache hit, app-module-as-page-barrier invalidation gap, daemon-restart lock race, REFLEX_SKIP_COMPILE stuck if daemon dies, PropDocsState ID collisions, plus 8 P2s and 2 P3s",
+   "addressed": false,
+   "evidence": "27 of 51 threads now resolved after today's push (commit 085e816e, 'Merge main and address incremental compile cache review findings'), but the 15 cubic findings above remain among the 24 still-unresolved; no reply from FarhanAliRaza yet on this run"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-07-01T16:58:33Z",
+   "excerpt": "@codex pelase review"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-06-28T15:41:01Z",
+   "excerpt": "Confidence Score: 3/5 (summary comment re-run in place against today's head 085e816e) -- not yet safe to merge because an outstanding app-import tracking issue can allow stale app-wide frontend output when the compile cache is enabled"
+  }
+ ],
+ "last_author_activity_at": "2026-09-08T18:25:27Z",
+ "last_maintainer_activity_at": "2026-07-28T23:23:07Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "CHANGED since this morning's 2026-09-08 run: FarhanAliRaza pushed a new commit today at 18:25:27Z, 'Merge main and address incremental compile cache review findings' (085e816e, replacing 8c11a8e). No new PR-body comment explaining it, but CI re-ran against the new head today (18:26-18:37Z) and greptile/cubic's existing summary comments were updated IN PLACE (same comment ids, new body text) rather than posted as new comments -- read updated_at, not created_at, when checking freshness of bot summaries.",
+  "CHANGED: conflicting_files narrowed from the 9 files reported on 09-05/this-morning to just 1 (tests/units/test_reflex.py), recomputed fresh via `git merge-tree --write-tree origin/main refs/pr/6688` against today's main -- today's push evidently resolved most of the prior conflict surface (memo.py, imports.py, vars/base.py, pyi_hashes.json, compiler.py, prerequisites.py, and 2 test files are no longer conflicting).",
+  "CHANGED: thread total unchanged at 51, but unresolved dropped from 26 (this morning) to 24 -- 2 more threads got marked resolved with today's push (compare: today's cubic thread list shows several 09-05 P1/P2 findings now is_resolved=true/outdated=true, e.g. Daemon Marker Outlives Daemon, Watcher Gap Loses Edits, the daemon-restart-lock-race finding, and 3 P2/P3s). The core cluster of 15 cubic findings (4 P1s) from the 09-05 rework remains open and unaddressed by today's push.",
+  "CHANGED and WORSE: full CI is running again on this head (112 checks, was only 2 on the prior 09-05 head due to no workflow_run existing), but now shows 5 genuine Windows-only failures -- all in this PR's own new compile-daemon code (lock/PID-liveness timing and a path-join bug in the hot-reload-include-paths feature). This is a real, reproducible platform gap in the feature, not flakiness: identical 4-5 failures across every windows-latest Python version (3.10-3.14).",
+  "Author is MEMBER; days_waiting_on_maintainer held at 0 per convention even though the ball is arguably now with reviewers/CI given today's fresh push and the volume of still-unaddressed automated findings.",
+  "Requested reviewer Alek99 still has never reviewed, across the entire ~2.5 month life of this PR.",
+  "PR size not independently re-measured this run (still the large multi-thousand-line compile-cache feature); today's push is a merge+fixes commit on top of the 09-05 state."
+ ]
+}

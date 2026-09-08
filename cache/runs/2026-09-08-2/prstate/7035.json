@@ -1,0 +1,202 @@
+{
+ "number": 7035,
+ "fetched_at": "2026-09-08T23:15:00Z",
+ "head_sha": "7669cec81c1f2cdc0a25d0a120125b97d30fde5f",
+ "title": "Fix config reload state imports (#7028)",
+ "author": "harsh21234i",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": "CHANGES_REQUESTED",
+ "requested_reviewers": [],
+ "linked_issues": [
+  {
+   "number": 7028,
+   "title": null,
+   "filed_by": "masenf",
+   "filer_is_author": false
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-02T17:13:19Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "f01c755",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "CHANGES_REQUESTED",
+   "at": "2026-09-03T19:17:42Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "f01c755",
+   "on_current_head": false,
+   "note": "Reproduced cubic's P1 with #7028's repro; also found the fix does not cover RegistrationContext.fork() (the AppHarness path); found the project-root eviction branch untested/dead"
+  },
+  {
+   "by": "harsh21234i",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:15:52Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4d8f57f",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:16:20Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4d8f57f",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:06:10Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4e05359",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:30:52Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "5dba682",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:35:26Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "5dba682",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:43:45Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "f49704d",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": true,
+ "human_reviewed": true,
+ "awaiting": [
+  "FarhanAliRaza to re-review the 7-commit fix chain and confirm his CHANGES_REQUESTED is satisfied",
+  "one live P1 concern that survived every commit: a package defining a registered state AND containing another state module is still fully reloaded, recreating the retained state class"
+ ],
+ "threads": {
+  "total": 14,
+  "unresolved": [
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "Too long comments, explaining what is already can be seen in code. happens in many places. we might want to clean up these."
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "ctx._config is None is the wrong signal. RegistrationContext.fork() copies base_states but resets _config to None, so a forked context re-triggers the same StateValueError. This is the path AppHarness takes."
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "The _config_module_deps_root != project_root branch is not exercised; with the comparison removed, all 118 tests in test_config.py still pass."
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "Both calls use reload_dependencies=True, so this test passes on main too and does not cover the new root check."
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "P1 State Package Gets Redefined: a package belonging to both state_modules and package_modules is still unconditionally reloaded, recreating the retained state class"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": true,
+    "author_replied": false,
+    "first_comment": "P1 (same defect as above, filed independently): when a package's __init__.py defines a registered rx.State, this reload creates a replacement class while RegistrationContext retains the original -- suggests `if dep not in state_modules: importlib.reload(...)`"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "FarhanAliRaza",
+   "association": "MEMBER",
+   "at": "2026-09-03T19:17:39Z",
+   "ask": "Rework the fix to key on whether the current context already holds the registered states, not on ctx._config is None; cover the RegistrationContext.fork() (AppHarness) path; either drop or test the project-root eviction branch",
+   "addressed": "partially",
+   "evidence": "Author pushed 7 follow-up commits (4e05359 fork handling, 4d8f57f reload non-state deps + cleanup, 10ca635 preserve state package modules, a6f656e formatter, 5dba682 refresh package settings, f49704d edge cases, 7669cec track imports after failed reload) over 09-05T11:03-11:52, replying inline 'Fixed in 4d8f57fb' / '4e0535950' to most threads and posting a summary comment asking for re-review -- but the package/state-module overlap defect (both greptile and cubic's final-head reviews) was never actually closed and remains live per greptile's own 09-05T11:56:05Z confidence-4/5 summary"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-05T11:56:05Z",
+   "excerpt": "Confidence Score: 4/5 -- The PR is not yet safe to merge because a package that both defines a registered state and contains another state module is still reloaded, recreating the package-level state class. The unresolved previous finding in config.py remains blocking. Two other previous threads were manually resolved without explanatory replies; they do not affect merge safety."
+  },
+  {
+   "by": "harsh21234i",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-05T11:11:56Z",
+   "excerpt": "Addressed the remaining review feedback in commit 4d8f57fb... Focused reload tests: 4 passed. Full tests/units/test_config.py: 117 passed. Please re-review the latest commit."
+  }
+ ],
+ "last_author_activity_at": "2026-09-05T11:52:45Z",
+ "last_maintainer_activity_at": "2026-09-03T19:17:42Z",
+ "days_waiting_on_maintainer": 3.5,
+ "notes": [
+  "MAJOR CHANGE since 2026-09-04: after being reported as 'unaddressed, no author activity since opening' with FarhanAliRaza's CHANGES_REQUESTED, harsh21234i pushed 7 follow-up commits on 2026-09-05 (11:03-11:52Z) directly working through FarhanAliRaza's fork-context repro and cubic's config-staleness findings: forked-context handling, non-state dependency refresh, preserving parent packages of state modules, refreshing package __init__.py settings, and recording imports even after a failed package reload.",
+  "IMPORTANT: this is NOT fully resolved. greptile's PR-level summary, re-run against the final commit 7669cec (2026-09-05T11:56:05Z), still rates the PR 4/5 and calls out ONE specific live P1: a package that is both a registered-state module and contains another state module is still passed wholesale to importlib.reload(), recreating the class the active RegistrationContext retains. Both the greptile thread (PRRT...fixga) and an independently-filed cubic thread with a concrete fix (`if dep not in state_modules: importlib.reload(...)`) for this exact defect remain is_resolved=false. Treat review_decision as CHANGES_REQUESTED-still-live, not stale: this is a different, narrower, and still-open issue from what FarhanAliRaza originally flagged, most of which WAS fixed.",
+  "FarhanAliRaza has not looked at the PR since his 09-03 review; he has not seen the 7 follow-up commits or confirmed whether his original 3 concerns are now satisfied.",
+  "head_sha changed (f01c7556 -> 7669cec8); thread total rose from 5 to 14 (9 new: 4 cubic/greptile on the fork/package fixes, 5 inline harsh replies threading into the fixed ones).",
+  "checks unchanged in shape: 111 total (109 success + 2 skipped), all green; confirmed with a second, fully-paginated get_check_runs call.",
+  "mergeable/conflicting_files recomputed fresh via git merge-tree against current origin/main -- clean, no conflicts.",
+  "Carried forward from 2026-09-08 (morning): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}

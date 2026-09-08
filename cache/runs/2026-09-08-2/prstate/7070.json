@@ -1,0 +1,201 @@
+{
+ "number": 7070,
+ "fetched_at": "2026-09-08T23:15:00Z",
+ "head_sha": "2d65a20a6010d68a119f879b524e1f641575fc36",
+ "title": "ENG-9166: suggestions for otel 3/3",
+ "author": "masenf",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "uv.lock"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "Alek99"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-08T22:54:00Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "48c500f",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:04:07Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "2d65a20",
+   "on_current_head": true,
+   "note": "6 issues found: P1 ASGI instrumentation version TypeError risk, P1(doc)+2xP2(doc) mismatches vs code, P3 comment accuracy, P3 missing news fragments"
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:12:56Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2d65a20",
+   "on_current_head": true,
+   "note": "replied 'fixed in #7069' on 2 of cubic's doc-mismatch threads (session.id hashing claim; CONSUMER vs SERVER span kind)"
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:13:06Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2d65a20",
+   "on_current_head": true,
+   "note": "second 'fixed in #7069' reply"
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "author (masenf, self) to finish the rebase plan described in the PR body: land #7069 first, then rebase this branch onto the updated 2/3 and 3/3 bases and carry #7069's instrumentor-body fixes into instrumentor.py",
+  "author to address cubic's remaining unresolved findings not already covered by #7069: ASGI exclude_spans TypeError risk on older opentelemetry-instrumentation-asgi, missing news fragments for reflex-otel and reflex-base, otel.js comment accuracy",
+  "requested reviewer Alek99 has not yet reviewed"
+ ],
+ "threads": {
+  "total": 8,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 docs claim instrument() configures the SDK from OTEL_* env vars automatically; ReflexInstrumentor._instrument() does not do this, so the documented example produces no telemetry"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 required news fragments missing for both reflex-otel and reflex-base (user-facing behavior change in both)"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1 OpenTelemetryMiddleware(..., exclude_spans=...) raises TypeError if dependency resolution picks an ASGI instrumentation version below the one that added exclude_spans"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": true,
+    "first_comment": "P2 doc claims session.id is a truncated SHA-256 of the token; code sets ATTR_SESSION_ID to the raw token with no hashing -- masenf replied 'fixed in #7069'"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": true,
+    "first_comment": "P2 doc says browser events become CONSUMER spans; backend code emits SERVER -- masenf replied 'fixed in #7069'"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2 doc claims instrument() configures opentelemetry-sdk from OTEL_* vars 'exactly as opentelemetry-instrument would'; not implemented"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P3 otel.js comment overclaims traceparent is added to every send; only sampled sends get it"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P3 news fragments required for reflex-otel and reflex-base"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 5,
+  "by_state": {
+   "success": 5,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-08T23:04:07Z",
+   "ask": "session.id hashing / span-kind doc mismatches",
+   "addressed": true,
+   "evidence": "masenf replied twice at 23:12:56Z and 23:13:06Z: 'fixed in #7069' (the sibling PR corrects the underlying behavior/docs) -- threads not yet marked resolved on GitHub"
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-08T23:04:07Z",
+   "ask": "P1 ASGI exclude_spans TypeError risk on older instrumentation-asgi versions",
+   "addressed": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-08T22:54:00Z",
+   "ask": "P1 docs overclaim automatic OTEL_* env-based SDK configuration that instrument() doesn't implement",
+   "addressed": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-08T22:54:00Z",
+   "ask": "P2/P3 missing news fragments for reflex-otel and reflex-base",
+   "addressed": false
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "linear-code[bot]",
+   "at": "2026-09-08T22:51:09Z",
+   "excerpt": "Linked to ENG-9166"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "at": "2026-09-08T22:53:56Z",
+   "excerpt": "Confidence Score 4/5 -- not yet safe to merge because backend setup docs still promise automatic SDK configuration the instrumentor doesn't implement, and required package news fragments are absent"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-08T23:13:06Z",
+   "excerpt": "fixed in #7069 (reply on the CONSUMER vs SERVER span-kind doc thread)"
+  }
+ ],
+ "last_author_activity_at": "2026-09-08T23:13:06Z",
+ "last_maintainer_activity_at": "2026-09-08T23:13:06Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Brand-new PR opened today 2026-09-08T22:51:06Z by masenf: review follow-ups on #6901 (browser tracing via OtelPlugin), one finding per commit (10 commits).",
+  "IMPORTANT: stacked PR chain confirmed via git -- 6899 -> 6900 -> 6901 -> 7070 is one chain (this PR's base is farhan/eng-9166-reflex-otel-4, i.e. #6901), separate from 6899 -> 7069 which branches directly off 6899. The PR body itself documents a rebase plan: land #7069 first, then rebase this branch onto the updated 2/3 and 3/3 bases and manually carry #7069's instrumentor.py fixes forward, since this branch currently holds the pre-#7069 body of the instrumentor.",
+  "masenf (author) already replied 'fixed in #7069' on 2 of cubic's 6 findings (the session.id-hashing and span-kind doc mismatches) -- both threads remain open on GitHub since replying doesn't auto-resolve a thread; treat those two as addressed-via-sibling-PR, not stale.",
+  "Remaining unaddressed: cubic's P1 (ASGI exclude_spans TypeError risk on older dependency versions -- worth checking before merge, not just a doc issue), and both bots' notes that reflex-otel/reflex-base news fragments are still missing.",
+  "Requested reviewer Alek99 has not reviewed yet; no human review at all so far.",
+  "Author is masenf (MEMBER) on his own PR; days_waiting_on_maintainer held at 0 by convention."
+ ]
+}
