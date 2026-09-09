@@ -1,0 +1,188 @@
+{
+  "number": 6708,
+  "fetched_at": "2026-09-09T14:40:00Z",
+  "head_sha": "d80d7774cd02c34afd8f60b0dfa01fe85c075333",
+  "title": "Wrap Recharts Sankey chart",
+  "author": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [
+    "masenf",
+    "Alek99"
+  ],
+  "linked_issues": [
+    {
+      "number": 6558,
+      "title": "Wrap recharts SankeyChart",
+      "filed_by": "masenf",
+      "filer_is_author": false
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-06T16:17:41Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "e94c110",
+      "on_current_head": false
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-06T16:23:45Z",
+      "association": "NONE",
+      "can_push": false,
+      "commit_id": "e94c110",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-07-09T22:28:19Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "574f851",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-07-30T00:54:43Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "6c9066d",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-01T12:19:29Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "ad5de4f",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-01T12:24:32Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "ad5de4f",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-01T16:38:35Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "7a9c158",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-08-01T18:12:11Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "6a09841",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-09T11:08:28Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "07c41fd",
+      "on_current_head": false,
+      "note": "NEW since last night: P2 hook identifiers (\"react\", \"useId\", \"useChartWidth\") hardcoded as string literals in reflex_base/vars/special.py, violates repo named-constants rule; thread landed already marked resolved by GitHub even though no fix/reply followed"
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "masenf/Alek99 (both requested reviewers) to actually approve -- no APPROVED review exists at all, only COMMENTED",
+    "docs-build blocker from last night is GONE: reflex-docs (3.11) and (3.12) both pass on the current head"
+  ],
+  "threads": {
+    "total": 21,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 112,
+    "by_state": {
+      "SUCCESS": 110,
+      "FAILURE": 0,
+      "PENDING": 0,
+      "SKIPPED": 2,
+      "CANCELLED": 0,
+      "ACTION_REQUIRED": 0,
+      "NEUTRAL": 0
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-07-09T22:28:19Z",
+      "ask": "docs page doesn't build (SankeyChart Text.y type error)",
+      "addressed": true,
+      "evidence": "reflex-docs (3.11) and reflex-docs (3.12) both show conclusion success on the current head 07c41fde48741c704d6c46ab9f063e3a1da8938e / d80d7774 CI runs (2026-09-09T11:47-11:51Z); the docs-build failure that blocked this PR every prior run is gone"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-09T11:08:28Z",
+      "ask": "hook identifiers (\"react\", \"useId\", \"useChartWidth\") should be named constants, not string literals",
+      "addressed": false
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-09T11:54:26Z",
+      "excerpt": "hey @masenf please take a look when free :) -- posted right after this morning's CI run went fully green"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-06T16:17:36Z",
+      "excerpt": "Confidence Score: 5/5, safe to merge (bot summary; last updated 2026-09-09T11:49:16Z on the current head, unchanged text)"
+    },
+    {
+      "by": "codspeed-hq[bot]",
+      "association": "NONE",
+      "at": "2026-07-09T22:20:20Z",
+      "excerpt": "Merging this PR will improve performance by 3% (comment updated 2026-09-09T11:52:34Z for the current head, no regression)"
+    }
+  ],
+  "last_author_activity_at": "2026-09-09T11:54:26Z",
+  "last_maintainer_activity_at": "2026-07-30T00:48:01Z",
+  "days_waiting_on_maintainer": 0.1,
+  "notes": [
+    "MAJOR CHANGE since 2026-09-08 23:15Z: this PR's one and only real blocker for two months -- the reflex-docs build FAILURE (sankeychart.md custom_node example passing a float where Text.y expects str|int) -- is GONE. Both reflex-docs (3.11) and reflex-docs (3.12) show conclusion:success on the current head. head_sha changed 46b2b5e8...695 -> d80d7774; checks.rollup flipped FAILURE -> SUCCESS; checks.total 112 all-green (110 success + 2 macos-skipped, 0 failure, 0 pending) -- fully re-fetched and paginated (page1 100 + page2 12 = 112, matches total_count).",
+    "The remaining unresolved-thread count from last night (0) is unchanged: still 20 threads all resolved, PLUS one brand-new greptile P2 finding posted this morning (2026-09-09T11:08:28Z, hardcoded hook-identifier string literals) that landed already flagged is_resolved:true by the API despite no reply/fix -- flagging this as a possible GitHub/greptile auto-resolve quirk rather than treating it as a real fix; do not read 'threads.total: 21, unresolved: []' as proof the finding was addressed.",
+    "harsh21234i pushed again this morning (author has now merged main into the branch and pinged masenf 'please take a look when free' at 11:54:26Z) -- so with the docs build now fixed and CI fully green, the sole remaining blocker is procedural: no APPROVED review exists at all (masenf and Alek99 are both still just requested reviewers who have only left COMMENTED reviews going back to July). review_decision stays null.",
+    "mergeable/conflicting_files recomputed fresh via git merge-tree against origin/main (5d9724ea, unchanged from last night -- main has not moved) -- clean, no conflicts.",
+    "days_waiting_on_maintainer computed as time since the AUTHOR's last activity (11:54:26Z today), since the author acted most recently and the ball is now in the maintainer's court -- this is a small number (~2.8 hours) despite masenf's own last review activity being from 2026-07-30, because the definition keys off whoever moved last, not off maintainer inactivity.",
+    "Carried forward from 2026-09-08 (evening run 2026-09-08-2): listing.updated_at changed (23:15Z\u2192today 11:54:26Z) precisely because of this morning's fix + nudge; every field above was re-fetched live, not carried forward."
+  ]
+}

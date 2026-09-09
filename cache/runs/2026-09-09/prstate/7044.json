@@ -1,0 +1,114 @@
+{
+  "number": 7044,
+  "fetched_at": "2026-09-09T14:40:00Z",
+  "head_sha": "a0480cce0420d7c8dc3abcbd86930e72cbe99cd5",
+  "title": "Fix build failure when frontend_path is set without prerendering",
+  "author": "masenf",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": true,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-04T19:04:45Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "d148af7",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-04T19:12:18Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "d148af7",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-04T19:25:06Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "04b3cef",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-08T22:51:43Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "3641439",
+      "on_current_head": false,
+      "note": "the Windows path-traversal P1 flagged last night"
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-09T00:16:03Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "a0480cc",
+      "on_current_head": true,
+      "note": "reply + fix commit closing out the Windows P1"
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": [
+    "a non-author human review -- self-authored by masenf, no reviewer requested, review_decision still null; this is now the ONLY blocker"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "SUCCESS": 109,
+      "FAILURE": 0,
+      "PENDING": 0,
+      "SKIPPED": 2,
+      "CANCELLED": 0,
+      "ACTION_REQUIRED": 0,
+      "NEUTRAL": 0
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-04T19:04:41Z",
+      "excerpt": "Confidence Score: 5/5 -- safe to merge; the build failure is covered by focused regression tests and no outstanding defect remains (bot summary, edited 2026-09-09T00:18:15Z to reflect the current head -- accurate and current, matches the now-zero unresolved threads)"
+    }
+  ],
+  "last_author_activity_at": "2026-09-09T00:16:03Z",
+  "last_maintainer_activity_at": "2026-09-09T00:16:03Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "MAJOR CHANGE since 2026-09-08 23:15Z: masenf pushed a fix (head 3641439 -> a0480cce, 2026-09-09T00:16:03Z) that closes out the Windows path-traversal P1 flagged last night by greptile ('..\\\\escaped' backslash traversal). Per his own reply, the fix goes further than just backslashes: Config._normalize_paths now checks every slash-delimited segment with PureWindowsPath, rejecting any anchor (drive or root), non-identity parses, and an explicit '..' -- closing drive-letter (D:other), bare-backslash, UNC, and dot-segment variants as well as the originally-reported backslash case. Covered by a new test_frontend_path_rejects_unsafe_segments.",
+    "All 3 review threads (the original POSIX P1, cubic's duplicate finding, and last night's Windows-specific P1) are now resolved -- 0 unresolved, down from 1 unresolved (the live Windows P1) last night.",
+    "checks.rollup flipped back to SUCCESS: the 'check (reflex-base, 3.14)' job that failed last night on an infra/network flake (astral-sh/setup-uv fetch failure, unrelated to this PR's diff, as already noted last night) is green on this fresh CI run -- confirming it really was transient, not a re-occurring problem.",
+    "Still self-authored by masenf (MEMBER) with no other human reviewer requested or engaged -- only bots (greptile, cubic) have looked at any point in this PR's life. review_decision remains null. With the code now clean and CI fully green, this is purely a 'needs eyes' item, arguably one of the most mergeable-at-a-glance PRs on the board.",
+    "No merge conflicts against today's main (5d9724ea, unchanged from last night) -- confirmed fresh via git merge-tree, clean.",
+    "days_waiting_on_maintainer is 0 because masenf is both author and the relevant MEMBER -- per convention this field does not apply to self-authored PRs; the real open item (getting a second pair of eyes) has no clock attached to it in this schema."
+  ]
+}

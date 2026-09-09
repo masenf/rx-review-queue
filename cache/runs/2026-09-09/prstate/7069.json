@@ -1,0 +1,118 @@
+{
+  "number": 7069,
+  "fetched_at": "2026-09-09T14:40:00Z",
+  "head_sha": "38c2f3372b16f1dea6ae84ba9d9bd65746228421",
+  "title": "ENG-9166: Suggestions for otel 1/3",
+  "author": "masenf",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "uv.lock"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-08T22:53:06Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "451c002",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-08T22:55:52Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "38c2f33",
+      "on_current_head": true,
+      "note": "2 issues: P1 http.target token leak, P2 idempotency-guard blocks retry after OTEL_SDK_DISABLED"
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:19:06Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "38c2f33",
+      "on_current_head": true,
+      "note": "rebutted cubic's P1 with source evidence from opentelemetry-instrumentation-asgi 0.49b0/0.65b0"
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:19:12Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "38c2f33",
+      "on_current_head": true,
+      "note": "declined the OTEL_SDK_DISABLED idempotency change by design, matching SDK semantics"
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:19:35Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "38c2f33",
+      "on_current_head": true,
+      "note": "same rebuttal as greptile's independent copy of the idempotency finding"
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": [
+    "a human (non-author) review -- no reviewer requested, review_decision null; all bot findings have been rebutted with evidence or accepted as by-design, none remain open",
+    "this branch's own base (farhan/eng-9166-reflex-otel, i.e. #6899) to merge before this can land on main -- still not based on main"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 5,
+    "by_state": {
+      "SUCCESS": 5,
+      "FAILURE": 0,
+      "PENDING": 0,
+      "SKIPPED": 0,
+      "CANCELLED": 0,
+      "ACTION_REQUIRED": 0,
+      "NEUTRAL": 0
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-09-08T22:53:03Z",
+      "excerpt": "Confidence Score 5/5 -- changes since the previous review appear safe to merge, with only the existing non-blocking runtime retryability concern remaining (bot summary, edited 2026-09-08T22:56:15Z; consistent with the now fully-resolved thread list)"
+    }
+  ],
+  "last_author_activity_at": "2026-09-08T23:21:24Z",
+  "last_maintainer_activity_at": "2026-09-08T23:21:24Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "MAJOR CHANGE since 2026-09-08 23:15Z (this PR was ~26 minutes old at that fetch): mergeable flipped from CONFLICTING/DIRTY (uv.lock conflict against its base branch) to MERGEABLE/CLEAN. Confirmed independently and freshly via git merge-tree: fetched refs/heads/farhan/eng-9166-reflex-otel locally and ran `git merge-tree --write-tree` against refs/pr/7069 -- clean single tree-OID output, no staged-conflict lines. head_sha is UNCHANGED (38c2f337) -- no new commit resolved this; the base branch itself must have moved to eliminate the uv.lock conflict.",
+    "Both live findings from last night are now closed via reply, not code changes, and BOTH threads are_resolved:true: cubic's P1 (http.target token leak) -- masenf checked the actual opentelemetry-instrumentation-asgi source at both the declared floor (0.49b0) and current (0.65b0) and showed http.target only ever carries the bare path, never the query string that carries the token, so nothing leaks; and the OTEL_SDK_DISABLED idempotency-guard P2 (raised independently by both cubic and greptile) -- masenf declined by design, arguing it mirrors how the SDK's own TracerProvider reads the env var once at construction, and that uninstrument()+instrument() is the supported reset path.",
+    "threads.total unchanged at 3, but unresolved went from 3 (all live) last night to 0 today -- every finding was either technically rebutted with cited source evidence or accepted as intentional non-blocking design, and all three GitHub threads show is_resolved:true.",
+    "checks unchanged: 5 total, all success (this branch's base is not main, so the full ~110-job matrix does not run against it -- only CodSpeed, cubic, greptile, and the two benchmark jobs).",
+    "Still stacked: base branch is farhan/eng-9166-reflex-otel (i.e. this sits directly on top of #6899), NOT main -- this PR structurally cannot merge to main until #6899 lands or it is rebased. That has not changed.",
+    "last_author/maintainer_activity_at both use the listing.json updated_at timestamp (23:21:24Z) since it lands slightly after the last visible comment/reply and likely reflects a thread-resolve click; masenf is both author and the only MEMBER active on the PR, so days_waiting_on_maintainer stays 0 by the self-authored convention."
+  ]
+}

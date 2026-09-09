@@ -1,0 +1,154 @@
+{
+  "number": 7040,
+  "fetched_at": "2026-09-09T14:40:00Z",
+  "head_sha": "e71e2e56e9695fe860f0231302cd511f2c5269e8",
+  "title": "[HTTPXodus] migrate httpx to httpx2 (hard switch)",
+  "author": "ProgrammerPlus1998",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [
+    {
+      "number": 7034,
+      "title": "[HTTPXodus] Consider migrating from httpx to httpx2 (the actively maintained fork)",
+      "filed_by": "ProgrammerPlus1998",
+      "filer_is_author": true
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-03T04:18:16Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "b965d6f",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-04T18:33:53Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "471b42b",
+      "on_current_head": false,
+      "note": "design pushback that led to the 09-07 hard-switch rewrite; masenf has not looked since"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-07T10:36:47Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "fb48705",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-09T08:52:31Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "e71e2e5",
+      "on_current_head": true,
+      "note": "NEW review this morning, dropped to 3/5: found a P1 (undeclared uv.lock extra) and a P2 (missing news fragment)"
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": true,
+  "awaiting": [
+    "masenf to look at the redesigned hard-switch PR at all -- still has not responded since his 09-04 design objection, which the 09-07 rewrite fully addressed",
+    "author to fix a NEW P1 introduced by this morning's own uv.lock repair commit: the regenerated lockfile adds an undeclared 'testing' extra (psutil, selenium, uvicorn) not present in pyproject.toml",
+    "author to add the still-missing news/7040.<type>.md fragment (raised again this morning)",
+    "the stale-comment P3 in reflex/utils/net.py from 09-07 remains unfixed",
+    "workflow-approval click to ever happen for this fork/first-time-contributor PR: still only 2 bot checks (cubic + greptile), 6 days after the original push and across 3 separate pushes now (09-03, 09-07, 09-09)"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "P3 stale dual-import comment block in reflex/utils/net.py still describes the removed try/except fallback and now-unneeded # type: ignore suppressions"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "NEW (09-09) P1: the regenerated uv.lock adds a 'testing' extra (psutil, selenium, uvicorn) that pyproject.toml does not declare -- lockfile out of sync with the manifest"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "author_replied": false,
+        "first_comment": "NEW (09-09) P2: this hard switch changes the runtime HTTP dependency and TLS trust behavior for downstream users but ships no news/7040.<type>.md fragment"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2,
+      "NEUTRAL": 0
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-04T18:33:53Z",
+      "ask": "just import httpx2 directly instead of the dual-import shim",
+      "addressed": true,
+      "evidence": "fully addressed by the 09-07 hard-switch rewrite (fb487050), confirmed by greptile's fresh review; masenf has still not acknowledged the rewrite"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-09T08:52:30Z",
+      "ask": "regenerate uv.lock strictly from the committed manifest -- it currently adds an undeclared 'testing' extra",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-09T08:52:31Z",
+      "ask": "add a required root-package news fragment for this user-facing dependency/TLS-trust change",
+      "addressed": false
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-03T04:16:39Z",
+      "excerpt": "Confidence Score: 3/5 -- not yet safe to merge because the committed lockfile disagrees with the project manifest, and the required news fragment is missing (bot summary, edited 2026-09-09T08:52:34Z to reflect the new head -- this one IS current/consistent with the live threads, unlike some other PRs' stale summaries)"
+    }
+  ],
+  "last_author_activity_at": "2026-09-09T08:50:00Z",
+  "last_maintainer_activity_at": "2026-09-04T18:33:53Z",
+  "days_waiting_on_maintainer": 0.24,
+  "notes": [
+    "Since 2026-09-08 23:15Z: author pushed ANOTHER commit, fb487050 -> e71e2e56 (2026-09-09, shortly before 08:52:31Z when greptile re-reviewed). This commit's stated purpose (per the PR body's Diff summary) is repairing uv.lock -- 'also repairs a corrupt duplicate ty entry (0.0.69 pointing at truststore artifacts) that current uv releases refuse to parse' -- but it introduced a NEW, real P1: the regenerated lockfile now carries a 'testing' extra (psutil, selenium, uvicorn) that pyproject.toml does not declare, an actual manifest/lockfile mismatch, not a false positive.",
+    "Because of that new P1, greptile's fresh review score actually DROPPED from 5/5 (last night, on the hard-switch rewrite alone) to 3/5 this morning -- a real regression in review confidence caused by the author's own latest push, not noise. Also newly flagged: the required news/7040.<type>.md fragment is still missing (greptile raised this explicitly for the first time this morning).",
+    "The stale dual-import comment in reflex/utils/net.py (flagged 09-07) is still unfixed -- unchanged from last night.",
+    "ci_never_ran remains true: still only cubic + greptile ran; the ~110-job workflow-approval gate has now never been clicked across THREE separate pushes (09-03, 09-07, 09-09) spanning 6 days. This remains the binding structural blocker regardless of code findings -- a maintainer click, not something the first-time contributor can do.",
+    "masenf has still not responded to the redesigned/hard-switch PR at all since his 09-04 design objection, despite it being fully addressed for two days now.",
+    "mergeable/conflicting_files recomputed fresh via git merge-tree against origin/main (5d9724ea) -- clean, no conflicts.",
+    "Title unchanged from last night's already-updated '(hard switch)' phrasing -- no further title change today."
+  ]
+}

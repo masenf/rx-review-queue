@@ -1,0 +1,153 @@
+{
+  "number": 7068,
+  "fetched_at": "2026-09-09T14:40:00Z",
+  "head_sha": "9c270ca6c08d3a730623034dfa98df160ef7c835",
+  "title": "perf: split router into per-field base vars; gather connection-static router data at connect",
+  "author": "masenf",
+  "author_association": "MEMBER",
+  "body_present": true,
+  "body_has_repro": false,
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": null,
+  "requested_reviewers": [],
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-08T22:22:44Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "608f448",
+      "on_current_head": false
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-08T22:26:45Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "608f448",
+      "on_current_head": false
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:13:14Z",
+      "association": "CONTRIBUTOR",
+      "can_push": false,
+      "commit_id": "d5c82f4",
+      "on_current_head": false,
+      "note": "P1 duplicate-token router_session.client_token staleness -- flagged last night"
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:22:06Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "c7a08e5",
+      "on_current_head": false,
+      "note": "first big batch of fix replies (whole-router deps, header-cache mutation, non-origin header rebuild, duplicate-token identity)"
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:30:47Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "c7e8c18",
+      "on_current_head": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:42:18Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "05372dd",
+      "on_current_head": false,
+      "note": "fixed the partial-payload merge bug cubic and greptile both converged on"
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:53:12Z",
+      "association": "MEMBER",
+      "can_push": true,
+      "commit_id": "9c270ca",
+      "on_current_head": true,
+      "note": "final fix for the no-op-partial-payload dirtying bug he found himself"
+    }
+  ],
+  "counting_approval": false,
+  "changes_requested_outstanding": false,
+  "human_reviewed": false,
+  "awaiting": [
+    "a non-author human review -- self-authored, sole remaining code item is masenf's own explicitly-deferred judgment call, not a blocking bug"
+  ],
+  "threads": {
+    "total": 15,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "author_replied": true,
+        "first_comment": "P2 modify_state_with_links marks all five router base vars dirty on every shared-state event, resending connection-static session/headers -- masenf explicitly declined to change this in-PR ('not changing this one... flagging it for @masenf to decide'), calling it a faithful translation of main's existing behavior, not a regression, that needs its own change with shared-state test coverage"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "SUCCESS": 109,
+      "FAILURE": 0,
+      "PENDING": 0,
+      "SKIPPED": 2,
+      "CANCELLED": 0,
+      "ACTION_REQUIRED": 0,
+      "NEUTRAL": 0
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-08T22:22:39Z",
+      "excerpt": "Confidence Score: 5/5 -- safe to merge; the latest no-op update guard preserves required per-field invalidation while avoiding redundant state persistence (bot summary, edited 2026-09-08T23:55:12Z to reflect the fixed head -- consistent with the now near-fully-resolved thread list)"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-08T23:32:43Z",
+      "excerpt": "Second review round addressed in c7e8c18... plus two CI signals I've concluded are not this PR's -- recording the reasoning rather than quietly re-running"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-09T00:33:52Z",
+      "excerpt": "Re-run result: unit-tests (windows-latest, 3.13) passed on the second attempt, same commit, no code change. CI is now fully green on this head... the PR is green and waiting on review"
+    }
+  ],
+  "last_author_activity_at": "2026-09-09T00:33:52Z",
+  "last_maintainer_activity_at": "2026-09-09T00:33:52Z",
+  "days_waiting_on_maintainer": 0,
+  "notes": [
+    "MASSIVE CHANGE since 2026-09-08 23:15Z (this PR was brand-new at that fetch, only ~30 minutes old): masenf worked through the review overnight in real time. Threads went from 7 of 9 unresolved (including a real P1 about duplicate-token router_session.client_token staleness) to 1 of 15 unresolved -- and that one remaining thread is a judgment call masenf explicitly deferred to himself as maintainer ('flagging it for @masenf to decide'), not a live bug anyone disputes.",
+    "Both real check failures from last night are now explained and green: (1) CodSpeed's -3.21% regression on test_from_event_type[lambda_event] -- masenf demonstrated in an issue comment it's symmetric noise (paired with an unrelated +3.17% 'improvement', wrong baseline compared, PR touches neither the test nor the code path) and it is not a factor now that CI reports the check as success outright; (2) unit-tests (windows-latest, 3.14) -- masenf root-caused this as a PRE-EXISTING cross-test telemetry race (a process-wide ThreadPoolExecutor writing installation_id into whatever tmp_path the currently-executing test monkeypatched REFLEX_DIR to), reproduced it on main too (identical 31 telemetry submissions on both branches), watched it hit THREE different tests across TWO different Windows Python versions on three consecutive commits, and confirmed a same-commit re-run passed. He proposed a conftest fix as a separate follow-up rather than widening this PR.",
+    "checks.rollup is now fully SUCCESS: 111 total, 109 success + 2 skipped, 0 failure, 0 pending -- confirmed via a fully paginated re-fetch (page1 100 + page2 11 = 111, matches total_count).",
+    "The one still-open thread (cubic P2, shared-state dirty_vars.update(ROUTER_VARS)) is explicitly NOT a regression per masenf's reply: on main the equivalent line already marks the single combined 'router' var dirty on every shared-state event, so the split produces an identical payload here, not a worse one. He deferred fixing the missed optimization opportunity to a follow-up PR with its own shared-state test coverage.",
+    "mergeable/conflicting_files recomputed fresh via git merge-tree against origin/main (5d9724ea) -- clean, no conflicts.",
+    "Still self-authored by masenf (MEMBER) with no other human reviewer requested or engaged -- only bots have reviewed. review_decision remains null; days_waiting_on_maintainer is 0 by the self-authored convention."
+  ]
+}
