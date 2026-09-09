@@ -1,0 +1,90 @@
+{
+ "number": 7049,
+ "fetched_at": "2026-09-09T14:40:00Z",
+ "head_sha": "dca7cf1a4b90e703d128f8a59a1de27e2c20449e",
+ "title": "Reduce dev startup memory by deferring unused integrations",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/utils/types.py"
+ ],
+ "update_branch_offered": true,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T21:29:54Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "cc9107032f71aa83b31427764d3cd2a0694899ec",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-05T23:53:49Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4ee7a1c5674ed5be990194ecce141daa6ed6f334",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no human reviewer has looked yet; only cubic (AI) has reviewed, and its two P2 findings from Sep 5 are now addressed"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 108,
+   "SKIPPED": 2,
+   "NEUTRAL": 1
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-05T21:29:16Z",
+   "excerpt": "Confidence Score: 5/5. The PR appears safe to merge, with no actionable new correctness, security, or repository-rule violations identified."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-05T21:29:22Z",
+   "excerpt": "Merging this PR will improve performance by 15.87% (test_import_reflex benchmark)."
+  }
+ ],
+ "last_author_activity_at": "2026-09-08T22:07:30Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0.7,
+ "notes": [
+  "Head moved since this morning (4ee7a1c5 -> dca7cf1a) with a push around 22:07Z today. This push resolves BOTH of this morning's unaddressed cubic P2 findings: the SQLModel/dict ObjectVar-serializer mismatch in serializers.py:608 (thread now marked '\u2705 Addressed in dca7cf1') and the test_telemetry_accounting.py assertion expecting the wrong model count (thread now resolved). All 3 review threads are resolved; 0 unresolved.",
+  "New since this morning: mergeable flipped from clean to CONFLICTING. git merge-tree against today's main (5d9724ea) shows a real content conflict in packages/reflex-base/src/reflex_base/utils/types.py (three-way conflict entries at stages 1/2/3). Confirmed via git, not from a stale API field -- this PR's stale base (main moved ~77cfe61b -> 5d9724ea) now collides with its own types.py changes and needs a rebase.",
+  "CI still fully green: 111 checks, 108 success + 2 skipped (macos) + 1 neutral (cubic's own check-run conclusion, not a real failure) -- confirmed both pages of check-runs sum to the reported total.",
+  "Still no human (non-author) review; only cubic-dev-ai and greptile-apps (bots) have looked. review_decision remains null.",
+  "days_waiting_on_maintainer computed as time since the author's most recent push (~22:07Z today) to now (23:15Z) -- about 1 hour, since no maintainer has looked at all yet.",
+  "Carried forward from 2026-09-08-2: listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}

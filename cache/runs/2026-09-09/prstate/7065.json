@@ -1,0 +1,151 @@
+{
+ "number": 7065,
+ "fetched_at": "2026-09-09T14:40:00Z",
+ "title": "Keep disk state reads, sidecar stats and redis version lookup off the event loop",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "head_sha": "ea0d227b3764a2ca39d9d592513ba7ad0dee6fe4",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:45:07Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "106a871815a0e9b868b4f8635b62a4cc515c5332",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:49:28Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "ea0d227b3764a2ca39d9d592513ba7ad0dee6fe4",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [],
+ "threads": {
+  "total": 5,
+  "unresolved": [
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1: Run the audit through uv -- anyone following these instructions will invoke the virtualenv interpreter directly, bypassing the repository's required environment-management workflow. Use `uv run --with blockbuster --with aiosqlite scripts/blockbuster_audit.py`..."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P1: When reflex.db exists in the caller's working directory, this unconditional unlink deletes it before the audit and can destroy unrelated data. Use an isolated database under args.root..."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: On Windows, root never prefixes the backslash-separated frame filenames, so the report misclassifies every Reflex and test finding as 3RDPARTY. Normalize frame paths with Path.resolve()..."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: Run the audit through uv instead of documenting direct .venv/bin/python execution. Use `uv run --with blockbuster --with aiosqlite ...`..."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P3: The middle item of the list has no verb: 'precompressed static file serving stats sidecar files off the loop' is an orphaned noun phrase..."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "success": 110,
+   "failure": 1,
+   "pending": 0,
+   "skipped": 0,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [
+   "pre-commit"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "pre-commit",
+   "cause": "pyright hook fails with 5 real errors in the PR's own new scripts/blockbuster_audit.py: 2x `reportMissingImports` for `blockbuster.blockbuster` (the pre-commit pyright environment doesn't have the optional `blockbuster`/`aiosqlite` extras installed -- matches cubic's own review comment that the script's docs should run it via `uv run --with blockbuster --with aiosqlite`), plus 3 genuine type errors: `list[str]` has no `.length` (should be `len(...)`, likely a JS-habit typo) at line 271, an `upload_files`/`FileUpload` argument-type mismatch at line 278, and `.to_string` called on a `bool` at line 280. All 5 are unresolved as of the last pre-commit run on the current head."
+  }
+ ],
+ "outstanding_asks": [
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "association": "NONE",
+   "at": "2026-09-07T21:45:07Z",
+   "ask": "Run scripts/blockbuster_audit.py via `uv run --with blockbuster --with aiosqlite ...` instead of documenting direct `.venv/bin/python` invocation.",
+   "addressed": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-07T21:49:28Z",
+   "ask": "Use an isolated database path under args.root instead of unconditionally unlinking ./reflex.db in the caller's working directory.",
+   "addressed": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-07T21:49:29Z",
+   "ask": "Normalize frame paths for Windows so the audit report doesn't misclassify every first-party finding as 3RDPARTY.",
+   "addressed": false
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-07T21:44:30Z",
+   "excerpt": "Confidence Score: 5/5. The disk-state, static-serving, and Redis changes preserve their existing contracts while moving the identified blocking operations off the event loop."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-07T21:44:24Z",
+   "excerpt": "Merging this PR will not alter performance (32 untouched, 8 skipped benchmarks)."
+  }
+ ],
+ "last_author_activity_at": "2026-09-07T21:44:30Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 1.7,
+ "notes": [
+  "Moves 3 blocking-call sites off the event loop (disk state manager reads, precompressed-static sidecar stat(), redis-py's per-connection version lookup), found via a new scripts/blockbuster_audit.py the PR also adds. Small, well-scoped diff (8 files) with per-fix regression tests.",
+  "The ONLY PR in this batch with a real, unaddressed CI failure: pre-commit's pyright hook fails on the PR's own new scripts/blockbuster_audit.py (2 missing-import errors because the pyright env lacks the optional blockbuster/aiosqlite extras the script needs, plus 3 genuine type bugs -- see failing_job_findings). This is a straightforward author-side fix, not infra flake.",
+  "5 unresolved review threads, all bot-raised, none replied to or fixed yet: 2 duplicate P1/P2 asks to run the audit script via `uv run --with ...` instead of the bare interpreter shown in its own docstring (a `uv`-workflow violation per AGENTS.md/CLAUDE.md), a P1 that the script's unconditional `Path(\"reflex.db\").unlink()` can destroy an unrelated file in the caller's cwd, a P2 Windows path-normalization bug in the audit's own report classifier, and a cosmetic P3 grammar nit in the news fragment.",
+  "Self-authored MEMBER PR with no non-author human activity yet (last_maintainer_activity_at is null); days_waiting_on_maintainer (0.79d) measures time since the author's last activity, not staleness after a maintainer response. Given the live pre-commit failure, this PR needs an author fix before it's worth a maintainer's first look, not the other way around.",
+  "Part of the ~15-PR Alek99/FarhanAliRaza Sep 5-7 performance push; unlike the sibling perf-optimization PRs (#7056, #7064) this one is an event-loop-hygiene audit, not a hot-path speedup -- no other cross-PR overlap checked.",
+  "Carried forward from 2026-09-08 (morning): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea.",
+  "Carried forward from 2026-09-08-2: listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}

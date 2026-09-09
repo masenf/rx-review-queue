@@ -1,0 +1,147 @@
+{
+ "number": 6932,
+ "fetched_at": "2026-09-09T14:40:00Z",
+ "head_sha": "5e739cc1f3d353d5381ca5690b69970ea18b1904",
+ "title": "bare websockets",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-22T21:04:14Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "24d8a2b",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-23T16:21:19Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "49f323b",
+   "on_current_head": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-08-23T16:46:57Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "3ed074a",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-04T07:22:00Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e132bdd",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-04T08:14:40Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "c695256",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T21:08:56Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "5e739cc",
+   "on_current_head": true,
+   "note": "first-ever MEMBER/OWNER engagement on this PR: 'reflex-xy currently uses socketio multiplexing to send binary chart data and interaction payloads over the same reflex websocket, so we can't bring this in directly, yet. i think there's potential here though. and i like the idea of dependency reduction.'"
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "maintainer (masenf) flagged that an internal product (reflex-xy) depends on socketio multiplexing for binary chart/interaction data, so this can't become the default transport as-is yet -- not a formal change request, but a real compatibility concern the author has not yet responded to",
+  "someone to weigh in on whether this lands as an opt-in alternative transport (keeping socketio default) vs. the PR's current default-swap, which would need discussion/design input before merge"
+ ],
+ "threads": {
+  "total": 34,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "success": 109,
+   "failure": 0,
+   "pending": 0,
+   "skipped": 2,
+   "cancelled": 0,
+   "action_required": 0,
+   "neutral": 0
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "abulvenz",
+   "association": "CONTRIBUTOR",
+   "at": "2026-08-24T11:15:55Z",
+   "ask": "Confirm whether HTTP long-polling fallback is dropped with bare websockets",
+   "addressed": true,
+   "evidence": "Author replied 2026-08-24T11:41 that long-polling is not supported in the new transport but socketio transport remains selectable"
+  },
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-08T21:08:56Z",
+   "ask": "Raises that reflex-xy (internal) relies on socketio's binary multiplexing over the same websocket, so this transport can't be adopted directly yet, while still endorsing the dependency-reduction direction",
+   "addressed": false,
+   "evidence": "Posted today at 21:08:56Z; no author reply yet as of fetch time (23:15Z), same day"
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-08T21:08:56Z",
+   "excerpt": "reflex-xy currently uses socketio multiplexing to send binary chart data and interaction payloads over the same reflex websocket, so we can't bring this in directly, yet. i think there's potential here though. and i like the idea of dependency reduction."
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-07T11:02:23Z",
+   "excerpt": "Confidence Score: 5/5 -- the PR appears safe to merge; no new actionable regressions or outstanding previous findings remain; every previous Greptile thread is resolved and therefore not outstanding (bot, re-run on the final merge-upstream commit)"
+  }
+ ],
+ "last_author_activity_at": "2026-09-07T10:59:53Z",
+ "last_maintainer_activity_at": "2026-09-08T21:08:56Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "CHANGED since this morning's 2026-09-08 run: masenf (MEMBER) left the first-ever human maintainer engagement on this PR today at 21:08:56Z, after ~2.5 weeks of zero MEMBER/OWNER activity. It's a COMMENTED review, not an approval or changes-requested -- he flags that reflex-xy (an internal product) depends on socketio's binary multiplexing over the same websocket, so the transport 'can't be brought in directly, yet,' while saying he likes the dependency-reduction direction and sees potential. Treat this as a real, unresolved compatibility/design concern from a maintainer, not a rubber-stamp and not a hard rejection.",
+  "This changes the picture from this morning's framing ('fully green, fully-resolved, zero-maintainer-engagement PR, cheap first-review candidate') to: reviewed, technically clean, but now blocked on a design question only a maintainer or the author can resolve (e.g. keep socketio as the default and ship bare-websockets as opt-in, vs. some multiplexing-compatible plan for reflex-xy). human_reviewed flips false -> true; counting_approval stays false (no APPROVED review, before or after).",
+  "head_sha, checks (111 total: 109 success + 2 skipped, re-confirmed via a second paginated get_check_runs call against the same head), thread counts (34 total, 0 unresolved) and mergeable_state (MERGEABLE/BLOCKED, no conflicts) are all unchanged from this morning's run -- only the review/comment layer changed.",
+  "days_waiting_on_maintainer reset to 0: the maintainer just acted today: the wait is now on the author (or further maintainer/design discussion), not on masenf.",
+  "Author is CONTRIBUTOR (benedikt-bartscher); still no committer-level author on this PR.",
+  "Carried forward from 2026-09-08-2: listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}

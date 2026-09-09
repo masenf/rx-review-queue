@@ -1,0 +1,288 @@
+{
+ "number": 7064,
+ "fetched_at": "2026-09-09T14:40:00Z",
+ "title": "Faster first page load: one-lock hydrate from the connect packet, diffed against compiled defaults",
+ "author": "FarhanAliRaza",
+ "author_association": "MEMBER",
+ "head_sha": "306c2386405ca7050742864db84dee24909bad7a",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:45:35Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "2d9abce959bcd93156b1105b577ceb06cfe297a4",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:48:47Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "2d9abce959bcd93156b1105b577ceb06cfe297a4",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:51:00Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "2d9abce959bcd93156b1105b577ceb06cfe297a4",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:59:34Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "16d25bbd1facc97811361f5704e0cc7faaa6717d",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:59:35Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:59:38Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:59:40Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:59:41Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:59:44Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:59:46Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T20:59:47Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "2ff4e515494e4740236e4f7922ff9a25ce7594b3",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:07:12Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "48f9c5cdeef7459a8e620850d22ff3660fefa087",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:11:44Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "e923225dd31bbbfd6e237037d9d1a8f536d33667",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:11:48Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "e923225dd31bbbfd6e237037d9d1a8f536d33667",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:20:04Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e923225dd31bbbfd6e237037d9d1a8f536d33667",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:27:53Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b7295cc4638f2c245615cb4716703ba177cecb1d",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:32:44Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "e3975ac661d37c567b6ab9634a3dc1d57ebaf387",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:32:46Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "e3975ac661d37c567b6ab9634a3dc1d57ebaf387",
+   "on_current_head": false
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-07T21:33:54Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "62280c0ea6053bc778a2546ed3b304c65b1aec4d",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-08T18:13:37Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "306c2386405ca7050742864db84dee24909bad7a",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "FarhanAliRaza (author) needs to investigate and fix a new, real integration-test regression on the current head before this can be considered for merge at all",
+  "still no non-author human (MEMBER besides the author) has reviewed"
+ ],
+ "threads": {
+  "total": 18,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "P2: Apps with more than 128 generated state classes will repeatedly miss this LRU during metadata lookups. The class-local dictionary already memoizes each value, so remove the bounded LRU and use the per-class cache directly."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 93,
+   "FAILURE": 16,
+   "SKIPPED": 2
+  },
+  "failing": [
+   "integration-app-harness (memory, 3.11, 1)",
+   "integration-app-harness (memory, 3.11, 2)",
+   "integration-app-harness (memory, 3.12, 1)",
+   "integration-app-harness (memory, 3.12, 2)",
+   "integration-app-harness (memory, 3.13, 1)",
+   "integration-app-harness (memory, 3.13, 2)",
+   "integration-app-harness (memory, 3.14, 1)",
+   "integration-app-harness (memory, 3.14, 2)",
+   "integration-app-harness (redis, 3.11, 1)",
+   "integration-app-harness (redis, 3.11, 2)",
+   "integration-app-harness (redis, 3.12, 1)",
+   "integration-app-harness (redis, 3.12, 2)",
+   "integration-app-harness (redis, 3.13, 1)",
+   "integration-app-harness (redis, 3.13, 2)",
+   "integration-app-harness (redis, 3.14, 1)",
+   "integration-app-harness (redis, 3.14, 2)"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "integration-app-harness (memory + redis, Python 3.11-3.14, both shards -- 16/16 jobs)",
+   "cause": "Real, reproducible regression on the current head (306c2386), not flaky: every memory- and redis-backed integration-app-harness job fails the same way. Core failure is in tests/integration/test_connection_banner.py::test_connection_banner[compile_context_run/deploy] -- 'AssertionError: assert '<token>' in mappingproxy({})' where mappingproxy({}) is <LocalTokenManager|RedisTokenManager>.token_to_sid, i.e. after a client connects, its token is never registered in the token-to-sid map. This cascades into selenium NoSuchElementException failures across test_component_state.py, test_linked_state.py (test_linked_state, test_unrelated_reset_does_not_break_shared_event_link_context, test_concurrent_async_vars_do_not_deadlock_linked_token), test_navigation.py::test_navigation_app, and test_lifespan.py (test_lifespan_modify_state, test_lifespan_raw_asyncio_task) -- all consistent with the page never fully connecting/hydrating. This directly implicates the PR's own new connect-packet boot-event flow (on_connect / link_token_to_sid / hydrate_and_load auth path) added in this PR; it appeared on the final commit (306c2386) pushed after all prior review threads were fixed and marked resolved, so it was never itself reviewed."
+  }
+ ],
+ "outstanding_asks": [
+  {
+   "by": "cubic-dev-ai[bot]",
+   "ask": "P2 (2026-09-08T18:13:37Z, current head): the new functools.lru_cache-based metadata cache in reflex/state.py:347 will repeatedly miss for apps with more than 128 generated state classes since the class already has a per-class memoization dict; the bounded LRU is redundant and actively harmful at scale.",
+   "addressed": false
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-07T20:45:31Z",
+   "excerpt": "Confidence Score: 5/5. The PR appears safe to merge, with no outstanding actionable failures identified in the current changes."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-07T20:44:54Z",
+   "excerpt": "comparing claude/reflex-load-performance-0sqaes (306c238) with main (a7e1ce3): will not alter performance, 4 new benchmarks added"
+  }
+ ],
+ "last_author_activity_at": "2026-09-08T18:09:00Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0.9,
+ "notes": [
+  "MAJOR change since this morning: this morning's prstate showed 17/17 review threads resolved and CI fully green (111 checks, 0 failing) after a very active same-day fix loop. Since then the author pushed one more commit (head 8a5abccbea... -> 306c2386, around 2026-09-08T18:09Z) and CI on that final head is now RED: 16 of 111 checks fail -- every integration-app-harness job across both state backends (memory, redis), all 4 Python versions (3.11-3.14), and both shards. Confirmed real (not flaky) by reading the job logs: a consistent AssertionError shows client tokens never getting registered in the token manager's token_to_sid map after connect, cascading into selenium element-not-found failures across five different integration test files. This looks like a genuine regression in the PR's own new connect-packet/hydrate_and_load boot flow, introduced by the very last commit -- which was never itself reviewed by any bot or human, since all prior review threads target earlier commits (up to 62280c0).",
+  "greptile's summary comment ('appears safe to merge, no outstanding actionable failures') is dated 2026-09-08T18:12:13Z, i.e. it ran against the commit that was pushed 1-4 minutes before CI on that same commit went red -- a live example of the 'bot summary goes stale' trap: do not cite this greptile approval as current, since it predates or narrowly precedes the failing test run and the failure has not been re-reviewed by any bot since.",
+  "One new unresolved cubic thread from today (18:13:37Z, on the same final head) is a real but minor P2: an lru_cache-wrapped metadata lookup in state.py:347 will thrash for apps with 128+ state classes since a per-class dict already memoizes the same value. Separate issue from the CI regression above; unaddressed.",
+  "Thread count rose from 17 (this morning) to 18; 17 remain resolved, 1 (today's LRU finding) is unresolved.",
+  "Still self-authored by FarhanAliRaza (MEMBER) with zero non-author human review to date -- this morning's note that 'this is the PR in the batch most in need of an actual maintainer read' is now sharper: it also needs the author's own attention first, since its own CI is broken.",
+  "No merge conflicts against today's main (5d9724ea) -- confirmed clean via git merge-tree.",
+  "days_waiting_on_maintainer computed as time since the author's last push (~18:09Z today) to now (23:15Z) -- about 5.1 hours; no maintainer has commented at any point (last_maintainer_activity_at is still null).",
+  "Carried forward from 2026-09-08-2: listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}

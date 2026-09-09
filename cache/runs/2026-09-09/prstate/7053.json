@@ -1,0 +1,114 @@
+{
+ "number": 7053,
+ "fetched_at": "2026-09-09T14:40:00Z",
+ "head_sha": "f15b0ad3bdc931d68123bfd8ea56f838a24d87e6",
+ "title": "perf: avoid draining the event queue when prepending events",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": true,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T20:33:07Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "2e1ae01636f41296ebfe96267477d25151b474a5",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T20:38:02Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "2e1ae01636f41296ebfe96267477d25151b474a5",
+   "on_current_head": false
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-06T23:02:24Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "f15b0ad3bdc931d68123bfd8ea56f838a24d87e6",
+   "on_current_head": true
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-06T23:02:28Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "f15b0ad3bdc931d68123bfd8ea56f838a24d87e6",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no human reviewer has looked yet; only cubic and greptile (AI bots) have reviewed"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 108,
+   "FAILURE": 1,
+   "SKIPPED": 2
+  },
+  "failing": [
+   "integration-app-harness (redis, 3.11, 2)"
+  ],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "integration-app-harness (redis, 3.11, 2)",
+   "cause": "Not a code failure. The job died in setup, before checkout/tests ran: `astral-sh/setup-uv` tried to fetch its version manifest from https://raw.githubusercontent.com/astral-sh/versions/main/v1/uv.ndjson and got `##[error]fetch failed`, so UV never installed and the rest of the job's steps were skipped as a result. This is CI infra/network flakiness unrelated to this PR's diff (a JS event-queue prepend change) \u2014 the other 5 shards of the same 'redis' matrix and the 'memory' matrix all passed. Safe to re-run; not a real blocker."
+  }
+ ],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-06T20:33:03Z",
+   "excerpt": "Confidence Score: 5/5. The PR appears safe to merge with no outstanding correctness, security, or repository-rule issues."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-06T20:34:37Z",
+   "excerpt": "Merging this PR will not alter performance. 32 untouched benchmarks, 8 skipped."
+  }
+ ],
+ "last_author_activity_at": "2026-09-06T23:02:28Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 2.7,
+ "notes": [
+  "Brand new PR, opened 2026-09-06T20:30:28Z by Alek99 (MEMBER). Part of the Sep 5-7 performance-PR batch; replaces the frontend event-queue's drain-and-rebuild prepend logic (repeated shift() calls) with a single unshift() of the filtered incoming events, cutting redundant array copies/traversal on the client. Backend/WebSocket protocol unchanged. Claims ~16-19% less prepend work in paired browser benchmarks.",
+  "Only CI-visible failure in the whole batch of six: 'integration-app-harness (redis, 3.11, 2)' failed, but reading the job log shows it never reached the actual tests \u2014 astral-sh/setup-uv's manifest fetch hit a transient `fetch failed` network error during setup, so UV/checkout never ran. All other redis/memory integration-app-harness shards passed. This looks like CI infra flakiness, not a real regression from this PR's diff; a re-run would likely go green.",
+  "All 3 review threads resolved: greptile and cubic both flagged that the new Node test harness's regex-based function extraction was formatting-sensitive (a harmless refactor could break unrelated tests); addressed by switching to Node's native ES-module loader with explicit dependency stubs (now 18 passing cases across two Node versions). cubic also flagged the orphan '+' changelog fragment name; renamed to 7053.performance.md once the PR number was known. greptile's final pass: Confidence 5/5.",
+  "No human has reviewed yet \u2014 only greptile-apps and cubic-dev-ai (bots) plus the author's own reply comments.",
+  "mergeable_state is 'blocked' (no human approval yet, and the one CI failure above), not a merge conflict \u2014 confirmed no conflicts via git merge-tree against current main. base_sha (c49a85d) is behind current main, same as the rest of this batch.",
+  "Carried forward from 2026-09-08 (morning): listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea.",
+  "Carried forward from 2026-09-08-2: listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}

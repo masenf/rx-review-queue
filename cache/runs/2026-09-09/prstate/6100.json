@@ -1,0 +1,261 @@
+{
+ "number": 6100,
+ "fetched_at": "2026-09-09T14:40:00Z",
+ "head_sha": "0ed529b20fae7b281c3bb05c492544e6e8f46a05",
+ "title": "Explicit state and event id minification",
+ "author": "benedikt-bartscher",
+ "author_association": "CONTRIBUTOR",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "conflicting_files": [
+  "reflex/reflex.py"
+ ],
+ "update_branch_offered": false,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [
+  "abulvenz"
+ ],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "abulvenz",
+   "state": "COMMENTED",
+   "at": "2026-01-27T20:37:21Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b2c3f58fd83b641c4f61a7091fc457b4bfec5b1c",
+   "on_current_head": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-02-04T21:31:02Z",
+   "association": "CONTRIBUTOR",
+   "can_push": true,
+   "commit_id": "cf7b614d9fc1dc0e3b45211132d12506c95436ae",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-02-05T23:54:44Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "3074c84e5badad414a8cb5e6993521925dcadbaa",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-02-12T19:02:34Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "f964c7aa78b41cfcba64c9c0f4a2e0d051f99aa1",
+   "on_current_head": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-02-12T19:21:56Z",
+   "association": "CONTRIBUTOR",
+   "can_push": true,
+   "commit_id": "f964c7aa78b41cfcba64c9c0f4a2e0d051f99aa1",
+   "on_current_head": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-04-25T20:57:54Z",
+   "association": "CONTRIBUTOR",
+   "can_push": true,
+   "commit_id": "f964c7aa78b41cfcba64c9c0f4a2e0d051f99aa1",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-09T20:28:28Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "f83afad761582bbd94d52959f81e160676991f96",
+   "on_current_head": false
+  },
+  {
+   "by": "chatgpt-codex-connector[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-09T22:57:26Z",
+   "association": "NONE",
+   "can_push": false,
+   "commit_id": "af4219fac8cb8832bedfa843e847c441eb72db75",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-20T18:48:15Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "1bafa2d0f907f3486dc51b3666e8122f250f9d56",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-07-20T19:33:51Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "c3e0f1c00d3884ab477b5076a900d9b547ad9c7b",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-20T22:10:17Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "958d9f0564371c49bbbb1e735a1d7ff03401c144",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-20T22:31:00Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "e048451ebc08053ebc7ae9f8e6d4c84dc95e05bb",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-22T10:39:23Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "81474e2042103a3b688693ff1771976d3632b9df",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-08-26T22:29:23Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "d5107c1861e68a278eb6d99801eed2f9ba60c734",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-04T17:43:18Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "746fe70ee320593a337ea15e97f610d68de207b3",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-04T18:05:40Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "5a69bbd6bfc9eff8e9b6d52fb1a353190ff54abd",
+   "on_current_head": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-04T18:27:40Z",
+   "association": "CONTRIBUTOR",
+   "can_push": true,
+   "commit_id": "c9a16a5297ca738513f1dda73e247de412cd505c",
+   "on_current_head": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T21:04:19Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "0ed529b20fae7b281c3bb05c492544e6e8f46a05",
+   "on_current_head": true
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": true,
+ "awaiting": [
+  "benedikt-bartscher (author) to reply to masenf's two new review threads and the frontend/backend minification-scheme mismatch concern posted today",
+  "masenf (MEMBER) already re-engaged today after months of silence, but still has not formally approved"
+ ],
+ "threads": {
+  "total": 30,
+  "unresolved": [
+   {
+    "by": "masenf",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "why does this one get the value through `.event_handlers` but the others are directly accessing the event handler by attribute"
+   },
+   {
+    "by": "masenf",
+    "outdated": false,
+    "author_replied": false,
+    "first_comment": "it would be nice to get around this limitation, but i don't think that needs to block us for this initial implementation."
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SUCCESS": 109,
+   "SKIPPED": 2
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [
+  {
+   "by": "masenf",
+   "ask": "Review-level comment (2026-09-08T21:04:19Z): concerned the frontend can compile against one minification scheme and run against a backend loaded with a different one; suggests hashing the minification scheme and comparing frontend/backend like the existing version-mismatch check, similar to compiling the minify map into the frontend so it can tell the backend what names map to what. Says 'i think we can drive this one in soon (finally)' but has not approved.",
+   "addressed": false
+  },
+  {
+   "by": "masenf",
+   "ask": "Inline question (2026-09-08T20:47:28Z) on reflex/compiler/compiler.py:224: why one lookup goes through `.event_handlers` instead of direct attribute access like the others.",
+   "addressed": false
+  }
+ ],
+ "recent_comments": [
+  {
+   "by": "masenf",
+   "association": "MEMBER",
+   "at": "2026-09-08T21:04:19Z",
+   "excerpt": "the part that gives me hesitation is that the frontend can build with one minification scheme and then run against a backend that's loaded with a potentially different minification scheme ... i think we can drive this one in soon (finally)"
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-04T18:05:40Z",
+   "excerpt": "re-reviewed current head, raised a P1/P2 addressed same day via 5a69bbd/c9a16a5"
+  }
+ ],
+ "last_author_activity_at": "2026-09-04T18:27:42Z",
+ "last_maintainer_activity_at": "2026-09-08T21:04:19Z",
+ "days_waiting_on_maintainer": 0,
+ "notes": [
+  "Head SHA unchanged (0ed529b) since this morning, but masenf (MEMBER) broke a 7-month silence today: he left an inline question at 20:47:28Z, a second inline reply ('don't think that needs to block us') at 21:03:40Z, and a top-level review comment at 21:04:19Z all COMMENTED (not APPROVED) on the current head -- raising a real architectural concern that the frontend and backend could compile against mismatched minification schemes, suggesting a hash-based mismatch check similar to the existing version check. This is the 'something happened today' behind the changed listing.updated_at.",
+  "Still never formally approved: no APPROVED review exists from anyone with write access despite 7+ months open, 102 commits, and today's fresh maintainer engagement. review_decision remains null and counting_approval remains false.",
+  "Thread count rose from 28 (this morning) to 30; the 2 new threads are both masenf's from today and both are UNRESOLVED (his own question and his own follow-up reply) -- the ball is now on benedikt-bartscher to respond, not on masenf.",
+  "mergeable flipped from this morning's clean/blocked to a real conflict: git merge-tree against today's main (5d9724ea) now shows a content conflict in reflex/reflex.py (three-way conflict entries at stages 1/2/3). This is new since this morning's clean re-fetch and is NOT caused by any push to this PR (head unchanged) -- main moved and now collides with this PR's own reflex.py changes. Needs a rebase/merge before this can land regardless of the review outcome.",
+  "CI unchanged and fully green: 111 checks, 109 success + 2 skipped (macos, as usual), 0 failing -- confirmed by re-fetching check-runs (both pages, by_state sums to total).",
+  "days_waiting_on_maintainer is 0 because the maintainer (masenf) is the one who just moved today; the ball is now with the author to respond to two open threads and the scheme-mismatch concern.",
+  "Carried forward from 2026-09-08-2: listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "number": 7054,
+ "fetched_at": "2026-09-09T14:40:00Z",
+ "head_sha": "87ea648d795977ce38ae49a7ecf61851b73e3094",
+ "title": "Speed up deploy preparation and add opt-in frontend build reuse",
+ "author": "Alek99",
+ "author_association": "MEMBER",
+ "body_present": true,
+ "body_has_repro": false,
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "conflicting_files": [],
+ "update_branch_offered": true,
+ "auto_merge": false,
+ "review_decision": null,
+ "requested_reviewers": [],
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T23:01:45Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "93c8683429a666682f270b5175874a4954ca615c",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-06T23:03:41Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "93c8683429a666682f270b5175874a4954ca615c",
+   "on_current_head": false
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:33:34Z",
+   "association": "MEMBER",
+   "can_push": true,
+   "commit_id": "4da5154bca6aef42ad5148eca06c41589c855179",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:34:59Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4da5154bca6aef42ad5148eca06c41589c855179",
+   "on_current_head": false
+  },
+  {
+   "by": "cubic-dev-ai[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:38:44Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "4da5154bca6aef42ad5148eca06c41589c855179",
+   "on_current_head": false
+  },
+  {
+   "by": "greptile-apps[bot]",
+   "state": "COMMENTED",
+   "at": "2026-09-08T22:33:44Z",
+   "association": "CONTRIBUTOR",
+   "can_push": false,
+   "commit_id": "b9230726af32d53a8dfa37f1c87c28feac39b779",
+   "on_current_head": false
+  }
+ ],
+ "counting_approval": false,
+ "changes_requested_outstanding": false,
+ "human_reviewed": false,
+ "awaiting": [
+  "no human reviewer has looked yet; only cubic and greptile (AI bots) have reviewed, and both bots' outstanding findings from this morning are now resolved"
+ ],
+ "threads": {
+  "total": 8,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {
+   "SUCCESS": 109,
+   "SKIPPED": 2,
+   "NEUTRAL": 1
+  },
+  "failing": [],
+  "pending": [],
+  "ai_reviewer_only": false
+ },
+ "ci_never_ran": false,
+ "failing_job_findings": [],
+ "outstanding_asks": [],
+ "recent_comments": [
+  {
+   "by": "greptile-apps[bot]",
+   "association": "CONTRIBUTOR",
+   "at": "2026-09-06T23:01:40Z",
+   "excerpt": "Confidence Score: 5/5 (as of 2026-09-08T22:40 recheck). The changes since the previous review resolve the outstanding duration-comment and locking-documentation concerns."
+  },
+  {
+   "by": "codspeed-hq[bot]",
+   "association": "NONE",
+   "at": "2026-09-06T23:01:33Z",
+   "excerpt": "Merging this PR will not alter performance. 40 untouched benchmarks, 8 skipped (after rebase onto 5d9724ea)."
+  }
+ ],
+ "last_author_activity_at": "2026-09-08T22:39:00Z",
+ "last_maintainer_activity_at": null,
+ "days_waiting_on_maintainer": 0.7,
+ "notes": [
+  "Head moved since this morning (4da5154 -> 87ea648d) via a rebase onto today's main plus documentation/comment consolidation, pushed around 22:39Z today. The PR body now describes this as 'Current rebase validation (87ea648d)'.",
+  "This morning's real, unaddressed P1 -- Windows no-op frontend_build_lock allowing concurrent .web workspace mutation -- is now fixed: cubic's thread on reflex/utils/build_cache.py:67 is resolved, citing commit b9230726, which the PR body confirms adds Windows-compatible workspace locking ('Production workspace locking now also works on Windows, even with build reuse disabled ... Opt-in build reuse itself remains macOS/Linux only').",
+  "greptile re-reviewed the rebased head at 22:33:44Z (on intermediate commit b9230726, one commit behind the final 87ea648d) and raised two new P2 style nits (missing duration comments on _LATEST_VERSION_CHECK_FAILURE_INTERVAL, and a docs wording inconsistency about which platforms the lock covers) -- both threads are already marked resolved, consistent with the PR body's claim that 87ea648d 'only consolidates documentation and adds duration comments' on top of the fully-tested b9230726. All 8 threads across the PR's history are resolved; 0 unresolved.",
+  "CI still fully green: 112 checks (one more than the rest of the Sep5-7 batch, from a docs-tests job unique to this PR), 109 success + 2 skipped + 1 neutral (cubic's own conclusion) -- confirmed both pages of check-runs sum to the reported total.",
+  "No merge conflicts against today's main (5d9724ea) -- confirmed clean via git merge-tree.",
+  "Still no human (non-author) review; only bots plus the author's own reply comments. review_decision remains null.",
+  "days_waiting_on_maintainer computed as time since the author's most recent push (~22:39Z today) to now (23:15Z) -- about 36 minutes, since no maintainer has looked at all yet.",
+  "Carried forward from 2026-09-08-2: listing.updated_at unchanged, so reviews/threads/checks/comments are the same. mergeable/conflicting_files and days_waiting_on_maintainer recomputed fresh against main 5d9724ea."
+ ]
+}
