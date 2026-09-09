@@ -13,14 +13,14 @@
     "drafts": 30,
     "counting_approvals": 0,
     "fast_lane": 2,
-    "one_fix_away": 24,
+    "one_fix_away": 23,
     "fork_ci_unrun": 10,
     "never_human_reviewed": 38
   },
   "attention": [
     "Quiet since last night: 0 PRs merged, closed, or opened (still 97 open / 67 non-draft). The only real movement is on masenf's own PRs, updated overnight.",
     "#6708 (Sankey chart) is now clean: the PR's own docs-build bug is fixed, CI is fully green, and all 21 threads are resolved. Good candidate for a first approval -- though one new bot thread (hardcoded hook identifiers) landed already marked resolved with no reply, worth a second look.",
-    "#7044 (frontend_path build fix) is masenf's own PR: the Windows path-traversal bug greptile found last night is fixed and confirmed on the current head. CI green, 0 threads, ready for a first review.",
+    "#7044 (frontend_path build fix) is masenf's own PR: the Windows path-traversal bug greptile found last night is fixed and confirmed on the current head. CI green, 0 unresolved threads (3 total, all resolved), ready for a first review.",
     "#7068 (router-vars refactor) burned down 6 of 7 real findings overnight via masenf's own fix commits. The one remaining thread is a shared-state re-dirtying question masenf explicitly deferred to himself -- his call on whether to fix now or split out.",
     "#7069/#7070 (otel review follow-ups): masenf rebutted every review finding with source evidence overnight (CI green on both), but both still conflict on uv.lock -- the same lockfile churn blocking the rest of the otel stack (#6899-6901).",
     "#7040 (httpx2 hard switch) got a fresh push that didn't fix anything structurally: greptile dropped from 5/5 to 3/5, flagging a genuine new P1 (uv.lock declares an undeclared 'testing' extra) and a missing news fragment. Fork CI still hasn't run.",
@@ -113,7 +113,7 @@
       "score": 5.4,
       "summary": "bare websockets; all 34 threads resolved, green, clean, but masenf's first-ever review raises a real compatibility question.",
       "evidence": [
-        "masenf (MEMBER) commented today after 2.5 weeks of silence: reflex-xy depends on socketio's binary multiplexing, so this transport 'can't be brought in directly, yet' -- not a rejection, a real open design question",
+        "masenf (MEMBER) commented yesterday (Sep 8) after 2.5 weeks of silence: reflex-xy depends on socketio's binary multiplexing, so this transport 'can't be brought in directly, yet' -- not a rejection, a real open design question",
         "111+ checks green, no conflicts, every thread resolved"
       ],
       "blocker": "Author needs to respond to masenf's compatibility question (opt-in transport vs. a multiplexing-compatible plan).",
@@ -245,11 +245,6 @@
         "blocker": "Re-look and approve."
       },
       {
-        "number": 6932,
-        "summary": "All resolved, green, but a real compatibility question is open.",
-        "blocker": "Decide the transport-compatibility question."
-      },
-      {
         "number": 6815,
         "summary": "Green, clean, one deprecation-policy question unanswered since Aug 29.",
         "blocker": "Decide the deprecation policy."
@@ -296,7 +291,7 @@
       },
       {
         "number": 7044,
-        "summary": "Windows path-traversal bug fixed and confirmed on current head; CI green, 0 threads.",
+        "summary": "Windows path-traversal bug fixed and confirmed on current head; CI green, 0 unresolved threads (3 total, all resolved).",
         "blocker": "First review/approval."
       }
     ],
@@ -328,8 +323,8 @@
       },
       {
         "number": 7007,
-        "summary": "9 threads, all unresolved, from 3 AI reviewers converging on the same 2 root causes.",
-        "blocker": "Address the root causes or explain why they don't apply, and rebase to resolve the uv.lock conflict."
+        "summary": "9 threads, all unresolved, from 3 AI reviewers converging on the same 2 root causes. (Also conflicts with main on uv.lock -- see conflict_clusters -- but the review findings are the primary blocker.)",
+        "blocker": "Address the root causes the 3 AI reviewers converged on."
       },
       {
         "number": 6688,
@@ -347,9 +342,9 @@
         "blocker": "Rebase to resolve the uv.lock conflict (shared with the otel stack)."
       },
       {
-        "number": 7070,
-        "summary": "5 of 6 findings resolved (2 withdrawn by greptile after masenf's rebuttal); CI green.",
-        "blocker": "Rebase to resolve the uv.lock conflict, and reply to the last P3 fragment-wording nit."
+        "number": 6932,
+        "summary": "All resolved, green, but a real compatibility question is open.",
+        "blocker": "Decide the transport-compatibility question."
       }
     ]
   },
@@ -360,7 +355,7 @@
     },
     {
       "number": 7044,
-      "summary": "masenf's own fix, CI fully green, 0 unresolved threads, no conflicts. Only needs a first look."
+      "summary": "masenf's own fix, CI fully green, 0 unresolved threads (3 total, all resolved), no conflicts. Only needs a first look."
     }
   ],
   "closure": [
@@ -541,11 +536,11 @@
     },
     {
       "title": "Author concentration (non-draft, from author_association)",
-      "detail": "FarhanAliRaza 16 (MEMBER), Alek99 13 (MEMBER), masenf 9 (MEMBER, up from 6 -- he opened 3 new PRs today), benedikt-bartscher 7 (CONTRIBUTOR), harsh21234i 6 (CONTRIBUTOR). Members hold 39 of 67 non-draft PRs (contributors 19, first-time contributors 9); 37 of 67 come from fork branches."
+      "detail": "FarhanAliRaza 16 (MEMBER), Alek99 13 (MEMBER), masenf 9 (MEMBER, up from 6 -- he opened 3 new PRs yesterday (Sep 8)), benedikt-bartscher 7 (CONTRIBUTOR), harsh21234i 6 (CONTRIBUTOR). Members hold 39 of 67 non-draft PRs (contributors 19, first-time contributors 9); 37 of 67 come from fork branches."
     },
     {
       "title": "PRs closed as superseded, not for cause",
-      "detail": "#6906 was closed by masenf today in favor of his own #7068, which takes a cleaner architectural approach to the same problem (per-field router base vars instead of partial-delta elision)."
+      "detail": "#6906 was closed by masenf yesterday (Sep 8) in favor of his own #7068, which takes a cleaner architectural approach to the same problem (per-field router base vars instead of partial-delta elision)."
     }
   ],
   "delta": {
@@ -605,7 +600,13 @@
       "Incremental refresh: main did not move overnight (5d9724eae4, unchanged), so conflicts.json is identical to last night's for all 60 unchanged PRs. Only 7 PRs had a changed listing.updated_at (6708, 7035, 7040, 7044, 7068, 7069, 7070) and were re-fetched fresh via subagent; the rest were carried forward from cache/runs/2026-09-08-2/prstate/ with mergeable/conflicting_files/days_waiting_on_maintainer recomputed fresh.",
       "The fetch subagent's own prose claimed #7069/#7070 'flipped from conflicting to clean', but the authoritative merge-tree computation (conflicts.json, verified independently via `git merge-tree --write-tree origin/main refs/pr/{7069,7070}`) shows both still CONFLICTING on uv.lock. Trusted the git computation, not the subagent's narrative summary."
     ],
-    "audit_corrections": [],
+    "audit_corrections": [
+      "Fixed dating error: author-concentration pattern said masenf \"opened 3 new PRs today\" (carried forward from last night's wording) -- created_at timestamps for #7068/#7069/#7070 are all 2026-09-08 evening; corrected to \"yesterday (Sep 8)\".",
+      "Fixed dating error: patterns section said \"#6906 was closed by masenf today\" -- it was closed 2026-09-08, contradicting this same report's own attention[0] (\"0 PRs merged, closed, or opened\") and delta.closed ([]); corrected to \"yesterday (Sep 8)\". Same fix applied to #6932's top15 evidence (\"commented today\" -> \"commented yesterday (Sep 8)\"), also carried-forward wording from a review that happened during the prior run's window.",
+      "Fixed whose_move/bucket mismatch on #6932: top15 said whose_move=author but one_fix_away listed it under maintainer -- moved to one_fix_away.author to agree with the top15 card, per traps.md's rule that the two lists are built from the same fact and must not disagree.",
+      "Fixed \"zero threads\" vs \"zero unresolved threads\" ambiguity for #7044 (the exact recurring trap): attention bullet and one_fix_away.maintainer entry both said \"0 threads\" when prstate/7044.json actually shows threads.total=3, unresolved=[] -- reworded to \"0 unresolved threads (3 total, all resolved)\" in both places and in the fast_lane entry.",
+      "Removed compound blockers from one_fix_away: #7007's blocker bundled two unrelated asks (address 9 unresolved review threads AND rebase for a uv.lock conflict) -- narrowed to the review findings as the primary blocker, with the uv.lock conflict noted separately as already covered in conflict_clusters. #7070 had the same problem (rebase AND reply to a separate P3 thread) and was dropped from one_fix_away.author entirely -- its state is already covered in the stacks section."
+    ],
     "caveats": [
       "30 drafts excluded from ranking; none flipped draft state since this morning.",
       "checks.by_state for #6815/#6898/#6930 is still a stale truncated stub (flat success:27) inherited from a subagent bug two runs back; rollup and total are correct and are what scoring used.",

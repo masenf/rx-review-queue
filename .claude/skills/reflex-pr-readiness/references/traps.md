@@ -170,6 +170,32 @@ the memory the job otherwise lacks.
   current-top15 (`entered_top15: []`, `left_top15: <all of yesterday's>`) with
   no error. If a delta looks like nothing entered and everything left the
   top 15, re-run it — don't trust it.
+- A fetch subagent's own English summary can be wrong even when its written
+  JSON files are internally consistent. Sep 9: the subagent fetching
+  #7069/#7070 reported in its completion summary that both had "flipped from
+  conflicting to clean," but the master `conflicts.json` (computed centrally
+  from a live `git merge-tree --write-tree origin/main refs/pr/N`, same run)
+  showed both still CONFLICTING on uv.lock — confirmed by re-running the
+  merge-tree command directly. The reconciliation step (overwrite every
+  prstate file's mergeable/conflicting_files from `conflicts.json`) caught
+  this automatically, but it would have gone straight into prose (chat
+  summary, attention section) if that reconciliation were ever skipped or
+  trusted the subagent's own account instead. Treat a subagent's narrative
+  claim about mergeability as a hypothesis to check against `conflicts.json`,
+  never as the fact itself.
+- Cross-PR consistency bugs (whose_move disagreeing between `top15` and
+  `one_fix_away`, "today" dating baked into evidence prose) can survive
+  untouched through the incremental carry-forward path for multiple runs,
+  because carrying a prstate file forward only refreshes
+  mergeable/conflicting_files/days_waiting_on_maintainer — it does not
+  re-validate the report-level prose built from it in a prior run. Sep 9's
+  fact-check caught #6932 disagreeing between top15 (whose_move: author) and
+  one_fix_away (bucketed under maintainer) plus two stale "today" references
+  (a PR opened, and another closed, the *previous* evening) that had simply
+  been copy-pasted forward from the Sep 8 report text un-redated. Even when
+  a PR's underlying state hasn't changed, re-read its own report prose for
+  whose_move/bucket agreement and re-date any "today"/"this morning" language
+  against the *current* run's date before carrying it forward verbatim.
 
 ## Scoring / presentation
 - Where CI never ran, the workflow-approval click is the binding blocker; do
