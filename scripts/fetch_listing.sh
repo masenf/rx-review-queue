@@ -40,7 +40,7 @@ done
 
 open_count=$(api "/search/issues?q=repo:$OWNER/$REPO+is:pr+is:open&per_page=1" | jq .total_count)
 
-jq -s --arg login "$login" --arg now "$(date -u +%FT%TZ)" --argjson open "$open_count" '
+jq -s --arg login "$login" --arg now "$(date -u +%FT%TZ)" --argjson open "$open_count" --arg owner "$OWNER" --arg repo "$REPO" '
 {
   fetched_at: $now,
   source: "rest",
@@ -56,10 +56,10 @@ jq -s --arg login "$login" --arg now "$(date -u +%FT%TZ)" --argjson open "$open_
     head_sha: .head.sha,
     head_ref: .head.ref,
     head_repo: .head.repo.full_name,
-    is_fork: (.head.repo.full_name != "\($OWNER)/\($REPO)"),
+    is_fork: (.head.repo.full_name != "\($owner)/\($repo)"),
     body_present: ((.body // "") | length > 0)
   })
-}' "$tmp" | sed "s/\\\\(\$OWNER)\/\\\\(\$REPO)/$OWNER\/$REPO/" > "$OUT"
+}' "$tmp" > "$OUT"
 rm -f "$tmp"
 
 rows=$(jq '.prs | length' "$OUT")

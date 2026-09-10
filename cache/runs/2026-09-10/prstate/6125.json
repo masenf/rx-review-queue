@@ -1,0 +1,56 @@
+{
+  "number": 6125,
+  "fetched_at": "2026-09-10T16:40:22Z",
+  "head_sha": "f18922ac53509a66d715454d001bf0002bbd5643",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 5830,
+      "title": "support redis sentinel for HA",
+      "filed_by": "benedikt-bartscher"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-02-11T12:22:22Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-02-12T20:48:41Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": null,
+    "total": 0,
+    "by_state": {},
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-02-11T12:22:15Z",
+      "excerpt": "<h2>Greptile Overview</h2>\n\n<h3>Greptile Summary</h3>\n\nThis PR adds Redis Sentinel support for high availability deployments by introducing 5 new configuration "
+    }
+  ],
+  "conflicting_files": [
+    "reflex/config.py",
+    "reflex/istate/manager/__init__.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "ai_reviewer_only": true
+}

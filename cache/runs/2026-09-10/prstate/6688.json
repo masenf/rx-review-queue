@@ -1,0 +1,348 @@
+{
+  "number": 6688,
+  "fetched_at": "2026-09-10T16:38:52Z",
+  "head_sha": "085e816ec568fb701aa35fa91d1d767f13892a63",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-06-28T15:41:08Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-06-28T15:41:53Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-06-28T17:05:59Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-06-28T20:30:52Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-06-29T17:26:22Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-06-29T20:16:41Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-06-29T20:58:02Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-06-29T21:44:14Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-06-30T15:47:36Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-01T16:39:41Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-01T17:01:13Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-07-01T17:07:03Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-03T00:05:02Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-07-03T00:10:13Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-03T15:08:08Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-07-03T16:20:19Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-14T18:25:08Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-07-28T23:23:07Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-09T15:13:05Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-05T16:21:10Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-05T16:24:45Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 51,
+    "unresolved": [
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Watch all recorded in-project data dependencies**\n\nWhen a page reads an in-project data file with a suffix that "
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": true,
+        "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Hash include-path modules before reusing pages**\n\nWhen an app uses `REFLEX_HOT_RELOAD_INCLUDE_PATHS` for a sibli"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Hash transitive deps of warm dynamic imports**\n\nThis records only the module returned by a runtime import. If a "
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Preloaded app untracked**\n\nWhen `config.app_module` is already populated, this bran"
+      },
+      {
+        "by": "masenf",
+        "outdated": true,
+        "first_comment": "the practical problem with resetting this every time is that the generated names are order-dependent. so if the first compilation hits 3 pages and they each use `get_unique_variable_name()` once, then"
+      },
+      {
+        "by": "masenf",
+        "outdated": true,
+        "first_comment": "all supported OS provide a mechanism for watching a filesystem for changes without polling. we cannot be walking the filesystem and stat'ing files every 0.05 seconds. the comments say stat is cheap, b"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Preloaded App Untracked** When `config.app_module` has already been loaded before `"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Daemon Marker Outlives Daemon**\n\nThe ownership marker is written before the daemon "
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Watcher Gap Loses Edits**\n\nAn edit can occur after `_next_changes()` closes the wat"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=444284c5-4434-4c6a-8ecd-40c185865017 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP1: When a global input changes, the restarted d"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=81bcd97e-d0e2-4934-bf02-e12742e66f57 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP1: When `rx.App` and a page are defined in the "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=3dc5c380-0c86-44f4-bb94-b1eb0e7c47d5 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP1: When the cache manifest is reusable, this ea"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=ee9dd561-95b2-4857-ab50-ad0219c26746 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP1: If the daemon exits unexpectedly, backend re"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1f0164c7-1e57-4670-ae41-9b8d6fdaf15c -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP1: When the incremental cache recompiles only o"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a55e2d82-4294-4770-be59-bc4df4cca377 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a new source file is created directly u"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=2a4a253c-c8a3-4607-90d2-65f7210ba7bc -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a first-party package uses relative imp"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=29633a75-866b-4388-a304-507af9b7582c -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a page dynamically imports a submodule "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=9bd1464e-a668-4e7c-953a-cc8792849644 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a page handles a missing file read, `pa"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=48193f0e-5227-46e1-a49c-57cfb32ea686 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When `REFLEX_COMPILE_CACHE` is enabled, star"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f8fce6dd-a5e3-496a-bc20-d538c19c69c9 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":10} -->\nP2: After `compile_app` clears `app._pages`, a "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=c5618d0c-7c1e-4cb0-8427-a4359132dd02 -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":6} -->\nP2: This reload-watch change is applied uncondit"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=93a827ae-7571-42d5-8268-ad20012c852c -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP2: An edit between `_next_changes()` stopping t"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=fac7a060-8050-469c-8c49-a38f335137ea -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When daemon startup fails, this line records"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=4279fccc-c8f7-4380-a6e7-65bd7b08224c -->\n<!-- cubic:review-run=6f4ce89c-db9d-5893-acd8-2976cdf96c2b -->\n<!-- metadata:{\"confidence\":9} -->\nP3: This assertion is a tautology and tests noth"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 112,
+    "by_state": {
+      "FAILURE": 5,
+      "SKIPPED": 2,
+      "SUCCESS": 105
+    },
+    "failing": [
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.13)"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed-hq",
+      "at": "2026-06-28T15:39:56Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 32` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-06-28T15:41:01Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=40371202\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-06-28T20:29:34Z",
+      "excerpt": "@greptile please rereview "
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-07-01T16:58:33Z",
+      "excerpt": "@codex pelase review"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/test_reflex.py"
+  ],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (windows-latest, 3.13)",
+      "run": "unit-tests",
+      "job_id": 102185481207,
+      "cause": "Run unit tests without db dependencies -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/34263039703/job/102185481207"
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.11)",
+      "run": "unit-tests",
+      "job_id": 102185481572,
+      "cause": "Run unit tests without db dependencies -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/34263039703/job/102185481572"
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.10)",
+      "run": "unit-tests",
+      "job_id": 102185481625,
+      "cause": "Run unit tests without db dependencies -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/34263039703/job/102185481625"
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.12)",
+      "run": "unit-tests",
+      "job_id": 102185481640,
+      "cause": "Run unit tests without db dependencies -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/34263039703/job/102185481640"
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.14)",
+      "run": "unit-tests",
+      "job_id": 102185481689,
+      "cause": "Run unit tests without db dependencies -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/34263039703/job/102185481689"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

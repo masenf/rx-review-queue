@@ -64,6 +64,13 @@ case "${1:-}" in
   init) cmd_init ;;
   fetch-main) cmd_fetch_main ;;
   fetch-prs) shift; fetch_numbers "$@" ;;
-  fetch-from) shift; mapfile -t nums < <(grep -Eo '^[0-9]+' "$1"); fetch_numbers "${nums[@]}" ;;
+  fetch-from)
+    shift
+    nums=()
+    while IFS= read -r n; do
+      nums+=("$n")
+    done < <(grep -Eo '^[0-9]+' "$1")
+    fetch_numbers "${nums[@]}"
+    ;;
   *) sed -n '2,20p' "$0"; exit 2 ;;
 esac

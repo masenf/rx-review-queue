@@ -12,6 +12,9 @@ set -euo pipefail
 N="${1:?pr number}"
 OWNER=reflex-dev; REPO=reflex
 
+tmp=$(mktemp)
+trap 'rm -f "$tmp"' EXIT
+
 gh api graphql -f query='
 query($owner:String!,$repo:String!,$n:Int!){
   repository(owner:$owner,name:$repo){
@@ -26,13 +29,39 @@ query($owner:String!,$repo:String!,$n:Int!){
       reviewRequests(first:20){nodes{requestedReviewer{... on User{login} ... on Team{slug}}}}
       reviewThreads(first:100){totalCount nodes{isResolved isOutdated comments(first:1){nodes{author{login} body createdAt}}}}
       comments(last:30){nodes{author{login} createdAt body}}
-      commits(last:1){nodes{commit{
-        statusCheckRollup{state contexts(first:150){totalCount nodes{
-          ... on CheckRun{name status conclusion detailsUrl}
-          ... on StatusContext{context state targetUrl}}}}}}}
+      commits(last:1){nodes{commit{statusCheckRollup{state}}}}
     }
   }
-}' -F owner="$OWNER" -F repo="$REPO" -F n="$N" | jq '
+}' -F owner="$OWNER" -F repo="$REPO" -F n="$N" > "$tmp"
+
+head_sha=$(jq -r '.data.repository.pullRequest.headRefOid' "$tmp")
+checks=$(gh api --paginate "/repos/$OWNER/$REPO/commits/$head_sha/check-runs?per_page=100" | jq -s '
+  [.[].check_runs[]] as $runs |
+  def norm:
+    if . == null then null
+    else ascii_upcase | gsub("-"; "_")
+    end;
+  def state_of($r): (($r.conclusion // $r.status) | norm);
+  def is_failing($s): ["FAILURE", "ERROR", "TIMED_OUT", "ACTION_REQUIRED", "CANCELLED"] | index($s);
+  def is_pending($r):
+    ($r.conclusion == null) or
+    ((($r.status // "") | ascii_downcase) | IN("queued", "in_progress", "waiting", "requested", "pending"));
+  {
+    rollup: (
+      if ($runs | length) == 0 then null
+      elif any($runs[]; is_failing(state_of(.))) then "FAILURE"
+      elif any($runs[]; is_pending(.)) then "PENDING"
+      else "SUCCESS"
+      end
+    ),
+    total: ($runs | length),
+    by_state: ([$runs[] | state_of(.)] | group_by(.) | map({(.[0]): length}) | add // {}),
+    failing: [$runs[] | select(is_failing(state_of(.))) | .name],
+    pending: [$runs[] | select(is_pending(.)) | .name]
+  }
+')
+
+jq --argjson checks "$checks" '
 .data.repository.pullRequest as $p |
 {
   number: $p.number,
@@ -49,12 +78,6 @@ query($owner:String!,$repo:String!,$n:Int!){
     total: $p.reviewThreads.totalCount,
     unresolved: [$p.reviewThreads.nodes[] | select(.isResolved|not) | {by: .comments.nodes[0].author.login, outdated: .isOutdated, first_comment: (.comments.nodes[0].body[:200])}]
   },
-  checks: ($p.commits.nodes[0].commit.statusCheckRollup as $r | {
-    rollup: $r.state,
-    total: $r.contexts.totalCount,
-    by_state: ([$r.contexts.nodes[] | (.conclusion // .state // .status)] | group_by(.) | map({(.[0]): length}) | add),
-    failing: [$r.contexts.nodes[] | select((.conclusion // .state) as $s | $s == "FAILURE" or $s == "ERROR" or $s == "TIMED_OUT") | (.name // .context)],
-    pending: [$r.contexts.nodes[] | select(.conclusion == null and (.state // "PENDING") == "PENDING" or .status == "QUEUED" or .status == "IN_PROGRESS" or .status == "WAITING") | (.name // .context)]
-  }),
+  checks: ($checks + {rollup: ($p.commits.nodes[0].commit.statusCheckRollup.state // $checks.rollup)}),
   recent_comments: [$p.comments.nodes[] | {by: .author.login, at: .createdAt, excerpt: .body[:160]}]
-}'
+}' "$tmp"

@@ -1,0 +1,69 @@
+{
+  "number": 6925,
+  "fetched_at": "2026-09-10T16:39:41Z",
+  "head_sha": "efefbd26e6f9a4819ec53eead737d7b66142ff64",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6923,
+      "title": "@rx.page and add_meta reject State Vars for title/description (VarTypeError)",
+      "filed_by": "tinztwins"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-21T18:46:23Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 111,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 108
+    },
+    "failing": [
+      "pre-commit"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-08-21T18:49:14Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR allows reactive Vars in page titles and descriptions while avoiding Var-unsafe truthiness evaluation.\n- Widens page metadata t"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-08-21T19:12:09Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 27` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    }
+  ],
+  "conflicting_files": [],
+  "failing_job_findings": [
+    {
+      "check": "pre-commit",
+      "run": "pre-commit",
+      "job_id": 96880613089,
+      "cause": "Run uv run pre-commit run --all-files --show-diff-on-failure -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/32516955624/job/96880613089"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

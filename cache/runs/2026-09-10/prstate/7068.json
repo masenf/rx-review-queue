@@ -1,0 +1,276 @@
+{
+  "number": 7068,
+  "fetched_at": "2026-09-10T16:38:40Z",
+  "head_sha": "755126026a43d396329ca83f9d4ef1b7a1bb155e",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-08T22:22:44Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-08T22:26:45Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:13:14Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:18:22Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:22:06Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:22:15Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:22:24Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:22:33Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:22:40Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:22:51Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:27:56Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:30:47Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:30:54Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:31:43Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:31:50Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:32:01Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:36:48Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:42:18Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:44:35Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:47:44Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:51:16Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:51:51Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T23:53:12Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-09T16:08:57Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-09T16:09:09Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-09T21:30:23Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-09T22:30:32Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-09T22:41:28Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 18,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9135c871-671b-4206-9df6-47f0a8df1851 -->\n<!-- cubic:review-run=e5ea5296-38c1-59cd-8a05-6d2adeedae08 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a client has a linked shared state, eve"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This expansion runs too late. `App._validate_var_dependencies` checks the raw `var._deps()` against `state_cls.vars` before this runs, and `router` is no longer a var. Any app with `deps=[\"router\"]` n"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=89207d0d-692c-42b3-b2b3-260e81258fa7 -->\n<!-- cubic:review-run=19c9bd99-842f-52b7-8a84-8f2df6c97d12 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: The final `assert not state._get_was_touched"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4d82a61f-25b2-4a6c-a241-51c7c96436b2 -->\n<!-- cubic:review-run=27d44f5f-526a-5fdd-8ae6-c92c331bd2ed -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a router key changes but its rebuilt pe"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 111,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 108
+    },
+    "failing": [
+      "unit-tests (ubuntu-latest, 3.10)"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-08T22:22:39Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR splits router state into independently tracked fields and caches connection-scoped router data, reducing navigation deltas an"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-09-08T22:43:35Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\ud83c\udd95 1` new benchmark  \n`\u23e9 8` s"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-08T23:10:45Z",
+      "excerpt": "CI caught three things on the first push, all genuinely this PR's. Fixed and pushed (`d5c82f4`); the last one is a real behavioral correction worth flagging rat"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-08T23:32:43Z",
+      "excerpt": "Second review round addressed in `c7e8c18`, plus two CI signals I've concluded are **not** this PR's \u2014 recording the reasoning rather than quietly re-running.\n\n"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-08T23:56:38Z",
+      "excerpt": "Follow-up on the Windows 3.14 unit-tests job, because my [earlier note](https://github.com/reflex-dev/reflex/pull/7068#issuecomment-5593356391) named a specific"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-09T00:24:07Z",
+      "excerpt": "### Correction: the Windows unit-test failure is a pre-existing suite-wide race, and I had the pattern wrong\n\nI said I'd report what Windows did on `9c270ca` ei"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-09T00:33:52Z",
+      "excerpt": "Re-run result, as promised: **`unit-tests (windows-latest, 3.13)` passed** on the second attempt, same commit `9c270ca6`, no code change ([job](https://github.c"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-09T22:22:12Z",
+      "excerpt": "Pushed `4dd07c9` \u2014 `router` is now listed in `State.vars`, so substates inherit it again.\n\n`_RouterDescriptor` subclasses `property`, and `_is_user_descriptor()"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/reflex_base/event/processor/test_base_state_processor.py"
+  ],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10)",
+      "run": "unit-tests",
+      "job_id": 102671084054,
+      "cause": "Run unit tests w/ redis -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/34412876091/job/102671084054"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

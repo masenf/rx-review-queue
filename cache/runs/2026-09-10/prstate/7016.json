@@ -1,0 +1,75 @@
+{
+  "number": 7016,
+  "fetched_at": "2026-09-10T16:39:09Z",
+  "head_sha": "f8b7f638db3a2d9387f15fec9d9a3ae935174912",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-01T13:47:19Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-01T13:55:37Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-01T18:47:12Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 7,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 109
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-01T13:47:15Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR preserves explicit bundled-library registrations across compilation and routes dynamic subpath imports through their correspon"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-09-01T13:49:03Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 32` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-04T18:11:07Z",
+      "excerpt": "can you explain what scenarios result in triggering this bug? i understand what's going on, but it seems like most situations that matter, like hot-reload would"
+    },
+    {
+      "by": "harsh21234i",
+      "at": "2026-09-05T12:06:35Z",
+      "excerpt": " I agree that normal hot-reload may re-run the app module and re-register the library, which can mask the problem. The bug is not limited to source-file hot-rel"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/compiler/test_compiler.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

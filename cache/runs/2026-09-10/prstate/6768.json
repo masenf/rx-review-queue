@@ -1,0 +1,84 @@
+{
+  "number": 6768,
+  "fetched_at": "2026-09-10T16:40:02Z",
+  "head_sha": "e4123be238ea749bf0cca692265b312a260f01ba",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-15T04:51:34Z",
+      "can_push": true
+    },
+    {
+      "by": "anxkhn",
+      "state": "COMMENTED",
+      "at": "2026-07-27T14:42:30Z",
+      "can_push": false
+    },
+    {
+      "by": "anxkhn",
+      "state": "COMMENTED",
+      "at": "2026-07-27T14:42:32Z",
+      "can_push": false
+    },
+    {
+      "by": "anxkhn",
+      "state": "COMMENTED",
+      "at": "2026-07-27T14:42:47Z",
+      "can_push": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-07-29T22:36:17Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-07-30T19:13:42Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 107,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 105
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed-hq",
+      "at": "2026-07-15T04:51:14Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 26` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-07-15T04:51:26Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR fixes a correctness bug in cached computed vars where `datetime.now()` was used to measure update intervals, making cache exp"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-07-29T22:38:36Z",
+      "excerpt": "@masenf \r\n>we probably don't need to save the last updated marker for vars that don't define _update_interval either"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

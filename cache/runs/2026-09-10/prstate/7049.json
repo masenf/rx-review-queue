@@ -1,0 +1,65 @@
+{
+  "number": 7049,
+  "fetched_at": "2026-09-10T16:38:49Z",
+  "head_sha": "dca7cf1a4b90e703d128f8a59a1de27e2c20449e",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-05T21:29:54Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-05T23:53:49Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 108
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-05T21:25:35Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-05T21:29:16Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=60825958\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-09-05T21:29:22Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 15.87%**\n\n<details>\n<summary>:warning: <b>Different runtime en"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/utils/types.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

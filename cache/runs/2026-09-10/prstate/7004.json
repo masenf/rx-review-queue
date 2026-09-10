@@ -1,0 +1,150 @@
+{
+  "number": 7004,
+  "fetched_at": "2026-09-10T16:39:13Z",
+  "head_sha": "77837d31f542ab6884f0189dbf10e225ce2ab0a7",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 6955,
+      "title": "Auto-memo wrapper tags for @rx.memo components repeat the inner tag",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-29T03:59:11Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-29T04:00:38Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-29T04:46:42Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-01T09:55:52Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-04T19:08:38Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-04T19:08:47Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-04T19:08:58Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-04T19:11:31Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Release note links wrong PR**\n\nWhen the reflex-base changelog is materialized, the "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This test fails on this branch.\n\n`STATE_VAR` is passed as a child, not a prop. `Component.create` wraps it in a `Bare`, so the tree is `Plain(Bare(STATE_VAR))` and the state hooks ride on the `Bare`. "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "`Component.tag` is `str | None`, so the type check gate fails here.\n\n```\nuv run pyright tests/units/compiler/test_memoize_plugin.py\ntest_memoize_plugin.py:2616:33 - error: \"lower\" is not a known attri"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This override repeats the whole body of `Component._compute_memo_tag`. Only one segment of the f-string differs. The imports, the strategy lookup, the hash call and the `format_state_name(...).capital"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 111,
+    "by_state": {
+      "FAILURE": 11,
+      "SKIPPED": 2,
+      "SUCCESS": 98
+    },
+    "failing": [
+      "pre-commit",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (windows-latest, 3.14)"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-08-29T03:59:06Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR removes the duplicated inner tag from generated memo-wrapper names and adds regression coverage. It also adds root and reflex"
+    },
+    {
+      "by": "LeonxLJX",
+      "at": "2026-09-01T09:53:58Z",
+      "excerpt": "Added the missing `reflex-base` news fragment (`news/7004.bugfix.md`) so the release workflow is satisfied.\n\n**Root cause.** `MemoComponent._compute_memo_tag` r"
+    },
+    {
+      "by": "LeonxLJX",
+      "at": "2026-09-04T05:05:29Z",
+      "excerpt": "Bumping for visibility. Greptile flagged a P1 on the `reflex-base` component cache behavior \u2014 basically that under `MemoComponent`'s wrapper-tag dedup, a stale "
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-09-04T18:57:45Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 32` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    }
+  ],
+  "conflicting_files": [],
+  "failing_job_findings": [
+    {
+      "check": "pre-commit",
+      "run": "pre-commit",
+      "job_id": 101138653839,
+      "cause": "Run uv run pre-commit run --all-files --show-diff-on-failure -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/33494621059/job/101138653839"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

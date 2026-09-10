@@ -1,0 +1,90 @@
+{
+  "number": 6876,
+  "fetched_at": "2026-09-10T16:39:45Z",
+  "head_sha": "0441c5a562418cdf283b5b8e77d9155cc0173d06",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6874,
+      "title": "Hidden rx.input is not properly hidden",
+      "filed_by": "luator"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:36:22Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:38:28Z",
+      "can_push": true
+    },
+    {
+      "by": "rawsun007",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:41:22Z",
+      "can_push": false
+    },
+    {
+      "by": "rawsun007",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:41:23Z",
+      "can_push": false
+    },
+    {
+      "by": "rawsun007",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:42:52Z",
+      "can_push": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-14T17:07:17Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=e5833028-396c-4e0b-8673-21c04893a0b7 -->\n<!-- cubic:review-run=b3c804f0-0ab8-40ee-9811-8174442d922d -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Static hidden inputs now fail when used as "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-08-12T08:36:18Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR removes the visible Radix wrapper from statically hidden inputs and updates FormControl to accept the resulting plain input.\n-"
+    },
+    {
+      "by": "rawsun007",
+      "at": "2026-08-15T04:33:23Z",
+      "excerpt": "Yeah, `rx.el.input(type=\"hidden\")` works fine, so if it were just \"how do I render a hidden input\" then a docs line would cover it.\n\nWhat #6874 runs into is tha"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "ai_reviewer_only": true
+}
