@@ -1,0 +1,99 @@
+{
+  "number": 6850,
+  "fetched_at": "2026-09-11T17:57:13Z",
+  "head_sha": "77dbebf715d2001d7744dd1596d0ea7ba020134e",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6849,
+      "title": "Auto-memoized stateful components drop props/refs injected by Radix `asChild` Slot (form field submits empty form_data)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-05T20:35:13Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-05T22:20:52Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-26T01:14:27Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5e668d20-0226-4b10-9eaf-25af4ff4a749 -->\n<!-- cubic:review-run=56d4d2fe-2f00-445c-8959-e3eb25001b60 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: When an own event handler is falsy, this nul"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2aa269bf-7723-4481-b667-552558283f96 -->\n<!-- cubic:review-run=56d4d2fe-2f00-445c-8959-e3eb25001b60 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: \"reflex-base >= 0.9.8.post63.dev0\" is a deve"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9f2f395a-059e-4017-a7e9-93d22fb3563a -->\n<!-- cubic:review-run=56d4d2fe-2f00-445c-8959-e3eb25001b60 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: This guard matches a hard-coded, spacing-sen"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 109
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "linear-code",
+      "at": "2026-08-05T20:31:56Z",
+      "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-10883\">ENG-10883</a></p>"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-08-05T20:35:08Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR makes compiler-generated memo wrappers forward runtime-injected props and refs to their tagged roots while preserving composed"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-08-05T20:35:29Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 27` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-08-26T01:11:23Z",
+      "excerpt": "## Follow-up: production-readiness pass\n\n`main` merged in (the branch was ~50 commits behind), plus four defects found reviewing the design against the emitted "
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/constants/installer.py",
+    "pyi_hashes.json"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

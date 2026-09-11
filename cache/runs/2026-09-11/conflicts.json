@@ -1,0 +1,533 @@
+{
+  "7083": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7115": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7068": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7049": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7114": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7113": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7112": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7079": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7082": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7081": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6688": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "reflex/compiler/compiler.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7054": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6708": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7033": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/config.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7077": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6796": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6932": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "tests/units/test_app.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6930": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6116": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "reflex/compiler/compiler.py",
+      "tests/units/test_config.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7075": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/config.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6100": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/registry.py",
+      "reflex/compiler/compiler.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6861": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7040": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "uv.lock"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6563": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "packages/reflex-base/src/reflex_base/components/dynamic.py",
+      "packages/reflex-base/src/reflex_base/registry.py",
+      "reflex/compiler/compiler.py",
+      "tests/integration/test_dynamic_components.py",
+      "tests/units/compiler/test_compiler.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7061": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7035": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/config.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7064": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "reflex/compiler/compiler.py",
+      "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+      "tests/units/test_app.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7065": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7056": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "reflex/app.py",
+      "tests/units/reflex_base/utils/test_types.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7053": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7052": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "reflex/utils/prerequisites.py",
+      "tests/units/test_prerequisites.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7051": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "reflex/utils/js_runtimes.py",
+      "tests/units/test_prerequisites.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6898": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "docs/app/reflex_docs/redirects.py",
+      "docs/app/reflex_docs/reflex_docs.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "7004": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6996": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7036": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "reflex/state.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6946": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6807": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6968": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7015": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "7007": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/utils/log.py",
+      "uv.lock"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6181": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "tests/units/compiler/test_compiler.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6850": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "packages/reflex-base/src/reflex_base/constants/installer.py",
+      "pyi_hashes.json"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6735": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "pyi_hashes.json"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6935": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "tests/units/test_event.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6925": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6841": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6876": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6744": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/utils/types.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "pyi_hashes.json",
+      "reflex/route.py",
+      "reflex/state.py",
+      "tests/units/istate/test_proxy.py",
+      "tests/units/reflex_base/utils/test_types.py",
+      "tests/units/reflex_base/vars/test_base.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6757": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      ".github/workflows/performance.yml",
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/utils/types.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "pyi_hashes.json",
+      "reflex/app.py",
+      "reflex/istate/manager/redis.py",
+      "reflex/route.py",
+      "reflex/state.py",
+      "tests/units/istate/test_proxy.py",
+      "tests/units/reflex_base/utils/test_types.py",
+      "tests/units/reflex_base/vars/test_base.py",
+      "tests/units/test_app.py",
+      "tests/units/test_state.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6751": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      ".github/workflows/performance.yml",
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/utils/types.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "pyi_hashes.json",
+      "reflex/app.py",
+      "reflex/istate/manager/redis.py",
+      "reflex/route.py",
+      "reflex/state.py",
+      "tests/units/istate/test_proxy.py",
+      "tests/units/reflex_base/utils/test_types.py",
+      "tests/units/reflex_base/vars/test_base.py",
+      "tests/units/test_app.py",
+      "tests/units/test_state.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6798": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/utils/types.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "pyi_hashes.json",
+      "reflex/istate/manager/redis.py",
+      "reflex/route.py",
+      "reflex/state.py",
+      "tests/units/istate/test_proxy.py",
+      "tests/units/reflex_base/utils/test_types.py",
+      "tests/units/reflex_base/vars/test_base.py",
+      "tests/units/test_state.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6745": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/utils/types.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "pyi_hashes.json",
+      "reflex/istate/manager/redis.py",
+      "reflex/route.py",
+      "reflex/state.py",
+      "tests/units/istate/test_proxy.py",
+      "tests/units/reflex_base/utils/test_types.py",
+      "tests/units/reflex_base/vars/test_base.py",
+      "tests/units/test_state.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6743": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "packages/reflex-base/src/reflex_base/utils/types.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "pyi_hashes.json",
+      "reflex/state.py",
+      "tests/units/istate/test_proxy.py",
+      "tests/units/reflex_base/utils/test_types.py",
+      "tests/units/reflex_base/vars/test_base.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6853": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "tests/units/test_state.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6840": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "tests/units/test_state.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6833": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "pyi_hashes.json"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6768": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6770": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6733": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "reflex/app.py",
+      "tests/units/test_app.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6723": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "docs/app/reflex_docs/pages/docs_landing/views/ai_builder.py",
+      "docs/app/reflex_docs/pages/docs_landing/views/link_item.py",
+      "docs/app/reflex_docs/templates/docpage/docpage.py",
+      "docs/app/reflex_docs/views/inkeep.py",
+      "packages/reflex-components-code/src/reflex_components_code/code.py",
+      "packages/reflex-components-code/src/reflex_components_code/shiki_code_block.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6676": {
+    "mergeable": "MERGEABLE",
+    "files": [],
+    "merge_tree_exit": 0
+  },
+  "6597": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "pyi_hashes.json"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6468": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+      "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+      "pyi_hashes.json"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6490": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/config.py",
+      "reflex/istate/manager/redis.py",
+      "reflex/utils/token_manager.py",
+      "tests/units/reflex_cli/conftest.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6553": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "packages/reflex-base/src/reflex_base/context/base.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6126": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "reflex/__init__.py",
+      "reflex/utils/token_manager.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "6125": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "reflex/config.py",
+      "reflex/istate/manager/__init__.py"
+    ],
+    "merge_tree_exit": 1
+  },
+  "5430": {
+    "mergeable": "CONFLICTING",
+    "files": [
+      "pyi_hashes.json",
+      "reflex/components/el/elements/forms.py"
+    ],
+    "merge_tree_exit": 1
+  }
+}

@@ -1,0 +1,97 @@
+{
+ "previous_run": "2026-09-10",
+ "disappeared": [
+  {
+   "number": 7016,
+   "title": "Fix bundled library subpath serialization",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7079,
+   "title": "perf: preload the app and fork production granian workers",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7080,
+   "title": "fix(pyi): mark union props optional in generated stubs",
+   "author": "benedikt-bartscher",
+   "draft": true
+  },
+  {
+   "number": 7081,
+   "title": "feat(data-editor): support image cells",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7082,
+   "title": "Render rx.plotly's id as react-plotly.js's divId",
+   "author": "Ishkirat-Singh",
+   "draft": false
+  },
+  {
+   "number": 7083,
+   "title": "Point at the db extra when a table model is declared without it",
+   "author": "Ishkirat-Singh",
+   "draft": false
+  },
+  {
+   "number": 7084,
+   "title": "Extend rx.memo configuration and function memoization",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7112,
+   "title": "perf: cut dev-mode memory in the frontend and telemetry paths",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7113,
+   "title": "perf: fork the dev backend reload worker instead of using a forkserver",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7114,
+   "title": "Hold the dev backend listen socket in the granian supervisor",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7115,
+   "title": "fix(vars): stop masking AttributeErrors raised in cached var computations",
+   "author": "Zeeshan-Chaudhry",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  6708,
+  7112,
+  7115,
+  7068,
+  7079,
+  7083,
+  7114,
+  7049
+ ],
+ "left_top15": [
+  7075,
+  7054,
+  6563,
+  6932,
+  6116,
+  6996,
+  6925,
+  6807
+ ],
+ "counts": {
+  "previous_open": 92,
+  "current_open": 101
+ }
+}

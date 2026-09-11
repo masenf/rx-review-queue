@@ -1,0 +1,128 @@
+{
+  "number": 7049,
+  "fetched_at": "2026-09-11T17:55:45Z",
+  "head_sha": "794b1e830123e0c5f1cafd30f6c0899b542c2249",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": null,
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-05T21:29:54Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-05T23:53:49Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-10T21:09:43Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-10T21:10:06Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-10T21:10:29Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-10T21:11:02Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-10T21:11:32Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "DISMISSED",
+      "at": "2026-09-10T21:11:48Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "APPROVED",
+      "at": "2026-09-11T16:58:38Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 8,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "`_find_serializer` has cyclomatic complexity 10 (`ruff --select C901` with `max-complexity=8` flags it). On `main`, `get_serializer` and `get_serializer_type` are 4 each. Please split the optional-MRO"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Matching `get_origin(serializer_type)` against `into_type` is not related to import deferral. It changes `can_use_in_object_var` from False to True for every SQLModel class and for any custom serializ"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This installs a process-wide fork hook on import of `reflex_base`. It runs a Plotly `to_json` before every fork in any process that has `Figure` loaded, including user multiprocessing pools. Please ca"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Nothing in the repo or docs references `MUTABLE_TYPES` besides the new tests. If it stays for compatibility, `__getattr__` alone is enough. Please drop `__dir__` and the synthesized `__all__` branch."
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This overlaps with `news/+backend-startup-followup.performance.md`. Please merge the two into one performance fragment."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 114,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 112
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-05T21:25:35Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-05T21:29:16Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=60825958\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-09-05T21:29:22Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 15.75%**\n\n<details>\n<summary>:warning: <b>Different runtime en"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": true,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

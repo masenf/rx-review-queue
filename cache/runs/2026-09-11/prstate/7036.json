@@ -1,0 +1,110 @@
+{
+  "number": 7036,
+  "fetched_at": "2026-09-11T17:56:56Z",
+  "head_sha": "4ed537a69f40f3b8549a622561c2d15308136869",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-02T17:58:51Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-09-02T17:59:53Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-02T18:05:09Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Failed recomputation loses stale state**\n\nWhen a stale computed getter raises, `_re"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Keep dynamically added dependencies in the forward map**\n\nWhen a cached synchronous computed var calls `add_depe"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Skip dependencies already resolved from the stale snapshot**\n\nWhen a dependent computed var appears before its d"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Preserve the sign when comparing zero-valued floats**\n\nFor float state or computed values, `0.0 == -0.0` even th"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=56981d76-cc09-425b-90dc-946047d3e2e8 -->\n<!-- cubic:review-run=57a15034-8d64-42db-8fe9-69b7df444ce0 -->\n<!-- metadata:{\"confidence\":9} -->\nP1: When a cached synchronous `ComputedVar` rece"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=fc6717b1-1b78-4d12-9130-f146fab9927c -->\n<!-- cubic:review-run=57a15034-8d64-42db-8fe9-69b7df444ce0 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: If a stale computed getter raises, this meth"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-02T17:55:03Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-09-02T17:58:21Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.52%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-02T17:58:44Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR optimizes state dirty tracking by skipping unchanged scalar assignments and resolving invalidated cached computed variables la"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-02T18:39:30Z",
+      "excerpt": "this is definitely a behavior change that will affect some apps i've seen in the wild that use self-assignment to manually trigger a cascade of dependent comput"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-09-02T19:02:57Z",
+      "excerpt": "@masenf droped that. Other changes are worth a look i think. "
+    }
+  ],
+  "conflicting_files": [
+    "reflex/state.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "ai_reviewer_only": true
+}

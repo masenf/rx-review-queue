@@ -1,0 +1,99 @@
+{
+  "number": 6743,
+  "fetched_at": "2026-09-11T17:57:29Z",
+  "head_sha": "f9e40102854fabdbbd781e2b0bd9d95a23a74c07",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": null,
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-07-14T00:14:55Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-13T01:09:02Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-13T01:18:50Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-13T17:26:32Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-13T17:26:35Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-08-13T17:26:37Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-13T17:27:38Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 5,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 5,
+    "by_state": {
+      "SUCCESS": 5
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "linear-code",
+      "at": "2026-07-10T20:20:49Z",
+      "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-10095\">ENG-10095</a></p>"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-07-10T20:23:25Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR improves state hot-path performance across validation, proxying, and dirty propagation. The main changes are:\n\n- Shallow vali"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-07-10T20:24:07Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 5.02%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/utils/types.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "pyi_hashes.json",
+    "reflex/state.py",
+    "tests/units/istate/test_proxy.py",
+    "tests/units/reflex_base/utils/test_types.py",
+    "tests/units/reflex_base/vars/test_base.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

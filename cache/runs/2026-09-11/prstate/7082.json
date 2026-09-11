@@ -1,0 +1,63 @@
+{
+  "number": 7082,
+  "fetched_at": "2026-09-11T17:55:54Z",
+  "head_sha": "f87ba9b5eeefabd68d42fb225582065af38462f2",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6977,
+      "title": "rx.plotly silently drops the id prop (react-plotly.js expects divId)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-10T22:25:55Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-10T22:27:04Z",
+      "can_push": true
+    },
+    {
+      "by": "Ishkirat-Singh",
+      "state": "COMMENTED",
+      "at": "2026-09-10T22:47:26Z",
+      "can_push": false
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-10T22:26:59Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=62840735\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "ai_reviewer_only": true
+}

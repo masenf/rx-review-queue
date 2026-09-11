@@ -1,0 +1,97 @@
+{
+  "number": 6468,
+  "fetched_at": "2026-09-11T17:57:48Z",
+  "head_sha": "4f7dfb99b992721999c90dc3d989c571539b7d87",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6214,
+      "title": "Single-pass compiler: Make Component effectively immutable",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-05-07T15:59:47Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=7\" align=\"top\"></a> **`ref` silently dropped when `DataTable` has an `id`**\n\n`Component._render(props=Non"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 72,
+    "by_state": {
+      "FAILURE": 3,
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 66
+    },
+    "failing": [
+      "reflex-docs (3.11)",
+      "reflex-docs (3.12)",
+      "docs-tests"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-05-07T15:59:35Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR refactors Reflex's component system to be immutable after construction: `children` is now stored as a `tuple`, a `__setattr__"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-05-07T15:59:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 3.55%**\n\n\n\n\n`\u26a1 2` improved benchmarks  \n`\u2705 22` untouched bench"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+    "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+    "pyi_hashes.json"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false,
+  "failing_job_findings": [
+    {
+      "check": "docs-tests",
+      "run": "docs tests",
+      "job_id": 78593517131,
+      "cause": "Run docs app tests -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/26664125535/job/78593517131"
+    },
+    {
+      "check": "reflex-docs (3.12)",
+      "run": "integration-tests",
+      "job_id": 78593517349,
+      "cause": "Run Website and Check for errors -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/26664125549/job/78593517349"
+    },
+    {
+      "check": "reflex-docs (3.11)",
+      "run": "integration-tests",
+      "job_id": 78593517367,
+      "cause": "Run Website and Check for errors -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/26664125549/job/78593517367"
+    }
+  ]
+}

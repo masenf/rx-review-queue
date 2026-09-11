@@ -1,0 +1,118 @@
+{
+  "number": 7007,
+  "fetched_at": "2026-09-11T17:57:08Z",
+  "head_sha": "dd8c0080693bccb50966571d1ba134e876a1a8ce",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-30T18:26:42Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-30T18:28:51Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-08-30T18:29:37Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Registrations outlive their routes**\n\nWhen client-side navigation unmounts a route-"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Qualified state names collide**\n\nWhen different modules define bound State classes "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=ae6fa27c-34cc-4088-a568-a170098f5a5b -->\n<!-- cubic:review-run=5b9316fa-43ae-4705-9243-9d6d6d27383a -->\n<!-- metadata:{\"confidence\":8} -->\nP2: The new workspace package `reflex-webmcp` (i"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9f191d10-6e46-486d-9cb9-2a4c7000905a -->\n<!-- cubic:review-run=5b9316fa-43ae-4705-9243-9d6d6d27383a -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When two state classes in different modules "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b347a44d-b70a-4d73-9e8f-c3872e4c619e -->\n<!-- cubic:review-run=5b9316fa-43ae-4705-9243-9d6d6d27383a -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a route component is unmounted, this re"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a6203fe3-e449-48ce-8828-0cc8c6223298 -->\n<!-- cubic:review-run=5b9316fa-43ae-4705-9243-9d6d6d27383a -->\n<!-- metadata:{\"confidence\":6} -->\nP3: The example code block calls `search_product"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Include the full state identity in tool names**\n\nWhen two page modules define the same class and handler names ("
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Scope registered tools to the active route**\n\nIn a multi-route Reflex app, client-side navigation reuses the sam"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Unwrap TypedDict field requirement annotations**\n\nWhen a `TypedDict` uses `Required[T]` or `NotRequired[T]`\u2014the "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 115,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 113
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-08-30T18:24:18Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-08-30T18:26:37Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR adds the `reflex-webmcp` workspace package, which discovers component-bound backend events during compilation and exposes them"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-08-30T18:27:28Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 32` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/utils/log.py",
+    "uv.lock"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

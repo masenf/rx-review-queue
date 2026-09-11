@@ -1,0 +1,209 @@
+{
+  "number": 6100,
+  "fetched_at": "2026-09-11T17:56:24Z",
+  "head_sha": "c8a6688d080dc12d42f39c31a381fb3f8e5e6e42",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "abulvenz",
+      "state": "COMMENTED",
+      "at": "2026-01-27T20:37:21Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-02-04T21:31:02Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-02-05T23:54:44Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-02-12T19:02:34Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-02-12T19:21:56Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-02-12T19:22:50Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-04-25T20:57:54Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-09T20:28:28Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-07-09T22:57:26Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-20T18:48:15Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-20T19:33:51Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-20T22:10:17Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-20T22:31:00Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-22T10:39:23Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-26T22:29:23Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-04T17:43:18Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-04T18:05:40Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T18:27:40Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T18:27:42Z",
+      "can_push": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T21:04:19Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "abulvenz"
+  ],
+  "threads": {
+    "total": 30,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": false,
+        "first_comment": "why does this one get the value through `.event_handlers` but the others are directly accessing the event handler by attribute"
+      },
+      {
+        "by": "masenf",
+        "outdated": false,
+        "first_comment": "it would be nice to get around this limitation, but i don't think that needs to block us for this initial implementation."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 114,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 112
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed-hq",
+      "at": "2026-01-24T21:53:56Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 14.2%**\n\n\n`\u26a1 4` improved benchmarks  \n`\u2705 36` untouched benchma"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-01-28T20:55:26Z",
+      "excerpt": "TODO: best-effort-mode\r\n- walk trough the state id registry after the app module get's imported\r\n- filter out all states with explicit state id\r\n- sort the rema"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-01-28T21:00:01Z",
+      "excerpt": "Open for discussion: Should reflex reserve the first 5/10 state id's for internal states? Current reflex uses 0-3, but that might change in the future.\r\n\r\nedit:"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-01-28T21:23:05Z",
+      "excerpt": "TODO: think about sibling uniqueness for states. currently using global uniqueness\r\n\r\nedit: adjusted in [6b4c5fa](https://github.com/reflex-dev/reflex/pull/6100"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-02-01T11:05:28Z",
+      "excerpt": "Idea: store ids in a minify.json file\r\n\r\n- allows overwriting state ids for upstream dependencies and reflex core\r\n- one centralized place for the ids\r\n- keep t"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-02-05T23:54:39Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=21580814\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-02-12T19:28:11Z",
+      "excerpt": "Thanks you @masenf!\r\n\r\n> the explicit management of the minified names via cli solves our earlier problems of mismatching the minified names between compile and"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-07-09T21:23:25Z",
+      "excerpt": "Want your agent to iterate on Greptile's feedback? Try [*greploops*](https://github.com/greptileai/skills)."
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/registry.py",
+    "reflex/compiler/compiler.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

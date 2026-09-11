@@ -1,0 +1,100 @@
+{
+  "number": 7081,
+  "fetched_at": "2026-09-11T17:55:57Z",
+  "head_sha": "b0b9fd060afd54567013d276dac03af151ea88c6",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 4468,
+      "title": "Dataeditor images support",
+      "filed_by": "alexander-potemkin"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-10T22:10:19Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-10T22:10:40Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9eac0cd4-f32d-4b13-a106-bdfb1749070b -->\n<!-- cubic:review-run=a305372f-1454-5319-a51e-7a7d319fe1af -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a user activates an image cell, the bui"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Image previews remain writable**\n\nImage columns are editable by default, so this se"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Image behavior remains untested**\n\nThis test only searches the JavaScript source fo"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 115,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 2,
+      "SUCCESS": 111
+    },
+    "failing": [
+      "changelog",
+      "reflex-install-and-init"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-10T22:10:35Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=62834086\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed-hq",
+      "at": "2026-09-10T22:12:53Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false,
+  "failing_job_findings": [
+    {
+      "check": "reflex-install-and-init",
+      "run": "reflex-init-in-docker-test",
+      "job_id": 103067048657,
+      "cause": "Run # Run reflex init in a docker container -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/34535817929/job/103067048657"
+    },
+    {
+      "check": "changelog",
+      "run": "changelog",
+      "job_id": 103067048935,
+      "cause": "Check for news fragments -> failure",
+      "url": "https://github.com/reflex-dev/reflex/actions/runs/34535818022/job/103067048935"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "number": 6946,
+  "fetched_at": "2026-09-11T17:56:59Z",
+  "head_sha": "0b5912a3e1f2bcab67021a59dd9819c80585da61",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-25T19:20:52Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-25T19:33:02Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T20:59:00Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T20:59:03Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T20:59:14Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T20:59:20Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T20:59:31Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T20:59:37Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T20:59:46Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T20:59:51Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-08-27T21:00:01Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-27T21:00:01Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-27T21:00:26Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=6cc872f6-bbcc-4ef0-9381-e033d7f3130a -->\n<!-- cubic:review-run=4ecfe020-70fa-47d3-a775-2e7b2e0638b0 -->\n<!-- metadata:{\"confidence\":8} -->\nP1: Derive the delta token from the root state r"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=e1bfcc5d-bb9c-44d6-894a-0707f54a41c7 -->\n<!-- cubic:review-run=4ecfe020-70fa-47d3-a775-2e7b2e0638b0 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This dynamically generated tracking attribut"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=977775af-22c0-4ca8-adb9-d54783cda777 -->\n<!-- cubic:review-run=4ecfe020-70fa-47d3-a775-2e7b2e0638b0 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: When linked clients alternate deltas, this "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=02017da6-ad0c-4f61-9cbe-2881c291198e -->\n<!-- cubic:review-run=4ecfe020-70fa-47d3-a775-2e7b2e0638b0 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a value has no registered serializer, `"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 112,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 110
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed-hq",
+      "at": "2026-08-25T19:20:19Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 32` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-08-25T19:20:45Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR deduplicates unchanged uncached computed-variable values while preserving recomputation and per-client delta tracking.\n- Adds "
+    },
+    {
+      "by": "masenf",
+      "at": "2026-08-27T21:00:26Z",
+      "excerpt": "## Review pass + follow-up work\n\n### Fixed in a9748a8\n\n- **`packages/reflex-base/news/` fragment was missing** \u2014 this was the failing `changelog` job, not a fla"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}

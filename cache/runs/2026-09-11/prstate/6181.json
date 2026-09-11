@@ -1,0 +1,60 @@
+{
+  "number": 6181,
+  "fetched_at": "2026-09-11T17:57:10Z",
+  "head_sha": "74730305f3e0f5f39ad73328d3758f8a7abf8eb8",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-03-16T16:34:21Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-26T07:45:56Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 109
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed-hq",
+      "at": "2026-03-16T16:24:00Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 27` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-03-16T16:34:15Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR separates generated substates into independent React context providers, reducing unnecessary rerenders while preserving a shar"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/compiler/templates.py",
+    "tests/units/compiler/test_compiler.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "ai_reviewer_only": false
+}
