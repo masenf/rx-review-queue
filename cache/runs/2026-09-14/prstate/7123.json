@@ -1,0 +1,84 @@
+{
+ "number": 7123,
+ "fetched_at": "2026-09-14T23:03:42Z",
+ "head_sha": "35c11e12c633bfe093c5a874a193e4dac7989357",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:19:39Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:20:15Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 5,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=dd19ea37-4203-487c-b610-9a4da080a51d -->\n<!-- cubic:review-run=686b3b0d-c502-5d76-b7ea-d92e6fb30aeb -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a component tree is deep-copied, this h"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=e515dee2-e564-4aff-9ff2-8d6e874f9cf6 -->\n<!-- cubic:review-run=686b3b0d-c502-5d76-b7ea-d92e6fb30aeb -->\n<!-- metadata:{\"confidence\":7} -->\nP2: When the same `RegistrationContext` is reuse"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=c28ef63a-eb35-4373-8b0c-f2b0fe62d50d -->\n<!-- cubic:review-run=686b3b0d-c502-5d76-b7ea-d92e6fb30aeb -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When applications generate many short-lived "
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=c870c328-eeb9-4fb7-8f6e-93e1d284e0aa -->\n<!-- cubic:review-run=686b3b0d-c502-5d76-b7ea-d92e6fb30aeb -->\n<!-- metadata:{\"confidence\":9} -->\nP3: `assert definition.component is definition.c"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Cached imports are mutated**\n\nAssigning `analysis.imports` directly to `render._imp"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 2,
+  "by_state": {
+   "SUCCESS": 2
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-09-11T23:14:27Z",
+   "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-11T23:20:08Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=63304325\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  }
+ ],
+ "conflicting_files": [
+  "tests/units/reflex_base/vars/test_base.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": true,
+ "failing_job_findings": []
+}

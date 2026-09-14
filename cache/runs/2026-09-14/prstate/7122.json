@@ -1,0 +1,95 @@
+{
+ "number": 7122,
+ "fetched_at": "2026-09-14T23:03:41Z",
+ "head_sha": "c9103569b32c5a3f0aad318da1c9444c9f62bcb6",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:18:20Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:20:27Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:28:37Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 6,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Root News Fragment Missing**\n\nThis changes production code in the root `reflex` pac"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Add the required root Reflex news fragment**\n\nThis commit changes packaged source under `reflex/`, but both new "
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=fc49adff-19dd-42f8-aba3-839678ae28c2 -->\n<!-- cubic:review-run=d6bc0a66-0279-563c-8b87-f8b8b7b84d24 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Add a root `news/+<slug>.performance.md` fra"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=3aa83181-6104-4837-aa3a-5e83f6e21440 -->\n<!-- cubic:review-run=d6bc0a66-0279-563c-8b87-f8b8b7b84d24 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: The new `_memoized_event_triggers` cache gro"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=93131749-c384-4e11-a5d3-7283c691a2f1 -->\n<!-- cubic:review-run=d6bc0a66-0279-563c-8b87-f8b8b7b84d24 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When an ABC-backed `python_types` registrati"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=eac89a3f-7fcf-4e83-baee-432369939359 -->\n<!-- cubic:review-run=d6bc0a66-0279-563c-8b87-f8b8b7b84d24 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Each new concrete value type is retained per"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 2,
+  "by_state": {
+   "SUCCESS": 2
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-09-11T23:14:12Z",
+   "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-11T23:18:15Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=63304266\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  }
+ ],
+ "conflicting_files": [
+  "tests/units/reflex_base/vars/test_base.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": true,
+ "failing_job_findings": []
+}

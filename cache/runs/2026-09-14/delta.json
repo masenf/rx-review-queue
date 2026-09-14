@@ -1,0 +1,136 @@
+{
+ "previous_run": "2026-09-11",
+ "disappeared": [
+  {
+   "number": 6861,
+   "title": "fix(upload): handle unknown event handlers",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7049,
+   "title": "Reduce dev startup memory by deferring unused integrations",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7075,
+   "title": "fix(config): keep rxconfig dependencies on same-root reload",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7080,
+   "title": "fix(pyi): mark union props optional in generated stubs",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7081,
+   "title": "feat(data-editor): support image cells",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7082,
+   "title": "Render rx.plotly's id as react-plotly.js's divId",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7083,
+   "title": "Point at the db extra when a table model is declared without it",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7112,
+   "title": "perf: cut dev-mode memory in the frontend and telemetry paths",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7114,
+   "title": "Hold the dev backend listen socket in the granian supervisor",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7115,
+   "title": "fix(vars): stop masking AttributeErrors raised in cached var computations",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7121,
+   "title": "perf(compile): read only set props and cache literal Var dispatch",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7122,
+   "title": "perf(events): share one chain per handler and trigger across call sites",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7123,
+   "title": "perf(memo): evaluate passthrough bodies once and reuse their analysis",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7136,
+   "title": "Validate reserved state names before registration",
+   "author": "FarhanAliRaza",
+   "draft": true
+  },
+  {
+   "number": 7137,
+   "title": "Bring the editorial marketing design to the docs site",
+   "author": "Alek99",
+   "draft": true
+  },
+  {
+   "number": 7138,
+   "title": "migrate all time env vars to timedelta",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7140,
+   "title": "Refresh docker-example deployments for current Reflex",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7142,
+   "title": "Fix race condition in stateful pages marker with atomic writes",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7144,
+   "title": "fix(config): preserve preloaded rxconfig classes",
+   "author": "FarhanAliRaza",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  7033,
+  7138,
+  7142,
+  6996,
+  6946,
+  6100,
+  6968,
+  6770
+ ],
+ "left_top15": [
+  6861,
+  7112,
+  7115,
+  7079,
+  7083,
+  7114,
+  7049,
+  7015
+ ],
+ "counts": {
+  "previous_open": 101,
+  "current_open": 100
+ }
+}

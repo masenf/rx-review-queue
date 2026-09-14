@@ -1,0 +1,103 @@
+{
+ "number": 7061,
+ "fetched_at": "2026-09-14T23:04:03Z",
+ "head_sha": "8dedc2d1fde615a9c77eae307808445157ceaf9e",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-07T17:58:25Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-07T18:02:45Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-09T15:25:12Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-09T15:30:34Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 5,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": true,
+    "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Hardcoded State Field Keys**\n\nThese assertions use `\"status\"`, `\"sort_reverse\"`, `\""
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Table Correctness Is Unchecked**\n\nThe refactor removes `test_table_event_deltas`, w"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=2589e5b3-c66e-4948-adcb-64e1320d8908 -->\n<!-- cubic:review-run=39d32ad9-4d1e-516d-addc-d4d9e83391c0 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: The counter workload's state grows across be"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=9f8e42d9-b75d-4510-aab0-75e9daf16113 -->\n<!-- cubic:review-run=39d32ad9-4d1e-516d-addc-d4d9e83391c0 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Keep a separate correctness assertion for t"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "FAILURE": 1,
+   "SKIPPED": 2,
+   "SUCCESS": 108
+  },
+  "failing": [
+   "reflex-install-and-init"
+  ],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-09-07T17:56:10Z",
+   "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-07T17:58:22Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=61313977\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed-hq",
+   "at": "2026-09-07T18:00:23Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 3.03%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "reflex-install-and-init",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  }
+ ]
+}

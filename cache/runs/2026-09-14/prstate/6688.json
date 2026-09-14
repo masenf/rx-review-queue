@@ -1,0 +1,424 @@
+{
+ "number": 6688,
+ "fetched_at": "2026-09-14T23:03:26Z",
+ "head_sha": "2b45a6aa02d248c00a8e3a60255c1b31811551f5",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-06-29T20:58:02Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-06-29T21:44:14Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-06-30T15:47:36Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-01T16:39:41Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-01T17:01:13Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-07-01T17:07:03Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-03T00:05:02Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-07-03T00:10:13Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-03T15:08:08Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-07-03T16:20:19Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-14T18:25:08Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-28T23:23:07Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-09T15:13:05Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-05T16:21:10Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-05T16:24:45Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:01:18Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:01:24Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:01Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:03Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:05Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:07Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:09Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:10Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:12Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:14Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:15Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:17Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:19Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:21Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:22Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:24Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:26Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:27Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:29Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:31Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:33Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:35Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:37Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:39Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:40Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:42Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:44Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:14:59Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:15:28Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T19:24:06Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-10T20:20:27Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:44:09Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:44:15Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:44:19Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:43Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "Alek99"
+ ],
+ "threads": {
+  "total": 57,
+  "unresolved": [
+   {
+    "by": "masenf",
+    "outdated": true,
+    "first_comment": "the practical problem with resetting this every time is that the generated names are order-dependent. so if the first compilation hits 3 pages and they each use `get_unique_variable_name()` once, then"
+   },
+   {
+    "by": "masenf",
+    "outdated": true,
+    "first_comment": "all supported OS provide a mechanism for watching a filesystem for changes without polling. we cannot be walking the filesystem and stat'ing files every 0.05 seconds. the comments say stat is cheap, b"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=f4751402-aa73-4b92-a606-aae48c789b14 -->\n<!-- cubic:review-run=1a5be7da-4779-5038-94f5-28667b054410 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This test leaves its locally defined `CacheC"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 115,
+  "by_state": {
+   "FAILURE": 10,
+   "SKIPPED": 2,
+   "SUCCESS": 103
+  },
+  "failing": [
+   "unit-tests (ubuntu-latest, 3.13)",
+   "unit-tests (windows-latest, 3.13)",
+   "unit-tests (windows-latest, 3.12)",
+   "unit-tests (ubuntu-latest, 3.11)",
+   "unit-tests (windows-latest, 3.14)",
+   "unit-tests (windows-latest, 3.11)",
+   "unit-tests (ubuntu-latest, 3.14)",
+   "unit-tests (windows-latest, 3.10)",
+   "unit-tests (ubuntu-latest, 3.10)",
+   "unit-tests (ubuntu-latest, 3.12)"
+  ],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "codspeed-hq",
+   "at": "2026-06-28T15:39:56Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-06-28T15:41:01Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=40371202\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "FarhanAliRaza",
+   "at": "2026-06-28T20:29:34Z",
+   "excerpt": "@greptile please rereview "
+  },
+  {
+   "by": "FarhanAliRaza",
+   "at": "2026-07-01T16:58:33Z",
+   "excerpt": "@codex pelase review"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "unit-tests (ubuntu-latest, 3.13)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (windows-latest, 3.13)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (windows-latest, 3.12)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (ubuntu-latest, 3.11)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (windows-latest, 3.14)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (windows-latest, 3.11)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (ubuntu-latest, 3.14)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (windows-latest, 3.10)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (ubuntu-latest, 3.10)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  },
+  {
+   "check": "unit-tests (ubuntu-latest, 3.12)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  }
+ ]
+}

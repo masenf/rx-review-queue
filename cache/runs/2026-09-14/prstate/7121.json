@@ -1,0 +1,95 @@
+{
+ "number": 7121,
+ "fetched_at": "2026-09-14T23:03:44Z",
+ "head_sha": "870787ab2267a5ddfb1eb0927d533a4d485e6d3b",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:18:00Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:18:39Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:20:05Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 6,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=7884fea9-f84c-400a-822c-0c39fe2a0291 -->\n<!-- cubic:review-run=f8bef0b1-11ca-5b50-be59-1621296ae800 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a child renderer returns a `dict` subcl"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=c6bfcaf5-6993-4b5f-97fa-dcee0070801b -->\n<!-- cubic:review-run=f8bef0b1-11ca-5b50-be59-1621296ae800 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a literal-supported value has an unhash"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=566cb27c-f3ee-4600-b66b-9a52facc072a -->\n<!-- cubic:review-run=f8bef0b1-11ca-5b50-be59-1621296ae800 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This test permanently mutates module-level g"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Missing root changelog fragment**\n\nThis changes source in the root `reflex` package"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Add the required root-package news fragment**\n\nThis modifies the main `reflex` package by changing `reflex/compi"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Route stored descriptor props through their getter**\n\nWhen a custom `Component` overrides an inherited JavaScrip"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 2,
+  "by_state": {
+   "SUCCESS": 2
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-09-11T23:14:00Z",
+   "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-11T23:18:33Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=63304166\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  }
+ ],
+ "conflicting_files": [
+  "tests/units/reflex_base/vars/test_base.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": true,
+ "failing_job_findings": []
+}

@@ -1,0 +1,82 @@
+{
+ "number": 7077,
+ "fetched_at": "2026-09-14T23:03:58Z",
+ "head_sha": "b4c2d768c7d29b4970a1e3e1887f0d3b4d31c8d2",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 7074,
+   "title": "Substate field shadowing a parent's base var is silently dropped (wrong value, non-reactive class access)",
+   "filed_by": "masenf"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-10T10:58:50Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-10T11:02:50Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-10T15:57:21Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": true,
+    "first_comment": "<!-- cubic:v=2f060c10-c062-42f1-a96d-656930cfb6b2 -->\n<!-- cubic:review-run=1620416d-fefe-5bcd-9bef-ffa9bbc132c2 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a parent state already overrides a desc"
+   },
+   {
+    "by": "masenf",
+    "outdated": false,
+    "first_comment": "something about this phrasing reads as confusing to me, because calling the function with `include_properties=True` is like saying \"include properties in the list of explicitly excluded descriptors th"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 2,
+  "by_state": {
+   "SUCCESS": 2
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-10T10:58:44Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=62549575\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "blockgroot",
+   "at": "2026-09-10T11:09:16Z",
+   "excerpt": "Thanks both \u2014 Greptile's P1 was valid and is fixed in `b4c2d768`.\n\nThe exemption was too broad: it accepted a same-named descriptor anywhere in the MRO without "
+  },
+  {
+   "by": "cubic-dev-ai",
+   "at": "2026-09-10T11:12:18Z",
+   "excerpt": "> Thanks both \u2014 Greptile's P1 was valid and is fixed in `b4c2d768`.\n> \n> The exemption was too broad: it accepted a same-named descriptor anywhere in the MRO wi"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": true,
+ "failing_job_findings": []
+}

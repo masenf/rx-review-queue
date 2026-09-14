@@ -1,0 +1,65 @@
+{
+ "number": 6925,
+ "fetched_at": "2026-09-14T23:04:46Z",
+ "head_sha": "efefbd26e6f9a4819ec53eead737d7b66142ff64",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 6923,
+   "title": "@rx.page and add_meta reject State Vars for title/description (VarTypeError)",
+   "filed_by": "tinztwins"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-21T18:46:23Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 0,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 111,
+  "by_state": {
+   "FAILURE": 1,
+   "SKIPPED": 2,
+   "SUCCESS": 108
+  },
+  "failing": [
+   "pre-commit"
+  ],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-08-21T18:49:14Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR allows reactive Vars in page titles and descriptions while avoiding Var-unsafe truthiness evaluation.\n- Widens page metadata t"
+  },
+  {
+   "by": "codspeed-hq",
+   "at": "2026-08-21T19:12:09Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 27` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "pre-commit",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  }
+ ]
+}

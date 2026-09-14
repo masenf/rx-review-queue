@@ -1,0 +1,93 @@
+{
+ "number": 7142,
+ "fetched_at": "2026-09-14T23:03:23Z",
+ "head_sha": "fcef7f46ff7630a37ee9d76e191f05f250023a0d",
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:55:15Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-14T21:01:20Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 7,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Marker permissions become restrictive**\n\nIf frontend compilation and backend startu"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Legacy corruption still crashes**\n\nA deployment can retain a truncated marker produ"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Dry runs modify artifacts**\n\nRemoving the state check makes stateless dry-run compi"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=879983b9-a059-472d-8c35-6620190fc125 -->\n<!-- cubic:review-run=c176c6b7-b382-568e-96d6-2e96e9d8bdc6 -->\n<!-- metadata:{\"confidence\":9} -->\nP1: Catch `json.JSONDecodeError` as well as `Fil"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=9eb47c98-ec97-4a04-bc1a-d827b4f8540d -->\n<!-- cubic:review-run=c176c6b7-b382-568e-96d6-2e96e9d8bdc6 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: In `test_write_stateful_pages_marker_concurr"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=930343fb-d684-43ab-bdee-084731061eb1 -->\n<!-- cubic:review-run=c176c6b7-b382-568e-96d6-2e96e9d8bdc6 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: If `os.fdopen` fails before taking ownership"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=d0049580-7d85-40e1-b078-207a2ef9707c -->\n<!-- cubic:review-run=c176c6b7-b382-568e-96d6-2e96e9d8bdc6 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When frontend and backend run under differen"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 114,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 112
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-14T20:55:09Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=64139804\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed-hq",
+   "at": "2026-09-14T20:56:18Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

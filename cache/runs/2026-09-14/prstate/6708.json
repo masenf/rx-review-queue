@@ -1,0 +1,232 @@
+{
+ "number": 6708,
+ "fetched_at": "2026-09-14T23:03:57Z",
+ "head_sha": "e4f46c3b86ef8d1a2ecb4669310c9602c2b801ec",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "APPROVED",
+ "linked_issues": [
+  {
+   "number": 6558,
+   "title": "Wrap recharts SankeyChart",
+   "filed_by": "masenf"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-06T16:17:41Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-07-06T16:23:45Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-09T22:28:19Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-30T00:54:43Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-01T12:19:29Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-01T12:24:32Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-01T16:38:35Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-01T18:12:11Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-09T11:08:28Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-09T16:20:09Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-09T16:20:11Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-09T16:20:13Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-09T16:20:15Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "CHANGES_REQUESTED",
+   "at": "2026-09-09T16:20:28Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-10T09:05:58Z",
+   "can_push": true
+  },
+  {
+   "by": "harsh21234i",
+   "state": "COMMENTED",
+   "at": "2026-09-10T11:14:33Z",
+   "can_push": false
+  },
+  {
+   "by": "harsh21234i",
+   "state": "COMMENTED",
+   "at": "2026-09-10T11:15:18Z",
+   "can_push": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-10T14:59:03Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-10T17:48:43Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T17:57:47Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T17:57:49Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T17:57:51Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T17:57:53Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T17:57:54Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "APPROVED",
+   "at": "2026-09-10T18:07:49Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "Alek99",
+  "masenf"
+ ],
+ "threads": {
+  "total": 29,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 115,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 113
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-07-06T16:17:36Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=42112825\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed-hq",
+   "at": "2026-07-09T22:20:20Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-07-10T03:17:21Z",
+   "excerpt": " Removed `link_width` because Recharts does not expose a top-level `Sankey` prop for link width. Link width is\r\n  computed from link values and exposed only to "
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-07-13T07:32:52Z",
+   "excerpt": "hey @masenf  @FarhanAliRaza  can someone look into this ?"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-08-01T13:28:07Z",
+   "excerpt": "Pushed `ad5de4fa` with two fixes:\r\n\r\n- Added the missing `reflex-components-core` dependency for `reflex-components-recharts` and its pyi build hook dependencie"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-08-13T03:08:31Z",
+   "excerpt": "Hey @masenf  The failing check is test_call_script[inline], where external4 is not loaded. This PR does not modify the call- script or integration harness code,"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-09-09T11:54:26Z",
+   "excerpt": "hey @masenf  please take a look  when free :)"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-09-10T11:59:40Z",
+   "excerpt": "Thanks for identifying this. The failure was caused by stale generated .pyi hashes in pyi_hashes.json, not by the implementation. I updated the charts.pyi and r"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": true,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}
