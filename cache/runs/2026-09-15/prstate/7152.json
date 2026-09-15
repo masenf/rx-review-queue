@@ -1,0 +1,109 @@
+{
+ "number": 7152,
+ "fetched_at": "2026-09-15T16:29:42Z",
+ "head_sha": "5c1ef1ccc37abb76a17e5bddf05414965b0de59e",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 7151,
+   "title": "Consolidate `console.deprecate` into the `reflex_base.utils.log` pipeline",
+   "filed_by": "masenf"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:07:38Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:18:45Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:25:30Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:32:16Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:44:05Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:51:51Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T15:34:26Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 12,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Legacy Rich options are dropped**\n\nWhen downstream callers pass supported Rich opti"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": true,
+    "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Test clears unrelated dedupe state**\n\nThis helper clears the process-global dedupli"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=2d80523b-f0d5-4cb6-acae-52c39ac4f804 -->\n<!-- cubic:review-run=c8a6e2c6-d068-5f61-b9d5-08aa74c72a7c -->\n<!-- metadata:{\"confidence\":7} -->\nP2: After an external logging reconfiguration re"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 114,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 112
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-15T13:07:34Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=64441393\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed-hq",
+   "at": "2026-09-15T13:17:54Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

@@ -1,0 +1,99 @@
+{
+ "number": 6833,
+ "fetched_at": "2026-09-15T16:31:42Z",
+ "head_sha": "65083f476a4470f9ee2b1ee68f8f6b1c7e581b57",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 6575,
+   "title": "Recharts component props (strokeDasharray, tickFormatter) are routed to wrapperStyle and never reach the Recharts component",
+   "filed_by": "masonse"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-03T10:37:29Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-03T10:42:22Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-03T11:03:23Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-03T11:14:13Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-03T11:17:31Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-03T11:33:07Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 9,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=0f44d031-88c2-4d0f-8743-2a52737ebbc0 -->\n<!-- cubic:review-run=c749ba27-b677-4c94-8251-eb4549a01426 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: A reactive string such as `State.formatter` "
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=210e42ec-9835-4557-b47e-d967db898bcd -->\n<!-- cubic:review-run=c749ba27-b677-4c94-8251-eb4549a01426 -->\n<!-- metadata:{\"confidence\":9} -->\nP3: Type checkers still accept the Python callab"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 2,
+  "by_state": {
+   "SUCCESS": 2
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-08-03T10:34:53Z",
+   "excerpt": "Codex usage limits have been reached for code reviews. Please check with the admins of this repo to increase the limits by adding credits.\nCredits must be used "
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-08-03T10:37:25Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR declares Recharts axis formatters and reference-line dash patterns as explicit component fields so they are emitted as compon"
+  }
+ ],
+ "conflicting_files": [
+  "pyi_hashes.json"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": true,
+ "failing_job_findings": []
+}

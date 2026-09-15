@@ -1,0 +1,92 @@
+{
+ "number": 6898,
+ "fetched_at": "2026-09-15T16:31:06Z",
+ "head_sha": "7c580aaba195f0fec2461852f7e493c64124804d",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-17T21:07:35Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "DISMISSED",
+   "at": "2026-08-17T21:56:24Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-08-18T02:43:25Z",
+   "can_push": true
+  },
+  {
+   "by": "adhami3310",
+   "state": "COMMENTED",
+   "at": "2026-08-18T02:47:38Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-04T20:13:09Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "masenf",
+    "outdated": true,
+    "first_comment": "this is the only one that i'm hesitant on because decentralized handlers are defined in a weird way and don't feel very reflexy to me, so idk if we should recommend them."
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=1f59c514-506f-46fe-81cf-961df219e5e3 -->\n<!-- cubic:review-run=4f5f8943-4224-473b-8043-823945aa3fdd -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This change removes `events.py` from the fea"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 110
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "codspeed-hq",
+   "at": "2026-08-17T20:43:11Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 32` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-08-17T20:43:51Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR adds a comprehensive Scaling State guide and makes it the architectural entry point for large and multi-page Reflex applicatio"
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-08-17T21:03:17Z",
+   "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+  }
+ ],
+ "conflicting_files": [
+  "docs/app/reflex_docs/redirects.py",
+  "docs/app/reflex_docs/reflex_docs.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

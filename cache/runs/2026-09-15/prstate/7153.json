@@ -1,0 +1,87 @@
+{
+ "number": 7153,
+ "fetched_at": "2026-09-15T16:29:46Z",
+ "head_sha": "9ccab2ef851851831bfe948c5eb5c10d32dd3e07",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 7090,
+   "title": "frontend_path is stripped twice for routes beginning with the prefix text",
+   "filed_by": "masenf"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T14:26:55Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T14:27:16Z",
+   "can_push": true
+  },
+  {
+   "by": "JohannesGezachew",
+   "state": "COMMENTED",
+   "at": "2026-09-15T14:37:25Z",
+   "can_push": false
+  },
+  {
+   "by": "JohannesGezachew",
+   "state": "COMMENTED",
+   "at": "2026-09-15T14:37:28Z",
+   "can_push": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T14:41:00Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 3,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=ed0cf55f-0fcb-44b3-b5e5-7d2e79e1356d -->\n<!-- cubic:review-run=7810ffe5-472c-51a7-b31e-9775217da6cb -->\n<!-- metadata:{\"confidence\":10} -->\nP3: When this change ships, the news fragment d"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 114,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 112
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-15T14:27:11Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=64474107\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed-hq",
+   "at": "2026-09-15T14:29:28Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

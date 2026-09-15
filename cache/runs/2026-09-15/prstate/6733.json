@@ -1,0 +1,81 @@
+{
+ "number": 6733,
+ "fetched_at": "2026-09-15T16:31:49Z",
+ "head_sha": "f315ecfab5eef15419323762708115492007d458",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-10T18:52:26Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-07-10T18:57:13Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-07-10T19:46:30Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-07-23T18:34:29Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 4,
+  "unresolved": [
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": true,
+    "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Track completed post_compile hooks individually**\n\nBecause the latch is only set after the whole plugin loop suc"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Cached plugins stay skipped** After the first successful `app()` call, this gate re"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 107,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 105
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-07-10T18:52:20Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR changes plugin post-compile hooks to run once per app instance. The main changes are:\n\n- Tracks completed plugin hooks by plu"
+  },
+  {
+   "by": "codspeed-hq",
+   "at": "2026-07-10T18:53:25Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 26` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  }
+ ],
+ "conflicting_files": [
+  "reflex/app.py",
+  "tests/units/test_app.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

@@ -1,0 +1,395 @@
+{
+ "number": 6100,
+ "fetched_at": "2026-09-15T16:30:13Z",
+ "head_sha": "282d430b172a266bdf61616714fb0ff5800d7172",
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-20T22:10:17Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-20T22:31:00Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-22T10:39:23Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-26T22:29:23Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-04T17:43:18Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-04T18:05:40Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-04T18:27:40Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-04T18:27:42Z",
+   "can_push": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T21:04:19Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-12T18:29:32Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-12T18:39:05Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-12T18:59:13Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-12T19:15:44Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-12T19:15:50Z",
+   "can_push": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-12T19:45:46Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-12T20:02:32Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-12T20:24:19Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-12T20:26:52Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-12T20:40:31Z",
+   "can_push": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-12T20:42:06Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-12T20:50:46Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-12T20:52:47Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-12T22:37:39Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-14T18:30:30Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T18:34:08Z",
+   "can_push": false
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-14T19:17:08Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:44Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:46Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:48Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:49Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:51Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:53Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:55Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:56Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:47:58Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:48:00Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:48:02Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:48:04Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:48:05Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:48:56Z",
+   "can_push": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-14T20:55:30Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T21:45:50Z",
+   "can_push": false
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-14T21:47:57Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-14T21:56:02Z",
+   "can_push": false
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-14T22:36:13Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-14T23:28:00Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-15T08:29:32Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-15T08:29:33Z",
+   "can_push": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T08:34:34Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T09:01:53Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "abulvenz",
+  "Alek99"
+ ],
+ "threads": {
+  "total": 72,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=26b70eca-eaa0-40d9-8c5b-a7ce2cb6ca09 -->\n<!-- cubic:review-run=069b589a-e409-58ff-9bfe-b14d7656b82f -->\n<!-- metadata:{\"confidence\":9} -->\nP2: After hot reloads or discarded `Registration"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Orphan sibling collisions remain**\n\nThe repair pass only moves live children whose "
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 115,
+  "by_state": {
+   "FAILURE": 1,
+   "SKIPPED": 2,
+   "SUCCESS": 112
+  },
+  "failing": [
+   "CodSpeed Performance Analysis"
+  ],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "codspeed-hq",
+   "at": "2026-01-24T21:53:56Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n\n`\u26a1 4` improved benchmarks  \n`\u274c 1` regressed benchmark  \n`\u2705 35` un"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "at": "2026-01-28T20:55:26Z",
+   "excerpt": "TODO: best-effort-mode\r\n- walk trough the state id registry after the app module get's imported\r\n- filter out all states with explicit state id\r\n- sort the rema"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "at": "2026-01-28T21:00:01Z",
+   "excerpt": "Open for discussion: Should reflex reserve the first 5/10 state id's for internal states? Current reflex uses 0-3, but that might change in the future.\r\n\r\nedit:"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "at": "2026-01-28T21:23:05Z",
+   "excerpt": "TODO: think about sibling uniqueness for states. currently using global uniqueness\r\n\r\nedit: adjusted in [6b4c5fa](https://github.com/reflex-dev/reflex/pull/6100"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "at": "2026-02-01T11:05:28Z",
+   "excerpt": "Idea: store ids in a minify.json file\r\n\r\n- allows overwriting state ids for upstream dependencies and reflex core\r\n- one centralized place for the ids\r\n- keep t"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-02-05T23:54:39Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=21580814\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "at": "2026-02-12T19:28:11Z",
+   "excerpt": "Thanks you @masenf!\r\n\r\n> the explicit management of the minified names via cli solves our earlier problems of mismatching the minified names between compile and"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-07-09T21:23:25Z",
+   "excerpt": "Want your agent to iterate on Greptile's feedback? Try [*greploops*](https://github.com/greptileai/skills)."
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "CodSpeed Performance Analysis",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  }
+ ]
+}

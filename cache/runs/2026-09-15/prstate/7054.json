@@ -1,0 +1,179 @@
+{
+ "number": 7054,
+ "fetched_at": "2026-09-15T16:30:42Z",
+ "head_sha": "87ea648d795977ce38ae49a7ecf61851b73e3094",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "CHANGES_REQUESTED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-06T23:01:45Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-06T23:03:41Z",
+   "can_push": true
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:33:34Z",
+   "can_push": true
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:33:38Z",
+   "can_push": true
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:33:40Z",
+   "can_push": true
+  },
+  {
+   "by": "Alek99",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:33:42Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:34:59Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-07T00:38:44Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-08T22:33:44Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T18:31:30Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T18:31:32Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T18:31:33Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T18:31:35Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T18:31:36Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-10T18:31:38Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "CHANGES_REQUESTED",
+   "at": "2026-09-10T18:31:49Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 14,
+  "unresolved": [
+   {
+    "by": "FarhanAliRaza",
+    "outdated": false,
+    "first_comment": "Hash only the environment that reaches Vite, not all of `os.environ`.\n\nWith the full environment in the key, ordinary variation between two runs of the same command defeats the cache. Reproduced on an"
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": false,
+    "first_comment": "Split `visit` by entry type.\n\n`_tree_digest` measures cyclomatic complexity 15 and `visit` 13 (`ruff --select C901` at max 8). One helper per entry kind (symlink, `node_modules` metadata, `reflex.json"
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": false,
+    "first_comment": "Extract the per-package verification into a helper.\n\nThis function measures cyclomatic complexity 13. The loop body is a chain of guard clauses that reads better as `_verified_installed_version(name, "
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": false,
+    "first_comment": "Move the compress-type choice into a small helper.\n\n`_zip` now measures cyclomatic complexity 9. It was under 8 on `main`. A helper such as `_zip_compress_type(component_name, file)` keeps the write l"
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": false,
+    "first_comment": "Take the lock only when `frontend` is true.\n\nA backend-only export in a project with no `.web` now creates a `.web` directory that contains only `.reflex-build.lock`. Reproduced with `reflex export --"
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": false,
+    "first_comment": "Use `isoformat()` for the attempt timestamp as well.\n\nThe attempt key at line 193 still writes `str(now)`, so `reflex.json` mixes `2026-09-10 18:19:33+00:00` and `2026-09-10T18:19:34+00:00`. Both pars"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {
+   "NEUTRAL": 1,
+   "SKIPPED": 2,
+   "SUCCESS": 109
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-09-06T22:58:28Z",
+   "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+  },
+  {
+   "by": "codspeed-hq",
+   "at": "2026-09-06T23:01:33Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-06T23:01:40Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=61047466\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  }
+ ],
+ "conflicting_files": [
+  "reflex/utils/build.py",
+  "tests/units/test_prerequisites.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

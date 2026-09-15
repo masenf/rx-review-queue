@@ -1,0 +1,92 @@
+{
+ "number": 6853,
+ "fetched_at": "2026-09-15T16:31:39Z",
+ "head_sha": "cff19a4ce8bf42c6be15fae50c0d6dfd92dfa3f9",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 6848,
+   "title": "Redundant per-substate lock checks in `set_state`",
+   "filed_by": "PJ-Snap"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-06T20:51:37Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-08-06T20:53:54Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-06T21:10:58Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 2,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Lock ownership expires during fan-out**\n\nIf the session lock expires and another ev"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Preserve lock checks for recursive writes**\n\nWhen a large fan-out takes longer than `lock_expiration` after the "
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 2,
+  "by_state": {
+   "SUCCESS": 2
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "qubydev",
+   "at": "2026-08-06T20:50:04Z",
+   "excerpt": "Would love to know your thoughts on this @harsh21234i "
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-08-06T20:51:33Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR reduces Redis lock-check round trips by validating ownership once at the root of `StateManagerRedis.set_state` and propagatin"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-08-07T07:17:44Z",
+   "excerpt": "Hey @qubydev  Thanks for reaching out. The reduction in Redis round-trips makes sense, but the current lock_checked=True propagation appears unsafe because the "
+  },
+  {
+   "by": "qubydev",
+   "at": "2026-08-07T07:25:21Z",
+   "excerpt": "> Hey @qubydev Thanks for reaching out. The reduction in Redis round-trips makes sense, but the current lock_checked=True propagation appears unsafe because the"
+  }
+ ],
+ "conflicting_files": [
+  "tests/units/istate/manager/test_redis.py",
+  "tests/units/test_state.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": true,
+ "failing_job_findings": []
+}

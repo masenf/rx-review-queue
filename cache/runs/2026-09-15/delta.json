@@ -1,0 +1,85 @@
+{
+ "previous_run": "2026-09-14",
+ "disappeared": [
+  {
+   "number": 6708,
+   "title": "Wrap Recharts Sankey chart",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6968,
+   "title": "Add click_element utility for robust element clicking in tests",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7146,
+   "title": "Add changelog-driven application deployments to reflex-release",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7150,
+   "title": "fix(app): keep local/git package specifiers whole when resolving inst\u2026",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7152,
+   "title": "Consolidate deprecation logging",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7153,
+   "title": "Stop stripping frontend_path twice when matching routes",
+   "author": "JohannesGezachew",
+   "draft": false
+  },
+  {
+   "number": 7154,
+   "title": "docs: document the dict form for toast action and cancel",
+   "author": "JohannesGezachew",
+   "draft": false
+  },
+  {
+   "number": 7155,
+   "title": "Fix OpenTelemetry spans lost during dev compilation",
+   "author": "harsh21234i",
+   "draft": false
+  }
+ ],
+ "draft_flips": [
+  {
+   "number": 7140,
+   "now_draft": false
+  }
+ ],
+ "entered_top15": [
+  7150,
+  7144,
+  7077,
+  6925,
+  7121,
+  7154,
+  6807,
+  6932,
+  7153
+ ],
+ "left_top15": [
+  6708,
+  7068,
+  7142,
+  6946,
+  6100,
+  6968,
+  7053,
+  6770,
+  6676
+ ],
+ "counts": {
+  "previous_open": 100,
+  "current_open": 104
+ }
+}
