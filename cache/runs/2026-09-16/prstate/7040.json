@@ -1,0 +1,103 @@
+{
+ "number": 7040,
+ "fetched_at": "2026-09-16T17:03:30Z",
+ "head_sha": "bccf225f713b8eb2115ccf3518a9b940316a90c7",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 7034,
+   "title": "[HTTPXodus] Consider migrating from `httpx` to `httpx2` (the actively maintained fork)",
+   "filed_by": "ProgrammerPlus1998"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-03T04:18:16Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-04T18:33:53Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-07T10:36:47Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-09T08:52:31Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-10T06:47:54Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 6,
+  "unresolved": [
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=1396b93c-e852-4702-8a1f-b99374d06e25 -->\n<!-- cubic:review-run=867a2690-5f0f-568e-bdbb-d6b0c1ef176f -->\n<!-- metadata:{\"confidence\":8} -->\nP3: The comment block just above this import sti"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Required News Fragment Missing**\n\nThis hard switch changes the runtime HTTP depende"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Testing extra metadata remains stale**\n\nWhen root-package dependency tooling reads "
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 2,
+  "by_state": {
+   "SUCCESS": 2
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-03T04:16:39Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=59823551\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-09-03T15:46:55Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.63%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+  },
+  {
+   "by": "ProgrammerPlus1998",
+   "at": "2026-09-10T06:45:38Z",
+   "excerpt": "Both greptile findings addressed in bccf225:\n\n- **P1 (lockfile)**: removed the stale `testing` extra block from the `reflex` entry in `uv.lock` \u2014 it was carried"
+  }
+ ],
+ "conflicting_files": [
+  "reflex/utils/telemetry.py",
+  "tests/units/test_telemetry.py",
+  "uv.lock"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": true,
+ "failing_job_findings": []
+}

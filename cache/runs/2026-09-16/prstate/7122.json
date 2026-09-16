@@ -1,0 +1,148 @@
+{
+ "number": 7122,
+ "fetched_at": "2026-09-16T17:02:55Z",
+ "head_sha": "bf0d02181192056e390001e15f773b9f909a56fe",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:18:20Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:20:27Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-11T23:28:37Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:32:14Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:50:23Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:50:25Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:50:27Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:50:29Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:50:30Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:50:32Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:50:34Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:52:22Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:53:58Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T13:54:37Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 8,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 114,
+  "by_state": {
+   "FAILURE": 1,
+   "NEUTRAL": 1,
+   "SKIPPED": 2,
+   "SUCCESS": 110
+  },
+  "failing": [
+   "CodSpeed Performance Analysis"
+  ],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-09-11T23:14:12Z",
+   "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-11T23:18:15Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=63304266\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-09-15T13:51:59Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n<details>\n<summary>:warning: <b>Different runtime environments det"
+  }
+ ],
+ "conflicting_files": [
+  "packages/reflex-base/news/+compile-prop-hot-paths.performance.md",
+  "packages/reflex-base/src/reflex_base/components/component.py",
+  "tests/units/components/test_component.py",
+  "tests/units/components/test_tag.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "CodSpeed Performance Analysis",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  }
+ ]
+}

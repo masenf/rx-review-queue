@@ -1,0 +1,102 @@
+{
+ "number": 7155,
+ "fetched_at": "2026-09-16T17:02:43Z",
+ "head_sha": "dc312acbb0ade3b23f07cddb55d226e9df4e09f0",
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 7095,
+   "title": "Initial dev compilation loses OpenTelemetry spans when its worker exits",
+   "filed_by": "masenf"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T16:23:16Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T16:23:23Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-15T20:06:00Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-16T03:17:10Z",
+   "can_push": true
+  },
+  {
+   "by": "harsh21234i",
+   "state": "COMMENTED",
+   "at": "2026-09-16T03:24:06Z",
+   "can_push": false
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-16T03:28:40Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-16T03:38:48Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 8,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Reflex Base Fragment Missing**\n\nThis PR changes source in both the root `reflex` pa"
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "first_comment": "This captures the provider at `enable()` time. The docstring of `enable()` supports a different order: call `enable()` first, then configure the SDK. In that order, `trace.get_tracer_provider()` retur"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 122,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 120
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-15T16:23:12Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=64531467\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-09-15T16:25:14Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

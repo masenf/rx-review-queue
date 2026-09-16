@@ -1,0 +1,680 @@
+{
+ "run": {
+  "date": "2026-09-16",
+  "started_at": "2026-09-16 10:09 PDT",
+  "runner": "local-cli",
+  "github_login": "masenf",
+  "review_ci_layer": "present",
+  "session": "Codex desktop local run"
+ },
+ "stats": {
+  "open": 96,
+  "nondraft": 66,
+  "drafts": 30,
+  "counting_approvals": 1,
+  "fast_lane": 4,
+  "one_fix_away": 15,
+  "fork_ci_unrun": 7,
+  "never_human_reviewed": 20
+ },
+ "attention": [
+  "#7144 is the cleanest first-approval target: green full CI, no conflicts, 10 total threads all resolved.",
+  "#7138, #6841, and #6932 are also green/clean/no-unresolved-thread review candidates; #6932 is broad at 36 files.",
+  "#7033 remains a maintainer re-review/dismissal click: green, clean, all 16 threads resolved, but still CHANGES_REQUESTED from 2026-09-10.",
+  "#7162 and #7159 are compact new green/clean PRs but each has exactly one unresolved thread.",
+  "Seven PRs merged since yesterday (#6925, #6930, #7077, #7121, #7150, #7152, #7153); #6807, #6921, #6922, and #7154 closed unmerged.",
+  "#7137 flipped draft->ready, but it is a 215-file docs redesign with 6 unresolved threads and a missing expected fragment."
+ ],
+ "top15": [
+  {
+   "number": 7144,
+   "score": 6.5,
+   "summary": "Config preload fix remains the cleanest merge-near PR: green, clean, and all threads resolved.",
+   "evidence": [
+    "7 files (+137/-54), 5 ahead / 10 behind main, 3 unit-test files and a fragment present.",
+    "Checks green (114), no conflicts, 10 total threads all resolved; last human review activity was masenf on 2026-09-15."
+   ],
+   "blocker": "First maintainer approval.",
+   "whose_move": "maintainer",
+   "chips": [
+    "clean first review"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 7138,
+   "score": 6.2,
+   "summary": "Timedelta env-var migration recovered from yesterday's open-thread state and is now green/clean/no-unresolved-thread.",
+   "evidence": [
+    "17 files (+465/-22), 12 ahead / 0 behind main, 4 unit tests and expected fragments present.",
+    "Checks green (122), no conflicts, 9 total threads all resolved; masenf's earlier approval remains dismissed, so it still needs re-review."
+   ],
+   "blocker": "Maintainer re-review/approval.",
+   "whose_move": "maintainer",
+   "chips": [
+    "re-review needed"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 6841,
+   "score": 6.0,
+   "summary": "Small shared-state dirty-delta fix is still green, clean, and fully discussed.",
+   "evidence": [
+    "3 files (+420/-2), 15 ahead / 159 behind main, unit test and fragment present.",
+    "Checks green (111), no conflicts, 14 total threads all resolved."
+   ],
+   "blocker": "First maintainer approval.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6932,
+   "score": 5.8,
+   "summary": "Bare websockets is large but now current with main, green, clean, and no unresolved threads.",
+   "evidence": [
+    "36 files (+5804/-630), 59 ahead / 0 behind main, docs/playwright/unit tests/pyi/fragments present.",
+    "Checks green (123), no conflicts, 59 total threads all resolved; still broad at 36 files."
+   ],
+   "blocker": "Maintainer review on the broad diff.",
+   "whose_move": "maintainer",
+   "chips": [
+    "large but clean"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 7033,
+   "score": 5.5,
+   "summary": "Explicit-only event handlers is green and clean, but GitHub still shows changes requested.",
+   "evidence": [
+    "11 files (+407/-30), 8 ahead / 10 behind main, docs/tests/fragments present, checks green (115), 16 total threads all resolved.",
+    "FarhanAliRaza requested changes on 2026-09-10; the author replied again on 2026-09-15, so this remains a re-review/dismissal decision."
+   ],
+   "blocker": "Maintainer re-review or dismiss the stale changes-requested review.",
+   "whose_move": "maintainer",
+   "chips": [
+    "changes requested"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 7162,
+   "score": 5.0,
+   "summary": "Fresh shared-child-events fix is compact, green, and clean, with one current review thread.",
+   "evidence": [
+    "4 files (+128/-13), 3 ahead / 0 behind main, unit test and fragment present, checks green (122), no conflicts.",
+    "1 of 3 review threads remains unresolved; the visible first thread is a changelog whitespace issue."
+   ],
+   "blocker": "Author/maintainer resolve the single changelog whitespace thread.",
+   "whose_move": "author",
+   "chips": [
+    "opened Sep 16"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 7159,
+   "score": 4.8,
+   "summary": "StateManagerDisk persistence fix is green and clean, blocked by one maintainer benchmark question.",
+   "evidence": [
+    "3 files (+134/-2), 2 ahead / 52 behind main, unit test and fragment present, checks green (114), no conflicts.",
+    "1 of 3 review threads remains unresolved; masenf asked whether the hot-path isinstance check is noticeable in benchmarks."
+   ],
+   "blocker": "Author answer/benchmark the StateManager hot-path question.",
+   "whose_move": "author",
+   "chips": [
+    "opened since Sep 15"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 7155,
+   "score": 4.5,
+   "summary": "OpenTelemetry span fix cleared CI, but two review threads still block it.",
+   "evidence": [
+    "6 files (+131/-2), 7 ahead / 0 behind main, unit tests and both expected fragments present, checks green (122), no conflicts.",
+    "2 of 8 review threads remain unresolved, including a fragment concern and provider-order concern."
+   ],
+   "blocker": "Author resolve the two remaining review threads.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 7161,
+   "score": 4.2,
+   "summary": "StateManager benchmark-only PR is green and clean, but all review attention is still open.",
+   "evidence": [
+    "1 files (+378/-0), 1 ahead / 1 behind main, benchmark-only diff with no fragment expected.",
+    "Checks green (122), no conflicts, but 5 of 5 review threads remain unresolved."
+   ],
+   "blocker": "Author address the benchmark fixture/path/identifier review threads.",
+   "whose_move": "author",
+   "chips": [
+    "opened Sep 16"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 7142,
+   "score": 4.0,
+   "summary": "Stateful-pages atomic-write fix is green and clean but still has seven open bot review threads.",
+   "evidence": [
+    "5 files (+162/-17), 2 ahead / 17 behind main, unit tests and fragment present, checks green (114), no conflicts.",
+    "7 of 7 review threads remain unresolved."
+   ],
+   "blocker": "Author/maintainer triage the marker-permission and legacy-corruption threads.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6946,
+   "score": 3.8,
+   "summary": "Computed-var delta dedupe is green and clean, but four bot findings remain unresolved.",
+   "evidence": [
+    "9 files (+419/-31), 7 ahead / 71 behind main, docs/tests/fragments present, checks green (112), no conflicts.",
+    "4 of 9 review threads remain unresolved."
+   ],
+   "blocker": "Author clear the remaining root-state and tracking-attribute threads.",
+   "whose_move": "author",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6100,
+   "score": 3.7,
+   "summary": "Explicit minification is current with main and has no unresolved threads, but CodSpeed is red.",
+   "evidence": [
+    "46 files (+5837/-143), 134 ahead / 0 behind main, docs/playwright/selenium/unit tests/pyi/fragments present, no conflicts, 72 total threads all resolved.",
+    "Checks are red only because CodSpeed Performance Analysis failed."
+   ],
+   "blocker": "Maintainer decide/rerun the CodSpeed failure before review can progress.",
+   "whose_move": "maintainer",
+   "chips": [
+    "CodSpeed red"
+   ],
+   "override_reason": null
+  },
+  {
+   "number": 7053,
+   "score": 3.2,
+   "summary": "Event-queue prepend perf fix is compact and clean; only one app-harness check is red.",
+   "evidence": [
+    "5 files (+529/-8), 2 ahead / 57 behind main, unit tests and fragment present, no conflicts, no unresolved threads.",
+    "Only integration-app-harness (redis, 3.11, 2) is failing; check annotations exposed no specific failure text."
+   ],
+   "blocker": "Maintainer rerun/investigate the single app-harness failure.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6770,
+   "score": 3.1,
+   "summary": "Scalar server-default migration fix is tiny and clean, with one red Playwright harness job.",
+   "evidence": [
+    "3 files (+111/-2), 3 ahead / 215 behind main, unit test and fragment present, 2 total threads all resolved, no conflicts.",
+    "Only integration-app-harness-playwright (redis, 3.12) is failing."
+   ],
+   "blocker": "Maintainer rerun/investigate the single Playwright harness failure.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  },
+  {
+   "number": 6676,
+   "score": 3.0,
+   "summary": "Tiny rx.match useContext fix is clean and has no review threads, but carries one old Playwright failure.",
+   "evidence": [
+    "3 files (+70/-1), 1 ahead / 293 behind main, unit test and fragment present, 0 review threads, no conflicts.",
+    "Only integration-app-harness-playwright (redis, 3.11) is failing on an old head."
+   ],
+   "blocker": "Maintainer rerun/decide the stale Playwright failure.",
+   "whose_move": "maintainer",
+   "chips": [],
+   "override_reason": null
+  }
+ ],
+ "one_fix_away": {
+  "maintainer": [
+   {
+    "number": 7144,
+    "summary": "Green, clean, 10 total threads all resolved.",
+    "blocker": "First maintainer approval."
+   },
+   {
+    "number": 7138,
+    "summary": "Green, clean, all 9 threads resolved; prior approval is dismissed.",
+    "blocker": "Maintainer re-review/approval."
+   },
+   {
+    "number": 6841,
+    "summary": "3-file shared-state fix, green, clean, 14 total threads all resolved.",
+    "blocker": "First maintainer review/approval."
+   },
+   {
+    "number": 6932,
+    "summary": "Large but green, clean, all 59 threads resolved.",
+    "blocker": "Maintainer review on the broad diff."
+   },
+   {
+    "number": 7033,
+    "summary": "Green, clean, all 16 threads resolved after author replies.",
+    "blocker": "Re-review or dismiss the stale changes-requested review."
+   },
+   {
+    "number": 6100,
+    "summary": "Current with main, clean, all 72 threads resolved, only CodSpeed is red.",
+    "blocker": "Decide/rerun CodSpeed Performance Analysis."
+   },
+   {
+    "number": 7053,
+    "summary": "Clean, no unresolved threads, one red app-harness job.",
+    "blocker": "Rerun/investigate integration-app-harness (redis, 3.11, 2)."
+   },
+   {
+    "number": 6770,
+    "summary": "Tiny clean fix, no unresolved threads, one red Playwright harness job.",
+    "blocker": "Rerun/investigate integration-app-harness-playwright (redis, 3.12)."
+   },
+   {
+    "number": 6676,
+    "summary": "Tiny clean fix, no review threads, one old red Playwright harness job.",
+    "blocker": "Rerun/decide integration-app-harness-playwright (redis, 3.11)."
+   }
+  ],
+  "author": [
+   {
+    "number": 7162,
+    "summary": "Compact green/clean PR with one unresolved changelog whitespace thread.",
+    "blocker": "Resolve the single changelog whitespace thread."
+   },
+   {
+    "number": 7159,
+    "summary": "Green and clean, but one maintainer benchmark question remains open.",
+    "blocker": "Answer or benchmark the StateManager hot-path concern."
+   },
+   {
+    "number": 7155,
+    "summary": "Green and clean, but two review threads remain unresolved.",
+    "blocker": "Resolve the fragment/provider-order threads."
+   },
+   {
+    "number": 7161,
+    "summary": "Benchmark-only PR is green and clean, but 5 review threads are open.",
+    "blocker": "Address the benchmark fixture/path/identifier threads."
+   },
+   {
+    "number": 7142,
+    "summary": "Green and clean, but all 7 review threads remain unresolved.",
+    "blocker": "Triage/resolve the marker-permission and legacy-corruption threads."
+   },
+   {
+    "number": 6946,
+    "summary": "Green and clean, but 4 of 9 bot review threads remain unresolved.",
+    "blocker": "Clear the remaining root-state and tracking-attribute threads."
+   }
+  ]
+ },
+ "fast_lane": [
+  {
+   "number": 7144,
+   "summary": "Checks green, clean, all 10 threads resolved, config preload fix with unit tests and fragment.",
+   "blocker": "Needs first approval."
+  },
+  {
+   "number": 7138,
+   "summary": "Checks green, clean, all 9 threads resolved, env-var timedelta migration with unit tests and fragments.",
+   "blocker": "Needs re-review/approval."
+  },
+  {
+   "number": 6841,
+   "summary": "Checks green, clean, all 14 threads resolved, compact shared-state bug fix with unit test.",
+   "blocker": "Needs first approval."
+  },
+  {
+   "number": 6932,
+   "summary": "Checks green, clean, all 59 threads resolved; broad websocket work with docs/tests/pyi/fragments.",
+   "blocker": "Needs maintainer review on broad diff."
+  }
+ ],
+ "closure": [
+  {
+   "number": 5430,
+   "summary": "Open since 2025-06-10, 927 behind main, no current CI, conflicts in pyi_hashes.json and deleted forms module, no fragment.",
+   "keep_issue": 5418
+  },
+  {
+   "number": 6553,
+   "summary": "BaseContext consolidation is 414 behind, conflicts in base context code, no non-author maintainer review, and is missing its expected fragment.",
+   "keep_issue": 6514
+  },
+  {
+   "number": 6490,
+   "summary": "Redis Cluster support is 358 behind, conflicts across redis/config/token-manager paths, and is missing expected fragments.",
+   "keep_issue": null
+  },
+  {
+   "number": 6125,
+   "summary": "Redis Sentinel support has had no activity since 2026-02-12, no current CI, conflicts in config/state-manager paths, and no tests/fragments.",
+   "keep_issue": 5830
+  },
+  {
+   "number": 6126,
+   "summary": "TokenManager lifecycle API has had no activity since 2026-02-12, no current CI, conflicts in public API/token-manager paths, and no fragment.",
+   "keep_issue": 5669
+  },
+  {
+   "number": 6468,
+   "summary": "Large component-freezing refactor is 347 behind with conflicts across component packages and pyi_hashes.json plus docs-test failures.",
+   "keep_issue": 6214
+  }
+ ],
+ "stacks": [
+  {
+   "chain": [
+    7079,
+    7113
+   ],
+   "note": "Granian worker stack still conflicts with main; #7079 has one unresolved review thread and both share tests/units/utils/test_exec.py."
+  },
+  {
+   "chain": [
+    7122,
+    7123
+   ],
+   "note": "Farhan perf stack narrowed after #7121 merged; both remaining PRs now conflict with main and are CodSpeed-red."
+  },
+  {
+   "chain": [
+    6735,
+    6743,
+    6744,
+    6745,
+    6798,
+    6751,
+    6757
+   ],
+   "note": "Older Alek99 performance stack; same-repo heads still have only limited check coverage, so success is not the full suite."
+  }
+ ],
+ "conflict_clusters": [
+  {
+   "prs": [
+    5430,
+    6468,
+    6597,
+    6735,
+    6743,
+    6744,
+    6745,
+    6751,
+    6757,
+    6798,
+    6833
+   ],
+   "files": [
+    "pyi_hashes.json"
+   ],
+   "note": "Largest single-file conflict cluster; exact membership verified from conflicts.json."
+  },
+  {
+   "prs": [
+    6468,
+    6735,
+    6743,
+    6744,
+    6745,
+    6751,
+    6757,
+    6798,
+    7122,
+    7123
+   ],
+   "files": [
+    "packages/reflex-base/src/reflex_base/components/component.py"
+   ],
+   "note": "Component-base conflict cluster; #7122/#7123 now join the older component stack."
+  },
+  {
+   "prs": [
+    6688,
+    6743,
+    6744,
+    6745,
+    6751,
+    6757,
+    6768,
+    6798
+   ],
+   "files": [
+    "packages/reflex-base/src/reflex_base/vars/base.py"
+   ],
+   "note": "Vars-base conflict cluster; #6768 is no longer clean because it now shares this file."
+  },
+  {
+   "prs": [
+    6743,
+    6744,
+    6745,
+    6751,
+    6757,
+    6798,
+    7068
+   ],
+   "files": [
+    "tests/units/reflex_base/vars/test_base.py"
+   ],
+   "note": "Vars test conflict includes #7068 plus the older perf stack."
+  },
+  {
+   "prs": [
+    6563,
+    7064
+   ],
+   "files": [
+    "packages/reflex-base/src/reflex_base/compiler/templates.py",
+    "reflex/compiler/compiler.py"
+   ],
+   "note": "Compiler/template conflict pair remains narrow."
+  }
+ ],
+ "structural": [
+  {
+   "number": 7137,
+   "summary": "Docs design refresh flipped from draft to ready, but it is 215 files (+6725/-2100), missing an expected fragment, and has 6 unresolved threads despite green CI.",
+   "blocker": "Split/reduce or resolve the open docs build and SEO review threads before it can be reviewed normally."
+  },
+  {
+   "number": 7068,
+   "summary": "Router/base-var perf work remains blocked: only 2 current checks, 4 unresolved threads, and conflicts in tests/units/reflex_base/vars/test_base.py.",
+   "blocker": "Resolve the review/conflict set and get full CI again."
+  },
+  {
+   "number": 7146,
+   "summary": "Release-app deployment PR has 10 failing unit-test jobs and 9 unresolved review threads.",
+   "blocker": "Fix the unit failures and address the open workflow/security review threads."
+  },
+  {
+   "number": 6850,
+   "summary": "The only current counting approval is still not merge-near: it conflicts, has 2 failed check jobs, and 3 unresolved threads.",
+   "blocker": "Resolve conflicts, red check jobs, and unresolved review threads."
+  }
+ ],
+ "patterns": [
+  {
+   "title": "Counting approvals repo-wide: 1",
+   "detail": "Only #6850 currently has a write-access APPROVED review, and it is blocked by conflicts, red checks, and unresolved threads."
+  },
+  {
+   "title": "Never human-reviewed: 20 non-draft PRs",
+   "detail": "No non-bot human review recorded on #5430, #6181, #6468, #6490, #6553, #6676, #6751, #6833, #6840, #6853, #6935, #7007, #7036, #7061, #7065, #7113, #7142, #7146, #7161, #7162."
+  },
+  {
+   "title": "Maintainer-review gap: 34 non-draft PRs",
+   "detail": "No non-author write-access human review recorded on #5430, #6116, #6181, #6468, #6490, #6553, #6676, #6751, #6757, #6770, #6798, #6833, #6840, #6853, #6935, #6946, #7007, #7015, #7036, #7051, #7052, #7053, #7056, #7061, #7064, #7065, #7113, #7122, #7123, #7140 ...."
+  },
+  {
+   "title": "Fork PRs with only AI-reviewer checks: 7",
+   "detail": "#6833, #6840, #6853, #6876, #6935, #7036, #7040 have at most two check runs on the head; do not treat them as full-CI green."
+  },
+  {
+   "title": "Same-repo stack heads with limited check coverage: 8",
+   "detail": "#6735, #6743, #6744, #6745, #6751, #6757, #6798, #7068 are mostly the Alek99 perf stack plus #7068's latest head; success is not the full ~110-check suite."
+  },
+  {
+   "title": "Fragment problems: 11 missing expected fragments",
+   "detail": "#5430, #6125, #6126, #6490, #6553, #6597, #6723, #6840, #6853, #6935, #7137 touch code paths that expect fragments and have none."
+  },
+  {
+   "title": "Author concentration",
+   "detail": "Top non-draft authors are FarhanAliRaza (19), Alek99 (13), masenf (9), benedikt-bartscher (6), harsh21234i (4), counted from listing author login/association, not commits."
+  },
+  {
+   "title": "Conflict pressure",
+   "detail": "42 of 66 non-draft PRs conflict with today's main; the largest cluster is pyi_hashes.json across 11 PRs, and component.py now has 10 conflicting PRs."
+  },
+  {
+   "title": "Red checks: 18 PRs",
+   "detail": "#6100, #6116, #6468, #6597, #6676, #6688, #6770, #6796, #6850, #7004, #7015, #7053, #7061, #7064, #7065, #7122, #7123, #7146 currently have failing check rollups."
+  }
+ ],
+ "delta": {
+  "previous_run": "2026-09-15",
+  "merged": [
+   {
+    "number": 6925,
+    "note": "merged 2026-09-15T19:00Z"
+   },
+   {
+    "number": 6930,
+    "note": "merged 2026-09-16T00:12Z"
+   },
+   {
+    "number": 7077,
+    "note": "merged 2026-09-15T17:50Z"
+   },
+   {
+    "number": 7121,
+    "note": "merged 2026-09-15T23:37Z"
+   },
+   {
+    "number": 7150,
+    "note": "merged 2026-09-15T19:35Z"
+   },
+   {
+    "number": 7152,
+    "note": "merged 2026-09-15T20:40Z"
+   },
+   {
+    "number": 7153,
+    "note": "merged 2026-09-15T17:50Z"
+   }
+  ],
+  "closed": [
+   {
+    "number": 6807,
+    "note": "closed unmerged 2026-09-15T20:02Z"
+   },
+   {
+    "number": 6921,
+    "note": "closed unmerged 2026-09-15T18:59Z (draft RFC)"
+   },
+   {
+    "number": 6922,
+    "note": "closed unmerged 2026-09-15T18:59Z (draft RFC)"
+   },
+   {
+    "number": 7154,
+    "note": "closed unmerged 2026-09-15T19:22Z"
+   }
+  ],
+  "opened": [
+   {
+    "number": 7159,
+    "note": "non-draft by FarhanAliRaza"
+   },
+   {
+    "number": 7161,
+    "note": "non-draft by masenf"
+   },
+   {
+    "number": 7162,
+    "note": "non-draft by harsh21234i"
+   }
+  ],
+  "entered_top15": [
+   7162,
+   7159,
+   7155,
+   7161,
+   7142,
+   6946,
+   6100,
+   7053,
+   6770,
+   6676
+  ],
+  "left_top15": [
+   7150,
+   7077,
+   6925,
+   7121,
+   6768,
+   7154,
+   6807,
+   6930,
+   7153,
+   6996
+  ],
+  "newly_blocked": [
+   {
+    "number": 6768,
+    "note": "now conflicts with main in packages/reflex-base/src/reflex_base/vars/base.py"
+   },
+   {
+    "number": 7122,
+    "note": "now conflicts with main and remains CodSpeed-red"
+   },
+   {
+    "number": 7123,
+    "note": "now conflicts with main and remains CodSpeed-red"
+   }
+  ],
+  "newly_unblocked": [
+   {
+    "number": 7138,
+    "note": "open threads cleared; green and clean again"
+   },
+   {
+    "number": 6100,
+    "note": "current with main and all 72 threads resolved, but CodSpeed remains red"
+   }
+  ],
+  "draft_flips": [
+   {
+    "number": 7137,
+    "now_draft": false,
+    "note": "ready for review, but 215 files and 6 unresolved threads"
+   }
+  ]
+ },
+ "method": {
+  "notes": [
+   "Git layer recomputed from cache/repo.git against origin/main 856c0a750d6f (2026-09-15T17:12:09-07:00).",
+   "Listing came from authenticated gh REST as masenf; 96 open rows matched the search counter.",
+   "prstate files were fetched for all 66 non-draft PRs via gh GraphQL plus paginated REST check-runs, then mergeability/conflicting_files were overwritten from local git merge-tree.",
+   "Failures were expanded from paginated check-run metadata and annotations where GitHub exposed them."
+  ],
+  "audit_corrections": [
+   "Fact-check corrected #7138 wording from no-thread to no-unresolved-thread; prstate has 9 total threads, all resolved."
+  ],
+  "caveats": [
+   "GitHub API mergeStateStatus was UNKNOWN/BLOCKED for some locally mergeable PRs; local merge-tree conflicts are the source of truth for this board's conflict claims.",
+   "Low check counts are treated as not-full-CI even when GitHub's rollup is SUCCESS."
+  ]
+ }
+}

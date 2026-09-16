@@ -1,0 +1,114 @@
+{
+ "previous_run": "2026-09-15",
+ "disappeared": [
+  {
+   "number": 6807,
+   "title": "Fix disk state manager debounced writes",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6921,
+   "title": "RFC(events): lock ownership as a capability for delta flushes",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6922,
+   "title": "RFC(events): selective clean via a resolution-dirt ledger",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6925,
+   "title": "Allow Vars in page metadata",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6930,
+   "title": "port lazy_loader perf and native PEP810 + add python3.15 support",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7077,
+   "title": "Warn when a base var shadows a var inherited from a parent state",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7121,
+   "title": "perf(compile): read only set props and cache literal Var dispatch",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7150,
+   "title": "fix(app): keep local/git package specifiers whole when resolving inst\u2026",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7152,
+   "title": "Consolidate deprecation logging",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7153,
+   "title": "Stop stripping frontend_path twice when matching routes",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7154,
+   "title": "docs: document the dict form for toast action and cancel",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7159,
+   "title": "fix(state): persist explicitly supplied states in StateManagerDisk",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7161,
+   "title": "Add StateManager benchmarks for get/set/modify operations",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7162,
+   "title": "Fix superseding shared child events",
+   "author": "harsh21234i",
+   "draft": false
+  }
+ ],
+ "draft_flips": [
+  {
+   "number": 7137,
+   "now_draft": false
+  }
+ ],
+ "entered_top15": [
+  7162,
+  7159,
+  7155,
+  7161,
+  7142,
+  6946,
+  6100,
+  7053,
+  6770,
+  6676
+ ],
+ "left_top15": [
+  7150,
+  7077,
+  6925,
+  7121,
+  6768,
+  7154,
+  6807,
+  6930,
+  7153,
+  6996
+ ],
+ "counts": {
+  "previous_open": 104,
+  "current_open": 96
+ }
+}

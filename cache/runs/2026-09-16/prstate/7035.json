@@ -1,0 +1,149 @@
+{
+ "number": 7035,
+ "fetched_at": "2026-09-16T17:03:17Z",
+ "head_sha": "c1b25ddf0057795d0bbdd3b63d72bdac02e37c78",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "CHANGES_REQUESTED",
+ "linked_issues": [
+  {
+   "number": 7028,
+   "title": "Reloading a config whose rxconfig.py imports a state-defining module raises StateValueError",
+   "filed_by": "masenf"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-02T17:13:19Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "CHANGES_REQUESTED",
+   "at": "2026-09-03T19:17:42Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:06:10Z",
+   "can_push": true
+  },
+  {
+   "by": "harsh21234i",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:15:52Z",
+   "can_push": false
+  },
+  {
+   "by": "harsh21234i",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:15:55Z",
+   "can_push": false
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:16:20Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:23:01Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:30:52Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:35:26Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-05T11:43:45Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-09T04:12:35Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 15,
+  "unresolved": [
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "first_comment": "Too long comments, explaining what is already can be seen in code. happens in many places. \r\nwe might want to clean up these. "
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "first_comment": "`ctx._config is None` is the wrong signal. `RegistrationContext.fork()` copies `base_states` but resets `_config` to None. So a forked context evicts and re-imports the state module into a context tha"
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "first_comment": "The `_config_module_deps_root != project_root` branch is not exercised. With the comparison removed, all 118 tests in `tests/units/test_config.py` still pass. `test_get_config_evicts_dependencies_from"
+   },
+   {
+    "by": "FarhanAliRaza",
+    "outdated": true,
+    "first_comment": "Both calls use `reload_dependencies=True`, so this passes on `main` too (after the fixture is adjusted) and does not cover the new root check. To cover it, load `first_project` into a context, then ca"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 114,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 112
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-02T17:09:51Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=59581323\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-09-02T17:11:26Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-09-05T11:11:56Z",
+   "excerpt": "Addressed the remaining review feedback in commit 4d8f57fb.\n\n- Config reloads now restore only project-local modules that define states already registered in th"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-09-09T05:00:54Z",
+   "excerpt": "hey @FarhanAliRaza  please  take a look whenever you get time :)"
+  }
+ ],
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/config.py",
+  "tests/units/test_config.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

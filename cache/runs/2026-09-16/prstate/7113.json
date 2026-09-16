@@ -1,0 +1,103 @@
+{
+ "number": 7113,
+ "fetched_at": "2026-09-16T17:03:23Z",
+ "head_sha": "3d7695930d639f600fc7603797973e97b38e5f4e",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-11T15:20:15Z",
+   "can_push": true
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-09-11T15:21:03Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-11T15:27:25Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 6,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Explicit override is ignored**\n\nWhen both variables are set, `REFLEX_STRICT_HOT_REL"
+   },
+   {
+    "by": "chatgpt-codex-connector",
+    "outdated": false,
+    "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Avoid forcing fork after starting the telemetry thread**\n\nOn Linux with Python 3.14 and default telemetry enable"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=ec9feaaf-63d7-4219-b07d-533e614531b5 -->\n<!-- cubic:review-run=255f6757-f2b8-5635-b4f7-b518d4f862aa -->\n<!-- metadata:{\"confidence\":9} -->\nP1: On Python 3.14 Linux with telemetry enabled,"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=5912e600-7fcc-4f05-a9ff-5a877017fdc2 -->\n<!-- cubic:review-run=255f6757-f2b8-5635-b4f7-b518d4f862aa -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a first telemetry submission races with"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=0ee1b6aa-ab4a-4989-94e0-3d90c53573ca -->\n<!-- cubic:review-run=255f6757-f2b8-5635-b4f7-b518d4f862aa -->\n<!-- metadata:{\"confidence\":10} -->\nP2: When `REFLEX_STRICT_HOT_RELOAD` and `REFLEX"
+   },
+   {
+    "by": "cubic-dev-ai",
+    "outdated": false,
+    "first_comment": "<!-- cubic:v=ce09f0d4-0dc6-4f51-aa09-68c5caffeade -->\n<!-- cubic:review-run=255f6757-f2b8-5635-b4f7-b518d4f862aa -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This test never forks, so it only proves `_r"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 114,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 112
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-09-11T15:15:52Z",
+   "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-11T15:20:11Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=63115653\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-09-11T15:22:47Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  }
+ ],
+ "conflicting_files": [
+  "reflex/utils/exec.py",
+  "tests/units/test_telemetry.py",
+  "tests/units/utils/test_exec.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

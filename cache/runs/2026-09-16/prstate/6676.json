@@ -1,0 +1,69 @@
+{
+ "number": 6676,
+ "fetched_at": "2026-09-16T17:04:40Z",
+ "head_sha": "6ea5a31a9223142baba670afcac97748b5c53b63",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 6675,
+   "title": "rx.match: state vars in case conditions (component branches) emit unbound useContext \u2192 ReferenceError: Can't find variable: <substate>",
+   "filed_by": "picklelo"
+  }
+ ],
+ "reviews": [],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 0,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 106,
+  "by_state": {
+   "FAILURE": 1,
+   "NEUTRAL": 1,
+   "SKIPPED": 2,
+   "SUCCESS": 102
+  },
+  "failing": [
+   "integration-app-harness-playwright (redis, 3.11)"
+  ],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-06-23T18:11:54Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nFixes a `ReferenceError: Can't find variable` crash in `rx.match` when a state Var appears only in a case *condition* (not the subjec"
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-06-23T18:12:41Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`\u2705 26` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^s"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-06-23T19:01:31Z",
+   "excerpt": "This does seem to work, but now that memoization mode is `MemoizationMode(recursive=False)`, the compiler will never memoize the stateful values returned by the"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-07-08T07:24:56Z",
+   "excerpt": "The approach looks correct. Match was hiding its case-condition vars from the compiler, so _should_memoize() could  miss reactive state in conditions when the s"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "integration-app-harness-playwright (redis, 3.11)",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  }
+ ]
+}
