@@ -1,0 +1,130 @@
+{
+ "number": 7176,
+ "fetched_at": "2026-09-17T16:13:52Z",
+ "head_sha": "230f626cb7349314597ede68598f81d9aebcb57f",
+ "mergeable": "MERGEABLE",
+ "merge_state": "CLEAN",
+ "auto_merge": false,
+ "review_decision": "APPROVED",
+ "linked_issues": [
+  {
+   "number": 7174,
+   "title": "@rx.memo components don't pick up app wraps from their body, except the root class's static ones",
+   "filed_by": "masenf"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:18:54Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:19:27Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:24:55Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:25:01Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:25:10Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:26:18Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:26:24Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:26:56Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T22:36:01Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "APPROVED",
+   "at": "2026-09-17T14:30:44Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "APPROVED",
+   "at": "2026-09-17T14:32:20Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 5,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 125,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 123
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "codspeed",
+   "at": "2026-09-16T22:18:33Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 53` untouched benchmarks  \n`\u23e9 9` skipped benchmarks[^ski"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-16T22:19:19Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=65243947\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-17T00:38:40Z",
+   "excerpt": "**CodSpeed Performance Analysis** is red on `230f626` \u2014 `test_get_state[disk]`, 909.1 \u00b5s \u2192 945.5 \u00b5s (\u22123.85%). This is not this PR's regression, and there is no "
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-17T00:48:29Z",
+   "excerpt": "The isolated `test_get_state[disk]` performance warning cleared on the repeated remote check. All checks now pass at `230f626cb`. The earlier same-environment l"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-17T00:48:53Z",
+   "excerpt": "Closing the loop on the re-run I said I'd do: it already completed and **the gate is cleared** \u2014 no need to repeat the performance job again.\n\n`CodSpeed Perform"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": true,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

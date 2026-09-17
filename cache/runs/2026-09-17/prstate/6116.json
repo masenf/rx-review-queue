@@ -1,0 +1,195 @@
+{
+ "number": 6116,
+ "fetched_at": "2026-09-17T16:13:50Z",
+ "head_sha": "41148c45821a74241eeaf1cd7f4482db33102057",
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-02-07T13:41:05Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-02-12T21:21:52Z",
+   "can_push": false
+  },
+  {
+   "by": "chatgpt-codex-connector",
+   "state": "COMMENTED",
+   "at": "2026-07-09T21:27:19Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-07-31T19:37:18Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-04T21:19:19Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-06T20:36:16Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-20T20:29:01Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-20T21:17:49Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-20T22:30:24Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-28T19:21:39Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-29T19:58:01Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-08-29T20:46:27Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-08-29T20:46:35Z",
+   "can_push": false
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-07T11:03:54Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T10:57:36Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-17T13:58:32Z",
+   "can_push": true
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-17T14:35:14Z",
+   "can_push": false
+  },
+  {
+   "by": "benedikt-bartscher",
+   "state": "COMMENTED",
+   "at": "2026-09-17T14:35:20Z",
+   "can_push": false
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-17T14:36:31Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "reflex-team"
+ ],
+ "threads": {
+  "total": 44,
+  "unresolved": [
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Plotly auto rounds integers**\n\n`_loads_plotly()` only uses stdlib parsing when `def"
+   },
+   {
+    "by": "greptile-apps",
+    "outdated": false,
+    "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Preserve auto Plotly integers**\n\n`default_engine == \"auto\"` takes the `orjson_loads"
+   }
+  ]
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 125,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 123
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "codspeed",
+   "at": "2026-02-06T23:58:36Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 53` untouched benchmarks  \n`\ud83c\udd95 2` new benchmarks  \n`\u23e9 9` "
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-02-07T13:41:01Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=21679682\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "adhami3310",
+   "at": "2026-02-12T18:59:47Z",
+   "excerpt": "the issue with orjson is that we lose NaN handling which is relevant for numpy, which is why we were using JSON5 as well"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "at": "2026-02-12T19:00:08Z",
+   "excerpt": "Yeah, that's why i did not update it in all places"
+  },
+  {
+   "by": "benedikt-bartscher",
+   "at": "2026-04-25T21:12:04Z",
+   "excerpt": "related https://github.com/reflex-dev/reflex/pull/6339"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-06-04T04:32:48Z",
+   "excerpt": "now that we've eliminated JSON5 in the frontend code, I think this PR is the next step for optimizing the serialization path."
+  },
+  {
+   "by": "benedikt-bartscher",
+   "at": "2026-08-29T21:11:12Z",
+   "excerpt": "blocked by https://github.com/reflex-dev/reflex/pull/6933\r\n\r\nedit: merged/unblocked now"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

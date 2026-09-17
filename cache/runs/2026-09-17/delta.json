@@ -1,0 +1,100 @@
+{
+ "previous_run": "2026-09-16",
+ "disappeared": [
+  {
+   "number": 7061,
+   "title": "Add holistic table event processing benchmark",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7137,
+   "title": "Refresh docs design, navigation, and discovery",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7140,
+   "title": "Refresh docker-example deployments for current Reflex",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7159,
+   "title": "fix(state): persist explicitly supplied states in StateManagerDisk",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7161,
+   "title": "Add StateManager benchmarks for get/set/modify operations",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7162,
+   "title": "Fix superseding shared child events",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7176,
+   "title": "Collect app wraps from the whole @rx.memo body",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7180,
+   "title": "ENG-12499 feat(sdk): rename, move and configure apps, and manage custom domains",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7181,
+   "title": "ENG-12499 feat(sdk): deploy through environments and manage app databases",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7182,
+   "title": "ENG-12499 feat(sdk): sign an app's users in with Reflex accounts",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7183,
+   "title": "ENG-12499 feat(sdk): manage project roles, teams, members and audit logs",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7184,
+   "title": "ENG-12499 feat(sdk): manage Google Cloud connections, token rotation and plan usage",
+   "author": "adhami3310",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  7176,
+  7015,
+  7180,
+  7181,
+  7182,
+  7183,
+  7184,
+  7146,
+  6181
+ ],
+ "left_top15": [
+  7033,
+  7162,
+  7159,
+  7155,
+  7161,
+  6100,
+  7053,
+  6770,
+  6676
+ ],
+ "counts": {
+  "previous_open": 96,
+  "current_open": 96
+ }
+}

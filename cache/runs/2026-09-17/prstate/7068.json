@@ -1,0 +1,391 @@
+{
+ "number": 7068,
+ "fetched_at": "2026-09-17T16:14:00Z",
+ "head_sha": "8cc79e5ba7d3ab9d66dff0a9f6f253943cba2fbf",
+ "mergeable": "MERGEABLE",
+ "merge_state": "BLOCKED",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-08T22:22:44Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-08T22:26:45Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:13:14Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:18:22Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:22:06Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:22:15Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:22:24Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:22:33Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:22:40Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:22:51Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:27:56Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:30:47Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:30:54Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:31:43Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:31:50Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:32:01Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:36:48Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:42:18Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:44:35Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:47:44Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:51:16Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:51:51Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-08T23:53:12Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-09T16:08:57Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "CHANGES_REQUESTED",
+   "at": "2026-09-09T16:09:09Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-09T21:30:23Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-09T22:30:32Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-09T22:41:28Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "DISMISSED",
+   "at": "2026-09-11T17:39:29Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-15T01:58:57Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-15T02:13:43Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-15T02:13:55Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-15T02:14:04Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-15T02:14:13Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-09-15T02:16:17Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-15T02:19:06Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T23:06:34Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T23:06:35Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T23:06:36Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-16T23:06:38Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "COMMENTED",
+   "at": "2026-09-16T23:31:04Z",
+   "can_push": true
+  },
+  {
+   "by": "FarhanAliRaza",
+   "state": "DISMISSED",
+   "at": "2026-09-16T23:35:25Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-17T00:05:00Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-09-17T00:52:09Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-09-17T04:14:41Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 24,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "FAILURE",
+  "total": 125,
+  "by_state": {
+   "FAILURE": 1,
+   "SKIPPED": 2,
+   "SUCCESS": 122
+  },
+  "failing": [
+   "CodSpeed Performance Analysis"
+  ],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-08T22:22:39Z",
+   "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=61836211\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-09-08T22:43:35Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 2 benchmarks\n\n<details>\n<summary>:warning: <b>Different runtime environments de"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-08T23:10:45Z",
+   "excerpt": "CI caught three things on the first push, all genuinely this PR's. Fixed and pushed (`d5c82f4`); the last one is a real behavioral correction worth flagging rat"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-08T23:32:43Z",
+   "excerpt": "Second review round addressed in `c7e8c18`, plus two CI signals I've concluded are **not** this PR's \u2014 recording the reasoning rather than quietly re-running.\n\n"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-08T23:56:38Z",
+   "excerpt": "Follow-up on the Windows 3.14 unit-tests job, because my [earlier note](https://github.com/reflex-dev/reflex/pull/7068#issuecomment-5593356391) named a specific"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-09T00:24:07Z",
+   "excerpt": "### Correction: the Windows unit-test failure is a pre-existing suite-wide race, and I had the pattern wrong\n\nI said I'd report what Windows did on `9c270ca` ei"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-09T00:33:52Z",
+   "excerpt": "Re-run result, as promised: **`unit-tests (windows-latest, 3.13)` passed** on the second attempt, same commit `9c270ca6`, no code change ([job](https://github.c"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-09T22:22:12Z",
+   "excerpt": "Pushed `4dd07c9` \u2014 `router` is now listed in `State.vars`, so substates inherit it again.\n\n`_RouterDescriptor` subclasses `property`, and `_is_user_descriptor()"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-15T07:34:03Z",
+   "excerpt": "Heads up: **CI has not been dispatched for the current head `c9ea01cb8`** \u2014 pushed at ~06:00 UTC, still nothing 1.5 hours later. This isn't red CI; no runs exis"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-16T23:13:24Z",
+   "excerpt": "CodSpeed flags a 4.35% degradation on `6b2afe7`. It's real, I can account for it byte-for-byte, and it is the expected other side of this PR's trade \u2014 but the b"
+  },
+  {
+   "by": "FarhanAliRaza",
+   "at": "2026-09-16T23:27:24Z",
+   "excerpt": "## Live review in a real example app \u2014 verdict: approve\n\nExercised this PR end-to-end in a running app rather than only reading the diff: a worktree checkout of"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-16T23:39:02Z",
+   "excerpt": "Thanks for running it live \u2014 that's a much better check on the delta-elision table than anything I could assert in a unit test. Both actionable findings are now"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-17T00:36:35Z",
+   "excerpt": "On the changelog-fragment finding in the latest automated review (Confidence 4/5, \"the incorrectly numbered reflex-base changelog fragment violates the reposito"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-17T00:43:52Z",
+   "excerpt": "Readiness update at `8cc79e5ba` (including main `aaa44a08a`): all required checks pass. The concurrent shared-default optimization removed the earlier uncached-"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-17T00:50:08Z",
+   "excerpt": "Took the focused-optimization branch of that rather than asking for acceptance. Pushed as `2d7603256`.\n\n**Where the regression actually was.** Profiling the roo"
+  },
+  {
+   "by": "masenf",
+   "at": "2026-09-17T00:57:01Z",
+   "excerpt": "CodSpeed has now run on the optimization, so here are the real numbers rather than my prediction of them. Updated below for the current head `8cc79e5ba`.\n\n**Ove"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": [
+  {
+   "check": "CodSpeed Performance Analysis",
+   "cause": "Failure listed in GraphQL check rollup; detailed log not exposed in REST check-run annotation fetch."
+  }
+ ]
+}

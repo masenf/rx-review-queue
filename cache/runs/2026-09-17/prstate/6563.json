@@ -1,0 +1,74 @@
+{
+ "number": 6563,
+ "fetched_at": "2026-09-17T16:14:55Z",
+ "head_sha": "2605b9460b7b4ebf252754f6394f62159b242e02",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-05-25T19:58:05Z",
+   "can_push": true
+  },
+  {
+   "by": "adhami3310",
+   "state": "COMMENTED",
+   "at": "2026-06-25T17:34:09Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [
+  "Alek99"
+ ],
+ "threads": {
+  "total": 4,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 112,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 110
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "codspeed",
+   "at": "2026-05-25T19:50:58Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.79%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-05-25T19:57:57Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR replaces blanket `import * as` star-imports for every bundled library with per-library named-import surfaces derived from the"
+  },
+  {
+   "by": "FarhanAliRaza",
+   "at": "2026-05-26T16:22:03Z",
+   "excerpt": "Add more tests for dynamic components. "
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-09-10T01:44:07Z",
+   "excerpt": "<!-- greptile-status -->\nToo many files changed for review (822 files, 100 file limit)."
+  }
+ ],
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/compiler/templates.py",
+  "packages/reflex-base/src/reflex_base/components/dynamic.py",
+  "packages/reflex-base/src/reflex_base/registry.py",
+  "reflex/compiler/compiler.py",
+  "tests/integration/test_dynamic_components.py",
+  "tests/units/compiler/test_compiler.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

@@ -1,0 +1,142 @@
+{
+ "number": 6841,
+ "fetched_at": "2026-09-17T16:15:25Z",
+ "head_sha": "12ba89d7593a51c1154961dd184814a04572314f",
+ "mergeable": "MERGEABLE",
+ "merge_state": "UNKNOWN",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 6392,
+   "title": "Events against SharedState should not mark root state dirty all the time",
+   "filed_by": "masenf"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-04T11:10:06Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-04T11:22:27Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-08T04:16:35Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-13T03:17:10Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-14T07:53:34Z",
+   "can_push": true
+  },
+  {
+   "by": "masenf",
+   "state": "COMMENTED",
+   "at": "2026-08-14T18:51:58Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-15T02:51:42Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-15T02:52:14Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-15T03:54:55Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-15T03:57:58Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-15T04:51:36Z",
+   "can_push": true
+  },
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2026-08-15T07:21:29Z",
+   "can_push": true
+  },
+  {
+   "by": "cubic-dev-ai",
+   "state": "COMMENTED",
+   "at": "2026-08-15T07:23:13Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 14,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 111,
+  "by_state": {
+   "SKIPPED": 2,
+   "SUCCESS": 109
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "chatgpt-codex-connector",
+   "at": "2026-08-04T11:06:59Z",
+   "excerpt": "Codex usage limits have been reached for code reviews. Please check with the admins of this repo to increase the limits by adding credits.\nCredits must be used "
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-08-04T11:09:50Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 26` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+  },
+  {
+   "by": "greptile-apps",
+   "at": "2026-08-04T11:09:59Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR prevents temporary router dirtiness used during linked/shared-state patching from leaking into regular event deltas and incorp"
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-08-12T18:46:31Z",
+   "excerpt": "hey @masenf  The state-dirty cleanup changes and regression tests are now implemented, including descendant cleanup when delta resolution fails. Most CI checks "
+  },
+  {
+   "by": "harsh21234i",
+   "at": "2026-08-20T07:44:51Z",
+   "excerpt": "hey @mansef could you please review the latest commit?"
+  }
+ ],
+ "conflicting_files": [],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}

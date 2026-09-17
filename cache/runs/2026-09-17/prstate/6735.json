@@ -1,0 +1,58 @@
+{
+ "number": 6735,
+ "fetched_at": "2026-09-17T16:15:21Z",
+ "head_sha": "460c941b5abb4924be0d9eaede3638356747a01f",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [],
+ "reviews": [
+  {
+   "by": "FarhanAliRaza",
+   "state": "DISMISSED",
+   "at": "2026-07-10T21:28:21Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 0,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": "SUCCESS",
+  "total": 5,
+  "by_state": {
+   "NEUTRAL": 1,
+   "SUCCESS": 4
+  },
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "greptile-apps",
+   "at": "2026-07-10T19:34:11Z",
+   "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR speeds up auto-memoized passthrough component compilation. The main changes are:\n\n- Reuses memo definitions for duplicate pas"
+  },
+  {
+   "by": "codspeed",
+   "at": "2026-07-10T19:36:16Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 28.47%**\n\n<details>\n<summary>:warning: <b>Different runtime en"
+  },
+  {
+   "by": "linear-code",
+   "at": "2026-07-10T19:59:29Z",
+   "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-10101\">ENG-10101</a></p>"
+  }
+ ],
+ "conflicting_files": [
+  "packages/reflex-base/src/reflex_base/components/component.py",
+  "packages/reflex-base/src/reflex_base/components/memo.py",
+  "pyi_hashes.json"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": true,
+ "failing_job_findings": []
+}

@@ -1,0 +1,50 @@
+{
+ "number": 5430,
+ "fetched_at": "2026-09-17T16:16:03Z",
+ "head_sha": "32ff737d75542cbf0e840ab144a256d1661c8beb",
+ "mergeable": "CONFLICTING",
+ "merge_state": "DIRTY",
+ "auto_merge": false,
+ "review_decision": "REVIEW_REQUIRED",
+ "linked_issues": [
+  {
+   "number": 5418,
+   "title": "Exception: \"ReferenceError: refs is not defined\"",
+   "filed_by": "bertbarabas"
+  }
+ ],
+ "reviews": [
+  {
+   "by": "greptile-apps",
+   "state": "COMMENTED",
+   "at": "2025-06-10T16:36:59Z",
+   "can_push": true
+  }
+ ],
+ "awaiting": [],
+ "threads": {
+  "total": 0,
+  "unresolved": []
+ },
+ "checks": {
+  "rollup": null,
+  "total": 0,
+  "by_state": {},
+  "failing": [],
+  "pending": []
+ },
+ "recent_comments": [
+  {
+   "by": "codspeed",
+   "at": "2025-06-10T15:34:44Z",
+   "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n<!-- __CODSPEED_INSTRUMENTATION_PERFORMANCE_REPORT_COMMENT__ -->\n\n## [CodSpeed Performance Report](https://cods"
+  }
+ ],
+ "conflicting_files": [
+  "pyi_hashes.json",
+  "reflex/components/el/elements/forms.py"
+ ],
+ "counting_approval": false,
+ "ci_never_ran": false,
+ "failing_job_findings": []
+}
