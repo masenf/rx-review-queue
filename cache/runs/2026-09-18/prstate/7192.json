@@ -1,0 +1,90 @@
+{
+  "number": 7192,
+  "fetched_at": "2026-09-18T16:34:53Z",
+  "head_sha": "c0a472d3e6411652cd2157228d351da485985e33",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": null,
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-18T01:01:36Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-18T01:07:07Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "APPROVED",
+      "at": "2026-09-18T01:59:33Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=42604666-6a08-45fe-9ce4-0d1f6318245d -->\n<!-- cubic:review-run=b5b730d8-d87a-5f50-b988-c022ac4e681e -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Because `detail` and `x-reflex-error-code` "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=71d090f3-e2ec-4206-8551-c7d11547d363 -->\n<!-- cubic:review-run=830f37d1-d3ef-5f45-a9f3-5c2094b78cb2 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: The credential tests never exercise `end_use"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4b187742-796a-4852-ae41-173e16f389d8 -->\n<!-- cubic:review-run=830f37d1-d3ef-5f45-a9f3-5c2094b78cb2 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: When an internal caller supplies `X-Request-"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 122
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "linear-code",
+      "at": "2026-09-18T00:57:53Z",
+      "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-12481\">ENG-12481</a></p>"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-18T01:00:31Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=65831247\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-18T01:04:18Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 53` untouched benchmarks  \n`⏩ 9` skipped benchmarks[^ski"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_collect_imports[_complicated_page] regressed from 3.6 ms to 3.8 ms (-6.45%) and warns the comparison used different runtime environments."
+    }
+  ]
+}

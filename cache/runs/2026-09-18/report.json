@@ -1,0 +1,640 @@
+{
+  "run": {
+    "date": "2026-09-18",
+    "started_at": "2026-09-18 09:34 PDT",
+    "runner": "local-codex",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "existing cached live files only"
+  },
+  "stats": {
+    "open": 87,
+    "nondraft": 58,
+    "drafts": 29,
+    "counting_approvals": 2,
+    "fast_lane": 6,
+    "one_fix_away": 8,
+    "fork_ci_unrun": 8,
+    "never_human_reviewed": 24
+  },
+  "attention": [
+    "#7146 is the cleanest merge decision: counting approval, green full CI, no conflicts, and all 12 review threads resolved.",
+    "#7195 is approved, clean, and only 2 files, but 36 checks are still pending and the reflex-site-shared package fragment is missing.",
+    "#7189, #7142, #7144, #6798, and #7188 are green, clean, and have no unresolved threads; each needs first maintainer approval.",
+    "#7068 is green and clean, but one live maintainer thread asks why new URL-serialization machinery is needed; the author should answer or revise.",
+    "#6126 is newly active and locally clean, but its fork CI still has only two bot checks and one Greptile P1 thread remains unresolved."
+  ],
+  "top15": [
+    {
+      "number": 7146,
+      "score": 9.2,
+      "summary": "Changelog-driven application deployments are approved, green, clean, tested, and fully resolved.",
+      "evidence": [
+        "16 files (+1376/-20), 7 commits ahead / 18 behind main; 2 unit-test files and the reflex-release fragment are present.",
+        "Checks green (125), no conflicts, all 12 review threads resolved, and the current write-access review decision is APPROVED."
+      ],
+      "blocker": "Maintainer merge decision.",
+      "whose_move": "maintainer",
+      "chips": [
+        "counting approval"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7189,
+      "score": 8,
+      "summary": "Annotated type-hint unwrapping is a compact, green, clean bug fix with focused tests.",
+      "evidence": [
+        "4 files (+128/-5), 2 ahead / 7 behind main; 2 unit-test files and the reflex-base fragment are present.",
+        "Checks green (125), no conflicts, and zero review threads."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "new",
+        "zero threads"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7142,
+      "score": 7.8,
+      "summary": "The stateful-pages marker race fix remains green, clean, tested, and fully resolved.",
+      "evidence": [
+        "5 files (+295/-18), 11 ahead / 18 behind main; 2 unit-test files and a fragment are present.",
+        "Checks green (125), no conflicts, and all 12 review threads resolved."
+      ],
+      "blocker": "First approval or merge decision.",
+      "whose_move": "maintainer",
+      "chips": [],
+      "override_reason": null
+    },
+    {
+      "number": 7144,
+      "score": 7.6,
+      "summary": "Config preload preservation remains compact, green, clean, and fully resolved.",
+      "evidence": [
+        "7 files (+137/-54), 5 ahead / 39 behind main; 3 unit-test files and a fragment are present.",
+        "Checks green (114), no conflicts, and all 10 review threads resolved."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [],
+      "override_reason": null
+    },
+    {
+      "number": 6798,
+      "score": 7.4,
+      "summary": "The var-operation f-string bypass is now a small green and clean review target.",
+      "evidence": [
+        "3 files (+155/-2), 8 ahead / 7 behind main; one focused unit test and the reflex-base fragment are present.",
+        "Checks green (127), no conflicts, and all 6 review threads resolved."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "newly clean"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7195,
+      "score": 7.2,
+      "summary": "The Agent Toolkit sidebar fix is tiny, clean, and approved, but the current head is not ready to merge yet.",
+      "evidence": [
+        "2 files (+19/-2), current with main; implementation and focused unit test only.",
+        "No conflicts or review threads and a counting approval, but 36 of 125 checks are pending and the expected reflex-site-shared fragment is absent."
+      ],
+      "blocker": "Wait for CI and add the missing package fragment.",
+      "whose_move": "author",
+      "chips": [
+        "counting approval",
+        "pending CI",
+        "missing fragment"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6116,
+      "score": 7,
+      "summary": "The orjson migration is green, clean, and has finally cleared all review threads, though its scope remains broad.",
+      "evidence": [
+        "40 files (+2307/-268), 67 commits ahead and current with main; unit, integration, and benchmark coverage plus all expected fragments.",
+        "Checks green (125), no conflicts, and all 44 review threads resolved."
+      ],
+      "blocker": "Maintainer review of the broad serialization change.",
+      "whose_move": "maintainer",
+      "chips": [
+        "large diff",
+        "newly thread-clear"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6932,
+      "score": 6.8,
+      "summary": "Bare websockets remains broad but green, clean, documented, tested, and fully discussed.",
+      "evidence": [
+        "37 files (+5792/-597), 60 ahead / 16 behind main; docs, unit tests, Playwright tests, benchmark, pyi update, and fragments are present.",
+        "Checks green (126), no conflicts, and all 59 review threads resolved."
+      ],
+      "blocker": "Maintainer review on the broad websocket diff.",
+      "whose_move": "maintainer",
+      "chips": [
+        "large diff"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7188,
+      "score": 6.6,
+      "summary": "Removing four flaky benchmark cases is a narrow, green, clean maintenance change.",
+      "evidence": [
+        "4 benchmark files (+3/-100), 3 ahead / 11 behind main; no product code or fragment is expected.",
+        "Checks green (125), no conflicts, and its single review thread is resolved."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "new",
+        "benchmarks only"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7068,
+      "score": 6.4,
+      "summary": "Router field splitting is green, clean, current with main, and well tested, but one maintainer question remains open.",
+      "evidence": [
+        "22 files (+2087/-174), 33 commits ahead and current with main; 7 unit-test files, benchmark, and all expected fragments are present.",
+        "Checks green (125), no conflicts; 1 of 31 review threads remains unresolved."
+      ],
+      "blocker": "Answer or address the open URL-serialization design question.",
+      "whose_move": "author",
+      "chips": [
+        "one open thread"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6181,
+      "score": 6.2,
+      "summary": "Separate context providers remain a compact clean change, held by one CodSpeed failure.",
+      "evidence": [
+        "3 files (+115/-23), 5 ahead / 18 behind main; focused unit test and package fragment are present.",
+        "No conflicts, both review threads resolved, and the only failing check is CodSpeed Performance Analysis."
+      ],
+      "blocker": "Decide or rerun CodSpeed Performance Analysis, then obtain first approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "one red check"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7053,
+      "score": 6,
+      "summary": "The event-queue prepend optimization is small and clean, but its integration job failed during checkout before tests ran.",
+      "evidence": [
+        "5 files (+529/-8), 2 ahead / 86 behind main; 3 focused unit-test files and package fragment are present.",
+        "No conflicts, all 3 review threads resolved; integration-app-harness (redis, 3.11, 2) stopped on a checkout fetch failure before tests ran."
+      ],
+      "blocker": "Rerun the checkout-failed integration-app-harness job, then obtain first approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "one red check"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6770,
+      "score": 5.9,
+      "summary": "Scalar model defaults are a tiny clean fix with one failing Playwright harness job.",
+      "evidence": [
+        "3 files (+111/-2), 3 ahead / 244 behind main; focused unit test and issue-named fragment are present.",
+        "No conflicts, both review threads resolved; integration-app-harness-playwright (redis, 3.12) is red."
+      ],
+      "blocker": "Rerun or investigate the single failing Playwright harness job.",
+      "whose_move": "maintainer",
+      "chips": [
+        "one red check"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6676,
+      "score": 5.8,
+      "summary": "The rx.match context-binding fix is tiny, clean, and thread-free, with one failing Playwright harness job.",
+      "evidence": [
+        "3 files (+70/-1), 1 ahead / 322 behind main; focused unit test and issue-named package fragment are present.",
+        "No conflicts or review threads; integration-app-harness-playwright (redis, 3.11) is red."
+      ],
+      "blocker": "Rerun or investigate the single failing Playwright harness job.",
+      "whose_move": "maintainer",
+      "chips": [
+        "one red check",
+        "zero threads"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6850,
+      "score": 5.6,
+      "summary": "Auto-memo wrapper transparency is clean and fully resolved, but four package checks remain red.",
+      "evidence": [
+        "14 files (+996/-10), 21 ahead / 18 behind main; unit and Playwright tests, pyi update, and all 3 expected fragments are present.",
+        "No conflicts and all 8 threads resolved; four reflex/reflex-components-plotly checks fail on Python 3.10 and 3.14."
+      ],
+      "blocker": "Fix or rerun the four package checks, then obtain fresh approval.",
+      "whose_move": "author",
+      "chips": [
+        "four red checks"
+      ],
+      "override_reason": null
+    }
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {
+        "number": 7146,
+        "summary": "Approved, green, clean, and all 12 threads resolved.",
+        "blocker": "Merge decision."
+      },
+      {
+        "number": 7189,
+        "summary": "4-file green/clean bug fix with focused tests, fragment, and zero threads.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7142,
+        "summary": "Green, clean, tested, and all 12 threads resolved.",
+        "blocker": "First approval or merge decision."
+      },
+      {
+        "number": 7144,
+        "summary": "Green, clean, tested, and all 10 threads resolved.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 6798,
+        "summary": "3-file green/clean optimization with focused test and fragment.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 6116,
+        "summary": "Green, clean, and all 44 threads resolved after substantial iteration.",
+        "blocker": "Maintainer review of the broad serialization change."
+      },
+      {
+        "number": 6932,
+        "summary": "Broad but green, clean, documented, tested, and all 59 threads resolved.",
+        "blocker": "Maintainer review of the websocket change."
+      },
+      {
+        "number": 7188,
+        "summary": "4-file benchmark-only cleanup, green, clean, and thread-clear.",
+        "blocker": "First approval."
+      }
+    ],
+    "author": []
+  },
+  "fast_lane": [
+    {
+      "number": 7146,
+      "summary": "Counting approval, green full CI, clean merge, tests/fragment, and all 12 threads resolved.",
+      "blocker": "Merge decision."
+    },
+    {
+      "number": 7189,
+      "summary": "4-file green/clean bug fix with two focused test files, package fragment, and zero threads.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7142,
+      "summary": "5-file green/clean race fix with tests, fragment, and all 12 threads resolved.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7144,
+      "summary": "7-file green/clean config fix with tests, fragment, and all 10 threads resolved.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 6798,
+      "summary": "3-file green/clean optimization with focused test, fragment, and all 6 threads resolved.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7188,
+      "summary": "4-file benchmark-only cleanup with green CI, clean merge, and its only thread resolved.",
+      "blocker": "First approval."
+    }
+  ],
+  "closure": [
+    {
+      "number": 6553,
+      "summary": "BaseContext consolidation is 443 behind main, conflicts in packages/reflex-base/src/reflex_base/context/base.py, and lacks its expected package fragment.",
+      "keep_issue": 6514
+    },
+    {
+      "number": 6490,
+      "summary": "Redis Cluster support is 387 behind main, conflicts across Redis/config/token-manager paths, and lacks 2 expected fragments.",
+      "keep_issue": null
+    },
+    {
+      "number": 6125,
+      "summary": "Redis Sentinel support has had no activity since 2026-02-12, fork CI has never run, it conflicts with main, and it has no tests or fragment.",
+      "keep_issue": 5830
+    },
+    {
+      "number": 6468,
+      "summary": "The 37-file component-freezing refactor is 376 behind, conflicts across component packages and pyi_hashes.json, has 3 failed checks, and retains 1 unresolved thread.",
+      "keep_issue": 6214
+    },
+    {
+      "number": 7004,
+      "summary": "The wrapper-tag fix is 115 behind, conflicting, has CHANGES_REQUESTED, 4 unresolved threads, and 11 failing checks.",
+      "keep_issue": 6955
+    }
+  ],
+  "stacks": [
+    {
+      "chain": [
+        7079,
+        7113
+      ],
+      "note": "Granian worker stack remains conflict-bound; both PRs share conflicts in tests/units/test_telemetry.py and tests/units/utils/test_exec.py, while #7113 also conflicts in reflex/utils/exec.py."
+    },
+    {
+      "chain": [
+        6735,
+        6743,
+        6744,
+        6745,
+        6751,
+        6757
+      ],
+      "note": "Older Alek99 performance stack remains conflict-bound; the exact shared intersection is component.py, memo.py, and pyi_hashes.json, and these heads still show only 5-6 checks."
+    }
+  ],
+  "conflict_clusters": [
+    {
+      "prs": [
+        6468,
+        6597,
+        6735,
+        6743,
+        6744,
+        6745,
+        6751,
+        6757
+      ],
+      "files": [
+        "pyi_hashes.json"
+      ],
+      "note": "Largest exact pyi_hashes.json conflict cluster in the current non-draft set."
+    },
+    {
+      "prs": [
+        6468,
+        6735,
+        6743,
+        6744,
+        6745,
+        6751,
+        6757
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/components/component.py"
+      ],
+      "note": "Seven PRs conflict on component.py; exact membership was computed from today's prstate files."
+    },
+    {
+      "prs": [
+        6688,
+        6743,
+        6744,
+        6745,
+        6751,
+        6757,
+        6768
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/vars/base.py"
+      ],
+      "note": "Seven-PR vars/base.py conflict cluster."
+    },
+    {
+      "prs": [
+        6743,
+        6744,
+        6745,
+        6751,
+        6757,
+        7036,
+        7138
+      ],
+      "files": [
+        "reflex/state.py"
+      ],
+      "note": "Seven-PR state.py conflict cluster; #7036 and #7138 join five older performance-stack members."
+    },
+    {
+      "prs": [
+        6745,
+        6751,
+        6757,
+        6796,
+        6840,
+        6853,
+        7036
+      ],
+      "files": [
+        "tests/units/test_state.py"
+      ],
+      "note": "Seven PRs collide in the state unit-test file."
+    }
+  ],
+  "structural": [
+    {
+      "number": 6100,
+      "summary": "State/event id minification is current and locally clean, but one CodSpeed job and 2 of 79 Cubic threads remain open across a 49-file diff.",
+      "blocker": "Resolve the two live findings and the CodSpeed regression before normal review."
+    },
+    {
+      "number": 7068,
+      "summary": "Router field splitting is green and clean across 22 files, with one live maintainer design question among 31 threads.",
+      "blocker": "Author should answer or revise the URL-serialization machinery."
+    },
+    {
+      "number": 7192,
+      "summary": "Third-party credential support is clean and current, but CodSpeed is red and all 3 Cubic threads remain unresolved.",
+      "blocker": "Address the three review findings and settle CodSpeed."
+    },
+    {
+      "number": 7033,
+      "summary": "Explicit-only event handlers are clean but retain CHANGES_REQUESTED, 2 unresolved threads, and 3 failing jobs.",
+      "blocker": "Author needs to resolve the review feedback and red jobs."
+    },
+    {
+      "number": 6688,
+      "summary": "Incremental compile caching spans 40 files, conflicts with main, has 10 failing checks, and retains 3 unresolved threads.",
+      "blocker": "Rebase and reduce the combined CI/review blockers before maintainer review."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Counting approvals repo-wide: 2",
+      "detail": "#7146 and #7195 have current write-access APPROVED review decisions. #7146 is green and clean; #7195 still has 36 pending checks and a missing package fragment."
+    },
+    {
+      "title": "Never reviewed by someone other than the author: 24 non-draft PRs",
+      "detail": "No non-bot review from a person other than the PR author is recorded on #6116, #6181, #6468, #6490, #6553, #6676, #6751, #6757, #6770, #6840, #6853, #6935, #7007, #7036, #7051, #7052, #7053, #7056, #7064, #7065, #7113, #7123, #7188, and #7189."
+    },
+    {
+      "title": "Fork PRs whose full CI never ran: 8",
+      "detail": "#6125, #6126, #6840, #6853, #6876, #6935, #7036, and #7040 have only the workflow-approval-gated or two-bot-check state; do not treat a SUCCESS rollup as full CI."
+    },
+    {
+      "title": "Fragment problems: 9 missing expected fragments",
+      "detail": "#6125, #6490, #6553, #6597, #6723, #6840, #6853, #6935, and #7195 touch paths that expect fragments but have none."
+    },
+    {
+      "title": "Author concentration",
+      "detail": "Top non-draft authors are FarhanAliRaza (17), Alek99 (12), benedikt-bartscher (6), masenf (6), anxkhn (2), and timon0305 (2), counted from the listing author logins."
+    },
+    {
+      "title": "Contributors waiting on maintainer action",
+      "detail": "Using the latest author push/comment as the clock, #6770 has waited 52 days, #6840 43 days, #6853 42 days, #6876 34 days, and #6935 25 days without a subsequent maintainer response or approval."
+    },
+    {
+      "title": "Conflict pressure",
+      "detail": "36 of 58 non-draft PRs conflict with today's main; the largest exact single-file cluster is pyi_hashes.json (8 PRs)."
+    },
+    {
+      "title": "Red checks: 18 PRs",
+      "detail": "#6100, #6181, #6468, #6597, #6676, #6688, #6770, #6796, #6850, #7004, #7033, #7053, #7064, #7065, #7123, #7138, #7192, and #7193 currently have failing check rollups."
+    }
+  ],
+  "delta": {
+    "previous_run": "2026-09-17",
+    "merged": [
+      7155,
+      7176,
+      7181,
+      7183,
+      7182,
+      7184,
+      7180,
+      7015,
+      6946,
+      7122,
+      7136,
+      6833
+    ],
+    "closed": [
+      {
+        "number": 7035,
+        "note": "closed unmerged"
+      },
+      {
+        "number": 5430,
+        "note": "closed unmerged"
+      }
+    ],
+    "opened": [
+      {
+        "number": 7195,
+        "note": "non-draft by carlosabadia"
+      },
+      {
+        "number": 7193,
+        "note": "non-draft by flcrom"
+      },
+      {
+        "number": 7192,
+        "note": "non-draft by adhami3310"
+      },
+      {
+        "number": 7189,
+        "note": "non-draft by masenf"
+      },
+      {
+        "number": 7188,
+        "note": "non-draft by FarhanAliRaza"
+      }
+    ],
+    "entered_top15": [
+      7189,
+      6798,
+      7195,
+      6116,
+      7188,
+      7068,
+      7053,
+      6770,
+      6676,
+      6850
+    ],
+    "left_top15": [
+      6946,
+      7176,
+      7015,
+      6841,
+      7180,
+      7181,
+      7182,
+      7183,
+      7184,
+      7138
+    ],
+    "newly_blocked": [
+      {
+        "number": 6841,
+        "note": "now conflicts with main after yesterday's green/clean state"
+      },
+      {
+        "number": 7138,
+        "note": "now conflicts with main while its CodSpeed failure remains"
+      }
+    ],
+    "newly_unblocked": [
+      {
+        "number": 7146,
+        "note": "now has a current counting approval in addition to green CI, clean mergeability, and resolved threads"
+      },
+      {
+        "number": 6116,
+        "note": "the last 2 unresolved review threads cleared; now green and clean"
+      },
+      {
+        "number": 6798,
+        "note": "conflicts cleared; now green, clean, and fully resolved"
+      },
+      {
+        "number": 7068,
+        "note": "CodSpeed is green; one maintainer design thread remains"
+      }
+    ],
+    "draft_flips": []
+  },
+  "method": {
+    "notes": [
+      "Listing, review state, checks, and failure evidence were fetched through authenticated gh as masenf; git measurements were recomputed locally against today's main.",
+      "Git measurements use main 0d8acb39a86a132671528bbe0f72f69fe9f0bce1 from the cached measurement run fetched at 2026-09-18T16:34:18Z.",
+      "All 87 listing rows reconcile to 58 non-drafts plus 29 drafts; all 58 non-drafts have matching measurements and prstate files.",
+      "Conflict-cluster membership and shared-file claims were computed directly from today's conflicting_files arrays.",
+      "scripts/delta.py was run after report.json existed; disappeared PRs were classified as merged or closed unmerged with live gh pr view results.",
+      "All 18 red PRs have failing_job_findings populated from check annotations or logs where GitHub retained them."
+    ],
+    "audit_corrections": [
+      "Removed #6181, #7053, #6770, and #6676 from one-fix-away because each needs both CI resolution and approval; corrected the tile from 12 to 8.",
+      "Corrected #7053 from an integration-test failure to a checkout fetch failure where no tests ran.",
+      "Added the required contributor-waiting pattern with day counts derived from latest author push/comment and subsequent maintainer activity."
+    ],
+    "caveats": [
+      "Logs for #6468 and #6597 have expired; their findings are limited to surviving annotations and measurement evidence. #7053 failed during checkout, so no tests ran.",
+      "Low check counts on fork PRs and older performance-stack heads are not treated as full green CI."
+    ]
+  }
+}

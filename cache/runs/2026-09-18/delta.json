@@ -1,0 +1,136 @@
+{
+ "previous_run": "2026-09-17",
+ "disappeared": [
+  {
+   "number": 5430,
+   "title": "[0.9] remove ids refs from form_data",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6833,
+   "title": "fix(recharts): stop routing component props to wrapperStyle",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6946,
+   "title": "Deduplicate unchanged uncached computed var deltas",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7015,
+   "title": "Fix Var hashing to prevent silent data loss and enable hashability",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7035,
+   "title": "Fix config reload state imports (#7028)",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7122,
+   "title": "perf(events): share one chain per handler and trigger across call sites",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7136,
+   "title": "Validate reserved state names before registration",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7155,
+   "title": "Fix OpenTelemetry spans lost during dev compilation",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7176,
+   "title": "Collect app wraps from the whole @rx.memo body",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7180,
+   "title": "ENG-12499 feat(sdk): rename, move and configure apps, and manage custom domains",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7181,
+   "title": "ENG-12499 feat(sdk): deploy through environments and manage app databases",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7182,
+   "title": "ENG-12499 feat(sdk): sign an app's users in with Reflex accounts",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7183,
+   "title": "ENG-12499 feat(sdk): manage project roles, teams, members and audit logs",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7184,
+   "title": "ENG-12499 feat(sdk): manage Google Cloud connections, token rotation and plan usage",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7188,
+   "title": "bench: drop flaky isinstance, event handler, and compiler import benchmarks",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7189,
+   "title": "Unwrap `Annotated` type hints in type resolution and comparison",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7192,
+   "title": "ENG-12481 feat(sdk): read third-party credentials an app is connected to",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7193,
+   "title": "Keep Granian logs out of JSON stdout",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7195,
+   "title": "Fix Agent Toolkit sidebar alignment and spacing",
+   "author": "carlosabadia",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  7189,
+  6798,
+  7195,
+  6116,
+  7188,
+  7068,
+  7053,
+  6770,
+  6676,
+  6850
+ ],
+ "left_top15": [
+  6946,
+  7176,
+  7015,
+  6841,
+  7180,
+  7181,
+  7182,
+  7183,
+  7184,
+  7138
+ ],
+ "counts": {
+  "previous_open": 96,
+  "current_open": 87
+ }
+}

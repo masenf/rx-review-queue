@@ -1,0 +1,90 @@
+{
+  "number": 7052,
+  "fetched_at": "2026-09-18T16:35:02Z",
+  "head_sha": "2240413f9853c139ccf8510291825628a9e33abc",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:03:02Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:12:44Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:18:44Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:18:44Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:18:44Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:18:44Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 109
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-06T07:59:45Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-06T08:02:57Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR makes shared JSON metadata updates atomic and serializes concurrent writers using stable per-user file locks.\n- Writes comple"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-06T08:02:59Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 32` untouched benchmarks  \n`⏩ 8` skipped benchmarks[^ski"
+    }
+  ],
+  "conflicting_files": [
+    "reflex/utils/prerequisites.py",
+    "tests/units/test_prerequisites.py",
+    "tests/units/utils/test_path_ops.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}
