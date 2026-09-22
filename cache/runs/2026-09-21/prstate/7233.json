@@ -1,0 +1,75 @@
+{
+  "number": 7233,
+  "fetched_at": "2026-09-22T01:02:54Z",
+  "head_sha": "9af400a597bf98df84a658bbbfc462b5956a608b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7231,
+      "title": "Deleted assets remain in .web/public and subsequent production exports",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-21T18:34:05Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-21T18:52:28Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=0fe17ffa-2adc-4d60-8e90-a1955cd04324 -->\n<!-- cubic:review-run=d3fcfb9b-42d3-5659-8996-8e0870fd667c -->\n<!-- metadata:{\"confidence\":9} -->\nP1: When a generated directory replaces an app a"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=129e81c3-2af6-48ff-b427-8dadc379a59c -->\n<!-- cubic:review-run=d3fcfb9b-42d3-5659-8996-8e0870fd667c -->\n<!-- metadata:{\"confidence\":7} -->\nP2: When two production compiles share `.web`, t"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 126,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 124
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-21T18:33:57Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=67078822\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-21T18:35:38Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 67` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^sk"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

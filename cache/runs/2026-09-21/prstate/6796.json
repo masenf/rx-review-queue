@@ -1,0 +1,426 @@
+{
+  "number": 6796,
+  "fetched_at": "2026-09-22T01:02:52Z",
+  "head_sha": "3b84af43eb8a4edc72ceca97f361e8d2a9ddd26e",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 2339,
+      "title": "Internationalization (I18N) and localization (L10N) (Feature Request) ",
+      "filed_by": "karndeb"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-17T22:42:28Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-17T22:54:23Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-17T23:33:55Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-07-18T11:17:05Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-07-18T12:02:27Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-07-18T14:01:54Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-07-30T19:34:47Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-26T20:33:01Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-26T21:14:42Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-26T21:56:21Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-04T11:55:33Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:27Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:31Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:34Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:38Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:40Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:44Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:47Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:49Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:37:13Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:50Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:51Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:53Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:54Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:56Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:57Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:59Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:07:01Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:07:02Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:07:04Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:16:59Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T14:16:34Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T14:16:35Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T14:16:37Z",
+      "can_push": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-17T06:28:53Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-21T23:17:17Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 68,
+    "unresolved": [
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": true,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Remove development pins before publishing reflex-i18n**\n\nWith the new dispatch-release option, selecting `reflex"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5989e440-fe80-4beb-b13f-376638b536d5 -->\n<!-- cubic:review-run=7ac8c698-30a8-472e-a16f-ac3765bced36 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: With `PathPrefixRouting(default_at_root=Fal"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f147a9b8-1e80-4a5c-bb05-2f0c5bd4ca6f -->\n<!-- cubic:review-run=7ac8c698-30a8-472e-a16f-ac3765bced36 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a base route starts with a configured l"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=55b70556-1d16-4b48-93d8-cf1a7b49b2ad -->\n<!-- cubic:review-run=7ac8c698-30a8-472e-a16f-ac3765bced36 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When an app already owns a locale-prefixed r"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=489f8ea6-9c55-44ec-9608-6d6567d6fed5 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP1: When URL routing is enabled, navigating betw"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=167a0836-29ab-4207-8515-404ac1452309 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":10} -->\nP1: When a configured locale uses an underscore"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d3c5a00f-fb13-4793-9b79-fdb1d50b6298 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Every `reflex i18n extract` warns that the "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5faf6579-a7c9-41dd-9998-8214254fce3d -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When `reflex i18n init` receives a path-like"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a0934718-a20a-43f5-a84b-81410fa5b6c5 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Consumers cannot import the new `ExpandRoute"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=e423ddfc-9e49-43a9-807f-a498e2eff48d -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When `date()` or `time()` receives component"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a28d3c9c-be95-452a-96c5-56cd63bf484d -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When the app is compiled after its working d"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2973d524-f3a5-4e8d-9e46-4606e03f613c -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: This test does not actually exercise the sce"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=25d4c98d-8c72-48f5-a37a-4824f4de3846 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: When the handler or delta resolution raises"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d62f3452-8945-48c5-ae86-0416e29d3af9 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a message or context contains gettext's"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=e43db8a5-28f9-46b1-9dc7-d84ce6499c5c -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a `.po` file lacks a plural or language"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f83b07ef-5f09-468c-b6f3-4f6835141413 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When `I18nPlugin` uses its default cookie-ba"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=6680ddee-475e-4710-879b-bba3c6d85868 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When configured regional or script locales u"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4d65422f-95f7-4536-83dc-3a36e16c38b8 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When `locales` contains a duplicate, URL rou"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5c565fa2-4483-4ff1-82a2-6c579d85d3a5 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Before an `I18nPlugin` is activated, `from r"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=58e77541-939a-4e68-89fc-c900c65e8fde -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Configured locales containing underscores n"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d63b375f-9c2b-4ac6-98ad-a6d19474f74c -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When the current route has query parameters "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=56c9ca61-527f-4678-8350-b1a182dd6ea9 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When an underscore-separated RTL locale is c"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=7ddf23c0-aa46-482a-81bf-bca0b9e10f05 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Localized prerendered pages have no route-sp"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=62506d00-3d62-42d8-a7a4-5c63d326b383 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When URL routing is enabled without a compon"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2e307ca0-1ae1-4407-8c95-050d697fba88 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: This test asserts that nullcontext follows f"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d1943406-7ff9-433c-a1b5-462eb07e0f68 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: `price_row()` and the `rx.moment` example re"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=3bfaec0a-b80e-4c86-b5dc-a6668555b0a0 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: The `_locale_var` functools cache is process"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=daf9cd88-7ee1-4f7f-96ab-222219fc2141 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This test cannot detect a regression where t"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=47f6fac4-bf55-4a6f-a85a-edef9622dd04 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP3: Both catalog-emission tests intentionally co"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 129,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 126
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "at": "2026-07-17T22:29:36Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 7.89%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-07-17T22:42:22Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=45234896\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-07-29T19:20:18Z",
+      "excerpt": "@masenf could you please take a brief look at this from an architectural design and DX perspective? it's totally okay if you have smth completly different in mi"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_cli_startup[help] regressed from 790.6 ms to 858.3 ms (-7.89%) and warns the comparison used different runtime environments."
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+ "previous_run": "2026-09-18",
+ "disappeared": [
+  {
+   "number": 6180,
+   "title": "Avoid spurious re-renders in context providers",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6181,
+   "title": "Create separate context providing components for each state",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6411,
+   "title": "ENG-9602: feat: add frontend inspector for mapping DOM nodes to Python source",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6456,
+   "title": "feat: propagate VarData.module_code into page module code",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6563,
+   "title": "Tree-shake bundled libraries while preserving dynamic components",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6723,
+   "title": "feat(docs): improve a11y and lazy-load Inkeep search widget",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6732,
+   "title": "perf(docs): lazy-load search and highlight code at build time",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6735,
+   "title": "Dedup auto-memoize passthrough definitions during compile",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6798,
+   "title": "Bypass f-string tag round-trip for var operation operands",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6850,
+   "title": "ENG-10883: Make auto-memoized component wrappers transparent to injected props and refs",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7068,
+   "title": "perf: split router into per-field base vars; gather connection-static router data at connect",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7142,
+   "title": "Fix race condition in stateful pages marker with atomic writes",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7188,
+   "title": "bench: drop flaky isinstance, event handler, and compiler import benchmarks",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7189,
+   "title": "Unwrap `Annotated` type hints in type resolution and comparison",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7192,
+   "title": "ENG-12481 feat(sdk): read third-party credentials an app is connected to",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7193,
+   "title": "Keep Granian logs out of JSON stdout",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7195,
+   "title": "Fix Agent Toolkit sidebar alignment and spacing",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7203,
+   "title": "Stop setting BUN_OPTIONS for the frontend dev server",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7206,
+   "title": "Reject inherited state var shadowing through mixins",
+   "author": "qubydev",
+   "draft": false
+  },
+  {
+   "number": 7207,
+   "title": "Move reflex-hosting-cli onto reflex-build-sdk",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7208,
+   "title": "Add deep equality for frontend Vars",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7209,
+   "title": "Terminate the frontend process tree when reflex run shuts down",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7210,
+   "title": "fix: gate npm installs on the node version preflight",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7219,
+   "title": "fix(cli): format Granian worker import errors as JSON",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7226,
+   "title": "fix(plotly): normalize string layout titles",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7227,
+   "title": "fix(forms): omit non-control ids from submissions",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7228,
+   "title": "OPS-1932: Improve docs link descriptions and gallery destination",
+   "author": "carlosabadia",
+   "draft": false
+  },
+  {
+   "number": 7233,
+   "title": "fix: remove deleted app assets from frontend exports",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7234,
+   "title": "Add opt-in React Compiler support",
+   "author": "FarhanAliRaza",
+   "draft": true
+  },
+  {
+   "number": 7236,
+   "title": "Fix frontend install cache invalidation from package.json formatting",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7237,
+   "title": "Skip fan-out on events with no linked-state changes",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7238,
+   "title": "docs: add application guides and linked XY chart tutorial",
+   "author": "Alek99",
+   "draft": false
+  },
+  {
+   "number": 7240,
+   "title": "ENG-12632 fix(sdk): let the API refuse a malformed deployment id in wait",
+   "author": "adhami3310",
+   "draft": false
+  }
+ ],
+ "draft_flips": [
+  {
+   "number": 7146,
+   "now_draft": true
+  }
+ ],
+ "entered_top15": [
+  7054,
+  7228,
+  7203,
+  7210,
+  7226,
+  7138,
+  7207,
+  7236,
+  7233,
+  7209,
+  7238,
+  7240
+ ],
+ "left_top15": [
+  7146,
+  7189,
+  7142,
+  7144,
+  6798,
+  7195,
+  7188,
+  7068,
+  6181,
+  6770,
+  6676,
+  6850
+ ],
+ "counts": {
+  "previous_open": 87,
+  "current_open": 86
+ }
+}

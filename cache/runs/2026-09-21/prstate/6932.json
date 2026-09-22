@@ -1,0 +1,360 @@
+{
+  "number": 6932,
+  "fetched_at": "2026-09-22T01:02:52Z",
+  "head_sha": "dfa3377d98ece3a0a53f313ac72ca351827d99ba",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-22T21:04:14Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-22T22:21:53Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-22T22:40:00Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-22T22:57:55Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-23T09:20:48Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-23T09:39:53Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-08-23T09:42:16Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-23T14:21:03Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-23T15:00:43Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-23T15:30:54Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-23T15:36:25Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-23T15:46:02Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-23T16:14:19Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-23T16:21:19Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-08-23T16:25:45Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-08-23T16:41:24Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-08-23T16:41:34Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-08-23T16:46:57Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-04T07:22:00Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-04T08:14:40Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-08T21:08:56Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-12T12:39:49Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-12T13:23:55Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-12T18:45:51Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-12T18:57:10Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:11:51Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:29:25Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:44:15Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:44:24Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:44:25Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:44:27Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:44:49Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:47:30Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-12T19:52:13Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-12T20:15:08Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-12T20:36:57Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-12T20:53:31Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-12T20:59:01Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-12T20:59:37Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-21T23:21:57Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-21T23:41:03Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-21T23:51:37Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-22T00:07:25Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99",
+    "masenf"
+  ],
+  "threads": {
+    "total": 67,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=872268ce-0dd9-42ae-9931-4aeb6d5d0c28 -->\n<!-- cubic:review-run=eb4446f0-0e3d-5817-a3cb-41a4f0d0ad65 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When an app has no registered channels, an o"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c3e06b50-8b9e-4ecb-b8e1-02f2e68cf31b -->\n<!-- cubic:review-run=eb4446f0-0e3d-5817-a3cb-41a4f0d0ad65 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a Socket.IO client omits `token`, `hand"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2cb2568d-9fc8-4833-a1f9-a9cac32483ff -->\n<!-- cubic:review-run=eb4446f0-0e3d-5817-a3cb-41a4f0d0ad65 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a background handler resumes after disc"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a3b587b1-4eba-4d9b-8ed8-b41c6620005a -->\n<!-- cubic:review-run=eb4446f0-0e3d-5817-a3cb-41a4f0d0ad65 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a caller emits `connect`, `disconnect`,"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=8230a095-1cc5-4a2b-aadd-937b7b105230 -->\n<!-- cubic:review-run=eb4446f0-0e3d-5817-a3cb-41a4f0d0ad65 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: `test_uvicorn_worker_carries_the_socket_poli"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=dad5030c-9e6a-485c-be5d-aa351b1b0234 -->\n<!-- cubic:review-run=eb4446f0-0e3d-5817-a3cb-41a4f0d0ad65 -->\n<!-- metadata:{\"confidence\":5} -->\nP3: test_embedded_server_retries_taken_port star"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=7251339d-d7dc-4526-8ea4-d02d23ada68e -->\n<!-- cubic:review-run=d2ecc8a7-223b-5cdf-9580-afde969f6b87 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a client sends a channel event named `c"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 126,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 124
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "at": "2026-08-22T21:01:33Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 67` untouched benchmarks  \n`🆕 4` new benchmarks  \n`⏩ 17`"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-08-22T21:04:09Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=55904804\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "abulvenz",
+      "at": "2026-08-24T11:15:55Z",
+      "excerpt": "I really like this lightweight approach :+1: . \r\nOne thing that is dropped, correct me if I see this wrong: under the hood socketio supports HTTP long-polling i"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-08-24T11:41:09Z",
+      "excerpt": "> I really like this lightweight approach 👍 . One thing that is dropped, correct me if I see this wrong: under the hood socketio supports HTTP long-polling in c"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-08-28T18:21:55Z",
+      "excerpt": "check out https://github.com/reflex-dev/reflex/pull/6984\r\n\r\nedit: done in https://github.com/reflex-dev/reflex/pull/6932/changes/9caa24b0226d58c59b88f0c2f2497c4"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-09-09T19:23:08Z",
+      "excerpt": "Thanks @masenf i've not been aware of that.\r\nI could try adding multiplexing to the bare websockets implementation or just flip the default to stay socketio for"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

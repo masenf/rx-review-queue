@@ -1,0 +1,137 @@
+{
+  "number": 7209,
+  "fetched_at": "2026-09-22T01:02:56Z",
+  "head_sha": "1dc88f2cab2928efffa5579832194eaaddf71358",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6980,
+      "title": "Backgrounded/no-TTY `reflex run` ignores SIGTERM/SIGINT — requires SIGKILL of the process group",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-19T04:52:04Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-19T05:01:14Z",
+      "can_push": true
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-19T05:15:24Z",
+      "can_push": false
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-19T05:15:27Z",
+      "can_push": false
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-19T05:15:28Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-19T05:19:43Z",
+      "can_push": true
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-19T05:26:56Z",
+      "can_push": false
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-19T05:26:57Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-19T05:29:29Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-19T06:32:23Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 14,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=3e8b4408-7d7b-4394-92c8-176bbeb70ccb -->\n<!-- cubic:review-run=e5ea003e-ccc8-5d2b-a96f-5a2a13398bc3 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: On Windows, frontend-only SIGTERM still bypa"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=ea14e995-d4d2-4df3-b3f0-4ded33494ff1 -->\n<!-- cubic:review-run=e5ea003e-ccc8-5d2b-a96f-5a2a13398bc3 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: If an assertion fails after the frontend tre"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=8bbdd293-1dc4-4bd7-98ac-c7ae0bbba4f5 -->\n<!-- cubic:review-run=e5ea003e-ccc8-5d2b-a96f-5a2a13398bc3 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: `_pid_gone` decides zombie-vs-alive from `/p"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=cc7765f9-31c8-406e-af4b-26fe3dd6040a -->\n<!-- cubic:review-run=e5ea003e-ccc8-5d2b-a96f-5a2a13398bc3 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: `_process_gone` detects zombies only via `/p"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=7ac2fba3-56a1-4554-8c44-5cded5b8ba70 -->\n<!-- cubic:review-run=126ff498-1192-5695-bd12-5f522bf74c0f -->\n<!-- metadata:{\"confidence\":8} -->\nP1: When the Popen root has already exited and i"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 125,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 123
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-19T04:51:59Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=66346584\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-19T04:55:31Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 67` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^sk"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

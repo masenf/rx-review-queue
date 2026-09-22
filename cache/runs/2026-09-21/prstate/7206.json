@@ -1,0 +1,95 @@
+{
+  "number": 7206,
+  "fetched_at": "2026-09-22T01:02:56Z",
+  "head_sha": "467752c4afe91513bf09ef56514b48b2a6219fa9",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7190,
+      "title": "A state mixin can silently shadow an inherited base var",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-18T22:44:18Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-18T22:48:31Z",
+      "can_push": true
+    },
+    {
+      "by": "qubydev",
+      "state": "COMMENTED",
+      "at": "2026-09-19T08:28:12Z",
+      "can_push": false
+    },
+    {
+      "by": "qubydev",
+      "state": "COMMENTED",
+      "at": "2026-09-19T08:29:11Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-19T08:29:25Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Required news fragment missing**\n\nThis user-facing bug fix changes state inheritanc"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 122
+    },
+    "failing": [
+      "pre-commit"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-18T22:44:13Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=66272356\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-18T22:49:24Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 67` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^sk"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "pre-commit",
+      "cause": "pyright reports two incompatible shadowed_value overrides in tests/units/test_state.py (lines 6105 and 6118); the run also emits one BaseState type-variable warning."
+    }
+  ]
+}

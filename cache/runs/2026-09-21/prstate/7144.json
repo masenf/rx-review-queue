@@ -1,0 +1,151 @@
+{
+  "number": 7144,
+  "fetched_at": "2026-09-22T01:02:58Z",
+  "head_sha": "98fbd9fc0dc0ad4972c522969b0851443c24951c",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:03:38Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:03:43Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:08:08Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:13:32Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:13:35Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:13:36Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:13:38Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:16:14Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:20:56Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:20:58Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:21:00Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:21:24Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:29:43Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-15T14:40:15Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-15T19:11:41Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-18T20:40:14Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 11,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Forks Share Mutable Config**\n\nWhen project code has already imported `rxconfig`, a "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-14T21:59:59Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-14T22:03:33Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=64173266\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-14T22:05:12Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 40` untouched benchmarks  \n`⏩ 8` skipped benchmarks[^ski"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/test_app.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "failing_job_findings": []
+}

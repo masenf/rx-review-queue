@@ -1,0 +1,110 @@
+{
+  "number": 7053,
+  "fetched_at": "2026-09-22T01:02:54Z",
+  "head_sha": "b1a6baa88452fc0943601df248009b7a7691e3d8",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "APPROVED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-06T20:33:07Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-06T20:38:02Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T23:02:24Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T23:02:26Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T23:02:28Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-21T19:27:24Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-21T19:34:55Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-21T19:35:35Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "APPROVED",
+      "at": "2026-09-21T20:50:08Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 122
+    },
+    "failing": [
+      "Run Lighthouse benchmark"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-06T20:30:34Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-06T20:33:03Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=61023458\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-06T20:34:37Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 67` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^sk"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": true,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "Run Lighthouse benchmark",
+      "cause": "Lighthouse CLI preparation failed before the benchmark: npm returned ETARGET because no matching tldts-core@^7.4.14 version was available. The workflow also warns that node-version is not a valid setup_build_env input."
+    }
+  ]
+}

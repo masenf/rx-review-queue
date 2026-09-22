@@ -1,0 +1,134 @@
+{
+  "run": {
+    "date": "2026-09-21",
+    "started_at": "2026-09-21 18:01 PDT",
+    "runner": "local-codex",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "drafted from completed cached run files"
+  },
+  "stats": {
+    "open": 86,
+    "nondraft": 59,
+    "drafts": 27,
+    "counting_approvals": 3,
+    "fast_lane": 3,
+    "one_fix_away": 9,
+    "fork_ci_unrun": 9,
+    "never_human_reviewed": 24
+  },
+  "attention": [
+    "#7054 and #7228 are approved, green, clean, and thread-clear; they need only a merge decision.",
+    "#7053 is approved, clean, and thread-clear; resolve or rerun its single failing Lighthouse check.",
+    "#7203, #7210, and #7226 are small, green, clean, tested changes waiting only for a first approval.",
+    "Long-waiting contributors still need maintainer follow-up: #6770 (56 days), #6840 (46 days), #6853 (45 days), #6876 (37 days), and #6935 (28 days)."
+  ],
+  "top15": [
+    {"number": 7054, "score": 9.6, "summary": "Approved deploy-preparation optimization with green CI and all 18 threads resolved.", "evidence": ["126 checks completed without failure", "Current write-access approval", "Locally mergeable; tests, docs, and fragments included"], "blocker": "Merge decision.", "whose_move": "maintainer", "chips": ["approved", "green", "clean"], "override_reason": null},
+    {"number": 7228, "score": 9.4, "summary": "Approved five-file docs-only link cleanup, green and thread-clear.", "evidence": ["All five changed files are real docs paths", "Current write-access approval", "Locally mergeable with zero unresolved threads"], "blocker": "Merge decision.", "whose_move": "maintainer", "chips": ["approved", "docs-only", "clean"], "override_reason": null},
+    {"number": 7053, "score": 8.5, "summary": "Approved five-file performance change with focused tests and no unresolved threads.", "evidence": ["Current write-access approval", "Locally mergeable", "Lighthouse stopped before benchmarking when npm could not resolve tldts-core@^7.4.14"], "blocker": "Rerun or resolve the Lighthouse dependency-install failure.", "whose_move": "maintainer", "chips": ["approved", "one red check"], "override_reason": null},
+    {"number": 7203, "score": 8.2, "summary": "Four-file frontend-dev-server fix with green CI, focused tests, and no review threads.", "evidence": ["123 successful checks and 2 skipped", "Locally mergeable", "Tests and fragment included"], "blocker": "First approval.", "whose_move": "maintainer", "chips": ["green", "clean", "4 files"], "override_reason": null},
+    {"number": 7210, "score": 8.1, "summary": "Focused npm preflight fix for issue #6976, with green CI and all five threads resolved.", "evidence": ["Issue filed by masenf", "Locally mergeable", "Tests and fragment included"], "blocker": "First approval.", "whose_move": "maintainer", "chips": ["issue filed by masenf", "green", "clean"], "override_reason": null},
+    {"number": 7226, "score": 8.0, "summary": "Three-file Plotly title fix for issue #7101, green and fully resolved.", "evidence": ["Issue filed by masenf", "Locally mergeable", "Focused unit test and package fragment included"], "blocker": "First approval.", "whose_move": "maintainer", "chips": ["issue filed by masenf", "green", "clean"], "override_reason": null},
+    {"number": 7138, "score": 7.9, "summary": "Time-environment-variable migration is now green, clean, and thread-clear.", "evidence": ["125 checks completed without failure", "Locally mergeable", "All nine review threads resolved"], "blocker": "First approval.", "whose_move": "maintainer", "chips": ["green", "clean"], "override_reason": null},
+    {"number": 6116, "score": 7.8, "summary": "Broad orjson integration remains green, clean, and fully resolved after extensive review.", "evidence": ["Checks green", "Locally mergeable", "All 44 threads resolved; tests and fragments included"], "blocker": "Maintainer approval of the broad serialization change.", "whose_move": "maintainer", "chips": ["green", "clean", "41 files"], "override_reason": null},
+    {"number": 7207, "score": 7.7, "summary": "Hosting CLI migration is green, clean, tested, and thread-clear.", "evidence": ["Checks green", "Locally mergeable", "No unresolved threads"], "blocker": "Maintainer approval of the 26-file migration.", "whose_move": "maintainer", "chips": ["green", "clean", "26 files"], "override_reason": null},
+    {"number": 7236, "score": 7.4, "summary": "Focused package-cache invalidation fix for issue #7235 is green and clean.", "evidence": ["Issue filed by masenf", "125 checks completed without failure", "Four files with focused tests and a fragment"], "blocker": "Settle the one unresolved Greptile equality finding, then review.", "whose_move": "author", "chips": ["green", "clean", "1 unresolved thread"], "override_reason": null},
+    {"number": 7233, "score": 7.2, "summary": "Asset-export cleanup for issue #7231 is green and locally mergeable.", "evidence": ["126 checks completed without failure", "Tests, docs, and fragment included", "Eight-file focused diff"], "blocker": "Address or resolve two Cubic findings before approval.", "whose_move": "author", "chips": ["green", "clean", "2 unresolved threads"], "override_reason": null},
+    {"number": 6932, "score": 7.0, "summary": "Large websocket implementation is green and clean but still has live review discussion.", "evidence": ["Checks green", "Locally mergeable", "Tests, docs, and package fragments included"], "blocker": "Resolve seven remaining threads and obtain approval.", "whose_move": "author", "chips": ["green", "clean", "7 unresolved threads"], "override_reason": null},
+    {"number": 7209, "score": 6.8, "summary": "Frontend process-tree shutdown change is green and clean with focused tests.", "evidence": ["Checks green", "Locally mergeable", "Tests and fragment included"], "blocker": "Resolve five review threads before approval.", "whose_move": "author", "chips": ["green", "clean", "5 unresolved threads"], "override_reason": null},
+    {"number": 7238, "score": 6.6, "summary": "Substantial application-guide addition is clean, documented, and tested.", "evidence": ["Locally mergeable", "Real docs, tests, and package fragment included", "No unresolved threads"], "blocker": "Wait for the pending check suite, then review.", "whose_move": "maintainer", "chips": ["pending CI", "clean", "31 files"], "override_reason": null},
+    {"number": 7240, "score": 6.4, "summary": "Small SDK validation fix is clean, tested, and thread-clear.", "evidence": ["Five-file focused diff", "Locally mergeable", "CodSpeed reports a 3.24% mutable-dict access regression, with a runtime-environment comparison warning"], "blocker": "Settle the CodSpeed result, then obtain approval.", "whose_move": "author", "chips": ["red CI", "clean", "5 files"], "override_reason": null}
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {"number": 7054, "summary": "Approved, green, clean, and all 18 threads resolved.", "blocker": "Merge decision."},
+      {"number": 7228, "summary": "Approved five-file docs-only change, green, clean, and thread-clear.", "blocker": "Merge decision."},
+      {"number": 7203, "summary": "Four-file tested fix is green, clean, and thread-clear.", "blocker": "First approval."},
+      {"number": 7210, "summary": "Focused issue-backed fix is green, clean, and fully resolved.", "blocker": "First approval."},
+      {"number": 7226, "summary": "Three-file issue-backed fix is green, clean, tested, and fully resolved.", "blocker": "First approval."},
+      {"number": 7138, "summary": "Green, clean, and all nine threads resolved.", "blocker": "First approval."},
+      {"number": 6116, "summary": "Green, clean, and all 44 threads resolved after extensive iteration.", "blocker": "Maintainer approval of the broad serialization change."},
+      {"number": 7207, "summary": "Green, clean, tested migration with no unresolved threads.", "blocker": "Maintainer approval of the broad hosting-CLI migration."},
+      {"number": 7053, "summary": "Approved, clean, and thread-clear; Lighthouse stopped before benchmarking on npm dependency resolution.", "blocker": "Rerun or resolve the Lighthouse dependency-install failure."}
+    ],
+    "author": []
+  },
+  "fast_lane": [
+    {"number": 7228, "summary": "Five real docs files only; approved, green, clean, and thread-clear."},
+    {"number": 7203, "summary": "Four-file focused fix with green CI, tests, fragment, clean mergeability, and zero threads."},
+    {"number": 7226, "summary": "Three-file issue-backed fix with green CI, focused test, package fragment, and no unresolved threads."}
+  ],
+  "closure": [
+    {"number": 6553, "summary": "BaseContext consolidation is 471 commits behind main, conflicts in context/base.py, and lacks its expected package fragment.", "keep_issue": 6514},
+    {"number": 6490, "summary": "Redis Cluster support is 415 behind main, conflicts across Redis/config/token-manager paths, and lacks two expected fragments.", "keep_issue": null},
+    {"number": 6125, "summary": "Redis Sentinel support has had no activity since February, fork CI has never run, it conflicts with main, and it has no tests or fragment.", "keep_issue": 5830},
+    {"number": 6468, "summary": "The 37-file component-freezing refactor is 404 behind, conflicts across seven files, is red, and retains one unresolved thread.", "keep_issue": 6214},
+    {"number": 7004, "summary": "The wrapper-tag fix is 143 behind, conflicting, red, CHANGES_REQUESTED, and has four unresolved threads.", "keep_issue": 6955}
+  ],
+  "stacks": [
+    {"chain": [7079, 7113], "note": "Granian worker stack is conflict-bound; both heads share exact conflicts in tests/units/test_telemetry.py and tests/units/utils/test_exec.py, while #7113 also conflicts in reflex/utils/exec.py."},
+    {"chain": [6743, 6744, 6745, 6757], "note": "Alek99 performance stack is conflict-bound. The exact four-head intersection is component.py, memo.py, utils/types.py, vars/base.py, pyi_hashes.json, reflex/state.py, test_compilation.py, test_proxy.py, test_types.py, test_base.py, and test_state.py."}
+  ],
+  "conflict_clusters": [
+    {"prs": [6468, 6597, 6688, 6743, 6744, 6745, 6757, 7123], "files": ["pyi_hashes.json"], "note": "Largest exact single-file conflict cluster: all eight members conflict on pyi_hashes.json."},
+    {"prs": [6688, 6733, 6744, 6745, 6757, 7056, 7064], "files": ["reflex/app.py"], "note": "Exact seven-PR reflex/app.py conflict cluster."},
+    {"prs": [6840, 6853, 6743, 6744, 6745, 6757, 7036], "files": ["tests/units/test_state.py"], "note": "Exact seven-PR state-test conflict cluster."},
+    {"prs": [6688, 6743, 6744, 6745, 6757, 6768], "files": ["packages/reflex-base/src/reflex_base/vars/base.py"], "note": "Exact six-PR vars/base.py conflict cluster."},
+    {"prs": [6743, 6744, 6745, 6757, 7036, 7064], "files": ["reflex/state.py"], "note": "Exact six-PR reflex/state.py conflict cluster."}
+  ],
+  "structural": [
+    {"number": 6100, "summary": "State/event id minification is clean and green but spans 50 files and retains two unresolved threads.", "blocker": "Resolve the two live findings before broad maintainer review."},
+    {"number": 6796, "summary": "The 56-file i18n change is clean but red and retains 29 unresolved threads.", "blocker": "Reduce the combined CI and review blockers before maintainer review."},
+    {"number": 6688, "summary": "Incremental compile caching spans 40 files, conflicts with main, is red, and retains three unresolved threads.", "blocker": "Rebase and reduce the combined CI/review blockers."},
+    {"number": 7237, "summary": "Event fan-out optimization is clean but has three failing checks and three unresolved findings.", "blocker": "Address the test, formatting, performance, and review findings."}
+  ],
+  "patterns": [
+    {"title": "Counting approvals repo-wide: 3", "detail": "#7053, #7054, and #7228 have current write-access APPROVED review decisions. #7054 and #7228 are green and clean; #7053 remains blocked by one failing check."},
+    {"title": "Never reviewed by someone other than the author: 24 non-draft PRs", "detail": "No non-bot review from a person other than the PR author is recorded on #6468, #6490, #6553, #6676, #6840, #6935, #7051, #7052, #7056, #7123, #7203, #7206, #7207, #7208, #7209, #7210, #7219, #7226, #7227, #7233, #7236, #7237, #7238, and #7240."},
+    {"title": "Contributors waiting on maintainer action", "detail": "Using the latest author push/comment followed by no later maintainer response, #6770 has waited 56 days, #6840 46 days, #6853 45 days, #6876 37 days, and #6935 28 days. Newer contributor PRs #7206 and #7209 have waited about 2 days; #7219 about 1 day. #7210's current head is same-day and is omitted from the day-count list."},
+    {"title": "Fork PRs whose full CI never ran: 9", "detail": "#6125, #6126, #6840, #6853, #6876, #6935, #7036, #7040, and #7144 have only the workflow-approval-gated or two-bot-check state; do not treat a SUCCESS rollup as full CI."},
+    {"title": "Fragment problems: 8 missing expected fragments", "detail": "#6125, #6490, #6553, #6597, #6751, #6840, #6853, and #6935 touch paths that expect fragments but have none."},
+    {"title": "Author concentration", "detail": "Top non-draft authors are FarhanAliRaza (16), Alek99 (11), benedikt-bartscher (6), harsh21234i (4), flcrom (3), and adhami3310, anxkhn, masenf, qubydev, and timon0305 (2 each), counted from listing author logins."},
+    {"title": "Conflict pressure", "detail": "31 of 59 non-draft PRs conflict with today's main; the largest exact single-file cluster is pyi_hashes.json (8 PRs)."},
+    {"title": "Red checks: 18 PRs", "detail": "#6468, #6597, #6676, #6688, #6751, #6770, #6796, #7004, #7053, #7064, #7065, #7123, #7206, #7208, #7219, #7227, #7237, and #7240 currently have failing check rollups; all have findings recorded, with expired-log caveats for #6468 and #6597."}
+  ],
+  "delta": {
+    "previous_run": "2026-09-18",
+    "merged": [7195, 7193, 7068, 7192, 7189, 7188, 6181, 6850, 6180, 7142],
+    "closed": [
+      {"number": 6798, "note": "closed unmerged"}, {"number": 6563, "note": "closed unmerged"}, {"number": 6735, "note": "closed unmerged"}, {"number": 6732, "note": "closed unmerged"}, {"number": 6723, "note": "closed unmerged"}, {"number": 6411, "note": "closed unmerged"}, {"number": 6456, "note": "closed unmerged"}
+    ],
+    "opened": [7238, 7240, 7237, 7236, 7234, 7233, 7228, 7208, 7210, 7227, 7226, 7219, 7206, 7209, 7207, 7203],
+    "entered_top15": [7054, 7228, 7203, 7210, 7226, 7138, 7207, 7236, 7233, 7209, 7238, 7240],
+    "left_top15": [7146, 7189, 7142, 6798, 7195, 7188, 7068, 6181, 7144, 6770, 6676, 6850],
+    "newly_blocked": [],
+    "newly_unblocked": [
+      {"number": 7054, "note": "now approved, green, clean, and thread-clear"},
+      {"number": 7138, "note": "conflicts and red checks cleared; now green, clean, and thread-clear"}
+    ],
+    "draft_flips": [
+      {"number": 7146, "now_draft": true}
+    ]
+  },
+  "method": {
+    "notes": [
+      "Drafted only from the completed cached 2026-09-21 listing, measurements, conflicts, and prstate files; source files were not modified.",
+      "The authenticated listing identifies masenf and reconciles 86 open PRs to 59 non-drafts plus 27 drafts; all 59 non-drafts have measurements and prstate files.",
+      "Git measurements use main 9f43f2e0cc150860b4fbcf213fd81f6a3c0333f1 fetched at 2026-09-22T01:01:49Z.",
+      "Conflict memberships and every shared-file claim were computed directly from conflicts.json; stack notes use exact set intersections.",
+      "Delta merged, closed-unmerged, and opened classifications were supplied for this drafting pass and reconciled against the two listings.",
+      "One-fix-away contains only PRs with exactly one identified remaining action."
+    ],
+    "audit_corrections": [
+      "Added #7146's non-draft-to-draft transition from the mechanical delta.",
+      "Recomputed never-human-reviewed from review authors, excluding bots and self-reviews; corrected the count from 33 to 24.",
+      "Removed #7210 from the two-day contributor-wait group because its current head activity is same-day."
+    ],
+    "caveats": [
+      "GitHub Actions logs for #6468 and #6597 have expired; their findings are limited to surviving annotations and measurement evidence.",
+      "Contributor wait days are whole-day ages from the latest defensible author activity in cached reviews/comments or listing timestamps; same-day waits are omitted from the attention list.",
+      "Low check counts on workflow-gated fork PRs are not treated as full green CI."
+    ]
+  }
+}

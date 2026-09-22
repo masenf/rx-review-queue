@@ -1,0 +1,98 @@
+{
+  "number": 7065,
+  "fetched_at": "2026-09-22T01:03:00Z",
+  "head_sha": "ea0d227b3764a2ca39d9d592513ba7ad0dee6fe4",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:45:07Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:49:28Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Run the audit through uv**\n\nAnyone following these instructions will invoke the virtualenv interpreter directly,"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=8fedc43e-89c6-4244-9071-53401c1266ef -->\n<!-- cubic:review-run=4c0c4eee-fd19-56a0-9d8d-9b139827c5d0 -->\n<!-- metadata:{\"confidence\":10} -->\nP1: When `reflex.db` exists in the caller's wor"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=dcfd6e1c-5609-4a4c-993f-e1261c6392d3 -->\n<!-- cubic:review-run=4c0c4eee-fd19-56a0-9d8d-9b139827c5d0 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: On Windows, `root` never prefixes the backs"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=33051000-e609-4fe9-8566-abbfb9197c57 -->\n<!-- cubic:review-run=4c0c4eee-fd19-56a0-9d8d-9b139827c5d0 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Run the audit through uv instead of documen"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2d54d345-4d7c-460d-86fe-f87926b2a20c -->\n<!-- cubic:review-run=4c0c4eee-fd19-56a0-9d8d-9b139827c5d0 -->\n<!-- metadata:{\"confidence\":9} -->\nP3: The middle item of the list has no verb: 'pr"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 111,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 108
+    },
+    "failing": [
+      "pre-commit"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-07T21:41:20Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-07T21:44:24Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 32` untouched benchmarks  \n`⏩ 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-07T21:44:30Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR moves three sources of blocking work away from the backend event loop and adds regression coverage:\n- Runs disk-state reads a"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/istate/manager/test_disk.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "pre-commit",
+      "cause": "pyright reports five errors in scripts/blockbuster_audit.py, including unresolved blockbuster.blockbuster imports, list.length access, an incompatible FileUpload argument, and bool.to_string access."
+    }
+  ]
+}

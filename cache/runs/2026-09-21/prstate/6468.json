@@ -1,0 +1,82 @@
+{
+  "number": 6468,
+  "fetched_at": "2026-09-22T01:03:04Z",
+  "head_sha": "4f7dfb99b992721999c90dc3d989c571539b7d87",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6214,
+      "title": "Single-pass compiler: Make Component effectively immutable",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-05-07T15:59:47Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=7\" align=\"top\"></a> **`ref` silently dropped when `DataTable` has an `id`**\n\n`Component._render(props=Non"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 72,
+    "by_state": {
+      "FAILURE": 3,
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 66
+    },
+    "failing": [
+      "reflex-docs (3.11)",
+      "reflex-docs (3.12)",
+      "docs-tests"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-05-07T15:59:35Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR refactors Reflex's component system to be immutable after construction: `children` is now stored as a `tuple`, a `__setattr__"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-05-07T15:59:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 3.55%**\n\n\n\n\n`⚡ 2` improved benchmarks  \n`✅ 22` untouched bench"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+    "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+    "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+    "pyi_hashes.json",
+    "reflex/compiler/utils.py",
+    "tests/units/components/datadisplay/test_dataeditor.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "reflex-docs (3.11), reflex-docs (3.12), docs-tests",
+      "cause": "GitHub retains only generic exit-code annotations for these May 29 jobs; Actions log downloads return HTTP 410, so the underlying docs failure is no longer available. docs-tests also warns that docs/app/uv.lock matched no cache dependency file, but that warning does not establish the job failure."
+    }
+  ]
+}
