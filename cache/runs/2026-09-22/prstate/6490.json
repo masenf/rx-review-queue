@@ -1,0 +1,57 @@
+{
+  "number": 6490,
+  "fetched_at": "2026-09-22T20:49:18Z",
+  "head_sha": "62019f3edc491eaebf30885a24325854a918346b",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-05-11T23:09:52Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 70,
+    "by_state": {
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 67
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "at": "2026-05-11T23:01:45Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`✅ 24` untouched benchmarks  \n\n\n\n\n\n---\n\n<sub>Comparing <c"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-05-11T23:09:46Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR adds opt-in Redis Cluster support via `rx.Config(redis_cluster=True)`, keeping the default `False` to preserve existing behav"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/config.py",
+    "reflex/istate/manager/redis.py",
+    "reflex/utils/token_manager.py",
+    "tests/units/reflex_cli/conftest.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

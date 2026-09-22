@@ -1,0 +1,572 @@
+{
+  "run": {
+    "date": "2026-09-22",
+    "started_at": "2026-09-22 PT",
+    "runner": "local-codex",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "local gh CLI + cache/repo.git"
+  },
+  "stats": {
+    "open": 86,
+    "nondraft": 60,
+    "drafts": 26,
+    "counting_approvals": 2,
+    "fast_lane": 3,
+    "one_fix_away": 9,
+    "fork_ci_unrun": 9,
+    "never_human_reviewed": 34
+  },
+  "attention": [
+    "Spend review time first on #7226, then #7210: both are high-value user-facing bug fixes with small green diffs, tests, no conflicts, and zero unresolved threads.",
+    "Awaiting author/adjudication, not review-ready: #7236 has one live equality finding and stack root #7234 has two live findings; both remain high-value follow-ups.",
+    "CI unblock, not code review: approve workflows for #6876; it is a small tested fix for another user's hidden-input bug, but full CI has never run.",
+    "Do not spend review time on #7054 or #7053: #7054 only needs merging, while #7053 is already approved and needs a Lighthouse dependency-install rerun."
+  ],
+  "top15": [
+    {
+      "number": 7226,
+      "score": 9.4,
+      "summary": "Best value per review minute: a focused Plotly title bug fix with a targeted test.",
+      "evidence": [
+        "3 files (+49/-5), 2 ahead / 15 behind main.",
+        "No local conflicts; 0 unresolved of 4 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "high value/min",
+        "issue #7101"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7210,
+      "score": 9.2,
+      "summary": "Fixes failed npm runs leaving reflex.lock inconsistent, in a compact tested diff.",
+      "evidence": [
+        "4 files (+265/-5), 4 ahead / 15 behind main.",
+        "No local conflicts; 0 unresolved of 5 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "high value/min",
+        "issue #6976"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7054,
+      "score": 9,
+      "summary": "Deploy preparation and frontend-build reuse are approved, green, clean, and fully resolved.",
+      "evidence": [
+        "24 files (+2859/-114), 10 ahead / 18 behind main.",
+        "No local conflicts; 0 unresolved of 18 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "Merge decision; no more code review needed.",
+      "whose_move": "maintainer",
+      "chips": [
+        "approved",
+        "merge click"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7269,
+      "score": 8.6,
+      "summary": "Repairs minimum-dependency workspace builds and reuses built wheels across jobs.",
+      "evidence": [
+        "5 files (+844/-231), 9 ahead / 3 behind main.",
+        "No local conflicts; 0 unresolved of 4 review threads; 124 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "build reliability",
+        "green"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7203,
+      "score": 8.4,
+      "summary": "Small green fix with tests and no unresolved review threads.",
+      "evidence": [
+        "4 files (+22/-21), 3 ahead / 18 behind main.",
+        "No local conflicts; 0 unresolved of 0 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "small diff",
+        "green"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7138,
+      "score": 8.2,
+      "summary": "Timedelta environment migration is green, clean, tested, and fully resolved.",
+      "evidence": [
+        "17 files (+465/-22), 14 ahead / 7 behind main.",
+        "No local conflicts; 0 unresolved of 9 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "green",
+        "resolved"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7236,
+      "score": 8,
+      "summary": "Prevents package.json formatting from forcing frontend installs on every compile.",
+      "evidence": [
+        "4 files (+164/-1), 1 ahead / 10 behind main.",
+        "No local conflicts; 1 unresolved of 1 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Settle the one live JSON equality finding, then approve.",
+      "whose_move": "author",
+      "chips": [
+        "high value/min",
+        "one thread"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6116,
+      "score": 7.8,
+      "summary": "Broad orjson serialization work is green, clean, and fully resolved after extensive iteration.",
+      "evidence": [
+        "41 files (+2309/-269), 68 ahead / 7 behind main.",
+        "No local conflicts; 0 unresolved of 44 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Maintainer review of the broad serialization change.",
+      "whose_move": "maintainer",
+      "chips": [
+        "green",
+        "broad diff"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7234,
+      "score": 7.6,
+      "summary": "Root of the React Compiler stack; reviewing it first gives conceptual leverage on #7272, whose head separately conflicts with main.",
+      "evidence": [
+        "14 files (+559/-19), 1 ahead / 10 behind main.",
+        "No local conflicts; 2 unresolved of 2 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "Review the root API/config shape and settle two threads.",
+      "whose_move": "author",
+      "chips": [
+        "stack root",
+        "review leverage"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6876,
+      "score": 7.4,
+      "summary": "External-contributor fix for another user's hidden-input bug; small, tested, and issue-backed.",
+      "evidence": [
+        "5 files (+97/-7), 3 ahead / 226 behind main.",
+        "No local conflicts; 1 unresolved of 3 review threads; full CI has not run."
+      ],
+      "blocker": "Approve fork workflows first; full CI has never run.",
+      "whose_move": "maintainer",
+      "chips": [
+        "external contributor",
+        "issue #6874"
+      ],
+      "override_reason": "Elevated for external-contributor rescue value and an issue filed by another user; workflow approval is the immediate maintainer action."
+    },
+    {
+      "number": 7233,
+      "score": 7.2,
+      "summary": "Removes deleted assets from production exports with green CI and tests.",
+      "evidence": [
+        "8 files (+631/-43), 2 ahead / 11 behind main.",
+        "No local conflicts; 2 unresolved of 3 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve two remaining review findings, then approve.",
+      "whose_move": "author",
+      "chips": [
+        "user-visible bug",
+        "two threads"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7207,
+      "score": 7,
+      "summary": "Hosting CLI migration is green and thread-free, but it conflicts with main on uv.lock.",
+      "evidence": [
+        "26 files (+4033/-7356), 9 ahead / 22 behind main.",
+        "1 conflicting files; 0 unresolved of 26 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Rebase the uv.lock conflict, then obtain maintainer approval.",
+      "whose_move": "author",
+      "chips": [
+        "conflicting",
+        "migration"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7053,
+      "score": 6.8,
+      "summary": "Event-queue optimization is already approved and clean; Lighthouse failed before benchmarking.",
+      "evidence": [
+        "5 files (+383/-10), 4 ahead / 119 behind main.",
+        "No local conflicts; 0 unresolved of 4 review threads; 125 checks, rollup FAILURE."
+      ],
+      "blocker": "Rerun or resolve npm dependency installation; no more code review needed.",
+      "whose_move": "maintainer",
+      "chips": [
+        "approved",
+        "CI action"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7237,
+      "score": 6.6,
+      "summary": "Shared-state fan-out optimization is green and clean with one live finding.",
+      "evidence": [
+        "7 files (+672/-3), 3 ahead / 10 behind main.",
+        "No local conflicts; 1 unresolved of 4 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve the remaining review thread, then obtain approval.",
+      "whose_move": "author",
+      "chips": [
+        "performance",
+        "one thread"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7209,
+      "score": 6.4,
+      "summary": "Fixes shutdown process-tree handling for background/no-TTY runs.",
+      "evidence": [
+        "6 files (+1590/-24), 2 ahead / 15 behind main.",
+        "No local conflicts; 5 unresolved of 14 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve five review threads before approval.",
+      "whose_move": "author",
+      "chips": [
+        "issue #6980",
+        "five threads"
+      ],
+      "override_reason": null
+    }
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {
+        "number": 7054,
+        "summary": "Approved, green, clean, and fully resolved.",
+        "blocker": "Merge decision."
+      },
+      {
+        "number": 7226,
+        "summary": "Focused Plotly bug fix is green, clean, tested, and thread-free.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7210,
+        "summary": "Issue-backed npm lock fix is green, clean, tested, and thread-free.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7269,
+        "summary": "Minimum-dependency build fix is green, clean, tested, and thread-free.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7203,
+        "summary": "Small tested change is green, clean, and thread-free.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7138,
+        "summary": "Green, clean, tested, and all threads resolved.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 6116,
+        "summary": "Green, clean, and all 44 threads resolved.",
+        "blocker": "Maintainer approval of the broad change."
+      },
+      {
+        "number": 7053,
+        "summary": "Approved and clean; Lighthouse failed before benchmarking on dependency installation.",
+        "blocker": "Rerun or resolve the Lighthouse dependency-install failure."
+      },
+      {
+        "number": 6876,
+        "summary": "Small external-contributor bug fix whose fork workflows have never run.",
+        "blocker": "Approve the fork workflows."
+      }
+    ],
+    "author": []
+  },
+  "fast_lane": [
+    {
+      "number": 7226,
+      "summary": "Best value per review minute: a focused Plotly title bug fix with a targeted test.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7210,
+      "summary": "Fixes failed npm runs leaving reflex.lock inconsistent, in a compact tested diff.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7203,
+      "summary": "Small green fix with tests and no unresolved review threads.",
+      "blocker": "First approval."
+    }
+  ],
+  "closure": [
+    {
+      "number": 6553,
+      "summary": "476 behind main, conflicting, SUCCESS, and 0 unresolved threads across a 4-file diff.",
+      "keep_issue": 6514
+    },
+    {
+      "number": 6490,
+      "summary": "420 behind main, conflicting, SUCCESS, and 0 unresolved threads across a 11-file diff.",
+      "keep_issue": null
+    },
+    {
+      "number": 6125,
+      "summary": "654 behind main, conflicting, no current CI, and 0 unresolved threads across a 3-file diff.",
+      "keep_issue": 5830
+    },
+    {
+      "number": 6468,
+      "summary": "409 behind main, conflicting, FAILURE, and 1 unresolved threads across a 37-file diff.",
+      "keep_issue": 6214
+    },
+    {
+      "number": 7004,
+      "summary": "148 behind main, conflicting, FAILURE, and 4 unresolved threads across a 4-file diff.",
+      "keep_issue": 6955
+    }
+  ],
+  "stacks": [
+    {
+      "chain": [
+        7234,
+        7272
+      ],
+      "note": "React Compiler stack: review #7234 first for conceptual leverage; #7272 adds 21 parent-relative files but separately conflicts with main in tests/units/reflex_base/vars/test_base.py."
+    },
+    {
+      "chain": [
+        7079,
+        7113
+      ],
+      "note": "7079 -> 7113 is conflict-bound; exact shared conflict intersection: tests/units/test_telemetry.py, tests/units/utils/test_exec.py."
+    },
+    {
+      "chain": [
+        6743,
+        6744,
+        6745,
+        6757
+      ],
+      "note": "6743 -> 6744 -> 6745 -> 6757 is conflict-bound; exact shared conflict intersection: packages/reflex-base/src/reflex_base/components/component.py, packages/reflex-base/src/reflex_base/components/memo.py, packages/reflex-base/src/reflex_base/utils/types.py, packages/reflex-base/src/reflex_base/vars/base.py, pyi_hashes.json, reflex/state.py, tests/benchmarks/test_compilation.py, tests/units/istate/test_proxy.py, tests/units/reflex_base/utils/test_types.py, tests/units/reflex_base/vars/test_base.py, tests/units/test_state.py."
+    }
+  ],
+  "conflict_clusters": [
+    {
+      "prs": [
+        6468,
+        6597,
+        6688,
+        6743,
+        6744,
+        6745,
+        6757,
+        7123
+      ],
+      "files": [
+        "pyi_hashes.json"
+      ],
+      "note": "Exact 8-PR conflict cluster on pyi_hashes.json."
+    },
+    {
+      "prs": [
+        6688,
+        6733,
+        6744,
+        6745,
+        6757,
+        7056,
+        7064
+      ],
+      "files": [
+        "reflex/app.py"
+      ],
+      "note": "Exact 7-PR conflict cluster on reflex/app.py."
+    },
+    {
+      "prs": [
+        6743,
+        6744,
+        6745,
+        6757,
+        6840,
+        6853,
+        7036
+      ],
+      "files": [
+        "tests/units/test_state.py"
+      ],
+      "note": "Exact 7-PR conflict cluster on tests/units/test_state.py."
+    },
+    {
+      "prs": [
+        6688,
+        6743,
+        6744,
+        6745,
+        6757,
+        6768
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/vars/base.py"
+      ],
+      "note": "Exact 6-PR conflict cluster on packages/reflex-base/src/reflex_base/vars/base.py."
+    },
+    {
+      "prs": [
+        6743,
+        6744,
+        6745,
+        6757,
+        7036,
+        7064
+      ],
+      "files": [
+        "reflex/state.py"
+      ],
+      "note": "Exact 6-PR conflict cluster on reflex/state.py."
+    }
+  ],
+  "structural": [
+    {
+      "number": 7272,
+      "summary": "React Compiler child includes #7234; review the 21-file parent-relative addition only after the root settles."
+    },
+    {
+      "number": 7273,
+      "summary": "Potentially high-impact frontend structural-sharing work is new and red on one Windows shutdown test; stabilize CI before review."
+    },
+    {
+      "number": 6796,
+      "summary": "Broad i18n change remains review-heavy with many unresolved threads."
+    },
+    {
+      "number": 6688,
+      "summary": "Incremental compile caching remains broad, conflicting, red, and thread-blocked."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Counting approvals repo-wide: 2",
+      "detail": "#7053, #7054 have current write-access APPROVED decisions; #7054 needs merging and #7053 needs CI action, not more review."
+    },
+    {
+      "title": "Never reviewed by someone other than the author: 34 non-draft PRs",
+      "detail": "#6116, #6468, #6490, #6553, #6676, #6751, #6757, #6770, #6840, #6853, #6935, #7007, #7036, #7051, #7052, #7056, #7065, #7113, #7123, #7203, #7206, #7207, #7208, #7209, #7210, #7219, #7226, #7227, #7233, #7234, #7236, #7269, #7272, #7273."
+    },
+    {
+      "title": "Contributors waiting on maintainer action",
+      "detail": "Using latest author activity as the clock: #6770 has waited 57 days, #6840 47 days, #6853 46 days, #6876 39 days, and #6935 29 days."
+    },
+    {
+      "title": "Fork PRs whose full CI never ran: 9",
+      "detail": "#6125, #6126, #6840, #6853, #6876, #6935, #7036, #7040, #7144; approve workflows before treating these as green."
+    },
+    {
+      "title": "Fragment problems: 8 missing expected fragments",
+      "detail": "#6125, #6490, #6553, #6597, #6751, #6840, #6853, #6935."
+    },
+    {
+      "title": "Author concentration",
+      "detail": "Top non-draft authors: FarhanAliRaza (19), Alek99 (10), benedikt-bartscher (6), harsh21234i (4), flcrom (3), masenf (3), anxkhn (2), qubydev (2), counted from listing authors."
+    },
+    {
+      "title": "Conflict pressure",
+      "detail": "33 of 60 non-draft PRs conflict with today's main."
+    },
+    {
+      "title": "Red checks: 17 PRs",
+      "detail": "#6468, #6597, #6676, #6688, #6751, #6770, #6796, #7004, #7053, #7064, #7065, #7123, #7206, #7208, #7219, #7227, #7273; each has a recorded failure finding."
+    }
+  ],
+  "delta": {
+    "previous_run": "2026-09-21",
+    "merged": [
+      7238,
+      7240,
+      7228
+    ],
+    "closed": [],
+    "opened": [
+      7273,
+      7272,
+      7269
+    ],
+    "entered_top15": [
+      7269,
+      7234,
+      6876,
+      7237
+    ],
+    "left_top15": [
+      7228,
+      6932,
+      7238,
+      7240
+    ],
+    "newly_blocked": [
+      {
+        "number": 7273,
+        "note": "new PR is red on one Windows shutdown test"
+      }
+    ],
+    "newly_unblocked": [],
+    "draft_flips": [
+      {
+        "number": 7234,
+        "now_draft": false
+      }
+    ]
+  },
+  "method": {
+    "notes": [
+      "Authenticated listing as masenf reconciled 86 rows; all 60 non-drafts have fresh measurements and PR state.",
+      "Git measurements use main 84bb6abb3227d1130007c6a91c6dc7f12b755c86; local merge-tree is authoritative for conflicts.",
+      "Today’s ordering incorporates review value within merge readiness: focused user bugs and stack-root leverage outrank already-approved items and lower-impact polish.",
+      "All red PRs have failing_job_findings populated from logs/annotations where retained."
+    ],
+    "audit_corrections": [
+      "Recomputed never-human-reviewed and corrected the count from 24 to 34.",
+      "Removed #7207 from one-fix-away and corrected its top card because it conflicts with main on uv.lock and still needs approval.",
+      "Corrected the React Compiler stack note: #7272 conflicts with main even though reviewing #7234 still offers conceptual leverage.",
+      "Separated scarce-time actions into review-now, awaiting-author/adjudication, CI-unblock, and merge/CI-only queues."
+    ],
+    "caveats": [
+      "Logs for #6468 and #6597 have expired; #6676 uses retained evidence from the unchanged prior-run head.",
+      "Low two-check fork states are workflow-gated, not full green CI."
+    ]
+  }
+}

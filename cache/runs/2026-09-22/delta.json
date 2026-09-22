@@ -1,0 +1,62 @@
+{
+ "previous_run": "2026-09-21",
+ "disappeared": [
+  {
+   "number": 7228,
+   "title": "OPS-1932: Improve docs link descriptions and gallery destination",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7238,
+   "title": "docs: add application guides and linked XY chart tutorial",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7240,
+   "title": "ENG-12632 fix(sdk): let the API refuse a malformed deployment id in wait",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7269,
+   "title": "fix(min-deps): resolve workspace siblings from the workspace, and reuse the build jobs' wheels",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7272,
+   "title": "ENG-12682 Let React Compiler optimize generated components",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7273,
+   "title": "Optimize state updates with structural sharing on frontend",
+   "author": "FarhanAliRaza",
+   "draft": false
+  }
+ ],
+ "draft_flips": [
+  {
+   "number": 7234,
+   "now_draft": false
+  }
+ ],
+ "entered_top15": [
+  7269,
+  7234,
+  6876,
+  7237
+ ],
+ "left_top15": [
+  7228,
+  6932,
+  7238,
+  7240
+ ],
+ "counts": {
+  "previous_open": 86,
+  "current_open": 86
+ }
+}

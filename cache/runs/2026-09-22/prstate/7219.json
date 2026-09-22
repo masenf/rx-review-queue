@@ -1,0 +1,76 @@
+{
+  "number": 7219,
+  "fetched_at": "2026-09-22T20:49:10Z",
+  "head_sha": "306bf95b4072d9adc86ee010902fae65abab49e1",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7196,
+      "title": "`reflex run --json`: worker import errors reach stderr as a plain-text traceback",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-20T09:53:51Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 12,
+      "SKIPPED": 2,
+      "SUCCESS": 111
+    },
+    "failing": [
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.11)"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-20T09:52:30Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=66604534\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-20T09:57:32Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 67` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^sk"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests matrix (12 Ubuntu/Windows jobs)",
+      "cause": "All matrix jobs fail four test_exec Granian tests because FakeGranian.serve() receives an unexpected target_loader keyword argument; a representative Windows 3.14 job had 8,845 tests pass."
+    }
+  ]
+}

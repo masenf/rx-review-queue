@@ -1,0 +1,216 @@
+{
+  "number": 7064,
+  "fetched_at": "2026-09-22T20:49:12Z",
+  "head_sha": "ae6591ea8dbd0b9b379609b871ba0928eea344c8",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:45:35Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:48:47Z",
+      "can_push": true
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:51:00Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:59:34Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:59:35Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:59:38Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:59:40Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:59:41Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:59:44Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:59:46Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T20:59:47Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:07:12Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:11:44Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:11:48Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:20:04Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:27:53Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:32:44Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:32:46Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:33:54Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-08T18:13:37Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-17T18:43:37Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-18T20:04:02Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 18,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 21,
+      "SKIPPED": 2,
+      "SUCCESS": 102
+    },
+    "failing": [
+      "CodSpeed Performance Analysis",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (redis, 3.12, 1)"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-07T20:41:15Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-07T20:44:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n<details>\n<summary>:warning: <b>Different runtime environments det"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-07T20:45:31Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=61355990\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [
+    "reflex/app.py",
+    "reflex/state.py",
+    "tests/units/reflex_base/event/processor/test_base_state_processor.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "integration-app-harness matrix (20 memory/redis jobs)",
+      "cause": "Representative jobs show broad app-start/render failures: missing Selenium elements across linked-state, component-state, connection-banner, and lifespan tests, plus localhost WebDriver connection refusals. Example redis 3.11 shard: 5 failed after 15 reruns; memory 3.13 shard: 2 failed after 6 reruns."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_from_event_type[event_spec] regressed from 96.6 us to 99.8 us (-3.16%); two Redis state-manager benchmarks improved by about 24-26%, and the comparison warns of different runtime environments."
+    }
+  ]
+}

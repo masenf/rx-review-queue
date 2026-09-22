@@ -1,0 +1,81 @@
+{
+  "number": 7272,
+  "fetched_at": "2026-09-22T20:49:04Z",
+  "head_sha": "755ddbafeba64c2a0d895f2064481bba7e2b1891",
+  "mergeable": "CONFLICTING",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": null,
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-22T19:04:32Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-22T19:36:20Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-22T20:23:07Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Unsupported memoization combination**\n\n`auto_memoize=False` is accepted independent"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c3887eef-feba-4951-abac-f128e27a0984 -->\n<!-- cubic:review-run=36862603-c649-5b2c-82e1-4a6afbdfd191 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This now makes callbacks with aliased or def"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=cec58377-df46-460c-a422-52afc9fd6b91 -->\n<!-- cubic:review-run=36862603-c649-5b2c-82e1-4a6afbdfd191 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: The \"including\" clause binds to \"memoized ev"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 5,
+    "by_state": {
+      "SUCCESS": 5
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-22T19:04:16Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=67637290\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-22T19:07:58Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 67` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^sk"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/reflex_base/vars/test_base.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

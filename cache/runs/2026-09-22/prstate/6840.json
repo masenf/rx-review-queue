@@ -1,0 +1,69 @@
+{
+  "number": 6840,
+  "fetched_at": "2026-09-22T20:49:17Z",
+  "head_sha": "2dceb071d93f25464a92e75d9551daed62382a5e",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6839,
+      "title": "StateManagerDisk debounced writes can persist stale state after repeated set_state calls",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-08-04T10:02:23Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-08-04T09:53:50Z",
+      "excerpt": "Codex usage limits have been reached for code reviews. Please check with the admins of this repo to increase the limits by adding credits.\nCredits must be used "
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-08-04T09:55:58Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR fixes debounced disk-state persistence so repeated writes for the same token retain the latest state while preserving the ori"
+    },
+    {
+      "by": "harsh21234i",
+      "at": "2026-08-04T11:17:06Z",
+      "excerpt": " The implementation looks correct to me. Replacing the queued `QueueItem` state while preserving the original timestamp\r\n  fixes the stale flush without changin"
+    },
+    {
+      "by": "honma89",
+      "at": "2026-08-06T02:58:48Z",
+      "excerpt": "Thanks for the thorough review, really appreciate it.\r\n\r\nOn the pyright issue you're right, reaching into __dict__ was the wrong move even though it happened to"
+    }
+  ],
+  "conflicting_files": [
+    "reflex/istate/manager/disk.py",
+    "tests/units/test_state.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "failing_job_findings": []
+}

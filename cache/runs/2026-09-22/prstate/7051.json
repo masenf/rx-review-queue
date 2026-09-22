@@ -1,0 +1,83 @@
+{
+  "number": 7051,
+  "fetched_at": "2026-09-22T20:49:14Z",
+  "head_sha": "7c6ffe56e97016fb0c918dd95f6b73297e93edd2",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:02:24Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:03:39Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:36:51Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:48:26Z",
+      "can_push": true
+    },
+    {
+      "by": "Alek99",
+      "state": "COMMENTED",
+      "at": "2026-09-06T09:02:00Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 109
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "at": "2026-09-06T07:59:30Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-06T08:03:12Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 32` untouched benchmarks  \n`⏩ 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-06T08:03:35Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR serializes frontend installation and web-directory initialization through a reentrant per-project process lock, while making "
+    }
+  ],
+  "conflicting_files": [
+    "reflex/utils/js_runtimes.py",
+    "tests/units/test_prerequisites.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}
