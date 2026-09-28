@@ -1,0 +1,84 @@
+{
+  "number": 7226,
+  "fetched_at": "2026-09-28T17:37:17Z",
+  "head_sha": "69ee1fe083653d172a970725cace05b62d1d8dbc",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7101,
+      "title": "Document or validate Plotly layout title objects instead of silently dropping string titles",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-21T13:41:08Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-21T13:46:54Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T16:32:12Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-26T16:14:03Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": true,
+        "first_comment": "why did this line change?\n\ni'm wondering if a better construction here is:\n\n```python\nVar(_js_expr=f\"{{ ...mergician({figure!s}, ...{Var.create(merge_dicts)!s}) }}\")\n```\n\nThen we're doing less process"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 125,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 123
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-21T13:40:55Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=66946960\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-21T13:44:43Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 135` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "harsh21234i",
+      "at": "2026-09-26T17:51:39Z",
+      "excerpt": "Addressed the review suggestion by replacing the Python-side merge-dict formatting loop with a single `Var.create(merge_dicts)` spread into `mergician`. The reg"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

@@ -1,0 +1,85 @@
+{
+  "number": 7322,
+  "fetched_at": "2026-09-28T17:37:22Z",
+  "head_sha": "b434020cf496ec39d6903425be1bee30ff419c7a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7259,
+      "title": "\"reflex db init\" without the db extra dumps a raw click traceback instead of the guided \"pip install reflex[db]\" message",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "copilot-pull-request-reviewer",
+      "state": "COMMENTED",
+      "at": "2026-09-25T03:26:58Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T03:30:07Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T03:35:09Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T03:44:09Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 7,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=07597582-4df3-4aa9-b5fb-38ee679a8f41 -->\n<!-- cubic:review-run=4676ae9a-eefd-51a8-a658-6ff929d0f0f1 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: The db-extra hint is written by logger.error"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Status still lacks install hint**\n\nOn an install without SQLAlchemy or Alembic, `re"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Package identifiers remain hardcoded**\n\nThe new `find_spec` check uses `\"sqlalchemy"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-25T03:30:02Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69147572\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "failing_job_findings": []
+}

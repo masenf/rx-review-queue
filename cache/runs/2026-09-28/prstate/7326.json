@@ -1,0 +1,117 @@
+{
+  "number": 7326,
+  "fetched_at": "2026-09-28T17:37:17Z",
+  "head_sha": "dae0183b0d569091a2a392ecff9ad863da8d7ca5",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:24:14Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:25:16Z",
+      "can_push": true
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:33:42Z",
+      "can_push": false
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:33:44Z",
+      "can_push": false
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:33:46Z",
+      "can_push": false
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:33:47Z",
+      "can_push": false
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:33:49Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:34:21Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=a57f230d-7f10-4841-a932-617f51f4ff5d -->\n<!-- cubic:review-run=f6b69d72-ce7c-5b7a-92fe-9b28ce0c6549 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: A Var step that evaluates to zero silently r"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 124,
+    "by_state": {
+      "FAILURE": 1,
+      "IN_PROGRESS": 9,
+      "SKIPPED": 2,
+      "SUCCESS": 112
+    },
+    "failing": [
+      "unit-tests (ubuntu-latest, 3.10)"
+    ],
+    "pending": [
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (windows-latest, 3.13)",
+      "Run benchmarks"
+    ]
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-25T09:25:11Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69264460\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10)",
+      "cause": "test_oplock_contention_racers[None] failed because after one Redis lease was cancelled, the other was expected to remain active but did not (9,884 tests passed)."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_process_event_burst_independent_tokens[1] regressed from 3.3 ms to 3.7 ms (-11.33%)."
+    }
+  ]
+}

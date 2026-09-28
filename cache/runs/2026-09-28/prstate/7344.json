@@ -1,0 +1,73 @@
+{
+  "number": 7344,
+  "fetched_at": "2026-09-28T17:37:13Z",
+  "head_sha": "40747b3471126db9579ae467b8ff5a3293e413db",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7342,
+      "title": "rx.form on_submit silently drops all but the last value for a checkbox group (or any repeated-name field)",
+      "filed_by": "stackedbyaradhya"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-28T09:59:05Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-28T09:59:42Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-28T11:52:04Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-28T13:40:23Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=de5d59ef-aefa-4478-9200-09a32eee27f1 -->\n<!-- cubic:review-run=11d77415-6b3b-5f75-9f91-45bbfd0f5ffe -->\n<!-- metadata:{\"confidence\":9} -->\nP3: This says all submitted values become lists,"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-28T09:59:36Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=70533538\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "failing_job_findings": []
+}

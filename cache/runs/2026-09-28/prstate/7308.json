@@ -1,0 +1,107 @@
+{
+  "number": 7308,
+  "fetched_at": "2026-09-28T17:37:21Z",
+  "head_sha": "4e2f565bf5743591859f5b83c7621a69c1647a27",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7017,
+      "title": "State var default of dataclasses.field(...) fails with TypeError: cannot pickle 'mappingproxy' object",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:20:36Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:23:28Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:17:20Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:18:10Z",
+      "can_push": true
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:52Z",
+      "can_push": false
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:53Z",
+      "can_push": false
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=366cf796-c8aa-4b11-9f6a-9c992e44af8f -->\n<!-- cubic:review-run=16108169-2cc4-5453-9158-96c84eb97ade -->\n<!-- metadata:{\"confidence\":7} -->\nP2: Unannotated `dataclasses.field(default=mutab"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Custom factories lose their type** An unannotated declaration such as `items = data"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Mutable defaults are shared** For an unannotated declaration such as `items = datac"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 126,
+    "by_state": {
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 123
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "at": "2026-09-24T10:21:56Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 5.9%**\n\n<details>\n<summary>:warning: <b>Different runtime envi"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-24T10:23:23Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68609457\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "reflex/state.py"
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

@@ -1,0 +1,668 @@
+{
+  "run": {
+    "date": "2026-09-28",
+    "started_at": "2026-09-28 10:36 PT",
+    "runner": "local-codex",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "local authenticated gh CLI + cache/repo.git"
+  },
+  "stats": {
+    "open": 113,
+    "nondraft": 86,
+    "drafts": 27,
+    "counting_approvals": 1,
+    "fast_lane": 4,
+    "one_fix_away": 10,
+    "fork_ci_unrun": 15,
+    "never_human_reviewed": 47
+  },
+  "attention": [
+    "Review now, in order: #7320, #7219, and #7303 are the best value per minute; #7203 is a cheap fourth review, while #7334 needs a larger focused block.",
+    "Re-review lane: route #7336 and #7286 back to the reviewers who requested changes; #7226 only has an outdated addressed maintainer thread left.",
+    "Approval-routing lane: #7327 already has a counting approval and green CI, but its merge box remains blocked awaiting Alek99.",
+    "CI unblock lane: obtain full CI for #7324 first; #7344 is a high-value first-time-contributor fix, but it also has one live thread after CI is available.",
+    "Awaiting author or adjudication: #7304's only thread disputes a valid issue-number fragment, while #7236 and stack root #7234 have substantive live findings."
+  ],
+  "top15": [
+    {
+      "number": 7320,
+      "score": 9.5,
+      "summary": "Best value per review minute: fixes an issue-backed false-success exit path in a three-file tested diff.",
+      "evidence": [
+        "3 files (+17/-22), 2 ahead / 5 behind main.",
+        "No local conflicts; 0 unresolved of 2 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "review now",
+        "issue #7295"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7219,
+      "score": 9.3,
+      "summary": "Formats Granian worker import failures correctly for JSON-mode CLI consumers, with a focused regression test.",
+      "evidence": [
+        "3 files (+82/-13), 3 ahead / 1 behind main.",
+        "No local conflicts; 0 unresolved of 1 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "review now",
+        "issue #7196"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7303,
+      "score": 9.1,
+      "summary": "Prevents editable installs from mutating checked-out pyi stubs; compact, tested, green, and fully resolved.",
+      "evidence": [
+        "3 files (+171/-1), 6 ahead / 1 behind main.",
+        "No local conflicts; 0 unresolved of 6 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "review now",
+        "build safety"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7203,
+      "score": 8.7,
+      "summary": "A very small tested frontend-dev fix with green CI and no review threads.",
+      "evidence": [
+        "4 files (+22/-21), 3 ahead / 34 behind main.",
+        "No local conflicts; 0 unresolved of 0 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "review now",
+        "small diff"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7334,
+      "score": 8.3,
+      "summary": "Routes docs feedback and integration requests to Slack; green and resolved, but it needs a deliberate review block.",
+      "evidence": [
+        "9 files (+543/-121), 8 ahead / 5 behind main.",
+        "No local conflicts; 0 unresolved of 21 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "review now",
+        "larger diff"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7327,
+      "score": 8.1,
+      "summary": "Toast documentation correction has a counting approval, green CI, a clean merge, and no unresolved threads, but the merge box is still blocked awaiting Alek99.",
+      "evidence": [
+        "2 files (+10/-4), 2 ahead / 0 behind main.",
+        "No local conflicts; 0 unresolved of 4 review threads; 76 checks, rollup SUCCESS."
+      ],
+      "blocker": "Satisfy or clear the requested Alek99 review / branch-protection requirement.",
+      "whose_move": "maintainer",
+      "chips": [
+        "approved",
+        "approval routing"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7226,
+      "score": 7.9,
+      "summary": "Issue-backed Plotly title fix is green and compact; the author's follow-up leaves one outdated maintainer thread to adjudicate.",
+      "evidence": [
+        "4 files (+88/-7), 11 ahead / 1 behind main.",
+        "No local conflicts; 1 unresolved of 6 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review the addressed suggestion, resolve its outdated thread, then approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "re-review",
+        "issue #7101"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7336,
+      "score": 7.7,
+      "summary": "Fixes nested client event lists breaking the queue; green with every thread resolved after requested changes.",
+      "evidence": [
+        "4 files (+144/-29), 5 ahead / 1 behind main.",
+        "No local conflicts; 0 unresolved of 9 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Route the updated diff back to the requesting reviewer for re-review.",
+      "whose_move": "maintainer",
+      "chips": [
+        "re-review",
+        "issue #7319"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7304,
+      "score": 7.5,
+      "summary": "Prevents silent event loss when an app package lacks __init__.py; its only finding disputes a valid issue-number fragment.",
+      "evidence": [
+        "3 files (+95/-1), 1 ahead / 10 behind main.",
+        "No local conflicts; 1 unresolved of 1 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Adjudicate the one bot thread, then approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "adjudication",
+        "issue #7258"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7286,
+      "score": 7.3,
+      "summary": "Client-state setter hooks are green, tested, and thread-free after changes were requested.",
+      "evidence": [
+        "6 files (+248/-5), 3 ahead / 14 behind main.",
+        "No local conflicts; 0 unresolved of 3 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review the addressed changes request.",
+      "whose_move": "maintainer",
+      "chips": [
+        "re-review",
+        "playwright"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7033,
+      "score": 7.1,
+      "summary": "Explicit-only event handlers are green, documented, tested, and thread-free after a recent author update.",
+      "evidence": [
+        "11 files (+510/-42), 14 ahead / 1 behind main.",
+        "No local conflicts; 0 unresolved of 21 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review and dismiss or replace the stale changes-requested decision.",
+      "whose_move": "maintainer",
+      "chips": [
+        "re-review",
+        "security relevance"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7236,
+      "score": 6.9,
+      "summary": "Avoids package.json formatting causing repeated frontend installs, but one live correctness finding remains.",
+      "evidence": [
+        "4 files (+164/-1), 1 ahead / 26 behind main.",
+        "No local conflicts; 1 unresolved of 1 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Address the JSON boolean/number equality finding, then obtain approval.",
+      "whose_move": "author",
+      "chips": [
+        "one live finding",
+        "issue #7235"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7324,
+      "score": 6.7,
+      "summary": "Tiny tested router-parsing crash fix from a first-time contributor; only two bot checks have run.",
+      "evidence": [
+        "3 files (+24/-2), 2 ahead / 1 behind main.",
+        "No local conflicts; 0 unresolved of 1 review threads; full CI has not run."
+      ],
+      "blocker": "Trigger or confirm the missing full CI suite before assessing readiness.",
+      "whose_move": "maintainer",
+      "chips": [
+        "CI unblock",
+        "first-time contributor"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7234,
+      "score": 6.5,
+      "summary": "React Compiler stack root offers leverage over #7272, but two live findings remain and the child conflicts with main.",
+      "evidence": [
+        "14 files (+559/-19), 1 ahead / 26 behind main.",
+        "No local conflicts; 2 unresolved of 2 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve the two root findings before reviewing the stacked child.",
+      "whose_move": "author",
+      "chips": [
+        "stack root",
+        "review leverage"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7344,
+      "score": 6.3,
+      "summary": "First-time-contributor fix for repeated FormData keys is compact and tested, but full CI has not run and one thread is open.",
+      "evidence": [
+        "4 files (+111/-2), 2 ahead / 1 behind main.",
+        "No local conflicts; 1 unresolved of 5 review threads; full CI has not run."
+      ],
+      "blocker": "Trigger or confirm the missing full CI suite; do not treat the two bot checks as green CI.",
+      "whose_move": "maintainer",
+      "chips": [
+        "CI unblock",
+        "issue #7342"
+      ],
+      "override_reason": "Elevated for a user-visible data-loss bug and first-time-contributor rescue value; obtaining full CI is the immediate action."
+    }
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {
+        "number": 7327,
+        "summary": "Approved docs correction is green, clean, and thread-free, but the merge box is blocked awaiting Alek99.",
+        "blocker": "Satisfy or clear the requested reviewer / branch-protection requirement."
+      },
+      {
+        "number": 7320,
+        "summary": "Issue-backed CLI bug fix is green, clean, tested, and thread-free.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7219,
+        "summary": "Issue-backed JSON-mode error fix is green, clean, tested, and thread-free.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7303,
+        "summary": "Editable-install safety fix is green, clean, tested, and fully resolved.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7203,
+        "summary": "Tiny tested dev-server fix is green, clean, and thread-free.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7334,
+        "summary": "Docs-feedback integration is green, clean, tested, and fully resolved.",
+        "blocker": "First approval after a deliberate review."
+      },
+      {
+        "number": 7336,
+        "summary": "Event-list fix is green and all threads are resolved after requested changes.",
+        "blocker": "Re-review the updated diff."
+      },
+      {
+        "number": 7286,
+        "summary": "Client-state setter hooks are green and fully resolved after requested changes.",
+        "blocker": "Re-review the updated diff."
+      },
+      {
+        "number": 7033,
+        "summary": "Explicit-only events are green and fully resolved after a recent author update.",
+        "blocker": "Re-review and clear the stale changes request."
+      },
+      {
+        "number": 7324,
+        "summary": "Small first-time-contributor crash fix has only two bot checks.",
+        "blocker": "Trigger or confirm the missing full CI suite."
+      }
+    ],
+    "author": []
+  },
+  "fast_lane": [
+    {
+      "number": 7320,
+      "summary": "Best value per minute: a three-file issue-backed bug fix with a targeted test.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7219,
+      "summary": "Focused JSON-mode CLI error fix with a targeted test and no unresolved threads.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7303,
+      "summary": "Compact editable-install safety fix with all six review threads resolved.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7203,
+      "summary": "Very small tested dev-server fix with no review threads.",
+      "blocker": "First approval."
+    }
+  ],
+  "closure": [
+    {
+      "number": 6553,
+      "summary": "492 behind main, conflicting, SUCCESS, and 0 unresolved threads across a 4-file diff.",
+      "keep_issue": 6514
+    },
+    {
+      "number": 6490,
+      "summary": "436 behind main, conflicting, SUCCESS, and 1 unresolved threads across a 11-file diff.",
+      "keep_issue": null
+    },
+    {
+      "number": 6125,
+      "summary": "670 behind main, conflicting, no current CI, and 1 unresolved threads across a 3-file diff.",
+      "keep_issue": 5830
+    },
+    {
+      "number": 6468,
+      "summary": "425 behind main, conflicting, FAILURE, and 1 unresolved threads across a 37-file diff.",
+      "keep_issue": 6214
+    },
+    {
+      "number": 7004,
+      "summary": "164 behind main, conflicting, FAILURE, and 4 unresolved threads across a 4-file diff.",
+      "keep_issue": 6955
+    }
+  ],
+  "stacks": [
+    {
+      "chain": [
+        7234,
+        7272
+      ],
+      "note": "React Compiler stack: review #7234 first for conceptual leverage; #7272 separately conflicts with main in tests/units/reflex_base/vars/test_base.py."
+    },
+    {
+      "chain": [
+        7079,
+        7113
+      ],
+      "note": "Conflict-bound execution/telemetry stack; exact shared conflict intersection: tests/units/test_telemetry.py, tests/units/utils/test_exec.py."
+    },
+    {
+      "chain": [
+        6744,
+        6745
+      ],
+      "note": "State-performance stack is deeply conflict-bound; the two heads share 14 exact conflicting files."
+    },
+    {
+      "chain": [
+        7313,
+        7314,
+        7315
+      ],
+      "note": "Speculative-state stack: #7313 is red with one live thread; the child check sets are partial, so review root-first after stabilization."
+    },
+    {
+      "chain": [
+        6100,
+        7337
+      ],
+      "note": "State-name-minification stack: the 60-file root and 68-file tip are green but carry live findings and demand a dedicated review block."
+    }
+  ],
+  "conflict_clusters": [
+    {
+      "prs": [
+        6688,
+        6743,
+        6744,
+        6745,
+        6768,
+        7036,
+        7056,
+        7308
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/vars/base.py"
+      ],
+      "note": "Exact 8-PR conflict cluster on packages/reflex-base/src/reflex_base/vars/base.py."
+    },
+    {
+      "prs": [
+        6116,
+        6688,
+        6733,
+        6744,
+        6745,
+        6932,
+        7056,
+        7064
+      ],
+      "files": [
+        "reflex/app.py"
+      ],
+      "note": "Exact 8-PR conflict cluster on reflex/app.py."
+    },
+    {
+      "prs": [
+        6743,
+        6744,
+        6745,
+        7036,
+        7056,
+        7064,
+        7206,
+        7308
+      ],
+      "files": [
+        "reflex/state.py"
+      ],
+      "note": "Exact 8-PR conflict cluster on reflex/state.py."
+    },
+    {
+      "prs": [
+        6468,
+        6597,
+        6688,
+        6743,
+        6744,
+        6745,
+        7123
+      ],
+      "files": [
+        "pyi_hashes.json"
+      ],
+      "note": "Exact 7-PR conflict cluster on pyi_hashes.json."
+    },
+    {
+      "prs": [
+        6743,
+        6744,
+        6745,
+        6796,
+        6840,
+        6853,
+        7036
+      ],
+      "files": [
+        "tests/units/test_state.py"
+      ],
+      "note": "Exact 7-PR conflict cluster on tests/units/test_state.py."
+    }
+  ],
+  "structural": [
+    {
+      "number": 7273,
+      "summary": "Potentially high-impact frontend structural-sharing work is compact, but it is red with six unresolved findings: five correctness findings and one test-quality finding."
+    },
+    {
+      "number": 7330,
+      "summary": "The benchmark harness spans 144 files and more than 41,000 inserted lines with six live threads; split or reserve a dedicated review effort."
+    },
+    {
+      "number": 7337,
+      "summary": "The 68-file state-name-minification tip stacks on #6100 and has seven live findings; review root-first in a dedicated block."
+    },
+    {
+      "number": 7288,
+      "summary": "Durable workflows span 76 files and more than 14,000 inserted lines with changes requested; it is not a scarce-time review."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Counting approvals repo-wide: 1",
+      "detail": "#7327 has the only current write-access APPROVED decision, but its merge box is blocked awaiting Alek99."
+    },
+    {
+      "title": "Never reviewed by someone other than the author: 47 non-draft PRs",
+      "detail": "#7346, #7345, #7329, #7337, #7326, #7325, #7324, #7219, #7303, #7288, #7315, #7314, #7313, #7318, #7317, #7308, #7233, #7307, #7305, #7323, #7322, #7321, #7320, #7306, #7304, #7272, #7234, #6116, #7236, #7208, #7206, #7203, #7123, #7113, #7065, #7056, #7052, #7051, #7036, #7007, #6935, #6853, #6840, #6770, #6676, #6468, #6553."
+    },
+    {
+      "title": "Contributors waiting on maintainer action",
+      "detail": "Using latest author activity as the clock: #6770 has waited 63 days, #6840 53 days, #6853 52 days, #6876 44 days, and #6935 35 days."
+    },
+    {
+      "title": "Fork PRs without full current-head CI: 15",
+      "detail": "#7344, #7325, #7324, #7318, #6125, #7323, #7322, #7144, #6126, #7040, #7036, #6935, #6876, #6853, #6840; only two or fewer checks are present, so confirm or trigger the full suite before treating them as green."
+    },
+    {
+      "title": "Fragment problems: 8 PRs missing 10 expected fragments",
+      "detail": "#7330, #6125, #6490, #6935, #6853, #6840, #6597, #6553."
+    },
+    {
+      "title": "Author concentration",
+      "detail": "Top non-draft authors: FarhanAliRaza (23), flcrom (9), masenf (8), Alek99 (7), benedikt-bartscher (7), harsh21234i (7), breken-ai (3), adhami3310 (2), counted from listing authors."
+    },
+    {
+      "title": "Conflict pressure",
+      "detail": "38 of 86 non-draft PRs conflict with today's main."
+    },
+    {
+      "title": "Red checks: 25 PRs",
+      "detail": "#7328, #7346, #7345, #7329, #7340, #7326, #7313, #7317, #6796, #7305, #7321, #7273, #7306, #6932, #7208, #7206, #7123, #7064, #6688, #7065, #7004, #6770, #6676, #6597, #6468; each has a recorded failure finding."
+    }
+  ],
+  "delta": {
+    "previous_run": "2026-09-22",
+    "merged": [
+      7269,
+      7138,
+      7053,
+      7210,
+      7207,
+      6751
+    ],
+    "closed": [
+      {
+        "number": 7209,
+        "note": "closed without merge"
+      },
+      {
+        "number": 6757,
+        "note": "closed without merge"
+      }
+    ],
+    "opened": [
+      7346,
+      7345,
+      7344,
+      7340,
+      7338,
+      7337,
+      7336,
+      7334,
+      7333,
+      7330,
+      7329,
+      7328,
+      7327,
+      7326,
+      7325,
+      7324,
+      7323,
+      7322,
+      7321,
+      7320,
+      7318,
+      7317,
+      7315,
+      7314,
+      7313,
+      7308,
+      7307,
+      7306,
+      7305,
+      7304,
+      7303,
+      7288,
+      7286,
+      7279,
+      7276
+    ],
+    "entered_top15": [
+      7320,
+      7219,
+      7303,
+      7334,
+      7327,
+      7336,
+      7304,
+      7286,
+      7033,
+      7324,
+      7344
+    ],
+    "left_top15": [
+      7210,
+      7054,
+      7269,
+      7138,
+      6116,
+      6876,
+      7233,
+      7207,
+      7053,
+      7237,
+      7209
+    ],
+    "newly_blocked": [
+      {
+        "number": 6116,
+        "note": "now conflicts with main after previously being green and clean"
+      },
+      {
+        "number": 7054,
+        "note": "now conflicts with main after previously being approved and clean"
+      },
+      {
+        "number": 7226,
+        "note": "gained one unresolved, outdated maintainer thread after previously being thread-free"
+      }
+    ],
+    "newly_unblocked": [
+      {
+        "number": 7219,
+        "note": "CI is green and its only review thread is resolved"
+      }
+    ],
+    "draft_flips": []
+  },
+  "method": {
+    "notes": [
+      "Authenticated listing as masenf reconciled 113 rows; all 86 non-drafts have fresh measurements and PR state.",
+      "Git measurements use main dafc42e18b260840f7d94922ebad70a6b83ddca7; local merge-tree is authoritative for conflicts.",
+      "Scarce-time ordering prioritizes compact issue-backed bugs with green CI, clean merges, tests, and no unresolved findings; approval-routing, re-review, author, and CI actions are separated.",
+      "All red PRs have failing_job_findings populated from retained logs, annotations, or explicitly documented unavailable-log evidence."
+    ],
+    "audit_corrections": [
+      "Counted 8 PRs missing 10 expected fragments, rather than conflating PR and fragment counts.",
+      "Reclassified #7327 from merge-only to requested-reviewer / branch-protection routing because its merge box is BLOCKED awaiting Alek99.",
+      "Relabeled low-check fork states as lacking full current-head CI; the stored data does not independently prove an unclicked workflow-approval gate.",
+      "Corrected #6876's completed wait from 45 to 44 days.",
+      "Split #7273's six unresolved findings into five correctness findings and one test-quality finding.",
+      "Removed exact close dates for #6757 and #7209 from the artifact because the stored delta only proves closed-without-merge status."
+    ],
+    "caveats": [
+      "Low two-check fork states are not full green CI; trigger or confirm the full suite before assessing readiness.",
+      "Very broad green PRs remain outside the review-now queue because value per review minute is the requested constraint."
+    ]
+  }
+}

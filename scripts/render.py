@@ -247,7 +247,7 @@ class Board:
             (st.get("counting_approvals", "—"), "counting approvals"),
             (st.get("fast_lane", len(r.get("fast_lane", []))), "fast lane"),
             (st.get("one_fix_away", sum(len(v) for v in r.get("one_fix_away", {}).values())), "one fix away"),
-            (st.get("fork_ci_unrun", "—"), "fork PRs, CI never ran"),
+            (st.get("fork_ci_unrun", "—"), "fork PRs without full CI"),
             (st.get("never_human_reviewed", "—"), "never human-reviewed"),
         ]
         body = f'<header><h1>Reflex PR readiness</h1><div class="sub">reflex-dev/reflex · open non-draft PRs ranked by how close they are to merging today · updated {esc(date)}'

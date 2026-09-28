@@ -1,0 +1,153 @@
+{
+  "number": 7336,
+  "fetched_at": "2026-09-28T17:37:14Z",
+  "head_sha": "951fc7a1cce3d617eb18ca1bebc9996f95a6f03f",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7319,
+      "title": "addEvents should flatten nested event lists instead of breaking the event queue",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-27T06:02:22Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-27T06:03:01Z",
+      "can_push": true
+    },
+    {
+      "by": "harsh21234i",
+      "state": "COMMENTED",
+      "at": "2026-09-27T06:15:40Z",
+      "can_push": false
+    },
+    {
+      "by": "harsh21234i",
+      "state": "COMMENTED",
+      "at": "2026-09-27T06:15:44Z",
+      "can_push": false
+    },
+    {
+      "by": "harsh21234i",
+      "state": "COMMENTED",
+      "at": "2026-09-27T06:15:47Z",
+      "can_push": false
+    },
+    {
+      "by": "harsh21234i",
+      "state": "COMMENTED",
+      "at": "2026-09-27T06:15:50Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-27T06:18:05Z",
+      "can_push": true
+    },
+    {
+      "by": "harsh21234i",
+      "state": "COMMENTED",
+      "at": "2026-09-27T10:39:20Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-27T10:41:30Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:23:38Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:23:39Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-28T12:23:48Z",
+      "can_push": true
+    },
+    {
+      "by": "harsh21234i",
+      "state": "COMMENTED",
+      "at": "2026-09-28T13:37:48Z",
+      "can_push": false
+    },
+    {
+      "by": "harsh21234i",
+      "state": "COMMENTED",
+      "at": "2026-09-28T13:37:58Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-28T13:38:41Z",
+      "can_push": true
+    },
+    {
+      "by": "harsh21234i",
+      "state": "COMMENTED",
+      "at": "2026-09-28T13:43:04Z",
+      "can_push": false
+    }
+  ],
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 125,
+    "by_state": {
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 122
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-27T06:02:57Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=70090497\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-27T06:10:26Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 135` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-27T10:41:11Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nThese findings sit on lines the diff does not cover, so they could not be posted inline. Each on"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

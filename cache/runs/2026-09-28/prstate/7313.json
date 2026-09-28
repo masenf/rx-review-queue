@@ -1,0 +1,245 @@
+{
+  "number": 7313,
+  "fetched_at": "2026-09-28T17:37:20Z",
+  "head_sha": "fd292b0b9c54bff4f203a4e5ad8c98b12f6cea3f",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-24T17:49:28Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-24T17:58:26Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:57:27Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:57:29Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:57:31Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:57:32Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:57:34Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:57:37Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:57:38Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:57:40Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:58:11Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:02:15Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:03:58Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:04:00Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:32:39Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:43:14Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:29Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:54Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:48:44Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T22:04:45Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:00:39Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:00:41Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:00:43Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:47:03Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:47:58Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 15,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": false,
+        "first_comment": "isn't it also an read-only ImmutableStateError when `bound` is not `ctx`?"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 126,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 123
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-24T17:49:21Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68842943\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-24T19:08:11Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 0.12%**\n\n\n`⚡ 1` improved benchmark  \n`❌ 2` regressed benchmark"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-24T19:18:45Z",
+      "excerpt": "**CodSpeed regressions (−4.6% overall, vs. #7312):** these are the cost of the write-time lock check this PR adds, so I'm not working around them.\n\n- `test_stat"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-25T01:46:10Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nNo findings outside the diff remain."
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-25T01:55:45Z",
+      "excerpt": "About greptile's outside-diff P1, \"Required field arguments are lost\": this is the extension contract from #7312. Fields are copied when a class binds them, and"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-25T15:54:07Z",
+      "excerpt": "CodSpeed on 78be756 flags two regressions:\n\n- `test_state_access[write_own]` (-7%) is the per-write lock check (`_check_writable`) that this PR adds. It is the "
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-25T19:09:46Z",
+      "excerpt": "Correction to my earlier comment: the `test_get_state_uncached[memory]` regression is real, not noise. It came in at 5–7% slower on four runs in a row. The Pyth"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-25T19:20:32Z",
+      "excerpt": "CodSpeed on 0e2624a confirms the fix: `test_get_state_uncached[memory]` and `test_state_manager_memory_cold_get` are no longer flagged. Two regressions remain, "
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-25T21:49:57Z",
+      "excerpt": "**`check-min-deps (reflex-components-core, 3.10)` fails, but not because of this PR.** `main` fails the same way: on a716b85 the \"Build all packages\" run [36193"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed flags test_state_access[write_own] at 180.0 ms to 199.8 ms (-9.91%) and test_set_state[memory] at 3.5 ms to 3.7 ms (-4.20%)."
+    }
+  ]
+}

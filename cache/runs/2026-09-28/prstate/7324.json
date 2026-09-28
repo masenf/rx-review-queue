@@ -1,0 +1,57 @@
+{
+  "number": 7324,
+  "fetched_at": "2026-09-28T17:37:16Z",
+  "head_sha": "4a89bf9116e7e9ae059f1743bff3527c861c21a8",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:22:33Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:22:37Z",
+      "can_push": true
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:26:28Z",
+      "can_push": false
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-25T09:22:28Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69264439\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "failing_job_findings": []
+}

@@ -1,0 +1,98 @@
+{
+  "number": 7323,
+  "fetched_at": "2026-09-28T17:37:21Z",
+  "head_sha": "e77eb23d8051a34ed67543d8d1840b15db06d2a8",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7167,
+      "title": "StateManagerDisk silently resets corrupted persisted state",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T04:01:06Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T04:05:06Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> <a href=\"#\"><img alt=\"security\" src=\"https://greptile-static-assets.s3.amazonaws.com/"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Load errors misreported as corruption** This message calls every load failure file "
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Unnecessary inline import** The new test imports `logging` inside the function with"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Hardcoded test identifiers** This test passes `\"nonexistent_client\"` directly as a "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=dbb30b69-db7a-4e69-b430-954f7ae41e0e -->\n<!-- cubic:review-run=0be0874d-c8d0-5c4d-8cde-47aed2794399 -->\n<!-- metadata:{\"confidence\":7} -->\nP1: Do not include `token!r` in this log; anyone"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=358bbfa4-3a68-4542-a013-c56d1cdf729f -->\n<!-- cubic:review-run=0be0874d-c8d0-5c4d-8cde-47aed2794399 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: The error message claims the file 'will be r"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=6c9fce18-4627-4110-ab4a-eff41b1c284c -->\n<!-- cubic:review-run=0be0874d-c8d0-5c4d-8cde-47aed2794399 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: This fragment still uses the orphan `+<slug>"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=71abdb53-d7f9-4fb9-b0ea-67a9a3b73876 -->\n<!-- cubic:review-run=0be0874d-c8d0-5c4d-8cde-47aed2794399 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: Scope the caplog assertions to the disk mana"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-25T04:01:01Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69156535\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "failing_job_findings": []
+}

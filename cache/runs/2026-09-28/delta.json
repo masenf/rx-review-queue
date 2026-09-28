@@ -1,0 +1,288 @@
+{
+ "previous_run": "2026-09-22",
+ "disappeared": [
+  {
+   "number": 6751,
+   "title": "ENG-10164 Add event-loop performance benchmark suite",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6757,
+   "title": "Fast-path framework bookkeeping fields in state attribute access",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7053,
+   "title": "perf: avoid redundant event queue copies and scans",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7138,
+   "title": "migrate all time env vars to timedelta",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7207,
+   "title": "Move reflex-hosting-cli onto reflex-build-sdk",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7209,
+   "title": "Terminate the frontend process tree when reflex run shuts down",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7210,
+   "title": "fix: gate npm installs on the node version preflight",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7269,
+   "title": "fix(min-deps): resolve workspace siblings from the workspace, and reuse the build jobs' wheels",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7276,
+   "title": "docs: clarify lazy library loading tradeoffs",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7279,
+   "title": "docs: add AG Grid migration notes for reflex-enterprise 0.9.7",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7286,
+   "title": "Carry client state hooks on ClientStateVar setters",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7288,
+   "title": "reflex-workflow: durable workflows on the application's own tables",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7303,
+   "title": "fix: leave the working tree's pyi stubs alone during an editable install",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7304,
+   "title": "fail loudly when the app package has no __init__.py",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7305,
+   "title": "Log why npm is used when only package-lock.json is persisted",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7306,
+   "title": "Fix Var._replace with _var_data",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7307,
+   "title": "Allow capping the redis connection pool",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7308,
+   "title": "fix: support dataclasses.field(...) as a state var default",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7313,
+   "title": "Replace StateProxy with state locks held by the EventContext",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7314,
+   "title": "Move the core state machinery into reflex_base.state",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7315,
+   "title": "Add Var.dispatch_value for speculative frontend updates",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7317,
+   "title": "fix: emit the global stylesheet preload only in production builds",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7318,
+   "title": "fix: free expired states promptly and drop disk manager locks on purge",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7320,
+   "title": "Exit non-zero when apps delete gets an unknown app ID",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7321,
+   "title": "Fail fast on a rejected token with --no-interactive",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7322,
+   "title": "fix: show the db extra hint for reflex db commands",
+   "author": "TanbirRamim",
+   "draft": false
+  },
+  {
+   "number": 7323,
+   "title": "fix(StateManagerDisk): log error when corrupted state file is encountered",
+   "author": "dajiaohuang",
+   "draft": false
+  },
+  {
+   "number": 7324,
+   "title": "fix: a ?self= query parameter or self header no longer crashes router parsing",
+   "author": "breken-ai",
+   "draft": false
+  },
+  {
+   "number": 7325,
+   "title": "fix: percent-encode Var data in rx.download so # and % don't corrupt the file",
+   "author": "breken-ai",
+   "draft": false
+  },
+  {
+   "number": 7326,
+   "title": "fix: negative-step Var slices at -1 and slices with a Var step",
+   "author": "breken-ai",
+   "draft": false
+  },
+  {
+   "number": 7327,
+   "title": "docs: fix toast action/cancel prop documentation",
+   "author": "dajiaohuang",
+   "draft": false
+  },
+  {
+   "number": 7328,
+   "title": "Stop the frontend tree when headless reflex run exits",
+   "author": "flcrom",
+   "draft": false
+  },
+  {
+   "number": 7329,
+   "title": "fix: replace a stored state that can no longer be unpickled",
+   "author": "SulimanAbdulrazzaq",
+   "draft": false
+  },
+  {
+   "number": 7330,
+   "title": "Holistic Framework Benchmarks: reflex-bench harness, suites and playground",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7333,
+   "title": "ENG-12837: Keep the \"Built with Reflex\" badge consistent on free Reflex Cloud deploys",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7334,
+   "title": "Post docs feedback and integration requests to Slack",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7336,
+   "title": "fix: flatten nested client event lists",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7337,
+   "title": "Minify state var names and allow installing a name resolver after states exist",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7338,
+   "title": "Check out states in the EventContext, make StateManager a key-value store",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7340,
+   "title": "fix(hosting-cli): format nested cloud table values",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7344,
+   "title": "fix(forms): preserve all values for repeated FormData keys on submit",
+   "author": "stackedbyaradhya",
+   "draft": false
+  },
+  {
+   "number": 7345,
+   "title": "feat(radix): bring checkbox_group/checkbox_cards to prop parity with radio_group/radio_cards",
+   "author": "stackedbyaradhya",
+   "draft": false
+  },
+  {
+   "number": 7346,
+   "title": "ci: skip tests on Markdown-only PRs without leaving required checks pending",
+   "author": "FarhanAliRaza",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  7320,
+  7219,
+  7303,
+  7334,
+  7327,
+  7336,
+  7304,
+  7286,
+  7033,
+  7324,
+  7344
+ ],
+ "left_top15": [
+  7210,
+  7054,
+  7269,
+  7138,
+  6116,
+  6876,
+  7233,
+  7207,
+  7053,
+  7237,
+  7209
+ ],
+ "counts": {
+  "previous_open": 86,
+  "current_open": 113
+ }
+}

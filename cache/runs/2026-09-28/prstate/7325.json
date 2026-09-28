@@ -1,0 +1,87 @@
+{
+  "number": 7325,
+  "fetched_at": "2026-09-28T17:37:16Z",
+  "head_sha": "406f211f51581c5cca1831d0712223870eec020a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:23:19Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:25:54Z",
+      "can_push": true
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:26:30Z",
+      "can_push": false
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:26:31Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:31:18Z",
+      "can_push": true
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:33:51Z",
+      "can_push": false
+    },
+    {
+      "by": "breken-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:35:39Z",
+      "can_push": false
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=53a01c2b-599c-4d06-9b78-8f0065c3453d -->\n<!-- cubic:review-run=2e02c6fa-6e18-55bf-ac80-971f19391253 -->\n<!-- metadata:{\"confidence\":5} -->\nP3: The test uses global `fetch()`, which requir"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-25T09:23:10Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69264448\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": true,
+  "failing_job_findings": []
+}
