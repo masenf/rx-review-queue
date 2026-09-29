@@ -1,0 +1,433 @@
+{
+  "number": 6796,
+  "fetched_at": "2026-09-29T17:35:23Z",
+  "head_sha": "89f2ce7322cc3b6a2b962f82538e7bf171cf36d6",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 2339,
+      "title": "Internationalization (I18N) and localization (L10N) (Feature Request) ",
+      "filed_by": "karndeb"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:47Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:21:49Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-04T12:37:13Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:50Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:51Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:53Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:54Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:56Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:57Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:06:59Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:07:01Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:07:02Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:07:04Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-04T13:16:59Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T14:16:34Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T14:16:35Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-04T14:16:37Z",
+      "can_push": false
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-17T06:28:53Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-21T23:17:17Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:17Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:19Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:21Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:23Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:31Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:33Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:35Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:37Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:46Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:48Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:50Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:27:52Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:01Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:03Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:05Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:08Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:17Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:19Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:21Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:22Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:31Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:34Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:37Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:40Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:28:43Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:30:14Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:33:01Z",
+      "can_push": true
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:46:36Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:46:38Z",
+      "can_push": false
+    },
+    {
+      "by": "benedikt-bartscher",
+      "state": "COMMENTED",
+      "at": "2026-09-23T18:04:53Z",
+      "can_push": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-25T15:11:17Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 72,
+    "unresolved": [
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": true,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Remove development pins before publishing reflex-i18n**\n\nWith the new dispatch-release option, selecting `reflex"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5989e440-fe80-4beb-b13f-376638b536d5 -->\n<!-- cubic:review-run=7ac8c698-30a8-472e-a16f-ac3765bced36 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: With `PathPrefixRouting(default_at_root=Fal"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f147a9b8-1e80-4a5c-bb05-2f0c5bd4ca6f -->\n<!-- cubic:review-run=7ac8c698-30a8-472e-a16f-ac3765bced36 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a base route starts with a configured l"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=55b70556-1d16-4b48-93d8-cf1a7b49b2ad -->\n<!-- cubic:review-run=7ac8c698-30a8-472e-a16f-ac3765bced36 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When an app already owns a locale-prefixed r"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=167a0836-29ab-4207-8515-404ac1452309 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":10} -->\nP1: When a configured locale uses an underscore"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a0934718-a20a-43f5-a84b-81410fa5b6c5 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Consumers cannot import the new `ExpandRoute"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=e43db8a5-28f9-46b1-9dc7-d84ce6499c5c -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: When a `.po` file lacks a plural or language"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f83b07ef-5f09-468c-b6f3-4f6835141413 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When `I18nPlugin` uses its default cookie-ba"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=58e77541-939a-4e68-89fc-c900c65e8fde -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Configured locales containing underscores n"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=56c9ca61-527f-4678-8350-b1a182dd6ea9 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When an underscore-separated RTL locale is c"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=7ddf23c0-aa46-482a-81bf-bca0b9e10f05 -->\n<!-- cubic:review-run=afa41dcc-8549-5c24-8898-5f6faae5abc8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Localized prerendered pages have no route-sp"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "[P2] Synchronize the backend locale from the cookie-mode switcher\n\nWith default cookie routing, this calls only the provider’s client setter; it never dispatches `I18nState.set_locale`. In the live en"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "[P2] Convert accepted locale tags before passing them to Babel\n\n`I18nConfig` accepts hyphenated tags such as `pt-BR` and `zh-Hant`, but both calls pass them verbatim to Babel, which expects underscore"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 129,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 126
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "at": "2026-07-17T22:29:36Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 8.42%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-07-17T22:42:22Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=45234896\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "at": "2026-07-29T19:20:18Z",
+      "excerpt": "@masenf could you please take a brief look at this from an architectural design and DX perspective? it's totally okay if you have smth completly different in mi"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "Retained evidence from 2026-09-28 (identical head and failing check): CodSpeed reports test_cli_startup[help] regressed from 787.2 ms to 859.5 ms (-8.42%). It warns that runtime environments differed and that no successful run existed on the expected main SHA, so an older main result was used and unrelated changes may affect the comparison."
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/vars/dep_tracking.py",
+    "tests/units/test_state.py"
+  ]
+}

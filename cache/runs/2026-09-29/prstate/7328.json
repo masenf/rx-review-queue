@@ -1,0 +1,242 @@
+{
+  "number": 7328,
+  "fetched_at": "2026-09-29T17:32:34Z",
+  "head_sha": "8c06ecd3fcc19925722bccc93793a89ecde392f8",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 6980,
+      "title": "Backgrounded/no-TTY `reflex run` ignores SIGTERM/SIGINT — requires SIGKILL of the process group",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:55:40Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:56:16Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T10:28:19Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:36Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:37Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:39Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:41Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:43Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-28T12:58:52Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:09:02Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:38:46Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:40:41Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:11:00Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:18:14Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:42:53Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 22,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This moves the frontend out of the `reflex run` process group. After this change, `kill -KILL -- -<pgid>` stops the Python process, but bun and node continue to run. This is the workaround in #6980, a"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "`stream_logs` can reap the frontend before this call. After that, the kernel can give the PID to a new process, and `killpg` can signal an unrelated process group. `Popen.terminate()` checks `returnco"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This registry tracks one process. `run_process_and_launch_url` starts at most one frontend per run, and `exec.frontend_process` already holds it. `_run_dev` already uses that global for the Windows pa"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This block increases the complexity of `_run_dev` from 7 to 12 (ruff C901). Please move the handler setup into a small context manager. Also, the `threading.main_thread()` check is not necessary: the "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Only SIGTERM needs a handler here. The default SIGINT handler raises `KeyboardInterrupt`, and that already runs the cleanup in `finally`. The custom handler only changes the exit code to 0."
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **SIGINT no longer exits cleanly**\n\nIn a POSIX frontend-only run, this handler now co"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Signal handlers lack required docstrings**\n\n`_frontend_sigterm_handler` does not do"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Test arguments lack documentation**\n\nThis new test has fixture and parameter argume"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Polling duration lacks explanation**\n\nThis deadline adds `DEFAULT_TIMEOUT` to the m"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a4429f4c-584e-4b2d-9460-35b1e1b08658 -->\n<!-- cubic:review-run=fb330a9e-c248-5a04-8401-fe217346a95d -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This PR now ships two news fragments for the"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Redundant inline import**\nThe generated test driver already imports `Path` at the t"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=13a6f9b4-89ae-4e43-922f-b6f70390ca42 -->\n<!-- cubic:review-run=3f298501-8e39-5582-9a63-99da6aaee5f7 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: The 3-second hard timeout in this test is mu"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 135,
+    "by_state": {
+      "IN_PROGRESS": 25,
+      "SKIPPED": 3,
+      "SUCCESS": 107
+    },
+    "failing": [],
+    "pending": [
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "Run benchmarks"
+    ]
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-25T09:56:12Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69276215\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-25T09:59:05Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.6%**\n\n<details>\n<summary>:warning: <b>Different runtime envi"
+    },
+    {
+      "by": "flcrom",
+      "at": "2026-09-25T12:11:42Z",
+      "excerpt": "Could a maintainer rerun the Ubuntu 3.10 unit-test job? The Redis-enabled stage failed in `test_oplock_contention_racers[0]` in `tests/units/istate/manager/test"
+    },
+    {
+      "by": "flcrom",
+      "at": "2026-09-28T14:33:16Z",
+      "excerpt": "Thanks for the detailed review. I removed `start_new_session` and the process-group registry, moved frontend cleanup to `_run_dev` using `exec.frontend_process."
+    },
+    {
+      "by": "flcrom",
+      "at": "2026-09-29T17:13:58Z",
+      "excerpt": "The follow-up commits through 36c0b2a cover the late-start/teardown race as well as the five review points. Could you take another look?"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "conflicting_files": []
+}

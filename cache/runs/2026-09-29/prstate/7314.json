@@ -1,0 +1,212 @@
+{
+  "number": 7314,
+  "fetched_at": "2026-09-29T17:30:34Z",
+  "head_sha": "9ac88feae348e682e07ac717c6a7d1e3536b92c1",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-24T17:53:47Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:01:08Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:18Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:20Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:22Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:24Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:25Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:28Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:29Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:31Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:38:53Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T23:46:44Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-24T23:47:06Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T00:04:41Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:32:49Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:43:16Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:06Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:20Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:59Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T22:02:25Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:00:36Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-28T19:03:59Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 16,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This makes the result depend on the state manager.\n\nA background task gets another state outside the lock, then writes it inside the block:\n\n```python\nother = await self.get_state(OtherState)\nasync wi"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This check runs on every tracked field write and every proxy mutation, so it is on the hottest path. Each call walks to the root, reads the ContextVar, and then `holds()` builds a generator for `any()"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "With redis or disk, this runs on every `async with self` enter and exit. Each time it walks the full MRO and rebuilds the slot names.\n\n`_stale_pickle_keys` already caches the slot names per class. Ple"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 6,
+    "by_state": {
+      "SUCCESS": 6
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-24T17:51:25Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68843043\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-24T19:43:08Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 135` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-24T20:09:50Z",
+      "excerpt": "**CodSpeed Performance Analysis** is red on 1e8341d08. Compared with #7313:\n- `test_get_state_uncached[memory]` is 4.6% slower.\n- `test_process_event_burst_inde"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-25T00:18:52Z",
+      "excerpt": "Correction to my earlier comment. `test_get_state_uncached[memory]` came in 5–7% slower in three runs in a row, so it wasn't noise. Moving the bookkeeping into "
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-25T02:02:26Z",
+      "excerpt": "**CodSpeed Performance Analysis** is red on c014b00: `read_inherited` is 6.7% slower, `read_own` 4.4% and `get_handler` 4.2%, while `burst_independent_tokens[1]"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-09-25T18:46:46Z",
+      "excerpt": "CodSpeed on b3d8123 flags `test_route_argument_extraction` (-4.3%/-4.9%) and, in its first report only, `test_state_access[read_inherited]` (-4.3%). I believe n"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

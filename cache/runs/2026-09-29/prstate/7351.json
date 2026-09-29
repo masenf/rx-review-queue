@@ -1,0 +1,89 @@
+{
+  "number": 7351,
+  "fetched_at": "2026-09-29T17:32:28Z",
+  "head_sha": "8faa70dcd919a0791a394562411c38a3faf5702e",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7294,
+      "title": "reflex-hosting-cli output should use multiline header and rows",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-29T16:51:28Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-29T16:57:09Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Older base breaks app tables**\n\nIf a newer hosting CLI runs with an installed `refl"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1d8d909b-33e3-43f9-86d9-157e319bfa34 -->\n<!-- cubic:review-run=326c2f22-7319-5b5f-bad5-6d870afd9c02 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: `capsys` cannot capture this output. `reflex"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=fd994419-71d4-4607-8891-01747116ca07 -->\n<!-- cubic:review-run=326c2f22-7319-5b5f-bad5-6d870afd9c02 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Guard this keyword or require a compatible `"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=80571bec-4bb7-45d9-822d-9fe722d3f9a4 -->\n<!-- cubic:review-run=326c2f22-7319-5b5f-bad5-6d870afd9c02 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: This bugfix fragment mixes unchanged `--json"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=cf49e694-a550-4141-9c64-d37565b6ed9f -->\n<!-- cubic:review-run=326c2f22-7319-5b5f-bad5-6d870afd9c02 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: `no_wrap` is typed `Collection[str]`, and `s"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 139,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 136
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-29T16:51:23Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=71463555\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-29T16:58:41Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 135` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^s"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "conflicting_files": []
+}

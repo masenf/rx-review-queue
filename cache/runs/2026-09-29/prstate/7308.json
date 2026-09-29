@@ -1,0 +1,158 @@
+{
+  "number": 7308,
+  "fetched_at": "2026-09-29T17:32:28Z",
+  "head_sha": "b3a06ca20fb7b48c8815c9ff945d1721e448894b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7017,
+      "title": "State var default of dataclasses.field(...) fails with TypeError: cannot pickle 'mappingproxy' object",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:20:36Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:23:28Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:17:20Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:18:10Z",
+      "can_push": true
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:52Z",
+      "can_push": false
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:53Z",
+      "can_push": false
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:31:20Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=366cf796-c8aa-4b11-9f6a-9c992e44af8f -->\n<!-- cubic:review-run=16108169-2cc4-5453-9158-96c84eb97ade -->\n<!-- metadata:{\"confidence\":7} -->\nP2: Unannotated `dataclasses.field(default=mutab"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Custom factories lose their type** An unannotated declaration such as `items = data"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Mutable defaults are shared** For an unannotated declaration such as `items = datac"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Custom factories break plain models** An unannotated `dataclasses.field(default_fac"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 134,
+    "by_state": {
+      "IN_PROGRESS": 42,
+      "SKIPPED": 3,
+      "SUCCESS": 89
+    },
+    "failing": [],
+    "pending": [
+      "reflex-docs (3.11)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (memory, 3.15)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "Run benchmarks"
+    ]
+  },
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "at": "2026-09-24T10:21:56Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 5.9%**\n\n<details>\n<summary>:warning: <b>Different runtime envi"
+    },
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-24T10:23:23Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68609457\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "conflicting_files": []
+}

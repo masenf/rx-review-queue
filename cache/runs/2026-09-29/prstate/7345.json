@@ -1,0 +1,119 @@
+{
+  "number": 7345,
+  "fetched_at": "2026-09-29T17:30:23Z",
+  "head_sha": "ed18a69bcaf4f268f10540e6e629c30b117c7db3",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7343,
+      "title": "checkbox_group/checkbox_cards are missing most of the props radio_group/radio_cards already expose",
+      "filed_by": "stackedbyaradhya"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-28T09:58:50Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-28T10:00:33Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:22:00Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:22:02Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:22:04Z",
+      "can_push": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-29T14:22:14Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 8,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "Please remove `as_child` from `CheckboxCardsRoot` and `CheckboxGroupRoot`.\n\nRadix Themes removes `asChild` from both Root types on purpose: `ComponentPropsWithout<typeof CheckboxGroupPrimitive.Root, '"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "Radix passes the Root `required` to every item (`required={context.required}` in `checkbox-group.primitive.tsx`). So the user must check all items, not one item. I tested a form with `required=True` a"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "Please shorten this fragment to one or two sentences. It is for downstream users, and the PR already lists each prop. For example:\n\n> `checkbox_group` and `checkbox_cards` now support a controlled `va"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 122
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-28T10:00:28Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=70533900\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-09-28T11:51:23Z",
+      "excerpt": "please can you fix the ai review points. "
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-28T15:29:42Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 5.17%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "stackedbyaradhya",
+      "at": "2026-09-29T08:05:18Z",
+      "excerpt": "Hello @FarhanAliRaza, thanks for the review.\r\nany update on this!?"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed measured test_on_event_router_data at 2.0 ms versus 1.9 ms on base (-5.17% efficiency); CodSpeed also warns that the compared runs used different runtime environments, which may affect accuracy."
+    }
+  ],
+  "conflicting_files": []
+}

@@ -1,0 +1,112 @@
+{
+ "previous_run": "2026-09-28",
+ "disappeared": [
+  {
+   "number": 7203,
+   "title": "Stop setting BUN_OPTIONS for the frontend dev server",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7226,
+   "title": "fix(plotly): normalize string layout titles",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7236,
+   "title": "Fix frontend install cache invalidation from package.json formatting",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7303,
+   "title": "fix: leave the working tree's pyi stubs alone during an editable install",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7320,
+   "title": "Exit non-zero when apps delete gets an unknown app ID",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7324,
+   "title": "fix: a ?self= query parameter or self header no longer crashes router parsing",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7327,
+   "title": "docs: fix toast action/cancel prop documentation",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7334,
+   "title": "Post docs feedback and integration requests to Slack",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7336,
+   "title": "fix: flatten nested client event lists",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7346,
+   "title": "ci: skip tests on Markdown-only PRs without leaving required checks pending",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7348,
+   "title": "Fix double-close of listening socket on Windows",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7349,
+   "title": "fix(hosting-cli): keep long app table values readable",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7350,
+   "title": "fix: emit every output line as JSON in reflex run --json",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7351,
+   "title": "fix(hosting-cli): keep app and deployment ids copyable in tables",
+   "author": "FarhanAliRaza",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  7348,
+  7349,
+  7323,
+  7237,
+  7350,
+  7227,
+  7326,
+  7307,
+  7325,
+  7305,
+  7317
+ ],
+ "left_top15": [
+  7320,
+  7303,
+  7203,
+  7334,
+  7327,
+  7226,
+  7336,
+  7304,
+  7236,
+  7324,
+  7344
+ ],
+ "counts": {
+  "previous_open": 113,
+  "current_open": 107
+ }
+}

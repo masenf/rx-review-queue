@@ -1,0 +1,611 @@
+{
+  "run": {
+    "date": "2026-09-29",
+    "started_at": "2026-09-29 10:27 PT",
+    "runner": "local-codex",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "local authenticated gh CLI + cache/repo.git"
+  },
+  "stats": {
+    "open": 107,
+    "nondraft": 80,
+    "drafts": 27,
+    "counting_approvals": 2,
+    "fast_lane": 2,
+    "one_fix_away": 7,
+    "fork_ci_unrun": 11,
+    "never_human_reviewed": 38
+  },
+  "attention": [
+    "Review now, in order: #7349 and #7323 are today's best value per minute; use newly unblocked #7237 only if a larger review block remains.",
+    "Adjudicate before review: #7219 is the focused JSON-mode issue fix, while new #7350 captures every stdout/stderr line and is materially more invasive; do not review both in parallel.",
+    "Merge lane, not review time: #7348 is already approved, green, clean, and fully resolved; approved #7315 is not ready because it conflicts, has one live thread, and only nine checks.",
+    "Re-review lane: #7286 first, then #7227 and #7033; all are green and thread-free but retain changes-requested decisions after later author work.",
+    "CI lane: #7305 and #7317 are clean and thread-free but need CodSpeed adjudication; wait for pending #7208, #7308, #7328, and #7288."
+  ],
+  "top15": [
+    {
+      "number": 7348,
+      "score": 9.8,
+      "summary": "Windows socket double-close fix is already approved, green, clean, tested, and fully resolved.",
+      "evidence": [
+        "3 files (+48/-13), 2 ahead / 5 behind main.",
+        "No local conflicts; 0 unresolved of 1 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Merge decision; no more code review needed.",
+      "whose_move": "maintainer",
+      "chips": [
+        "approved",
+        "merge click"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7349,
+      "score": 9.6,
+      "summary": "Best value per review minute: a three-file issue-backed fix that keeps long hosting-table values readable.",
+      "evidence": [
+        "3 files (+58/-4), 4 ahead / 0 behind main.",
+        "No local conflicts; 0 unresolved of 3 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "review now",
+        "issue #7294"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7323,
+      "score": 9.3,
+      "summary": "Makes corrupted disk-state recovery visible instead of silently resetting state; compact, tested, green, and fully resolved.",
+      "evidence": [
+        "3 files (+185/-5), 6 ahead / 0 behind main.",
+        "No local conflicts; 0 unresolved of 11 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "review now",
+        "issue #7167"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7237,
+      "score": 8.5,
+      "summary": "Shared-state fan-out optimization is newly green, clean, fully resolved, and benchmarked.",
+      "evidence": [
+        "6 files (+704/-3), 5 ahead / 0 behind main.",
+        "No local conflicts; 0 unresolved of 4 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "First maintainer approval in a dedicated review block.",
+      "whose_move": "maintainer",
+      "chips": [
+        "review now",
+        "performance"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7219,
+      "score": 8.2,
+      "summary": "Focused fix for plain-text Granian import failures in JSON mode, with a targeted regression test.",
+      "evidence": [
+        "3 files (+82/-13), 4 ahead / 0 behind main.",
+        "No local conflicts; 0 unresolved of 1 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Choose its focused design or broader #7350 before code review begins.",
+      "whose_move": "maintainer",
+      "chips": [
+        "scope adjudication",
+        "issue #7196"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7350,
+      "score": 8,
+      "summary": "Broader alternative to #7219 captures every stdout/stderr line in JSON mode; green and resolved but more invasive.",
+      "evidence": [
+        "6 files (+282/-3), 1 ahead / 0 behind main.",
+        "No local conflicts; 0 unresolved of 6 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Choose its broader fd-capture design or focused #7219 before code review begins.",
+      "whose_move": "maintainer",
+      "chips": [
+        "scope adjudication",
+        "alternative to #7219"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7286,
+      "score": 7.9,
+      "summary": "Client-state setter hooks are green, clean, tested, and thread-free after author follow-up.",
+      "evidence": [
+        "6 files (+258/-2), 5 ahead / 1 behind main.",
+        "No local conflicts; 0 unresolved of 6 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review and clear the stale changes-requested decision.",
+      "whose_move": "maintainer",
+      "chips": [
+        "re-review",
+        "playwright"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7227,
+      "score": 7.7,
+      "summary": "Issue-backed form-submission fix is green and all 30 review threads are now resolved after a fresh update.",
+      "evidence": [
+        "8 files (+151/-8), 27 ahead / 0 behind main.",
+        "No local conflicts; 0 unresolved of 30 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review and clear the surviving changes-requested decision.",
+      "whose_move": "maintainer",
+      "chips": [
+        "re-review",
+        "issue #7104"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7033,
+      "score": 7.5,
+      "summary": "Explicit-only event handlers are green, documented, tested, and thread-free after substantial later author work.",
+      "evidence": [
+        "11 files (+508/-35), 16 ahead / 0 behind main.",
+        "No local conflicts; 0 unresolved of 22 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review and clear the stale changes-requested decision.",
+      "whose_move": "maintainer",
+      "chips": [
+        "re-review",
+        "security relevance"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7326,
+      "score": 7.3,
+      "summary": "Negative-step Var slicing fix is green and compact; its only remaining thread is outdated.",
+      "evidence": [
+        "3 files (+119/-11), 3 ahead / 11 behind main.",
+        "No local conflicts; 1 unresolved of 5 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve the outdated thread during re-review, then approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "one outdated thread",
+        "small diff"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7307,
+      "score": 7.1,
+      "summary": "Redis connection-pool cap is green and compact; its only remaining thread is outdated.",
+      "evidence": [
+        "5 files (+128/-3), 2 ahead / 20 behind main.",
+        "No local conflicts; 1 unresolved of 6 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve the outdated thread during re-review, then approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "one outdated thread",
+        "small diff"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7325,
+      "score": 6.9,
+      "summary": "Small tested rx.download encoding fix is green and clean apart from one current P3 test-isolation finding.",
+      "evidence": [
+        "4 files (+54/-1), 2 ahead / 11 behind main.",
+        "No local conflicts; 1 unresolved of 4 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Settle the one test-isolation finding, then approve.",
+      "whose_move": "author",
+      "chips": [
+        "one live finding",
+        "small diff"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7305,
+      "score": 6.7,
+      "summary": "Issue-backed npm-choice logging fix is clean and thread-free, but CodSpeed reports a 5.12% regression.",
+      "evidence": [
+        "3 files (+57/-1), 2 ahead / 20 behind main.",
+        "No local conflicts; 0 unresolved of 1 review threads; 126 checks, rollup FAILURE."
+      ],
+      "blocker": "Adjudicate or rerun the CodSpeed regression before code review.",
+      "whose_move": "maintainer",
+      "chips": [
+        "CI action",
+        "issue #7093"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7317,
+      "score": 6.5,
+      "summary": "Production-only stylesheet preload fix is clean and fully resolved, but CodSpeed reports a 6.38% regression.",
+      "evidence": [
+        "4 files (+70/-15), 3 ahead / 17 behind main.",
+        "No local conflicts; 0 unresolved of 4 review threads; 126 checks, rollup FAILURE."
+      ],
+      "blocker": "Adjudicate or rerun the CodSpeed regression before code review.",
+      "whose_move": "maintainer",
+      "chips": [
+        "CI action",
+        "thread-free"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7234,
+      "score": 6.3,
+      "summary": "React Compiler stack root offers leverage over #7272, but two live test-coverage findings remain and the child conflicts.",
+      "evidence": [
+        "14 files (+559/-19), 1 ahead / 36 behind main.",
+        "No local conflicts; 2 unresolved of 2 review threads; 126 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve the two root findings before reviewing the stacked child.",
+      "whose_move": "author",
+      "chips": [
+        "stack root",
+        "review leverage"
+      ],
+      "override_reason": null
+    }
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {
+        "number": 7348,
+        "summary": "Approved Windows socket fix is green, clean, tested, and fully resolved.",
+        "blocker": "Merge decision."
+      },
+      {
+        "number": 7349,
+        "summary": "Issue-backed hosting-table fix is green, clean, tested, and thread-free.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7323,
+        "summary": "Issue-backed corrupted-state fix is green, clean, tested, and fully resolved.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7237,
+        "summary": "Shared-state optimization is green, clean, benchmarked, and fully resolved.",
+        "blocker": "First approval."
+      },
+      {
+        "number": 7286,
+        "summary": "Client-state setter hooks are green and fully resolved after author follow-up.",
+        "blocker": "Re-review and clear the stale changes request."
+      },
+      {
+        "number": 7227,
+        "summary": "Issue-backed form fix is green and all 30 threads are resolved after a fresh update.",
+        "blocker": "Re-review and clear the surviving changes request."
+      },
+      {
+        "number": 7033,
+        "summary": "Explicit-only events are green and fully resolved after substantial later work.",
+        "blocker": "Re-review and clear the stale changes request."
+      }
+    ],
+    "author": []
+  },
+  "fast_lane": [
+    {
+      "number": 7349,
+      "summary": "Best value per minute: a three-file issue-backed hosting-table fix with a targeted test.",
+      "blocker": "First approval."
+    },
+    {
+      "number": 7323,
+      "summary": "Three-file issue-backed corrupted-state fix with all 11 review threads resolved.",
+      "blocker": "First approval."
+    }
+  ],
+  "closure": [
+    {
+      "number": 6553,
+      "summary": "502 behind main, conflicting, SUCCESS, and 0 unresolved threads across a 4-file diff.",
+      "keep_issue": 6514
+    },
+    {
+      "number": 6490,
+      "summary": "446 behind main, conflicting, SUCCESS, and 1 unresolved threads across a 11-file diff.",
+      "keep_issue": null
+    },
+    {
+      "number": 6125,
+      "summary": "680 behind main, conflicting, no current CI, and 1 unresolved threads across a 3-file diff.",
+      "keep_issue": 5830
+    },
+    {
+      "number": 6468,
+      "summary": "435 behind main, conflicting, FAILURE, and 1 unresolved threads across a 37-file diff.",
+      "keep_issue": 6214
+    },
+    {
+      "number": 7004,
+      "summary": "174 behind main, conflicting, FAILURE, and 4 unresolved threads across a 4-file diff.",
+      "keep_issue": 6955
+    }
+  ],
+  "stacks": [
+    {
+      "chain": [
+        7234,
+        7272
+      ],
+      "note": "React Compiler stack: review #7234 first for conceptual leverage; #7272 separately conflicts with main in tests/units/reflex_base/vars/test_base.py."
+    },
+    {
+      "chain": [
+        7079,
+        7113
+      ],
+      "note": "Conflict-bound execution/telemetry stack; exact shared conflict intersection: tests/units/test_telemetry.py, tests/units/utils/test_exec.py."
+    },
+    {
+      "chain": [
+        6744,
+        6745
+      ],
+      "note": "State-performance stack is deeply conflict-bound; the two heads share 14 exact conflicting files."
+    },
+    {
+      "chain": [
+        7313,
+        7314,
+        7315
+      ],
+      "note": "Speculative-state stack: the root is red with live findings; #7314 has changes requested, while approved #7315 conflicts with main and has only a sparse nine-check suite."
+    },
+    {
+      "chain": [
+        6100,
+        7337
+      ],
+      "note": "State-name-minification stack: both broad heads now conflict with main and retain live findings; reserve a dedicated root-first review block."
+    }
+  ],
+  "conflict_clusters": [
+    {
+      "prs": [
+        6116,
+        6688,
+        6733,
+        6744,
+        6745,
+        6932,
+        7056,
+        7064
+      ],
+      "files": [
+        "reflex/app.py"
+      ],
+      "note": "Exact 8-PR conflict cluster on reflex/app.py."
+    },
+    {
+      "prs": [
+        6688,
+        6743,
+        6744,
+        6745,
+        6768,
+        7036,
+        7056
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/vars/base.py"
+      ],
+      "note": "Exact 7-PR conflict cluster on packages/reflex-base/src/reflex_base/vars/base.py."
+    },
+    {
+      "prs": [
+        6468,
+        6597,
+        6688,
+        6743,
+        6744,
+        6745,
+        7123
+      ],
+      "files": [
+        "pyi_hashes.json"
+      ],
+      "note": "Exact 7-PR conflict cluster on pyi_hashes.json."
+    },
+    {
+      "prs": [
+        6743,
+        6744,
+        6745,
+        7036,
+        7056,
+        7064,
+        7206
+      ],
+      "files": [
+        "reflex/state.py"
+      ],
+      "note": "Exact 7-PR conflict cluster on reflex/state.py."
+    },
+    {
+      "prs": [
+        6743,
+        6744,
+        6745,
+        6796,
+        6840,
+        6853,
+        7036
+      ],
+      "files": [
+        "tests/units/test_state.py"
+      ],
+      "note": "Exact 7-PR conflict cluster on tests/units/test_state.py."
+    }
+  ],
+  "structural": [
+    {
+      "number": 7350,
+      "summary": "Alternative to #7219 for the same #7196 problem: broader fd-level capture, larger review surface; choose one design before spending review time."
+    },
+    {
+      "number": 7351,
+      "summary": "Overlaps #7349 on issue #7294; #7349 is smaller and thread-free, while #7351 still has five live findings including a compatibility concern."
+    },
+    {
+      "number": 7330,
+      "summary": "Benchmark harness spans 145 files and more than 41,000 inserted lines; despite green CI and resolved threads, it lacks one expected fragment and needs a dedicated review block."
+    },
+    {
+      "number": 7288,
+      "summary": "Durable workflows span 87 files and more than 15,000 inserted lines; CI is still pending with changes requested and one unresolved thread."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Counting approvals repo-wide: 2",
+      "detail": "#7348 is green, clean, resolved, and ready for a merge decision; #7315 is approved but conflicts with main, has one unresolved thread, and only nine checks."
+    },
+    {
+      "title": "Never reviewed by someone other than the author: 38 non-draft PRs",
+      "detail": "#7308, #7208, #7351, #7350, #7349, #7219, #7323, #7326, #7325, #7337, #7329, #7318, #7317, #7233, #7307, #7305, #7322, #7321, #7306, #7272, #7234, #6116, #7206, #7123, #7113, #7065, #7056, #7052, #7051, #7036, #7007, #6935, #6853, #6840, #6770, #6676, #6468, #6553."
+    },
+    {
+      "title": "Contributors waiting on maintainer action",
+      "detail": "Using latest author activity as the clock: #6770 has waited 63 completed days, #6840 54 days, #6853 53 days, #6876 45 days, and #6935 36 days."
+    },
+    {
+      "title": "Fork PRs whose full CI never ran: 11",
+      "detail": "#7318, #6125, #7322, #7144, #6126, #7040, #7036, #6935, #6876, #6853, #6840; explicit current-head Actions evidence confirms the workflow gate or absence of runs."
+    },
+    {
+      "title": "Fragment problems: 8 PRs missing 10 expected fragments",
+      "detail": "#7330, #6125, #6490, #6935, #6853, #6840, #6597, #6553."
+    },
+    {
+      "title": "Author concentration",
+      "detail": "Top non-draft authors: FarhanAliRaza (23), flcrom (8), masenf (8), Alek99 (7), benedikt-bartscher (6), harsh21234i (6), anxkhn (2), breken-ai (2), counted from listing authors."
+    },
+    {
+      "title": "Conflict pressure",
+      "detail": "39 of 80 non-draft PRs conflict with today's main."
+    },
+    {
+      "title": "Red checks: 21 PRs; pending: 4",
+      "detail": "Red: #7345, #6841, #7313, #7329, #7317, #6796, #7305, #7321, #7273, #7306, #6932, #7206, #7123, #7064, #6688, #7065, #7004, #6770, #6676, #6597, #6468. Pending: #7288, #7328, #7308, #7208. Every red PR has a finding record; #6468's underlying cause remains unknown because its logs expired."
+    }
+  ],
+  "delta": {
+    "previous_run": "2026-09-28",
+    "merged": [
+      7334,
+      7327,
+      7336,
+      7324,
+      7226,
+      7303,
+      7320,
+      7236,
+      7203
+    ],
+    "closed": [
+      {
+        "number": 7346,
+        "note": "closed without merge"
+      }
+    ],
+    "opened": [
+      7351,
+      7350,
+      7349,
+      7348
+    ],
+    "entered_top15": [
+      7348,
+      7349,
+      7323,
+      7237,
+      7350,
+      7227,
+      7326,
+      7307,
+      7325,
+      7305,
+      7317
+    ],
+    "left_top15": [
+      7320,
+      7303,
+      7203,
+      7334,
+      7327,
+      7226,
+      7336,
+      7304,
+      7236,
+      7324,
+      7344
+    ],
+    "newly_blocked": [
+      {
+        "number": 7314,
+        "note": "gained three unresolved threads and a changes-requested decision"
+      }
+    ],
+    "newly_unblocked": [
+      {
+        "number": 7237,
+        "note": "now green, clean, and fully resolved"
+      },
+      {
+        "number": 7323,
+        "note": "full CI is green and all 11 review threads are resolved"
+      },
+      {
+        "number": 7330,
+        "note": "all 49 review threads are resolved, though the diff remains too broad for scarce-time review"
+      }
+    ],
+    "draft_flips": []
+  },
+  "method": {
+    "notes": [
+      "Authenticated listing as masenf reconciled 107 rows; all 80 non-drafts have current measurements plus fresh or safely carried unchanged PR state.",
+      "Git measurements use main e48fc892a3560ef9327805975a97b88b6bcb2311; local merge-tree is authoritative for conflicts.",
+      "Scarce-time ordering prioritizes compact issue-backed bugs with full green CI, clean merges, tests, and no unresolved findings; merge, re-review, author, and CI actions are separated.",
+      "#7288 pushed repeatedly during collection; its listing, git ref, measurements, and PR state were re-fetched on head d77d77869a3710971b03856a2bc5e1bd03cc613d before scoring, with 126 checks green and 10 still in progress.",
+      "All red PRs have failing_job_findings populated from current or explicitly labeled retained evidence on identical heads and check names."
+    ],
+    "audit_corrections": [
+      "Moved the #7219/#7350 alternatives out of strict review-now and one-fix-away until their scope choice is adjudicated.",
+      "Removed #7326 and #7307 from strict one-fix-away because each still needs both thread disposition and approval.",
+      "Re-fetched #7288 after another push; the reconciled head has no failed checks, 126 successes, and 10 checks still in progress.",
+      "Ranked approved, green, clean #7348 first for merge proximity while keeping it outside the code-review queue.",
+      "Clarified that 23 unchanged, previously green states were safely carried under the documented incremental-run rule; every conflict was recomputed against today's main.",
+      "Marked #6468's root cause unknown because its retained logs have expired, and confirmed #7346 closed without merge through the live GitHub API."
+    ],
+    "caveats": [
+      "Sparse partial check suites are not treated as full green CI even when their limited rollup says SUCCESS.",
+      "The #7219/#7350 and #7349/#7351 overlaps should be resolved before parallel review effort is spent.",
+      "#6468's current failing-check names are known, but the underlying cause is unavailable because the retained logs return HTTP 410; rerun current-head CI before acting on it."
+    ]
+  }
+}

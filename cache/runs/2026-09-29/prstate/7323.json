@@ -1,0 +1,98 @@
+{
+  "number": 7323,
+  "fetched_at": "2026-09-29T17:30:36Z",
+  "head_sha": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7167,
+      "title": "StateManagerDisk silently resets corrupted persisted state",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-25T04:01:06Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-25T04:05:06Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-29T00:59:13Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-29T01:11:05Z",
+      "can_push": true
+    },
+    {
+      "by": "dajiaohuang",
+      "state": "COMMENTED",
+      "at": "2026-09-29T02:22:34Z",
+      "can_push": false
+    },
+    {
+      "by": "dajiaohuang",
+      "state": "COMMENTED",
+      "at": "2026-09-29T02:22:41Z",
+      "can_push": false
+    },
+    {
+      "by": "dajiaohuang",
+      "state": "COMMENTED",
+      "at": "2026-09-29T02:22:49Z",
+      "can_push": false
+    }
+  ],
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 11,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 139,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 136
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-25T04:01:01Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69156535\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "dajiaohuang",
+      "at": "2026-09-29T01:00:13Z",
+      "excerpt": "The follow-up at `f83a09f` updates the message to describe the fallback accurately, identifies the failing file without logging the raw state token, scopes the "
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-29T01:07:09Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 135` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^s"
+    }
+  ],
+  "conflicting_files": [],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": []
+}

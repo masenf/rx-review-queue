@@ -1,0 +1,133 @@
+{
+  "number": 7304,
+  "fetched_at": "2026-09-29T17:32:27Z",
+  "head_sha": "5387c2ba55161f3fc3b95a76df98189ca781e179",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7258,
+      "title": "A missing app-package __init__.py (myapp/myapp/__init__.py) makes the compiled frontend and the backend disagree on the root state name; every event is silently dropped with only a browser console error",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:18:23Z",
+      "can_push": true
+    },
+    {
+      "by": "masenf",
+      "state": "COMMENTED",
+      "at": "2026-09-28T19:37:24Z",
+      "can_push": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-29T10:18:42Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-29T10:19:46Z",
+      "can_push": true
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:17:51Z",
+      "can_push": false
+    },
+    {
+      "by": "flcrom",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:18:26Z",
+      "can_push": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:19:52Z",
+      "can_push": true
+    },
+    {
+      "by": "greptile-apps",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:19:54Z",
+      "can_push": true
+    }
+  ],
+  "awaiting": [],
+  "threads": {
+    "total": 8,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=1a992776-c893-4b93-b613-58d553d47843 -->\n<!-- cubic:review-run=dfb4480f-5de2-5762-955c-65e23de66b0d -->\n<!-- metadata:{\"confidence\":7} -->\nP3: Fragment file `news/7258.bugfix.md` uses the"
+      },
+      {
+        "by": "masenf",
+        "outdated": true,
+        "first_comment": "if the file doesn't exist, we should probably just create it to reduce friction for users and let their app start up."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=19dbec68-0d35-4601-9d50-9e3efc9898f9 -->\n<!-- cubic:review-run=9e1bfe14-d1a1-5546-8c20-ec990fdd7c03 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: The bugfix note states only the internal mec"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Valid nested apps rejected**\n\nFor an app such as `pkg.sub.app`, if `pkg` is a regul"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=204e0012-79a8-4af6-a209-cfe11b03baf0 -->\n<!-- cubic:review-run=70e7e2ff-2c5d-57c6-a292-f2ca5f7c5056 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This rejects valid nested packages when an u"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=cdee6a02-35e0-4f5f-b7e3-b46c0c658ef3 -->\n<!-- cubic:review-run=70e7e2ff-2c5d-57c6-a292-f2ca5f7c5056 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: The post-failure `importlib.import_module(\"s"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 139,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 136
+    },
+    "failing": [],
+    "pending": []
+  },
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "at": "2026-09-24T10:15:29Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68607514\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "at": "2026-09-24T10:19:34Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 135` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "flcrom",
+      "at": "2026-09-29T10:14:25Z",
+      "excerpt": "Updated this to create the missing `__init__.py` files before the backend import, while leaving existing files untouched. The regression tests cover nested pack"
+    }
+  ],
+  "counting_approval": false,
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "conflicting_files": []
+}
