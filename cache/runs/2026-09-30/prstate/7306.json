@@ -1,0 +1,148 @@
+{
+  "number": 7306,
+  "fetched_at": "2026-09-30T18:28:40Z",
+  "author_login": "flcrom",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "flcrom/reflex",
+  "head_sha": "e1446009e66b713e81f937c07139c5f3ab0ed39d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7256,
+      "title": "rx.Var.create(x)._replace(_var_data=...) raises \"TypeError: dataclasses.replace() got multiple values for keyword argument '_var_data'\"",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:19:20Z",
+      "can_push": true,
+      "commit_id": "155c309ec025d6ff4a7fb7780135bfd799f49bf6"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:19:27Z",
+      "can_push": true,
+      "commit_id": "155c309ec025d6ff4a7fb7780135bfd799f49bf6"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:27:06Z",
+      "can_push": true,
+      "commit_id": "e1446009e66b713e81f937c07139c5f3ab0ed39d"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Missing test docstring** The new `test_var_replace_var_data` function has no docstr"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 122
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 121
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:19:10Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68608996\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-24T10:25:13Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 3.38%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    }
+  ],
+  "head_activity_at": "2026-09-24T10:25:09Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:19:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:19:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:19:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:19:27Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-24T10:25:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:27:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:27:06Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "Retained evidence from 2026-09-28 on the identical head SHA with unchanged failing check names: CodSpeed reports test_var_access[mutable_dict] regressed from 45.6 ms to 47.2 ms (-3.38%) and warns that the comparison used different runtime environments."
+    }
+  ],
+  "last_author_activity_at": "2026-09-24T10:25:09Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

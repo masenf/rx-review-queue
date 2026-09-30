@@ -1,0 +1,446 @@
+{
+  "number": 7304,
+  "fetched_at": "2026-09-30T18:27:35Z",
+  "author_login": "flcrom",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "flcrom/reflex",
+  "head_sha": "daaa1dbded5bb612577eedef0c4894950f0dc75b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7258,
+      "title": "A missing app-package __init__.py (myapp/myapp/__init__.py) makes the compiled frontend and the backend disagree on the root state name; every event is silently dropped with only a browser console error",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:18:23Z",
+      "can_push": true,
+      "commit_id": "331fd860b41c072f923822d551e8ba9e9ae10a7e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T19:37:24Z",
+      "can_push": true,
+      "commit_id": "331fd860b41c072f923822d551e8ba9e9ae10a7e"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T10:18:42Z",
+      "can_push": true,
+      "commit_id": "9ca06c0c86fa281515592dbd8af592b6806f07c8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T10:19:46Z",
+      "can_push": true,
+      "commit_id": "9ca06c0c86fa281515592dbd8af592b6806f07c8"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:17:51Z",
+      "can_push": false,
+      "commit_id": "9ca06c0c86fa281515592dbd8af592b6806f07c8"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:18:26Z",
+      "can_push": false,
+      "commit_id": "9ca06c0c86fa281515592dbd8af592b6806f07c8"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:19:52Z",
+      "can_push": true,
+      "commit_id": "5387c2ba55161f3fc3b95a76df98189ca781e179"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:19:54Z",
+      "can_push": true,
+      "commit_id": "5387c2ba55161f3fc3b95a76df98189ca781e179"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:01:28Z",
+      "can_push": false,
+      "commit_id": "5387c2ba55161f3fc3b95a76df98189ca781e179"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:03:24Z",
+      "can_push": true,
+      "commit_id": "5708e9d666695941d62f219e50b19fa3a0ea0651"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-29T18:03:27Z",
+      "can_push": true,
+      "commit_id": "5708e9d666695941d62f219e50b19fa3a0ea0651"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T19:04:28Z",
+      "can_push": false,
+      "commit_id": "5708e9d666695941d62f219e50b19fa3a0ea0651"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T19:07:30Z",
+      "can_push": true,
+      "commit_id": "6be6e9ee9d50aa1aefe17fb7cd95d414e5bf778b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T19:11:15Z",
+      "can_push": true,
+      "commit_id": "6be6e9ee9d50aa1aefe17fb7cd95d414e5bf778b"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T20:02:00Z",
+      "can_push": false,
+      "commit_id": "5c74ee0d229c2ccb3a87ab0e99e497d4a12dfe3c"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T20:02:02Z",
+      "can_push": false,
+      "commit_id": "5c74ee0d229c2ccb3a87ab0e99e497d4a12dfe3c"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T20:02:04Z",
+      "can_push": false,
+      "commit_id": "5c74ee0d229c2ccb3a87ab0e99e497d4a12dfe3c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T20:09:21Z",
+      "can_push": true,
+      "commit_id": "5c74ee0d229c2ccb3a87ab0e99e497d4a12dfe3c"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T20:58:13Z",
+      "can_push": false,
+      "commit_id": "daaa1dbded5bb612577eedef0c4894950f0dc75b"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "FarhanAliRaza"
+  ],
+  "threads": {
+    "total": 13,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=1a992776-c893-4b93-b613-58d553d47843 -->\n<!-- cubic:review-run=dfb4480f-5de2-5762-955c-65e23de66b0d -->\n<!-- metadata:{\"confidence\":7} -->\nP3: Fragment file `news/7258.bugfix.md` uses the"
+      },
+      {
+        "by": "masenf",
+        "outdated": true,
+        "first_comment": "if the file doesn't exist, we should probably just create it to reduce friction for users and let their app start up."
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please replace this block with a module target for Granian. `get_app_instance_from_file()` can return `get_app_instance()`:\n\n```python\ndef get_app_instance_from_file() -> str:\n    return get_app_insta"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=98e7591f-f9f9-4ecc-a440-9b120c32fea4 -->\n<!-- cubic:review-run=1a9e75cb-f6fc-58ac-9651-aeeaaeea2f58 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: `importlib.import_module(target)` registers "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 144,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 141
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:15:29Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68607514\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-24T10:19:34Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 142` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T10:14:25Z",
+      "excerpt": "Updated this to create the missing `__init__.py` files before the backend import, while leaving existing files untouched. The regression tests cover nested pack"
+    }
+  ],
+  "head_activity_at": "2026-09-29T20:58:08Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:15:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:18:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:18:23Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-24T10:19:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-28T19:37:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-28T19:37:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T10:14:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T10:18:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T10:18:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T10:19:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T10:19:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:17:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:18:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:19:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:19:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:19:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:19:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:01:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:03:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:03:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:03:27Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:04:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:07:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:07:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:11:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:11:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T20:02:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T20:02:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T20:02:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T20:09:21Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T20:09:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T20:58:12Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-29T20:58:12Z",
+  "last_maintainer_activity_at": "2026-09-29T18:03:27Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

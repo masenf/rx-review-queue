@@ -1,0 +1,799 @@
+{
+  "run": {
+    "date": "2026-09-30",
+    "started_at": "2026-09-30 11:37 PT",
+    "runner": "codex-local",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "Codex desktop"
+  },
+  "stats": {
+    "open": 110,
+    "nondraft": 78,
+    "drafts": 32,
+    "counting_approvals": 2,
+    "fast_lane": 2,
+    "one_fix_away": 4,
+    "waiting_on_maintainer": 3,
+    "never_maintainer_review": 35,
+    "fork_ci_unrun": 12,
+    "never_human_reviewed": 40
+  },
+  "attention": [
+    "#7325 is the cheapest merge: current-head approval, clean merge, full green CI, and one P3 bot thread to adjudicate.",
+    "#7219 is the best scarce-time code review: focused issue-backed fix, three files, tests, clean merge, full green CI, and no unresolved threads; prefer it over broader #7350.",
+    "#6553 is the highest-value untouched contributor PR: clean, full-green, tested, issue-backed, with one P2 bot finding and no maintainer interaction.",
+    "#7357 and #7288 also meet the strict waiting criteria; #7288 needs a dedicated block because it spans 93 files and +16,973 lines.",
+    "Leave #7352 and #7366 with their authors for now: CodeQL found secret logging in #7352, while #7366 has Ruff failures and two open findings."
+  ],
+  "top15": [
+    {
+      "number": 7325,
+      "score": 9.4,
+      "summary": "Already approved on the current head, green, compact, and clean; one current P3 bot thread is the only merge-box blocker.",
+      "evidence": [
+        "4 files (+54/-1), 3 ahead / 18 behind main.",
+        "No local conflicts; 1 unresolved of 4 review threads; 145 checks, rollup SUCCESS."
+      ],
+      "blocker": "Adjudicate and resolve the P3 test-isolation thread, then merge.",
+      "whose_move": "maintainer",
+      "chips": [
+        "merge first",
+        "counting approval"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7219,
+      "score": 9.2,
+      "summary": "Focused issue-backed fix for plain-text Granian import failures in JSON mode; full CI is green and all review threads are resolved.",
+      "evidence": [
+        "3 files (+82/-13), 4 ahead / 7 behind main.",
+        "No local conflicts; 0 unresolved of 1 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Review the focused design and choose it over broader alternative #7350.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "issue #7196"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 6553,
+      "score": 8.9,
+      "summary": "Issue-backed BaseContext consolidation is clean, fully green, tested, and has never received human maintainer interaction.",
+      "evidence": [
+        "5 files (+118/-127), 4 ahead / 7 behind main.",
+        "No local conflicts; 1 unresolved of 1 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Adjudicate its single current P2 bot finding, then perform the first maintainer review.",
+      "whose_move": "maintainer",
+      "chips": [
+        "first maintainer look",
+        "issue #6514"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7357,
+      "score": 8.7,
+      "summary": "Buffered-upload correctness fix is clean, fully green, tested, and has no unresolved review threads.",
+      "evidence": [
+        "5 files (+268/-34), 5 ahead / 2 behind main.",
+        "No local conflicts; 0 unresolved of 1 review threads; 145 checks, rollup SUCCESS."
+      ],
+      "blocker": "First peer maintainer review.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "stack root"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7304,
+      "score": 8.3,
+      "summary": "Compact issue-backed missing-package fix is green after author follow-up; three of four remaining threads are outdated.",
+      "evidence": [
+        "3 files (+79/-1), 9 ahead / 27 behind main.",
+        "No local conflicts; 4 unresolved of 13 review threads; 144 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review the one current import-registration finding and clear the outdated threads.",
+      "whose_move": "maintainer",
+      "chips": [
+        "re-review",
+        "issue #7258"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7349,
+      "score": 8.1,
+      "summary": "Compact issue-backed hosting-table fix remains green after a fresh push, but new review findings replaced yesterday\u2019s clean state.",
+      "evidence": [
+        "3 files (+152/-37), 8 ahead / 7 behind main.",
+        "No local conflicts; 4 unresolved of 8 review threads; 145 checks, rollup SUCCESS."
+      ],
+      "blocker": "Address or adjudicate four unresolved findings, including two current narrow-width/import-order findings.",
+      "whose_move": "author",
+      "chips": [
+        "fresh findings",
+        "issue #7294"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7308,
+      "score": 7.9,
+      "summary": "Dataclasses field-default fix is clean, fully green, tested, issue-backed, and has never had maintainer interaction.",
+      "evidence": [
+        "5 files (+168/-5), 7 ahead / 7 behind main.",
+        "No local conflicts; 3 unresolved of 7 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve three bot threads, including one current hardcoded-field test finding, then review.",
+      "whose_move": "author",
+      "chips": [
+        "first maintainer look",
+        "issue #7017"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7208,
+      "score": 7.6,
+      "summary": "Frontend Var deep equality is clean, fully green, and tested, with no maintainer interaction yet.",
+      "evidence": [
+        "4 files (+172/-0), 4 ahead / 7 behind main.",
+        "No local conflicts; 2 unresolved of 2 review threads; 139 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve two current comparison-coverage findings before first maintainer review.",
+      "whose_move": "author",
+      "chips": [
+        "first maintainer look",
+        "playwright"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7326,
+      "score": 7.4,
+      "summary": "Negative-step Var slicing fix is compact, clean, fully green, and still untouched by maintainers.",
+      "evidence": [
+        "3 files (+119/-11), 3 ahead / 18 behind main.",
+        "No local conflicts; 1 unresolved of 5 review threads; 125 checks, rollup SUCCESS."
+      ],
+      "blocker": "Resolve the single outdated zero-step thread, then perform first maintainer review.",
+      "whose_move": "maintainer",
+      "chips": [
+        "one outdated thread",
+        "small diff"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7355,
+      "score": 7.1,
+      "summary": "Issue-backed deploy validation is clean, tested, thread-free, and untouched by maintainers; its lone test failure appears outside the changed area.",
+      "evidence": [
+        "3 files (+166/-6), 3 ahead / 7 behind main.",
+        "No local conflicts; 0 unresolved of 3 review threads; 145 checks, rollup FAILURE."
+      ],
+      "blocker": "Rerun or adjudicate the PSS sampler failure, then perform first maintainer review.",
+      "whose_move": "maintainer",
+      "chips": [
+        "CI rerun",
+        "issue #7296"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7305,
+      "score": 6.9,
+      "summary": "Three-file issue-backed npm-choice logging fix is clean, tested, thread-free, and untouched by maintainers.",
+      "evidence": [
+        "3 files (+57/-1), 2 ahead / 27 behind main.",
+        "No local conflicts; 0 unresolved of 1 review threads; 126 checks, rollup FAILURE."
+      ],
+      "blocker": "Adjudicate or rerun the retained CodSpeed regression before first review.",
+      "whose_move": "maintainer",
+      "chips": [
+        "CI action",
+        "issue #7093"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7352,
+      "score": 6.6,
+      "summary": "First-time contributor supplied a compact tested fix for silent secrets-update success, but CodeQL found clear-text secret logging.",
+      "evidence": [
+        "3 files (+91/-1), 3 ahead / 7 behind main.",
+        "No local conflicts; 1 unresolved of 3 review threads; 144 checks, rollup FAILURE."
+      ],
+      "blocker": "Remove the clear-text secret logging and resolve the CodeQL thread.",
+      "whose_move": "author",
+      "chips": [
+        "first-time contributor",
+        "issue #7297"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7366,
+      "score": 6.4,
+      "summary": "New compact issue-backed Recharts formatter fix has tests and no maintainer interaction yet.",
+      "evidence": [
+        "4 files (+58/-3), 2 ahead / 0 behind main.",
+        "No local conflicts; 2 unresolved of 4 review threads; 145 checks, rollup FAILURE."
+      ],
+      "blocker": "Fix two Ruff errors and settle two review findings before first maintainer review.",
+      "whose_move": "author",
+      "chips": [
+        "new PR",
+        "issue #7257"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7329,
+      "score": 6.2,
+      "summary": "First-time contributor supplied a compact tested recovery fix for corrupt Redis state.",
+      "evidence": [
+        "4 files (+116/-9), 1 ahead / 18 behind main.",
+        "No local conflicts; 3 unresolved of 3 review threads; 125 checks, rollup FAILURE."
+      ],
+      "blocker": "Address three current P1/P2 review findings; the two min-deps failures are retained PyPI 503s.",
+      "whose_move": "author",
+      "chips": [
+        "first-time contributor",
+        "issue #7271"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7288,
+      "score": 5.8,
+      "summary": "Durable workflows now meets the strict waiting-on-maintainer criteria: clean, 148 checks green, and all 141 review threads resolved after a fresh author push.",
+      "evidence": [
+        "93 files (+16973/-10), 61 ahead / 3 behind main.",
+        "No local conflicts; 0 unresolved of 141 review threads; 148 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review and clear the stale changes-requested decision in a dedicated review block.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "large review"
+      ],
+      "override_reason": "Lowered despite merge readiness because 93 files and +16,973 lines do not fit a scarce-time quick-review block."
+    }
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {
+        "number": 7325,
+        "summary": "Current-head counting approval, full green CI, clean merge, and one current P3 bot thread.",
+        "blocker": "Adjudicate and resolve the remaining thread, then merge."
+      },
+      {
+        "number": 7219,
+        "summary": "Focused #7196 fix is clean, fully green, and thread-free after newer author activity.",
+        "blocker": "Choose it over broader #7350 and approve."
+      },
+      {
+        "number": 7357,
+        "summary": "Clean, fully green stack root with all review threads resolved.",
+        "blocker": "First peer maintainer approval."
+      },
+      {
+        "number": 7288,
+        "summary": "Clean, fully green, and all 141 threads resolved after newer author activity.",
+        "blocker": "Dedicated re-review and stale changes-requested clearance."
+      }
+    ],
+    "author": []
+  },
+  "fast_lane": [
+    {
+      "number": 7219,
+      "summary": "Best code-review value per minute: three files, targeted regression test, issue-backed, clean, fully green, and thread-free.",
+      "blocker": "Focused-design approval."
+    },
+    {
+      "number": 7357,
+      "summary": "Five-file tested correctness fix; clean, 145 checks green, and zero unresolved of one review thread.",
+      "blocker": "First peer approval."
+    }
+  ],
+  "waiting_on_maintainer": [
+    {
+      "number": 7219,
+      "summary": "Author activity at 2026-09-29 04:54 UTC is newer than the last maintainer interaction at 2026-09-28 19:25 UTC; clean merge, 139 checks green, and zero unresolved of one thread.",
+      "blocker": "Focused-design review and approval."
+    },
+    {
+      "number": 7357,
+      "summary": "No peer maintainer interaction yet; clean merge, 145 checks green, and zero unresolved of one thread after the latest author push.",
+      "blocker": "First peer maintainer review."
+    },
+    {
+      "number": 7288,
+      "summary": "Author activity at 2026-09-30 15:36 UTC is newer than the last maintainer interaction at 2026-09-29 23:09 UTC; clean merge, 148 checks green, and all 141 threads resolved.",
+      "blocker": "Dedicated re-review; this is not a quick review."
+    }
+  ],
+  "never_maintainer_review": [
+    {
+      "number": 6553,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI green (139 checks), 1 unresolved of 1 review threads, 5 files.",
+      "blocker": "Resolve or adjudicate 1 review thread, then perform first maintainer review."
+    },
+    {
+      "number": 7357,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI green (145 checks), 0 unresolved of 1 review threads, 5 files.",
+      "blocker": "First human maintainer review."
+    },
+    {
+      "number": 7308,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI green (139 checks), 3 unresolved of 7 review threads, 5 files.",
+      "blocker": "Resolve or adjudicate 3 review threads, then perform first maintainer review."
+    },
+    {
+      "number": 7208,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI green (139 checks), 2 unresolved of 2 review threads, 4 files.",
+      "blocker": "Resolve or adjudicate 2 review threads, then perform first maintainer review."
+    },
+    {
+      "number": 7326,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI green (125 checks), 1 unresolved of 5 review threads, 3 files.",
+      "blocker": "Resolve or adjudicate 1 review thread, then perform first maintainer review."
+    },
+    {
+      "number": 7355,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (145 checks), 0 unresolved of 3 review threads, 3 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7305,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (126 checks), 0 unresolved of 1 review threads, 3 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7352,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (144 checks), 1 unresolved of 3 review threads, 3 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7366,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (145 checks), 2 unresolved of 4 review threads, 4 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7329,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (125 checks), 3 unresolved of 3 review threads, 4 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7351,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI green (139 checks), 5 unresolved of 5 review threads, 8 files.",
+      "blocker": "Resolve or adjudicate 5 review threads, then perform first maintainer review."
+    },
+    {
+      "number": 7234,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI green (127 checks), 2 unresolved of 2 review threads, 14 files.",
+      "blocker": "Resolve or adjudicate 2 review threads, then perform first maintainer review."
+    },
+    {
+      "number": 7233,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI green (126 checks), 2 unresolved of 3 review threads, 8 files.",
+      "blocker": "Resolve or adjudicate 2 review threads, then perform first maintainer review."
+    },
+    {
+      "number": 7321,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (126 checks), 1 unresolved of 4 review threads, 4 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7306,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (125 checks), 1 unresolved of 2 review threads, 3 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7275,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, full CI has never run, 1 unresolved of 4 review threads, 3 files.",
+      "blocker": "Maintainer must approve the workflow run before CI can be evaluated."
+    },
+    {
+      "number": 7307,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI PENDING (141 checks), 2 unresolved of 7 review threads, 5 files.",
+      "blocker": "Wait for current checks to finish, then perform first maintainer review."
+    },
+    {
+      "number": 7358,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI SUCCESS (10 checks), 0 unresolved of 0 review threads, 9 files.",
+      "blocker": "First human maintainer review."
+    },
+    {
+      "number": 7317,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (126 checks), 0 unresolved of 4 review threads, 4 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7123,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (144 checks), 0 unresolved of 8 review threads, 12 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 6770,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (107 checks), 0 unresolved of 2 review threads, 3 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7353,
+      "summary": "No other human maintainer comment, review, or inline reply yet; clean merge, CI FAILURE (146 checks), 4 unresolved of 4 review threads, 3 files.",
+      "blocker": "Fix or adjudicate failing checks before first maintainer review."
+    },
+    {
+      "number": 7337,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI green (126 checks), 1 unresolved of 33 review threads, 68 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7056,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI green (111 checks), 0 unresolved of 8 review threads, 18 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7051,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI green (111 checks), 0 unresolved of 5 review threads, 11 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7052,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI green (111 checks), 0 unresolved of 4 review threads, 10 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7206,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, CI FAILURE (125 checks), 1 unresolved of 6 review threads, 3 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 6935,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI has never run, 0 unresolved of 1 review threads, 2 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 6840,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI has never run, 0 unresolved of 0 review threads, 2 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7113,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI green (114 checks), 6 unresolved of 6 review threads, 10 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7007,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI green (115 checks), 9 unresolved of 9 review threads, 11 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 6468,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, CI FAILURE (72 checks), 1 unresolved of 1 review threads, 37 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7272,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, CI SUCCESS (5 checks), 3 unresolved of 6 review threads, 27 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7318,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, full CI has never run, 1 unresolved of 4 review threads, 5 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    },
+    {
+      "number": 7065,
+      "summary": "No other human maintainer comment, review, or inline reply yet; conflicts with current main, CI FAILURE (111 checks), 5 unresolved of 5 review threads, 8 files.",
+      "blocker": "Resolve conflicts with current main before first maintainer review."
+    }
+  ],
+  "closure": [
+    {
+      "number": 6490,
+      "summary": "453 behind main, conflicting, green CI, and one unresolved thread across an 11-file diff.",
+      "keep_issue": null
+    },
+    {
+      "number": 6125,
+      "summary": "687 behind main, conflicting, no current CI, and one unresolved thread across a three-file diff.",
+      "keep_issue": 5830
+    },
+    {
+      "number": 6468,
+      "summary": "442 behind main, conflicting, red CI with expired logs, and one unresolved thread across a 37-file diff.",
+      "keep_issue": 6214
+    },
+    {
+      "number": 7004,
+      "summary": "181 behind main, conflicting, red CI, and four unresolved threads across a four-file diff.",
+      "keep_issue": 6955
+    }
+  ],
+  "stacks": [
+    {
+      "chain": [
+        7079,
+        7113
+      ],
+      "note": "Execution/telemetry stack; both heads conflict with current main, sharing tests/units/test_telemetry.py and tests/units/utils/test_exec.py."
+    },
+    {
+      "chain": [
+        7234,
+        7272
+      ],
+      "note": "React Compiler stack: review root #7234 first; the child #7272 conflicts with current main and only has a sparse five-check suite."
+    },
+    {
+      "chain": [
+        7357,
+        7358
+      ],
+      "note": "Upload/trace stack: root #7357 is full-green and waiting on peer review; child #7358 has only ten checks, so review and land root first."
+    },
+    {
+      "chain": [
+        7313,
+        7314,
+        7315
+      ],
+      "note": "Speculative-state stack: root #7313 has six CodSpeed regressions; #7314 has changes requested, and #7315 has only a sparse 17-check run with three cancellations."
+    },
+    {
+      "chain": [
+        6100,
+        7337
+      ],
+      "note": "State-name-minification stack: both broad heads conflict with current main and retain unresolved findings."
+    }
+  ],
+  "conflict_clusters": [
+    {
+      "prs": [
+        6116,
+        6688,
+        6733,
+        6745,
+        6932,
+        7056,
+        7064
+      ],
+      "files": [
+        "reflex/app.py"
+      ],
+      "note": "Exact 7-PR conflict cluster on reflex/app.py."
+    },
+    {
+      "prs": [
+        6745,
+        6796,
+        6840,
+        6853,
+        7036
+      ],
+      "files": [
+        "tests/units/test_state.py"
+      ],
+      "note": "Exact 5-PR conflict cluster on tests/units/test_state.py."
+    },
+    {
+      "prs": [
+        6688,
+        6733,
+        6932,
+        6996,
+        7144
+      ],
+      "files": [
+        "tests/units/test_app.py"
+      ],
+      "note": "Exact 5-PR conflict cluster on tests/units/test_app.py."
+    },
+    {
+      "prs": [
+        6745,
+        7036,
+        7056,
+        7064,
+        7206
+      ],
+      "files": [
+        "reflex/state.py"
+      ],
+      "note": "Exact 5-PR conflict cluster on reflex/state.py."
+    },
+    {
+      "prs": [
+        6688,
+        6745,
+        6768,
+        7036,
+        7056
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/vars/base.py"
+      ],
+      "note": "Exact 5-PR conflict cluster on packages/reflex-base/src/reflex_base/vars/base.py."
+    }
+  ],
+  "structural": [
+    {
+      "number": 7350,
+      "summary": "Broader alternative to #7219 for issue #7196; it is larger and now has four unresolved findings, so prefer the focused clean option before spending parallel review effort."
+    },
+    {
+      "number": 7351,
+      "summary": "Overlaps #7349 on issue #7294 and has five unresolved findings across eight files; avoid parallel review until the preferred table design is chosen."
+    },
+    {
+      "number": 7288,
+      "summary": "Strictly waiting on maintainer, but 93 files and +16,973 lines require a dedicated review block rather than scarce-time triage."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Counting approvals repo-wide: 2",
+      "detail": "#7325 is green and clean but still has one current P3 bot thread; #7054 is approved on the current head but conflicts with main and retains a later changes-requested decision."
+    },
+    {
+      "title": "No maintainer interaction: 35 non-draft PRs",
+      "detail": "Dedicated tab contains every open non-draft PR with no human maintainer comment, review, or inline reply; maintainer-authored PRs require peer interaction to leave the queue."
+    },
+    {
+      "title": "Never reviewed by a human other than the author: 40",
+      "detail": "#7123, #7307, #7352, #7350, #7366, #6853, #7358, #7357, #7355, #7036, #7056, #7065, #7113, #7234, #7272, #7337, #7318, #7353, #6553, #7308, #7208, #7351, #7219, #7326, #7329, #7317, #7233, #7305, #7321, #7306, #7275, #6116, #7206, #7052, #7051, #7007, #6935, #6840, #6770, #6468."
+    },
+    {
+      "title": "Strictly waiting on maintainer: 3",
+      "detail": "#7219, #7357, and #7288 are clean, full-green, have no unresolved review threads, and have author activity newer than the last maintainer interaction (or no peer maintainer interaction yet)."
+    },
+    {
+      "title": "Fork PRs whose full CI never ran: 12",
+      "detail": "#7322, #6853, #7036, #7318, #6125, #7275, #7144, #6126, #7040, #6935, #6876, #6840."
+    },
+    {
+      "title": "Fragment problems: 5 PRs missing 6 expected fragments",
+      "detail": "#6853, #6125, #6490, #6935, #6840."
+    },
+    {
+      "title": "Author concentration",
+      "detail": "Top non-draft authors: FarhanAliRaza (22), flcrom (8), harsh21234i (8), masenf (6), benedikt-bartscher (6), Alek99 (5), counted from authenticated listing authors."
+    },
+    {
+      "title": "Conflict pressure",
+      "detail": "33 of 78 non-draft PRs conflict with today\u2019s main."
+    },
+    {
+      "title": "Red checks: 27 PRs; pending: 1",
+      "detail": "Red: #7123, #7333, #7328, #7340, #7352, #7366, #7355, #6688, #6841, #6932, #7064, #7065, #7273, #7353, #7313, #7315, #7345, #7329, #7317, #6796, #7305, #7321, #7306, #7206, #7004, #6770, #6468. Pending: #7307."
+    }
+  ],
+  "delta": {
+    "previous_run": "2026-09-29",
+    "merged": [
+      6676,
+      7237,
+      7279,
+      7286,
+      7330,
+      7348
+    ],
+    "closed": [
+      {
+        "number": 6413,
+        "note": "closed without merge"
+      },
+      {
+        "number": 6597,
+        "note": "closed without merge"
+      },
+      {
+        "number": 6743,
+        "note": "closed without merge"
+      },
+      {
+        "number": 6744,
+        "note": "closed without merge"
+      },
+      {
+        "number": 6912,
+        "note": "closed without merge"
+      }
+    ],
+    "opened": [
+      7275,
+      7352,
+      7353,
+      7355,
+      7356,
+      7357,
+      7358,
+      7359,
+      7360,
+      7361,
+      7362,
+      7363,
+      7364,
+      7366
+    ],
+    "entered_top15": [
+      6553,
+      7357,
+      7304,
+      7308,
+      7208,
+      7355,
+      7352,
+      7366,
+      7329,
+      7288
+    ],
+    "left_top15": [
+      7348,
+      7323,
+      7237,
+      7350,
+      7286,
+      7227,
+      7033,
+      7307,
+      7317,
+      7234
+    ],
+    "newly_blocked": [
+      {
+        "number": 7349,
+        "note": "fresh review left four unresolved findings and changes requested"
+      },
+      {
+        "number": 7323,
+        "note": "fresh maintainer review left six unresolved findings and changes requested"
+      },
+      {
+        "number": 7307,
+        "note": "new push is pending with two unresolved threads"
+      }
+    ],
+    "newly_unblocked": [
+      {
+        "number": 6553,
+        "note": "rebased from conflicting to clean and full-green; one P2 bot finding remains"
+      }
+    ],
+    "draft_flips": []
+  },
+  "method": {
+    "notes": [
+      "Authenticated as masenf; listing reconciled 110 open PRs and all 78 non-drafts received fresh API state and current git measurements.",
+      "Git measurements and local merge-tree use main 56f6012b9ebe44bbf16a93f5225b6e26bebf562d; local merge-tree is authoritative for clean versus conflicting.",
+      "Scarce-time ordering prioritizes compact issue-backed fixes with tests, full green CI, clean merges, and few unresolved findings; broad work is intentionally lower even when technically waiting on a maintainer.",
+      "A maintainer interaction is a human MEMBER, OWNER, or COLLABORATOR review, issue comment, or inline reply, excluding the PR author and known bots.",
+      "Waiting on maintainer requires a clean local merge, SUCCESS with at least 60 GitHub Actions checks, zero unresolved review threads, and author activity newer than the last maintainer interaction; creation is the baseline when there has been no peer maintainer interaction.",
+      "For the requested no-open-issues rule, open issues means unresolved review threads; linked product issues do not disqualify a fixing PR.",
+      "The #7288 review-thread result is fully paginated across all 141 threads rather than inferred from the first 100.",
+      "All 27 red PRs have current or explicitly retained same-head failure findings; cancelled sparse jobs are distinguished from test failures."
+    ],
+    "audit_corrections": [
+      "Counted #7350 as never human-reviewed because its only peer-maintainer review is PENDING and has no submission timestamp.",
+      "Removed #7219 from newly unblocked; its state was already clean, green, and resolved on 9/29, and the new tab merely surfaced it.",
+      "Reordered the no-maintainer tab so strict waiting and higher-value compact candidates appear first."
+    ],
+    "caveats": [
+      "Latest PR commit timestamps are used as the push-time proxy because GitHub commit objects do not expose a separate pushed timestamp here.",
+      "Sparse partial check suites are not treated as full green CI even when their limited rollup says SUCCESS.",
+      "#7315 has a counting approval but only 17 checks and three cancelled jobs, so it is not a merge-ready recommendation."
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "number": 6770,
+  "fetched_at": "2026-09-30T18:28:50Z",
+  "author_login": "anxkhn",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "anxkhn/reflex",
+  "head_sha": "84ceadc222e3300b5aac5e89cff80dbb329e2f3d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-07-15T05:39:38Z",
+      "can_push": true,
+      "commit_id": "c68b001a8c5f9edc50eb6cab436b0bddc8a376be"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-07-15T05:41:13Z",
+      "can_push": true,
+      "commit_id": "c68b001a8c5f9edc50eb6cab436b0bddc8a376be"
+    },
+    {
+      "by": "anxkhn",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-07-27T14:42:25Z",
+      "can_push": false,
+      "commit_id": "3b315d73931c15f931debcaae4a89f5c977db75a"
+    },
+    {
+      "by": "anxkhn",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-07-27T18:41:24Z",
+      "can_push": false,
+      "commit_id": "84ceadc222e3300b5aac5e89cff80dbb329e2f3d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-07-27T18:42:05Z",
+      "can_push": true,
+      "commit_id": "84ceadc222e3300b5aac5e89cff80dbb329e2f3d"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 107,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 104
+    },
+    "failing": [
+      "integration-app-harness-playwright (redis, 3.12)"
+    ],
+    "pending": [],
+    "actions_total": 104
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-15T05:39:34Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR fixes a `CompileError` crash in `reflex db makemigrations` when autogenerating a migration that adds a column with a callable"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-07-15T05:39:46Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 26` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "anxkhn",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-27T18:41:25Z",
+      "excerpt": "fixed the full-matrix regression in 84ceadc2. the new model migration test now clears its final metadata, so it no longer pollutes the following sqlalchemy auto"
+    }
+  ],
+  "head_activity_at": "2026-07-27T18:41:07Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-15T05:39:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-15T05:39:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-15T05:39:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-07-15T05:39:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-07-15T05:41:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-07-15T05:41:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "anxkhn",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-27T14:42:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "anxkhn",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-27T18:41:23Z"
+    },
+    {
+      "kind": "comment",
+      "by": "anxkhn",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-27T18:41:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-07-27T18:42:05Z"
+    }
+  ],
+  "conflicting_files": [],
+  "failing_job_findings": [
+    {
+      "check": "integration-app-harness-playwright (redis, 3.12)",
+      "cause": "Retained evidence from 2026-09-28 on the identical head SHA with unchanged failing check names: test_memo_event_handler_raw_pass_through failed after three reruns because #memo-last-value stayed empty instead of typed_value (243 tests passed); Redis cleanup also logged cross-event-loop task errors."
+    }
+  ],
+  "last_author_activity_at": "2026-07-27T18:41:25Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

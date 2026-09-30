@@ -1,0 +1,125 @@
+{
+  "number": 7079,
+  "fetched_at": "2026-09-30T18:27:48Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "22a1ac65a29893352b6967f1bae3599d002371c2",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T20:53:13Z",
+      "can_push": true,
+      "commit_id": "22a1ac65a29893352b6967f1bae3599d002371c2"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-11T00:42:29Z",
+      "can_push": true,
+      "commit_id": "22a1ac65a29893352b6967f1bae3599d002371c2"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5bd03368-4af6-443a-8fa7-a0080718d0db -->\n<!-- cubic:review-run=da7e1cce-4d47-59ac-bb77-f0612e18fac1 -->\n<!-- metadata:{\"confidence\":9} -->\nP1: When `fork()` runs while another thread is i"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 114,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 112
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 110
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-10T20:48:31Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T20:52:10Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=62790929\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-10T20:54:47Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 40` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    }
+  ],
+  "head_activity_at": "2026-09-10T20:46:52Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-10T20:48:31Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T20:52:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T20:53:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T20:53:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-10T20:54:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-11T00:42:29Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/test_telemetry.py",
+    "tests/units/utils/test_exec.py"
+  ],
+  "last_author_activity_at": "2026-09-10T20:46:52Z",
+  "last_maintainer_activity_at": "2026-09-11T00:42:29Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

@@ -1,0 +1,184 @@
+{
+  "number": 7206,
+  "fetched_at": "2026-09-30T18:28:43Z",
+  "author_login": "qubydev",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "qubydev/reflex",
+  "head_sha": "467752c4afe91513bf09ef56514b48b2a6219fa9",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7190,
+      "title": "A state mixin can silently shadow an inherited base var",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-18T22:44:18Z",
+      "can_push": true,
+      "commit_id": "554d8b17f3fa8d3825b8249075d97ad4b8c5ff43"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-18T22:48:31Z",
+      "can_push": true,
+      "commit_id": "554d8b17f3fa8d3825b8249075d97ad4b8c5ff43"
+    },
+    {
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-19T08:28:12Z",
+      "can_push": false,
+      "commit_id": "554d8b17f3fa8d3825b8249075d97ad4b8c5ff43"
+    },
+    {
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-19T08:29:11Z",
+      "can_push": false,
+      "commit_id": "554d8b17f3fa8d3825b8249075d97ad4b8c5ff43"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-19T08:29:25Z",
+      "can_push": true,
+      "commit_id": "b3b01e1a831eab2e32b0d623370f70c09142b9ec"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Required news fragment missing**\n\nThis user-facing bug fix changes state inheritanc"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 122
+    },
+    "failing": [
+      "pre-commit"
+    ],
+    "pending": [],
+    "actions_total": 121
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T22:44:13Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=66272356\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-18T22:49:24Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 67` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^sk"
+    }
+  ],
+  "head_activity_at": "2026-09-19T08:30:45Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T22:44:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T22:44:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T22:44:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T22:48:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T22:48:31Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-18T22:49:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-19T08:28:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-19T08:29:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-19T08:29:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-19T08:29:25Z"
+    }
+  ],
+  "conflicting_files": [
+    "reflex/state.py"
+  ],
+  "failing_job_findings": [
+    {
+      "check": "pre-commit",
+      "cause": "Retained evidence from 2026-09-28 on the identical head SHA with unchanged failing check names: pyright reports two incompatible shadowed_value overrides in tests/units/test_state.py (lines 6105 and 6118)."
+    }
+  ],
+  "last_author_activity_at": "2026-09-19T08:30:45Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

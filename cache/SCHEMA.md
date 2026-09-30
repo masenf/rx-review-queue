@@ -78,7 +78,8 @@ GitHub MCP `pull_request_read` calls. Fields the renderer and the scoring rely o
 
 ```jsonc
 {
-  "number": 7040, "fetched_at": "...", "head_sha": "...",
+  "number": 7040, "fetched_at": "...", "author_login": "login", "author_association": "CONTRIBUTOR",
+  "head_repo": "owner/repo", "head_sha": "...",
   "mergeable": "MERGEABLE|CONFLICTING|UNKNOWN",   // UNKNOWN => re-fetch; GitHub computes lazily
   "merge_state": "CLEAN|BLOCKED|BEHIND|DIRTY|UNSTABLE|HAS_HOOKS|UNKNOWN",
   "conflicting_files": [],                         // only from the merge box / attempted merge
@@ -86,13 +87,13 @@ GitHub MCP `pull_request_read` calls. Fields the renderer and the scoring rely o
   "auto_merge": false,
   "review_decision": "APPROVED|CHANGES_REQUESTED|REVIEW_REQUIRED|null",
   "linked_issues": [{"number": 6990, "title": "...", "filed_by": "someone-else"}],
-  "reviews": [{"by": "login", "state": "APPROVED", "at": "...", "can_push": true}],
+  "reviews": [{"by": "login", "association": "MEMBER", "state": "APPROVED", "at": "...", "can_push": true, "commit_id": "..."}],
   "counting_approval": true,        // an APPROVED review from someone with write access, on the current head
   "awaiting": ["reflex-dev/reflex-team"],
   "threads": {"total": 4, "unresolved": [{"by": "greptile-apps", "outdated": false, "first_comment": "..."}]},
   "checks": {
     "rollup": "SUCCESS|FAILURE|PENDING|null",
-    "total": 110, "by_state": {"SUCCESS": 100, "FAILURE": 2, "PENDING": 8},
+    "total": 110, "actions_total": 106, "by_state": {"SUCCESS": 100, "FAILURE": 2, "PENDING": 8},
     "failing": ["unit-tests (windows, 3.11)"], "pending": ["..."]
   },
   "ci_never_ran": false,            // "N workflows awaiting approval": fork PR, CI gate never clicked
@@ -102,9 +103,23 @@ GitHub MCP `pull_request_read` calls. Fields the renderer and the scoring rely o
   "outstanding_asks": [{"by": "masenf", "ask": "...", "addressed": false}],
   "body_has_repro": true,
   "recent_comments": [{"by": "...", "at": "...", "excerpt": "..."}],
+  "head_activity_at": "...",        // latest commit/force-push timestamp visible in the PR timeline
+  "interaction_events": [            // complete paginated human/bot activity used for maintainer queues
+    {"kind": "comment|review|review_comment", "by": "login", "association": "MEMBER|...", "at": "..."}
+  ],
+  "last_author_activity_at": "...",  // latest author comment/reply or head commit timestamp
+  "last_maintainer_activity_at": "..." | null,
+  "never_maintainer_review": false,  // no human MEMBER/OWNER/COLLABORATOR interaction, excluding the author
+  "waiting_on_maintainer": true,     // clean merge, full green CI, no unresolved thread, newer author activity
   "days_waiting_on_maintainer": 6   // last author activity after the last maintainer comment
 }
 ```
+
+For the maintainer queues, an interaction is a review, issue comment, or inline
+review-thread comment from a human `MEMBER`, `OWNER`, or `COLLABORATOR`, excluding
+the PR author. `waiting_on_maintainer` treats the PR's creation as the baseline
+when no maintainer has interacted yet, so a clean/green never-reviewed PR may
+appear in both queues. "No open issues" means no unresolved review threads.
 
 ## report.json (hand-authored by the agent)
 
@@ -113,13 +128,16 @@ GitHub MCP `pull_request_read` calls. Fields the renderer and the scoring rely o
   "run": {"date": "2026-09-03", "started_at": "2026-09-03 07:05 PT", "runner": "claude-code-remote",
           "github_login": "masenf", "review_ci_layer": "present|absent", "session": "..."},
   "stats": {"open": 61, "nondraft": 40, "drafts": 21, "counting_approvals": 2, "fast_lane": 3,
-            "one_fix_away": 9, "fork_ci_unrun": 5, "never_human_reviewed": 12},
+            "one_fix_away": 9, "waiting_on_maintainer": 4, "never_maintainer_review": 12,
+            "fork_ci_unrun": 5, "never_human_reviewed": 12},
   "attention": ["Plain-language bullets: what needs Masen today. Cheap unblocks first."],
   "top15": [{"number": 7040, "score": 8.5, "summary": "...", "evidence": ["..."],
              "blocker": "...", "whose_move": "maintainer|author", "chips": ["issue filed by other-user"],
              "override_reason": null}],
   "one_fix_away": {"maintainer": [{"number":..., "summary":..., "blocker":...}], "author": [...]},
   "fast_lane": [{"number":..., "summary": "why it is mergeable at a glance; real file list checked"}],
+  "waiting_on_maintainer": [{"number":..., "summary": "clean merge, full CI green, no unresolved review threads, and newer author activity"}],
+  "never_maintainer_review": [{"number":..., "summary": "no comment, review, or review-thread reply from a human maintainer"}],
   "closure": [{"number":..., "summary":..., "keep_issue": 6812}],
   "stacks": [{"chain": [6901, 6902], "note": "..."}],          // optional; defaults to measurements.stacks
   "conflict_clusters": [{"prs": [7029, 7030], "files": ["reflex/x.py"], "note": "..."}],

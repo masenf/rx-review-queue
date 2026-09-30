@@ -1,0 +1,236 @@
+{
+  "number": 6996,
+  "fetched_at": "2026-09-30T18:28:47Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "319b3eb129780c544af8649371b72bac81277a66",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6983,
+      "title": "Prod mode serves HTTP 404 status for direct loads of valid dynamic-route URLs (SPA fallback body renders fine)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-28T21:01:08Z",
+      "can_push": true,
+      "commit_id": "139ba3c7b4776ba88047225b5673cd54eb37734b"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-28T21:03:20Z",
+      "can_push": true,
+      "commit_id": "139ba3c7b4776ba88047225b5673cd54eb37734b"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-28T21:03:35Z",
+      "can_push": true,
+      "commit_id": "139ba3c7b4776ba88047225b5673cd54eb37734b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-28T21:28:17Z",
+      "can_push": true,
+      "commit_id": "139ba3c7b4776ba88047225b5673cd54eb37734b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-28T21:28:18Z",
+      "can_push": true,
+      "commit_id": "139ba3c7b4776ba88047225b5673cd54eb37734b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-28T21:28:27Z",
+      "can_push": true,
+      "commit_id": "139ba3c7b4776ba88047225b5673cd54eb37734b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-28T21:28:30Z",
+      "can_push": true,
+      "commit_id": "139ba3c7b4776ba88047225b5673cd54eb37734b"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-04T18:32:27Z",
+      "can_push": true,
+      "commit_id": "319b3eb129780c544af8649371b72bac81277a66"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": false,
+        "first_comment": "Blocking on Windows: `path` here comes from `StaticFiles.get_path`, which normalizes with `os.path.normpath`, so on Windows it arrives as `articles\\7` (`nested\\deep\\page`, `files\\a\\b`, ...). The route"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 111,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 109
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 107
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-28T21:01:04Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR updates production static serving so routable SPA fallback paths return HTTP 200 while unknown paths retain HTTP 404.\n- Persis"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-08-28T21:02:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 32` untouched benchmarks  \n`\u23e9 8` skipped benchmarks[^ski"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-28T22:32:54Z",
+      "excerpt": "seems like this one supersedes #6469 ? can you check to see if there is any overlap or anything missed in the earlier PR, integrate it here, then close the old "
+    }
+  ],
+  "head_activity_at": "2026-08-28T22:51:52Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-28T21:01:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-28T21:01:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-28T21:01:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-08-28T21:02:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-08-28T21:03:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-08-28T21:03:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-28T21:03:35Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-28T21:03:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-08-28T21:28:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-08-28T21:28:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-08-28T21:28:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-08-28T21:28:30Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-28T22:32:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-04T18:32:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-04T18:32:27Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [
+    "reflex/utils/exec.py",
+    "tests/units/test_app.py",
+    "tests/units/utils/test_exec.py"
+  ],
+  "last_author_activity_at": "2026-08-28T22:51:52Z",
+  "last_maintainer_activity_at": "2026-09-04T18:32:27Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

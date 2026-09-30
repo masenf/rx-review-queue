@@ -1,0 +1,121 @@
+{
+  "number": 7219,
+  "fetched_at": "2026-09-30T18:27:55Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "2f7d64dfb95d31af12f465c087837f03daa9c2bf",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7196,
+      "title": "`reflex run --json`: worker import errors reach stderr as a plain-text traceback",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-20T09:53:51Z",
+      "can_push": true,
+      "commit_id": "235b855db1d1b5d98034d72d13d227b55c8098c0"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 139,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 136
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 135
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-20T09:52:30Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=66604534\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-20T09:57:32Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 135` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-28T19:25:52Z",
+      "excerpt": "we're discussing what to do with this one internally. personally, i don't think that writing a traceback to stderr is that big of a deal. we promise that `--jso"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T19:38:36Z",
+      "excerpt": "I checked the logging path: Granian uses Reflex\u2019s JsonHandler, which sends ERROR records to stderr. Would you prefer routing Granian\u2019s JSON records, including e"
+    }
+  ],
+  "head_activity_at": "2026-09-29T04:54:16Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-20T09:52:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-20T09:53:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-20T09:53:51Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-20T09:57:32Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-28T19:25:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T19:38:36Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-29T04:54:16Z",
+  "last_maintainer_activity_at": "2026-09-28T19:25:52Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 1
+}

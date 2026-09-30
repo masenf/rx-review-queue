@@ -1,0 +1,145 @@
+{
+  "number": 7329,
+  "fetched_at": "2026-09-30T18:27:56Z",
+  "author_login": "SulimanAbdulrazzaq",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "SulimanAbdulrazzaq/reflex",
+  "head_sha": "0a0ec0a8c0a34e2c687a5ef78373505a090a2c8d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7271,
+      "title": "StateManagerRedis: a stored state that can't be unpickled (class moved or deleted) breaks the tab until its key expires",
+      "filed_by": "H4dr1en"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T11:56:22Z",
+      "can_push": true,
+      "commit_id": "ec9cdb99480bb3a8754111fb9043077a8275b0a7"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T11:57:51Z",
+      "can_push": true,
+      "commit_id": "ec9cdb99480bb3a8754111fb9043077a8275b0a7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2d0d3432-dc28-498e-af36-49d5975620ea -->\n<!-- cubic:review-run=4ce81f6e-4235-5bfa-bd06-8c6a778a3d6e -->\n<!-- metadata:{\"confidence\":8} -->\nP1: A stored object whose `__new__` signature ch"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Other pickle errors still block events** A stored Redis payload with an unsupported"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Unreadable Redis value remains stored** When this error triggers a fresh state, Red"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 125,
+    "by_state": {
+      "FAILURE": 2,
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 120
+    },
+    "failing": [
+      "check-min-deps (reflex-components-sonner, 3.10)",
+      "check-min-deps (reflex-components-code, 3.14)"
+    ],
+    "pending": [],
+    "actions_total": 121
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T11:57:41Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69321337\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-28T12:57:38Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 135` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-09-27T10:13:06Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T11:56:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T11:56:22Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T11:57:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T11:57:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T11:57:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-28T12:57:38Z"
+    }
+  ],
+  "conflicting_files": [],
+  "failing_job_findings": [
+    {
+      "check": "check-min-deps (reflex-components-sonner, 3.10), check-min-deps (reflex-components-code, 3.14)",
+      "cause": "Retained evidence (2026-09-28; unchanged head SHA and failing check names): both jobs failed before tests while resolving build-system requirements because PyPI returned HTTP 503 for https://pypi.org/simple/click/ after three retries."
+    }
+  ],
+  "last_author_activity_at": "2026-09-27T10:13:06Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

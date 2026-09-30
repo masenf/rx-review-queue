@@ -1,0 +1,532 @@
+{
+  "number": 7315,
+  "fetched_at": "2026-09-30T18:27:48Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "7e6be89a8cd10729b5df98f5f9488abfb36dae18",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNSTABLE",
+  "auto_merge": false,
+  "review_decision": "APPROVED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T17:47:55Z",
+      "can_push": true,
+      "commit_id": "2f037fa67369f98d379b12c942af7499bbb84ccd"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T17:55:00Z",
+      "can_push": true,
+      "commit_id": "a5b20ccb52b97273efc832214b26a3f492bb8a43"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:38:39Z",
+      "can_push": true,
+      "commit_id": "f264d4cefedf746ce0b9be4bf26fa23c2acca1fc"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:38:42Z",
+      "can_push": true,
+      "commit_id": "f264d4cefedf746ce0b9be4bf26fa23c2acca1fc"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:38:43Z",
+      "can_push": true,
+      "commit_id": "f264d4cefedf746ce0b9be4bf26fa23c2acca1fc"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:38:45Z",
+      "can_push": true,
+      "commit_id": "f264d4cefedf746ce0b9be4bf26fa23c2acca1fc"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:43:18Z",
+      "can_push": true,
+      "commit_id": "f264d4cefedf746ce0b9be4bf26fa23c2acca1fc"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:46:20Z",
+      "can_push": true,
+      "commit_id": "f264d4cefedf746ce0b9be4bf26fa23c2acca1fc"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T20:09:28Z",
+      "can_push": true,
+      "commit_id": "048891a37b76f9a0e60ef8f4f1f7471d01f84085"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T20:09:31Z",
+      "can_push": true,
+      "commit_id": "048891a37b76f9a0e60ef8f4f1f7471d01f84085"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T20:09:34Z",
+      "can_push": true,
+      "commit_id": "048891a37b76f9a0e60ef8f4f1f7471d01f84085"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T20:09:35Z",
+      "can_push": true,
+      "commit_id": "048891a37b76f9a0e60ef8f4f1f7471d01f84085"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T20:10:23Z",
+      "can_push": true,
+      "commit_id": "048891a37b76f9a0e60ef8f4f1f7471d01f84085"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T20:14:04Z",
+      "can_push": true,
+      "commit_id": "048891a37b76f9a0e60ef8f4f1f7471d01f84085"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T20:14:25Z",
+      "can_push": true,
+      "commit_id": "048891a37b76f9a0e60ef8f4f1f7471d01f84085"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T20:15:00Z",
+      "can_push": true,
+      "commit_id": "048891a37b76f9a0e60ef8f4f1f7471d01f84085"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T22:29:53Z",
+      "can_push": true,
+      "commit_id": "44a9cb3494182b703cf420511aa01c4da8c0c6b8"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:02:02Z",
+      "can_push": true,
+      "commit_id": "764be6906f277762bd1cf08c67cbabbd6a7c3b6e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:02:03Z",
+      "can_push": true,
+      "commit_id": "764be6906f277762bd1cf08c67cbabbd6a7c3b6e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:02:47Z",
+      "can_push": true,
+      "commit_id": "764be6906f277762bd1cf08c67cbabbd6a7c3b6e"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-09-28T18:48:21Z",
+      "can_push": true,
+      "commit_id": "8757d34475d5256b72dc73cd2ef40b0ba8c8a0c6"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 12,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": false,
+        "first_comment": "this is defined in the wrong place and makes no sense for most `Var` objects...\n\nInstead, we need to create something like a StateVar that tracks the original state and field name associated with a Va"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 17,
+    "by_state": {
+      "CANCELLED": 3,
+      "NEUTRAL": 1,
+      "SUCCESS": 13
+    },
+    "failing": [
+      "size-budgets",
+      "playground-head",
+      "playground-0.8.23"
+    ],
+    "pending": [],
+    "actions_total": 14
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:47:47Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68843139\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:48:29Z",
+      "excerpt": "we currently use client state vars to mitigate this missing feature in some places - i like the idea"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-24T19:46:40Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 142` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:10:19Z",
+      "excerpt": "**CodSpeed Performance Analysis** is red on 30440620: `test_state_access[read_own]` is 4.7% slower than #7314. This PR doesn't touch the state read path. It add"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:14:11Z",
+      "excerpt": "About greptile's new summary finding, \"Frontend updates wait for connection\": this is the intended trade-off from the ordering fix in 048891a37, not a regressio"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T01:46:51Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nNo findings outside the diff remain."
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T01:55:48Z",
+      "excerpt": "About greptile's outside-diff P1, \"Inherited override keeps wrong type\": that is intended. `Child.x = \"hello\"` over `Parent.x: int` gives the inherited var a ne"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:48:24Z",
+      "excerpt": "About greptile's \"Plain models mutate state silently\": this comes up from #7312 through the merge. It's the same finding that greptile withdrew on #7312 and #73"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T18:55:20Z",
+      "excerpt": "CodSpeed on 87cf012 flags `test_state_access[read_cached_computed]` (-6.4%). I don't believe this comes from this PR:\n\n- Compared with #7314, this PR only adds "
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T22:18:55Z",
+      "excerpt": "> we currently use client state vars to mitigate this missing feature in some places - i like the idea\r\n\r\nwe have a ton of client state vars in our Reflex Build"
+    }
+  ],
+  "head_activity_at": "2026-09-29T19:15:20Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:47:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:47:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:47:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:48:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:55:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:55:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T19:38:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T19:38:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T19:38:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T19:38:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T19:43:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T19:43:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T19:46:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T19:46:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-24T19:46:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:09:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:09:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:09:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:09:35Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:10:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T20:10:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T20:14:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T20:14:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:14:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:14:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T20:15:00Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T01:46:51Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T01:55:48Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:48:24Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T18:55:20Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T22:18:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T22:21:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T22:24:32Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T22:29:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T22:29:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T23:02:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T23:02:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T23:02:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T18:48:21Z",
+      "state": "approved"
+    }
+  ],
+  "conflicting_files": [],
+  "failing_job_findings": [
+    {
+      "check": "size-budgets, playground-head, playground-0.8.23",
+      "cause": "All three GitHub Actions jobs were cancelled within a minute of starting on the current head; no failing test assertion or build error is available. The head has only 17 checks, so full CI is unverified."
+    }
+  ],
+  "last_author_activity_at": "2026-09-29T19:15:20Z",
+  "last_maintainer_activity_at": "2026-09-28T18:48:21Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

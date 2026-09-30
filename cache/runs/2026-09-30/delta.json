@@ -1,0 +1,175 @@
+{
+ "previous_run": "2026-09-29",
+ "disappeared": [
+  {
+   "number": 6413,
+   "title": "Fix AI docs sidebar and breadcrumb",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6597,
+   "title": "ENG-9668: feat: add rx.google_font for faster font loading from the document head",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6676,
+   "title": "fix(match): bind useContext for state vars used in rx.match case conditions",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6743,
+   "title": "perf: cut state hot-path overhead \u2014 deep-validation skip, proxy caching, dirty-propagation frontier",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6744,
+   "title": "perf: cut socket-layer per-event overhead (header cache, route LRU, deferred event routing)",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6912,
+   "title": "[ULTRA EXPERIMENTAL \u2014 DO NOT REVIEW] Durable workflows exploration",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7237,
+   "title": "Skip shared-state fan-out when no clients need updates",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7279,
+   "title": "docs: add AG Grid migration notes for reflex-enterprise 0.9.7",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7286,
+   "title": "Carry client state hooks on ClientStateVar setters",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7330,
+   "title": "Holistic Framework Benchmarks: reflex-bench harness, suites and playground",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7348,
+   "title": "Fix double-close of listening socket on Windows",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7275,
+   "title": "Point reflex db commands at the db extra instead of dumping a traceback",
+   "author": "Nitish-1303",
+   "draft": false
+  },
+  {
+   "number": 7352,
+   "title": "fix(hosting-cli): report success from secrets update",
+   "author": "OWOYOLeo",
+   "draft": false
+  },
+  {
+   "number": 7353,
+   "title": "perf: skip redundant state var type checks on the hot path",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7355,
+   "title": "fix(cli): validate project when deploying by app ID",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7356,
+   "title": "Benchmarks CI: macro runner job, daily standard-runner shards, history branch and noise table",
+   "author": "FarhanAliRaza",
+   "draft": true
+  },
+  {
+   "number": 7357,
+   "title": "Fix buffered upload streams entangling events and dropping late deltas",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7358,
+   "title": "Stop top-level event spans naming the root context as their parent",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7359,
+   "title": "Playground build-out: state, events, data, components and rooms (P2-2)",
+   "author": "FarhanAliRaza",
+   "draft": true
+  },
+  {
+   "number": 7360,
+   "title": "Keep request cookies out of frontend state",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7361,
+   "title": "Add signed browser sessions and bound client tokens",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7362,
+   "title": "Authorize browser state through session-aware transports",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7363,
+   "title": "Persist browser sessions without delaying hydration",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7364,
+   "title": "Validate enforced sessions and document migration",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7366,
+   "title": "fix(recharts): support function vars for axis tick formatters",
+   "author": "harsh21234i",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  6553,
+  7357,
+  7304,
+  7308,
+  7208,
+  7355,
+  7352,
+  7366,
+  7329,
+  7288
+ ],
+ "left_top15": [
+  7348,
+  7323,
+  7237,
+  7350,
+  7286,
+  7227,
+  7033,
+  7307,
+  7317,
+  7234
+ ],
+ "counts": {
+  "previous_open": 107,
+  "current_open": 110
+ }
+}

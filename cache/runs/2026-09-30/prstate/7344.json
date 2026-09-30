@@ -1,0 +1,291 @@
+{
+  "number": 7344,
+  "fetched_at": "2026-09-30T18:27:53Z",
+  "author_login": "stackedbyaradhya",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "stackedbyaradhya/reflex",
+  "head_sha": "d459c7fd0a41bb075e5a2c3f5e1d47a14f9eaa2b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7342,
+      "title": "rx.form on_submit silently drops all but the last value for a checkbox group (or any repeated-name field)",
+      "filed_by": "stackedbyaradhya"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T09:59:05Z",
+      "can_push": true,
+      "commit_id": "d290ef337f318be83a00434de1a9e2e83fb8827a"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T09:59:42Z",
+      "can_push": true,
+      "commit_id": "d290ef337f318be83a00434de1a9e2e83fb8827a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T11:52:04Z",
+      "can_push": true,
+      "commit_id": "d290ef337f318be83a00434de1a9e2e83fb8827a"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T13:40:23Z",
+      "can_push": true,
+      "commit_id": "40747b3471126db9579ae467b8ff5a3293e413db"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T00:48:32Z",
+      "can_push": true,
+      "commit_id": "40747b3471126db9579ae467b8ff5a3293e413db"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T08:05:07Z",
+      "can_push": true,
+      "commit_id": "af9621e5e0a563e168c84b7a2df52fa4d4b573b5"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T16:17:13Z",
+      "can_push": true,
+      "commit_id": "d459c7fd0a41bb075e5a2c3f5e1d47a14f9eaa2b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T16:17:15Z",
+      "can_push": true,
+      "commit_id": "d459c7fd0a41bb075e5a2c3f5e1d47a14f9eaa2b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T16:17:16Z",
+      "can_push": true,
+      "commit_id": "d459c7fd0a41bb075e5a2c3f5e1d47a14f9eaa2b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-29T16:17:25Z",
+      "can_push": true,
+      "commit_id": "d459c7fd0a41bb075e5a2c3f5e1d47a14f9eaa2b"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "masenf"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This makes a list only when a key repeats. So the type of one field depends on how many boxes the user checks. I tested an `rx.checkbox_group` with `name=\"colors\"`:\n\n- 3 checked: `[\"red\", \"green\", \"bl"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This is not true when one box is checked. Then `form_data[\"channels\"]` is a plain string, not a list. Please update this text after the shape is fixed.\n\nPlease also tell users how to annotate these fi"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "Please add a case where a multi-value field has exactly one value, for example one checked box in a checkbox group. That case gives the wrong shape today, and no test covers it."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 139,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 137
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 135
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:59:36Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=70533538\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-29T16:18:42Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 135` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-09-29T08:06:03Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:59:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:59:05Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:59:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:59:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:59:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:59:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T11:52:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T13:40:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T13:40:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-29T00:48:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T08:05:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T08:05:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T16:17:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T16:17:13Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T16:17:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T16:17:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T16:17:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T16:17:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T16:17:25Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-29T16:18:42Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-29T08:06:03Z",
+  "last_maintainer_activity_at": "2026-09-29T16:17:25Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

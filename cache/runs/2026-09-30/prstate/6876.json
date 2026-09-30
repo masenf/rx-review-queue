@@ -1,0 +1,178 @@
+{
+  "number": 6876,
+  "fetched_at": "2026-09-30T18:28:49Z",
+  "author_login": "rawsun007",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "rawsun007/reflex",
+  "head_sha": "0441c5a562418cdf283b5b8e77d9155cc0173d06",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6874,
+      "title": "Hidden rx.input is not properly hidden",
+      "filed_by": "luator"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:36:22Z",
+      "can_push": true,
+      "commit_id": "82dfb96cbd5593dfe318ddcf6b432f6435fbea4b"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:38:28Z",
+      "can_push": true,
+      "commit_id": "82dfb96cbd5593dfe318ddcf6b432f6435fbea4b"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:41:22Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:41:23Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:42:52Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-14T17:07:17Z",
+      "can_push": true,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=e5833028-396c-4e0b-8673-21c04893a0b7 -->\n<!-- cubic:review-run=b3c804f0-0ab8-40ee-9811-8174442d922d -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Static hidden inputs now fail when used as "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:18Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThe PR removes the visible Radix wrapper from statically hidden inputs and updates FormControl to accept the resulting plain input.\n-"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-15T04:33:23Z",
+      "excerpt": "Yeah, `rx.el.input(type=\"hidden\")` works fine, so if it were just \"how do I render a hidden input\" then a docs line would cover it.\n\nWhat #6874 runs into is tha"
+    }
+  ],
+  "head_activity_at": "2026-08-12T08:41:03Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:38:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:38:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:41:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:41:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:42:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-14T17:07:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-15T04:33:23Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-08-15T04:33:23Z",
+  "last_maintainer_activity_at": "2026-08-14T17:07:17Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

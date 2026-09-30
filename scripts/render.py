@@ -10,8 +10,8 @@ Inputs (all in the run directory; schema in cache/SCHEMA.md):
   prstate/N.json     merge-box state per PR (optional; used for chips)
 
 Output: a self-contained light-mode HTML page built from artifacts/template.html
-with tabbed panes: Top 15 / One fix away / Fast lane / Close candidates /
-Stacks / Changes since last run / Method. It is also copied to
+with tabbed panes: Top 15 / One fix away / Fast lane / Waiting on maintainer /
+No maintainer review / Close candidates / Stacks / Changes since last run / Method. It is also copied to
 artifacts/history/YYYY-MM-DD.html unless --no-history.
 
 The renderer is deliberately dumb: it prints what report.json says and
@@ -247,6 +247,8 @@ class Board:
             (st.get("counting_approvals", "—"), "counting approvals"),
             (st.get("fast_lane", len(r.get("fast_lane", []))), "fast lane"),
             (st.get("one_fix_away", sum(len(v) for v in r.get("one_fix_away", {}).values())), "one fix away"),
+            (st.get("waiting_on_maintainer", len(r.get("waiting_on_maintainer", []))), "waiting on maintainer"),
+            (st.get("never_maintainer_review", len(r.get("never_maintainer_review", []))), "no maintainer review"),
             (st.get("fork_ci_unrun", "—"), "fork PRs without full CI"),
             (st.get("never_human_reviewed", "—"), "never human-reviewed"),
         ]
@@ -260,6 +262,8 @@ class Board:
             ("top", "Top 15", len(r.get("top15", [])), self.pane_top()),
             ("onefix", "One fix away", sum(len(v) for v in r.get("one_fix_away", {}).values()), self.pane_onefix()),
             ("fast", "Fast lane", len(r.get("fast_lane", [])), self.pane_simple("fast_lane", "Nothing verified mergeable at a glance.")),
+            ("waiting", "Waiting on maintainer", len(r.get("waiting_on_maintainer", [])), self.pane_simple("waiting_on_maintainer", "No clean, green PRs have new author activity after the last maintainer interaction.")),
+            ("nevermaint", "No maintainer review", len(r.get("never_maintainer_review", [])), self.pane_simple("never_maintainer_review", "Every open non-draft PR has maintainer interaction.")),
             ("close", "Close candidates", len(r.get("closure", [])), self.pane_close()),
             ("stacks", "Stacks", len(r.get("stacks") or self.meas.get("stacks", [])), self.pane_stacks()),
             ("delta", "Since last run", None, self.pane_delta()),

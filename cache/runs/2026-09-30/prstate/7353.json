@@ -1,0 +1,164 @@
+{
+  "number": 7353,
+  "fetched_at": "2026-09-30T18:28:35Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "9804522286c9d454c799699ef891ee7bf6360235",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T19:16:18Z",
+      "can_push": true,
+      "commit_id": "9804522286c9d454c799699ef891ee7bf6360235"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T19:16:43Z",
+      "can_push": true,
+      "commit_id": "9804522286c9d454c799699ef891ee7bf6360235"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=adca9344-9efc-4836-96c5-0cf4e0b35d7a -->\n<!-- cubic:review-run=87592657-df99-5de9-9c3c-4f9dacafd6b6 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This bypasses the project environment parser"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1b794189-9be5-4bca-8bd1-46c4723086ef -->\n<!-- cubic:review-run=87592657-df99-5de9-9c3c-4f9dacafd6b6 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: The async test never triggers a recompute, s"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Hardcoded environment key** The new mode check uses `\"REFLEX_ENV_MODE\"` directly as"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Async recomputation remains untested** These two reads cover the initial calculatio"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 146,
+    "by_state": {
+      "FAILURE": 4,
+      "SKIPPED": 3,
+      "SUCCESS": 139
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.13)"
+    ],
+    "pending": [],
+    "actions_total": 142
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:19Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=71564299\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-29T19:23:28Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 7 benchmarks\n\n<details>\n<summary>:warning: <b>Different runtime environments de"
+    }
+  ],
+  "head_activity_at": "2026-09-29T19:12:19Z",
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.11), unit-tests (ubuntu-latest, 3.13)",
+      "run_id": 36617626979,
+      "job_ids": [
+        109574676072,
+        109574675971
+      ],
+      "cause": "Both jobs failed tests/units/reflex_bench/collectors/test_phases.py::test_tree_phases_samples_a_real_tree at line 377 with IndexError: list index out of range while reading p.cmdline[0].",
+      "prs_fault": null
+    },
+    {
+      "check": "unit-tests-gate",
+      "run_id": 36617626979,
+      "job_id": 109581703218,
+      "cause": "The gate reported 'Blocking job results: unit-tests=failure'; it is a downstream summary of the unit-test matrix failures, not an independent test failure.",
+      "prs_fault": null
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_run_id": 109578911410,
+      "cause": "CodSpeed reported 7 regressed and 2 improved benchmarks; the largest reported regressions were computed_dependency_fanout[50] (-16.1%), [10] (-15.45%), and [2] (-11.64%). The check also warns that different runtime environments may affect accuracy; no GitHub Actions log exists for this external check.",
+      "prs_fault": null
+    }
+  ],
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:18Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-29T19:23:28Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-29T19:12:19Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

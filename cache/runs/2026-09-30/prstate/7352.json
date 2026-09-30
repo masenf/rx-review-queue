@@ -1,0 +1,201 @@
+{
+  "number": 7352,
+  "fetched_at": "2026-09-30T18:27:33Z",
+  "author_login": "OWOYOLeo",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "OWOYOLeo/reflex",
+  "head_sha": "6f0e934839c97eaa92141dfec8f95b73e30dbb0d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7297,
+      "title": "`reflex cloud secrets update` prints nothing on success",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:13:50Z",
+      "can_push": true,
+      "commit_id": "93553958185fbdd3b42f14d2d552d60556800dc7"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:14:22Z",
+      "can_push": true,
+      "commit_id": "93553958185fbdd3b42f14d2d552d60556800dc7"
+    },
+    {
+      "by": "OWOYOLeo",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-30T05:03:27Z",
+      "can_push": false,
+      "commit_id": "90a3644c6a0e3d3ed3b869bbc24422bde59c85d6"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T05:06:00Z",
+      "can_push": true,
+      "commit_id": "90a3644c6a0e3d3ed3b869bbc24422bde59c85d6"
+    },
+    {
+      "by": "OWOYOLeo",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-30T12:39:27Z",
+      "can_push": false,
+      "commit_id": "6f0e934839c97eaa92141dfec8f95b73e30dbb0d"
+    },
+    {
+      "by": "github-advanced-security",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:38:00Z",
+      "can_push": false,
+      "commit_id": "6f0e934839c97eaa92141dfec8f95b73e30dbb0d"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "github-advanced-security",
+        "outdated": false,
+        "first_comment": "## CodeQL / Clear-text logging of sensitive information\n\nThis expression logs [sensitive data (secret)](1) as clear text.\nThis expression logs [sensitive data (secret)](1) as clear text.\nThis expressi"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 144,
+    "by_state": {
+      "FAILURE": 1,
+      "IN_PROGRESS": 1,
+      "SKIPPED": 3,
+      "SUCCESS": 139
+    },
+    "failing": [
+      "CodeQL"
+    ],
+    "pending": [
+      "unit-tests (ubuntu-latest, 3.13)"
+    ],
+    "actions_total": 140
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:14:17Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=71518046\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-30T17:49:58Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 147` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-09-30T12:39:08Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:13:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:14:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:14:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:14:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "OWOYOLeo",
+      "association": "NONE",
+      "at": "2026-09-30T05:03:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T05:06:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T05:06:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "OWOYOLeo",
+      "association": "NONE",
+      "at": "2026-09-30T12:39:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "github-advanced-security[bot]",
+      "association": "NONE",
+      "at": "2026-09-30T17:38:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "github-advanced-security[bot]",
+      "association": "NONE",
+      "at": "2026-09-30T17:38:00Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-30T17:49:58Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "CodeQL",
+      "check_run_id": 110015231958,
+      "cause": "CodeQL reports clear-text logging of sensitive secret data in packages/reflex-hosting-cli/src/reflex_cli/v2/secrets.py at lines 180-181."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-30T12:39:27Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

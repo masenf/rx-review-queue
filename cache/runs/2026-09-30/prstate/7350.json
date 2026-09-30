@@ -1,0 +1,465 @@
+{
+  "number": 7350,
+  "fetched_at": "2026-09-30T18:27:48Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7196,
+      "title": "`reflex run --json`: worker import errors reach stderr as a plain-text traceback",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "PENDING",
+      "at": null,
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T13:46:02Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T13:48:38Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:15:11Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:15:13Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:15:16Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:15:18Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:15:20Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:15:21Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:15:53Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:16:22Z",
+      "can_push": true,
+      "commit_id": "17075d3d26a78e2850de181026daf43b5eb62d14"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T14:56:23Z",
+      "can_push": true,
+      "commit_id": "f132162d8492b4d91e93d3fb6db66d76f1550a87"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T15:00:54Z",
+      "can_push": true,
+      "commit_id": "f132162d8492b4d91e93d3fb6db66d76f1550a87"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:26:08Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:26:10Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:26:12Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:26:14Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:26:17Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:27:07Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:28:05Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:28:52Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:31:49Z",
+      "can_push": true,
+      "commit_id": "53fac0df8d8b5f2ba2687f182edf6ef842ce15ef"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 15,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1c9239e5-54a7-42cd-93a6-f7d9ab55cc56 -->\n<!-- cubic:review-run=8277a895-8b2e-5679-9285-1fd6c331d03e -->\n<!-- metadata:{\"confidence\":9} -->\nP2: The descendant can print `tick` before the p"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Spurious empty output records** When a carriage-return-terminated update ends at a "
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Configured output encoding overwritten** The supervisor now replaces an explicitly "
+      },
+      {
+        "by": "masenf",
+        "outdated": false,
+        "first_comment": "might make sense to set this to the PID of the supervisor process"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 145,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 142
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T13:48:25Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=71344241\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-29T13:53:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 147` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-29T23:47:22Z",
+      "excerpt": "> Capture is POSIX-only. On Windows, child processes inherit the Win32 standard handles, not fd 1 and fd 2, so capture_output() is a no-op there.\r\n\r\nthis seems "
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T14:51:52Z",
+      "excerpt": "## Design notes: why a supervisor process\n\nThe goal: in `reflex run --json`, every line on stdout and stderr is a JSON record, including output that does not go"
+    }
+  ],
+  "head_activity_at": "2026-09-30T17:25:46Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T13:46:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T13:46:02Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T13:48:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T13:48:33Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T13:48:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-29T13:53:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:15:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:15:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:15:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:15:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:15:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:15:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T14:15:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T14:16:22Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-29T23:47:22Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T14:51:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T14:56:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T14:56:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T15:00:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T15:00:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:26:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:26:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:26:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:26:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:26:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T17:27:07Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T17:28:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T17:28:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T17:28:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T17:31:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T17:31:49Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-30T17:26:17Z",
+  "last_maintainer_activity_at": "2026-09-29T23:47:22Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

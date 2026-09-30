@@ -1,0 +1,216 @@
+{
+  "number": 7340,
+  "fetched_at": "2026-09-30T18:28:07Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "0455149b7fc9cfff5bde45a9ab07a22a4c177c5b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7300,
+      "title": "`reflex cloud project list` table renders `tier` as a raw JSON blob",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T09:02:41Z",
+      "can_push": true,
+      "commit_id": "03fdb75dbfba01272c863eb194aa2c7461331774"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T09:03:24Z",
+      "can_push": true,
+      "commit_id": "03fdb75dbfba01272c863eb194aa2c7461331774"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-28T12:08:31Z",
+      "can_push": true,
+      "commit_id": "ba6cb289ffe78a68ccee48878d833a8e792c338e"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:57:25Z",
+      "can_push": true,
+      "commit_id": "0455149b7fc9cfff5bde45a9ab07a22a4c177c5b"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "`AppDeployment.status` and `AppDeployment.url` are non-optional `str` (`reflex_build_sdk/types.py`). The `is not None` branches, the URL-only form and the `\"-\"` fallback cannot run. Three of the four "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "`ProjectSummary.tier` is a non-optional `ProjectTier`, and `ProjectTier.name` is a non-optional `str`. The `isinstance(tier, dict)` check and the `is not None` check cannot fail.\n\nPlease take the name"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please remove these constants, and `_TIER_KEY` / `_NAME_KEY` in `project.py`. Each one holds a literal key and has one or two uses. If you format from the typed models, the code does not need them."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=6bd27674-b819-477d-a451-611e139a7df6 -->\n<!-- cubic:review-run=a54815e3-abd3-5b17-a55a-04084959b03a -->\n<!-- metadata:{\"confidence\":8} -->\nP3: This assertion compares stdout against `host"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c97d7f05-b1cc-47eb-9f44-36caee5b784b -->\n<!-- cubic:review-run=a54815e3-abd3-5b17-a55a-04084959b03a -->\n<!-- metadata:{\"confidence\":6} -->\nP3: This still reads the tier out of the rendere"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "by_state": {
+      "FAILURE": 3,
+      "SKIPPED": 3,
+      "SUCCESS": 139
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.12)"
+    ],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:02:34Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=70510076\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-28T09:07:19Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n<details>\n<summary>:warning: <b>Different runtime environments det"
+    }
+  ],
+  "head_activity_at": "2026-09-30T17:48:33Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:02:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:02:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:02:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:03:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:03:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:03:25Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-28T09:07:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:08:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:08:31Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T17:57:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T17:57:25Z"
+    }
+  ],
+  "conflicting_files": [],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "job_id": 110019759670,
+      "run_id": 36754069885,
+      "cause": "tests/units/reflex_bench/collectors/test_pss.py::test_sampler_reports_the_peak expected 3,072,000 but observed 10,240,000; 10,177 tests passed in the job.",
+      "prs_fault": null
+    },
+    {
+      "check": "unit-tests-gate",
+      "job_id": 110026926002,
+      "run_id": 36754069885,
+      "cause": "Aggregate gate failed because the required unit-test job above failed; its log shows no separate test failure.",
+      "prs_fault": null
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "No GitHub Actions log is available because this is an external CodSpeed check; the check metadata exposes only the CodSpeed details URL.",
+      "prs_fault": null
+    }
+  ],
+  "last_author_activity_at": "2026-09-30T17:48:33Z",
+  "last_maintainer_activity_at": "2026-09-28T12:08:31Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

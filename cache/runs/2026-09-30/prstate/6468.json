@@ -1,0 +1,123 @@
+{
+  "number": 6468,
+  "fetched_at": "2026-09-30T18:28:51Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "4f7dfb99b992721999c90dc3d989c571539b7d87",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6214,
+      "title": "Single-pass compiler: Make Component effectively immutable",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-05-07T15:59:47Z",
+      "can_push": true,
+      "commit_id": "41e141c4ee80ef49103ada7ac1539695ec933c29"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=7\" align=\"top\"></a> **`ref` silently dropped when `DataTable` has an `id`**\n\n`Component._render(props=Non"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 72,
+    "by_state": {
+      "FAILURE": 3,
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 66
+    },
+    "failing": [
+      "reflex-docs (3.11)",
+      "reflex-docs (3.12)",
+      "docs-tests"
+    ],
+    "pending": [],
+    "actions_total": 70
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:35Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR refactors Reflex's component system to be immutable after construction: `children` is now stored as a `tuple`, a `__setattr__"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-05-07T15:59:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 3.55%**\n\n\n\n\n`\u26a1 2` improved benchmarks  \n`\u2705 22` untouched bench"
+    }
+  ],
+  "head_activity_at": "2026-05-29T21:52:51Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-07T15:59:54Z"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+    "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+    "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+    "pyi_hashes.json",
+    "reflex/compiler/utils.py",
+    "tests/units/components/datadisplay/test_dataeditor.py"
+  ],
+  "failing_job_findings": [
+    {
+      "check": "reflex-docs (3.11), reflex-docs (3.12), docs-tests",
+      "cause": "Retained evidence from 2026-09-28 on the identical head SHA with unchanged failing check names: GitHub retains only generic exit-code annotations for these May 29 jobs; authenticated Actions log downloads return HTTP 410, so the underlying docs failure is no longer available. docs-tests also has a uv cache-glob warning, but that warning does not establish the failure cause."
+    }
+  ],
+  "last_author_activity_at": "2026-05-29T21:52:51Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

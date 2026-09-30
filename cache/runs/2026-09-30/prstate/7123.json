@@ -1,0 +1,368 @@
+{
+  "number": 7123,
+  "fetched_at": "2026-09-30T18:27:47Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "02dca2707084b7952a3b1e845292fc73b3874ecf",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-11T23:19:39Z",
+      "can_push": true,
+      "commit_id": "35c11e12c633bfe093c5a874a193e4dac7989357"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-11T23:20:15Z",
+      "can_push": true,
+      "commit_id": "35c11e12c633bfe093c5a874a193e4dac7989357"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:12:42Z",
+      "can_push": true,
+      "commit_id": "c5203e84e7353fb6008a49bc01234fbc88c2099d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:12:44Z",
+      "can_push": true,
+      "commit_id": "c5203e84e7353fb6008a49bc01234fbc88c2099d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:12:46Z",
+      "can_push": true,
+      "commit_id": "c5203e84e7353fb6008a49bc01234fbc88c2099d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:12:48Z",
+      "can_push": true,
+      "commit_id": "c5203e84e7353fb6008a49bc01234fbc88c2099d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:12:50Z",
+      "can_push": true,
+      "commit_id": "c5203e84e7353fb6008a49bc01234fbc88c2099d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:14:01Z",
+      "can_push": true,
+      "commit_id": "c5203e84e7353fb6008a49bc01234fbc88c2099d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:27:43Z",
+      "can_push": true,
+      "commit_id": "980db2712c8b3fbed31c4c6c268fadf42ecfd2bc"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:37:04Z",
+      "can_push": true,
+      "commit_id": "980db2712c8b3fbed31c4c6c268fadf42ecfd2bc"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:49:08Z",
+      "can_push": true,
+      "commit_id": "381ae9ffd08492b62df278c740325800a4a7333b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:50:36Z",
+      "can_push": true,
+      "commit_id": "17cc3980fa28dc580d14d91296fddbb214c2d317"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:54:00Z",
+      "can_push": true,
+      "commit_id": "17cc3980fa28dc580d14d91296fddbb214c2d317"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-15T13:54:29Z",
+      "can_push": true,
+      "commit_id": "17cc3980fa28dc580d14d91296fddbb214c2d317"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-18T21:11:44Z",
+      "can_push": true,
+      "commit_id": "e04d0bbc6c91ecfd14e8aef8aa553bfb296ac135"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team",
+    "Alek99"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 144,
+    "by_state": {
+      "FAILURE": 4,
+      "IN_PROGRESS": 4,
+      "SKIPPED": 3,
+      "SUCCESS": 133
+    },
+    "failing": [
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.15)"
+    ],
+    "pending": [
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.11)"
+    ],
+    "actions_total": 140
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-11T23:14:27Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T23:20:08Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=63304325\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-15T13:52:13Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n<details>\n<summary>:warning: <b>Different runtime environments det"
+    }
+  ],
+  "head_activity_at": "2026-09-30T18:14:49Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-11T23:14:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T23:19:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T23:19:39Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T23:20:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T23:20:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T23:20:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T13:12:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T13:12:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T13:12:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T13:12:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T13:12:50Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T13:14:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T13:27:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T13:37:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T13:37:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T13:49:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T13:49:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T13:50:36Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-15T13:52:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T13:54:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T13:54:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T21:11:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T21:11:44Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "job_id": 110030415171,
+      "run_id": 36757205632,
+      "cause": "tests/units/reflex_bench/collectors/test_phases.py::test_tree_phases_samples_a_real_tree failed with IndexError: list index out of range; 10,188 tests passed in the job.",
+      "prs_fault": null
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10)",
+      "job_id": 110030415016,
+      "run_id": 36757205632,
+      "cause": "tests/units/reflex_bench/suites/test_hmr.py::test_a_change_the_page_never_shows_fails_clearly timed out after 0.3 s waiting for a style restore; the log says granian printed no reload line and the page remained at 12px.",
+      "prs_fault": null
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "job_id": 110030414908,
+      "run_id": 36757205632,
+      "cause": "tests/units/reflex_bench/collectors/test_pss.py::test_sampler_reports_the_peak expected 3,072,000 but observed 10,240,000; 11,046 tests passed in the job.",
+      "prs_fault": null
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "No GitHub Actions log is available because this is an external CodSpeed check; the check metadata exposes only the CodSpeed details URL.",
+      "prs_fault": null
+    }
+  ],
+  "last_author_activity_at": "2026-09-30T18:14:49Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

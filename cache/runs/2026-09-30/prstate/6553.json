@@ -1,0 +1,115 @@
+{
+  "number": 6553,
+  "fetched_at": "2026-09-30T18:27:51Z",
+  "author_login": "BABTUNA",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "BABTUNA/reflex",
+  "head_sha": "1a9a28eff716aa312ce98641c397143e30031d71",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6514,
+      "title": "Consolidate reflex_base.plugins.compiler.BaseContext and reflex_base.context.base.BaseContext",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:33:08Z",
+      "can_push": true,
+      "commit_id": "1a9a28eff716aa312ce98641c397143e30031d71"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d14362c9-abbc-47bb-b467-6a0db3bd758f -->\n<!-- cubic:review-run=409547f9-497f-52fd-933b-bf41e3ad3135 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: The canonical `BaseContext` does not make t"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 139,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 136
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 135
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-05-21T23:20:24Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 135` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-21T23:22:21Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=33358385\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:33:29Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nThese findings could not be posted inline.\n\n- <img alt=\"P2\" src=\"https://greptile-static-assets."
+    }
+  ],
+  "head_activity_at": "2026-09-29T18:29:41Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-21T23:20:24Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-21T23:22:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:33:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:33:08Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:33:29Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-29T18:29:41Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

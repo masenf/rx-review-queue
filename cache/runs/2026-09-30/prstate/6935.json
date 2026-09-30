@@ -1,0 +1,98 @@
+{
+  "number": 6935,
+  "fetched_at": "2026-09-30T18:28:47Z",
+  "author_login": "wantosure",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "wantosure/reflex",
+  "head_sha": "a209a40ae3174e9ea036b5cb8ad087f695259bad",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 5741,
+      "title": "Invalid JavaScript Code Generation with EventHandler args_spec Using rx.Var Expressions",
+      "filed_by": "LeoGrosjean"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-24T13:53:55Z",
+      "can_push": true,
+      "commit_id": "eee5f4cf8edee255d3f165d8893d2f7cfb9380e9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-24T13:47:11Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR updates client-state setters to derive valid wrapper argument names from event-derived expressions while preserving the compl"
+    },
+    {
+      "by": "wantosure",
+      "association": "NONE",
+      "at": "2026-08-24T14:20:35Z",
+      "excerpt": "Thanks, this was a valid catch.\n\nThe old regex only handled ASCII identifier characters, so an event expression such as `_\u00e9v\u00e9nement?.clientX` would bind `_` as "
+    }
+  ],
+  "head_activity_at": "2026-08-24T14:18:45Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-24T13:47:11Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-24T13:53:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-24T13:53:55Z"
+    },
+    {
+      "kind": "comment",
+      "by": "wantosure",
+      "association": "NONE",
+      "at": "2026-08-24T14:20:35Z"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/test_event.py"
+  ],
+  "last_author_activity_at": "2026-08-24T14:20:35Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

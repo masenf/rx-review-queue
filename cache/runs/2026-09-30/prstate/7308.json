@@ -1,0 +1,254 @@
+{
+  "number": 7308,
+  "fetched_at": "2026-09-30T18:27:52Z",
+  "author_login": "flcrom",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "flcrom/reflex",
+  "head_sha": "2236cced370a7f35bbd59587bedaebb9d3bfb032",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7017,
+      "title": "State var default of dataclasses.field(...) fails with TypeError: cannot pickle 'mappingproxy' object",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:20:36Z",
+      "can_push": true,
+      "commit_id": "806b58866fcb482b530baf4cfef0f91b2148f69c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:23:28Z",
+      "can_push": true,
+      "commit_id": "806b58866fcb482b530baf4cfef0f91b2148f69c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:17:20Z",
+      "can_push": true,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:18:10Z",
+      "can_push": true,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:52Z",
+      "can_push": false,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:53Z",
+      "can_push": false,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:31:20Z",
+      "can_push": true,
+      "commit_id": "b3a06ca20fb7b48c8815c9ff945d1721e448894b"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:03:40Z",
+      "can_push": false,
+      "commit_id": "b3a06ca20fb7b48c8815c9ff945d1721e448894b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:06:59Z",
+      "can_push": true,
+      "commit_id": "2236cced370a7f35bbd59587bedaebb9d3bfb032"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 7,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=366cf796-c8aa-4b11-9f6a-9c992e44af8f -->\n<!-- cubic:review-run=16108169-2cc4-5453-9158-96c84eb97ade -->\n<!-- metadata:{\"confidence\":7} -->\nP2: Unannotated `dataclasses.field(default=mutab"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Custom factories lose their type** An unannotated declaration such as `items = data"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Hardcoded field identifiers** The new tests use strings such as `\"items\"` to index "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 139,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 136
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 135
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-24T10:21:56Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 135` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:23Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68609457\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-09-29T17:57:03Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:20:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-24T10:21:56Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:17:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:17:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:18:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:18:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:31:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:31:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:03:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:06:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:06:59Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-29T18:03:40Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

@@ -1,0 +1,157 @@
+{
+  "number": 7272,
+  "fetched_at": "2026-09-30T18:27:45Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "755ddbafeba64c2a0d895f2064481bba7e2b1891",
+  "mergeable": "CONFLICTING",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": null,
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-22T19:04:32Z",
+      "can_push": true,
+      "commit_id": "c01f4d48dfd1b5b1a0b5a02354681c30e51635ae"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-22T19:36:20Z",
+      "can_push": true,
+      "commit_id": "c01f4d48dfd1b5b1a0b5a02354681c30e51635ae"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-22T20:23:07Z",
+      "can_push": true,
+      "commit_id": "755ddbafeba64c2a0d895f2064481bba7e2b1891"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Unsupported memoization combination**\n\n`auto_memoize=False` is accepted independent"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c3887eef-feba-4951-abac-f128e27a0984 -->\n<!-- cubic:review-run=36862603-c649-5b2c-82e1-4a6afbdfd191 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This now makes callbacks with aliased or def"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=cec58377-df46-460c-a422-52afc9fd6b91 -->\n<!-- cubic:review-run=36862603-c649-5b2c-82e1-4a6afbdfd191 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: The \"including\" clause binds to \"memoized ev"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 5,
+    "by_state": {
+      "SUCCESS": 5
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 2
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T19:04:16Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=67637290\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-22T19:07:58Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 67` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^sk"
+    }
+  ],
+  "head_activity_at": "2026-09-22T20:15:51Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T19:04:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T19:04:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T19:04:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-22T19:07:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T19:36:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T19:36:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T19:36:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T20:23:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-22T20:23:07Z"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/reflex_base/vars/test_base.py"
+  ],
+  "last_author_activity_at": "2026-09-22T20:15:51Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}
