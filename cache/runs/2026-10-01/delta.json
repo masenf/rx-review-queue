@@ -1,0 +1,160 @@
+{
+ "previous_run": "2026-09-30",
+ "disappeared": [
+  {
+   "number": 6553,
+   "title": "refactor(reflex-base): consolidate BaseContext into context.base (#6514)",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6745,
+   "title": "perf: pipeline redis set_state writes, cache required-state classes",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6770,
+   "title": "fix(model): only carry scalar column defaults as server_default in migrations",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6935,
+   "title": "Fix client state setter event var args",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 6996,
+   "title": "Serve SPA fallback with 200 for routable paths in prod static serving",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7123,
+   "title": "ENG-10101: perf(memo): evaluate passthrough bodies once and reuse their analysis",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7208,
+   "title": "Add deep equality for frontend Vars",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7275,
+   "title": "Point reflex db commands at the db extra instead of dumping a traceback",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7305,
+   "title": "Log why npm is used when only package-lock.json is persisted",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7306,
+   "title": "Fix Var._replace with _var_data",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7307,
+   "title": "Allow capping the redis connection pool",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7317,
+   "title": "fix: emit the global stylesheet preload only in production builds",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7318,
+   "title": "fix: free expired states promptly and drop disk manager locks on purge",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7321,
+   "title": "Fail fast on a rejected token with --no-interactive",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7325,
+   "title": "fix: percent-encode Var data in rx.download so # and % don't corrupt the file",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7329,
+   "title": "fix: replace a stored state that can no longer be unpickled",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7333,
+   "title": "ENG-12837: Keep the \"Built with Reflex\" badge consistent on free Reflex Cloud deploys",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7350,
+   "title": "fix: emit every output line as JSON in reflex run --json",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7352,
+   "title": "fix(hosting-cli): report success from secrets update",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7355,
+   "title": "fix(cli): validate project when deploying by app ID",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7357,
+   "title": "Fix buffered upload streams entangling events and dropping late deltas",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7358,
+   "title": "Stop top-level event spans naming the root context as their parent",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7370,
+   "title": "perf: cut per-event CPU on the runtime hot paths",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7371,
+   "title": "fix(sdk): wait for recorded deployment state after completion message",
+   "author": "Nitish-1303",
+   "draft": false
+  },
+  {
+   "number": 7372,
+   "title": "Fix oplock lease race with the lock updates subscriber; deflake phase timing test",
+   "author": "masenf",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  7340,
+  7371,
+  7273,
+  7234,
+  6876,
+  7344,
+  7345,
+  7351
+ ],
+ "left_top15": [
+  7325,
+  6553,
+  7357,
+  7208,
+  7355,
+  7305,
+  7352,
+  7329
+ ],
+ "counts": {
+  "previous_open": 110,
+  "current_open": 91
+ }
+}

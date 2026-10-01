@@ -1,0 +1,263 @@
+{
+  "number": 7322,
+  "fetched_at": "2026-10-01T17:33:51Z",
+  "author_login": "TanbirRamim",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "TanbirRamim/reflex",
+  "head_sha": "b434020cf496ec39d6903425be1bee30ff419c7a",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7259,
+      "title": "\"reflex db init\" without the db extra dumps a raw click traceback instead of the guided \"pip install reflex[db]\" message",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "copilot-pull-request-reviewer",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-25T03:26:58Z",
+      "can_push": false,
+      "commit_id": "43597de664d6700c22881933e589cb836c6d6158"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T03:30:07Z",
+      "can_push": true,
+      "commit_id": "43597de664d6700c22881933e589cb836c6d6158"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T03:35:09Z",
+      "can_push": true,
+      "commit_id": "43597de664d6700c22881933e589cb836c6d6158"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T03:44:09Z",
+      "can_push": true,
+      "commit_id": "b434020cf496ec39d6903425be1bee30ff419c7a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:20Z",
+      "can_push": true,
+      "commit_id": "b434020cf496ec39d6903425be1bee30ff419c7a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:21Z",
+      "can_push": true,
+      "commit_id": "b434020cf496ec39d6903425be1bee30ff419c7a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:23Z",
+      "can_push": true,
+      "commit_id": "b434020cf496ec39d6903425be1bee30ff419c7a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-30T17:48:30Z",
+      "can_push": true,
+      "commit_id": "b434020cf496ec39d6903425be1bee30ff419c7a"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 10,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=07597582-4df3-4aa9-b5fb-38ee679a8f41 -->\n<!-- cubic:review-run=4676ae9a-eefd-51a8-a658-6ff929d0f0f1 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: The db-extra hint is written by logger.error"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Status still lacks install hint**\n\nOn an install without SQLAlchemy or Alembic, `re"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Package identifiers remain hardcoded**\n\nThe new `find_spec` check uses `\"sqlalchemy"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "Please drop `sqlmodel` from this check. The migration code in `reflex/model.py` needs only `sqlalchemy` and `alembic` (the `if find_spec(\"sqlalchemy\") and find_spec(\"alembic\"):` block). `sqlmodel` is "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "`reflex db status` does not call this check, so it still fails with a raw traceback on a bare install:\n\n```\nImportError: cannot import name 'format_revision' from 'reflex.model'\n```\n\n`status` needs th"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This test makes `find_spec` return `None` for every module. It cannot detect a check that requires a package the command does not need. Please:\n- add `status` to the parametrize list;\n- add a case whe"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:30:02Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69147572\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-09-25T03:41:33Z",
+  "failing_job_findings": [],
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "Copilot",
+      "association": "NONE",
+      "at": "2026-09-25T03:26:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:30:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:30:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:30:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:30:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:35:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:35:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:44:07Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:44:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T03:44:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:21Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:30Z",
+      "state": "changes_requested"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/test_reflex.py"
+  ],
+  "last_author_activity_at": "2026-09-25T03:41:33Z",
+  "last_maintainer_activity_at": "2026-09-30T17:48:30Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

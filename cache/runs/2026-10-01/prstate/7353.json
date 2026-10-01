@@ -1,0 +1,194 @@
+{
+  "number": 7353,
+  "fetched_at": "2026-10-01T17:32:23Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "9804522286c9d454c799699ef891ee7bf6360235",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T19:16:18Z",
+      "can_push": true,
+      "commit_id": "9804522286c9d454c799699ef891ee7bf6360235"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T19:16:43Z",
+      "can_push": true,
+      "commit_id": "9804522286c9d454c799699ef891ee7bf6360235"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T18:53:35Z",
+      "can_push": true,
+      "commit_id": "9804522286c9d454c799699ef891ee7bf6360235"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T18:54:38Z",
+      "can_push": true,
+      "commit_id": "9804522286c9d454c799699ef891ee7bf6360235"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T18:58:45Z",
+      "can_push": true,
+      "commit_id": "9804522286c9d454c799699ef891ee7bf6360235"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=adca9344-9efc-4836-96c5-0cf4e0b35d7a -->\n<!-- cubic:review-run=87592657-df99-5de9-9c3c-4f9dacafd6b6 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This bypasses the project environment parser"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1b794189-9be5-4bca-8bd1-46c4723086ef -->\n<!-- cubic:review-run=87592657-df99-5de9-9c3c-4f9dacafd6b6 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: The async test never triggers a recompute, s"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Hardcoded environment key** The new mode check uses `\"REFLEX_ENV_MODE\"` directly as"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Async recomputation remains untested** These two reads cover the initial calculatio"
+      },
+      {
+        "by": "masenf",
+        "outdated": false,
+        "first_comment": "```suggestion\n            value = await self.fget(instance)\n            setattr(instance, self._cache_attr, value)\n```\n\nseems like we could save that `getattr` call later if we save the `value` first."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 147,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 3,
+      "SUCCESS": 143
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 143
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:19Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=71564299\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-29T19:23:28Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 7 benchmarks\n\n<details>\n<summary>:warning: <b>Different runtime environments de"
+    }
+  ],
+  "head_activity_at": "2026-09-29T19:12:19Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:18Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T19:16:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-29T19:23:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T18:53:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T18:54:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T18:58:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T18:58:45Z",
+      "state": "commented"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports seven regressions; the largest are computed_dependency_fanout[50] (-16.10%), computed_dependency_fanout[10] (-15.45%), and computed_dependency_fanout[2] (-11.64%). The report warns that different runtime environments may affect accuracy."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-29T19:12:19Z",
+  "last_maintainer_activity_at": "2026-09-30T18:58:45Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

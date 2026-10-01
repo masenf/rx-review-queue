@@ -1,0 +1,533 @@
+{
+  "number": 7328,
+  "fetched_at": "2026-10-01T17:33:48Z",
+  "author_login": "flcrom",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "flcrom/reflex",
+  "head_sha": "6596431be0e2dd7d3221421d9e1df86b7e5bc469",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 6980,
+      "title": "Backgrounded/no-TTY `reflex run` ignores SIGTERM/SIGINT \u2014 requires SIGKILL of the process group",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:55:40Z",
+      "can_push": true,
+      "commit_id": "861b82044eea994e9d77926ab573714a7c4a6124"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:56:16Z",
+      "can_push": true,
+      "commit_id": "861b82044eea994e9d77926ab573714a7c4a6124"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T10:28:19Z",
+      "can_push": true,
+      "commit_id": "fde4d36097ea4bd105f31aa6eee9210e3e131b13"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:36Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:37Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:39Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:41Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:43Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-28T12:58:52Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:09:02Z",
+      "can_push": true,
+      "commit_id": "369d48c495bcf3b0dda5616524d198477d44320c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:38:46Z",
+      "can_push": true,
+      "commit_id": "4c7361bb8cd296b3a0818415a22f685035239ac9"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:40:41Z",
+      "can_push": true,
+      "commit_id": "4c7361bb8cd296b3a0818415a22f685035239ac9"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:11:00Z",
+      "can_push": true,
+      "commit_id": "f4914242a91d5bea32bd4e769ecda896f5103576"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:18:14Z",
+      "can_push": true,
+      "commit_id": "f4914242a91d5bea32bd4e769ecda896f5103576"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:42:53Z",
+      "can_push": true,
+      "commit_id": "5588791f15cb4ec600151e4eeb424299122b93a6"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 22,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This moves the frontend out of the `reflex run` process group. After this change, `kill -KILL -- -<pgid>` stops the Python process, but bun and node continue to run. This is the workaround in #6980, a"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "`stream_logs` can reap the frontend before this call. After that, the kernel can give the PID to a new process, and `killpg` can signal an unrelated process group. `Popen.terminate()` checks `returnco"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This registry tracks one process. `run_process_and_launch_url` starts at most one frontend per run, and `exec.frontend_process` already holds it. `_run_dev` already uses that global for the Windows pa"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This block increases the complexity of `_run_dev` from 7 to 12 (ruff C901). Please move the handler setup into a small context manager. Also, the `threading.main_thread()` check is not necessary: the "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Only SIGTERM needs a handler here. The default SIGINT handler raises `KeyboardInterrupt`, and that already runs the cleanup in `finally`. The custom handler only changes the exit code to 0."
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **SIGINT no longer exits cleanly**\n\nIn a POSIX frontend-only run, this handler now co"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Signal handlers lack required docstrings**\n\n`_frontend_sigterm_handler` does not do"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Test arguments lack documentation**\n\nThis new test has fixture and parameter argume"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Polling duration lacks explanation**\n\nThis deadline adds `DEFAULT_TIMEOUT` to the m"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=a4429f4c-584e-4b2d-9460-35b1e1b08658 -->\n<!-- cubic:review-run=fb330a9e-c248-5a04-8401-fe217346a95d -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This PR now ships two news fragments for the"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "by_state": {
+      "FAILURE": 8,
+      "SKIPPED": 3,
+      "SUCCESS": 134
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.14)"
+    ],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:56:12Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69276215\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-25T09:59:05Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 147` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:42Z",
+      "excerpt": "Could a maintainer rerun the Ubuntu 3.10 unit-test job? The Redis-enabled stage failed in `test_oplock_contention_racers[0]` in `tests/units/istate/manager/test"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:33:16Z",
+      "excerpt": "Thanks for the detailed review. I removed `start_new_session` and the process-group registry, moved frontend cleanup to `_run_dev` using `exec.frontend_process."
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:13:58Z",
+      "excerpt": "The follow-up commits through 36c0b2a cover the late-start/teardown race as well as the five review points. Could you take another look?"
+    }
+  ],
+  "head_activity_at": "2026-09-30T17:54:40Z",
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (windows-latest, 3.10)",
+      "job_id": 110022379611,
+      "run_id": 36754831182,
+      "cause": "Retained evidence from 2026-09-30 (same head and failing-check set; current log rechecked): test collection fails because Windows signal has no SIGKILL attribute."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.11)",
+      "job_id": 110022379437,
+      "run_id": 36754831182,
+      "cause": "Retained evidence from 2026-09-30 (same head and failing-check set; current log rechecked): test collection fails because Windows signal has no SIGKILL attribute."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.12)",
+      "job_id": 110022379453,
+      "run_id": 36754831182,
+      "cause": "Retained evidence from 2026-09-30 (same head and failing-check set; current log rechecked): test collection fails because Windows signal has no SIGKILL attribute."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.13)",
+      "job_id": 110022379539,
+      "run_id": 36754831182,
+      "cause": "Retained evidence from 2026-09-30 (same head and failing-check set; current log rechecked): test collection fails because Windows signal has no SIGKILL attribute."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.14)",
+      "job_id": 110022379387,
+      "run_id": 36754831182,
+      "cause": "Retained evidence from 2026-09-30 (same head and failing-check set; current log rechecked): test collection fails because Windows signal has no SIGKILL attribute."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.15)",
+      "job_id": 110022379558,
+      "run_id": 36754831182,
+      "cause": "Retained evidence from 2026-09-30 (same head and failing-check set; current log rechecked): test collection fails because Windows signal has no SIGKILL attribute."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.11)",
+      "job_id": 110022379570,
+      "run_id": 36754831182,
+      "cause": "Retained evidence from 2026-09-30 (same head and failing-check set; current log rechecked): test_tree_phases_samples_a_real_tree saw only the frontend sleep child; the expected install child was absent."
+    },
+    {
+      "check": "unit-tests-gate",
+      "job_id": 110029643991,
+      "run_id": 36754831182,
+      "cause": "Retained evidence from 2026-09-30 (same head and failing-check set; current log rechecked): the aggregate gate reports unit-tests=failure and no independent failure."
+    }
+  ],
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:55:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:55:40Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:56:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:56:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:56:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-25T09:59:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T10:28:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T10:28:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:52Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:08:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:09:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:33:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:38:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:38:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:40:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:40:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:10:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:11:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:18:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:18:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:42:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:42:53Z"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:13:58Z"
+    }
+  ],
+  "conflicting_files": [
+    "reflex/reflex.py",
+    "tests/units/test_reflex.py"
+  ],
+  "last_author_activity_at": "2026-09-30T17:54:40Z",
+  "last_maintainer_activity_at": "2026-09-28T12:58:52Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

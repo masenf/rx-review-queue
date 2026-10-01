@@ -1,0 +1,143 @@
+{
+  "number": 6840,
+  "fetched_at": "2026-10-01T17:31:49Z",
+  "author_login": "honma89",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "honma89/reflex",
+  "head_sha": "2dceb071d93f25464a92e75d9551daed62382a5e",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6839,
+      "title": "StateManagerDisk debounced writes can persist stale state after repeated set_state calls",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-04T10:02:23Z",
+      "can_push": true,
+      "commit_id": "fb756ae2e20b3db3d8b7bb565132f56cd3413167"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T20:42:40Z",
+      "can_push": true,
+      "commit_id": "2dceb071d93f25464a92e75d9551daed62382a5e"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": true,
+        "first_comment": "```suggestion\n            if (queue_item := self.write_queue.get(token)) is not None:\n                self._write_queue[token] = QueueItem(\n                    token=token,\n                    state=s"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-08-04T09:53:50Z",
+      "excerpt": "Codex usage limits have been reached for code reviews. Please check with the admins of this repo to increase the limits by adding credits.\nCredits must be used "
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-04T09:55:58Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR fixes debounced disk-state persistence so repeated writes for the same token retain the latest state while preserving the ori"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-04T11:17:06Z",
+      "excerpt": " The implementation looks correct to me. Replacing the queued `QueueItem` state while preserving the original timestamp\r\n  fixes the stale flush without changin"
+    },
+    {
+      "by": "honma89",
+      "association": "NONE",
+      "at": "2026-08-06T02:58:48Z",
+      "excerpt": "Thanks for the thorough review, really appreciate it.\r\n\r\nOn the pyright issue you're right, reaching into __dict__ was the wrong move even though it happened to"
+    }
+  ],
+  "head_activity_at": "2026-08-06T02:55:34Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-08-04T09:53:50Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-04T09:55:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-04T10:02:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-04T11:17:06Z"
+    },
+    {
+      "kind": "comment",
+      "by": "honma89",
+      "association": "NONE",
+      "at": "2026-08-06T02:58:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T20:41:13Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T20:42:40Z",
+      "state": "commented"
+    }
+  ],
+  "failing_job_findings": [],
+  "conflicting_files": [
+    "reflex/istate/manager/disk.py",
+    "tests/units/test_state.py"
+  ],
+  "last_author_activity_at": "2026-08-06T02:58:48Z",
+  "last_maintainer_activity_at": "2026-09-30T20:42:40Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

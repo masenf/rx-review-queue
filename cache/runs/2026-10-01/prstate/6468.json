@@ -1,0 +1,291 @@
+{
+  "number": 6468,
+  "fetched_at": "2026-10-01T17:32:22Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "294365776349b342bdf3630bb9cf419ccee86959",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6214,
+      "title": "Single-pass compiler: Make Component effectively immutable",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-05-07T15:59:47Z",
+      "can_push": true,
+      "commit_id": "41e141c4ee80ef49103ada7ac1539695ec933c29"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T21:18:47Z",
+      "can_push": true,
+      "commit_id": "9306a427c79371544f97fad00eefee3258af3aa7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T21:22:30Z",
+      "can_push": true,
+      "commit_id": "9306a427c79371544f97fad00eefee3258af3aa7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T22:03:06Z",
+      "can_push": true,
+      "commit_id": "9f09d93a2bde1a9a6a17ded14a9ff83737e52cce"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 16,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=7\" align=\"top\"></a> **`ref` silently dropped when `DataTable` has an `id`**\n\n`Component._render(props=Non"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Stub manifest not updated**\n\nThis PR changes component definitions, including the n"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4cb3a7fc-7e90-4755-a187-af4752ece286 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":10} -->\nP1: The rebuilt `VarData` drops `field_dependen"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b3f1cea9-ead5-4491-bcd7-5b8663d82eb0 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: `_literalize_static_ids` no longer handles "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4560fabd-7b87-4fcc-8de6-89ad8cbeb5f3 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This derived prop becomes stale when a calle"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=15eab921-e9f8-428a-a007-20ebbfe1b451 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This bypasses `_get_all_var_data()`, so styl"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5bc9eed9-4222-4b6e-93c7-d1fc2922b485 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: `referenced` matches `getCellContent:name`, "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=90f7dacf-6ea8-4ce6-9299-95f6e0849e99 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: Switching `self.style.pop(\"padding\")` to `se"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=3a8c9be5-31df-42e7-8d73-ac89d61b9f1d -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: `super()._render()` serializes each concret"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=95dec2ae-d41e-439b-9264-470d77d38ace -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: `RADIX_TO_LUCIDE_SIZE[props[\"size\"]]` raises"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4691491e-64d1-4b2b-afe8-9886b3c838ae -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":9} -->\nP3: Update `pyi_hashes.json` by running `uv run "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2e3178a8-8ddb-41c6-bc65-9ce2c02546e1 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: `result._get_all_hooks()` only descends into"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=67bbc6d9-d0d3-4ff8-852d-5c0ceedd8fa4 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This PR made `_add_style_recursive` return a"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=37616d8e-db0e-4a54-bb7f-9d44ac64f2f1 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: The docstring and test name claim the compil"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9128416a-90d6-415e-8f16-f3aed4826dfa -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: `copy_with` writes values straight into `__d"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=0425686d-0e32-432a-bfd3-b773ecb59d85 -->\n<!-- cubic:review-run=96a9650e-b96c-5d9f-b31c-5c01d5fcc888 -->\n<!-- metadata:{\"confidence\":10} -->\nP1: This dev pin breaks the internal package's "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "by_state": {
+      "FAILURE": 8,
+      "SKIPPED": 2,
+      "SUCCESS": 135
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "docs-tests-gate",
+      "integration-tests-gate",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "reflex-docs (3.12)",
+      "reflex-docs (3.11)",
+      "docs-tests"
+    ],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:35Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=31186539\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-05-07T15:59:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.42%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:19:08Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nThese findings could not be posted inline.\n\n- <img alt=\"P1\" src=\"https://greptile-static-assets."
+    }
+  ],
+  "head_activity_at": "2026-09-30T21:59:11Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-07T15:59:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:18:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:18:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:19:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T22:03:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T22:03:06Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13), unit-tests-gate",
+      "cause": "The Python 3.13 matrix failed tests/units/reflex_bench/collectors/test_phases.py::test_tree_phases_samples_a_real_tree: it found only the frontend sleep process, not the expected frontend and install processes. unit-tests-gate is the downstream summary."
+    },
+    {
+      "check": "reflex-docs (3.11), reflex-docs (3.12), integration-tests-gate",
+      "cause": "Both docs integration jobs fail while rendering enterprise/ag-grid/aligned-grids because the enterprise AgGrid adapter assigns _modules on a frozen WrappedAgGrid, raising AttributeError. integration-tests-gate mirrors reflex-docs=failure."
+    },
+    {
+      "check": "docs-tests, docs-tests-gate",
+      "cause": "docs-tests has nine failures: eight doc double-evaluation cases hit the frozen WrappedAgGrid._modules AttributeError, and test_repeated_page_evaluation_isolates_compiler_mutations tries to append to tuple-valued children. docs-tests-gate mirrors that job."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_state_access[get_handler] regressed from 82.0 ms to 85.8 ms (-4.42%); the report warns that different runtime environments may affect accuracy."
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "reflex/compiler/utils.py",
+    "tests/units/compiler/test_compiler_utils.py"
+  ],
+  "last_author_activity_at": "2026-09-30T21:59:11Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

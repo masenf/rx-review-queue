@@ -1,0 +1,398 @@
+{
+  "number": 7323,
+  "fetched_at": "2026-10-01T17:32:50Z",
+  "author_login": "dajiaohuang",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "dajiaohuang/reflex-1",
+  "head_sha": "6a7c37e0c6ddc0342131d9192c47d2660e4ef053",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T04:01:06Z",
+      "can_push": true,
+      "commit_id": "e77eb23d8051a34ed67543d8d1840b15db06d2a8"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T04:05:06Z",
+      "can_push": true,
+      "commit_id": "e77eb23d8051a34ed67543d8d1840b15db06d2a8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T00:59:13Z",
+      "can_push": true,
+      "commit_id": "3b279f5e0ca3cc819f585e80632f3e73c2aff030"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T01:11:05Z",
+      "can_push": true,
+      "commit_id": "01a9f0fdde7efe05ca9a4331ef97780abe0314c3"
+    },
+    {
+      "by": "dajiaohuang",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T02:22:34Z",
+      "can_push": false,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "dajiaohuang",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T02:22:41Z",
+      "can_push": false,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "dajiaohuang",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T02:22:49Z",
+      "can_push": false,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:34Z",
+      "can_push": true,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:36Z",
+      "can_push": true,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:37Z",
+      "can_push": true,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:39Z",
+      "can_push": true,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:41Z",
+      "can_push": true,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T17:48:43Z",
+      "can_push": true,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-30T17:48:50Z",
+      "can_push": true,
+      "commit_id": "256a8ec7f4e2f18f00896d3a27c2f0c8c1b64bc3"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 17,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This also catches `StateSchemaMismatchError`. `BaseState._deserialize` raises it when a state class gains or loses a field. That is a normal event in dev mode, and the disk manager is the dev default."
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please remove the redaction, the whitespace collapse and the 512-char cap. Pickle and schema errors do not contain the client token. They contain module, attribute or byte details. The Redis manager a"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "The format gives broken output. An exception message that ends with a period gives a double period: `invalid load key, 'n'.. Falling back\u2026`. An empty message gives `StateSchemaMismatchError: . Falling"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "The app recovers with a default state, so this is a warning, not an error. Please use `logger.warning`."
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please keep the existing tests unchanged. The switch from `\"client\"` to `CLIENT_ID` is not related to this fix. Inline the literals in the new tests."
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "These two asserts check wording that the log never had. Please remove them. Also, the four new tests copy the same `caplog` filter. Please move it into one helper."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 140
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.15)"
+    ],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T04:01:01Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69156535\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "dajiaohuang",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T01:00:13Z",
+      "excerpt": "The follow-up at `f83a09f` updates the message to describe the fallback accurately, identifies the failing file without logging the raw state token, scopes the "
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-29T01:07:09Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 147` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-01T09:45:27Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T04:01:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T04:01:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T04:01:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T04:01:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T04:05:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T04:05:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T00:59:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T00:59:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "dajiaohuang",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T01:00:13Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-29T01:07:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T01:11:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T01:11:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "dajiaohuang",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T02:22:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "dajiaohuang",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T02:22:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "dajiaohuang",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T02:22:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T17:48:50Z",
+      "state": "changes_requested"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "cause": "test_tree_phases_samples_a_real_tree failed: expected phases [frontend, install] but observed only [frontend]; the job finished with 1 failed, 10,287 passed, and 90 skipped."
+    },
+    {
+      "check": "unit-tests-gate",
+      "cause": "The gate failed because the unit-tests matrix reported the ubuntu-latest Python 3.15 failure; it has no independent test failure."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-01T09:45:27Z",
+  "last_maintainer_activity_at": "2026-09-30T17:48:50Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}
