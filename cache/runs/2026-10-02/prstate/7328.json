@@ -1,0 +1,540 @@
+{
+  "number": 7328,
+  "fetched_at": "2026-10-02T16:45:58Z",
+  "author_login": "flcrom",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "flcrom/reflex",
+  "head_sha": "2a8c01078d95922398e7bcf251294b856227b9e6",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 6980,
+      "title": "Backgrounded/no-TTY `reflex run` ignores SIGTERM/SIGINT — requires SIGKILL of the process group",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:55:40Z",
+      "can_push": true,
+      "commit_id": "861b82044eea994e9d77926ab573714a7c4a6124"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:56:16Z",
+      "can_push": true,
+      "commit_id": "861b82044eea994e9d77926ab573714a7c4a6124"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T10:28:19Z",
+      "can_push": true,
+      "commit_id": "fde4d36097ea4bd105f31aa6eee9210e3e131b13"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:36Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:37Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:39Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:41Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T12:58:43Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-28T12:58:52Z",
+      "can_push": true,
+      "commit_id": "268685f63dadc88884ac7ee5d9ada99a318bf28a"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:09:02Z",
+      "can_push": true,
+      "commit_id": "369d48c495bcf3b0dda5616524d198477d44320c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:38:46Z",
+      "can_push": true,
+      "commit_id": "4c7361bb8cd296b3a0818415a22f685035239ac9"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T14:40:41Z",
+      "can_push": true,
+      "commit_id": "4c7361bb8cd296b3a0818415a22f685035239ac9"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:11:00Z",
+      "can_push": true,
+      "commit_id": "f4914242a91d5bea32bd4e769ecda896f5103576"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:18:14Z",
+      "can_push": true,
+      "commit_id": "f4914242a91d5bea32bd4e769ecda896f5103576"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T15:42:53Z",
+      "can_push": true,
+      "commit_id": "5588791f15cb4ec600151e4eeb424299122b93a6"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:33:13Z",
+      "can_push": true,
+      "commit_id": "2a8c01078d95922398e7bcf251294b856227b9e6"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:42:09Z",
+      "can_push": true,
+      "commit_id": "2a8c01078d95922398e7bcf251294b856227b9e6"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:42:11Z",
+      "can_push": true,
+      "commit_id": "2a8c01078d95922398e7bcf251294b856227b9e6"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:42:14Z",
+      "can_push": true,
+      "commit_id": "2a8c01078d95922398e7bcf251294b856227b9e6"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:42:16Z",
+      "can_push": true,
+      "commit_id": "2a8c01078d95922398e7bcf251294b856227b9e6"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:42:18Z",
+      "can_push": true,
+      "commit_id": "2a8c01078d95922398e7bcf251294b856227b9e6"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:42:20Z",
+      "can_push": true,
+      "commit_id": "2a8c01078d95922398e7bcf251294b856227b9e6"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:42:58Z",
+      "can_push": true,
+      "commit_id": "2a8c01078d95922398e7bcf251294b856227b9e6"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 23,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 148,
+    "by_state": {
+      "NEUTRAL": 1,
+      "SKIPPED": 3,
+      "SUCCESS": 144
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:56:12Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=69276215\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-25T09:59:05Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.36%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:42Z",
+      "excerpt": "Could a maintainer rerun the Ubuntu 3.10 unit-test job? The Redis-enabled stage failed in `test_oplock_contention_racers[0]` in `tests/units/istate/manager/test"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:33:16Z",
+      "excerpt": "Thanks for the detailed review. I removed `start_new_session` and the process-group registry, moved frontend cleanup to `_run_dev` using `exec.frontend_process."
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:13:58Z",
+      "excerpt": "The follow-up commits through 36c0b2a cover the late-start/teardown race as well as the five review points. Could you take another look?"
+    }
+  ],
+  "head_activity_at": "2026-10-01T19:28:22Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:55:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:55:40Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:56:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:56:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:56:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-25T09:59:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T10:28:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T10:28:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T12:58:52Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:08:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:09:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:33:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:38:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:38:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:40:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T14:40:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:10:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:11:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:18:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:18:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:42:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T15:42:53Z"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:13:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:33:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:33:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T19:42:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T19:42:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T19:42:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T19:42:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T19:42:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T19:42:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:42:58Z"
+    }
+  ],
+  "failing_job_findings": [],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-01T19:28:22Z",
+  "last_maintainer_activity_at": "2026-10-01T19:42:20Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

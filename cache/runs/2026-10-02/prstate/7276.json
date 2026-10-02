@@ -1,0 +1,206 @@
+{
+  "number": 7276,
+  "fetched_at": "2026-10-01T17:31:42Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "b6afa95d9d645b9414993e45ef5bd6f03dfc3f4f",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:26:49Z",
+      "can_push": true,
+      "commit_id": "2000beec7b164ba0e6460104685660e291dd4a3b"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T19:09:09Z",
+      "can_push": true,
+      "commit_id": "6f44747d5411d301acd20343bb6e4e88fea0f33c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T19:32:14Z",
+      "can_push": true,
+      "commit_id": "d3d1d903c94caefde606c9dbd8c556faa25fd0d1"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-25T15:09:34Z",
+      "can_push": true,
+      "commit_id": "7ee8505caf1eeee603fdbfefe28bce9e394cbfd9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=7f436892-cf7e-49bc-85c3-9b9744668174 -->\n<!-- cubic:review-run=3812ebc1-1c84-5e16-808a-6e664cfb537e -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Removing `await window.__reflex_load?.()` he"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=bfaac16a-31a8-47e2-ad1d-fcac5a7c13c4 -->\n<!-- cubic:review-run=3812ebc1-1c84-5e16-808a-6e664cfb537e -->\n<!-- metadata:{\"confidence\":6} -->\nP2: The comment/doc claim in docs/app/README.md "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "[P2] Keep failed library loads recoverable for the same component\n\nPlease keep recoverable loading outside the cached module evaluation, or invalidate failed module imports. Moving this await into the"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "[P2] Give the rejection fixture an uncached module source\n\nThe optional-registry test still fails at `assert.rejects` after this source change. Its first scenario successfully imports this source, the"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 139,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 137
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 135
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:24:28Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68174643\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-23T17:30:16Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 135` untouched benchmarks  \n`⏩ 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-23T18:10:36Z",
+      "excerpt": "the finding in the issue is that with the setting on, it actually ships larger initial JS payload than with it turned off... is that incorrect? the proposed cha"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:03:28Z",
+      "excerpt": "Implemented the runtime fix for the reported regression in 6f44747d5. The lazy path no longer preloads every registered optional library on the first dynamic-co"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-26T16:01:41Z",
+      "excerpt": "Addressed the review findings:\n\n- Moved selective library loading outside the cached data-URI module evaluation. Generated components now carry their required l"
+    }
+  ],
+  "head_activity_at": "2026-09-29T04:55:06Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:24:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:26:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-23T17:30:16Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-23T18:10:36Z"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:03:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:09:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:09:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:32:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:32:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:09:34Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:09:34Z"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-26T16:01:41Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-09-29T04:55:06Z",
+  "last_maintainer_activity_at": "2026-09-25T15:09:34Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null,
+  "failing_job_findings": []
+}

@@ -1,0 +1,355 @@
+{
+  "run": {
+    "date": "2026-10-02",
+    "started_at": "2026-10-02 09:40 PT",
+    "runner": "codex-local",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "Codex desktop"
+  },
+  "stats": {
+    "open": 89,
+    "nondraft": 59,
+    "drafts": 30,
+    "counting_approvals": 3,
+    "fast_lane": 5,
+    "one_fix_away": 9,
+    "waiting_on_maintainer": 8,
+    "never_maintainer_review": 16,
+    "fork_ci_unrun": 10,
+    "never_human_reviewed": 21
+  },
+  "attention": [
+    "Merge #7353 first: it has a current-head counting approval, clean merge, 148 settled checks, and all nine threads resolved.",
+    "Use the first review slots on #7322 and #7323: both are three-file fixes, clean, full-green, and thread-free after author follow-up; each only needs the stale changes-requested decision re-reviewed.",
+    "Review #7273 and new #7383 next: both are compact, tested, clean, full-green, and waiting for an approval.",
+    "Approve workflows for #6876, #7344, and #7345 as cheap first-time-contributor unblocks; their two bot checks are not full CI.",
+    "Do not spend review time on #7388: it is already approved, but the author owes a fragment and the required Greptile Review status is absent.",
+    "Do not spend a scarce review block on broad #7386 or #7356 yet; both are in the strict maintainer queue, but span 34 and 25 files respectively, and #7356 is also missing its expected fragment."
+  ],
+  "top15": [
+    {
+      "number": 7353,
+      "score": 9.8,
+      "summary": "Current-head approved hot-path optimization is clean, fully green, tested, and thread-free.",
+      "evidence": [
+        "5 files (+260/-23), 5 ahead / 34 behind main.",
+        "No local conflicts; 0 unresolved of 9 review threads; 148 checks, rollup SUCCESS; counting approval on the current head."
+      ],
+      "blocker": "Merge it.",
+      "whose_move": "maintainer",
+      "chips": ["approved", "merge now", "waiting on maintainer"],
+      "override_reason": null
+    },
+    {
+      "number": 7322,
+      "score": 9.6,
+      "summary": "First-time contributor's tiny issue-backed database hint fix is clean and fully green after all 13 threads were resolved.",
+      "evidence": [
+        "3 files (+20/-1), 5 ahead / 6 behind main; tests and fragment included.",
+        "No local conflicts; 0 unresolved of 13 review threads; 148 checks, rollup SUCCESS; fixes #7259 filed by masenf."
+      ],
+      "blocker": "Re-review and clear the stale changes-requested decision; the latest maintainer reply declined the final bot request.",
+      "whose_move": "maintainer",
+      "chips": ["review first", "first-time contributor", "issue #7259"],
+      "override_reason": null
+    },
+    {
+      "number": 7323,
+      "score": 9.4,
+      "summary": "Compact corrupted-state-file fix is clean, fully green, tested, and thread-free after a fresh author push.",
+      "evidence": [
+        "3 files (+114/-2), 9 ahead / 38 behind main; tests and fragment included.",
+        "No local conflicts; 0 unresolved of 17 review threads; 148 checks, rollup SUCCESS."
+      ],
+      "blocker": "Re-review and clear the stale changes-requested decision.",
+      "whose_move": "maintainer",
+      "chips": ["re-review", "waiting on maintainer", "small diff"],
+      "override_reason": null
+    },
+    {
+      "number": 7273,
+      "score": 9.1,
+      "summary": "Structural-sharing optimization remains a short, clean, fully green review with every thread resolved.",
+      "evidence": [
+        "3 files (+202/-1), 6 ahead / 12 behind main; targeted test and fragment included.",
+        "No local conflicts; 0 unresolved of 6 review threads; 145 checks, rollup SUCCESS."
+      ],
+      "blocker": "First approval.",
+      "whose_move": "maintainer",
+      "chips": ["review first", "waiting on maintainer", "small diff"],
+      "override_reason": null
+    },
+    {
+      "number": 7383,
+      "score": 8.9,
+      "summary": "New inline-markup preservation fix is current with main, clean, fully green, tested, and thread-free.",
+      "evidence": [
+        "6 files (+172/-60), 5 ahead / 0 behind main; tests and package fragment included.",
+        "No local conflicts; 0 unresolved of 6 review threads; 148 checks, rollup SUCCESS."
+      ],
+      "blocker": "First approval.",
+      "whose_move": "maintainer",
+      "chips": ["new PR", "waiting on maintainer", "current with main"],
+      "override_reason": null
+    },
+    {
+      "number": 7328,
+      "score": 8.5,
+      "summary": "Issue-backed frontend process-tree fix is now clean, fully green, and thread-free after a new head.",
+      "evidence": [
+        "5 files (+498/-19), 20 ahead / 6 behind main; tests and fragment included.",
+        "No local conflicts; 0 unresolved of 23 review threads; 148 checks, rollup SUCCESS; fixes #6980 filed by masenf."
+      ],
+      "blocker": "Re-review and clear the stale changes-requested decision.",
+      "whose_move": "maintainer",
+      "chips": ["newly unblocked", "issue #6980", "re-review"],
+      "override_reason": null
+    },
+    {
+      "number": 7340,
+      "score": 8.1,
+      "summary": "Tiny issue-backed hosting-table fix is clean and thread-free; its four red checks are two unrelated failures plus gate propagation.",
+      "evidence": [
+        "3 files (+40/-1), 6 ahead / 6 behind main; tests and fragment included.",
+        "No local conflicts; 0 unresolved of 9 review threads; SQLAlchemy 2.1.0 metadata parsing and an unrelated workflow timeout caused the two root failures."
+      ],
+      "blocker": "Rerun the unrelated failed jobs, then re-review the stale changes request.",
+      "whose_move": "maintainer",
+      "chips": ["CI rerun", "issue #7300", "external failures"],
+      "override_reason": "Kept high despite red CI because both root failures are outside this three-file hosting-cli change."
+    },
+    {
+      "number": 7234,
+      "score": 7.9,
+      "summary": "React Compiler stack root is clean, fully green, tested, documented, thread-free, and untouched by peer maintainers.",
+      "evidence": [
+        "14 files (+650/-19), 4 ahead / 12 behind main; unit, Playwright, docs, and both required fragments included.",
+        "No local conflicts; 0 unresolved of 2 review threads; 145 checks, rollup SUCCESS."
+      ],
+      "blocker": "First root-first maintainer review and approval.",
+      "whose_move": "maintainer",
+      "chips": ["waiting on maintainer", "stack root", "no maintainer review"],
+      "override_reason": null
+    },
+    {
+      "number": 7388,
+      "score": 7.8,
+      "summary": "Tiny integration-logo update is clean, current-head approved, and thread-free, but its merge box remains blocked by two non-review requirements.",
+      "evidence": [
+        "4 files (+4/-0), 1 ahead / 0 behind main; asset-only change.",
+        "No local conflicts; 0 review threads; 145 successful and 2 skipped checks; current-head counting approval; merge state BLOCKED."
+      ],
+      "blocker": "Add the integrations-docs fragment and obtain the absent required Greptile Review status.",
+      "whose_move": null,
+      "chips": ["approved", "merge blocked", "missing fragment"],
+      "override_reason": "Ranked below clean review candidates because it needs no review time and has two non-review blockers."
+    },
+    {
+      "number": 7385,
+      "score": 7.6,
+      "summary": "New five-file workflow wake fix is clean and fully green, but two current bot findings and one outdated thread remain.",
+      "evidence": [
+        "5 files (+92/-13), 5 ahead / 0 behind main; tests and fragment included.",
+        "No local conflicts; 3 unresolved of 4 review threads; 148 checks, rollup SUCCESS; no maintainer interaction."
+      ],
+      "blocker": "Address the two current bot findings and clear the outdated thread.",
+      "whose_move": "author",
+      "chips": ["new PR", "three threads", "no maintainer review"],
+      "override_reason": null
+    },
+    {
+      "number": 7304,
+      "score": 7.4,
+      "summary": "Three-file issue-backed missing-package fix is clean and fully green; three of four remaining threads are outdated.",
+      "evidence": [
+        "3 files (+79/-1), 9 ahead / 58 behind main; tests and fragment included.",
+        "No local conflicts; 4 unresolved of 13 review threads; 144 checks, rollup SUCCESS; fixes #7258 filed by masenf."
+      ],
+      "blocker": "Resolve the one current import-registration finding and clear three outdated threads.",
+      "whose_move": "author",
+      "chips": ["issue #7258", "one current finding", "thread cleanup"],
+      "override_reason": null
+    },
+    {
+      "number": 6876,
+      "score": 7.2,
+      "summary": "First-time contributor's compact issue-backed hidden-input fix is locally clean, but Actions CI has never run.",
+      "evidence": [
+        "5 files (+97/-7), 7 ahead / 12 behind main; tests, pyi hash, and fragment included.",
+        "No local conflicts; only 2 bot checks and 0 Actions checks; 1 unresolved of 7 review threads; fixes #6874 filed by another user."
+      ],
+      "blocker": "Approve the workflow run.",
+      "whose_move": "maintainer",
+      "chips": ["workflow approval", "first-time contributor", "issue #6874"],
+      "override_reason": "Ranked for the cheap maintainer unblock; the two bot checks are not treated as green CI."
+    },
+    {
+      "number": 7344,
+      "score": 7.0,
+      "summary": "First-time contributor resolved all 16 threads on a tested forms fix, but Actions CI still awaits approval.",
+      "evidence": [
+        "5 files (+297/-2), 7 ahead / 49 behind main; tests, docs, pyi hash, and fragment included.",
+        "No local conflicts; only 2 bot checks and 0 Actions checks; 0 unresolved of 16 review threads."
+      ],
+      "blocker": "Approve the workflow run.",
+      "whose_move": "maintainer",
+      "chips": ["workflow approval", "first-time contributor", "thread-free"],
+      "override_reason": "Ranked for the cheap maintainer unblock; the two bot checks are not treated as green CI."
+    },
+    {
+      "number": 7345,
+      "score": 6.8,
+      "summary": "First-time contributor resolved all eight threads on a tested checkbox parity feature, but Actions CI still awaits approval.",
+      "evidence": [
+        "6 files (+283/-2), 4 ahead / 29 behind main; tests, pyi hash, and fragment included.",
+        "No local conflicts; only 2 bot checks and 0 Actions checks; 0 unresolved of 8 review threads."
+      ],
+      "blocker": "Approve the workflow run.",
+      "whose_move": "maintainer",
+      "chips": ["workflow approval", "first-time contributor", "thread-free"],
+      "override_reason": "Ranked for the cheap maintainer unblock; the two bot checks are not treated as green CI."
+    },
+    {
+      "number": 7379,
+      "score": 6.6,
+      "summary": "Workflow documentation and examples are clean, fully green, and thread-free after author follow-up, but the review is materially larger.",
+      "evidence": [
+        "21 files (+1,987/-16), 12 ahead / 2 behind main; 14 docs files, tests, and fragment included.",
+        "No local conflicts; 0 unresolved of 21 review threads; 148 checks, rollup SUCCESS."
+      ],
+      "blocker": "Dedicated maintainer review and approval.",
+      "whose_move": "maintainer",
+      "chips": ["waiting on maintainer", "docs", "larger review"],
+      "override_reason": "Held below compact reviews because it spans 21 files and nearly 2,000 added lines."
+    }
+  ],
+  "fast_lane": [
+    {"number": 7353, "summary": "Clean, full-green, current-head approved, and thread-free.", "blocker": "Merge it."},
+    {"number": 7322, "summary": "Three-file issue fix, clean, full-green, tested, and all 13 threads resolved.", "blocker": "Re-review and approve."},
+    {"number": 7323, "summary": "Three-file tested fix, clean, full-green, and all 17 threads resolved after a fresh push.", "blocker": "Re-review and approve."},
+    {"number": 7273, "summary": "Three-file tested optimization, clean, full-green, and all six threads resolved.", "blocker": "First approval."},
+    {"number": 7383, "summary": "Six-file tested fix, current with main, full-green, and all six threads resolved.", "blocker": "First approval."}
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {"number": 7353, "summary": "Current-head approved, clean, full-green, and thread-free.", "blocker": "Merge it."},
+      {"number": 7322, "summary": "Tiny issue fix is clean, full-green, and thread-free after author follow-up.", "blocker": "Re-review and clear the stale changes request."},
+      {"number": 7323, "summary": "Compact fix is clean, full-green, and thread-free after a fresh author push.", "blocker": "Re-review and clear the stale changes request."},
+      {"number": 7273, "summary": "Short clean/green optimization with every thread resolved.", "blocker": "First approval."},
+      {"number": 7383, "summary": "New clean/green tested fix is current with main and thread-free.", "blocker": "First approval."},
+      {"number": 7234, "summary": "Clean/green React Compiler stack root has both threads resolved.", "blocker": "First root-first maintainer review."},
+      {"number": 6876, "summary": "First-time contributor fork is locally clean and issue-backed, but Actions CI never ran.", "blocker": "Approve the workflow run."},
+      {"number": 7344, "summary": "First-time contributor resolved all 16 threads, but Actions CI never ran.", "blocker": "Approve the workflow run."},
+      {"number": 7345, "summary": "First-time contributor resolved all eight threads, but Actions CI never ran.", "blocker": "Approve the workflow run."}
+    ],
+    "author": []
+  },
+  "waiting_on_maintainer": [
+    {"number": 7353, "summary": "Current-head counting approval, clean merge, 145 successful and 3 skipped checks, all nine threads resolved, and newer author activity after the approval.", "blocker": "Merge it."},
+    {"number": 7323, "summary": "Author push on 2026-10-02 is newer than the last maintainer interaction; clean merge, 145 successful and 3 skipped checks, and all 17 threads resolved.", "blocker": "Re-review and approve."},
+    {"number": 7273, "summary": "Author activity is newer than the last maintainer interaction; clean merge, 142 successful and 3 skipped checks, and all six threads resolved.", "blocker": "First approval."},
+    {"number": 7383, "summary": "Author activity is newer than the last maintainer interaction; clean merge, 146 successful and 2 skipped checks, and all six threads resolved.", "blocker": "First approval."},
+    {"number": 7234, "summary": "No peer maintainer interaction yet; clean merge, 143 successful and 2 skipped checks, and both review threads resolved.", "blocker": "First root-first maintainer review."},
+    {"number": 7379, "summary": "Author activity is newer than the last maintainer interaction; clean merge, 146 successful and 2 skipped checks, and all 21 threads resolved.", "blocker": "Dedicated review and approval."},
+    {"number": 7356, "summary": "No peer maintainer interaction yet; clean merge, 145 successful and 3 skipped checks, and all 21 threads resolved, but the expected fragment is missing.", "blocker": "Dedicated review; request the missing fragment before merge."},
+    {"number": 7386, "summary": "No peer maintainer interaction yet; clean merge, 147 successful and 2 skipped checks, and all four threads resolved across a 34-file change.", "blocker": "Dedicated peer review and approval."}
+  ],
+  "never_maintainer_review": [
+    {"number": 7234, "summary": "No peer human maintainer interaction; clean, 143 successful and 2 skipped checks, 0 unresolved of 2 threads, 14 files.", "blocker": "First peer maintainer review."},
+    {"number": 7386, "summary": "No peer human maintainer interaction; clean, 147 successful and 2 skipped checks, 0 unresolved of 4 threads, 34 files.", "blocker": "First peer maintainer review."},
+    {"number": 7356, "summary": "No peer human maintainer interaction; clean, 145 successful and 3 skipped checks, 0 unresolved of 21 threads, 25 files.", "blocker": "First peer maintainer review; fragment is also missing."},
+    {"number": 7385, "summary": "No peer human maintainer interaction; clean, 145 successful and 3 skipped checks, 3 unresolved of 4 threads, 5 files.", "blocker": "Address review threads before first maintainer review."},
+    {"number": 7381, "summary": "No peer human maintainer interaction; clean, CI FAILURE (148 checks), 0 unresolved of 4 threads, 9 files.", "blocker": "Rerun or adjudicate the unrelated workflow timeout before first review."},
+    {"number": 7382, "summary": "No peer human maintainer interaction; clean, CI FAILURE (148 checks), 0 unresolved of 3 threads, 5 files.", "blocker": "Adjudicate workflow and Windows lock failures before first review."},
+    {"number": 7370, "summary": "No peer human maintainer interaction; clean, CI FAILURE (148 checks), 0 unresolved of 14 threads, 27 files.", "blocker": "Adjudicate the Redis lifespan timeout and CodSpeed regression before first review."},
+    {"number": 7113, "summary": "No peer human maintainer interaction; clean, CI FAILURE (145 checks), 0 unresolved of 12 threads, 10 files.", "blocker": "Fix or adjudicate Windows failures before first review."},
+    {"number": 7065, "summary": "No peer human maintainer interaction; clean, CI FAILURE (145 checks), 0 unresolved of 7 threads, 9 files.", "blocker": "Fix or adjudicate the CodSpeed regression before first review."},
+    {"number": 7272, "summary": "No peer human maintainer interaction; clean, sparse SUCCESS (10 checks), 0 unresolved of 6 threads, 27 files.", "blocker": "Review stack root #7234 before this child."},
+    {"number": 7233, "summary": "No peer human maintainer interaction; conflicts with main, CI FAILURE (145 checks), 3 unresolved of 4 threads, 8 files.", "blocker": "Resolve conflicts before first review."},
+    {"number": 6468, "summary": "No peer human maintainer interaction; conflicts with main, CI FAILURE (145 checks), 16 unresolved of 16 threads, 48 files.", "blocker": "Resolve conflicts and findings before first review."},
+    {"number": 7337, "summary": "No peer human maintainer interaction; conflicts with main, 124 successful and 2 skipped checks, 1 unresolved of 33 threads, 68 files.", "blocker": "Resolve conflicts before first review."},
+    {"number": 7052, "summary": "No peer human maintainer interaction; conflicts with main, 109 successful and 2 skipped checks, 0 unresolved of 4 threads, 10 files.", "blocker": "Resolve conflicts before first review."},
+    {"number": 7051, "summary": "No peer human maintainer interaction; conflicts with main, 109 successful and 2 skipped checks, 0 unresolved of 5 threads, 11 files.", "blocker": "Resolve conflicts before first review."},
+    {"number": 7007, "summary": "No peer human maintainer interaction; conflicts with main, 113 successful and 2 skipped checks, 9 unresolved of 9 threads, 11 files.", "blocker": "Resolve conflicts and review threads before first review."}
+  ],
+  "closure": [
+    {"number": 6125, "summary": "718 behind main, conflicting, no current CI, one unresolved thread, no tests, and no fragment across a three-file diff.", "keep_issue": 5830},
+    {"number": 6490, "summary": "484 behind main, conflicting, one unresolved thread, and both expected fragments missing across an 11-file diff.", "keep_issue": null},
+    {"number": 7040, "summary": "192 behind main, conflicting, full CI never ran, and three unresolved threads across a 13-file hard dependency switch.", "keep_issue": 7034}
+  ],
+  "stacks": [
+    {"chain": [7234, 7272], "note": "React Compiler stack: root #7234 is full-green and waiting for its first peer maintainer review; child #7272 has only ten checks, so review and land the root first."},
+    {"chain": [7079, 7113], "note": "Execution stack is locally clean but red: #7079 hit a Bun HTTP 500 and #7113 has two Windows test failures."},
+    {"chain": [7313, 7314, 7315], "note": "Speculative-state stack: root #7313 has seven CodSpeed regressions; children have sparse 17-check runs, open threads, and #7315 is red."},
+    {"chain": [6100, 7337], "note": "State-name-minification stack: both broad heads conflict with current main and retain unresolved findings."}
+  ],
+  "conflict_clusters": [
+    {"prs": [6840, 6853, 7036, 7033, 6796], "files": ["tests/units/test_state.py"], "note": "Exact 5-PR conflict cluster on tests/units/test_state.py."},
+    {"prs": [6688, 6932, 7033, 7219, 6116], "files": ["tests/units/utils/test_exec.py"], "note": "Exact 5-PR conflict cluster on tests/units/utils/test_exec.py."},
+    {"prs": [6688, 6932, 6116, 6733], "files": ["reflex/app.py"], "note": "Exact 4-PR conflict cluster on reflex/app.py."},
+    {"prs": [6688, 6932, 7144, 6733], "files": ["tests/units/test_app.py"], "note": "Exact 4-PR conflict cluster on tests/units/test_app.py."},
+    {"prs": [7054, 6116, 7052, 7051], "files": ["tests/units/test_prerequisites.py"], "note": "Exact 4-PR conflict cluster on tests/units/test_prerequisites.py."}
+  ],
+  "structural": [
+    {"number": 7386, "summary": "Strictly waiting on a peer maintainer, but 34 files and +1,212/-290 lines require a dedicated review block rather than scarce-time triage."},
+    {"number": 7356, "summary": "Strictly waiting and thread-free, but 25 files and +1,484 lines need a dedicated CI-infrastructure review; the expected reflex-bench fragment is also absent."},
+    {"number": 7370, "summary": "Broad 27-file runtime hot-path optimization reports 103 improved benchmarks but still has one 7.91% Redis regression plus a Redis lifespan timeout."}
+  ],
+  "patterns": [
+    {"title": "Counting approvals repo-wide: 3", "detail": "#7353 is clean, full-green, and current-head approved; #7388 is approved but blocked by a missing required Greptile Review status and fragment; #7054 also has a current-head approval but conflicts with main and retains a later changes-requested decision."},
+    {"title": "No maintainer interaction: 16 non-draft PRs", "detail": "Dedicated tab contains every open non-draft PR with no other human MEMBER, OWNER, or COLLABORATOR comment, review, or inline reply; maintainer-authored PRs require peer interaction to leave the queue."},
+    {"title": "Never reviewed by a human other than the author: 21", "detail": "#6116, #6468, #6853, #7007, #7036, #7051, #7052, #7056, #7065, #7113, #7219, #7233, #7234, #7272, #7337, #7356, #7370, #7381, #7382, #7385, #7386."},
+    {"title": "Strictly waiting on maintainer: 8", "detail": "#7353, #7323, #7273, #7383, #7234, #7379, #7356, and #7386 are clean, full-green, thread-free, and have newer author activity than the last maintainer interaction or no peer interaction yet."},
+    {"title": "Fork PRs whose full CI never ran: 10", "detail": "#6125, #6126, #6840, #6853, #6876, #7036, #7040, #7144, #7344, #7345."},
+    {"title": "Fragment problems: 6 PRs missing 7 expected fragments", "detail": "#7388, #7356, #6840, #6853, #6125, and #6490; #6490 is missing both root and reflex-base fragments."},
+    {"title": "Author concentration", "detail": "Top non-draft authors: FarhanAliRaza (19), benedikt-bartscher (6), harsh21234i (6), masenf (6), Alek99 (4), adhami3310 (3), flcrom (3)."},
+    {"title": "Conflict pressure", "detail": "24 of 59 non-draft PRs conflict with today's main."},
+    {"title": "Red checks: 19 PRs; reported pending: 0; missing required status: 1", "detail": "Red: #6468, #6688, #6796, #6841, #6932, #7056, #7064, #7065, #7079, #7113, #7233, #7308, #7313, #7315, #7340, #7366, #7370, #7381, #7382. No reported check is pending; #7388 is missing the required Greptile Review status."}
+  ],
+  "delta": {
+    "previous_run": "2026-10-01",
+    "merged": [7372, 7351, 7326, 7288, 7004, 6425],
+    "closed": [
+      {"number": 7371, "note": "closed without merge"},
+      {"number": 7349, "note": "closed without merge"},
+      {"number": 7206, "note": "closed without merge; superseded by #7381"}
+    ],
+    "opened": [7379, 7381, 7382, 7383, 7385, 7386, 7388],
+    "entered_top15": [7353, 7322, 7323, 7383, 7328, 7388, 7385, 7379],
+    "left_top15": [7326, 7371, 7349, 7351, 7219, 7308, 7366, 7288],
+    "newly_blocked": [
+      {"number": 7340, "note": "new head is red from SQLAlchemy 2.1.0 metadata parsing and an unrelated workflow timeout"}
+    ],
+    "newly_unblocked": [
+      {"number": 7353, "note": "new head is clean, full-green, thread-free, and current-head approved"},
+      {"number": 7322, "note": "new head resolved the conflict and all 13 threads with full-green CI"},
+      {"number": 7323, "note": "new head is full-green and all 17 threads are resolved"},
+      {"number": 7328, "note": "new head resolved the conflict, all ten prior open threads, and the red checks"}
+    ],
+    "draft_flips": [
+      {"number": 7356, "now_draft": false}
+    ]
+  },
+  "method": {
+    "notes": [
+      "Authenticated as masenf; listing reconciled 89 open PRs. All 59 non-drafts have current git measurements and current-head state: 39 live refreshes plus 20 unchanged green states carried under the incremental rule.",
+      "Git measurements and local merge-tree use main 52d1c1cc15980d27665f03ad50c88682b325cbac; local merge-tree is authoritative for clean versus conflicting.",
+      "Every previously red, newly changed, and workflow-gated PR was refreshed. All 19 red PRs have log-derived findings, including explicitly retained same-head findings only where the head and failing check names match.",
+      "Scarce-time ordering prioritizes compact issue-backed fixes with tests, full green CI, clean merges, and few unresolved findings; broad work is intentionally lower even when technically waiting on a maintainer.",
+      "A maintainer interaction is a human MEMBER, OWNER, or COLLABORATOR review, issue comment, or inline reply, excluding the PR author and known bots.",
+      "Waiting on maintainer requires a clean local merge, SUCCESS with at least 60 GitHub Actions checks, zero unresolved review threads, and author activity newer than the last maintainer interaction; creation is the baseline when there has been no peer maintainer interaction.",
+      "For the requested no-open-issues rule, open issues means unresolved review threads; linked product issues do not disqualify a fixing PR."
+    ],
+    "audit_corrections": [
+      "Re-fetched #7388 after audit: its reported checks are settled at 145 successful and 2 skipped, but merge state remains BLOCKED because the required Greptile Review status is absent; its card now shows both that and the missing fragment.",
+      "Removed #7388, #7385, and #7304 from one-fix-away because each has more than one outstanding action; the bucket count changed from 12 to 9.",
+      "Replaced aggregate 'green checks' counts with explicit successful and skipped counts where the rollup included skipped jobs."
+    ],
+    "caveats": [
+      "Latest PR commit timestamps are used as the push-time proxy because GitHub commit objects do not expose a separate pushed timestamp here.",
+      "Sparse partial check suites are not treated as full green CI even when their limited rollup says SUCCESS.",
+      "#6876, #7344, and #7345 need workflow approval; their current SUCCESS rollups cover only two bot checks."
+    ]
+  }
+}

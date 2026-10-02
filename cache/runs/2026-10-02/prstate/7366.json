@@ -1,0 +1,370 @@
+{
+  "number": 7366,
+  "fetched_at": "2026-10-02T16:45:47Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "f6ac227df3aee5b9cad775beed40e7f0f64b5c31",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7257,
+      "title": "recharts Axis.tick_formatter accepts only a Python literal string: a FunctionStringVar raises TypeError and a State str var would be emitted as a quoted string",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T15:00:42Z",
+      "can_push": true,
+      "commit_id": "169df36301af15ca5690f87740bef268cc614251"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T15:02:28Z",
+      "can_push": true,
+      "commit_id": "169df36301af15ca5690f87740bef268cc614251"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T18:38:33Z",
+      "can_push": true,
+      "commit_id": "950ab454250d50d90529c0a9e2a18876ac3e75a0"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T03:29:26Z",
+      "can_push": false,
+      "commit_id": "950ab454250d50d90529c0a9e2a18876ac3e75a0"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "DISMISSED",
+      "at": "2026-10-01T18:24:01Z",
+      "can_push": true,
+      "commit_id": "342dad8ae1be39c7bf2a064233eb922e7c56dc72"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T18:24:31Z",
+      "can_push": true,
+      "commit_id": "342dad8ae1be39c7bf2a064233eb922e7c56dc72"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T18:29:03Z",
+      "can_push": true,
+      "commit_id": "342dad8ae1be39c7bf2a064233eb922e7c56dc72"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T18:30:23Z",
+      "can_push": true,
+      "commit_id": "342dad8ae1be39c7bf2a064233eb922e7c56dc72"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T18:52:22Z",
+      "can_push": true,
+      "commit_id": "38cff9c698a15c60608f50e014cd01f935091f3c"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T18:52:24Z",
+      "can_push": true,
+      "commit_id": "38cff9c698a15c60608f50e014cd01f935091f3c"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T18:52:26Z",
+      "can_push": true,
+      "commit_id": "38cff9c698a15c60608f50e014cd01f935091f3c"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T18:52:27Z",
+      "can_push": true,
+      "commit_id": "38cff9c698a15c60608f50e014cd01f935091f3c"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-10-01T18:52:36Z",
+      "can_push": true,
+      "commit_id": "38cff9c698a15c60608f50e014cd01f935091f3c"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T18:59:31Z",
+      "can_push": true,
+      "commit_id": "38cff9c698a15c60608f50e014cd01f935091f3c"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 11,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please remove this branch. It rejects a plain `rx.Var` with type `Any`, and that input works on `main`.\n\n`XAxis.create(tick_formatter=rx.Var(\"((v) => v)\"))` renders `tickFormatter:((v) => v)` on `main"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please remove the `FunctionVar` branch and the callable branch. The framework already does both of these checks.\n\n- The `FunctionVar` branch puts back the value that is already in `props`. The new ann"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "`create()` now raises `TypeError` here. Please add a `Raises:` section to the `Axis.create` docstring. The summary line talks only about string formatters, so please update it to describe function var"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please move these tests into `tests/units/components/recharts/test_cartesian.py`. That file already has the `tick_formatter` tests, including the tests that reject non-callables and Python callables."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 143
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.15)"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T15:02:09Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=72132583\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-30T15:09:46Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 146` untouched benchmarks  \n`⏩ 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-02T11:41:10Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T15:00:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T15:00:42Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T15:02:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T15:02:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T15:02:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-30T15:09:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T18:38:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T18:38:33Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T03:29:26Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:24:01Z",
+      "state": "dismissed"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T18:24:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T18:24:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:29:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T18:30:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T18:30:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:26Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:27Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:52:36Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T18:59:30Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "cause": "Aggregate gate failed because unit-tests=failure; it did not expose an independent failure."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "cause": "test_the_conversation_carries_on_while_a_transfer_waits timed out waiting for its condition in tests/units/reflex_workflow/examples/test_ex13_conversation.py. The PR does not change this test or its reflex_workflow code."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-02T11:41:10Z",
+  "last_maintainer_activity_at": "2026-10-01T18:59:30Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

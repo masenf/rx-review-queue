@@ -1,0 +1,212 @@
+{
+  "number": 7040,
+  "fetched_at": "2026-10-02T16:45:35Z",
+  "author_login": "ProgrammerPlus1998",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "ProgrammerPlus1998/reflex",
+  "head_sha": "bccf225f713b8eb2115ccf3518a9b940316a90c7",
+  "mergeable": "CONFLICTING",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7034,
+      "title": "[HTTPXodus] Consider migrating from `httpx` to `httpx2` (the actively maintained fork)",
+      "filed_by": "ProgrammerPlus1998"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-03T04:18:16Z",
+      "can_push": true,
+      "commit_id": "b965d6f8597128922d47232379d6c71f86983746"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-04T18:33:53Z",
+      "can_push": true,
+      "commit_id": "471b42b5a67cab28463db55af18c9f54a8e5349e"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T10:36:47Z",
+      "can_push": true,
+      "commit_id": "fb487050ebf438eb154d3dfa44c9504ad97dbd1c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-09T08:52:31Z",
+      "can_push": true,
+      "commit_id": "e71e2e56e9695fe860f0231302cd511f2c5269e8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T06:47:54Z",
+      "can_push": true,
+      "commit_id": "bccf225f713b8eb2115ccf3518a9b940316a90c7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1396b93c-e852-4702-8a1f-b99374d06e25 -->\n<!-- cubic:review-run=867a2690-5f0f-568e-bdbb-d6b0c1ef176f -->\n<!-- metadata:{\"confidence\":8} -->\nP3: The comment block just above this import sti"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Required News Fragment Missing**\n\nThis hard switch changes the runtime HTTP depende"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Testing extra metadata remains stale**\n\nWhen root-package dependency tooling reads "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-03T04:16:39Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=59823551\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-03T15:46:55Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.63%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "ProgrammerPlus1998",
+      "association": "NONE",
+      "at": "2026-09-10T06:45:38Z",
+      "excerpt": "Both greptile findings addressed in bccf225:\n\n- **P1 (lockfile)**: removed the stale `testing` extra block from the `reflex` entry in `uv.lock` — it was carried"
+    }
+  ],
+  "head_activity_at": "2026-09-10T06:45:01Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-03T04:16:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-03T04:18:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-03T04:18:17Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-03T15:46:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-04T18:33:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T10:36:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T10:36:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-09T08:52:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-09T08:52:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-09T08:52:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "ProgrammerPlus1998",
+      "association": "NONE",
+      "at": "2026-09-10T06:45:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T06:47:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T06:47:54Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [
+    "reflex/custom_components/custom_components.py",
+    "reflex/utils/telemetry.py",
+    "tests/units/test_telemetry.py",
+    "uv.lock"
+  ],
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-09-10T06:45:38Z",
+  "last_maintainer_activity_at": "2026-09-04T18:33:53Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

@@ -1,0 +1,179 @@
+{
+  "number": 7382,
+  "fetched_at": "2026-10-02T16:45:56Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "24af23ad96115fbdd6bfa4c46b9e6cc30bca53fc",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:15:36Z",
+      "can_push": true,
+      "commit_id": "9f357cbca8664402e0d73564b156ef3d64d3ece9"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:19:39Z",
+      "can_push": true,
+      "commit_id": "9f357cbca8664402e0d73564b156ef3d64d3ece9"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:25:43Z",
+      "can_push": true,
+      "commit_id": "9f357cbca8664402e0d73564b156ef3d64d3ece9"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:25:45Z",
+      "can_push": true,
+      "commit_id": "9f357cbca8664402e0d73564b156ef3d64d3ece9"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:25:47Z",
+      "can_push": true,
+      "commit_id": "9f357cbca8664402e0d73564b156ef3d64d3ece9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 3,
+      "SKIPPED": 3,
+      "SUCCESS": 142
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (windows-latest, 3.12)"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:15:29Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73168439\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-01T23:23:15Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 146` untouched benchmarks  \n`⏩ 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-01T23:25:29Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:15:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:15:35Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:15:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:19:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:19:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:19:40Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-01T23:23:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T23:25:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T23:25:45Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T23:25:47Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "cause": "The aggregate gate logged `Blocking job results: unit-tests=failure`; failed matrix legs were unit-tests on ubuntu-latest/Python 3.14 and windows-latest/Python 3.12."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.14)",
+      "cause": "tests/units/reflex_workflow/examples/test_ex13_conversation.py::test_the_conversation_carries_on_while_a_transfer_waits raised `AssertionError: condition not met before timeout` (1 failed, 1041 passed)."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.12)",
+      "cause": "tests/units/test_state.py::test_state_manager_lock_warning_threshold_contend raised LockExpiredError after the Redis lock expired with lock_expiration=2500 (1 failed, 11089 passed)."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-01T23:25:47Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

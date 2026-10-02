@@ -1,0 +1,194 @@
+{
+  "number": 6853,
+  "fetched_at": "2026-10-02T16:46:17Z",
+  "author_login": "qubydev",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "qubydev/reflex",
+  "head_sha": "cff19a4ce8bf42c6be15fae50c0d6dfd92dfa3f9",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6848,
+      "title": "Redundant per-substate lock checks in `set_state`",
+      "filed_by": "PJ-Snap"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-06T20:51:37Z",
+      "can_push": true,
+      "commit_id": "cff19a4ce8bf42c6be15fae50c0d6dfd92dfa3f9"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-06T20:53:54Z",
+      "can_push": true,
+      "commit_id": "cff19a4ce8bf42c6be15fae50c0d6dfd92dfa3f9"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-06T21:10:58Z",
+      "can_push": true,
+      "commit_id": "cff19a4ce8bf42c6be15fae50c0d6dfd92dfa3f9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Lock ownership expires during fan-out**\n\nIf the session lock expires and another ev"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Preserve lock checks for recursive writes**\n\nWhen a large fan-out takes longer than `lock_expiration` after the "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T20:50:04Z",
+      "excerpt": "Would love to know your thoughts on this @harsh21234i "
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T20:51:33Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR reduces Redis lock-check round trips by validating ownership once at the root of `StateManagerRedis.set_state` and propagatin"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-07T07:17:44Z",
+      "excerpt": "Hey @qubydev  Thanks for reaching out. The reduction in Redis round-trips makes sense, but the current lock_checked=True propagation appears unsafe because the "
+    },
+    {
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-07T07:25:21Z",
+      "excerpt": "> Hey @qubydev Thanks for reaching out. The reduction in Redis round-trips makes sense, but the current lock_checked=True propagation appears unsafe because the"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T14:20:02Z",
+      "excerpt": "Thanks for this. Main still checks the lock once per loaded substate, so the fix is still needed. I measured it end to end: full websocket round trips on a prod"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T14:21:50Z",
+      "excerpt": "Can you please resolve the conflicts. "
+    }
+  ],
+  "head_activity_at": "2026-08-06T20:35:10Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T20:50:04Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T20:51:33Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T20:51:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T20:51:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-08-06T20:53:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-08-06T20:53:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-06T21:10:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-07T07:17:44Z"
+    },
+    {
+      "kind": "comment",
+      "by": "qubydev",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-07T07:25:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T14:20:02Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T14:21:50Z"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/test_state.py"
+  ],
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-08-07T07:25:21Z",
+  "last_maintainer_activity_at": "2026-09-30T14:21:50Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

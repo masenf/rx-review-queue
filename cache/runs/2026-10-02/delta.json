@@ -1,0 +1,124 @@
+{
+ "previous_run": "2026-10-01",
+ "disappeared": [
+  {
+   "number": 6425,
+   "title": "delete custom components",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7004,
+   "title": "fix: avoid duplicating inner tag in MemoComponent wrapper tag",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7206,
+   "title": "Reject inherited state var shadowing through mixins",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7288,
+   "title": "reflex-workflow: durable workflows on the application's own tables",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7326,
+   "title": "fix: negative-step Var slices at -1 and slices with a Var step",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7349,
+   "title": "fix(hosting-cli): keep long app table values readable",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7351,
+   "title": "fix(hosting-cli): keep app and deployment ids copyable in tables",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7371,
+   "title": "fix(sdk): wait for recorded deployment state after completion message",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7372,
+   "title": "Fix oplock lease race with the lock updates subscriber; deflake phase timing test",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7379,
+   "title": "docs: add a Workflows section for reflex-workflow",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7381,
+   "title": "Reject clashing mixin vars; let mixin vars without a default use the parent's",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7382,
+   "title": "Fix wake to wait for inflight steps before returning",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7383,
+   "title": "reflex-site-shared: keep inline markup in Markdown links and headings",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7385,
+   "title": "reflex-workflow: wake waits for the steps it started to finish",
+   "author": "adhami3310",
+   "draft": false
+  },
+  {
+   "number": 7386,
+   "title": "Build form_data from field names only",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7388,
+   "title": "ENG-12795: logos for the Outlook Mail and OneDrive integration cards",
+   "author": "FarhanAliRaza",
+   "draft": false
+  }
+ ],
+ "draft_flips": [
+  {
+   "number": 7356,
+   "now_draft": false
+  }
+ ],
+ "entered_top15": [
+  7353,
+  7322,
+  7323,
+  7383,
+  7328,
+  7388,
+  7385,
+  7379
+ ],
+ "left_top15": [
+  7326,
+  7371,
+  7349,
+  7351,
+  7219,
+  7308,
+  7366,
+  7288
+ ],
+ "counts": {
+  "previous_open": 91,
+  "current_open": 89
+ }
+}
