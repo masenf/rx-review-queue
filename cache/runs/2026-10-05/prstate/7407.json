@@ -1,0 +1,106 @@
+{
+  "number": 7407,
+  "fetched_at": "2026-10-05T17:53:15Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "8d528bc71ff2396577fd4a0661bab5e0de7bf371",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T23:44:04Z",
+      "can_push": true,
+      "commit_id": "6861cb56dc98c3ef60ea3de0da81907674cca539"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T10:57:35Z",
+      "can_push": true,
+      "commit_id": "979aba039bf35794de04d1a3f2dee03d3d2819f2"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 148,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 145
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T23:45:58Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74193961\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T23:49:04Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 150` untouched benchmarks  \n`\u23e9 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-04T11:05:12Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T23:44:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T23:45:58Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T23:49:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T10:57:35Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T10:57:35Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-04T11:05:12Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 1
+}

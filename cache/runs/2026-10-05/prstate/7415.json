@@ -1,0 +1,121 @@
+{
+  "number": 7415,
+  "fetched_at": "2026-10-05T17:58:20Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "a846d358d3195d73bf9d2e55eff55392eb6e26a9",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7251,
+      "title": "A self-chaining event loop started from on_load keeps running after the client disconnects, logging \"Attempting to send delta to disconnected client\" once per tick",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:25:41Z",
+      "can_push": true,
+      "commit_id": "473b4b6e62c004e8b72a2182f9dedb198146db4e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:26:40Z",
+      "can_push": true,
+      "commit_id": "473b4b6e62c004e8b72a2182f9dedb198146db4e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T21:21:09Z",
+      "can_push": true,
+      "commit_id": "fcb2ce913589681e627d5269ff01294687cac08a"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:26:36Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74457594\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-04T21:30:26Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:25:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:26:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:26:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:26:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T21:21:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T21:21:09Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-04T21:30:26Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

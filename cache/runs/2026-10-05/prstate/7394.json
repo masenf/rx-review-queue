@@ -1,0 +1,159 @@
+{
+  "number": 7394,
+  "fetched_at": "2026-10-05T17:44:15Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "2380042ae07ea0efb491fde2a8c8bc08d1f54ec4",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T22:43:23Z",
+      "can_push": true,
+      "commit_id": "2380042ae07ea0efb491fde2a8c8bc08d1f54ec4"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T22:48:30Z",
+      "can_push": true,
+      "commit_id": "2380042ae07ea0efb491fde2a8c8bc08d1f54ec4"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Bare Python invocation** The new push-event branch runs the evaluator with bare `py"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Push handling lacks tests** The new push branch chooses a compare range, handles an"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=fa262346-7cd8-4a55-88c6-67f98c266ff7 -->\n<!-- cubic:review-run=318a675a-ef58-502c-ab1b-6ebf007f00d6 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: `gh api` failure aborts this step before `ch"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=02d113c0-909f-46ec-b311-a7766c6ad50b -->\n<!-- cubic:review-run=318a675a-ef58-502c-ab1b-6ebf007f00d6 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: `docker-examples/**` never matches: the dire"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=eb2b72b2-cb60-4830-a41e-75719701e04f -->\n<!-- cubic:review-run=318a675a-ef58-502c-ab1b-6ebf007f00d6 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: The `DOCS_ONLY_IGNORE` fixture under-models "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b7e7340f-e76e-4fea-a014-6fcd63b500fc -->\n<!-- cubic:review-run=318a675a-ef58-502c-ab1b-6ebf007f00d6 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: `docker-examples/**` references a directory "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a0ad8544-f8a7-49ac-ac18-6fdc65c54fb2 -->\n<!-- cubic:review-run=318a675a-ef58-502c-ab1b-6ebf007f00d6 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: `!**/*.md` also excludes Markdown inside the"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=29e40661-401b-4441-913f-302ad8394754 -->\n<!-- cubic:review-run=318a675a-ef58-502c-ab1b-6ebf007f00d6 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Add action-level tests for push range select"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4f27e3d3-8325-4d8b-9399-7c8f54e7137e -->\n<!-- cubic:review-run=318a675a-ef58-502c-ab1b-6ebf007f00d6 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: The `own` list hardcodes `{action}/action.ym"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 150,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 148
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 146
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:19Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73816340\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-02T22:50:22Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 150` untouched benchmarks  \n`\u23e9 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-02T22:24:50Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-02T22:50:22Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-02T22:38:39Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

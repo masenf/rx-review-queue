@@ -1,0 +1,111 @@
+{
+  "number": 7416,
+  "fetched_at": "2026-10-05T17:58:24Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "27ddc54d801dbbbc25bf83ef45efa9f53f23596a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7252,
+      "title": "Dev \"reflex run\" prints \"Backend running at \u2026\" / \"App running at \u2026\" and idles after the app module raised at import",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:49:42Z",
+      "can_push": true,
+      "commit_id": "a4cde41f927acf2620bb8e90c14db37d4cd2072b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:49:51Z",
+      "can_push": true,
+      "commit_id": "a4cde41f927acf2620bb8e90c14db37d4cd2072b"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:46Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74464222\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-04T20:55:27Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:49Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:51Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-04T20:55:27Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

@@ -1,0 +1,136 @@
+{
+  "number": 7405,
+  "fetched_at": "2026-10-05T17:53:10Z",
+  "author_login": "JohannesGezachew",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "JohannesGezachew/reflex",
+  "head_sha": "66b4c56a2d261f9b3d12285dc6307f3e98d965cf",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7249,
+      "title": "CDN fallback URL for an unbundled sub-path @rx.dynamic import is malformed (\".../+esm/dist/esm/icons/bug.mjs\")",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T18:31:23Z",
+      "can_push": true,
+      "commit_id": "66b4c56a2d261f9b3d12285dc6307f3e98d965cf"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T18:31:41Z",
+      "can_push": true,
+      "commit_id": "66b4c56a2d261f9b3d12285dc6307f3e98d965cf"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=07503ce7-506e-40c1-959a-fe5b98c22d17 -->\n<!-- cubic:review-run=60f88914-4388-57c1-9d2e-3cbb0f6e5616 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Both `is_default` cases assert only this sha"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 143
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.14)"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.14)",
+      "job": "111265377653",
+      "run": "37144401136",
+      "cause": "Root Actions failure: tests/units/reflex_workflow/examples/test_ex13_conversation.py::test_the_conversation_carries_on_while_a_transfer_waits timed out with 'condition not met before timeout'; 1 test failed and 1,041 passed. The PR changes dynamic CDN fallback code and its compiler test, not reflex_workflow code or this test."
+    },
+    {
+      "check": "unit-tests-gate",
+      "job": "111269549882",
+      "run": "37144401136",
+      "cause": "Downstream gate propagation only: the gate log received unit-tests=failure and exited with 'Blocking job results: unit-tests=failure'; it did not expose an independent root failure."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:32:01Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74110348\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T18:39:32Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 150` untouched benchmarks  \n`\u23e9 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-03T18:29:38Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:31:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:31:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:31:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:32:01Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T18:39:32Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-03T18:29:38Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

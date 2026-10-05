@@ -1,0 +1,375 @@
+{
+  "number": 7308,
+  "fetched_at": "2026-10-05T17:44:08Z",
+  "author_login": "flcrom",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "flcrom/reflex",
+  "head_sha": "3fa7faddc48eb318333566f8c41f20ef0408b63a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7017,
+      "title": "State var default of dataclasses.field(...) fails with TypeError: cannot pickle 'mappingproxy' object",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:20:36Z",
+      "can_push": true,
+      "commit_id": "806b58866fcb482b530baf4cfef0f91b2148f69c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:23:28Z",
+      "can_push": true,
+      "commit_id": "806b58866fcb482b530baf4cfef0f91b2148f69c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:17:20Z",
+      "can_push": true,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:18:10Z",
+      "can_push": true,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:52Z",
+      "can_push": false,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:53Z",
+      "can_push": false,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:31:20Z",
+      "can_push": true,
+      "commit_id": "b3a06ca20fb7b48c8815c9ff945d1721e448894b"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:03:40Z",
+      "can_push": false,
+      "commit_id": "b3a06ca20fb7b48c8815c9ff945d1721e448894b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:06:59Z",
+      "can_push": true,
+      "commit_id": "2236cced370a7f35bbd59587bedaebb9d3bfb032"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T19:55:29Z",
+      "can_push": true,
+      "commit_id": "2236cced370a7f35bbd59587bedaebb9d3bfb032"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T19:56:31Z",
+      "can_push": true,
+      "commit_id": "2236cced370a7f35bbd59587bedaebb9d3bfb032"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T20:02:41Z",
+      "can_push": true,
+      "commit_id": "d57af234dbf348a7c15139e8ac1b0da10447ecc8"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T20:03:08Z",
+      "can_push": true,
+      "commit_id": "2236cced370a7f35bbd59587bedaebb9d3bfb032"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T07:48:41Z",
+      "can_push": true,
+      "commit_id": "fd6e635216c0051b87536ceb7ce03310d1e6328c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T07:54:30Z",
+      "can_push": true,
+      "commit_id": "fd6e635216c0051b87536ceb7ce03310d1e6328c"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=366cf796-c8aa-4b11-9f6a-9c992e44af8f -->\n<!-- cubic:review-run=16108169-2cc4-5453-9158-96c84eb97ade -->\n<!-- metadata:{\"confidence\":7} -->\nP2: Unannotated `dataclasses.field(default=mutab"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Hardcoded dictionary key** The new test repeats `\"nested\"` as a dictionary key in i"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=73d6e19e-cf84-4739-98c5-95d6a0675c86 -->\n<!-- cubic:review-run=6fe2d487-10c8-53bc-9c82-75f291d8eb20 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Both parameter runs register a state with th"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 140
+    },
+    "failing": [
+      "build-packages-gate",
+      "check-min-deps (reflex-otel, 3.14)"
+    ],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-24T10:21:56Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 147` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:23Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68609457\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T09:10:02Z",
+      "excerpt": "Could a maintainer rerun the failed build jobs? Setup timed out downloading Plotly 7.1.0 from PyPI after three retries, before the minimum-dependency check ran."
+    }
+  ],
+  "head_activity_at": "2026-10-01T08:15:36Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:20:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-24T10:21:56Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:17:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:17:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:18:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:18:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:31:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:31:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:03:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:06:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:06:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T19:55:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T19:56:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T20:02:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T20:03:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T07:48:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T07:48:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T07:54:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T07:54:30Z"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T09:10:02Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "check-min-deps (reflex-otel, 3.14); build-packages-gate",
+      "job_id": 110282575310,
+      "run_id": 36835213735,
+      "cause": "The root Actions job failed during uv sync because plotly==7.1.0 could not be downloaded from files.pythonhosted.org after three retries and a 124.3-second timeout. build-packages-gate only propagated check-min-deps=failure."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-01T09:10:02Z",
+  "last_maintainer_activity_at": "2026-09-30T20:03:08Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

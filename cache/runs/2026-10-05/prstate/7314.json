@@ -1,0 +1,518 @@
+{
+  "number": 7314,
+  "fetched_at": "2026-10-01T17:32:05Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "5977e24ed6b6d669abeaa134c75c3a973c37a086",
+  "mergeable": "CONFLICTING",
+  "merge_state": "CLEAN",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T17:53:47Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:01:08Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:18Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:20Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:22Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:24Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:25Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:28Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:29Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:31Z",
+      "can_push": true,
+      "commit_id": "e2c2aebbf268222a99c227cf7bf75c03bd0b2b97"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:38:53Z",
+      "can_push": true,
+      "commit_id": "1e8341d08f201398590bb4c8d55f931f3f292938"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T23:46:44Z",
+      "can_push": true,
+      "commit_id": "6fc156ffb46015eb0ca91aa49b38c7a4798f2e4c"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-24T23:47:06Z",
+      "can_push": true,
+      "commit_id": "6fc156ffb46015eb0ca91aa49b38c7a4798f2e4c"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T00:04:41Z",
+      "can_push": true,
+      "commit_id": "359cddc4cafff38966c8b5568966970fd767d60b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:32:49Z",
+      "can_push": true,
+      "commit_id": "e835145fb38f92142088da507e6c102b787b0e98"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:43:16Z",
+      "can_push": true,
+      "commit_id": "84b25e2cae634a9f2597eb3e569d093ce35fb15b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:06Z",
+      "can_push": true,
+      "commit_id": "84b25e2cae634a9f2597eb3e569d093ce35fb15b"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:20Z",
+      "can_push": true,
+      "commit_id": "84b25e2cae634a9f2597eb3e569d093ce35fb15b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:59Z",
+      "can_push": true,
+      "commit_id": "84b25e2cae634a9f2597eb3e569d093ce35fb15b"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T22:02:25Z",
+      "can_push": true,
+      "commit_id": "af98facf0807709468d7e6080de778f587ea2e25"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:00:36Z",
+      "can_push": true,
+      "commit_id": "b42aa38714bc69215c1d977c087d16497091ab13"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-28T19:03:59Z",
+      "can_push": true,
+      "commit_id": "9ac88feae348e682e07ac717c6a7d1e3536b92c1"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 16,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This makes the result depend on the state manager.\n\nA background task gets another state outside the lock, then writes it inside the block:\n\n```python\nother = await self.get_state(OtherState)\nasync wi"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This check runs on every tracked field write and every proxy mutation, so it is on the hottest path. Each call walks to the root, reads the ContextVar, and then `holds()` builds a generator for `any()"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "With redis or disk, this runs on every `async with self` enter and exit. Each time it walks the full MRO and rebuilds the slot names.\n\n`_stale_pickle_keys` already caches the slot names per class. Ple"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 17,
+    "by_state": {
+      "CANCELLED": 3,
+      "SUCCESS": 14
+    },
+    "failing": [
+      "playground-0.8.23",
+      "playground-head",
+      "size-budgets"
+    ],
+    "pending": [],
+    "actions_total": 14
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:51:25Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68843043\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-24T19:43:08Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 147` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:09:50Z",
+      "excerpt": "**CodSpeed Performance Analysis** is red on 1e8341d08. Compared with #7313:\n- `test_get_state_uncached[memory]` is 4.6% slower.\n- `test_process_event_burst_inde"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T00:18:52Z",
+      "excerpt": "Correction to my earlier comment. `test_get_state_uncached[memory]` came in 5\u20137% slower in three runs in a row, so it wasn't noise. Moving the bookkeeping into "
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T02:02:26Z",
+      "excerpt": "**CodSpeed Performance Analysis** is red on c014b00: `read_inherited` is 6.7% slower, `read_own` 4.4% and `get_handler` 4.2%, while `burst_independent_tokens[1]"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T18:46:46Z",
+      "excerpt": "CodSpeed on b3d8123 flags `test_route_argument_extraction` (-4.3%/-4.9%) and, in its first report only, `test_state_access[read_inherited]` (-4.3%). I believe n"
+    }
+  ],
+  "head_activity_at": "2026-09-30T22:46:24Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:51:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:53:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:53:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T18:01:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T18:01:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T18:07:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T18:07:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T18:07:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T18:07:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T18:07:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T18:07:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T18:07:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T18:07:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T19:38:53Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-24T19:43:08Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T20:09:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T23:46:44Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T23:46:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-24T23:47:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T00:04:41Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T00:18:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T02:02:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:32:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:32:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:43:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:47:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:47:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:47:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:47:59Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T18:46:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T22:02:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T22:02:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-25T23:00:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T19:03:59Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T19:03:59Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "playground-0.8.23",
+      "cause": "GitHub Actions cancelled the job before execution because a higher-priority waiting request for examples-4629136275 existed; no playground result was produced."
+    },
+    {
+      "check": "playground-head",
+      "cause": "GitHub Actions cancelled the job before execution because a higher-priority waiting request for examples-4629136275 existed; no playground result was produced."
+    },
+    {
+      "check": "size-budgets",
+      "cause": "GitHub Actions cancelled the job before execution because a higher-priority waiting request for size-budgets-4629136275 existed; no size-budget result was produced."
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/event/context.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "reflex/app.py",
+    "reflex/istate/manager/token.py",
+    "reflex/istate/proxy.py",
+    "reflex/istate/shared.py",
+    "reflex/state.py",
+    "tests/units/reflex_base/state/test_proxy.py"
+  ],
+  "last_author_activity_at": "2026-09-30T22:46:24Z",
+  "last_maintainer_activity_at": "2026-09-28T19:03:59Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

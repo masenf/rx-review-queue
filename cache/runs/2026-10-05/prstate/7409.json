@@ -1,0 +1,79 @@
+{
+  "number": 7409,
+  "fetched_at": "2026-10-05T17:53:11Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "872cd61c93051cfc5852e5d578aaa302061645fb",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7244,
+      "title": "rx.upload_files() from a toast action or call_script callback throws \"ReferenceError: filesById is not defined\" (the scenario #7156's changelog names)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T15:54:25Z",
+      "can_push": true,
+      "commit_id": "872cd61c93051cfc5852e5d578aaa302061645fb"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:55:37Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74400772\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-04T15:52:08Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:54:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:55:37Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-04T15:52:36Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

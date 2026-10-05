@@ -1,0 +1,161 @@
+{
+  "number": 7404,
+  "fetched_at": "2026-10-05T17:51:25Z",
+  "author_login": "JohannesGezachew",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "JohannesGezachew/reflex",
+  "head_sha": "72c880297aa76ef97ed622f9920009491fc00742",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7245,
+      "title": "A non-UTF-8 stateful_pages.json marker crashes every backend start; _read_stateful_pages_marker() only catches JSONDecodeError",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T18:24:21Z",
+      "can_push": true,
+      "commit_id": "7c17f79cfef03d30f8d9d206ece5b2a134393a7e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T18:24:41Z",
+      "can_push": true,
+      "commit_id": "7c17f79cfef03d30f8d9d206ece5b2a134393a7e"
+    },
+    {
+      "by": "JohannesGezachew",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T18:28:59Z",
+      "can_push": false,
+      "commit_id": "72c880297aa76ef97ed622f9920009491fc00742"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 3,
+      "SKIPPED": 3,
+      "SUCCESS": 142
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.10)"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10)",
+      "job_id": 111265173058,
+      "run_id": 37144336842,
+      "details_url": "https://github.com/reflex-dev/reflex/actions/runs/37144336842/job/111265173058",
+      "cause": "Root Actions failure: tests/units/test_state.py::test_state_manager_lock_expire_contend raised LockExpiredError after the current lock id became None; pytest reported 1 failed and 12152 passed. The PR changes the compiler's stateful-pages marker decoding and its compiler test, not the failing state-manager test."
+    },
+    {
+      "check": "unit-tests-gate",
+      "job_id": 111269640340,
+      "run_id": 37144336842,
+      "details_url": "https://github.com/reflex-dev/reflex/actions/runs/37144336842/job/111269640340",
+      "cause": "Gate propagation only: the log says 'Blocking job results: unit-tests=failure'; it exposes no independent failure."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 111267111347,
+      "job_id": null,
+      "run_id": null,
+      "details_url": "https://app.codspeed.io/reflex-dev/reflex/branches/JohannesGezachew%3Afix-stateful-pages-marker-decode?utm_source=github&utm_medium=check&utm_content=details",
+      "cause": "External CodSpeed root failure: test_state_access[read_cached_computed] regressed from 110.4 ms to 119.3 ms (-7.43%); 149 benchmarks were unchanged and 18 skipped. CodSpeed warns that the compared runtime environments differ, and this is not a GitHub Actions job."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:24:37Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74108711\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T18:33:40Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 7.43%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    }
+  ],
+  "head_activity_at": "2026-10-03T18:28:33Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:24:21Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:24:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:24:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:24:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:24:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "JohannesGezachew",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T18:28:59Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T18:33:40Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-03T18:28:59Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

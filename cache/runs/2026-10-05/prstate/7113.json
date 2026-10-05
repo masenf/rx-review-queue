@@ -1,0 +1,377 @@
+{
+  "number": 7113,
+  "fetched_at": "2026-10-05T17:43:58Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "bba7657083c46025fd301af58f05f6f5f5e9261d",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-11T15:20:15Z",
+      "can_push": true,
+      "commit_id": "3d7695930d639f600fc7603797973e97b38e5f4e"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-11T15:21:03Z",
+      "can_push": true,
+      "commit_id": "9824978dbc2d621d08f456ddd3d1f425a0922472"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-11T15:27:25Z",
+      "can_push": true,
+      "commit_id": "3d7695930d639f600fc7603797973e97b38e5f4e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:56:59Z",
+      "can_push": true,
+      "commit_id": "075d4fa147e0f574d190a95e26020c792c303cc4"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:58:54Z",
+      "can_push": true,
+      "commit_id": "075d4fa147e0f574d190a95e26020c792c303cc4"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T00:22:40Z",
+      "can_push": true,
+      "commit_id": "a22327843d2a6cf056656e4234273fc534f2be33"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T00:24:09Z",
+      "can_push": true,
+      "commit_id": "a22327843d2a6cf056656e4234273fc534f2be33"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T00:39:04Z",
+      "can_push": true,
+      "commit_id": "0f426378c4244ed970c65d4267ab4efb4d09dfcf"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T01:02:46Z",
+      "can_push": true,
+      "commit_id": "3c5451b96833eef2d4313a2b791f677185ef60b7"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T01:03:45Z",
+      "can_push": true,
+      "commit_id": "3c5451b96833eef2d4313a2b791f677185ef60b7"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T01:03:49Z",
+      "can_push": true,
+      "commit_id": "3c5451b96833eef2d4313a2b791f677185ef60b7"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T01:03:53Z",
+      "can_push": true,
+      "commit_id": "3c5451b96833eef2d4313a2b791f677185ef60b7"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T01:04:39Z",
+      "can_push": true,
+      "commit_id": "3c5451b96833eef2d4313a2b791f677185ef60b7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 12,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "by_state": {
+      "FAILURE": 3,
+      "SKIPPED": 3,
+      "SUCCESS": 139
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.15)"
+    ],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-11T15:15:52Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T15:20:11Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=63115653\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-11T15:22:47Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 147` untouched benchmarks  \n`\u23e9 17` skipped benchmarks[^s"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T06:18:14Z",
+      "excerpt": "On Greptile's latest summary for eece011, which says to hold the merge until a terminated JSON-mode run stops its frontend and backend descendants and multiline"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T17:16:21Z",
+      "excerpt": "On Greptile's 4/5 summary for bba7657 (exported frontend bundles omit the routes manifest): the manifest comes from #6996, already on main, and reached this bra"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T20:09:38Z",
+      "excerpt": "`unit-tests-gate` is red on bba7657 because of two Windows legs, each with one failure. Neither comes from this PR:\n\n- **`unit-tests (windows-latest, 3.13)`:** "
+    }
+  ],
+  "head_activity_at": "2026-10-01T17:09:31Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-11T15:15:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T15:20:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T15:20:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T15:20:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-11T15:21:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-11T15:21:04Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-11T15:22:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T15:27:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-11T15:27:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:56:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:56:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:58:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:58:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:22:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T00:24:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T00:24:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T00:39:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T00:39:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T01:02:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T01:02:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T01:03:45Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T01:03:49Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T01:03:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T01:04:39Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T06:18:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T17:16:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T20:09:38Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (windows-latest, 3.13); unit-tests-gate",
+      "job_id": 110488862929,
+      "run_id": 36897639356,
+      "cause": "The root Actions job failed tests/units/test_state.py::test_state_manager_lock_warning_threshold_contend with LockExpiredError at lock_expiration=2500 ms; 1 test failed and 10,274 passed. unit-tests-gate only propagated the failed matrix jobs."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.15)",
+      "job_id": 110488862907,
+      "run_id": 36897639356,
+      "cause": "The root Actions job failed tests/units/reflex_base/utils/test_log.py::test_supervise_output_does_not_wait_for_a_chatty_descendant because elapsed time was 30.71 seconds against a less-than-15-second assertion; 1 test failed and 9,405 passed."
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/test_reflex.py"
+  ],
+  "last_author_activity_at": "2026-10-01T20:09:38Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

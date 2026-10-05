@@ -1,0 +1,117 @@
+{
+  "number": 7397,
+  "fetched_at": "2026-10-05T17:44:20Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "5ef7f710c0ed776264556930b1f6da4a8b56446a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T00:32:10Z",
+      "can_push": true,
+      "commit_id": "cd376717159f26e15b1a76ffba19e8e525b93554"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T09:35:43Z",
+      "can_push": true,
+      "commit_id": "6c6d486b8358c7f08d86e7c8ee8c8fe0baec3077"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 3,
+      "SUCCESS": 144
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "job": "external check-run 111180705572",
+      "run": "benchmark Actions run 37114606721 (successful)",
+      "cause": "CodSpeed reports test_hydration_metadata[200] regressed from 1.7 ms to 1.8 ms (-4.2%), with 149 benchmarks untouched and 18 skipped. Its report warns that base and head used different runtime environments; the related GitHub Actions benchmark jobs both succeeded, so this is not gate propagation or an Actions job failure."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T00:32:06Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73861006\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T00:38:20Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.2%**\n\n<details>\n<summary>:warning: <b>Different runtime envi"
+    }
+  ],
+  "head_activity_at": "2026-10-03T09:54:03Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T00:32:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T00:32:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T00:32:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T00:38:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T09:35:43Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-03T09:54:03Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

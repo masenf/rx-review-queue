@@ -1,0 +1,86 @@
+{
+  "number": 7398,
+  "fetched_at": "2026-10-05T17:44:16Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "fffc1ebeebd95cc97e9c34be7186666308d43b81",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T09:46:41Z",
+      "can_push": true,
+      "commit_id": "fffc1ebeebd95cc97e9c34be7186666308d43b81"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 145,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 142
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T00:55:25Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73868773\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T01:03:47Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 150` untouched benchmarks  \n`\u23e9 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-03T00:52:33Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T00:55:25Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T01:03:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T09:46:41Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-03T00:52:46Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 2
+}

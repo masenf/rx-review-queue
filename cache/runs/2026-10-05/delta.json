@@ -1,0 +1,267 @@
+{
+ "previous_run": "2026-10-02",
+ "disappeared": [
+  {
+   "number": 7064,
+   "title": "Faster first page load: one-lock hydrate from the connect packet, diffed against compiled defaults",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7227,
+   "title": "fix(forms): omit non-control ids from submissions",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7322,
+   "title": "fix: show the db extra hint for reflex db commands",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7328,
+   "title": "Stop the frontend tree when headless reflex run exits",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7344,
+   "title": "fix(forms): preserve all values for repeated FormData keys on submit",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7353,
+   "title": "perf: skip redundant state var type checks on the hot path",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7356,
+   "title": "Benchmarks CI: macro runner job, daily standard-runner shards, history branch and noise table",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7366,
+   "title": "fix(recharts): support function vars for axis tick formatters",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7370,
+   "title": "perf: cut per-event CPU on the runtime hot paths",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7382,
+   "title": "Fix wake to wait for inflight steps before returning",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7383,
+   "title": "reflex-site-shared: keep inline markup in Markdown links and headings",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7385,
+   "title": "reflex-workflow: wake waits for the steps it started to finish",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7388,
+   "title": "ENG-12795: logos for the Outlook Mail and OneDrive integration cards",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7390,
+   "title": "Format cloud app logs for terminal output",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7394,
+   "title": "Support push event in changed_paths action and expand path filters",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7397,
+   "title": "fix(event): declare LambdaEventCallback.__code__ read-only so bound methods match the protocol",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7398,
+   "title": "Install Python's SIGINT handler for the reflex-bench interrupt tests",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7399,
+   "title": "Fix/7391 stacked on 7386",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7400,
+   "title": "fix: reject inherited backend variable shadowing",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7401,
+   "title": "fix(event): only bind an EventCallback when it is read through a state",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7402,
+   "title": "feat(event): accept any sequence of events where a list of them is accepted",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7403,
+   "title": "fix(vars): type LiteralObjectVar.create to take any value that serializes to a mapping",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7404,
+   "title": "fix: rebuild a stateful-pages marker that is not valid UTF-8",
+   "author": "JohannesGezachew",
+   "draft": false
+  },
+  {
+   "number": 7405,
+   "title": "fix: put the sub-path before /+esm in the dynamic CDN fallback",
+   "author": "JohannesGezachew",
+   "draft": false
+  },
+  {
+   "number": 7406,
+   "title": "fix(model): let type checkers see the db helpers instead of their stand-ins",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7407,
+   "title": "fix: client_state readers that mount after the value changed",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7408,
+   "title": "feat(plotly)!: migrate maps to plotly.js 4",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7409,
+   "title": "fix(upload): resolve files in serialized callbacks",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7410,
+   "title": "fix(state): avoid leaking filtered async vars",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7411,
+   "title": "fix(build): omit workspace metadata from sdists",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7412,
+   "title": "fix(state): persist cancelled redis handler updates",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7413,
+   "title": "fix: type optional object fields as their object's Var under every checker",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7414,
+   "title": "fix: type event handler calls with a fixed-arity overload per handler length, which ty can bind",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7415,
+   "title": "fix(events): cancel disconnected page-load chains",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7416,
+   "title": "fix(cli): report backend readiness after startup",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7418,
+   "title": "fix: let rx.input take the HTML autocomplete string, and turn a bool into \"on\" or \"off\"",
+   "author": "benedikt-bartscher",
+   "draft": true
+  },
+  {
+   "number": 7419,
+   "title": "fix: type calling an upload handler with the upload spec, which stands in for its files or chunks",
+   "author": "benedikt-bartscher",
+   "draft": false
+  },
+  {
+   "number": 7420,
+   "title": "Fix app-wrap child propagation",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7422,
+   "title": "ci: scope uv lock timeout to Python 3.15",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7423,
+   "title": "test: fix flaky macOS aiohttp connection refusal test",
+   "author": "masenf",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  7398,
+  7414,
+  7407,
+  7400,
+  7423,
+  7404,
+  7403,
+  7401,
+  7411,
+  7410,
+  7413,
+  7419
+ ],
+ "left_top15": [
+  7353,
+  7322,
+  7323,
+  7383,
+  7328,
+  7388,
+  7385,
+  7304,
+  6876,
+  7344,
+  7345,
+  7379
+ ],
+ "counts": {
+  "previous_open": 89,
+  "current_open": 103
+ }
+}

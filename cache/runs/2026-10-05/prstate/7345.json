@@ -1,0 +1,237 @@
+{
+  "number": 7345,
+  "fetched_at": "2026-10-05T17:43:09Z",
+  "author_login": "stackedbyaradhya",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "stackedbyaradhya/reflex",
+  "head_sha": "d5c6f84e4dd6c7cee65793c0f78225f9ae432514",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7343,
+      "title": "checkbox_group/checkbox_cards are missing most of the props radio_group/radio_cards already expose",
+      "filed_by": "stackedbyaradhya"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T09:58:50Z",
+      "can_push": true,
+      "commit_id": "f26bc3f56bc1ec6ff429790722903df6eaf392b2"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T10:00:33Z",
+      "can_push": true,
+      "commit_id": "f26bc3f56bc1ec6ff429790722903df6eaf392b2"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:22:00Z",
+      "can_push": true,
+      "commit_id": "ed18a69bcaf4f268f10540e6e629c30b117c7db3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:22:02Z",
+      "can_push": true,
+      "commit_id": "ed18a69bcaf4f268f10540e6e629c30b117c7db3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T14:22:04Z",
+      "can_push": true,
+      "commit_id": "ed18a69bcaf4f268f10540e6e629c30b117c7db3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-29T14:22:14Z",
+      "can_push": true,
+      "commit_id": "ed18a69bcaf4f268f10540e6e629c30b117c7db3"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "FarhanAliRaza"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T10:00:28Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=70533900\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T11:51:23Z",
+      "excerpt": "please can you fix the ai review points. "
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-28T15:29:42Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 5.17%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "stackedbyaradhya",
+      "association": "NONE",
+      "at": "2026-09-29T08:05:18Z",
+      "excerpt": "Hello @FarhanAliRaza, thanks for the review.\r\nany update on this!?"
+    },
+    {
+      "by": "stackedbyaradhya",
+      "association": "NONE",
+      "at": "2026-10-05T08:09:02Z",
+      "excerpt": "Hello @FarhanAliRaza,\r\nany update on this!?"
+    }
+  ],
+  "head_activity_at": "2026-10-01T09:25:31Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:58:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:58:50Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T09:58:51Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T10:00:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T10:00:32Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T10:00:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-28T11:51:23Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-28T15:29:42Z"
+    },
+    {
+      "kind": "comment",
+      "by": "stackedbyaradhya",
+      "association": "NONE",
+      "at": "2026-09-29T08:05:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:22:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:22:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:22:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:22:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:22:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:22:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T14:22:14Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "comment",
+      "by": "stackedbyaradhya",
+      "association": "NONE",
+      "at": "2026-10-05T08:09:02Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-05T08:09:02Z",
+  "last_maintainer_activity_at": "2026-09-29T14:22:14Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

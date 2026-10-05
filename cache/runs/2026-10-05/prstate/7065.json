@@ -1,0 +1,295 @@
+{
+  "number": 7065,
+  "fetched_at": "2026-10-05T18:00:53Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "bf69e19a36cb3a98c7734f6115dee334dbcd426c",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:45:07Z",
+      "can_push": true,
+      "commit_id": "106a871815a0e9b868b4f8635b62a4cc515c5332"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:49:28Z",
+      "can_push": true,
+      "commit_id": "ea0d227b3764a2ca39d9d592513ba7ad0dee6fe4"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:30Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:36Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:42Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:47Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:52Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:39:05Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:40:21Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T00:06:31Z",
+      "can_push": true,
+      "commit_id": "7ac5e9c9bb48537cd36085cbef990979bfbd14ec"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T00:06:37Z",
+      "can_push": true,
+      "commit_id": "7ac5e9c9bb48537cd36085cbef990979bfbd14ec"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 7,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 147,
+    "by_state": {
+      "FAILURE": 1,
+      "IN_PROGRESS": 1,
+      "SKIPPED": 3,
+      "SUCCESS": 142
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [
+      "unit-tests (ubuntu-latest, 3.12)"
+    ],
+    "actions_total": 143
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-07T21:41:20Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-07T21:44:24Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 19.39%**\n\n<details>\n<summary>:warning: <b>Different runtime en"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:44:30Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=61371962\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:31:38Z",
+      "excerpt": "CodSpeed flags `test_get_state_uncached[disk]` at \u221219% on 8e22f9e (58.2 \u2192 72 ms). The other 146 benchmarks show no regression. The slowdown comes from what this"
+    }
+  ],
+  "head_activity_at": "2026-10-05T17:36:41Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-07T21:41:20Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-07T21:44:24Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:44:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-07T21:45:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-07T21:45:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:49:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:49:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:49:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:39:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:39:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:40:21Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:40:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:06:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:06:37Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:31:38Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "job_id": 111901842742,
+      "cause": "CodSpeed reports test_get_state_uncached[disk] regressed 19.39% (56.5 ms to 70.1 ms) on head bf69e19; it also warns that the base and head used different runtime environments, which may affect accuracy."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-05T17:36:41Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

@@ -1,0 +1,89 @@
+{
+  "number": 7401,
+  "fetched_at": "2026-10-05T17:51:14Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "720902bc888829f01a95856218d09d3e452f44e0",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 143
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.10)"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10)",
+      "job_id": 111181942271,
+      "run_id": 37115649235,
+      "details_url": "https://github.com/reflex-dev/reflex/actions/runs/37115649235/job/111181942271",
+      "cause": "Root Actions failure: tests/units/reflex_workflow/examples/test_ex13_conversation.py::test_the_conversation_carries_on_while_a_transfer_waits timed out waiting for an eventually() condition; pytest reported 1 failed and 1041 passed. The PR changes event callback binding and type-checking files, not this reflex_workflow example test."
+    },
+    {
+      "check": "unit-tests-gate",
+      "job_id": 111185298950,
+      "run_id": 37115649235,
+      "details_url": "https://github.com/reflex-dev/reflex/actions/runs/37115649235/job/111185298950",
+      "cause": "Gate propagation only: the log says 'Blocking job results: unit-tests=failure'; it exposes no independent failure."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T10:09:22Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73992376\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T10:18:20Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 150` untouched benchmarks  \n`\u23e9 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-03T10:12:34Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T10:09:22Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T10:18:20Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-03T10:12:34Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}

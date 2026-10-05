@@ -1,0 +1,103 @@
+{
+  "number": 7406,
+  "fetched_at": "2026-10-05T17:53:18Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "e96dc0f3e6578554309d50f883a483c61203620d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T19:34:39Z",
+      "can_push": true,
+      "commit_id": "e96dc0f3e6578554309d50f883a483c61203620d"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 143
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.10)"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10)",
+      "job": "111276213380",
+      "run": "37148136241",
+      "cause": "Root Actions failure: tests/units/reflex_workflow/examples/test_ex13_conversation.py::test_the_conversation_carries_on_while_a_transfer_waits timed out with 'condition not met before timeout'; 1 test failed and 1,041 passed. The PR changes the model helper typing surface and its type-checking fixture, not reflex_workflow code or this test."
+    },
+    {
+      "check": "unit-tests-gate",
+      "job": "111280010508",
+      "run": "37148136241",
+      "cause": "Downstream gate propagation only: the gate log received unit-tests=failure and exited with 'Blocking job results: unit-tests=failure'; it did not expose an independent root failure."
+    }
+  ],
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T19:32:21Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74126610\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T19:37:49Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 150` untouched benchmarks  \n`\u23e9 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-03T19:30:11Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T19:32:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T19:34:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T19:37:49Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-10-03T19:30:23Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": null
+}
