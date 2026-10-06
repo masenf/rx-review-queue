@@ -1,0 +1,114 @@
+{
+  "number": 7408,
+  "fetched_at": "2026-10-06T17:35:04Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "f6778721d95ecc4ec89e3eb7cd58692bf60c1fb0",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7002,
+      "title": "Migrate to plotly.js 4.x (removes the mapbox traces `rx.plotly.mapbox` wraps)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T15:14:56Z",
+      "can_push": true,
+      "commit_id": "d60aca90140a094ccb1bbb8a8c46f76d6f6c9533"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T15:16:24Z",
+      "can_push": true,
+      "commit_id": "d60aca90140a094ccb1bbb8a8c46f76d6f6c9533"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 148,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 146
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:16:20Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74391994\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-06T15:58:11Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 150` untouched benchmarks  \n`⏩ 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-06T04:39:47Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:14:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:16:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:16:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:16:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T15:58:11Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-06T04:39:47Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 0
+}

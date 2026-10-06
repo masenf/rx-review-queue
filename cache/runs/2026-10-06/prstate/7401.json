@@ -1,0 +1,101 @@
+{
+  "number": 7401,
+  "fetched_at": "2026-10-06T17:35:15Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "15a0c5b4e849ad8fca856cb1a420de60b2e1d3cc",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "DISMISSED",
+      "at": "2026-10-05T19:43:49Z",
+      "can_push": true,
+      "commit_id": "720902bc888829f01a95856218d09d3e452f44e0"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 5,
+      "SKIPPED": 3,
+      "SUCCESS": 140
+    },
+    "failing": [
+      "CodSpeed Performance Analysis",
+      "integration-app-harness-gate",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests-gate",
+      "integration-app-harness (memory, 3.14, 2)"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T10:09:22Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73992376\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T10:18:20Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 5.03%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    }
+  ],
+  "head_activity_at": "2026-10-05T21:14:34Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T10:09:22Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T10:18:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:43:49Z",
+      "state": "dismissed"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-05T21:14:34Z",
+  "last_maintainer_activity_at": "2026-10-05T19:43:49Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13) and integration-app-harness",
+      "cause": "The unit runner received a shutdown signal and the integration gate reports integration-app-harness=cancelled; neither yields a code assertion. Rerun the affected suites."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_hydration_metadata[200] down 5.03% while warning that runtime environments differ. The PR changes event callback binding, not hydration, so this needs rerun or maintainer adjudication."
+    }
+  ]
+}

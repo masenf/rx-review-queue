@@ -1,0 +1,232 @@
+{
+  "number": 7422,
+  "fetched_at": "2026-10-06T17:35:12Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "dac005e3a9a9bbda7a818e98a6c476722bead385",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T16:14:16Z",
+      "can_push": true,
+      "commit_id": "dac005e3a9a9bbda7a818e98a6c476722bead385"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 249,
+    "by_state": {
+      "CANCELLED": 79,
+      "FAILURE": 8,
+      "SKIPPED": 6,
+      "SUCCESS": 156
+    },
+    "failing": [
+      "performance-tests-gate",
+      "CodSpeed Performance Analysis",
+      "check-min-deps",
+      "build-packages-gate",
+      "integration-app-harness-gate",
+      "unit-tests-gate",
+      "reflex-init-in-docker-test-gate",
+      "integration-tests-gate",
+      "Run Lighthouse benchmark",
+      "build (reflex-components-radix, packages/reflex-components-radix/)",
+      "build (reflex-components-lucide, packages/reflex-components-lucide/)",
+      "build (reflex-components-moment, packages/reflex-components-moment/)",
+      "build (reflex-components-dataeditor, packages/reflex-components-dataeditor/)",
+      "build (reflex-bench, packages/reflex-bench/)",
+      "build (reflex-workflow, packages/reflex-workflow/)",
+      "build (reflex-release, packages/reflex-release/)",
+      "build (reflex-site-shared, packages/reflex-site-shared/)",
+      "build (reflex-otel, packages/reflex-otel/)",
+      "build (reflex-components-sonner, packages/reflex-components-sonner/)",
+      "build (reflex-components-recharts, packages/reflex-components-recharts/)",
+      "build (reflex-components-markdown, packages/reflex-components-markdown/)",
+      "build (reflex-components-gridjs, packages/reflex-components-gridjs/)",
+      "build (reflex-components-plotly, packages/reflex-components-plotly/)",
+      "build (reflex-build-sdk, packages/reflex-build-sdk/)",
+      "build (reflex-components-core, packages/reflex-components-core/)",
+      "build (reflex-components-internal, packages/reflex-components-internal/)",
+      "build (reflex-base, packages/reflex-base/)",
+      "build (reflex-components-react-player, packages/reflex-components-react-player/)",
+      "build (reflex-docgen, packages/reflex-docgen/)",
+      "build (reflex-hosting-cli, packages/reflex-hosting-cli/)",
+      "build (reflex-components-code, packages/reflex-components-code/)",
+      "build (hatch-reflex-pyi, packages/hatch-reflex-pyi/)",
+      "build (reflex, .)",
+      "build (integrations-docs, packages/integrations-docs/)",
+      "reflex-install-and-init",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "reflex-docs (3.12)",
+      "example-counter-and-nba-proxy (ubuntu-latest, 3.14)",
+      "example-counter-and-nba-proxy (windows-latest, 3.14)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "rx-shout-from-template",
+      "integration-app-harness (memory, 3.15, 2)",
+      "reflex-docs (3.11)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "integration-app-harness-playwright (memory, 3.15)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "playground-head",
+      "playground-0.8.23",
+      "changelog",
+      "pre-commit",
+      "size-budgets"
+    ],
+    "pending": [],
+    "actions_total": 245
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T16:15:17Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74940564\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-05T16:22:36Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.19%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    }
+  ],
+  "head_activity_at": "2026-10-05T16:12:46Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T16:14:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T16:15:17Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-05T16:22:36Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-05T16:12:46Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "failing_job_findings": [
+    {
+      "check": "Run Lighthouse benchmark",
+      "job": "111861381546",
+      "run": "37339121990",
+      "cause": "Root failure: tests/integration/test_lighthouse.py failed because Lighthouse could not launch Chrome, reporting 'waiting for dynamic debugging port in chrome-err.log'; setup completed and the process exited 1."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "job": "external check-run 111865533435",
+      "run": "CodSpeed comparison for dac005e",
+      "cause": "Root external failure: CodSpeed reported test_route_argument_extraction regressed from 115.8 us to 120.9 us (-4.19%) and warned that the comparison used different runtime environments."
+    },
+    {
+      "check": "performance-tests-gate",
+      "job": "111866513231",
+      "run": "37339121990",
+      "cause": "Gate propagation only: ci_gate reported lighthouse=failure while benchmarks and browser-performance succeeded."
+    },
+    {
+      "check": "build-packages-gate",
+      "job": "111863620887",
+      "run": "37339079850",
+      "cause": "Gate propagation from an older overlapping suite: ci_gate reported build=cancelled and check-min-deps=cancelled. The same-head replacement run 37339122084 completed successfully."
+    },
+    {
+      "check": "integration-app-harness-gate",
+      "job": "111862035670",
+      "run": "37339080196",
+      "cause": "Gate propagation from an older overlapping suite: ci_gate reported both app-harness matrices cancelled. The same-head replacement run 37339122072 completed successfully."
+    },
+    {
+      "check": "unit-tests-gate",
+      "job": "111862020654",
+      "run": "37339080246",
+      "cause": "Gate propagation from an older overlapping suite: ci_gate reported unit-tests=cancelled. The same-head replacement run 37339121937 completed successfully."
+    },
+    {
+      "check": "reflex-init-in-docker-test-gate",
+      "job": "111862017592",
+      "run": "37339079623",
+      "cause": "Gate propagation from an older overlapping suite: ci_gate reported reflex-install-and-init=cancelled. The same-head replacement run 37339122090 completed successfully."
+    },
+    {
+      "check": "integration-tests-gate",
+      "job": "111862001298",
+      "run": "37339079877",
+      "cause": "Gate propagation from an older overlapping suite: ci_gate reported example-counter-and-nba-proxy, reflex-docs, and rx-shout-from-template cancelled. The same-head replacement run 37339122056 completed successfully."
+    },
+    {
+      "check": "79 cancelled checks from the initial same-head suite",
+      "job": "cancelled matrix and standalone jobs",
+      "run": "37339079850, 37339080196, 37339080246, 37339079623, 37339079877, 37339079774, 37339080091, 37339080078, 37339081007",
+      "cause": "Cancellation rather than a root test failure: these runs began around 16:12:54Z, then an overlapping suite for the same head began at 16:13:14Z. The corresponding replacement package, app-harness, unit, docker, integration, changelog, pre-commit, size-budget, and playground runs all succeeded."
+    }
+  ]
+}

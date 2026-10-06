@@ -1,0 +1,124 @@
+{
+  "number": 7440,
+  "fetched_at": "2026-10-06T17:35:08Z",
+  "author_login": "darshjoshi",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "darshjoshi/reflex",
+  "head_sha": "34e244cad66d8e94644028eb8e73f31fb87e7c39",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7421,
+      "title": "Importing reflex.model fails with SQLAlchemy 2.1 when greenlet is not installed",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T05:32:50Z",
+      "can_push": true,
+      "commit_id": "d5a801a38c48fd065c77503e9e5c9ec643a78cbd"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T05:38:26Z",
+      "can_push": true,
+      "commit_id": "d5a801a38c48fd065c77503e9e5c9ec643a78cbd"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Runtime annotation inspection fails** When a caller uses `typing.get_type_hints(rx."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:32:46Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=75363692\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "darshjoshi",
+      "association": "NONE",
+      "at": "2026-10-06T05:52:50Z",
+      "excerpt": "Thanks, both points were right\n\nType hints: reflex.model now imports sqlalchemy.ext.asyncio and sqlmodel's AsyncSession at module level inside contextlib.suppre"
+    }
+  ],
+  "head_activity_at": "2026-10-06T05:47:52Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:32:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:32:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:32:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:38:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:38:26Z"
+    },
+    {
+      "kind": "comment",
+      "by": "darshjoshi",
+      "association": "NONE",
+      "at": "2026-10-06T05:52:50Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-06T05:52:50Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

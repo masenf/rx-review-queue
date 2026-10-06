@@ -1,0 +1,114 @@
+{
+  "7065": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_get_state_uncached[disk] regressed 19.39% (56.5 ms to 70.1 ms) on head bf69e19; it also warns that the base and head used different runtime environments, which may affect accuracy."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "cause": "The current Actions run has no root job log; unit-tests-gate reports unit-tests=cancelled. Rerun this suite before attributing a code failure."
+    }
+  ],
+  "7113": [
+    {
+      "check": "build-packages-gate, unit-tests-gate, performance-tests-gate",
+      "cause": "The affected jobs and dependency checks stopped at roughly 15 minutes, several with no downloadable failed-job log; the gates only propagate abandoned or failed dependencies. This is an infrastructure-shaped run that needs rerunning."
+    }
+  ],
+  "7234": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports read_cached_computed down 16.78% and write_inherited down 7.5%. These backend state-access benchmarks are outside this opt-in frontend React Compiler diff, so the result needs rerun or maintainer adjudication rather than an assumed author fix."
+    }
+  ],
+  "7304": [
+    {
+      "check": "multiple Actions suites",
+      "cause": "Thirty-four current checks failed, with root jobs repeatedly ending at about 15 minutes and only short gate logs available for several runs. The broad cross-suite pattern is infrastructure abandonment; rerun before asking the author to change this three-file CLI validation fix."
+    }
+  ],
+  "7394": [
+    {
+      "check": "multiple Actions suites",
+      "cause": "Thirty checks across changes, unit, build, CodeQL, pre-commit, docs, integration, and performance stopped at about 15 minutes. Failed-job logs are absent for the root runs, indicating runner or workflow infrastructure abandonment rather than a localized code failure."
+    }
+  ],
+  "7401": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13) and integration-app-harness",
+      "cause": "The unit runner received a shutdown signal and the integration gate reports integration-app-harness=cancelled; neither yields a code assertion. Rerun the affected suites."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_hydration_metadata[200] down 5.03% while warning that runtime environments differ. The PR changes event callback binding, not hydration, so this needs rerun or maintainer adjudication."
+    }
+  ],
+  "7410": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_hydration_metadata[20] down 4.16% and warns that base and head used different runtime environments. Because the PR changes async computed-var delivery, the result should be rerun or explicitly adjudicated before merge."
+    }
+  ],
+  "7412": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10) and unit-tests (windows-latest, 3.10)",
+      "cause": "Five tests in tests/units/istate/manager/test_redis.py fail on both platforms: the PR's cancellation tests expect a 'superseded' warning but receive an empty message. The failure is in files changed by this PR and is an author-side blocker."
+    },
+    {
+      "check": "older abandoned Actions jobs",
+      "cause": "Several additional checks retained from the earlier run stopped around 15 minutes and only feed gate failures; they are secondary to the reproducible current unit-test failures."
+    }
+  ],
+  "7413": [
+    {
+      "check": "unit-tests (windows-latest, 3.15)",
+      "cause": "tests/units/utils/test_tasks.py::test_ensure_task_suppresses_exceptions timed out after an intentional-error path. The PR changes optional object-field typing and does not touch task scheduling, so this is an off-path flake to rerun."
+    }
+  ],
+  "7415": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10-3.15)",
+      "cause": "All six Ubuntu jobs fail test_redis_token_manager_enumerate_tokens with six tokens present instead of two. This PR changes page-load cancellation and does not touch token-manager enumeration; the shared Redis residue needs rerun or infrastructure adjudication."
+    }
+  ],
+  "7428": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "cause": "test_a_rate_limit_lets_through_a_burst_then_refills measured 1.127 seconds against a strict under-one-second assertion. The failure is the timing flake fixed separately by #7433 and is unrelated to this JSON shutdown-output fix."
+    }
+  ],
+  "7433": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10)",
+      "cause": "test_oplock_contention_queue fails with RedisTestState.count equal to 2 instead of 1. This PR only changes the workflow rate-limit timing test, so the Redis oplock failure is off-path and should be rerun."
+    }
+  ],
+  "7434": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_hydration_metadata[20] down 4.24% while warning that runtime environments differ. This PR only changes hosting CLI authentication guidance, making the benchmark off-path; rerun or adjudicate it."
+    }
+  ],
+  "7442": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_route_argument_extraction down 4.7% while warning that runtime environments differ. Route extraction is outside this local client-state compiler fix, so rerun or maintainer adjudication is appropriate."
+    }
+  ],
+  "7446": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10-3.15)",
+      "cause": "The PR's new test_background_handler_does_not_retain_dispatch_state_tree[redis] fails with 'assert not True' on all six Ubuntu versions. The regression test directly exercises the claimed fix, so this is an author-side blocker."
+    }
+  ],
+  "7449": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10) and unit-tests (windows-latest, 3.10)",
+      "cause": "Both Python 3.10 jobs fail the same seven tests: importing reflex now eagerly loads reflex_base.utils.log, and the deprecation text is written before six CLI probes' JSON output, causing JSONDecodeError. These failures are a direct effect of this PR and need an author fix."
+    },
+    {
+      "check": "unit-tests-gate",
+      "cause": "The gate only propagates the two root Python 3.10 unit-job failures."
+    }
+  ]
+}

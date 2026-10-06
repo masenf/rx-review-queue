@@ -1,0 +1,139 @@
+{
+  "number": 7446,
+  "fetched_at": "2026-10-06T17:35:02Z",
+  "author_login": "drakeo338",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "drakeo338/reflex",
+  "head_sha": "b9d10fa9afcb5de86d763c3e1e4c7b2b9d03bcf7",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T16:11:03Z",
+      "can_push": true,
+      "commit_id": "b9d10fa9afcb5de86d763c3e1e4c7b2b9d03bcf7"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T16:11:48Z",
+      "can_push": true,
+      "commit_id": "b9d10fa9afcb5de86d763c3e1e4c7b2b9d03bcf7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f25cb727-20c3-4c27-b8cc-6c3448afc4d3 -->\n<!-- cubic:review-run=aa2d8f31-f0a1-5c6d-8ba3-2704c32b007b -->\n<!-- metadata:{\"confidence\":10} -->\nP2: This overstates the fix: a background handl"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Release note overstates fix** A background handler that waits before its first `asy"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 7,
+      "SKIPPED": 3,
+      "SUCCESS": 138
+    },
+    "failing": [
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests-gate"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T16:11:28Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=75672640\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-06T16:21:27Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.36%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    }
+  ],
+  "head_activity_at": "2026-10-06T16:05:35Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T16:11:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T16:11:04Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T16:11:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T16:11:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T16:11:48Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T16:21:27Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-06T16:05:35Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10-3.15)",
+      "cause": "The PR's new test_background_handler_does_not_retain_dispatch_state_tree[redis] fails with 'assert not True' on all six Ubuntu versions. The regression test directly exercises the claimed fix, so this is an author-side blocker."
+    }
+  ]
+}

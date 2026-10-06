@@ -1,0 +1,183 @@
+{
+  "number": 7449,
+  "fetched_at": "2026-10-06T18:14:50Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "4ba4376620612125b0ec005c64a3058c57352fcd",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T17:52:18Z",
+      "can_push": true,
+      "commit_id": "4ba4376620612125b0ec005c64a3058c57352fcd"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T17:53:08Z",
+      "can_push": true,
+      "commit_id": "4ba4376620612125b0ec005c64a3058c57352fcd"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-06T17:54:12Z",
+      "can_push": true,
+      "commit_id": "4ba4376620612125b0ec005c64a3058c57352fcd"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=591b210a-85c5-4993-b6c5-35e9b3b0e336 -->\n<!-- cubic:review-run=5afecb9b-58b1-534b-9cda-73cfd666365c -->\n<!-- metadata:{\"confidence\":10} -->\nP2: This import loads `reflex_base.utils.log` t"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1a8d0f70-d293-4768-9457-230402f35b48 -->\n<!-- cubic:review-run=5afecb9b-58b1-534b-9cda-73cfd666365c -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This clears the process-wide deprecation ded"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Shared warning state is lost**\n\nThis clears the process-wide warning deduplication "
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Delay Python 3.10 removal until the next major release**\n\nWhen 0.11.0 is released, this schedule would permit a "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 151,
+    "by_state": {
+      "FAILURE": 3,
+      "SKIPPED": 4,
+      "SUCCESS": 144
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.10)"
+    ],
+    "pending": [],
+    "actions_total": 147
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-10-06T17:50:16Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n\n## Codex Review Summary\n\nThis comment shows the latest Codex review activity on this pull request.\n\n| Review | Statu"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:53:04Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=75747965\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-06T18:00:03Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.24%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    }
+  ],
+  "head_activity_at": "2026-10-06T17:48:28Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T17:50:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:52:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:52:18Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:53:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:53:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:53:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T17:54:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T17:54:12Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T18:00:03Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-06T17:48:28Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10) and unit-tests (windows-latest, 3.10)",
+      "cause": "Both Python 3.10 jobs fail the same seven tests: importing reflex now eagerly loads reflex_base.utils.log, and the deprecation text is written before six CLI probes' JSON output, causing JSONDecodeError. These failures are a direct effect of this PR and need an author fix."
+    },
+    {
+      "check": "unit-tests-gate",
+      "cause": "The gate only propagates the two root Python 3.10 unit-job failures."
+    }
+  ]
+}

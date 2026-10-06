@@ -1,0 +1,149 @@
+{
+  "number": 7435,
+  "fetched_at": "2026-10-06T17:35:08Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "f4ac3098b20926eb0a45634ea092ac776c2c6030",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7247,
+      "title": "One delta naming a substate the page never registered latches backend_state_mismatch and deadens the whole frontend for the rest of the session",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T04:46:29Z",
+      "can_push": true,
+      "commit_id": "b844395ecdad8928a1852b01208f2050a1aa6dcf"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T04:46:33Z",
+      "can_push": true,
+      "commit_id": "b844395ecdad8928a1852b01208f2050a1aa6dcf"
+    },
+    {
+      "by": "kr1shna-exe",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-06T04:59:21Z",
+      "can_push": false,
+      "commit_id": "f4ac3098b20926eb0a45634ea092ac776c2c6030"
+    },
+    {
+      "by": "kr1shna-exe",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-06T04:59:24Z",
+      "can_push": false,
+      "commit_id": "f4ac3098b20926eb0a45634ea092ac776c2c6030"
+    },
+    {
+      "by": "kr1shna-exe",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-06T04:59:26Z",
+      "can_push": false,
+      "commit_id": "f4ac3098b20926eb0a45634ea092ac776c2c6030"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T04:46:29Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=75348275\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-06T04:59:11Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T04:46:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T04:46:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T04:46:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T04:46:32Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T04:46:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "kr1shna-exe",
+      "association": "NONE",
+      "at": "2026-10-06T04:59:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "kr1shna-exe",
+      "association": "NONE",
+      "at": "2026-10-06T04:59:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "kr1shna-exe",
+      "association": "NONE",
+      "at": "2026-10-06T04:59:26Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-06T04:59:26Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

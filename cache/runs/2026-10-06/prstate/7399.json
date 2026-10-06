@@ -1,0 +1,206 @@
+{
+  "number": 7399,
+  "fetched_at": "2026-10-06T17:35:23Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "aa6d0ec447ddb0b9e662cf4864932139efc69cc4",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": null,
+  "linked_issues": [
+    {
+      "number": 7391,
+      "title": "Remove getRefValue and getRefValues from state.js before 1.0",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T06:58:13Z",
+      "can_push": true,
+      "commit_id": "770e14acec0d071c4223d313dde4c2b4bf3f0c9e"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T07:04:46Z",
+      "can_push": true,
+      "commit_id": "18350adc9092af7de5382f9ee126d0e0200f3b03"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-03T07:18:37Z",
+      "can_push": true,
+      "commit_id": "473c90beb075b035df7b7d645e4a58b1bc1e2e7f"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T10:57:14Z",
+      "can_push": true,
+      "commit_id": "c5b1c66968261a7fc772bb050a7be013661037a5"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 10,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=8278dd19-0f57-4429-8299-c1ef05ceeb1f -->\n<!-- cubic:review-run=9e9041ab-f79d-5bbd-8850-c9b49e133541 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: The assertion `\"const form_data = getFormDat"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=2b0a5d04-a621-4060-b735-18e3903e15b3 -->\n<!-- cubic:review-run=9e9041ab-f79d-5bbd-8850-c9b49e133541 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Inherited generic TypedDict bases are not sp"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=62e33697-7bab-4d04-938e-cd95985a4329 -->\n<!-- cubic:review-run=9e9041ab-f79d-5bbd-8850-c9b49e133541 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Unsubscripted generic TypedDicts leave missi"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 10,
+    "by_state": {
+      "FAILURE": 1,
+      "SUCCESS": 9
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 7
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T06:58:58Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73955150\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T06:59:19Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nNo findings outside the diff remain."
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-03T07:12:57Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 7.18%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    }
+  ],
+  "head_activity_at": "2026-10-05T11:01:19Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T06:58:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T06:58:13Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T06:58:58Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T06:59:19Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T07:04:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-03T07:12:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T07:18:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-03T07:18:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T10:57:13Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T10:57:14Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [
+    "docs/library/forms/form.md",
+    "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+    "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+    "packages/reflex-components-dataeditor/pyproject.toml",
+    "reflex/compiler/plugins/memoize.py",
+    "tests/integration/test_form_submit.py",
+    "tests/units/components/forms/test_form.py"
+  ],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-05T11:01:19Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 111734203094,
+      "job_id": null,
+      "run_id": null,
+      "details_url": "https://app.codspeed.io/reflex-dev/reflex/branches/harsh21234i%3Afix%2F7391-stacked-on-7386?utm_source=github&utm_medium=check&utm_content=details",
+      "cause": "External CodSpeed root failure: test_hydration_metadata[20] regressed from 207.9 us to 224 us (-7.18%); 149 benchmarks were unchanged and 18 skipped. CodSpeed warns that the compared runtime environments differ, and this is not a GitHub Actions job."
+    }
+  ]
+}

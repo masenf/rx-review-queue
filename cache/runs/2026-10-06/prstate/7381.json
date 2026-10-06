@@ -1,0 +1,333 @@
+{
+  "number": 7381,
+  "fetched_at": "2026-10-06T17:35:19Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "4bf23786b527e919cb393fcccc468ed2ca71e818",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T22:39:54Z",
+      "can_push": true,
+      "commit_id": "8d904b7701f0c4b868856c90c7886393c6274335"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T22:42:14Z",
+      "can_push": true,
+      "commit_id": "8d904b7701f0c4b868856c90c7886393c6274335"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:27:39Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:27:41Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:27:43Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:27:45Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:52Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:53Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:55Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:57Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:58Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:43:07Z",
+      "can_push": true,
+      "commit_id": "4bf23786b527e919cb393fcccc468ed2ca71e818"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "The exemption checks the parent, but `_declared_value` resolves the var by MRO. The two rules disagree:\n\n```python\nclass Typing(BaseState, mixin=True):\n    count: int\n\nclass Value(BaseState, mixin=Tru"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "`BaseVarShadowsInheritedVarError` shipped in reflex-base 0.9.12, and `reflex.utils.exceptions` re-exports it. Code that catches it now fails with `ImportError`. Please keep a deprecated alias for one "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "Two mixins with the same var work on `main` today, and the MRO selects one. This line raises at once. CLAUDE.md asks for a `console.deprecate` warning first and an error in a later release. If 0.10.0 "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This returns the parent field without a type check. With `count: str = \"a\"` on the parent and `count: int` on the mixin, the mixin now uses the `str` var. On `main` it got its own `int` var. Mixin cod"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This loop calls `_restates_type` two times for each step. This shorter loop has the same behavior:\n\n```python\nfound = MISSING\nfor klass in lookup_order:\n    if name not in klass.__dict__:\n        cont"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 2,
+      "SUCCESS": 144
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.14)"
+    ],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:39:36Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73147490\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-01T22:43:59Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 146` untouched benchmarks  \n`⏩ 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-01T23:27:27Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:39:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:39:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:39:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:42:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:42:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-01T22:43:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T23:27:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T23:27:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T23:27:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-01T23:27:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:42:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:43:07Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-01T23:27:45Z",
+  "last_maintainer_activity_at": "2026-10-05T19:43:07Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.14)",
+      "job": "110631994929",
+      "run": "36940923185",
+      "cause": "The Actions log reports tests/units/reflex_workflow/examples/test_ex13_conversation.py::test_the_conversation_carries_on_while_a_transfer_waits timing out with 'condition not met before timeout' after 1,039 tests passed. The PR does not change reflex_workflow code or this test."
+    },
+    {
+      "check": "unit-tests-gate",
+      "job": "110638178195",
+      "run": "36940923185",
+      "cause": "Downstream gate propagation only: the gate log received unit-tests=failure and exited with 'Blocking job results: unit-tests=failure'; it did not expose an independent root failure."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+ "previous_run": "2026-10-05",
+ "disappeared": [
+  {
+   "number": 7398,
+   "title": "Install Python's SIGINT handler for the reflex-bench interrupt tests",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7400,
+   "title": "fix: reject inherited backend variable shadowing",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7414,
+   "title": "fix: type event handler calls with a fixed-arity overload per handler length, which ty can bind",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  },
+  {
+   "number": 7423,
+   "title": "test: fix flaky macOS aiohttp connection refusal test",
+   "git_says": "not in main: closed, or merged via squash/rebase; confirm via API"
+  }
+ ],
+ "opened": [
+  {
+   "number": 7425,
+   "title": "Split unit tests by package and run affected suites in CI",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7427,
+   "title": "chore(ci): update reviewed SHA-pinned workflow actions",
+   "author": "masenf",
+   "draft": true
+  },
+  {
+   "number": 7428,
+   "title": "fix: preserve JSON output for slow consumers at shutdown",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7433,
+   "title": "test(workflow): remove timing flake from rate-limit burst and refill test",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7434,
+   "title": "fix(hosting): guide recovery from initial token rejection",
+   "author": "masenf",
+   "draft": false
+  },
+  {
+   "number": 7435,
+   "title": "fix(state): recover from unknown frontend substates",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7436,
+   "title": "fix(state): record hydrated computed values",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7437,
+   "title": "fix: apply default shikijs transformers when use_transformers=True",
+   "author": "darshjoshi",
+   "draft": false
+  },
+  {
+   "number": 7438,
+   "title": "Fix primitive progress ARIA values",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7440,
+   "title": "fix: import sqlalchemy.ext.asyncio lazily so reflex.model loads without greenlet",
+   "author": "darshjoshi",
+   "draft": false
+  },
+  {
+   "number": 7441,
+   "title": "fix: reduce client state provider nesting",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7442,
+   "title": "Fix local client state across sibling components",
+   "author": "harsh21234i",
+   "draft": false
+  },
+  {
+   "number": 7443,
+   "title": "fix(state): clarify invalid legacy token errors",
+   "author": "kr1shna-exe",
+   "draft": false
+  },
+  {
+   "number": 7446,
+   "title": "Release dispatch state references before running a background handler",
+   "author": "drakeo338",
+   "draft": false
+  },
+  {
+   "number": 7447,
+   "title": "fix(events): release the dispatch-time state tree in background handlers",
+   "author": "RaHus",
+   "draft": false
+  },
+  {
+   "number": 7448,
+   "title": "Serialize JSON with yjson when the reflex[yjson] extra is installed",
+   "author": "FarhanAliRaza",
+   "draft": false
+  },
+  {
+   "number": 7449,
+   "title": "Deprecate Python 3.10 support with warning on import",
+   "author": "FarhanAliRaza",
+   "draft": false
+  }
+ ],
+ "draft_flips": [],
+ "entered_top15": [
+  7438,
+  7409,
+  7416,
+  7408,
+  7441,
+  7345,
+  7434,
+  7442,
+  7437,
+  7443
+ ],
+ "left_top15": [
+  7398,
+  7414,
+  7400,
+  7423,
+  7340,
+  7403,
+  7401,
+  7413,
+  7419,
+  7234
+ ],
+ "counts": {
+  "previous_open": 103,
+  "current_open": 116
+ }
+}

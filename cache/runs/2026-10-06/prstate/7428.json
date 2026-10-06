@@ -1,0 +1,197 @@
+{
+  "number": 7428,
+  "fetched_at": "2026-10-06T17:35:12Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "0446d8122aab34e73cb6e552f57302fce84ed6a5",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:37:33Z",
+      "can_push": true,
+      "commit_id": "4f8585d1b1b4e9f0d5a509abe3dcbc5e7875191d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:38:24Z",
+      "can_push": true,
+      "commit_id": "4f8585d1b1b4e9f0d5a509abe3dcbc5e7875191d"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T21:06:57Z",
+      "can_push": true,
+      "commit_id": "7f65b46b739526a37829bd522d75600a0d2db4d9"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T21:07:11Z",
+      "can_push": true,
+      "commit_id": "7f65b46b739526a37829bd522d75600a0d2db4d9"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T21:07:23Z",
+      "can_push": true,
+      "commit_id": "7f65b46b739526a37829bd522d75600a0d2db4d9"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T21:07:36Z",
+      "can_push": true,
+      "commit_id": "7f65b46b739526a37829bd522d75600a0d2db4d9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 150,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 5,
+      "SUCCESS": 143
+    },
+    "failing": [
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests-gate"
+    ],
+    "pending": [],
+    "actions_total": 146
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:38:19Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=75109770\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-05T20:53:18Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`✅ 150` untouched benchmarks  \n`⏩ 18` skipped benchmarks[^s"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T21:08:05Z",
+      "excerpt": "Addressed all four inline review findings in 7f65b46b7 and updated the PR description. Full macOS validation: 11,258 unit tests passed, 159 skipped, 78.99% cove"
+    }
+  ],
+  "head_activity_at": "2026-10-05T21:44:05Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:37:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:37:33Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:38:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:38:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:38:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:38:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-05T20:53:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T21:06:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T21:07:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T21:07:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T21:07:36Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T21:08:05Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-05T21:44:05Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "cause": "test_a_rate_limit_lets_through_a_burst_then_refills measured 1.127 seconds against a strict under-one-second assertion. The failure is the timing flake fixed separately by #7433 and is unrelated to this JSON shutdown-output fix."
+    }
+  ]
+}

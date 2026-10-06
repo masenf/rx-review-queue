@@ -1,0 +1,118 @@
+{
+  "number": 7437,
+  "fetched_at": "2026-10-06T17:35:07Z",
+  "author_login": "darshjoshi",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "darshjoshi/reflex",
+  "head_sha": "b88984770ab7386c256864859d21cc1490cd7b2f",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNKNOWN",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7430,
+      "title": "code_block(use_transformers=True) emits an empty Shiki transformer list",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T05:12:54Z",
+      "can_push": true,
+      "commit_id": "e0353a9a9b86aec0148bee173361c80652c1799e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T05:13:14Z",
+      "can_push": true,
+      "commit_id": "e0353a9a9b86aec0148bee173361c80652c1799e"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:13:06Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=75357228\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "darshjoshi",
+      "association": "NONE",
+      "at": "2026-10-06T05:52:49Z",
+      "excerpt": "Thanks, all three addressed in b88984770.\n\nfns=None: ShikiJsTransformer now treats None as an empty list again, matching what the old __init__ produced, so it n"
+    }
+  ],
+  "head_activity_at": "2026-10-06T05:48:08Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:12:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:12:54Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:13:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:13:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T05:13:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "darshjoshi",
+      "association": "NONE",
+      "at": "2026-10-06T05:52:49Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-06T05:52:49Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}
