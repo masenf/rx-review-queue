@@ -1,0 +1,196 @@
+{
+  "number": 7416,
+  "fetched_at": "2026-10-19T17:41:11.450Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "29bfd58deba9666976f051c6751c2d4b35030c59",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7252,
+      "title": "Dev \"reflex run\" prints \"Backend running at …\" / \"App running at …\" and idles after the app module raised at import",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:49:42Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:49:51Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T20:39:08Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "path": "reflex/utils/exec.py",
+        "line": null,
+        "first_comment": "In dev mode with Granian (the default whenever uvicorn or gunicorn isn't installed), `App running at:` is never printed now. Nothing replaces it later either: the backend announces itself only through `Backend running at:`. Tools outside this repo parse that line. `docs/enterprise/testing.md:318` says the reflex-enterprise pytest plugin builds `reflex_app.url`, including `frontend_path`, by reading reflex's own \"App running at:\" line, and its default `run_mode` is dev. That plugin would stop finding the URL. reflex-bench needed a regex change in this PR for the same reason. The PR's own test confirms the line is gone: `test_exec.py:177-178` asserts `\"App running at:\" not in message` for granian with a backend. Fix: keep the `App running at:` text. One option is to print the frontend line as before and only move the backend line to lifespan startup. If the rename has to stay, treat it as ",
+        "at": "2026-10-08T20:39:03Z"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Restore the existing App running at line so dev tooling continues to see the frontend URL.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:49:46Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=74464222\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a>Confidence Sc"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-06T16:00:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **not alter performance** `✅ 150` untouched benchmarks `⏩ 18` skipped benchmarks[^skipped] --- <sub>Comparing <code>kr1shna-exe:fix/7252-backend-startup-status</code> (27ddc54) with <code>main</code> (7970e91)</sub> <a href=\"https://app.codspeed.io/reflex-dev/reflex/branches/kr1shna-exe%3Afix%2F7252-backend-startup-status?utm_source=github&utm_medium=comment-v2&utm_content=button\"> <picture> <source media=\"(prefers-color-sc"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T21:07:04Z",
+      "excerpt": "<!-- greptile_outside_diff --> <h3>Comments Outside Diff</h3> These findings could not be posted inline. - <img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\">&nbsp;**Premature running banner** `reflex/utils/exec.py:350` <a href=\"https://github.com/reflex-dev/reflex/blob/29bfd58deba9666976f051c6751c2d4b35030c59/reflex/utils/exec.py#L350\">▶</a> `run_frontend` now displays “App Running” before it launches the frontend process. If startup fails, the ter"
+    },
+    {
+      "by": "kr1shna-exe",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T21:20:43Z",
+      "excerpt": "@greptile-apps the \"App Running\" banner is unchanged from main. This push only reverted my earlier rename so dev output stays the same for anything reading it, so I'm leaving it as is here."
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T21:21:25Z",
+      "excerpt": "That’s fair. Since the `App Running` banner is intentionally unchanged from `main` to preserve existing dev output, this PR does not introduce the concern I raised. I’m withdrawing the finding; no change is needed here."
+    }
+  ],
+  "head_activity_at": "2026-10-08T21:04:18Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-04T19:49:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-04T19:49:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:49:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:49:49Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:49:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:49:51Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-06T16:00:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-08T20:39:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-08T20:39:08Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T21:07:04Z"
+    },
+    {
+      "kind": "comment",
+      "by": "kr1shna-exe",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T21:20:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T21:21:25Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-08T21:20:43Z",
+  "last_maintainer_activity_at": "2026-10-08T20:39:08Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

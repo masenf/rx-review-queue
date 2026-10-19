@@ -1,0 +1,180 @@
+{
+  "number": 7451,
+  "fetched_at": "2026-10-19T17:45:34.900Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "6b9eb576556b5ea8a197bf8a8dc0cd117386ef49",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "reflex/utils/js_runtimes.py",
+    "tests/units/test_prerequisites.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T18:22:47Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T18:23:37Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:00:14Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:00:17Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 146,
+    "actions_total": 142,
+    "by_state": {
+      "SUCCESS": 143,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "at": "2026-10-06T18:23:37Z",
+      "excerpt": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub> Recognize custom-named Bun executables before choosing flags** When `Config.bun_path` points to a Bun executable named something other than exactly `bun`"
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "at": "2026-10-06T18:23:37Z",
+      "excerpt": "### 💡 Codex Review Here are some automated review suggestions for this pull request. **Reviewed commit:** `485b0ae3ca` <details> <summary>ℹ️ About Codex in GitHub</summary> <br/> [Your team has set up Codex to review pull requests in this "
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-06T18:29:30Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **improve performance by 4.16%** <details> <summary>:warning: <b>Different runtime environments detected</b></summary> > Some benchmarks with significant performance c"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-06T20:00:14Z",
+      "excerpt": "Valid, and a regression against main. Bun silently ignores `--save-dev` and `--include=dev`; I checked bun 1.4.2 under a custom name. So with a `bun_path` like `/opt/tools/bun-1.3`, the framework dev dependencies were saved into `dependenci"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-06T20:00:17Z",
+      "excerpt": "Declining. An upgrade can't hit a stale marker: - Any reflex version change makes `needs_reinit()` true. - Reinit runs `initialize_web_directory()`, whose `path_ops.copy_tree` empties `.web`. That deletes `reflex.install_frontend_packages.c"
+    }
+  ],
+  "head_activity_at": "2026-10-06T19:43:11.000Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:19:25Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:35Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:23:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:23:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:29:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:00:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:00:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:00:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:00:17Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-06T20:00:17.000Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,97 @@
+{
+  "number": 7594,
+  "fetched_at": "2026-10-19T17:45:27.678Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "6ddde446d2fd5fdf92e535d6622720314548e218",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7099,
+      "title": "Mixing literal and reactive Moment locales emits duplicate defineLocale deprecation warnings",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T10:45:38Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 100,
+    "actions_total": 98,
+    "by_state": {
+      "SKIPPED": 4,
+      "SUCCESS": 96
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T10:45:38Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **No issues found** across 3 files <!-- cubic:review-summary:end --> <sub>[View guided diff](https://www.cubic.dev/pr/reflex-dev/reflex/pull/7594?utm_source=github&utm_medium=review_footer) | [Re-trigger "
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T10:45:42Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=83099804\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-18T10:53:38Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **not alter performance** <details> <summary>:warning: <b>17 benchmarks spent significant time in system calls</b></summary> > System calls cannot be consistently inst"
+    }
+  ],
+  "head_activity_at": "2026-10-18T11:04:16Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T10:45:38Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T10:45:42Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T10:53:38Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-18T11:04:16Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 1
+}

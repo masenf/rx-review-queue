@@ -1,0 +1,536 @@
+{
+  "number": 7394,
+  "fetched_at": "2026-10-19T17:52:33.557Z",
+  "author_login": "masenf",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "33e11e6bd727a98eaa9127053e4498cd474a3e1e",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    ".github/workflows/examples.yml"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T22:43:23Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T22:48:30Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:46:22Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:46:23Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:46:31Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:45Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:47Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:50Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:52Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:54Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:55Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:58Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:00Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:02Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:04Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:05Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:24Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 11,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 51,
+    "actions_total": 49,
+    "by_state": {
+      "CANCELLED": 27,
+      "SKIPPED": 15,
+      "FAILURE": 3,
+      "SUCCESS": 6
+    },
+    "failing": [
+      "unit-tests-gate",
+      "reflex-init-in-docker-test-gate",
+      "build-packages-gate",
+      "performance-tests-gate",
+      "integration-app-harness-gate",
+      "integration-tests-gate",
+      "codeql-gate",
+      "docs-tests-gate",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "playground-0.8.23",
+      "playground-head",
+      "changelog",
+      "changes",
+      "pre-commit",
+      "Analyze (python)",
+      "Analyze (actions)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "reflex-init-in-docker-test-gate / performance-tests-gate / integration-tests-gate",
+      "cause": "All three gate logs report changes=abandoned and only skipped dependents, then fail by policy. Together with 27 cancelled jobs, this shows workflow abandonment rather than a localized code or test assertion failure."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": null,
+  "recent_comments": [
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:58Z",
+      "excerpt": "Valid. Fixed in 33e11e6 on the filter side: `examples.yml` lists `examples/playground/**` again after `!**/*.md`, with a comment that the content hash covers the playground's Markdown. So a README edit there still runs `hash_examples.py --check`. I didn't change `hashed_files()`, because that changes what the macro benchmark baselines key on, which is beyond what this PR is for. --- _Generated by [Claude Code](https://claude.ai/code)_"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:00Z",
+      "excerpt": "Added in 33e11e6 (`test_action_evaluates_each_event`), along with the same coverage described on the Greptile thread above. --- _Generated by [Claude Code](https://claude.ai/code)_"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:02Z",
+      "excerpt": "Keeping this as it is. Every local action in the repo uses `action.yml`, and the existing `test_action_descriptions_carry_no_expressions` in the same file also only globs `*/action.yml`, so that naming is already the convention the tests rely on. If someone later adds an `action.yaml`, it's the same one-line widening in both tests. --- _Generated by [Claude Code](https://claude.ai/code)_"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:04Z",
+      "excerpt": "Agreed, done in 33e11e6. The unit-tests filter now negates `.github/workflows/**`, `.github/actions/**` and `.github/rulesets/**`, replacing its own-file negations, with a comment that `test_workflow_gates.py` is why. The evaluator fixture copies that list, with cases for another workflow, both actions and the ruleset. --- _Generated by [Claude Code](https://claude.ai/code)_"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:05Z",
+      "excerpt": "Done in 33e11e6. The paragraph is re-wrapped at 80, and the sentence now says the jobs skip on the pull requests and pushes the filter leaves out, and that one workflow's jobs can filter differently. --- _Generated by [Claude Code](https://claude.ai/code)_"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:07:24Z",
+      "excerpt": "That’s a fair distinction. The `python3` calls are intentionally part of the action’s runner-side implementation, not contributor commands in the project environment; the script is stdlib-only, and the existing pull-request branch already uses the same invocation. The comment also documents why installing `uv` is intentionally avoided. I’m withdrawing this finding."
+    }
+  ],
+  "head_activity_at": "2026-10-05T20:06:31Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:50:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:46:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:46:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:46:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:46:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:46:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:46:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:06:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T20:07:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:07:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:07:24Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-05T20:07:05Z",
+  "last_maintainer_activity_at": "2026-10-05T19:46:31Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

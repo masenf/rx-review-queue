@@ -1,0 +1,218 @@
+{
+  "number": 6873,
+  "fetched_at": "2026-10-19T17:32:43.334Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "3faffa9f37abf361181fa262524ee14bb1f7984a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T21:27:25Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T20:17:52Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T20:18:07Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-17T13:10:55Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Import repeats an existing import**\n\n`RegistrationContext` is already imported at the top of `state.py`. Importing it again inside `get_state` violates the repository rule that inline imports are allowed only to avoid circular dependencies. Remove the inner import before merging and use the existing one.\n\n```suggestion\n\n```\n\n**Context Used:** CLAUDE.md ([source](https://github.com/reflex-dev/reflex/blob/main/CLAUDE.md))",
+        "path": "reflex/state.py",
+        "line": 1803
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 144,
+    "actions_total": 141,
+    "by_state": {
+      "FAILURE": 7,
+      "SUCCESS": 134,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.14)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "job_id": 117408067028,
+      "run_id": 39035271559,
+      "cause": "Gate propagation only: the log reports `Blocking job results: unit-tests=failure` after changes=success, unit-tests=failure, and unit-tests-macos=skipped."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.11)",
+      "job_id": 117403727146,
+      "run_id": 39035271559,
+      "cause": "The PR-owned test tests/units/test_state.py::test_state_manager_mixin_token[redis] failed at line 7204: reloading the state returned an empty `note` instead of `written` (1 failed, 13,005 passed)."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "job_id": 117403727112,
+      "run_id": 39035271559,
+      "cause": "The same PR-owned Redis mixin-token test failed at tests/units/test_state.py:7204 because the reloaded state had an empty `note` instead of `written` (1 failed, 13,012 passed)."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13)",
+      "job_id": 117403727122,
+      "run_id": 39035271559,
+      "cause": "The same PR-owned Redis mixin-token test failed at tests/units/test_state.py:7204 because the reloaded state had an empty `note` instead of `written` (1 failed, 13,013 passed)."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.14)",
+      "job_id": 117403727090,
+      "run_id": 39035271559,
+      "cause": "The same PR-owned Redis mixin-token test failed at tests/units/test_state.py:7204 because the reloaded state had an empty `note` instead of `written` (1 failed, 13,016 passed)."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "job_id": 117403727116,
+      "run_id": 39035271559,
+      "cause": "The same PR-owned Redis mixin-token test failed at tests/units/test_state.py:7204 because the reloaded state had an empty `note` instead of `written` (1 failed, 13,008 passed)."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 117405691569,
+      "run_id": null,
+      "cause": "External CodSpeed output reports two state-manager regressions: test_get_state[disk] slowed 4.75% (927.4 us to 973.7 us) and test_get_state[memory] slowed 4.72% (1.1 ms to 1.2 ms); 146 benchmarks were unchanged."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Import repeats an existing import** `RegistrationContext` is already imported at the top of `state.py`. Importing it again inside `get_state` violates the repository rule that inline imports are allowed only to avoid circular dependencies. Remove the inner import before merging and use the existing one. ```suggestion ``` **Context Used:** CLAUDE.md ([source](https://github.com/ref",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": null,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-11T23:07:13Z",
+      "excerpt": "<h2><a href=\"https://app.greptile.com/api/retrigger?id=52402642\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a><a href=\"https://app.greptile.com/refle"
+    },
+    {
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T22:56:36Z",
+      "excerpt": "## Merging this PR will **degrade performance by 4.74%** <details> <summary>:warning: <b>12 benchmarks spent significant time in system calls</b></summary> > System calls cannot be consistently instrumented, so they are not included in the measure, which understates the real cost. Please switch to [the Walltime instrument](https://codspeed.io/docs/instruments/walltime?utm_source=github&utm_medium=comment-v2&utm_content=significant_sys_time) to accurately measure system calls. > > [Measurement an"
+    }
+  ],
+  "head_activity_at": "2026-10-17T13:07:24Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-11T23:07:13Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T22:56:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T21:27:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T21:27:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T20:17:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T20:17:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T20:18:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T13:10:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T13:10:55Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-17T13:07:24Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

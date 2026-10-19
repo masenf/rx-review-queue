@@ -1,0 +1,285 @@
+{
+  "number": 7597,
+  "fetched_at": "2026-10-19T17:33:57.116Z",
+  "author_login": "anishgurjar",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "anishgurjar/reflex",
+  "head_sha": "495ec4f5ca5dbd1617d06358ec777af32177a384",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7596,
+      "title": "DataEditor does not apply the default string type to reactive columns",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T21:54:41Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T21:57:37Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T08:04:58Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-10-19T08:05:02Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 10,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Tests skip the cell callback**\n\nThe dict-row test only checks the prop text. This JavaScript test runs a hand-written copy "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "`add_hooks` builds the cell callback from `str(self.columns)`. That is now this wrapped expression. So the compiled `getData_*` runs the `.map()` on every cell call:\n\n```js\nreturn formatDataEditorCells(col, row, (state.cols).map((col) => ({"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This comment is not accurate. The literal formatting is in the `elif` below, not above. The code also sets a default `id`, not only a default `type`. Please make the comment state what the code does."
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This line adds 2 pyright errors. The `DataEditor` stub has no `columns` attribute. The field type is a list, which has no `_var_data`. The same file on main has 0 pyright errors. Please make `uv run pyright` clean for this file."
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This test asserts the same string as `test_dataeditor_reactive_columns_default_type`. The `data` argument has no effect on the assertion, so nothing here exercises dict rows. Line 142 also adds a pyright error: `list[dict[str, str]]` does n"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This test runs a copy of the JS that is written in the test. It does not run the expression that `create()` generates. If the generated expression changes or breaks, this test still passes.\n\nPlease evaluate the generated expression instead."
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "The file name uses the issue number. towncrier's `issue_format` turns `7596` into a link to the issue, not to this PR. Please rename the file to `7597.bugfix.md` or `+<slug>.bugfix.md`."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 100,
+    "actions_total": 98,
+    "by_state": {
+      "SUCCESS": 99,
+      "SKIPPED": 1
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Tests skip the cell callback**\n\nThe dict-row test only checks the prop text. This JavaScript test runs a hand-written copy ",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "`add_hooks` builds the cell callback from `str(self.columns)`. That is now this wrapped expression. So the compiled `getData_*` runs the `.map()` on every cell call:\n\n```js\nreturn formatDataEditorCells(col, row, (state.cols).map((col) => ({",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This comment is not accurate. The literal formatting is in the `elif` below, not above. The code also sets a default `id`, not only a default `type`. Please make the comment state what the code does.",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This line adds 2 pyright errors. The `DataEditor` stub has no `columns` attribute. The field type is a list, which has no `_var_data`. The same file on main has 0 pyright errors. Please make `uv run pyright` clean for this file.",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This test asserts the same string as `test_dataeditor_reactive_columns_default_type`. The `data` argument has no effect on the assertion, so nothing here exercises dict rows. Line 142 also adds a pyright error: `list[dict[str, str]]` does n",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This test runs a copy of the JS that is written in the test. It does not run the expression that `create()` generates. If the generated expression changes or breaks, this test still passes.\n\nPlease evaluate the generated expression instead.",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "The file name uses the issue number. towncrier's `issue_format` turns `7596` into a link to the issue, not to this PR. Please rename the file to `7597.bugfix.md` or `+<slug>.bugfix.md`.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T08:05:02Z",
+      "excerpt": "This test asserts the same string as `test_dataeditor_reactive_columns_default_type`. The `data` argument has no effect on the assertion, so nothing here exercises dict rows. Line 142 also adds a pyright error: `list[dict[str, str]]` does n"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T08:05:02Z",
+      "excerpt": "This test runs a copy of the JS that is written in the test. It does not run the expression that `create()` generates. If the generated expression changes or breaks, this test still passes. Please evaluate the generated expression instead. "
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T08:05:02Z",
+      "excerpt": "The file name uses the issue number. towncrier's `issue_format` turns `7596` into a link to the issue, not to this PR. Please rename the file to `7597.bugfix.md` or `+<slug>.bugfix.md`."
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T08:05:02Z",
+      "excerpt": ""
+    },
+    {
+      "by": "anishgurjar",
+      "at": "2026-10-19T09:06:43Z",
+      "excerpt": "Addressed all six, PTAL"
+    }
+  ],
+  "head_activity_at": "2026-10-19T17:16:30Z",
+  "interaction_events": [
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T21:54:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T21:54:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T21:54:41Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T21:57:33Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T21:57:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T21:57:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T21:57:37Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T06:33:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:04:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:05:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:05:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:05:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:05:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:05:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:05:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:05:02Z"
+    },
+    {
+      "kind": "comment",
+      "by": "anishgurjar",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T09:06:43Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T17:16:30Z",
+  "last_maintainer_activity_at": "2026-10-19T08:05:02Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

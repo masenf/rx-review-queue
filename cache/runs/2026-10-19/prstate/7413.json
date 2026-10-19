@@ -1,0 +1,228 @@
+{
+  "number": 7413,
+  "fetched_at": "2026-10-19T17:41:11.449Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "5ebf6ae505ae7b10609f2d099a3777748bb50979",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNSTABLE",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T18:16:29Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T18:17:22Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:08:14Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:08:48Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:39:09Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-10-05T19:39:14Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T21:21:24Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "FarhanAliRaza"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "SUCCESS": 140,
+      "FAILURE": 1,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports one regression: test_state_access[write_own] rose from 126.1 ms to 132.1 ms (-4.56% efficiency); 147 benchmarks were unchanged, with 21 system-call measurement warnings."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Remove the incorrect mypy claim, name ty explicitly, and correct the fragment and PR description.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T17:56:53Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=74431102\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a><a href=\"http"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-04T18:01:26Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **degrade performance by 4.56%** <details> <summary>:warning: <b>21 benchmarks spent significant time in system calls</b></summary> > System calls cannot be consistently instrumented, so they are not included in the measure, which understates the real cost. Please switch to [the Walltime instrument](https://codspeed.io/docs/instruments/walltime?utm_source=github&utm_medium=comment-v2&utm_content=significant_sys_time) to acc"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T15:59:07Z",
+      "excerpt": "@FarhanAliRaza Thanks for testing this with all three checkers and in an app. The fragment names only ty since 15c99c5aea. The title now says ty instead of every checker, and the description notes that mypy still fails all six asserts. Could you take another look?"
+    }
+  ],
+  "head_activity_at": "2026-10-17T09:58:04Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T17:56:53Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-04T18:01:26Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-04T18:16:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T18:17:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T18:17:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:08:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:08:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:08:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:08:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:39:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:39:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:39:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T21:21:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T21:21:24Z"
+    },
+    {
+      "kind": "comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T15:59:07Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-17T15:59:07Z",
+  "last_maintainer_activity_at": "2026-10-05T19:39:14Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

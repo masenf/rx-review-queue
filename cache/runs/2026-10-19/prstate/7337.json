@@ -1,0 +1,1010 @@
+{
+  "number": 7337,
+  "fetched_at": "2026-10-19T17:40:51.464Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "8cdbb67079e1cf5ac4aa73a07f567dffb55437e1",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/utils/format.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T14:28:58Z",
+      "can_push": false,
+      "commit_id": "fb6992b1b78e6bdde707402769457e93d260f95a"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T15:47:40Z",
+      "can_push": false,
+      "commit_id": "b8fe51d5477a20df246a1129f5f826d7b76233e4"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T17:34:55Z",
+      "can_push": false,
+      "commit_id": "b6afd6b8ed2e4bb3294473a9c72fe57dfee750d1"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T17:34:57Z",
+      "can_push": false,
+      "commit_id": "b6afd6b8ed2e4bb3294473a9c72fe57dfee750d1"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T17:34:59Z",
+      "can_push": false,
+      "commit_id": "b6afd6b8ed2e4bb3294473a9c72fe57dfee750d1"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T17:35:01Z",
+      "can_push": false,
+      "commit_id": "b6afd6b8ed2e4bb3294473a9c72fe57dfee750d1"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T17:35:20Z",
+      "can_push": false,
+      "commit_id": "b6afd6b8ed2e4bb3294473a9c72fe57dfee750d1"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T17:35:37Z",
+      "can_push": false,
+      "commit_id": "b6afd6b8ed2e4bb3294473a9c72fe57dfee750d1"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T18:04:57Z",
+      "can_push": false,
+      "commit_id": "2f1365c42c11be542e82c41daeca0b124c287bae"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T18:08:17Z",
+      "can_push": false,
+      "commit_id": "2f1365c42c11be542e82c41daeca0b124c287bae"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T18:21:45Z",
+      "can_push": false,
+      "commit_id": "a77e524e9ffaf772740fffd6598628ff813ceaaa"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T18:24:50Z",
+      "can_push": false,
+      "commit_id": "a77e524e9ffaf772740fffd6598628ff813ceaaa"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T18:40:29Z",
+      "can_push": false,
+      "commit_id": "898fc96b53c89d0fbaa75ec552d01d71c7252413"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T20:42:39Z",
+      "can_push": false,
+      "commit_id": "20ab159a9fd873996b269658683327ae215268cd"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T20:46:30Z",
+      "can_push": false,
+      "commit_id": "20ab159a9fd873996b269658683327ae215268cd"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T20:50:14Z",
+      "can_push": false,
+      "commit_id": "20ab159a9fd873996b269658683327ae215268cd"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T21:29:18Z",
+      "can_push": false,
+      "commit_id": "9eac17a7f7ddd486c99eda5a9b26b3e92de158af"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T21:33:45Z",
+      "can_push": false,
+      "commit_id": "d1f405d5f2040b807f68053edaebe181352dd5ab"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:34Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:37Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:39Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:41Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:43Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:44Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:46Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:48Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:49Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:51Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:53Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:02:54Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T22:03:10Z",
+      "can_push": false,
+      "commit_id": "499c80db56a8236a6ad9ad31059257643d059590"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T08:14:42Z",
+      "can_push": false,
+      "commit_id": "52fbfb831cb60b6ca760fc72199830734742c319"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T08:42:06Z",
+      "can_push": false,
+      "commit_id": "889bafae954e1d991890824679707e7ccaa03fed"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-28T08:42:43Z",
+      "can_push": false,
+      "commit_id": "889bafae954e1d991890824679707e7ccaa03fed"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-17T16:50:00Z",
+      "can_push": false,
+      "commit_id": "96a8964fbb297d85525d3841d0cebb6cd2ad598f"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-17T17:32:07Z",
+      "can_push": false,
+      "commit_id": "8cdbb67079e1cf5ac4aa73a07f567dffb55437e1"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-17T17:32:09Z",
+      "can_push": false,
+      "commit_id": "8cdbb67079e1cf5ac4aa73a07f567dffb55437e1"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 35,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: A fork cannot safely install a different resolver: `set_name_resolver()` mutates the shared state classes and their global name caches, so rebuilding names for one app changes the other app's wire names. Make resolver-dependent state/var caches context-aware, or reject differing resolvers for contexts sharing these"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "SUCCESS": 142,
+      "SKIPPED": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: A fork cannot safely install a different resolver: `set_name_resolver()` mutates the shared state classes and their global name caches, so rebuilding names for one app changes the other app's wire names. Make resolver-dependent state/var caches context-aware, or reject differing resolvers for contexts sharing these classes. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. At packages/reflex-base/src/reflex_base/registry.py, line 272: A fork cannot safely install a different resolver: `set_name_resolver()` mutates the shared state clas",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T14:28:52Z",
+      "excerpt": "Confidence Score: 5/5 **[High impact]** The latest changes appear safe to merge; no new blocking issue was found. Summary Adds optional state-var name minification and lets existing states adopt a newly installed name re"
+    },
+    {
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T14:34:19Z",
+      "excerpt": "## Merging this PR will **improve performance by 5.98%** :warning: 11 benchmarks spent significant time in system calls > System calls cannot be consistently instrumented, so they are not included in the measure, which u"
+    }
+  ],
+  "head_activity_at": "2026-10-17T17:28:09Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T14:28:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T14:28:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T14:28:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T14:28:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T14:28:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T14:34:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T15:47:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T15:47:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T15:47:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:34:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:34:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:34:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:34:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:34:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:34:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:35:01Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:35:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:35:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:35:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:35:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T17:35:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:04:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:04:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:08:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:08:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:21:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:21:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:24:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:24:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:40:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T18:40:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:42:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:42:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:46:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:46:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T20:50:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T21:29:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T21:29:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T21:29:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T21:29:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T21:33:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T21:33:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T21:33:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:44Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:48Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:02:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:03:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T22:03:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T08:14:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T08:14:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T08:42:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T08:42:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T08:42:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-28T08:42:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T16:49:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T16:49:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T16:50:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T17:32:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T17:32:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T17:32:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T17:32:09Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-17T17:32:09Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

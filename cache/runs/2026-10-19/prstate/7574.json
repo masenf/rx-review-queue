@@ -1,0 +1,91 @@
+{
+  "number": 7574,
+  "fetched_at": "2026-10-19T17:50:53.532Z",
+  "author_login": "quotentiroler",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "quotentiroler/reflex",
+  "head_sha": "33d95fd840382f8d951c1c9310719f01848d422a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T08:30:22Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-15T08:30:22Z",
+      "excerpt": "All reported issues were addressed across 5 files Reply to a comment to ask cubic a question or push back. It learns from your replies. View guided diff | Re-trigger cubic"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-15T08:30:23Z",
+      "excerpt": "P2: The new explicit all removes TailwindConfig , TailwindPlugin , and tailwind config js template from the version modules' existing public surface. Preserve these re-exports in both version modules, or intentionally deprecate the imports before removing them"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-15T08:31:28Z",
+      "excerpt": "Confidence Score: 5/5 [Medium impact] The PR appears safe to merge; no actionable issues were found. Summary Moves common Tailwind constants, file helpers, dependency lists, and compile tasks into shared tailwind . - Tailwind v3 and v4 use one shared plugin se"
+    }
+  ],
+  "head_activity_at": "2026-10-15T08:36:09Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T08:30:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T08:30:23Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T08:31:28Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-15T08:36:09Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

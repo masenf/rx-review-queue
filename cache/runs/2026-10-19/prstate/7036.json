@@ -1,0 +1,271 @@
+{
+  "number": 7036,
+  "fetched_at": "2026-10-19T17:33:35.842Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "4ed537a69f40f3b8549a622561c2d15308136869",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/utils/types.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "reflex/state.py",
+    "tests/units/test_state.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-02T17:58:51Z",
+      "can_push": false,
+      "commit_id": "ef8666bacd09481236bf7643b12f8348fe9905b7"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-02T17:59:53Z",
+      "can_push": false,
+      "commit_id": "ef8666bacd09481236bf7643b12f8348fe9905b7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-02T18:05:09Z",
+      "can_push": false,
+      "commit_id": "ef8666bacd09481236bf7643b12f8348fe9905b7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "line": 2653,
+        "first_comment": "**Failed recomputation loses stale state** When a stale computed getter raises, `_resolve_stale` has already removed its stale marker while leaving the old cache intact, so subsequent reads treat the outdated cached value as current and later deltas can silently omit the dependency change. **Knowledge Base Used:** - Reactive variables and dependency tracking - State management and event processing"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "path": "reflex/state.py",
+        "line": 949,
+        "first_comment": "** Keep dynamically added dependencies in the forward map** When a cached synchronous computed var calls `add_dependency()` after class initialization, that method updates `_var_dependencies` but not this new `_computed_var_deps` snapshot. A write to the added dependency therefore marks the computed var stale, but `_resolve_stale()` sees no forward dependencies and returns without recomputing it, leaving the client with the old computed value. Update the forward map when adding a dependency or r"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "path": "reflex/state.py",
+        "line": 1949,
+        "first_comment": "** Skip dependencies already resolved from the stale snapshot** When a dependent computed var appears before its dependency in this set snapshot, resolving the dependent recursively resolves and removes the dependency, but the stale snapshot still invokes that dependency again later. Because its base dependency remains dirty, the getter is recomputed twice; this defeats the optimization and can leave non-idempotent or side-effecting computed chains inconsistent, with the dependent based on the f"
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "line": 2282,
+        "first_comment": "** Preserve the sign when comparing zero-valued floats** For float state or computed values, `0.0 == -0.0` even though the sign is observable through serialization, `math.copysign`, and JavaScript numeric operations. Assigning one over the other now returns early, and a computed var changing only between these values keeps its old cache and stops invalidation, so backend and frontend state can remain incorrect. Exclude opposite-signed zeroes from the unchanged cutoff. AGENTS.md reference: AGENTS"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "reflex/state.py",
+        "line": 949,
+        "first_comment": "P1: When a cached synchronous `ComputedVar` receives a dependency through `add_dependency()` after class initialization, this reverse map never includes it. The stale resolver retains the old cache and omits the computed value from the delta; update `_computed_var_deps` during dynamic dependency registration."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "line": 2653,
+        "first_comment": "P2: If a stale computed getter raises, this method has already removed its stale marker, so the cached old value is returned on the next read without retrying. Preserve the stale marker until dependency resolution and recomputation succeed."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "**Failed recomputation loses stale state** When a stale computed getter raises, `_resolve_stale` has already removed its stale marker while leaving the old cache intact, so subsequent reads treat the outdated cached value as current and later deltas can silently omit the dependency change. **Knowledge Base Used:** - Reactive variables and dependency tracking - State management and event processing",
+      "addressed": false
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "** Keep dynamically added dependencies in the forward map** When a cached synchronous computed var calls `add_dependency()` after class initialization, that method updates `_var_dependencies` but not this new `_computed_var_deps` snapshot. A write to the added dependency therefore marks the computed var stale, but `_resolve_stale()` sees no forward dependencies and returns without recomputing it, leaving the client w",
+      "addressed": false
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "** Skip dependencies already resolved from the stale snapshot** When a dependent computed var appears before its dependency in this set snapshot, resolving the dependent recursively resolves and removes the dependency, but the stale snapshot still invokes that dependency again later. Because its base dependency remains dirty, the getter is recomputed twice; this defeats the optimization and can leave non-idempotent o",
+      "addressed": false
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "** Preserve the sign when comparing zero-valued floats** For float state or computed values, `0.0 == -0.0` even though the sign is observable through serialization, `math.copysign`, and JavaScript numeric operations. Assigning one over the other now returns early, and a computed var changing only between these values keeps its old cache and stops invalidation, so backend and frontend state can remain incorrect. Exclu",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P1: When a cached synchronous `ComputedVar` receives a dependency through `add_dependency()` after class initialization, this reverse map never includes it. The stale resolver retains the old cache and omits the computed value from the delta; update `_computed_var_deps` during dynamic dependency registration.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: If a stale computed getter raises, this method has already removed its stale marker, so the cached old value is returned on the next read without retrying. Preserve the stale marker until dependency resolution and recomputation succeed.",
+      "addressed": false
+    },
+    {
+      "by": "masenf",
+      "ask": "Self-assignment is used in real apps to trigger otherwise-untracked computed-var cascades; do not remove that behavior without a usable explicit dirtying API.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-02T17:55:03Z",
+      "excerpt": "## Codex Review Summary This comment shows the latest Codex review activity on this pull request. | Review | Status | Commit | Review trigger | | --- | --- | --- | --- | | 📝 **Code Review** | ✅ **Completed** 2026-09-02T17:59:56.887831Z | `"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-02T17:58:21Z",
+      "excerpt": "## Merging this PR will **improve performance by 4.52%**"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-02T17:58:44Z",
+      "excerpt": "Greptile Summary The PR optimizes state dirty tracking by skipping unchanged scalar assignments and resolving invalidated cached computed variables lazily. - Introduces per-instance stale-computed-variable tracking and equality-based cascad"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-02T18:39:30Z",
+      "excerpt": "this is definitely a behavior change that will affect some apps i've seen in the wild that use self-assignment to manually trigger a cascade of dependent computed vars (which might have dependencies that cannot be tracked by the state syste"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-02T19:02:57Z",
+      "excerpt": "@masenf droped that. Other changes are worth a look i think."
+    }
+  ],
+  "head_activity_at": "2026-09-03T18:35:46Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-02T17:55:03Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-02T17:58:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-02T17:58:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-02T17:58:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-02T17:58:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-02T17:59:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-02T17:59:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-02T17:59:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-02T17:59:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-02T18:05:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-02T18:05:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-02T18:05:09Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-02T18:39:30Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-02T19:02:57Z"
+    }
+  ],
+  "last_author_activity_at": "2026-09-03T18:35:46Z",
+  "last_maintainer_activity_at": "2026-09-02T18:39:30Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,334 @@
+{
+  "6100": {
+    "clean": true,
+    "detail": "b00340a8ab513d42ddcc3718ec4f0635c1daa716"
+  },
+  "6116": {
+    "clean": false,
+    "detail": "176b74aae7476309395e14cf79f8d15b9c46c670 100644 be06aa1a4871a6f3d43996850bd5762402cd5b34 1 packages/reflex-base/src/reflex_base/compiler/templates.py 100644 0c65b8b73c8f34b8ae79754ce055e5324628ac88 2 packages/reflex-base/src/reflex_base/compiler/templates.py 100644 69ad9f9c5a5140295428135420b93e354314f5d9 3 packages/reflex-base/src/reflex_base/compiler/templates.py 100644 fbcf2f77d80a130b049ad82a8a7672cc91a9ef9a 1 reflex/compiler/compiler.py 100644 dab3bfb578f1dd8e3354fe24edd1c08344ce6f92 2 reflex/compiler/compiler.py 100644 104bb086b89b6e1946ae1a1f6b10525147472791 3 reflex/compiler/compiler.py 100644 5227d0645ac76a8a5e7bb46f80e1431553bc62b3 1 tests/units/test_prerequisites.py 100644 09b49edeface5d784a206aa614f5b0fc4553995d 2 tests/units/test_prerequisites.py 100644 d7104563faca3925f3bb83b8a31b49f6f94db6af 3 tests/units/test_prerequisites.py 100644 15e8f6329d7ab6eca62e39f091e6f1bfef938b56 1 tests/units/utils/test_exec.py 100644 2bc85ee209865debcedc1a1f17df23740b279b8d 2 tests/units/utils/test_exec.py 100644 e8c86e5fda78d9e258f759b4ef0b63278e925006 3 tests/units/utils/test_exec.py 100644 b78533bb0afa8a1d0d9d502b4b00f606f7be6c28 1 uv.lock 100644 62d62d01e29c6e3af99e8f04b320e4102cede197 2 uv.lock 100644 e627badc1870169d1ae64c59a789b6c22b48e147 3 uv.lock Auto-merging packages/reflex-base/pyproject.toml Auto-merging packages/reflex-base/src/reflex_base/.templates/web/utils/state.js Auto-merging packages/reflex-base/src/reflex_base/compiler/templates.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/compiler/templates.py Auto-merging packages/reflex-base/src/reflex_base/config.py Auto-merging packages/reflex-base/src/reflex_base/plugins/shared_tailwind.py Auto-merging packages/reflex-base/src/reflex_base/utils/format.py Auto-merging packages/reflex-base/src/reflex_base/utils/pyi_generator.py Auto-merging packages/reflex-base/src/reflex_base/utils/serializers.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py Auto-merging packages/reflex-base/src/reflex_base/vars/sequence.py Auto-merging packages/reflex-components-core/src/reflex_components_core/core/_upload.py Auto-merging pyproject.toml Auto-merging reflex/app.py Auto-merging reflex/compiler/compiler.py CONFLICT (content): Merge conflict in reflex/compiler/compiler.py Auto-merging reflex/compiler/utils.py Auto-merging reflex/utils/exec.py Auto-merging reflex/utils/frontend_skeleton.py Auto-merging reflex/utils/js_runtimes.py Auto-merging reflex/utils/telemetry.py Auto-merging tests/units/compiler/test_compiler.py Auto-merging tests/units/test_app.py Auto-merging tests/units/test_config.py Auto-merging tests/units/test_prerequisites.py CONFLICT (content): Merge conflict in tests/units/test_prerequisites.py Auto-merging tests/units/test_var.py Auto-merging tests/units/utils/test_exec.py CONFLICT (content): Merge conflict in tests/units/utils/test_exec.py Auto-merging uv.lock CONFLICT (content): Merge conflict in uv.lock"
+  },
+  "6125": {
+    "clean": false,
+    "detail": "d3c04ebe11e24a1e7b4f91beb8b5c58c6caaf86f 100644 6977d7456310d09e45aaf59bb4fefd1867e68029 1 reflex/config.py 100644 1d015fcf056405a2acac0ac8c7db05c85289b4ca 2 reflex/config.py 100644 8d3d6d3a16918e16f1f4381cf37af18521cf93a0 3 reflex/config.py 100644 1eae7550de3d1c51c24ae4fdf4f92686f51edab6 1 reflex/istate/manager/__init__.py 100644 156c5af687e7c855a415c24cd469f100b484908f 2 reflex/istate/manager/__init__.py 100644 4b33823dc5b953fa45f6f98e7926464f7e3fa193 3 reflex/istate/manager/__init__.py 100644 886d1dead969e0a59236538dbf0b57674e387be1 1 reflex/utils/prerequisites.py 100644 acfa8ac60627711876ddac5283158c83dfbba5ce 2 reflex/utils/prerequisites.py 100644 ebc166ecbed9b0d93299a39aa573c2612ca765d7 3 reflex/utils/prerequisites.py Auto-merging reflex/config.py CONFLICT (content): Merge conflict in reflex/config.py Auto-merging reflex/istate/manager/__init__.py CONFLICT (content): Merge conflict in reflex/istate/manager/__init__.py Auto-merging reflex/utils/prerequisites.py CONFLICT (content): Merge conflict in reflex/utils/prerequisites.py"
+  },
+  "6126": {
+    "clean": true,
+    "detail": "dfba24825e72fb7648a0ccd7abf1512b6b9241ab"
+  },
+  "6468": {
+    "clean": false,
+    "detail": "e6f7c6a5c03061ce531635c627277567ce732c29 100644 4e1143bee6cc15855da5c7c14e852708d573721a 1 packages/reflex-base/src/reflex_base/components/component.py 100644 e35a870e57a38db9b9ad9ea863de518c889f9331 2 packages/reflex-base/src/reflex_base/components/component.py 100644 209db78dd45199b4d629d7834760cd4f99e3b538 3 packages/reflex-base/src/reflex_base/components/component.py 100644 0b4f1f34aa0ce5b2cbcfbb644f9af7ab22ecef7d 1 packages/reflex-base/src/reflex_base/components/memo.py 100644 e447bb6e400951888dbb258c1b0755dbbe1df997 2 packages/reflex-base/src/reflex_base/components/memo.py 100644 886f273b22feab7a337a55e894e797f113d3158c 3 packages/reflex-base/src/reflex_base/components/memo.py 100644 cd50d44ac43b8493058bee7b6e9d7bf038fb2528 1 packages/reflex-base/src/reflex_base/plugins/compiler.py 100644 aef1cb7dd666cf054937dd38e9ea34aedbfcf8f6 2 packages/reflex-base/src/reflex_base/plugins/compiler.py 100644 3a5e2f040bf57241e07c80bd16008e683ab47e18 3 packages/reflex-base/src/reflex_base/plugins/compiler.py 100644 e5ff438641c23af72be6c05064aac2e4c044269f 1 packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py 100644 6fd8855a22283196f37d181939d79fdd29dabecf 2 packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py 100644 0982acfc6da585dcb293a9fdf64465b3be4466a5 3 packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py 100644 c14fe2d473bd92b11440a5a885ef410a10320c6f 1 packages/reflex-components-dataeditor/pyproject.toml 100644 84e4f71aff251ba89c6e548b822015fcf3b4de31 2 packages/reflex-components-dataeditor/pyproject.toml 100644 feca0e3b63cedc0803724b24fb4f5904ee29de61 3 packages/reflex-components-dataeditor/pyproject.toml 100644 60a604914155974650e4935d43ebe448e45f7588 1 packages/reflex-components-internal/pyproject.toml 100644 900e055e89c70e0201a5bc6666c932f87881588c 2 packages/reflex-components-internal/pyproject.toml 100644 89677b91004cf794c0a5d22c34be6796e0fd7ea8 3 packages/reflex-components-internal/pyproject.toml 100644 55dca3de91ef51b01b895e65c92f3cc46d80a6a0 1 packages/reflex-components-radix/pyproject.toml 100644 efdc3e6a465cf1306de0cf5855471c7606420239 2 packages/reflex-components-radix/pyproject.toml 100644 7d8f0f15b941684e1f268fe59524a8b4a3973faa 3 packages/reflex-components-radix/pyproject.toml 100644 3ba326b1c16dbdda9c06165640c5084cc5c991ab 1 reflex/compiler/utils.py 100644 8168fed96681933086bf5e868d64679568b01494 2 reflex/compiler/utils.py 100644 c7d64abaa855404e4c7cf8b84d4a40f643d82b8e 3 reflex/compiler/utils.py 100644 879dafb18b3f679e0b0f97e9562d07bbdb7f7d94 1 tests/units/compiler/test_compiler_utils.py 100644 b92647a967795af582b337d99c49c25888b20074 2 tests/units/compiler/test_compiler_utils.py 100644 cba5290ee4baa363221e713ea3eaa042fbfc862e 3 tests/units/compiler/test_compiler_utils.py Auto-merging packages/reflex-base/src/reflex_base/components/component.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/components/component.py Auto-merging packages/reflex-base/src/reflex_base/components/memo.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/components/memo.py Auto-merging packages/reflex-base/src/reflex_base/components/memoize_helpers.py Auto-merging packages/reflex-base/src/reflex_base/plugins/compiler.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/plugins/compiler.py Auto-merging packages/reflex-components-core/src/reflex_components_core/core/debounce.py Auto-merging packages/reflex-components-core/src/reflex_components_core/core/upload.py Auto-merging packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py CONFLICT (content): Merge conflict in packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py Auto-merging packages/reflex-components-dataeditor/pyproject.toml CONFLICT (content): Merge conflict in packages/reflex-components-dataeditor/pyproject.toml Auto-merging packages/reflex-components-internal/pyproject.toml CONFLICT (content): Merge conflict in packages/reflex-components-internal/pyproject.toml Auto-merging packages/reflex-components-radix/pyproject.toml CONFLICT (content): Merge conflict in packages/reflex-components-radix/pyproject.toml Auto-merging reflex/app.py Auto-merging reflex/compiler/compiler.py Auto-merging reflex/compiler/plugins/memoize.py Auto-merging reflex/compiler/utils.py CONFLICT (content): Merge conflict in reflex/compiler/utils.py Auto-merging reflex/state.py Auto-merging tests/units/compiler/test_compiler.py Auto-merging tests/units/compiler/test_compiler_utils.py CONFLICT (content): Merge conflict in tests/units/compiler/test_compiler_utils.py Auto-merging tests/units/compiler/test_memoize_plugin.py Auto-merging tests/units/compiler/test_plugins.py Auto-merging tests/units/components/test_component.py Auto-merging tests/units/components/test_memo.py Auto-merging uv.lock"
+  },
+  "6490": {
+    "clean": false,
+    "detail": "fdad15236758fd530e46ebb137d3651b4bc383c4 100644 1bf0bc4a07494ea22ce7540bbf74b9f78d123bd7 1 packages/reflex-base/src/reflex_base/config.py 100644 b50210587e55f9a1c0bc649ab1db7428e9275764 2 packages/reflex-base/src/reflex_base/config.py 100644 a833c4694a1769245f2586876278d51d61de12b6 3 packages/reflex-base/src/reflex_base/config.py 100644 3a98e16c0d4babe0a41e0c2216e631c4a42689db 1 reflex/istate/manager/redis.py 100644 2d7d25ad2445ca20c1cf31a8d968a9d36202163c 2 reflex/istate/manager/redis.py 100644 9d9121c558e9a17b1608653084f4d1bffd86467d 3 reflex/istate/manager/redis.py 100644 b2006e11885cf3a72fb5a4ae6c9ac6a97bac967b 1 reflex/utils/token_manager.py 100644 afb1685a5ad2c5f6e2fc2416566e768805859d07 2 reflex/utils/token_manager.py 100644 71e84820da50c08c7f2762c1558a379aa296560f 3 reflex/utils/token_manager.py 100644 0b37389a337ddd9197404cae2781edfef1116b82 1 tests/units/istate/manager/test_redis.py 100644 5ed218e1ef4c5e0d62416539f18a7d723c03c920 2 tests/units/istate/manager/test_redis.py 100644 a893d7b8d83d46e43e069adbe050509255650e56 3 tests/units/istate/manager/test_redis.py 100644 f01f3f74a1fecdc884ed2a1d88bd2f21e66909c7 1 tests/units/reflex_cli/conftest.py 100644 7affb6393302dd09feea875472ff982c9297a736 2 tests/units/reflex_cli/conftest.py 100644 1e5c5fe30c41fc186ed181fc76d4e13bbf812f6a 3 tests/units/reflex_cli/conftest.py Auto-merging packages/reflex-base/src/reflex_base/config.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/config.py Auto-merging reflex/istate/manager/__init__.py Auto-merging reflex/istate/manager/redis.py CONFLICT (content): Merge conflict in reflex/istate/manager/redis.py Auto-merging reflex/utils/token_manager.py CONFLICT (content): Merge conflict in reflex/utils/token_manager.py Auto-merging tests/units/istate/manager/test_redis.py CONFLICT (content): Merge conflict in tests/units/istate/manager/test_redis.py Auto-merging tests/units/reflex_cli/conftest.py CONFLICT (content): Merge conflict in tests/units/reflex_cli/conftest.py Auto-merging tests/units/test_config.py Auto-merging tests/units/test_state.py Auto-merging tests/units/utils/test_token_manager.py"
+  },
+  "6688": {
+    "clean": false,
+    "detail": "52df93891b94ca0f714b950c1b6400bc9000245f 100644 9316f47c35472dc1297ea32d3798cf70f7faf7e2 1 docs/app/reflex_docs/pages/docs/component.py 100644 1c6bfd8913767762be576aa48c4034eb64b80196 2 docs/app/reflex_docs/pages/docs/component.py 100644 24001a813e2bee3eb6b16f1bdc512f3bf23cfd6d 3 docs/app/reflex_docs/pages/docs/component.py 100644 97c466abc0ba21e8fc0b81499bdf1846d00267ff 1 packages/reflex-base/src/reflex_base/plugins/compiler.py 100644 aef1cb7dd666cf054937dd38e9ea34aedbfcf8f6 2 packages/reflex-base/src/reflex_base/plugins/compiler.py 100644 1cbf9aad646633e520cb0ce64868add2d74e587c 3 packages/reflex-base/src/reflex_base/plugins/compiler.py 100644 79ebe8bd2835840ccf34942c250eaaa6a885f40a 1 packages/reflex-base/src/reflex_base/vars/base.py 100644 0671d80c917611a112f7c38033fb35a9c6007873 2 packages/reflex-base/src/reflex_base/vars/base.py 100644 27ecbf772838c3d31b62ccfd5be2931628e21755 3 packages/reflex-base/src/reflex_base/vars/base.py 100644 794cc93d1337cada9db52eb355a9ba3ba55d7cbe 1 pyi_hashes.json 100644 40fba0d5829b5a945154558eb8a4c69d318f6eea 2 pyi_hashes.json 100644 22363177db1e12a81542e5ba3bf55a5f3bbdae25 3 pyi_hashes.json 100644 f378a74ab9fc44f443314b6f4362f36784931047 1 reflex/app.py 100644 b082a56d624241ddbc452aae51d4db0747a39cc3 2 reflex/app.py 100644 c59e5ba093bea99aeaf6aca50b50cd8cd1cacc5e 3 reflex/app.py 100644 487b3845963db3170899be992785cd3dba3d8700 1 reflex/compiler/compiler.py 100644 dab3bfb578f1dd8e3354fe24edd1c08344ce6f92 2 reflex/compiler/compiler.py 100644 f882cc6792804cc899e652d4fec743080c5263fb 3 reflex/compiler/compiler.py 100644 aa7b7c14b1d3021fdf0d726e51181c8f44dd20f3 1 reflex/reflex.py 100644 facbd1fa24de98a6e186eb1839007f77e1718efc 2 reflex/reflex.py 100644 56f1174c09e31cde78601426f7d319561f1ffbc4 3 reflex/reflex.py 100644 5b02be0ad80f11e34a935b466c6c6de0aabd9cbc 1 tests/units/compiler/test_compiler.py 100644 dc80f257cb8f673aaffdcfc88293fab5d9b99bf7 2 tests/units/compiler/test_compiler.py 100644 79a9875910151e7eaec160f0679986c3917f7f59 3 tests/units/compiler/test_compiler.py 100644 879dafb18b3f679e0b0f97e9562d07bbdb7f7d94 1 tests/units/compiler/test_compiler_utils.py 100644 b92647a967795af582b337d99c49c25888b20074 2 tests/units/compiler/test_compiler_utils.py 100644 44c88a300ef97fe5710a3d810a3e435a408997f3 3 tests/units/compiler/test_compiler_utils.py 100644 e5ead218a92ed2bc5b75c40687941a8d183c9056 1 tests/units/test_app.py 100644 6ef3ceef5cf077ff08339117071f8242263ddb0f 2 tests/units/test_app.py 100644 fcbcb3f33bf339eeeac83fb2fafc3ca519957cfe 3 tests/units/test_app.py 100644 1de9840f5937ab46cafb23b26f090cf43af22f63 1 tests/units/utils/test_exec.py 100644 2bc85ee209865debcedc1a1f17df23740b279b8d 2 tests/units/utils/test_exec.py 100644 98a4a8b66e2c050434cb54763cdec6c6b3b8e4eb 3 tests/units/utils/test_exec.py Auto-merging docs/app/reflex_docs/pages/docs/component.py CONFLICT (content): Merge conflict in docs/app/reflex_docs/pages/docs/component.py Auto-merging packages/reflex-base/src/reflex_base/components/memo.py Auto-merging packages/reflex-base/src/reflex_base/environment.py Auto-merging packages/reflex-base/src/reflex_base/plugins/compiler.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/plugins/compiler.py Auto-merging packages/reflex-base/src/reflex_base/utils/serializers.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/vars/base.py Auto-merging pyi_hashes.json CONFLICT (content): Merge conflict in pyi_hashes.json Auto-merging reflex/app.py CONFLICT (content): Merge conflict in reflex/app.py Auto-merging reflex/compiler/compiler.py CONFLICT (content): Merge conflict in reflex/compiler/compiler.py Auto-merging reflex/compiler/plugins/builtin.py Auto-merging reflex/compiler/utils.py Auto-merging reflex/reflex.py CONFLICT (content): Merge conflict in reflex/reflex.py Auto-merging reflex/utils/exec.py Auto-merging reflex/utils/frontend_skeleton.py Auto-merging reflex/utils/prerequisites.py Auto-merging reflex/utils/telemetry.py Auto-merging reflex/utils/telemetry_accounting.py Auto-merging tests/units/compiler/test_compiler.py CONFLICT (content): Merge conflict in tests/units/compiler/test_compiler.py Auto-merging tests/units/compiler/test_compiler_utils.py CONFLICT (content): Merge conflict in tests/units/compiler/test_compiler_utils.py Auto-merging tests/units/components/test_memo.py Auto-merging tests/units/test_app.py CONFLICT (content): Merge conflict in tests/units/test_app.py Auto-merging tests/units/test_reflex.py Auto-merging tests/units/utils/test_exec.py CONFLICT (content): Merge conflict in tests/units/utils/test_exec.py Auto-merging tests/units/utils/test_telemetry_accounting.py"
+  },
+  "6733": {
+    "clean": false,
+    "detail": "7d59e7973ea3bdbaf2d3927230ad32c37243487c 100644 9364c54743659ef341e562147781b4c67c6d025f 1 reflex/app.py 100644 b082a56d624241ddbc452aae51d4db0747a39cc3 2 reflex/app.py 100644 6018188ef88184c927cf0ed4df095745965fa2b3 3 reflex/app.py 100644 270f040f6841d58853e40e1f25fa82664223a0c7 1 tests/units/test_app.py 100644 6ef3ceef5cf077ff08339117071f8242263ddb0f 2 tests/units/test_app.py 100644 e5917201d397a844fc4ffb73beabbb35eae0f4d0 3 tests/units/test_app.py Auto-merging packages/reflex-base/src/reflex_base/plugins/base.py Auto-merging reflex/app.py CONFLICT (content): Merge conflict in reflex/app.py Auto-merging tests/units/test_app.py CONFLICT (content): Merge conflict in tests/units/test_app.py"
+  },
+  "6768": {
+    "clean": false,
+    "detail": "8faad3cfa517fe2c31f04eccc6f30df8c77ee4bf 100644 e2cc7e9156d54e11b8a549c8741b53562319db33 1 packages/reflex-base/src/reflex_base/vars/base.py 100644 0671d80c917611a112f7c38033fb35a9c6007873 2 packages/reflex-base/src/reflex_base/vars/base.py 100644 9aa6d3f40e826b99bb4c698765ac6d5f5ee1d84a 3 packages/reflex-base/src/reflex_base/vars/base.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/vars/base.py"
+  },
+  "6840": {
+    "clean": false,
+    "detail": "6061e36fb160344587f2719cde6bcce57680d95f 100644 15dcc53f2ed6082bc2faf37d8e3f4c78657953c6 1 reflex/istate/manager/disk.py 100644 920e19867fbe848914c91a20125bf4ab53405bc8 2 reflex/istate/manager/disk.py 100644 9272a98cd5fad4f65b38b32214c82a05151a25db 3 reflex/istate/manager/disk.py 100644 7106287a43da09ead0bb5c4cbd2f49a96a8c52d6 1 tests/units/test_state.py 100644 5f6fd7cceff1a0b643c27576ac3d1e03264a4aac 2 tests/units/test_state.py 100644 1fe0875f3da1b46a8288627b6858ad3aa1a509ce 3 tests/units/test_state.py Auto-merging reflex/istate/manager/disk.py CONFLICT (content): Merge conflict in reflex/istate/manager/disk.py Auto-merging tests/units/test_state.py CONFLICT (content): Merge conflict in tests/units/test_state.py"
+  },
+  "6841": {
+    "clean": true,
+    "detail": "f77a76c12c7dae828af08739930e85887252fcd7"
+  },
+  "6853": {
+    "clean": false,
+    "detail": "f20f804b6847b1e0d84e832fc78248fb695b17db 100644 c2dccc50c9bdb3731bd425d44c5c6d5773636d7b 1 reflex/istate/manager/redis.py 100644 2d7d25ad2445ca20c1cf31a8d968a9d36202163c 2 reflex/istate/manager/redis.py 100644 715f2e735f8315e82792c86a10dd5ef1af45eb81 3 reflex/istate/manager/redis.py 100644 7106287a43da09ead0bb5c4cbd2f49a96a8c52d6 1 tests/units/test_state.py 100644 5f6fd7cceff1a0b643c27576ac3d1e03264a4aac 2 tests/units/test_state.py 100644 16cfb2edfc5b8b30138d5896b9128589e0380f50 3 tests/units/test_state.py Auto-merging reflex/istate/manager/redis.py CONFLICT (content): Merge conflict in reflex/istate/manager/redis.py Auto-merging tests/units/istate/manager/test_redis.py Auto-merging tests/units/test_state.py CONFLICT (content): Merge conflict in tests/units/test_state.py"
+  },
+  "6873": {
+    "clean": true,
+    "detail": "a75858b65319718738a58d08f8ac981729225eaa"
+  },
+  "6876": {
+    "clean": false,
+    "detail": "3798582ca120cd2aeef1ceb4d4c5bd6530845a87 100644 d23e1dd7c40b76c10e62816f56ffb7811500cfaa 1 packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_field.py 100644 ca4f001859326e31c74fc08f5e683183418c0326 2 packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_field.py 100644 820c1e7fb33f3e52b6c7552b82c2fabba4b09771 3 packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_field.py 100644 7e021c531e24bc28fc8f0d56c54ad7ed0dd12349 1 pyi_hashes.json 100644 40fba0d5829b5a945154558eb8a4c69d318f6eea 2 pyi_hashes.json 100644 815913f896b16aced23d0c0b42edd393c4b39ea9 3 pyi_hashes.json Auto-merging packages/reflex-components-radix/src/reflex_components_radix/primitives/form.py Auto-merging packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_field.py CONFLICT (content): Merge conflict in packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_field.py Auto-merging pyi_hashes.json CONFLICT (content): Merge conflict in pyi_hashes.json"
+  },
+  "6898": {
+    "clean": false,
+    "detail": "c899738c5e70f24f36a2e959234c4e54fa35a7b7 100644 4a11adb4c72821db0f9a1b13506ec618271e8503 1 docs/app/agent_files/_plugin.py 100644 3018c58eb2c70e2c15e13fcea046e32e6627cc07 2 docs/app/agent_files/_plugin.py 100644 187f0a584e2ac52c3f98340a56fdd10c2684e10c 3 docs/app/agent_files/_plugin.py 100644 32741185a4b25af4ed1d4ca8224a9db44beef168 2 docs/app/reflex_docs/redirects.py 100644 3aabdbb0ce4063ee74862f0cfc27e57bae6fb5db 3 docs/app/reflex_docs/redirects.py 100644 2b0fde9d317b4fb4e89308f3d4496aa1e8815d18 1 docs/app/reflex_docs/reflex_docs.py 100644 943ee55c3b1332e72e44defdafa0b4661e9ac26c 2 docs/app/reflex_docs/reflex_docs.py 100644 6674a73220788af4dc0eaaee4ee0549e8faf4c1f 3 docs/app/reflex_docs/reflex_docs.py 100644 c223060eeba778eed87558c4c03268603022830e 1 docs/app/tests/test_agent_files.py 100644 af0b192456100127ea80d108fcf57ecbadb7f2b6 2 docs/app/tests/test_agent_files.py 100644 51242695643937a520a06aa265aef514f615ae8f 3 docs/app/tests/test_agent_files.py 100644 b3454d2b775153eebf8a324f20b8df2b53bbbde3 1 docs/app/tests/test_routes.py 100644 195e4d1b1d8368dc0009e6eb3ba7b4c7a6c286a3 2 docs/app/tests/test_routes.py 100644 ad12f4ec44d5fac11edb7d79de9d78a31f6691a3 3 docs/app/tests/test_routes.py 100644 ce7d0cef4bdd48a32ac97c3a52114201a4959fbb 1 docs/app/tests/test_sidebar.py 100644 5a87878ec4fff228b4fb8ab5beeedc2fa6fff53d 2 docs/app/tests/test_sidebar.py 100644 be1e1dc1c5b3fa2c024a145adb3185d4639a25fd 3 docs/app/tests/test_sidebar.py Auto-merging docs/advanced_onboarding/code_structure.md Auto-merging docs/ai_builder/integrations/agent_toolkit.md Auto-merging docs/ai_builder/integrations/agents_md.md Auto-merging docs/ai_builder/integrations/skills.md Auto-merging docs/app/agent_files/_plugin.py CONFLICT (content): Merge conflict in docs/app/agent_files/_plugin.py Auto-merging docs/app/reflex_docs/redirects.py CONFLICT (add/add): Merge conflict in docs/app/reflex_docs/redirects.py Auto-merging docs/app/reflex_docs/reflex_docs.py CONFLICT (content): Merge conflict in docs/app/reflex_docs/reflex_docs.py Auto-merging docs/app/reflex_docs/templates/docpage/sidebar/sidebar_items/learn.py Auto-merging docs/app/tests/test_agent_files.py CONFLICT (content): Merge conflict in docs/app/tests/test_agent_files.py Auto-merging docs/app/tests/test_routes.py CONFLICT (content): Merge conflict in docs/app/tests/test_routes.py Auto-merging docs/app/tests/test_sidebar.py CONFLICT (content): Merge conflict in docs/app/tests/test_sidebar.py Auto-merging docs/state_structure/component_state.md Auto-merging docs/state_structure/overview.md"
+  },
+  "6932": {
+    "clean": true,
+    "detail": "dad1489b9967c2c4d82783a2fbf3d27b8c487e35"
+  },
+  "7007": {
+    "clean": false,
+    "detail": "70a0b35506f25487462c7a94edbc808df6a64164 100644 8a20da7095bef0bca5e382cc95118b952234d1ff 1 .github/workflows/dispatch_release.yml 100644 65f3826c84c646f2da48bdb8277b3644174c85f7 2 .github/workflows/dispatch_release.yml 100644 71ce8f7285891a4ad6194d7eb78150c1f2c9a9a9 3 .github/workflows/dispatch_release.yml 100644 ce74a1eb3d3c6d4da00bdebea2cba090586fa2e9 1 packages/reflex-base/src/reflex_base/utils/log.py 100644 6a59344cbd7d503d40fae51b9297da54859434ac 2 packages/reflex-base/src/reflex_base/utils/log.py 100644 ef89b722e0cfc78b4ce8d04e2b89212f09e46359 3 packages/reflex-base/src/reflex_base/utils/log.py 100644 959df1a5633fcc83d6f264b2034c359f3629a4a0 1 pyproject.toml 100644 9520867e57079450dcb15bb65036b166841e5a55 2 pyproject.toml 100644 6d3efaefe8389a7dd19d3aa7bbdedeefe810795f 3 pyproject.toml 100644 4212881b6da34767880b1136fd44bbc959ec8bf0 1 uv.lock 100644 62d62d01e29c6e3af99e8f04b320e4102cede197 2 uv.lock 100644 0c231c6b381e44954403487b8e34ec8c318c2409 3 uv.lock Auto-merging .github/workflows/dispatch_release.yml CONFLICT (content): Merge conflict in .github/workflows/dispatch_release.yml Auto-merging packages/reflex-base/src/reflex_base/utils/log.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/utils/log.py Auto-merging pyproject.toml CONFLICT (content): Merge conflict in pyproject.toml Auto-merging uv.lock CONFLICT (content): Merge conflict in uv.lock"
+  },
+  "7033": {
+    "clean": false,
+    "detail": "04b4468fca2f1a92e59dfa163921878de0db61fd 100644 29c36ba1933a1d769b584489e59788de6878dfc7 1 packages/reflex-base/src/reflex_base/event/__init__.py 100644 7f6c6ffe43e269ef78eae0d00908c5ebe5e13199 2 packages/reflex-base/src/reflex_base/event/__init__.py 100644 cc1537c71155b65ab1c728ca83800731b5c47677 3 packages/reflex-base/src/reflex_base/event/__init__.py 100644 15e8f6329d7ab6eca62e39f091e6f1bfef938b56 1 tests/units/utils/test_exec.py 100644 2bc85ee209865debcedc1a1f17df23740b279b8d 2 tests/units/utils/test_exec.py 100644 abe7224d8e6d6b9bcf49bf83ebf41a53bf4a39a2 3 tests/units/utils/test_exec.py Auto-merging packages/reflex-base/src/reflex_base/config.py Auto-merging packages/reflex-base/src/reflex_base/event/__init__.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/event/__init__.py Auto-merging reflex/state.py Auto-merging reflex/utils/exec.py Auto-merging tests/units/test_config.py Auto-merging tests/units/test_event.py Auto-merging tests/units/test_state.py Auto-merging tests/units/utils/test_exec.py CONFLICT (content): Merge conflict in tests/units/utils/test_exec.py"
+  },
+  "7036": {
+    "clean": false,
+    "detail": "ba082cc1bee3c05093d7b5cf71413742c3a9552f 100644 4e59903b82cabb5a6fba0b1b2a74a29cbe4476a7 1 packages/reflex-base/src/reflex_base/utils/types.py 100644 e960aa4a8a40c38d1128e2e41cea5743e29eccfa 2 packages/reflex-base/src/reflex_base/utils/types.py 100644 1917ec9a07140656bb5dd132d9d23c21cd8cf77f 3 packages/reflex-base/src/reflex_base/utils/types.py 100644 8803960d51c6e2e9b43d16030b7d2ecccfae0ec1 1 packages/reflex-base/src/reflex_base/vars/base.py 100644 0671d80c917611a112f7c38033fb35a9c6007873 2 packages/reflex-base/src/reflex_base/vars/base.py 100644 ce8db45f5871b95f920dfbe398950f24ef099e2b 3 packages/reflex-base/src/reflex_base/vars/base.py 100644 15722061c6594dca2c0dbc2bf4029874981a8261 1 reflex/state.py 100644 bb7fbca35466900ff262b867aaa98b1788134351 2 reflex/state.py 100644 4ae9b65ffe034570b3abd2633e689dfbc9b605c2 3 reflex/state.py 100644 346bfc4e038ab862b1ec604602e5cfae3f93495a 1 tests/units/test_state.py 100644 5f6fd7cceff1a0b643c27576ac3d1e03264a4aac 2 tests/units/test_state.py 100644 7c9aa2f73c922f8790f0647934cbf5ec9754fd7a 3 tests/units/test_state.py Auto-merging packages/reflex-base/src/reflex_base/utils/types.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/utils/types.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/vars/base.py Auto-merging reflex/state.py CONFLICT (content): Merge conflict in reflex/state.py Auto-merging tests/units/test_state.py CONFLICT (content): Merge conflict in tests/units/test_state.py"
+  },
+  "7040": {
+    "clean": false,
+    "detail": "31b06666bc70ee66e87456894ffcfd26b4a5eb36 100644 35dd3bcb4daf2002cb53f7ba48a8ce90b836f3f8 1 reflex/custom_components/custom_components.py 100644 3f5080ca280c3631f23848591c5f7f4d3b2aff71 3 reflex/custom_components/custom_components.py 100644 a1d76d2e8b5377324ed454fd4f0d990f267911a9 1 reflex/utils/telemetry.py 100644 e669935681cced815c59d75d7bbe08302454e795 2 reflex/utils/telemetry.py 100644 11df4ef479d34355bb605b761b5d92872f53ba55 3 reflex/utils/telemetry.py 100644 aa530e39ccf2e2757311519488506bbd19a7bf99 1 tests/units/test_telemetry.py 100644 db2cc600e3a36898f371aaae1a555f256f2b58b2 2 tests/units/test_telemetry.py 100644 170b6c0abd11b12039dbb87a445104dea64a6f50 3 tests/units/test_telemetry.py 100644 43f7d18e4d335ba06959111e4091a17ddea3be81 1 uv.lock 100644 62d62d01e29c6e3af99e8f04b320e4102cede197 2 uv.lock 100644 7f47baccc64792f269904883618ef65d7641aa19 3 uv.lock Auto-merging pyproject.toml CONFLICT (modify/delete): reflex/custom_components/custom_components.py deleted in refs/remotes/origin/main and modified in refs/pr/7040. Version refs/pr/7040 of reflex/custom_components/custom_components.py left in tree. Auto-merging reflex/utils/frontend_skeleton.py Auto-merging reflex/utils/js_runtimes.py Auto-merging reflex/utils/telemetry.py CONFLICT (content): Merge conflict in reflex/utils/telemetry.py Auto-merging tests/units/test_telemetry.py CONFLICT (content): Merge conflict in tests/units/test_telemetry.py Auto-merging tests/units/utils/test_utils.py Auto-merging uv.lock CONFLICT (content): Merge conflict in uv.lock"
+  },
+  "7051": {
+    "clean": true,
+    "detail": "71b50d57e91aca46fa94cff79dbaca7d9fa46e92"
+  },
+  "7056": {
+    "clean": false,
+    "detail": "7fdbe23a9d93e57907c38e286b89f2efeae1e019 100644 d51534aa1eb19b326ec02d9511de2aa51fde0e27 1 packages/reflex-base/src/reflex_base/utils/format.py 100644 a71e34c875e4e41e39c82f528a785e632f1de1c0 2 packages/reflex-base/src/reflex_base/utils/format.py 100644 40e139ebac8e09d497d90fc3035d814a02c36adf 3 packages/reflex-base/src/reflex_base/utils/format.py 100644 fcd46b8af3c4a371fb562807fd0f4fb732f1e9bc 1 packages/reflex-base/src/reflex_base/utils/serializers.py 100644 29ac48cf60fa18e2139e8da0162fc9839caff991 2 packages/reflex-base/src/reflex_base/utils/serializers.py 100644 cfbde6ff07f89f919e07ee8fe4565fa81f56af1b 3 packages/reflex-base/src/reflex_base/utils/serializers.py 100644 ca878b153b48c567ae2a29994f91aaff2b4eee6d 1 packages/reflex-base/src/reflex_base/vars/base.py 100644 0671d80c917611a112f7c38033fb35a9c6007873 2 packages/reflex-base/src/reflex_base/vars/base.py 100644 deb459d1efb448c70a2a92d816e25447d5d1c536 3 packages/reflex-base/src/reflex_base/vars/base.py 100644 e0fe6a219f6564a2e34be5fec3dfe64a93c5bb4e 1 reflex/istate/proxy.py 100644 f15d4d1d3cc5eb313088b097f70c1ac77ae7a0d7 2 reflex/istate/proxy.py 100644 758e147e5b9765ec1f8a74a9221d08864cdcef77 3 reflex/istate/proxy.py 100644 c70523d51d46806c59a929f364bd937cb58ece7b 1 tests/units/reflex_base/utils/test_types.py 100644 5db3868ba5ed01a2f936e7d48f2a1a7cbdab9758 2 tests/units/reflex_base/utils/test_types.py 100644 f9d5d47a39b7f9af0a42a037de9191f4efcef88b 3 tests/units/reflex_base/utils/test_types.py Auto-merging packages/reflex-base/pyproject.toml Auto-merging packages/reflex-base/src/reflex_base/utils/format.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/utils/format.py Auto-merging packages/reflex-base/src/reflex_base/utils/serializers.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/utils/serializers.py Auto-merging packages/reflex-base/src/reflex_base/utils/types.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/vars/base.py Auto-merging packages/reflex-components-core/src/reflex_components_core/core/_upload.py Auto-merging reflex/app.py Auto-merging reflex/istate/proxy.py CONFLICT (content): Merge conflict in reflex/istate/proxy.py Auto-merging reflex/state.py Auto-merging tests/units/reflex_base/utils/test_format.py Auto-merging tests/units/reflex_base/utils/test_types.py CONFLICT (content): Merge conflict in tests/units/reflex_base/utils/test_types.py Auto-merging tests/units/test_reflex.py Auto-merging tests/units/utils/test_format.py Auto-merging uv.lock"
+  },
+  "7065": {
+    "clean": true,
+    "detail": "fe3b3c086191b56f652ef6f8877a595b1eec62a6"
+  },
+  "7113": {
+    "clean": true,
+    "detail": "427c2541f667ac9fe8fba1704d26598ace39cb60"
+  },
+  "7144": {
+    "clean": false,
+    "detail": "8787b93002d7e00dfc98ceb3801152ccf601f3c9 100644 8917ef90838c00b38083deded7e55acd1d2722d9 1 tests/units/test_app.py 100644 6ef3ceef5cf077ff08339117071f8242263ddb0f 2 tests/units/test_app.py 100644 0aa5b3ceaa07435f10782d9ed756176dd9102cdc 3 tests/units/test_app.py Auto-merging packages/reflex-base/src/reflex_base/config.py Auto-merging reflex/app.py Auto-merging reflex/reflex.py Auto-merging tests/units/conftest.py Auto-merging tests/units/test_app.py CONFLICT (content): Merge conflict in tests/units/test_app.py"
+  },
+  "7233": {
+    "clean": false,
+    "detail": "51377094d237eab4a191514ef27c8e24abbff525 100644 fadc4406b65025d83c094bfbe622866f5a4e725b 1 reflex/utils/path_ops.py 100644 60e2d1ccbd99305e560072796c838b5eb8ae1863 2 reflex/utils/path_ops.py 100644 ece7ff13c747a5b840b06ca34fece7d269b4983a 3 reflex/utils/path_ops.py 100644 879dafb18b3f679e0b0f97e9562d07bbdb7f7d94 1 tests/units/compiler/test_compiler_utils.py 100644 b92647a967795af582b337d99c49c25888b20074 2 tests/units/compiler/test_compiler_utils.py 100644 3b7db72745d553dc5bd3f8ff2bcb87c6c6a47eaf 3 tests/units/compiler/test_compiler_utils.py 100644 f877a310c8034ff6990e58390dcaa718b35f4d04 1 tests/units/utils/test_path_ops.py 100644 bc7e4aec01b08e0faa21aa5976bb0966916e7666 2 tests/units/utils/test_path_ops.py 100644 ac22e9333f56c9d4fd8956247457f894d1a48fc3 3 tests/units/utils/test_path_ops.py Auto-merging reflex/compiler/compiler.py Auto-merging reflex/compiler/utils.py Auto-merging reflex/utils/path_ops.py CONFLICT (content): Merge conflict in reflex/utils/path_ops.py Auto-merging tests/units/compiler/test_compiler.py Auto-merging tests/units/compiler/test_compiler_utils.py CONFLICT (content): Merge conflict in tests/units/compiler/test_compiler_utils.py Auto-merging tests/units/utils/test_path_ops.py CONFLICT (content): Merge conflict in tests/units/utils/test_path_ops.py"
+  },
+  "7276": {
+    "clean": true,
+    "detail": "4edcb9204a68db845f3a8b8985341207bbcfcfeb"
+  },
+  "7308": {
+    "clean": true,
+    "detail": "a8cc1d74e5d7c2fa19fea20154c3440bb2c17a26"
+  },
+  "7313": {
+    "clean": false,
+    "detail": "2d1f98b7e559aed9e8ba82fbb5f0497a03c1a524 100644 29c36ba1933a1d769b584489e59788de6878dfc7 1 packages/reflex-base/src/reflex_base/event/__init__.py 100644 7f6c6ffe43e269ef78eae0d00908c5ebe5e13199 2 packages/reflex-base/src/reflex_base/event/__init__.py 100644 aa65a1586ac9e9fd99f50be2e27a40948d74df8d 3 packages/reflex-base/src/reflex_base/event/__init__.py 100644 553668b0f1951c59e8e1bfc6a24bc7a7a1b584f6 1 packages/reflex-base/src/reflex_base/event/context.py 100644 66a88ac3e2747a4037c61cfd06451dd18c2d476d 2 packages/reflex-base/src/reflex_base/event/context.py 100644 e8b0ae819afd01106d37c3520919f3494f9890e2 3 packages/reflex-base/src/reflex_base/event/context.py 100644 0e60983b57288f99b3855e09afc1ce8d506256d3 1 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 06438a25b76d99c5c311ffd89ba67c66d6e137bf 2 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 aaf27fd00a90ad20f922057f9a498cde6b3bfcf5 3 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 801fb6de03dfbd118ff61b2c052b3a87506ea8ed 1 reflex/app.py 100644 b082a56d624241ddbc452aae51d4db0747a39cc3 2 reflex/app.py 100644 5f69b921d7330ca9948d105eb94e0e0769e081cb 3 reflex/app.py 100644 e0fe6a219f6564a2e34be5fec3dfe64a93c5bb4e 1 reflex/istate/proxy.py 100644 f15d4d1d3cc5eb313088b097f70c1ac77ae7a0d7 2 reflex/istate/proxy.py 100644 3d7d7bc73c1d1a357079ba088f52a941ac46db95 3 reflex/istate/proxy.py 100644 18de4e2c7556cfd51ef7ed8af096beff274a7aa3 1 tests/units/istate/test_proxy.py 100644 2138b4d0e8aff4ffcb8836ad0668aef6e1cfe47d 2 tests/units/istate/test_proxy.py 100644 18325fa6ac8d95c28d59c082934c26d27fcc288f 3 tests/units/istate/test_proxy.py 100644 63824873e0a6d2e6e8cc2da04a1cf361a400525e 1 tests/units/test_event.py 100644 abc07d9a9636ba3317217e94c0d87d5cf93004ce 2 tests/units/test_event.py 100644 3e5268366473c36789f5665e03713770670340ab 3 tests/units/test_event.py Auto-merging docs/events/background_events.md Auto-merging packages/reflex-base/src/reflex_base/event/__init__.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/event/__init__.py Auto-merging packages/reflex-base/src/reflex_base/event/context.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/event/context.py Auto-merging packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py Auto-merging reflex/app.py CONFLICT (content): Merge conflict in reflex/app.py Auto-merging reflex/istate/proxy.py CONFLICT (content): Merge conflict in reflex/istate/proxy.py Auto-merging reflex/istate/shared.py Auto-merging reflex/state.py Auto-merging tests/units/istate/test_proxy.py CONFLICT (content): Merge conflict in tests/units/istate/test_proxy.py Auto-merging tests/units/reflex_base/event/processor/test_base_state_processor.py Auto-merging tests/units/test_app.py Auto-merging tests/units/test_event.py CONFLICT (content): Merge conflict in tests/units/test_event.py Auto-merging tests/units/test_state.py Auto-merging tests/units/utils/test_token_manager.py"
+  },
+  "7314": {
+    "clean": false,
+    "detail": "e0009ecab4b70c894d87e6b1b8b866c29583022c 100644 553668b0f1951c59e8e1bfc6a24bc7a7a1b584f6 1 packages/reflex-base/src/reflex_base/event/context.py 100644 66a88ac3e2747a4037c61cfd06451dd18c2d476d 2 packages/reflex-base/src/reflex_base/event/context.py 100644 e013d6abd6cb2e8e0aab581a61208c48987460ee 3 packages/reflex-base/src/reflex_base/event/context.py 100644 0e60983b57288f99b3855e09afc1ce8d506256d3 1 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 06438a25b76d99c5c311ffd89ba67c66d6e137bf 2 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 31a54a8a1d015547fafc25fac8064b588a72a216 3 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 570f13c164881108e905cbb06c37c65f0c2a04c1 1 packages/reflex-base/src/reflex_base/vars/base.py 100644 0671d80c917611a112f7c38033fb35a9c6007873 2 packages/reflex-base/src/reflex_base/vars/base.py 100644 52856a609a8c6617b2633a8cbe7825f1bcfc7b57 3 packages/reflex-base/src/reflex_base/vars/base.py 100644 f1888144bcde6c3b83c87043a3078ed076e445e4 1 pyproject.toml 100644 9520867e57079450dcb15bb65036b166841e5a55 2 pyproject.toml 100644 afbdada06be8f77371481c246ecb283e97bfe7c7 3 pyproject.toml 100644 801fb6de03dfbd118ff61b2c052b3a87506ea8ed 1 reflex/app.py 100644 b082a56d624241ddbc452aae51d4db0747a39cc3 2 reflex/app.py 100644 b33d70d56b62a1b4fcbb325ef72f23ad921e5860 3 reflex/app.py 100644 052584a5fb5b437a751f4f617d7d0fc36c4037f5 1 reflex/istate/__init__.py 100644 85cfaa4b5e6888b97f55462f5031c58d4749a676 2 reflex/istate/__init__.py 100644 6e53e5baced35ee2298cc4f798b7a1f521023065 3 reflex/istate/__init__.py 100644 9ec87aac3d41e826a3981d01998ad6380143b930 1 reflex/istate/delta.py 100644 a1a7e0eb712a8c66721393ae5745be10fe9ebd69 2 reflex/istate/delta.py 100644 b1b863868cd37a8148418fb96d49ddc34f04503d 3 reflex/istate/delta.py 100644 8b93a0f9a58fe00cc4722145cb24ae6485db4f58 1 reflex/istate/manager/token.py 100644 f6838b7abc6023d5581386236c03e9fa585eda59 2 reflex/istate/manager/token.py 100644 f168f51ecc27f5afc6c9b4ea245a98837ee50832 3 reflex/istate/manager/token.py 100644 e0fe6a219f6564a2e34be5fec3dfe64a93c5bb4e 1 reflex/istate/proxy.py 100644 f15d4d1d3cc5eb313088b097f70c1ac77ae7a0d7 2 reflex/istate/proxy.py 100644 07a04a00ea95db6fcaa18cb0a665de16b8e14a8e 3 reflex/istate/proxy.py 100644 bc92f12413ff2ada0efe7a5aa0c51babedc1207b 1 reflex/istate/shared.py 100644 a4d24de06578adfd80957ba789be2f16f4354e48 2 reflex/istate/shared.py 100644 fe078e9fe45068ed442abf5fc88b15c6d28d4970 3 reflex/istate/shared.py 100644 e62ed5793d1d7bfb096150edc1beb9101b1d5c1b 1 reflex/state.py 100644 bb7fbca35466900ff262b867aaa98b1788134351 2 reflex/state.py 100644 8a041153c28e621cddb44ddf6268964cbb80c36d 3 reflex/state.py 100644 90c43412f9ef18c2d46168f90369370db3e5d125 1 tests/units/reflex_base/event/processor/test_base_state_processor.py 100644 39ce030323b98834fe1301ce329da72822b53daa 2 tests/units/reflex_base/event/processor/test_base_state_processor.py 100644 5f332d34363db20bb5311a3ef6f0834089a2979b 3 tests/units/reflex_base/event/processor/test_base_state_processor.py 100644 18de4e2c7556cfd51ef7ed8af096beff274a7aa3 1 tests/units/reflex_base/state/test_proxy.py 100644 2138b4d0e8aff4ffcb8836ad0668aef6e1cfe47d 2 tests/units/reflex_base/state/test_proxy.py 100644 5d2783269c693cb198287cae10fc358419dd819b 3 tests/units/reflex_base/state/test_proxy.py 100644 b2251e1925bd0c33429082de298721d28851f8e4 1 tests/units/test_state.py 100644 5f6fd7cceff1a0b643c27576ac3d1e03264a4aac 2 tests/units/test_state.py 100644 bd8f62b51c9d99a578bdf5e19a37289276356768 3 tests/units/test_state.py 100644 f26ce7dd10ee4a00612b27df0f683e8481a0789f 1 uv.lock 100644 62d62d01e29c6e3af99e8f04b320e4102cede197 2 uv.lock 100644 20f459e5233c4cf309fda10f3175c82639790ba4 3 uv.lock Auto-merging docs/events/background_events.md Auto-merging packages/reflex-base/pyproject.toml Auto-merging packages/reflex-base/src/reflex_base/event/__init__.py Auto-merging packages/reflex-base/src/reflex_base/event/context.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/event/context.py Auto-merging packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py Auto-merging packages/reflex-base/src/reflex_base/registry.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/vars/base.py Auto-merging pyproject.toml CONFLICT (content): Merge conflict in pyproject.toml Auto-merging reflex/app.py CONFLICT (content): Merge conflict in reflex/app.py Auto-merging reflex/compiler/utils.py Auto-merging reflex/istate/__init__.py CONFLICT (content): Merge conflict in reflex/istate/__init__.py Auto-merging reflex/istate/delta.py CONFLICT (content): Merge conflict in reflex/istate/delta.py Auto-merging reflex/istate/manager/__init__.py Auto-merging reflex/istate/manager/disk.py Auto-merging reflex/istate/manager/memory.py Auto-merging reflex/istate/manager/redis.py Auto-merging reflex/istate/manager/token.py CONFLICT (content): Merge conflict in reflex/istate/manager/token.py Auto-merging reflex/istate/proxy.py CONFLICT (content): Merge conflict in reflex/istate/proxy.py Auto-merging reflex/istate/shared.py CONFLICT (content): Merge conflict in reflex/istate/shared.py Auto-merging reflex/state.py CONFLICT (content): Merge conflict in reflex/state.py Auto-merging tests/units/istate/manager/test_disk.py Auto-merging tests/units/istate/manager/test_redis.py Auto-merging tests/units/reflex_base/event/processor/test_base_state_processor.py CONFLICT (content): Merge conflict in tests/units/reflex_base/event/processor/test_base_state_processor.py Auto-merging tests/units/reflex_base/state/test_proxy.py CONFLICT (content): Merge conflict in tests/units/reflex_base/state/test_proxy.py Auto-merging tests/units/reflex_base/state/test_token.py Auto-merging tests/units/test_app.py Auto-merging tests/units/test_event.py Auto-merging tests/units/test_state.py CONFLICT (content): Merge conflict in tests/units/test_state.py Auto-merging tests/units/utils/test_token_manager.py Auto-merging uv.lock CONFLICT (content): Merge conflict in uv.lock"
+  },
+  "7315": {
+    "clean": false,
+    "detail": "bb8051bf8e6a00c5a3d3787dfded2fef9552c3cc 100644 d311953521465c622ed1dbd29727ad31c06f93e0 1 packages/reflex-base/src/reflex_base/.templates/web/utils/state.js 100644 c4f212de66c756dc122eceed647c62edb2531693 2 packages/reflex-base/src/reflex_base/.templates/web/utils/state.js 100644 a56883539854fed95055f1dc15af52ea91b50449 3 packages/reflex-base/src/reflex_base/.templates/web/utils/state.js 100644 553668b0f1951c59e8e1bfc6a24bc7a7a1b584f6 1 packages/reflex-base/src/reflex_base/event/context.py 100644 66a88ac3e2747a4037c61cfd06451dd18c2d476d 2 packages/reflex-base/src/reflex_base/event/context.py 100644 e013d6abd6cb2e8e0aab581a61208c48987460ee 3 packages/reflex-base/src/reflex_base/event/context.py 100644 0e60983b57288f99b3855e09afc1ce8d506256d3 1 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 06438a25b76d99c5c311ffd89ba67c66d6e137bf 2 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 31a54a8a1d015547fafc25fac8064b588a72a216 3 packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py 100644 2a9ed5a3d540a52a768495ebaa76792ba8c239cf 1 packages/reflex-base/src/reflex_base/utils/types.py 100644 e960aa4a8a40c38d1128e2e41cea5743e29eccfa 2 packages/reflex-base/src/reflex_base/utils/types.py 100644 016903118d83fc8f56dc68f59944959e5333892e 3 packages/reflex-base/src/reflex_base/utils/types.py 100644 570f13c164881108e905cbb06c37c65f0c2a04c1 1 packages/reflex-base/src/reflex_base/vars/base.py 100644 0671d80c917611a112f7c38033fb35a9c6007873 2 packages/reflex-base/src/reflex_base/vars/base.py 100644 df76834000f8dc685c28df263e13b4d0c4bf6953 3 packages/reflex-base/src/reflex_base/vars/base.py 100644 f1888144bcde6c3b83c87043a3078ed076e445e4 1 pyproject.toml 100644 9520867e57079450dcb15bb65036b166841e5a55 2 pyproject.toml 100644 afbdada06be8f77371481c246ecb283e97bfe7c7 3 pyproject.toml 100644 801fb6de03dfbd118ff61b2c052b3a87506ea8ed 1 reflex/app.py 100644 b082a56d624241ddbc452aae51d4db0747a39cc3 2 reflex/app.py 100644 b33d70d56b62a1b4fcbb325ef72f23ad921e5860 3 reflex/app.py 100644 052584a5fb5b437a751f4f617d7d0fc36c4037f5 1 reflex/istate/__init__.py 100644 85cfaa4b5e6888b97f55462f5031c58d4749a676 2 reflex/istate/__init__.py 100644 6e53e5baced35ee2298cc4f798b7a1f521023065 3 reflex/istate/__init__.py 100644 9ec87aac3d41e826a3981d01998ad6380143b930 1 reflex/istate/delta.py 100644 a1a7e0eb712a8c66721393ae5745be10fe9ebd69 2 reflex/istate/delta.py 100644 b1b863868cd37a8148418fb96d49ddc34f04503d 3 reflex/istate/delta.py 100644 8b93a0f9a58fe00cc4722145cb24ae6485db4f58 1 reflex/istate/manager/token.py 100644 f6838b7abc6023d5581386236c03e9fa585eda59 2 reflex/istate/manager/token.py 100644 f168f51ecc27f5afc6c9b4ea245a98837ee50832 3 reflex/istate/manager/token.py 100644 e0fe6a219f6564a2e34be5fec3dfe64a93c5bb4e 1 reflex/istate/proxy.py 100644 f15d4d1d3cc5eb313088b097f70c1ac77ae7a0d7 2 reflex/istate/proxy.py 100644 07a04a00ea95db6fcaa18cb0a665de16b8e14a8e 3 reflex/istate/proxy.py 100644 bc92f12413ff2ada0efe7a5aa0c51babedc1207b 1 reflex/istate/shared.py 100644 a4d24de06578adfd80957ba789be2f16f4354e48 2 reflex/istate/shared.py 100644 fe078e9fe45068ed442abf5fc88b15c6d28d4970 3 reflex/istate/shared.py 100644 e62ed5793d1d7bfb096150edc1beb9101b1d5c1b 1 reflex/state.py 100644 bb7fbca35466900ff262b867aaa98b1788134351 2 reflex/state.py 100644 8a041153c28e621cddb44ddf6268964cbb80c36d 3 reflex/state.py 100644 1c921c3be457bffed62aa32ae457cb439e347e0a 1 tests/units/reflex_base/client_event_queue_runtime.mjs 100644 2befa24459ffb4ea3941ab9cc04cde5db62287d0 2 tests/units/reflex_base/client_event_queue_runtime.mjs 100644 94c04b4dea086515ba9c0cdcc2c11a7ea1785a42 3 tests/units/reflex_base/client_event_queue_runtime.mjs 100644 90c43412f9ef18c2d46168f90369370db3e5d125 1 tests/units/reflex_base/event/processor/test_base_state_processor.py 100644 39ce030323b98834fe1301ce329da72822b53daa 2 tests/units/reflex_base/event/processor/test_base_state_processor.py 100644 5f332d34363db20bb5311a3ef6f0834089a2979b 3 tests/units/reflex_base/event/processor/test_base_state_processor.py 100644 18de4e2c7556cfd51ef7ed8af096beff274a7aa3 1 tests/units/reflex_base/state/test_proxy.py 100644 2138b4d0e8aff4ffcb8836ad0668aef6e1cfe47d 2 tests/units/reflex_base/state/test_proxy.py 100644 5d2783269c693cb198287cae10fc358419dd819b 3 tests/units/reflex_base/state/test_proxy.py 100644 c70523d51d46806c59a929f364bd937cb58ece7b 1 tests/units/reflex_base/utils/test_types.py 100644 5db3868ba5ed01a2f936e7d48f2a1a7cbdab9758 2 tests/units/reflex_base/utils/test_types.py 100644 0f655a86de77504d1bf68289f20f7643e6f82e26 3 tests/units/reflex_base/utils/test_types.py 100644 ce8b3ccc10d3e8476af45edc6799dbd06fe1be0e 1 tests/units/reflex_base/vars/test_base.py 100644 58517ddaa522541cbd07841d4009f43f3925cd26 2 tests/units/reflex_base/vars/test_base.py 100644 5160d69f074fc59b273c943be984f69c727ecb0b 3 tests/units/reflex_base/vars/test_base.py 100644 b2251e1925bd0c33429082de298721d28851f8e4 1 tests/units/test_state.py 100644 5f6fd7cceff1a0b643c27576ac3d1e03264a4aac 2 tests/units/test_state.py 100644 bd8f62b51c9d99a578bdf5e19a37289276356768 3 tests/units/test_state.py 100644 f26ce7dd10ee4a00612b27df0f683e8481a0789f 1 uv.lock 100644 62d62d01e29c6e3af99e8f04b320e4102cede197 2 uv.lock 100644 20f459e5233c4cf309fda10f3175c82639790ba4 3 uv.lock Auto-merging docs/events/background_events.md Auto-merging packages/reflex-base/pyproject.toml Auto-merging packages/reflex-base/src/reflex_base/.templates/web/utils/context-registry.js Auto-merging packages/reflex-base/src/reflex_base/.templates/web/utils/state.js CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/.templates/web/utils/state.js Auto-merging packages/reflex-base/src/reflex_base/compiler/templates.py Auto-merging packages/reflex-base/src/reflex_base/event/__init__.py Auto-merging packages/reflex-base/src/reflex_base/event/context.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/event/context.py Auto-merging packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py Auto-merging packages/reflex-base/src/reflex_base/registry.py Auto-merging packages/reflex-base/src/reflex_base/utils/types.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/utils/types.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/vars/base.py Auto-merging pyproject.toml CONFLICT (content): Merge conflict in pyproject.toml Auto-merging reflex/app.py CONFLICT (content): Merge conflict in reflex/app.py Auto-merging reflex/compiler/utils.py Auto-merging reflex/istate/__init__.py CONFLICT (content): Merge conflict in reflex/istate/__init__.py Auto-merging reflex/istate/delta.py CONFLICT (content): Merge conflict in reflex/istate/delta.py Auto-merging reflex/istate/manager/__init__.py Auto-merging reflex/istate/manager/disk.py Auto-merging reflex/istate/manager/memory.py Auto-merging reflex/istate/manager/redis.py Auto-merging reflex/istate/manager/token.py CONFLICT (content): Merge conflict in reflex/istate/manager/token.py Auto-merging reflex/istate/proxy.py CONFLICT (content): Merge conflict in reflex/istate/proxy.py Auto-merging reflex/istate/shared.py CONFLICT (content): Merge conflict in reflex/istate/shared.py Auto-merging reflex/state.py CONFLICT (content): Merge conflict in reflex/state.py Auto-merging tests/units/istate/manager/test_disk.py Auto-merging tests/units/istate/manager/test_redis.py Auto-merging tests/units/reflex_base/client_event_queue.mjs Auto-merging tests/units/reflex_base/client_event_queue_runtime.mjs CONFLICT (content): Merge conflict in tests/units/reflex_base/client_event_queue_runtime.mjs Auto-merging tests/units/reflex_base/event/processor/test_base_state_processor.py CONFLICT (content): Merge conflict in tests/units/reflex_base/event/processor/test_base_state_processor.py Auto-merging tests/units/reflex_base/state/test_proxy.py CONFLICT (content): Merge conflict in tests/units/reflex_base/state/test_proxy.py Auto-merging tests/units/reflex_base/state/test_token.py Auto-merging tests/units/reflex_base/utils/test_types.py CONFLICT (content): Merge conflict in tests/units/reflex_base/utils/test_types.py Auto-merging tests/units/reflex_base/vars/test_base.py CONFLICT (content): Merge conflict in tests/units/reflex_base/vars/test_base.py Auto-merging tests/units/test_app.py Auto-merging tests/units/test_event.py Auto-merging tests/units/test_state.py CONFLICT (content): Merge conflict in tests/units/test_state.py Auto-merging tests/units/utils/test_token_manager.py Auto-merging uv.lock CONFLICT (content): Merge conflict in uv.lock"
+  },
+  "7323": {
+    "clean": true,
+    "detail": "de93956383f3651c654177578860f726bc0661f0"
+  },
+  "7337": {
+    "clean": false,
+    "detail": "747e6bdfd739b3069b66b80c598645a455776f47 100644 5cf3724f3732b3f02e4fed8db1935de2f68db015 1 packages/reflex-base/src/reflex_base/utils/format.py 100644 a71e34c875e4e41e39c82f528a785e632f1de1c0 2 packages/reflex-base/src/reflex_base/utils/format.py 100644 71493390bd7754860c82e9f12d0d78ef3e4b0ceb 3 packages/reflex-base/src/reflex_base/utils/format.py Auto-merging packages/reflex-base/src/reflex_base/utils/format.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/utils/format.py Auto-merging pyi_hashes.json"
+  },
+  "7361": {
+    "clean": true,
+    "detail": "51ac06f06e88015d98272cef934c0ab3c3b896f0"
+  },
+  "7362": {
+    "clean": true,
+    "detail": "3954eacb2773ea13288a166db406a38353fb42f5"
+  },
+  "7363": {
+    "clean": false,
+    "detail": "66a4c5ac52330e18e70d64b83a8034e403785cc7 100644 df8472228fb4d450361d5d8047edd20baf088ce4 1 tests/units/compiler/state_js.test.mjs 100644 1583138edb25076e51ac8989cd4ea7c88970770d 2 tests/units/compiler/state_js.test.mjs 100644 f895e0dc765b062cf0202ed7fd33ec8af566cd23 3 tests/units/compiler/state_js.test.mjs Auto-merging packages/reflex-base/src/reflex_base/.templates/web/utils/state.js Auto-merging reflex/app.py Auto-merging tests/units/compiler/state_js.test.mjs CONFLICT (content): Merge conflict in tests/units/compiler/state_js.test.mjs Auto-merging tests/units/test_app.py Auto-merging tests/units/test_prerequisites.py"
+  },
+  "7364": {
+    "clean": false,
+    "detail": "68f8ed86d06ca84817d9daf9a13f8767b83aa8f2 100644 df8472228fb4d450361d5d8047edd20baf088ce4 1 tests/units/compiler/state_js.test.mjs 100644 1583138edb25076e51ac8989cd4ea7c88970770d 2 tests/units/compiler/state_js.test.mjs 100644 f895e0dc765b062cf0202ed7fd33ec8af566cd23 3 tests/units/compiler/state_js.test.mjs Auto-merging packages/reflex-base/src/reflex_base/.templates/web/utils/state.js Auto-merging reflex/app.py Auto-merging tests/units/compiler/state_js.test.mjs CONFLICT (content): Merge conflict in tests/units/compiler/state_js.test.mjs Auto-merging tests/units/test_app.py Auto-merging tests/units/test_prerequisites.py"
+  },
+  "7379": {
+    "clean": true,
+    "detail": "c22cffb816a8a680af477ae1572a872dcfb08c4b"
+  },
+  "7381": {
+    "clean": false,
+    "detail": "0374db7b204c84f322eb71bed4da59c794094909 100644 ca878b153b48c567ae2a29994f91aaff2b4eee6d 1 packages/reflex-base/src/reflex_base/vars/base.py 100644 0671d80c917611a112f7c38033fb35a9c6007873 2 packages/reflex-base/src/reflex_base/vars/base.py 100644 4f1bd7034931ff557dc56c6fd5d40f9677c24ae1 3 packages/reflex-base/src/reflex_base/vars/base.py 100644 ce8b3ccc10d3e8476af45edc6799dbd06fe1be0e 1 tests/units/reflex_base/vars/test_base.py 100644 58517ddaa522541cbd07841d4009f43f3925cd26 2 tests/units/reflex_base/vars/test_base.py 100644 ce8c54789bec692130215f1142725473d5161051 3 tests/units/reflex_base/vars/test_base.py Auto-merging packages/reflex-base/src/reflex_base/utils/exceptions.py Auto-merging packages/reflex-base/src/reflex_base/vars/base.py CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/vars/base.py Auto-merging reflex/state.py Auto-merging tests/units/reflex_base/vars/test_base.py CONFLICT (content): Merge conflict in tests/units/reflex_base/vars/test_base.py Auto-merging tests/units/test_state.py"
+  },
+  "7394": {
+    "clean": false,
+    "detail": "88271505750a946f7ebdb4843adefdb052ef2573 100644 2117a2b08fdc835b94015986b78819d88e102ad3 1 .github/workflows/build_packages.yml 100644 89b3f7bd69255d19a854af2a4039cac33f751941 2 .github/workflows/build_packages.yml 100644 180ddee889972530c3aaee319d0fffff552b59ba 3 .github/workflows/build_packages.yml 100644 07d56b0f6f898d66e97c5992e6fdeb4ede306371 1 .github/workflows/examples.yml 100644 2ae701432687ebd9f67700bff1cb5fa20f309d52 2 .github/workflows/examples.yml 100644 614d024b5c9aa1ad06ff11a2df075c43e58f4e8b 3 .github/workflows/examples.yml Auto-merging .github/workflows/build_packages.yml CONFLICT (content): Merge conflict in .github/workflows/build_packages.yml Auto-merging .github/workflows/examples.yml CONFLICT (content): Merge conflict in .github/workflows/examples.yml Auto-merging .github/workflows/performance.yml Auto-merging .github/workflows/unit_tests.yml"
+  },
+  "7408": {
+    "clean": true,
+    "detail": "be99b35570c07d713dd75da9d6d532cb972594b8"
+  },
+  "7409": {
+    "clean": true,
+    "detail": "9f7d4b315a08ad366793d0fd694fd9d46b137abd"
+  },
+  "7412": {
+    "clean": true,
+    "detail": "cc8a72a5f79cda6c35fd19ecbb80e1ce4797c286"
+  },
+  "7413": {
+    "clean": true,
+    "detail": "8e4d76d95699f767e1e9b36563651fcf14786165"
+  },
+  "7415": {
+    "clean": true,
+    "detail": "3a0f7835d514776fbfc3166f98dc1e24a875afc5"
+  },
+  "7416": {
+    "clean": true,
+    "detail": "6096e557bdeb21859d6b769074e2e68c37641a8f"
+  },
+  "7436": {
+    "clean": false,
+    "detail": "230cecfaa52d2b8ff7026dbe262d078a809c4168 100644 2697294b1de813e1f0b17e7c6180f36b9ae6f3c8 1 reflex/state.py 100644 bb7fbca35466900ff262b867aaa98b1788134351 2 reflex/state.py 100644 d88785167aef5b99b62cd89d9b2a9c39705b5cf3 3 reflex/state.py Auto-merging reflex/istate/delta.py Auto-merging reflex/state.py CONFLICT (content): Merge conflict in reflex/state.py Auto-merging tests/units/reflex_base/event/processor/test_base_state_processor.py Auto-merging tests/units/test_state.py"
+  },
+  "7442": {
+    "clean": true,
+    "detail": "351d30e30d35f16576dafd435adb15a374921b0e"
+  },
+  "7443": {
+    "clean": true,
+    "detail": "91dab1fcd902b62f37a7a9c6116fd1886a34d814"
+  },
+  "7448": {
+    "clean": false,
+    "detail": "f3c72be8a486bbbdecd864a132d5fe0982266f6a 100644 edcb839515d46c69abffe4daf761ad0bb04ccafe 1 uv.lock 100644 62d62d01e29c6e3af99e8f04b320e4102cede197 2 uv.lock 100644 13fcb93a7cacfd7dbbdb72fd2a11299ea8196367 3 uv.lock Auto-merging packages/reflex-base/pyproject.toml Auto-merging packages/reflex-base/src/reflex_base/utils/format.py Auto-merging pyproject.toml Auto-merging reflex/istate/proxy.py Auto-merging tests/units/reflex_base/utils/test_format.py Auto-merging tests/units/utils/test_format.py Auto-merging uv.lock CONFLICT (content): Merge conflict in uv.lock"
+  },
+  "7451": {
+    "clean": false,
+    "detail": "44a1f96e70d0ddb40e77c4d08397bc1e7fc27508 100644 ae6f8bae27927ab551eae2341d2145596e3e3d43 1 reflex/utils/js_runtimes.py 100644 741a48c30eeea1bc77b6bae531b99ddc5fa30d5b 2 reflex/utils/js_runtimes.py 100644 8703bee65cdbd63e295e27468323719b60024996 3 reflex/utils/js_runtimes.py 100644 5227d0645ac76a8a5e7bb46f80e1431553bc62b3 1 tests/units/test_prerequisites.py 100644 09b49edeface5d784a206aa614f5b0fc4553995d 2 tests/units/test_prerequisites.py 100644 6310644ec2050a21a09ebd8dbf9b08d2fa605daa 3 tests/units/test_prerequisites.py Auto-merging reflex/utils/js_runtimes.py CONFLICT (content): Merge conflict in reflex/utils/js_runtimes.py Auto-merging tests/units/test_prerequisites.py CONFLICT (content): Merge conflict in tests/units/test_prerequisites.py"
+  },
+  "7453": {
+    "clean": true,
+    "detail": "e0b3f514199047293d10cf33e02176372c2edd70"
+  },
+  "7455": {
+    "clean": false,
+    "detail": "4a27ca2aba9e7a2d019ad91d3b0e2a84587a9576 100644 97f4e3e966555b3405039dcc23ba26668b7de15e 1 pyproject.toml 100644 9520867e57079450dcb15bb65036b166841e5a55 2 pyproject.toml 100644 c0d740fa0475405e5e2dbf03b42bc8a21026a851 3 pyproject.toml Auto-merging docs/hosting/self-hosting.md Auto-merging packages/reflex-base/src/reflex_base/environment.py Auto-merging pyproject.toml CONFLICT (content): Merge conflict in pyproject.toml Auto-merging reflex/reflex.py Auto-merging reflex/utils/build.py Auto-merging tests/units/test_reflex.py"
+  },
+  "7500": {
+    "clean": true,
+    "detail": "280cdef296f1b87afe38d29552b420239fc9258e"
+  },
+  "7522": {
+    "clean": false,
+    "detail": "df7b9036afcaa945c023e11136f61a3e7adcdb9f 100644 c0dc568ad561282951f2bb9845203d03612846bf 1 packages/reflex-base/src/reflex_base/.templates/web/utils/state.js 100644 c4f212de66c756dc122eceed647c62edb2531693 2 packages/reflex-base/src/reflex_base/.templates/web/utils/state.js 100644 d478dbf50dbf251cdfac64ed245442fcf5c60f5b 3 packages/reflex-base/src/reflex_base/.templates/web/utils/state.js 100644 e1214a109ff30720d555eb914c2b0712726ba1c4 1 tests/units/compiler/state_js.test.mjs 100644 1583138edb25076e51ac8989cd4ea7c88970770d 2 tests/units/compiler/state_js.test.mjs 100644 90036366e006bdab373fdcef61053cc3f8d6c298 3 tests/units/compiler/state_js.test.mjs Auto-merging packages/reflex-base/src/reflex_base/.templates/web/utils/state.js CONFLICT (content): Merge conflict in packages/reflex-base/src/reflex_base/.templates/web/utils/state.js Auto-merging tests/units/compiler/state_js.test.mjs CONFLICT (content): Merge conflict in tests/units/compiler/state_js.test.mjs"
+  },
+  "7534": {
+    "clean": true,
+    "detail": "3bfea15cabcc77da9d5b837465137fece9fec037"
+  },
+  "7540": {
+    "clean": false,
+    "detail": "b9da79f3776e28083fb1a2999ddc708c505ac772 100644 0dc84cdbe8e6e6d4a94af51a420b9ae6621fbe0e 1 reflex/compiler/utils.py 100644 8168fed96681933086bf5e868d64679568b01494 2 reflex/compiler/utils.py 100644 1d9cbda6784bf9996b7e567948cbb4d71a2729be 3 reflex/compiler/utils.py Auto-merging packages/reflex-base/src/reflex_base/.templates/web/utils/state.js Auto-merging pyi_hashes.json Auto-merging reflex/compiler/utils.py CONFLICT (content): Merge conflict in reflex/compiler/utils.py Auto-merging tests/units/compiler/test_memoize_plugin.py"
+  },
+  "7547": {
+    "clean": true,
+    "detail": "b2defcc7a149c53b87466dfaf7132158573aa289"
+  },
+  "7548": {
+    "clean": true,
+    "detail": "0bf66c9e87eb51cd39c639cce49b17d39f6ec768"
+  },
+  "7551": {
+    "clean": true,
+    "detail": "d9b9f14ec8fbcd68a9ccbbc4eb359e89bc494b0e"
+  },
+  "7558": {
+    "clean": true,
+    "detail": "da8511f936badbf2110054271faceb3004229778"
+  },
+  "7564": {
+    "clean": true,
+    "detail": "6fc40f7ed0c996684a8567f582bc545de64e30ae"
+  },
+  "7565": {
+    "clean": true,
+    "detail": "2168aee2867151170943dbbb17e89b5affa5cc5f"
+  },
+  "7570": {
+    "clean": true,
+    "detail": "a77f70a5358608077394aeea78f56c4be6ca5bd1"
+  },
+  "7573": {
+    "clean": true,
+    "detail": "028b42d744660e7da3a6835176cef852ba3e9b55"
+  },
+  "7574": {
+    "clean": true,
+    "detail": "2701b76db16a367202bbcf97f82119979ab9efbf"
+  },
+  "7575": {
+    "clean": true,
+    "detail": "74134c96c9c64d3b901bbe749e615e8ed0536d4c"
+  },
+  "7578": {
+    "clean": true,
+    "detail": "7057a7abb2f1d784ec595e18611e54a5ce735086"
+  },
+  "7580": {
+    "clean": true,
+    "detail": "72350cd7492ad53ae2bb3701c659fce51374c0e0"
+  },
+  "7583": {
+    "clean": true,
+    "detail": "f7c17ab75e6d415be412a5c4fc4a4c5b3a9688c8"
+  },
+  "7585": {
+    "clean": true,
+    "detail": "ac3da9b937032affdad73ad442e4d83cdfea6d18"
+  },
+  "7586": {
+    "clean": true,
+    "detail": "f7e7676009b79e9e28bfca209600ed3b4a99fc79"
+  },
+  "7588": {
+    "clean": true,
+    "detail": "7f71b4adf444a0386c43778c4f478c96b1e9c955"
+  },
+  "7590": {
+    "clean": true,
+    "detail": "f7c9f0adfa38fc5857ea99d4d507353a289d0df6"
+  },
+  "7591": {
+    "clean": true,
+    "detail": "5993ba3177877f1c595ebe06f3e3907bb0ed0cbf"
+  },
+  "7592": {
+    "clean": true,
+    "detail": "33cb87781cb31a7beb4f7db1af75c47359da8d88"
+  },
+  "7594": {
+    "clean": true,
+    "detail": "ce11e0e0b769d5d2b0cf97663fb1e4afa5a99b44"
+  },
+  "7595": {
+    "clean": true,
+    "detail": "1d4c8b9502344f38d0381eed190d5be413c35a33"
+  },
+  "7597": {
+    "clean": true,
+    "detail": "c76b5d49174e26b5e6f22bf6ac9387d10e538ad4"
+  },
+  "7599": {
+    "clean": true,
+    "detail": "79e5994f72d68d2ee569b002962b6ef02322a047"
+  },
+  "7602": {
+    "clean": true,
+    "detail": "1ed58f30871185754efe35d98c6c0db0ed90e8e0"
+  },
+  "7603": {
+    "clean": true,
+    "detail": "7e5e1024a0ac505187feaa567a74e46d2f8f2e06"
+  },
+  "7604": {
+    "clean": true,
+    "detail": "a0cd7a14d450f3e1bf40679fa3d104b64e02c007"
+  }
+}

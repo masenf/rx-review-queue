@@ -1,0 +1,122 @@
+{
+  "number": 7443,
+  "fetched_at": "2026-10-19T17:45:21.693Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "bc95de6f2a3f73e033eacd80d7a5c5734d2a2d96",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7246,
+      "title": "App.modify_state() with a bare client-token string raises \"ValueError: Invalid path: ('',)\" and the API route returns a bare 500; the str overload is still un-deprecated",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T10:57:34Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-07T17:59:53Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "SUCCESS": 141,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-06T10:57:34Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **No issues found** across 4 files <!-- cubic:review-summary:end --> <sub>[Re-trigger cubic](https://www.cubic.dev/action/re-review/pr/reflex-dev/reflex/7443/ai_pr_review_github_delivery_7b443979d215b2174"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-06T10:59:20Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=75499229\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-07T17:59:48Z",
+      "excerpt": "This check only catches an empty state path. A bare client token that contains an underscore (e.g. `my_client`) is split at the first `_`, so `state_path` is `client` and the call still fails with the unhelpful `ValueError: Invalid path: ('"
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-19T09:39:00Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **improve performance by 15.3%** <details> <summary>:warning: <b>21 benchmarks spent significant time in system calls</b></summary> > System calls cannot be consistent"
+    }
+  ],
+  "head_activity_at": "2026-10-19T09:29:10.000Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T10:57:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T10:59:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-07T17:59:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-07T17:59:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T09:39:00Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T09:29:10.000Z",
+  "last_maintainer_activity_at": "2026-10-07T17:59:53.000Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 11
+}

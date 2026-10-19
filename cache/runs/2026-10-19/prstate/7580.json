@@ -1,0 +1,467 @@
+{
+  "number": 7580,
+  "fetched_at": "2026-10-19T17:50:53.532Z",
+  "author_login": "Alek99",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "b2924d9ecf816b2163a1267699d9f56b7c293704",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T22:59:45Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:19:37Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 20,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Titles show wrong component names**\n\n`title` is a readable heading, not a Python component name. For example, `Data Table` produces `rx.data table: Python Data Table Component`, rather than the promised `rx.data_table` title. This advertises a name users cannot call. Use the actual component name from the page metadata instead of lowercasing the heading.",
+        "path": "docs/app/reflex_docs/pages/docs/metadata.py",
+        "at": "2026-10-15T22:59:43Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5e7c7640-d625-41a6-9584-695e683bad1b -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: This FAQ answer says all core components are built on Radix, but the existing docs say only 'many' are. Reword it to match, and scope the accessibility claim to the Radix-based components.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/app/reflex_docs/pages/docs/library.py, line 169:\n\n<comment>This FAQ answer says all core components are built on Radix, but the existing docs say only 'many' are. Reword it to match, and scope the accessibility claim to the Radix-based components.</comment>\n\n<file context>\n@@ -118,14 +118,71 @@ def generate_gallery(\n+                class_name=\"mt-6 font-heading text-lg font-normal leading-6 tracking-[-0.02em] text-foreground\",\n+            ),\n+            text_comp_2(\n+                text=\"Yes. Reflex's core components are built on Radix UI primitives, which follow WAI-ARIA standards. They include keyboard navigation, focus management, and screen reader support out of the box.\",\n+            ),\n+            rx.el.h3(\n</file context>\n```\n\n</details>\n\n```suggestion\n                text=\"Yes. Many of Reflex's core components are built on Radix UI primitives, which follow WAI-ARIA patterns and include keyboard navigation and focus management.\",\n```",
+        "path": "docs/app/reflex_docs/pages/docs/library.py",
+        "at": "2026-10-18T04:19:37Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b3c5b55a-56a3-4f43-babd-b3ea649bf128 -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: The `get_component_link` import left in `page()` is now unused after the grid moved into `render_component_grid`. Ruff's F401 will fail the `ruff-check` pre-commit hook. Remove the import from `page()`.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/app/reflex_docs/pages/library_previews.py, line 143:\n\n<comment>The `get_component_link` import left in `page()` is now unused after the grid moved into `render_component_grid`. Ruff's F401 will fail the `ruff-check` pre-commit hook. Remove the import from `page()`.</comment>\n\n<file context>\n@@ -129,6 +129,40 @@ def get_component_list(component_type: str = \"core\"):\n+    Returns:\n+        A grid of component cards.\n+    \"\"\"\n+    from reflex_docs.templates.docpage.sidebar.sidebar_items import (\n+        get_component_link,\n+    )\n</file context>\n```\n\n</details>",
+        "path": "docs/app/reflex_docs/pages/library_previews.py",
+        "at": "2026-10-18T04:19:37Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=edddd25e-504e-4ea0-a05c-0cb7c780e50e -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: The page-size selector described here is not provided by `rx.data_table`. The component passes `pagination` through to Grid.js, which only supports a fixed row limit (default 10), so users cannot pick 25, 50, or 100 rows. Remove this sentence or replace it with the actual behavior.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/library/tables-and-data-grids/data_table.md, line 105:\n\n<comment>The page-size selector described here is not provided by `rx.data_table`. The component passes `pagination` through to Grid.js, which only supports a fixed row limit (default 10), so users cannot pick 25, 50, or 100 rows. Remove this sentence or replace it with the actual behavior.</comment>\n\n<file context>\n@@ -40,40 +42,117 @@ rx.data_table(\n+)\n+```\n+\n+Users can change the page size from the pagination controls at the bottom of the table. The available options are 10, 25, 50, and 100 rows per page.\n+\n+## Search\n</file context>\n```\n\n</details>",
+        "path": "docs/library/tables-and-data-grids/data_table.md",
+        "at": "2026-10-18T04:19:37Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=0408c819-88a5-4865-9348-6df4ffa217ca -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":5} -->\nP2: Core `matplotlib.pyplot` has no candlestick chart type, so this use case overstates pyplot. Either name the mplfinance extension or point candlestick charts to the Plotly page.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/library/graphing/other-charts/pyplot.md, line 33:\n\n<comment>Core `matplotlib.pyplot` has no candlestick chart type, so this use case overstates pyplot. Either name the mplfinance extension or point candlestick charts to the Plotly page.</comment>\n\n<file context>\n@@ -23,6 +23,18 @@ Pyplot (`reflex-pyplot`) lets you render any [Matplotlib](https://matplotlib.org\n+- **Data science dashboards** — Turn notebook prototypes into shareable web apps with interactive controls\n+- **Scientific reports** — Display publication-quality figures with LaTeX labels and custom styling\n+- **Machine learning monitoring** — Plot training metrics, confusion matrices, and feature distributions\n+- **Financial analysis** — Render time series, candlestick charts, and portfolio performance\n+- **Engineering tools** — Visualize simulation results, sensor data, and system performance\n+\n</file context>\n```\n\n</details>\n\n```suggestion\n- **Financial analysis** — Render time series and portfolio performance, and candlestick charts via the mplfinance extension\n```",
+        "path": "docs/library/graphing/other-charts/pyplot.md",
+        "at": "2026-10-18T04:19:37Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c4ee63c7-d5ca-4c80-8ba7-1d4ec52f932f -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: This `meta_description` is 178 characters, and the docs pipeline truncates it to 155, so the search snippet ends mid-clause at \"with state\". Shorten it to 155 characters or fewer so the full sentence survives, for example: \"Build slide-out panels and sidebars in Python with Reflex. The rx.drawer creates accessible drawers from any screen edge, with state control and overlays.\"\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/library/overlay/drawer.md, line 9:\n\n<comment>This `meta_description` is 178 characters, and the docs pipeline truncates it to 155, so the search snippet ends mid-clause at \"with state\". Shorten it to 155 characters or fewer so the full sentence survives, for example: \"Build slide-out panels and sidebars in Python with Reflex. The rx.drawer creates accessible drawers from any screen edge, with state control and overlays.\"</comment>\n\n<file context>\n@@ -6,6 +6,7 @@ components:\n   - rx.drawer.portal\n   - rx.drawer.content\n   - rx.drawer.close\n+meta_description: \"Build slide-out panels and sidebars in Python with Reflex. The rx.drawer component creates accessible drawers from any edge of the screen, with state control and overlay support.\"\n \n only_low_level:\n</file context>\n```\n\n</details>\n\n```suggestion\nmeta_description: \"Build slide-out panels and sidebars in Python with Reflex. The rx.drawer creates accessible drawers from any screen edge, with state control and overlays.\"\n```",
+        "path": "docs/library/overlay/drawer.md",
+        "at": "2026-10-18T04:19:37Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=55f1f29d-8360-4f86-a07d-d10ef9711f7d -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: The component name is taken from the last URL segment, so `library/typography/em` and `library/typography/quote` produce titles like `rx.em` and `rx.quote`. The real APIs are `rx.text.em` and `rx.text.quote`, and chart pages like `areachart` produce `rx.areachart` instead of `rx.recharts.AreaChart`. Read the component name from the page's `components:` frontmatter, or map it explicitly.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/app/reflex_docs/pages/docs/metadata.py, line 101:\n\n<comment>The component name is taken from the last URL segment, so `library/typography/em` and `library/typography/quote` produce titles like `rx.em` and `rx.quote`. The real APIs are `rx.text.em` and `rx.text.quote`, and chart pages like `areachart` produce `rx.areachart` instead of `rx.recharts.AreaChart`. Read the component name from the page's `components:` frontmatter, or map it explicitly.</comment>\n\n<file context>\n@@ -91,8 +91,17 @@ def docs_metadata(path: str, title: str, description: str | None) -> tuple[str,\n+        and not route.startswith(\"library/html/\")\n+    )\n+    if is_component_page:\n+        component_name = route.split(\"/\")[-1].rstrip(\"/\")\n+        subject = f\"rx.{component_name}: Python {title} Component\"\n+    else:\n</file context>\n```\n\n</details>",
+        "path": "docs/app/reflex_docs/pages/docs/metadata.py",
+        "at": "2026-10-18T04:19:38Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=347b2410-09d0-436e-8a75-880022a645ff -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: These new tests bind `desc` without using it, so Ruff reports `F841` and the pre-commit check fails. Unpack the unused return value as `_` in each test.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/app/tests/test_frontmatter_meta.py, line 85:\n\n<comment>These new tests bind `desc` without using it, so Ruff reports `F841` and the pre-commit check fails. Unpack the unused return value as `_` in each test.</comment>\n\n<file context>\n@@ -76,3 +76,58 @@ def test_get_image_from_frontmatter(tmp_path):\n+    \"\"\"Component page titles preserve underscores in component names.\"\"\"\n+    from reflex_docs.pages.docs.metadata import docs_metadata\n+\n+    title, desc = docs_metadata(\"library/tables-and-data-grids/data_table/\", \"Data Table\", None)\n+    assert \"rx.data_table\" in title, \"Component name should preserve underscores\"\n+    assert \"rx.data table\" not in title, \"Component name should not have spaces\"\n</file context>\n```\n\n</details>",
+        "path": "docs/app/tests/test_frontmatter_meta.py",
+        "at": "2026-10-18T04:19:38Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=eec6d421-e7e9-4bf1-9fe5-7e39482b403d -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":5} -->\nP3: \"Syntax-friendly styling\" implies highlighting that `rx.code` does not provide; this page only documents size, weight, variant, color scheme, and high contrast. Replace it with the properties the page actually covers, since this text is the search snippet.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/library/typography/code.md, line 4:\n\n<comment>\"Syntax-friendly styling\" implies highlighting that `rx.code` does not provide; this page only documents size, weight, variant, color scheme, and high contrast. Replace it with the properties the page actually covers, since this text is the search snippet.</comment>\n\n<file context>\n@@ -1,6 +1,7 @@\n ---\n components:\n   - rx.code\n+meta_description: \"Display inline code snippets in Python with Reflex. The rx.code component renders monospaced code text with syntax-friendly styling and multiple variants, all in pure Python.\"\n ---\n \n</file context>\n```\n\n</details>\n\n```suggestion\nmeta_description: \"Display inline code snippets in Python with Reflex. The rx.code component renders monospaced code text with multiple sizes, weights, variants, and color schemes, all in pure Python.\"\n```",
+        "path": "docs/library/typography/code.md",
+        "at": "2026-10-18T04:19:38Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d2a6577e-6549-4e85-8e90-9a3f81886e37 -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: This description is 157 characters, over the 155-character limit, so the search snippet will be cut off mid-phrase at 'form…'. Drop the word 'high-level' to bring it under the limit.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/library/forms/select.md, line 4:\n\n<comment>This description is 157 characters, over the 155-character limit, so the search snippet will be cut off mid-phrase at 'form…'. Drop the word 'high-level' to bring it under the limit.</comment>\n\n<file context>\n@@ -1,6 +1,7 @@\n ---\n components:\n   - rx.select\n+meta_description: \"Build dropdown select menus in Python with Reflex. The high-level rx.select component creates dropdowns from a list, with state binding and form integration.\"\n \n HighLevelSelect: |\n</file context>\n```\n\n</details>\n\n```suggestion\nmeta_description: \"Build dropdown select menus in Python with Reflex. The rx.select component creates dropdowns from a list, with state binding and form integration.\"\n```",
+        "path": "docs/library/forms/select.md",
+        "at": "2026-10-18T04:19:38Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=7bc229ff-da9b-42dd-b577-eeb5a8edb24c -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":5} -->\nP3: This description is 168 characters, above the 155-character cap, so the search snippet is truncated mid-phrase to end at \"all\" and loses \"in pure Python\". Shorten it to fit under 155 characters, for example the suggested text.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/library/typography/blockquote.md, line 4:\n\n<comment>This description is 168 characters, above the 155-character cap, so the search snippet is truncated mid-phrase to end at \"all\" and loses \"in pure Python\". Shorten it to fit under 155 characters, for example the suggested text.</comment>\n\n<file context>\n@@ -1,6 +1,7 @@\n ---\n components:\n   - rx.blockquote\n+meta_description: \"Add semantic blockquotes to your Python web app with Reflex. The rx.blockquote component displays quoted text with multiple size and weight options, all in pure Python.\"\n ---\n \n</file context>\n```\n\n</details>\n\n```suggestion\nmeta_description: \"Display semantic blockquotes in Python with Reflex. The rx.blockquote component supports multiple sizes and weights, all in pure Python.\"\n```",
+        "path": "docs/library/typography/blockquote.md",
+        "at": "2026-10-18T04:19:38Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=ae85fa15-ddc8-49af-8521-b76f9a466aee -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: This description is longer than the 155-character limit the docs pipeline applies, so the search snippet is cut off at 'form…'. Shorten it to fit, for example: \"Add checkboxes to Python web forms with Reflex. rx.checkbox captures true/false input with state and form integration, all in pure Python.\"\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/library/forms/checkbox.md, line 4:\n\n<comment>This description is longer than the 155-character limit the docs pipeline applies, so the search snippet is cut off at 'form…'. Shorten it to fit, for example: \"Add checkboxes to Python web forms with Reflex. rx.checkbox captures true/false input with state and form integration, all in pure Python.\"</comment>\n\n<file context>\n@@ -1,6 +1,7 @@\n ---\n components:\n   - rx.checkbox\n+meta_description: \"Add checkboxes to Python web forms with Reflex. The rx.checkbox component captures binary true/false input with built-in state management and form integration, all in pure Python.\"\n \n HighLevelCheckbox: |\n</file context>\n```\n\n</details>\n\n```suggestion\nmeta_description: \"Add checkboxes to Python web forms with Reflex. rx.checkbox captures true/false input with state and form integration, all in pure Python.\"\n```",
+        "path": "docs/library/forms/checkbox.md",
+        "at": "2026-10-18T04:19:38Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=6fe791ed-2876-4abb-898f-ebfd7aa0a1c2 -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":5} -->\nP3: The copy implies search, sorting, and pagination are on when a DataFrame is dropped in. In the component they are opt-in props, and the docs enable them explicitly. Say they are enabled with `search=True`, `sort=True`, and `pagination=True`.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/app/reflex_docs/pages/library_previews.py, line 230:\n\n<comment>The copy implies search, sorting, and pagination are on when a DataFrame is dropped in. In the component they are opt-in props, and the docs enable them explicitly. Say they are enabled with `search=True`, `sort=True`, and `pagination=True`.</comment>\n\n<file context>\n@@ -175,31 +209,99 @@ def page() -> rx.Component:\n+                    ),\n+                    rx.el.li(\n+                        rx.el.strong(\"rx.data_table\", class_name=\"font-semibold text-foreground\"),\n+                        \" — Drop in a pandas DataFrame and get instant search, sort, and pagination. Perfect for displaying static data from CSV files or database queries. Read-only by default.\",\n+                        class_name=\"mt-3 text-sm leading-6 text-muted-foreground\",\n+                    ),\n</file context>\n```\n\n</details>\n\n```suggestion\n                        \" — Pass a pandas DataFrame and enable search, sort, and pagination with `search=True`, `sort=True`, and `pagination=True`. Good for displaying static data from CSV files or database queries. Read-only by default.\",\n```",
+        "path": "docs/app/reflex_docs/pages/library_previews.py",
+        "at": "2026-10-18T04:19:38Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=8137592f-3d3a-4869-95d5-6058a96f148f -->\n<!-- cubic:review-run=8540ad8f-e38a-5a76-aa2b-013735439cf4 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: The new 'Basic Example' heading now sits above text that says the example reads a CSV into pandas, but the demo below uses a hardcoded list. Reword the paragraph to describe the list-based example, or move the CSV description to the pandas section.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/library/tables-and-data-grids/data_table.md, line 18:\n\n<comment>The new 'Basic Example' heading now sits above text that says the example reads a CSV into pandas, but the demo below uses a hardcoded list. Reword the paragraph to describe the list-based example, or move the CSV description to the pandas section.</comment>\n\n<file context>\n@@ -13,12 +13,14 @@ import reflex as rx\n \n+If you want to [add, edit or remove data](/docs/library/tables-and-data-grids/table/) in your app or deal with anything but static data then the [`rx.table`](/docs/library/tables-and-data-grids/table/) might be a better fit for your use case.\n+\n+## Basic Example\n+\n In this example we will read data from a csv file, convert it to a pandas dataframe and display it in a data_table.\n</file context>\n```\n\n</details>",
+        "path": "docs/library/tables-and-data-grids/data_table.md",
+        "at": "2026-10-18T04:19:38Z"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 146,
+    "actions_total": 142,
+    "by_state": {
+      "SKIPPED": 4,
+      "SUCCESS": 141,
+      "FAILURE": 1
+    },
+    "failing": [
+      "pre-commit"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "pre-commit",
+      "cause": "The ruff-format hook reformatted four PR-owned files (docs/app/reflex_docs/pages/docs/metadata.py, docs/app/reflex_docs/pages/library_previews.py, docs/app/tests/test_frontmatter_meta.py, and docs/library/tables-and-data-grids/data_table.md) and exited 1."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Titles show wrong component names title is a readable heading, not a Python component name. For example, Data Table produces rx.data table: Python Data Table Component , rather than the promised rx.data table title. This advertises a name users cannot call. Use the actual component name from the page metadata instead of lowercasing the heading.",
+      "addressed": false,
+      "path": "docs/app/reflex_docs/pages/docs/metadata.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: This FAQ answer says all core components are built on Radix, but the existing docs say only 'many' are. Reword it to match, and scope the accessibility claim to the Radix-based components. suggestion text=\"Yes. Many of Reflex's core components are built on Radix UI primitives, which follow WAI-ARIA patterns and include keyboard navigation and focus management.\",",
+      "addressed": false,
+      "path": "docs/app/reflex_docs/pages/docs/library.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The get component link import left in page() is now unused after the grid moved into render component grid . Ruff's F401 will fail the ruff-check pre-commit hook. Remove the import from page() .",
+      "addressed": false,
+      "path": "docs/app/reflex_docs/pages/library_previews.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The page-size selector described here is not provided by rx.data table . The component passes pagination through to Grid.js, which only supports a fixed row limit (default 10), so users cannot pick 25, 50, or 100 rows. Remove this sentence or replace it with the actual behavior.",
+      "addressed": false,
+      "path": "docs/library/tables-and-data-grids/data_table.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: Core matplotlib.pyplot has no candlestick chart type, so this use case overstates pyplot. Either name the mplfinance extension or point candlestick charts to the Plotly page. suggestion - Financial analysis — Render time series and portfolio performance, and candlestick charts via the mplfinance extension",
+      "addressed": false,
+      "path": "docs/library/graphing/other-charts/pyplot.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: This meta description is 178 characters, and the docs pipeline truncates it to 155, so the search snippet ends mid-clause at \"with state\". Shorten it to 155 characters or fewer so the full sentence survives, for example: \"Build slide-out panels and sidebars in Python with Reflex. The rx.drawer creates accessible drawers from any screen edge, with state control and overlays.\" suggestion meta description: \"Build slide-out panels and sidebars in Python with Reflex. The rx.drawer creates accessible drawers from any screen edge, with state control and overlays.\"",
+      "addressed": false,
+      "path": "docs/library/overlay/drawer.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The component name is taken from the last URL segment, so library/typography/em and library/typography/quote produce titles like rx.em and rx.quote . The real APIs are rx.text.em and rx.text.quote , and chart pages like areachart produce rx.areachart instead of rx.recharts.AreaChart . Read the component name from the page's components: frontmatter, or map it explicitly.",
+      "addressed": false,
+      "path": "docs/app/reflex_docs/pages/docs/metadata.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: These new tests bind desc without using it, so Ruff reports F841 and the pre-commit check fails. Unpack the unused return value as in each test.",
+      "addressed": false,
+      "path": "docs/app/tests/test_frontmatter_meta.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: \"Syntax-friendly styling\" implies highlighting that rx.code does not provide; this page only documents size, weight, variant, color scheme, and high contrast. Replace it with the properties the page actually covers, since this text is the search snippet. suggestion meta description: \"Display inline code snippets in Python with Reflex. The rx.code component renders monospaced code text with multiple sizes, weights, variants, and color schemes, all in pure Python.\"",
+      "addressed": false,
+      "path": "docs/library/typography/code.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: This description is 157 characters, over the 155-character limit, so the search snippet will be cut off mid-phrase at 'form…'. Drop the word 'high-level' to bring it under the limit. suggestion meta description: \"Build dropdown select menus in Python with Reflex. The rx.select component creates dropdowns from a list, with state binding and form integration.\"",
+      "addressed": false,
+      "path": "docs/library/forms/select.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: This description is 168 characters, above the 155-character cap, so the search snippet is truncated mid-phrase to end at \"all\" and loses \"in pure Python\". Shorten it to fit under 155 characters, for example the suggested text. suggestion meta description: \"Display semantic blockquotes in Python with Reflex. The rx.blockquote component supports multiple sizes and weights, all in pure Python.\"",
+      "addressed": false,
+      "path": "docs/library/typography/blockquote.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: This description is longer than the 155-character limit the docs pipeline applies, so the search snippet is cut off at 'form…'. Shorten it to fit, for example: \"Add checkboxes to Python web forms with Reflex. rx.checkbox captures true/false input with state and form integration, all in pure Python.\" suggestion meta description: \"Add checkboxes to Python web forms with Reflex. rx.checkbox captures true/false input with state and form integration, all in pure Python.\"",
+      "addressed": false,
+      "path": "docs/library/forms/checkbox.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: The copy implies search, sorting, and pagination are on when a DataFrame is dropped in. In the component they are opt-in props, and the docs enable them explicitly. Say they are enabled with search=True , sort=True , and pagination=True . suggestion \" — Pass a pandas DataFrame and enable search, sort, and pagination with search=True , sort=True , and pagination=True . Good for displaying static data from CSV files or database queries. Read-only by default.\",",
+      "addressed": false,
+      "path": "docs/app/reflex_docs/pages/library_previews.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: The new 'Basic Example' heading now sits above text that says the example reads a CSV into pandas, but the demo below uses a hardcoded list. Reword the paragraph to describe the list-based example, or move the CSV description to the pandas section.",
+      "addressed": false,
+      "path": "docs/library/tables-and-data-grids/data_table.md",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T04:19:38Z",
+      "excerpt": "P3: This description is 157 characters, over the 155-character limit, so the search snippet will be cut off mid-phrase at 'form…'. Drop the word 'high-level' to bring it under the limit. suggestion meta description: \"Build dropdown select menus in Python with "
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T04:19:38Z",
+      "excerpt": "P3: This description is 168 characters, above the 155-character cap, so the search snippet is truncated mid-phrase to end at \"all\" and loses \"in pure Python\". Shorten it to fit under 155 characters, for example the suggested text. suggestion meta description: "
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T04:19:38Z",
+      "excerpt": "P3: This description is longer than the 155-character limit the docs pipeline applies, so the search snippet is cut off at 'form…'. Shorten it to fit, for example: \"Add checkboxes to Python web forms with Reflex. rx.checkbox captures true/false input with stat"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T04:19:38Z",
+      "excerpt": "P3: The copy implies search, sorting, and pagination are on when a DataFrame is dropped in. In the component they are opt-in props, and the docs enable them explicitly. Say they are enabled with search=True , sort=True , and pagination=True . suggestion \" — Pa"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T04:19:38Z",
+      "excerpt": "P3: The new 'Basic Example' heading now sits above text that says the example reads a CSV into pandas, but the demo below uses a hardcoded list. Reword the paragraph to describe the list-based example, or move the CSV description to the pandas section."
+    }
+  ],
+  "head_activity_at": "2026-10-16T18:28:43Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T22:59:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T23:04:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "cursor[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T18:18:42Z"
+    },
+    {
+      "kind": "comment",
+      "by": "cursor[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T18:29:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:16:08Z"
+    },
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:16:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:19:38Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-16T18:28:43Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

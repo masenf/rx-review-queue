@@ -1,0 +1,167 @@
+{
+  "number": 7548,
+  "fetched_at": "2026-10-19T17:51:27.653Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "4d25e09bfb530552ca98f55066563913e3211d41",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BEHIND",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7536,
+      "title": "StringVar.reversed() and rx.foreach over strings still split surrogate pairs",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-12T13:58:47Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-12T13:59:29Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 150,
+    "actions_total": 146,
+    "by_state": {
+      "SKIPPED": 6,
+      "SUCCESS": 144
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Preserve the strict-float guard in both StringVar multiplication directions.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Assert each rendered foreach child so split surrogate pairs cannot recombine and hide the bug.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Raise the reflex-base floor to a version that provides `string_codepoints_operation`.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Reject float NumberVar repeat counts instead of silently truncating them.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Assert three rendered children and a whole emoji in the middle child in the browser test.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-12T13:59:24Z",
+      "excerpt": "Confidence Score: 5/5 **[Medium impact]** The PR appears safe to merge. Summary The PR makes `StringVar.reversed()` and `rx.foreach` over strings work with Unicode code points. - String reversal keeps Unicode characters whole. - String loops render one item per Unicode code point. - String multiplication repeats whole strings for integer counts. All three earlier findings are addressed in the current code. No new actionable issues were found. Tests were inspected but not run. Reviews (6) \u00b7 Last "
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-12T14:45:05Z",
+      "excerpt": "## Merging this PR will **not alter performance**"
+    }
+  ],
+  "head_activity_at": "2026-10-18T05:05:06Z",
+  "interaction_events": [
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-12T13:58:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-12T13:58:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-12T13:58:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-12T13:59:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-12T13:59:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-12T13:59:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-12T13:59:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-12T13:59:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-12T14:45:05Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-18T05:05:06Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 7
+}

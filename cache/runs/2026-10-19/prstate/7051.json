@@ -1,0 +1,338 @@
+{
+  "number": 7051,
+  "fetched_at": "2026-10-19T17:33:35.842Z",
+  "author_login": "Alek99",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "4857957b2a8e77811ce9c11edfa751040b668929",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:02:24Z",
+      "can_push": false,
+      "commit_id": "7020987e3a343b0b1bb13c709fe8fb4a756ad9b5"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:03:39Z",
+      "can_push": false,
+      "commit_id": "7020987e3a343b0b1bb13c709fe8fb4a756ad9b5"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:36:51Z",
+      "can_push": false,
+      "commit_id": "a1c9efdda5dbbc306dde02ef8fb4131e66cbce96"
+    },
+    {
+      "by": "Alek99",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-06T08:48:26Z",
+      "can_push": true,
+      "commit_id": "7c6ffe56e97016fb0c918dd95f6b73297e93edd2"
+    },
+    {
+      "by": "Alek99",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-06T09:02:00Z",
+      "can_push": true,
+      "commit_id": "7c6ffe56e97016fb0c918dd95f6b73297e93edd2"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-19T09:51:09Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-19T10:19:56Z",
+      "can_push": false,
+      "commit_id": "4857957b2a8e77811ce9c11edfa751040b668929"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-19T10:22:51Z",
+      "can_push": false,
+      "commit_id": "4857957b2a8e77811ce9c11edfa751040b668929"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 11,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "path": "reflex/utils/js_runtimes.py",
+        "line": 829,
+        "first_comment": "**Installs continue without their lock** If `REFLEX_DIR/locks` is not writable but the app is writable, `file_lock` catches the acquisition error and runs the install anyway. Two commands can then change `.web`, run the package manager, and persist lockfiles together. Initialization uses the same fallback and can change `.web` during an install. Require successful lock acquisition for installs and initialization instead of using the JSON writer's unlocked fallback."
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "path": "reflex/utils/frontend_skeleton.py",
+        "line": 331,
+        "first_comment": "**Shared lockfile links get replaced** If `reflex.lock/bun.lock` points to a shared lockfile, syncing changed contents now replaces the symlink with a regular file and leaves the shared file unchanged. `atomic_write` replaces the destination without resolving it first. The removed writer followed the link. Resolve the destination before staging and replacing the file. The new `package.json` writes need the same protection."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "reflex/utils/frontend_skeleton.py",
+        "line": 454,
+        "first_comment": "P1: Require successful lock acquisition for installs and `.web` initialization; `file_lock` currently proceeds unlocked when its sidecar cannot be created, allowing competing commands to mutate the same tree."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "reflex/utils/path_ops.py",
+        "line": 321,
+        "first_comment": "P2: `atomic_write` replaces an existing symlink itself instead of updating its target, so frontend lockfile/package synchronization destroys symlinks when contents change. Resolve symlink destinations before creating the staging path, as the previous atomic writer did."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "news/+serialize-frontend-installs.bugfix.md",
+        "line": 1,
+        "first_comment": "P3: This guarantee is too absolute: `file_lock` intentionally proceeds unlocked when the lock location is unavailable, so concurrent installs can still race in that supported configuration. Qualify the fragment to say coordination applies when the OS lock is available, while atomic writes still prevent partial files."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "SUCCESS": 141,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "**Installs continue without their lock** If `REFLEX_DIR/locks` is not writable but the app is writable, `file_lock` catches the acquisition error and runs the install anyway. Two commands can then change `.web`, run the package manager, and persist lockfiles together. Initialization uses the same fallback and can change `.web` during an install. Require successful lock acquisition for installs and initialization inst",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Shared lockfile links get replaced** If `reflex.lock/bun.lock` points to a shared lockfile, syncing changed contents now replaces the symlink with a regular file and leaves the shared file unchanged. `atomic_write` replaces the destination without resolving it first. The removed writer followed the link. Resolve the destination before staging and replacing the file. The new `package.json` writes need the same prote",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P1: Require successful lock acquisition for installs and `.web` initialization; `file_lock` currently proceeds unlocked when its sidecar cannot be created, allowing competing commands to mutate the same tree.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: `atomic_write` replaces an existing symlink itself instead of updating its target, so frontend lockfile/package synchronization destroys symlinks when contents change. Resolve symlink destinations before creating the staging path, as the previous atomic writer did.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: This guarantee is too absolute: `file_lock` intentionally proceeds unlocked when the lock location is unavailable, so concurrent installs can still race in that supported configuration. Qualify the fragment to say coordination applies when the OS lock is available, while atomic writes still prevent partial files.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-06T07:59:30Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the Codex usage dashboard."
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-06T08:03:12Z",
+      "excerpt": "## Merging this PR will **not alter performance**"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-06T08:03:35Z",
+      "excerpt": "Confidence Score: 3/5 **[High impact]** Adds file locking to frontend package installation and web directory initialization\\. Fix the unlocked fallback and destination-symlink replacement before merging. Findings 1. &nbsp;**Installs continu"
+    }
+  ],
+  "head_activity_at": "2026-10-19T10:15:13Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-06T07:59:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-06T08:02:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-06T08:02:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-06T08:02:24Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-06T08:03:12Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-06T08:03:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-06T08:03:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-06T08:03:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-06T08:03:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-06T08:36:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-06T08:36:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Alek99",
+      "association": "COLLABORATOR",
+      "at": "2026-09-06T08:48:26Z"
+    },
+    {
+      "kind": "review",
+      "by": "Alek99",
+      "association": "COLLABORATOR",
+      "at": "2026-09-06T08:48:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Alek99",
+      "association": "COLLABORATOR",
+      "at": "2026-09-06T09:02:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "Alek99",
+      "association": "COLLABORATOR",
+      "at": "2026-09-06T09:02:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-19T09:51:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-19T09:51:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-19T10:19:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-19T10:19:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-19T10:19:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-19T10:22:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-19T10:22:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-19T10:22:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-19T10:22:51Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T10:15:13Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

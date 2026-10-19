@@ -1,0 +1,279 @@
+{
+  "number": 7453,
+  "fetched_at": "2026-10-19T17:45:42.997Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "a639b013a4da32f119b71ed6669c3b22a9596920",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T18:22:59Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T18:25:32Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:05:49Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:05:51Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:05:54Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:05:57Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:06:34Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T07:54:17Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 152,
+    "actions_total": 148,
+    "by_state": {
+      "SKIPPED": 6,
+      "SUCCESS": 146
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "ask": "Consolidate this locking implementation with the existing json_file_lock so the repository does not maintain multiple platform-specific file-locking code paths.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-06T20:05:51Z",
+      "excerpt": "The gap is real. With the backend-only lock removed and a 0.7 s stall added after `attempted.set()`, this test still passes. But that regression can't get through the suite. Removing the lock fails `test_backend_only_export_locks_existing_w"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-06T20:05:54Z",
+      "excerpt": "Declining. The window is real but narrow. Only a direct `reflex export --backend-only` in a checkout without `.web`, running alongside a frontend build, can hit it. `reflex deploy` initializes `.web` first, so its backend export always lock"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-06T20:05:57Z",
+      "excerpt": "Reproduced with hooks: renaming the temporary marker between the glob and `zipf.write` fails the backend export with `FileNotFoundError`. In practice, hitting it needs: - a direct `reflex export --backend-only` in a checkout without `.web` "
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-06T20:06:34Z",
+      "excerpt": "Thanks for reproducing this. I agree the race is real, but given that it requires a backend-only export starting without `.web`, a concurrent frontend initialization, and a sub-millisecond listing/rename window—and that the failure is loud "
+    },
+    {
+      "by": "masenf",
+      "at": "2026-10-14T07:54:17Z",
+      "excerpt": "should consolidate locking implementation with existing `json_file_lock` so we don't have multiple code paths handling platform-specific file locking in slightly different ways"
+    }
+  ],
+  "head_activity_at": "2026-10-06T19:58:39.000Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:19:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:24:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:25:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:25:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:25:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:29:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:05:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:05:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:05:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:05:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:05:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:05:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:05:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:05:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T20:06:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T20:06:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T07:54:17Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-06T20:05:57.000Z",
+  "last_maintainer_activity_at": "2026-10-14T07:54:17.000Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

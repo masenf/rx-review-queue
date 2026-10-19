@@ -1,0 +1,271 @@
+{
+  "number": 7586,
+  "fetched_at": "2026-10-19T17:45:00.304Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "fdce21fd09f2fafb5f9ae4d9a3f8958638cd3e8c",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7584,
+      "title": "Get rid of HookPosition",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T19:42:53Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T19:43:57Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T19:47:05Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-16T20:24:14Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-16T20:24:41Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-16T20:25:20Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T20:46:25Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T20:46:29Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 100,
+    "actions_total": 97,
+    "by_state": {
+      "SKIPPED": 6,
+      "SUCCESS": 92,
+      "CANCELLED": 1,
+      "FAILURE": 1
+    },
+    "failing": [
+      "changelog",
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "cause": "The job logged 'No new changelog version headings' successfully, then GitHub cancelled the operation; this is not a changelog defect."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "One off-path state-access benchmark regressed 4.69%, while two compilation benchmarks improved; CodSpeed warns that base and head used different runtime environments."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "masenf",
+      "at": "2026-10-16T20:25:20Z",
+      "excerpt": "looks good after fixing outstanding reviewbot comments"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-16T20:46:25Z",
+      "excerpt": "Valid — fixed in fdce21fd0. Renamed the fragment to `+hook-declaration-order.bugfix.md` and reworded it to the user-visible result: `window_event_listener` and `clipboard` hooks now render in declaration order with the rest of the component"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-16T20:46:25Z",
+      "excerpt": ""
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-16T20:46:29Z",
+      "excerpt": "Valid — fixed in fdce21fd0. The Custom Hooks section of `docs/wrapping-react/custom-code-and-hooks.md` now documents declaration order (framework hooks, then `add_hooks` in list order, base class before subclass), drops the `position` examp"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-16T20:46:29Z",
+      "excerpt": ""
+    }
+  ],
+  "head_activity_at": "2026-10-16T20:54:33Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:40:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:42:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:42:54Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:43:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:43:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:43:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:47:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:47:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:47:05Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T19:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-16T20:24:13Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-16T20:24:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-16T20:24:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-16T20:24:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-16T20:25:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T20:46:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T20:46:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T20:46:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T20:46:29Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-16T20:54:33Z",
+  "last_maintainer_activity_at": "2026-10-16T20:25:20Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

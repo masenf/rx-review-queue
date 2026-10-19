@@ -1,0 +1,351 @@
+{
+  "number": 7364,
+  "fetched_at": "2026-10-19T17:52:33.557Z",
+  "author_login": "masenf",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "d5e211ba5cf05a05bb2eb2c455c5d103a9c445a9",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T00:48:48Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:12Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:15Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:37Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:58:26Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:00:40Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P3: This fragment reads as an instruction to configure a hostname, but AppHarness now sets the backend URL to `localhost` itself. Describe the change instead, e.g. that AppHarness now points the dev frontend at `localhost`, so browser cookies stay same-site in tests. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At news/+session-harness.bugfix.md, line 1: This fragment reads as an instruction to configure a hostname, but AppHarness now sets the backend URL to `localhost` itself. Describe the change instead, e.g. that AppHarness now points the dev frontend at `localhost`, so browser cookies stay same-site in tests. @@ -0,0 +1 @@ +Use the same hostname for the development AppHarness frontend and backend so browser cookies remain same-site. ``` ```suggestion AppHarness now points the development frontend at `localhost` for the backend API, so browser cookies remain same-site during tests. ```",
+        "path": "news/+session-harness.bugfix.md",
+        "line": 1
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P3: This describes the `__Host-` name as universal, but non-loopback HTTP development uses the bare cookie name because `_cookie_name()` disables the prefix when the cookie is insecure. Qualify this sentence to apply only to secure cookies so deployment and cookie-debugging guidance matches the implementation. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/api-routes/sessions.md, line 64: This describes the `__Host-` name as universal, but non-loopback HTTP development uses the bare cookie name because `_cookie_name()` disables the prefix when the cookie is insecure. Qualify this sentence to apply only to secure cookies so deployment and cookie-debugging guidance matches the implementation. @@ -0,0 +1,140 @@ + +## Origins, cookies, and embedding + +Cookies use `Secure; HttpOnly; SameSite=None; Partitioned; Path=/`, no Domain, +and an app-specific `__Host-` name. Set `api_url` to the public backend URL, +including when TLS terminates at a reverse proxy. Cookies are not scoped by ``` ```suggestion Secure cookies use `Secure; HttpOnly; SameSite=None; Partitioned; Path=/`, no Domain, and an app-specific `__Host-` name; non-loopback HTTP development uses an insecure cookie without the `__Host-` prefix. Set `api_url` to the public backend URL, ```",
+        "path": "docs/api-routes/sessions.md",
+        "line": 65
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "**State update example fails** The server-side example passes positional arguments to `BaseStateToken`, but its inherited constructor requires keyword arguments. Copying it raises `TypeError` before `app.modify_state` runs. Use `rx.BaseStateToken(ident=client_token, cls=MyState)`. ```suggestion rx.BaseStateToken(ident=client_token, cls=MyState), ```",
+        "path": "docs/api-routes/sessions.md",
+        "line": 129
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 173,
+    "actions_total": 170,
+    "by_state": {
+      "SUCCESS": 122,
+      "FAILURE": 34,
+      "SKIPPED": 3,
+      "CANCELLED": 14
+    },
+    "failing": [
+      "integration-app-harness-gate",
+      "performance-tests-gate",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "rx-shout-from-template",
+      "reflex-docs",
+      "example-counter-and-nba-proxy",
+      "integration-tests-gate",
+      "playground-0.8.23",
+      "build",
+      "check-min-deps",
+      "reflex-install-and-init",
+      "build-packages-gate",
+      "reflex-init-in-docker-test-gate",
+      "Run benchmarks",
+      "playground-head",
+      "pre-commit",
+      "changes",
+      "size-budgets",
+      "discover",
+      "changelog"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "integration-app-harness matrix / integration-app-harness-gate",
+      "job": "115790768438",
+      "run": "38545395425",
+      "cause": "The Redis/Python 3.12 Playwright log fails five tests added or exercised by this PR: backend restart and cross-site iframe waits time out, ping reads time out, and cleanup reports 'Timeout should be used inside a task'. The gate log confirms both integration-app-harness and integration-app-harness-playwright failed; this is a current-head code/test blocker, not only gate propagation."
+    },
+    {
+      "check": "Run benchmarks / performance-tests-gate",
+      "job": "115790055115",
+      "run": "38545395592",
+      "cause": "The benchmark run completes 132 tests but errors in test_on_event_router_data because reflex_base.context.base raises LookupError for the EventContext ContextVar. The performance gate merely propagates benchmarks=failure; browser-performance and lighthouse succeeded."
+    },
+    {
+      "check": "playground-0.8.23",
+      "job": "115790057653",
+      "run": "38545395448",
+      "cause": "The older Reflex 0.8.23 playground cannot import SQLAlchemy asyncio because greenlet is missing. This is an old-version dependency-environment failure, separate from the current-head integration and benchmark failures."
+    },
+    {
+      "check": "build-packages-gate / reflex-init-in-docker-test-gate / integration-tests-gate",
+      "cause": "The gate logs contain no independent test failure: they fail because their discover, build, check-min-deps, changes, install, and example jobs were cancelled. These are downstream cancellation propagation from the same interrupted workflow set."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: This fragment reads as an instruction to configure a hostname, but AppHarness now sets the backend URL to `localhost` itself. Describe the change instead, e.g. that AppHarness now points the dev frontend at `localhost`, so browser cookies stay same-site in tests. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At news/+session-harness.bugfix.md, line 1: This fragment reads as an instruction to configure a hostname, but AppHarness now sets the backend URL to `localhost` itself. Describe the change instead, e.g. that AppHarness now points the dev frontend at `localhost`, so browser cookies stay same-site in tests. @@ -0,0 +1 @@ +Use the same hostname for the development AppHarness frontend and backend so browser cookies remain same-site. ``` ```suggestion AppHarness now points the development frontend at `localhost` for the backend API, so browser cookies remain same-site during tests. ```",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: This describes the `__Host-` name as universal, but non-loopback HTTP development uses the bare cookie name because `_cookie_name()` disables the prefix when the cookie is insecure. Qualify this sentence to apply only to secure cookies so deployment and cookie-debugging guidance matches the implementation. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At docs/api-routes/sessions.md, line 64: This describes the `__Host-` name as universal, but non-loopback HTTP development uses the bare cookie name because `_cookie_name()` disables the prefix when the cookie is insecure. Qualify this sentence to apply only to secure cookies so deployment and cookie-debugging guidance matches the implementation. @@ -0,0 +1,140 @@ + +## Origins, cookies, and embedding + +Cookies use `Secure; HttpOnly; SameSite=None; Partitioned; Path=/`, no Domain, +and an app-specific `__Host-` name. Set `api_url` to the public backend URL, +including when TLS terminates at a reverse proxy. Cookies are not scoped by ``` ```suggestion Secure cookies use `Secure; HttpOnly; SameSite=None; Partitioned; Path=/`, no Domain, and an app-specific `__Host-` name; non-loopback HTTP development uses an insecure cookie without the `__Host-` prefix. Set `api_url` to the public backend URL, ```",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**State update example fails** The server-side example passes positional arguments to `BaseStateToken`, but its inherited constructor requires keyword arguments. Copying it raises `TypeError` before `app.modify_state` runs. Use `rx.BaseStateToken(ident=client_token, cls=MyState)`. ```suggestion rx.BaseStateToken(ident=client_token, cls=MyState), ```",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": null,
+  "recent_comments": [
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T09:37:15Z",
+      "excerpt": "Fixed in 6b07618e7. AppHarnessProd._start_backend now accepts the same optional port as the base harness, and the restart test dispatches through the actual harness instance. The production worker count and compile-suppression setup are preserved. The new unit regression failed before this change; all six browser restart configurations now pass."
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:37:37Z",
+      "excerpt": "Agreed. Given the harness’s IPv4 loopback guarantee and the passing localhost/127.0.0.1 matrix, this is not an actionable failure in the current test suite. Changing the bind argument to `localhost` would not provide dual-stack behavior with `ThreadingHTTPServer`’s AF_INET socket, so I’m withdrawing this finding rather than requesting additional server machinery."
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z",
+      "excerpt": "P3: This fragment reads as an instruction to configure a hostname, but AppHarness now sets the backend URL to `localhost` itself. Describe the change instead, e.g. that AppHarness now points the dev frontend at `localhost`, so browser cookies stay same-site in tests. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At new"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z",
+      "excerpt": "P3: This describes the `__Host-` name as universal, but non-loopback HTTP development uses the bare cookie name because `_cookie_name()` disables the prefix when the cookie is insecure. Qualify this sentence to apply only to secure cookies so deployment and cookie-debugging guidance matches the implementation. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with th"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z",
+      "excerpt": "**2 issues found** across 16 files Prompt for AI agents (unresolved issues) ```text Check if these issues are valid — if so, understand the root cause of each and fix them. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. If appropriate, use sub-agents to investigate and fix each issue separately. P3: This fragment reads as an instruction to configure a hostname, but AppHarness now sets the backend URL to `localhost` itself."
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:00:39Z",
+      "excerpt": "**State update example fails** The server-side example passes positional arguments to `BaseStateToken`, but its inherited constructor requires keyword arguments. Copying it raises `TypeError` before `app.modify_state` runs. Use `rx.BaseStateToken(ident=client_token, cls=MyState)`. ```suggestion rx.BaseStateToken(ident=client_token, cls=MyState), ```"
+    }
+  ],
+  "head_activity_at": "2026-10-14T09:51:06Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:48:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:48:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:48:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:48:48Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "linear-code",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T21:26:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T09:37:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T09:37:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T09:37:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T09:37:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:37:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:37:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z"
+    },
+    {
+      "kind": "comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:00:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:00:40Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-14T09:51:06Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

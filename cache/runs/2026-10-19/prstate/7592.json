@@ -1,0 +1,164 @@
+{
+  "number": 7592,
+  "fetched_at": "2026-10-19T17:45:22.843Z",
+  "author_login": "LaoChouPro",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "LaoChouPro/reflex",
+  "head_sha": "65995f53d032e2f4ecbeae6cfb1b1a200f14daaf",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7561,
+      "title": "`get_field_type` and `get_attribute_access_type` read `__fields__` and emit `PydanticDeprecatedSince20` on each field access",
+      "filed_by": "wevonosky"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:29:14Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:30:39Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:30:54Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": true,
+        "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub> Validate model_fields before treating it as Pydantic metadata** When an inspected plain class or `pydantic.v1.BaseModel` defines a non-mapping `model_fie"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub> Validate model_fields before treating it as Pydantic metadata** When an inspected plain class or `pydantic.v1.BaseModel` defines a non-mapping `model_fie",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T06:30:35Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=83046741\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T06:30:38Z",
+      "excerpt": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Tests fail without Pydantic** The new top-level `import pydantic` breaks the “Run unit tests without db dependencies” job. "
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T06:30:39Z",
+      "excerpt": ""
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "at": "2026-10-18T06:30:54Z",
+      "excerpt": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub> Validate model_fields before treating it as Pydantic metadata** When an inspected plain class or `pydantic.v1.BaseModel` defines a non-mapping `model_fie"
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "at": "2026-10-18T06:30:54Z",
+      "excerpt": "<!-- codex-review-receipt:v1 --> ### 💡 Codex Review Here are some automated review suggestions for this pull request. **Reviewed commit:** `b9a9031ddf` <details> <summary>ℹ️ About Codex in GitHub</summary> <br/> [Your team has set up Codex"
+    }
+  ],
+  "head_activity_at": "2026-10-18T06:45:06Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:27:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:29:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:29:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:54Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-18T06:45:06Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

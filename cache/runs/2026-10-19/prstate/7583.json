@@ -1,0 +1,237 @@
+{
+  "number": 7583,
+  "fetched_at": "2026-10-19T17:50:53.532Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "dae7365a8cfd8165ddfa63b5d633a99d7b613d30",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:31:48Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:33:09Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:35:40Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:35:43Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:38:22Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:38:46Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "SUCCESS": 141,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "ask": "Possible hook-ordering issue in merge state hooks : it looks like merging two field subscriptions can lose an INTERNAL position requirement and put the state declaration after a hook that reads it. Compared main 5ae5dcd5281497b395bd9ec6b7b6ca229e293f39 with this head dae7365a8cfd8165ddfa63b5d633a99d7b613d30 . The default compiler pipeline produced a component that rendered 2 on main, but threw ReferenceError: Cannot access 'reflex state state main s' before initialization on this head in React 19.2.0 test-renderer. Here is the compiler reproducer. Save as repro order.py in a checkout with its Python dependencies installed, then run uv run python repro order.py generated.js on each revision (separate worktrees are convenient): python from dataclasses import dataclass from typing import Callable import reflex as rx from reflex base.constants.compiler import MemoizationMode from reflex base.plugins import CompileContext, CompilerHooks from reflex base.registry import RegistrationContext from reflex.compiler.plugins import default page plugins from reflex.compiler.compiler import compile memo components @dataclass class Page: route: str component: Callable title: str = \"\" description: str = \"\" image: str = \"\" meta: tuple = () on load: object = None source module: str | None = None with RegistrationContext(): class S(rx.State): a: int = 1 b: int = 2 class ParentHook(rx.el.Div): memoization mode = MemoizationMode(recursive=False) def add hooks(self): return [rx.Var(f\"const parentRead = {S.a}\", var type=int)] def page(): local = rx. x.client state( \"childValue\", default=S.b, global ref=False ) return ParentHook.create(rx.el.div(local, local.value)) ctx = CompileContext( pages=[Page(route=\"/p\", component=page)], hooks=CompilerHooks(plugins=default page plugins()), ) with ctx: c",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "at": "2026-10-16T17:38:22Z",
+      "excerpt": "Handle bracketed expressions while merging state hooks When var set state is called on a valid nested expression such as foo[\"bar\"] , this commit emits both a field-specific hook whose JSON field string contains ] and the whole-substate hook added by var set s"
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "at": "2026-10-16T17:38:22Z",
+      "excerpt": "💡 Codex Review Here are some automated review suggestions for this pull request. Reviewed commit: 4e5cd02fb9"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-16T17:38:46Z",
+      "excerpt": "Valid — fixed in dae7365a8c, the same fix as the greptile thread on this line. var set state now emits only the whole-substate hook, so no field list holds the expression. Checked on dae7365a8c: a component with foo[\"bar\"] and items rx state [0] vars gets one "
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-16T17:49:17Z",
+      "excerpt": "A/B on real apps: main 5ae5dcd528 vs this PR dae7365a8c Setup: - Apps: examples/playground (the benchmark app: many pages, a sqlite table with 2000 rows, forms) and a small shop app of my own. - Builds: prod builds of both sides from the same worktree. For mai"
+    },
+    {
+      "by": "masenf",
+      "at": "2026-10-16T18:33:36Z",
+      "excerpt": "Possible hook-ordering issue in merge state hooks : it looks like merging two field subscriptions can lose an INTERNAL position requirement and put the state declaration after a hook that reads it. Compared main 5ae5dcd5281497b395bd9ec6b7b6ca229e293f39 with th"
+    }
+  ],
+  "head_activity_at": "2026-10-16T17:35:10Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:29:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:31:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:31:48Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:33:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:33:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:33:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T17:35:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T17:35:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T17:35:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T17:35:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:35:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:38:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:38:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T17:38:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T17:38:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T17:49:17Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:33:36Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-16T17:49:17Z",
+  "last_maintainer_activity_at": "2026-10-16T18:33:36Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

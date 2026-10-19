@@ -1,0 +1,115 @@
+{
+  "number": 7603,
+  "fetched_at": "2026-10-19T17:34:11.470Z",
+  "author_login": "sansynx",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "sansynx/reflex",
+  "head_sha": "f9b47d3a6fb65ac535b4d2629328af3402c0b207",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7499,
+      "title": "Hydrating a var annotated with a browser storage type logs a type error from Field.__set__",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T14:00:57Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T16:42:39Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-19T14:00:52Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=83628020\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-19T14:00:56Z",
+      "excerpt": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Browser test misses type errors** This test checks displayed values and persistence, but never checks for the type errors n"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-19T14:00:57Z",
+      "excerpt": ""
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-19T16:42:39Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **No issues found** across 4 files <!-- cubic:review-summary:end --> <sub>[View guided diff](https://www.cubic.dev/pr/reflex-dev/reflex/pull/7603?utm_source=github&utm_medium=review_footer) | [Re-trigger "
+    }
+  ],
+  "head_activity_at": "2026-10-19T16:42:39Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T14:00:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T14:00:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T14:00:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T16:42:39Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T16:42:39Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

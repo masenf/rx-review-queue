@@ -1,0 +1,126 @@
+{
+  "number": 7604,
+  "fetched_at": "2026-10-19T17:34:16.299Z",
+  "author_login": "sansynx",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "sansynx/reflex",
+  "head_sha": "0215ea166dce197170b5f7db23be0a0a0f7244cf",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7111,
+      "title": "Declare Lucide deep imports through import_var instead of _get_imports",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T15:52:24Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "sansynx",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T16:25:45Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-19T15:52:19Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=83698508\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-19T15:52:24Z",
+      "excerpt": "<!-- cubic:v=72c537d5-1c39-4727-9d9f-56d482bf1b4b --> <!-- cubic:review-run=446bcc64-1f32-57bb-ba96-8a5e69ef1615 --> <!-- metadata:{\"confidence\":8} --> P2: `DynamicIcon` can now emit an invalid default import when callers set `is_default=Tr"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-19T15:52:24Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **All reported issues were addressed** across 5 files <!-- cubic:review-summary:end --> <sub>Reply to a comment to ask cubic a question or push back. It learns from your replies.<br /><br />[View guided d"
+    },
+    {
+      "by": "sansynx",
+      "at": "2026-10-19T16:25:45Z",
+      "excerpt": "Fixed in 0215ea166dce197170b5f7db23be0a0a0f7244cf: DynamicIcon now explicitly retains its named binding. Added direct/reactive factory regressions for both caller flags; the two true-flag cases failed before the correction. The final unit/c"
+    },
+    {
+      "by": "sansynx",
+      "at": "2026-10-19T16:25:45Z",
+      "excerpt": ""
+    }
+  ],
+  "head_activity_at": "2026-10-19T16:28:06Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "sansynx",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T16:25:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "sansynx",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T16:25:45Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T16:28:06Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,243 @@
+{
+  "number": 7040,
+  "fetched_at": "2026-10-19T17:33:35.842Z",
+  "author_login": "SiAgentBuild",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "SiAgentBuild/reflex",
+  "head_sha": "bccf225f713b8eb2115ccf3518a9b940316a90c7",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "reflex/custom_components/custom_components.py",
+    "reflex/utils/telemetry.py",
+    "tests/units/test_telemetry.py",
+    "uv.lock"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7034,
+      "title": "[HTTPXodus] Consider migrating from `httpx` to `httpx2` (the actively maintained fork)",
+      "filed_by": "SiAgentBuild"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-03T04:18:16Z",
+      "can_push": false,
+      "commit_id": "b965d6f8597128922d47232379d6c71f86983746"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-04T18:33:53Z",
+      "can_push": true,
+      "commit_id": "471b42b5a67cab28463db55af18c9f54a8e5349e"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-07T10:36:47Z",
+      "can_push": false,
+      "commit_id": "fb487050ebf438eb154d3dfa44c9504ad97dbd1c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-09T08:52:31Z",
+      "can_push": false,
+      "commit_id": "e71e2e56e9695fe860f0231302cd511f2c5269e8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-10T06:47:54Z",
+      "can_push": false,
+      "commit_id": "bccf225f713b8eb2115ccf3518a9b940316a90c7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "reflex/utils/net.py",
+        "line": 159,
+        "first_comment": "P3: The comment block just above this import still describes behavior removed by this change: it says the code \"fall[s] back to real httpx on Python 3.8/3.9\" and that `httpx2` is \"a union of the two modules\" via a try/except. This file now hard-imports httpx2, and `pyproject.toml` declares `httpx2 >=2.0` for the full supported range (`requires-python = \">=3.10\"`), so there is no fallback and no union. The stale text and the `# type: ignore` suppressions (added only to silence the union inference"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "path": "pyproject.toml",
+        "line": 25,
+        "first_comment": "**Required News Fragment Missing** This hard switch changes the runtime HTTP dependency and TLS trust behavior for downstream users, but it does not add a root-package news fragment. The repository requires user-facing changes to include a `news/7040. .md` entry explaining what changed and what it means for users, so this requirement must be satisfied before merging. **Context Used:** CLAUDE.md (source) Note: If this suggestion doesn't match your team's coding style, reply to this and let me kno"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "path": "uv.lock",
+        "line": 3862,
+        "first_comment": "**Testing extra metadata remains stale** When root-package dependency tooling reads this lockfile, the retained `testing` markers and `provides-extras` entry advertise an extra absent from both `pyproject.toml` and the lockfile's optional-dependencies table, causing frozen validation to reject the stale lock state or regeneration to rewrite it."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: The comment block just above this import still describes behavior removed by this change: it says the code \"fall[s] back to real httpx on Python 3.8/3.9\" and that `httpx2` is \"a union of the two modules\" via a try/except. This file now hard-imports httpx2, and `pyproject.toml` declares `httpx2 >=2.0` for the full supported range (`requires-python = \">=3.10\"`), so there is no fallback and no union. The stale text ",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Required News Fragment Missing** This hard switch changes the runtime HTTP dependency and TLS trust behavior for downstream users, but it does not add a root-package news fragment. The repository requires user-facing changes to include a `news/7040. .md` entry explaining what changed and what it means for users, so this requirement must be satisfied before merging. **Context Used:** CLAUDE.md (source) Note: If this",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Testing extra metadata remains stale** When root-package dependency tooling reads this lockfile, the retained `testing` markers and `provides-extras` entry advertise an extra absent from both `pyproject.toml` and the lockfile's optional-dependencies table, causing frozen validation to reject the stale lock state or regeneration to rewrite it.",
+      "addressed": true
+    },
+    {
+      "by": "masenf",
+      "ask": "Drop the dual-import fallback and make the dependency switch explicit; downstream users must declare their own httpx dependency.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-03T04:16:39Z",
+      "excerpt": "Confidence Score: 4/5 The PR is not yet safe to merge because the root lockfile remains inconsistent with the optional dependencies declared by the project manifest. Findings 1. &nbsp;**Testing extra metadata remains stale** ▶ 2. &nbsp;**Re"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-03T15:46:55Z",
+      "excerpt": "## Merging this PR will **improve performance by 4.63%**"
+    },
+    {
+      "by": "SiAgentBuild",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T06:45:38Z",
+      "excerpt": "Both greptile findings addressed in bccf225: - **P1 (lockfile)**: removed the stale `testing` extra block from the `reflex` entry in `uv.lock` — it was carried over from upstream's lockfile; the branch manifest only declares `db`/`pydantic`"
+    }
+  ],
+  "head_activity_at": "2026-09-10T06:45:01Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-03T04:16:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-03T04:18:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-03T04:18:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-03T04:18:17Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-03T15:46:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-04T18:33:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-07T10:36:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-07T10:36:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-09T08:52:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-09T08:52:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-09T08:52:31Z"
+    },
+    {
+      "kind": "comment",
+      "by": "SiAgentBuild",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T06:45:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-10T06:47:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-10T06:47:54Z"
+    }
+  ],
+  "last_author_activity_at": "2026-09-10T06:45:38Z",
+  "last_maintainer_activity_at": "2026-09-04T18:33:53Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

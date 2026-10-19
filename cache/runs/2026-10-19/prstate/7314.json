@@ -1,0 +1,662 @@
+{
+  "number": 7314,
+  "fetched_at": "2026-10-19T17:38:19.253Z",
+  "author_login": "masenf",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "5977e24ed6b6d669abeaa134c75c3a973c37a086",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/event/context.py",
+    "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "pyproject.toml",
+    "reflex/app.py",
+    "reflex/istate/__init__.py",
+    "reflex/istate/delta.py",
+    "reflex/istate/manager/token.py",
+    "reflex/istate/proxy.py",
+    "reflex/istate/shared.py",
+    "reflex/state.py",
+    "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+    "tests/units/reflex_base/state/test_proxy.py",
+    "tests/units/test_state.py",
+    "uv.lock"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7302,
+      "title": "Remove BaseState._get_attribute",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T17:53:47Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:01:08Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:18Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:20Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:22Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:24Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:25Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:28Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:29Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T18:07:31Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T19:38:53Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T23:46:44Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T23:47:06Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T00:04:41Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:32:49Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:43:16Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:06Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:20Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T15:47:59Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T22:02:25Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T23:00:36Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-28T19:03:59Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 16,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This makes the result depend on the state manager.\n\nA background task gets another state outside the lock, then writes it inside the block:\n\n```python\nother = await self.get_state(OtherState)\nasync with self:\n    other.value += 1\n```\n\n- Memory manager: the write succeeds.\n- Redis manager: `ImmutableStateError: OtherState is read-only outside of the event that holds its lock`.\n- Main: `get_state` outside the block raises on both managers.\n\nWith redis, entering reloads the tree, and only `self` takes its place in the new tree. `other` still points to the old root, which the lock does not cover. So an app works in dev and fails in prod.\n\nPlease make both managers behave the same. One option is to raise at `get_state` outside the lock, as main does. Another option is to resolve the states returned by `get_state` through the live tree when the block is entered.",
+        "path": "packages/reflex-base/src/reflex_base/state/node.py",
+        "line": 638
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This check runs on every tracked field write and every proxy mutation, so it is on the hottest path. Each call walks to the root, reads the ContextVar, and then `holds()` builds a generator for `any()` over `held.values()`.\n\nPlease make the lock lookup O(1). For example, keep the held roots keyed by identity, so the check is one dict or set lookup.",
+        "path": "packages/reflex-base/src/reflex_base/state/proxy.py",
+        "line": 117
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "With redis or disk, this runs on every `async with self` enter and exit. Each time it walks the full MRO and rebuilds the slot names.\n\n`_stale_pickle_keys` already caches the slot names per class. Please use a cached per-class tuple here too.",
+        "path": "packages/reflex-base/src/reflex_base/state/node.py",
+        "line": 689
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 17,
+    "actions_total": 14,
+    "by_state": {
+      "SUCCESS": 14,
+      "CANCELLED": 3
+    },
+    "failing": [
+      "playground-0.8.23",
+      "playground-head",
+      "size-budgets"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "playground-0.8.23 / playground-head",
+      "cause": "The older examples run 36787693957 was cancelled before either job produced steps or retained logs; a later examples run 36787694933 on the same head completed successfully."
+    },
+    {
+      "check": "size-budgets",
+      "cause": "The older size-budgets run 36787693963 was cancelled before the job produced steps or retained logs; a later size-budgets run 36787694979 on the same head completed successfully."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This makes the result depend on the state manager. A background task gets another state outside the lock, then writes it inside the block: ```python other = await self.get_state(OtherState) async with self: other.value += 1 ``` - Memory manager: the write succeeds. - Redis manager: `ImmutableStateError: OtherState is read-only outside of the event that holds its lock`. - Main: `get_state` outside the block raises on both managers. With redis, entering reloads the tree, and only `self` takes its place in the new tree. `other` still points to the old root, which the lock does not cover. So an app works in dev and fails in prod. Please make both managers behave the same. One option is to raise ",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This check runs on every tracked field write and every proxy mutation, so it is on the hottest path. Each call walks to the root, reads the ContextVar, and then `holds()` builds a generator for `any()` over `held.values()`. Please make the lock lookup O(1). For example, keep the held roots keyed by identity, so the check is one dict or set lookup.",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "With redis or disk, this runs on every `async with self` enter and exit. Each time it walks the full MRO and rebuilds the slot names. `_stale_pickle_keys` already caches the slot names per class. Please use a cached per-class tuple here too.",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Active changes-requested review asks for consistent memory/Redis behavior when a state is obtained outside the lock, O(1) held-root lookup on the write hot path, and cached slot-name discovery.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": null,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:51:25Z",
+      "excerpt": "Confidence Score: 5/5 **[High risk]** Moves core state machinery into a shared base package\\. The PR appears safe to merge; no outstanding finding or new actionable issue remains. Summary Moves state-tree bookkeeping, deltas, mutable proxies, and state tokens into `reflex_base.state` while retaining the legacy import paths. - Makes `rx.BaseState` inherit the extracted `StateNode`. - Moves the `wrapt` dependency to `reflex-base` and updates internal imports. - Treats unreadable persisted state as"
+    },
+    {
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T19:43:08Z",
+      "excerpt": "## Merging this PR will **not alter performance** `✅ 147` untouched benchmarks `⏩ 17` skipped benchmarks[^skipped] --- Comparing claude/gallant-bell-1ivcn5-3-core-state (5977e24) with claude/gallant-bell-1ivcn5-2-state-locks (b563912) [^skipped]: 17 benchmarks were skipped, so the baseline results were used instead. If they were deleted from the codebase, [click here and archive them to remove them from the performance reports](https://app.codspeed.io/reflex-dev/reflex/branches/claude%2Fgallant-"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T20:09:50Z",
+      "excerpt": "**CodSpeed Performance Analysis** is red on 1e8341d08. Compared with #7313: - `test_get_state_uncached[memory]` is 4.6% slower. - `test_process_event_burst_independent_tokens[1]` is 14% faster. CodSpeed flags that the two runs used different runtime environments. This PR only moves the state-tree machinery into `reflex_base.state`, with aliases at the old import paths; `get_state` runs the same code as in stage 2, only imported from its new home. I read this as measurement noise rather than a re"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T00:18:52Z",
+      "excerpt": "Correction to my earlier comment. `test_get_state_uncached[memory]` came in 5–7% slower in three runs in a row, so it wasn't noise. Moving the bookkeeping into `StateNode` added a third `__init__` frame to every state a new session builds. Profiling a fresh tree showed one extra call per state: 16,502 calls against 15,002 on #7313. 80eb457f2 has `BaseState.__init__` inline the two calls `StateNode.__init__` made, which brings the count back to 15,002. The other flagged benchmarks on this PR stil"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T02:02:26Z",
+      "excerpt": "**CodSpeed Performance Analysis** is red on c014b00: `read_inherited` is 6.7% slower, `read_own` 4.4% and `get_handler` 4.2%, while `burst_independent_tokens[1]` is 16% faster. I read this as noise: - The run on dfa309d, just before, reported all 135 benchmarks unchanged. - The only code change since then is in `_annotated_fields`, which runs when a state class is defined, never when vars are read. - CodSpeed notes that it compared against a substitute base (d7a628b), because #7313's head had no"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T18:46:46Z",
+      "excerpt": "CodSpeed on b3d8123 flags `test_route_argument_extraction` (-4.3%/-4.9%) and, in its first report only, `test_state_access[read_inherited]` (-4.3%). I believe neither comes from this PR: - The merge into b3d8123 changed only `StateNode.__init_subclass__` and the per-class settable-name set. `test_route_argument_extraction` only calls `get_route_args` on a route string: no state class is created and no state code runs. - `read_inherited` disappeared when CodSpeed re-ran the same commit, and `test"
+    }
+  ],
+  "head_activity_at": "2026-09-30T22:46:24Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:51:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:53:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T17:53:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T18:01:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T18:01:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T18:07:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T19:38:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T19:38:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T19:43:08Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T20:09:50Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T23:46:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T23:46:44Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T23:47:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-24T23:47:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T00:04:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T00:04:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T00:18:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T02:02:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:32:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:32:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T15:43:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T15:43:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:47:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:47:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T15:47:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T15:47:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:47:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T15:47:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T18:46:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T22:02:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T22:02:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T23:00:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-25T23:00:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-28T19:03:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-28T19:03:59Z",
+      "state": "changes_requested"
+    }
+  ],
+  "last_author_activity_at": "2026-09-30T22:46:24Z",
+  "last_maintainer_activity_at": "2026-09-28T19:03:59Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

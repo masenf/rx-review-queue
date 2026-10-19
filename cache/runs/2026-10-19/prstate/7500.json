@@ -1,0 +1,160 @@
+{
+  "number": 7500,
+  "fetched_at": "2026-10-19T17:51:27.653Z",
+  "author_login": "masenf",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "c8d9695ac121d4ecf309f2aa126f1c8779a7129b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BEHIND",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7477,
+      "title": "Mutating nested dict entries through dict.values() / dict.items() bypasses dirty tracking: rendered values and cached vars go stale",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-07T18:17:31Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-07T18:21:45Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: These replacement views drop the native dict-view `.mapping` attribute, so `state.data.values().mapping` and `state.data.items().mapping` now raise `AttributeError`. Expose a proxy-backed read-only mapping so callers retain the dict-view API without bypassing nested mutation tracking."
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "**View `mapping` access breaks** The replacement views drop the native dict view\u2019s `mapping` property, which is available on every supported Python version. Code such as `self.inventory.values().mapping[\"tea\"]` now raises `AttributeError`. Add a read-only `mapping` property that reads through the owning proxy, and test it for both views."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "actions_total": 145,
+    "by_state": {
+      "SKIPPED": 5,
+      "SUCCESS": 139,
+      "FAILURE": 3,
+      "CANCELLED": 1
+    },
+    "failing": [
+      "performance-tests-gate",
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "Run benchmarks"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15) / unit-tests-gate",
+      "job_ids": [
+        112943074116,
+        112952668459
+      ],
+      "run_id": 37665340366,
+      "cause": "The Ubuntu Python 3.15 job failed tests/units/istate/manager/test_redis.py::test_oplock_contention_queue because two waiters were observed where the test expected one; 12,455 tests passed. The PR changes reflex/istate/proxy.py and tests/units/istate/test_proxy.py, so the failing Redis-lock test is outside its diff.",
+      "evidence": "The current-head job log shows `AssertionError: assert 2 == 1` at test_redis.py:501; the unit-tests gate fails only because unit-tests=failure."
+    },
+    {
+      "check": "Run benchmarks / performance-tests-gate",
+      "job_ids": [
+        112943006617,
+        112969468090
+      ],
+      "run_id": 37665340684,
+      "cause": "The CodSpeed benchmark action was cancelled after about one hour with `The operation was canceled`; it did not report a benchmark assertion or regression. The performance gate then failed because benchmarks=cancelled.",
+      "evidence": "The current-head benchmark log runs the CodSpeed suite from 18:15:31Z until cancellation at 19:15:10Z; the gate log names benchmarks=cancelled while browser-performance and lighthouse succeeded."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Expose a proxy-backed read-only `.mapping` property on the replacement dict views so callers retain the native view API without bypassing mutation tracking.",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add and test a read-only `.mapping` property for both replacement dict views.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-07T18:21:33Z",
+      "excerpt": "Confidence Score: 4/5 **[Medium risk]** Fixes dirty tracking for mutations through dict views\\. The mutation-tracking fix appears safe to merge, with a small compatibility issue in view `mapping` access. Findings 1. &nbsp;**View \\`mapping\\` access breaks** \u25b6 Summary Tracks nested mutations made through state dictionaries\u2019 `values()` and `items()` views. - Adds shared value wrapping with key-based paths. - Adds tests for dirty fields, cached values, live views, and async writes. - The replacement"
+    }
+  ],
+  "head_activity_at": "2026-10-07T16:44:14Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-07T18:17:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-07T18:17:32Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-07T18:21:33Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-07T18:21:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-07T18:21:45Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-07T16:44:14Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

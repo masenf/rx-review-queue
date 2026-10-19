@@ -1,0 +1,169 @@
+{
+  "number": 7590,
+  "fetched_at": "2026-10-19T17:45:11.172Z",
+  "author_login": "nilaychugh",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "nilaychugh/reflex",
+  "head_sha": "38d8da1ef181b4a462e36161e965d3679eadca3e",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7483,
+      "title": "Python 3.14: state_auto_setters=True in rxconfig.py generates no set_<var> setters in the backend worker",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "copilot-pull-request-reviewer",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:50:40Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:52:57Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:55:29Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f0996f31-12b1-42e8-9b57-78a906912a70 --> <!-- cubic:review-run=6085a04c-fe04-583d-9ce0-0f8ab7ceefa9 --> <!-- metadata:{\"confidence\":8} --> P2: `get_state_auto_setters()` now implicitly caches the no-`rxconfig.py` fallback confi"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Config imports register states twice** If a fresh process directly imports `rxconfig.py` and the file defines a `State` bef"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 100,
+    "actions_total": 98,
+    "by_state": {
+      "SUCCESS": 99,
+      "SKIPPED": 1
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "<!-- cubic:v=f0996f31-12b1-42e8-9b57-78a906912a70 --> <!-- cubic:review-run=6085a04c-fe04-583d-9ce0-0f8ab7ceefa9 --> <!-- metadata:{\"confidence\":8} --> P2: `get_state_auto_setters()` now implicitly caches the no-`rxconfig.py` fallback confi",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Config imports register states twice** If a fresh process directly imports `rxconfig.py` and the file defines a `State` bef",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T04:52:57Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **1 issue found** across 3 files <!-- cubic:review-summary:end --> <details> <summary>Prompt for AI agents (unresolved issues)</summary> ```text Check if these issues are valid — if so, understand the roo"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T04:55:25Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=83025697\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T04:55:28Z",
+      "excerpt": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Config imports register states twice** If a fresh process directly imports `rxconfig.py` and the file defines a `State` bef"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T04:55:29Z",
+      "excerpt": ""
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-19T10:17:59Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **not alter performance** <details> <summary>:warning: <b>11 benchmarks spent significant time in system calls</b></summary> > System calls cannot be consistently inst"
+    }
+  ],
+  "head_activity_at": "2026-10-19T10:17:59Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "copilot-pull-request-reviewer[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:50:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:52:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:52:57Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:29Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T10:17:59Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T10:17:59Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,276 @@
+{
+  "number": 7455,
+  "fetched_at": "2026-10-19T17:45:48.256Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "01009c499295491a8847c91718b553312d6eb455",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T18:22:51Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T18:25:37Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T18:28:07Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:01:03Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:01:05Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:01:08Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:03:34Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T20:09:10Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 14,
+    "actions_total": 11,
+    "by_state": {
+      "SKIPPED": 4,
+      "FAILURE": 1,
+      "SUCCESS": 9
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_route_argument_extraction at 121.6 us versus 113.4 us on the stacked base (-6.74%) and warns that the runtime environments differ. The PR changes frontend build caching rather than routing; the author also documented the benchmark oscillating between those values on neighboring runs, so this appears unrelated and needs rerun or acknowledgment."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-06T20:01:08Z",
+      "excerpt": "Fixed in 01a21bd04. reflex now requires `reflex-base >= 0.9.13.dev0`, following the repo's sibling dependency floor rule: a package that needs an unreleased sibling change floors at the `.dev0` of the sibling's next version. That excludes r"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-06T20:03:34Z",
+      "excerpt": "<!-- cubic:v=e2c055ff-889c-4bf7-a0b2-a9342889ae2d --> <!-- cubic:review-run=aaaa8259-98ec-5ec1-8170-ea7ca5e31a6d --> <!-- metadata:{\"confidence\":9} --> P2: This only reaps stale snapshots after a cache miss: `build()` skips `capture()` when"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-06T20:03:34Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **All reported issues were addressed** across 3 files (changes from recent commits). <!-- cubic:review-summary:end --> <sub>Reply with feedback, questions, or to request a fix.<br /><br />[Turn on auto-fi"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-06T20:09:10Z",
+      "excerpt": "Valid. A cache hit skips `capture()`, so a killed build's `pending-*` copy outlived every hit until the next miss. Fixed in 01009c499: the cleanup moved into the cache handle's constructor. It runs under the build lock on every cached build"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-06T20:16:40Z",
+      "excerpt": "**CodSpeed Performance Analysis (red on 01009c4) is not this PR's.** It flags only `test_route_argument_extraction` (113.4 → 121.6 µs). That benchmark times `reflex.route.get_route_args`, and this PR changes nothing in routing. It only touc"
+    }
+  ],
+  "head_activity_at": "2026-10-06T20:08:58.000Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:20:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:22:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:25:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:25:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:27:13Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:27:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:28:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T18:28:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:01:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:01:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:01:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:01:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:01:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:01:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T20:03:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T20:03:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:09:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:09:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-06T20:16:40Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-06T20:16:40.000Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

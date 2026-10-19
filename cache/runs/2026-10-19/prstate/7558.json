@@ -1,0 +1,185 @@
+{
+  "number": 7558,
+  "fetched_at": "2026-10-19T17:49:49.224Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "b78bd1a7d1a181d5c711352bb2cf1679d799b140",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7509,
+      "title": "`reflex run --json` ignores SIGINT sent to its pid; under supervisord stopsignal=INT the app is orphaned and blocks the restart",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:04:45Z",
+      "can_push": false,
+      "commit_id": "b1ab2a65d1911b5191bd939933047926673f504d"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:06:17Z",
+      "can_push": false,
+      "commit_id": "b1ab2a65d1911b5191bd939933047926673f504d"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:22:24Z",
+      "can_push": false,
+      "commit_id": "ca153c80622366c2fdad9734e493fe9a59db51c5"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:23:18Z",
+      "can_push": false,
+      "commit_id": "ca153c80622366c2fdad9734e493fe9a59db51c5"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T03:58:57Z",
+      "can_push": false,
+      "commit_id": "87dbe5908510f6dc21fc6cb7a2457448fdab487d"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 147,
+    "actions_total": 143,
+    "by_state": {
+      "SKIPPED": 5,
+      "SUCCESS": 142
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:06:11Z",
+      "excerpt": "Confidence Score: 5/5 **[High impact]** The PR appears safe to merge; the previous terminal quit issue is fixed. Summary On POSIX, `reflex run --json` forwards "
+    },
+    {
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-14T10:12:00Z",
+      "excerpt": "## Merging this PR will **not alter performance** :warning: 10 benchmarks spent significant time in system calls > System calls cannot be consistently instrumen"
+    }
+  ],
+  "head_activity_at": "2026-10-15T04:13:00Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:04:45Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:04:46Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:06:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:06:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:06:17Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-14T10:12:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:22:24Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:22:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:23:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:23:18Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T03:58:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T03:58:57Z",
+      "state": "COMMENTED"
+    }
+  ],
+  "last_author_activity_at": "2026-10-15T04:13:00Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 5
+}

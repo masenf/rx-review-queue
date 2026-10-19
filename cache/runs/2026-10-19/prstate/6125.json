@@ -1,0 +1,154 @@
+{
+  "number": 6125,
+  "fetched_at": "2026-10-19T17:32:43Z",
+  "author_login": "timon0305",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "timon0305/reflex",
+  "head_sha": "f18922ac53509a66d715454d001bf0002bbd5643",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "reflex/config.py",
+    "reflex/istate/manager/__init__.py",
+    "reflex/utils/prerequisites.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 5830,
+      "title": "support redis sentinel for HA",
+      "filed_by": "benedikt-bartscher"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-02-11T12:22:22Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-02-12T20:48:41Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-25T15:12:49Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 4,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "[P2] Apply TLS settings to Sentinel discovery connections\n\nPlease pass the TLS setting into `sentinel_kwargs` in both `get_redis()` and `get_redis_sync()`. `redis_sentinel_ssl` is documented as enabling TLS to Sentinel, but it is only applied to `master_for()`, so the discovery clients remain plain `Connection` instances. Against a real TLS-only Sentinel, both clients fail discovery with `MasterNotFoundError` after the connection is reset; redis-py Sentinel clients configured with `ssl=True` in `sentinel_kwargs` discover the same master successfully. Enabling TLS only for the discovered master cannot establish the Sentinel connection.",
+        "path": "reflex/utils/prerequisites.py",
+        "at": "2026-09-25T15:12:49Z"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": null,
+    "total": 0,
+    "actions_total": 0,
+    "by_state": {},
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "ci_awaiting_approval_workflows": [],
+  "ci_never_ran_reason": "No current-head Actions checks or workflow jobs are exposed for this fork head.",
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "[P2] Apply TLS settings to Sentinel discovery connections Please pass the TLS setting into `sentinel_kwargs` in both `get_redis()` and `get_redis_sync()`. `redis_sentinel_ssl` is documented as enabling TLS to Sentinel, but it is only applied to `master_for()`, so the discovery clients remain plain `Connection` instances. Against a real TLS-only Sentinel, both clients fail discovery with `MasterNotFoundError` after the connection is reset; redis-py Sentinel clients configured with `ssl=True` in `sentinel_kwargs` discover the same master successfully. Enabling TLS only for the discovered master cannot establish the Sentinel connection.",
+      "addressed": false,
+      "path": "reflex/utils/prerequisites.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-02-11T12:22:15Z",
+      "excerpt": "Greptile Overview Greptile Summary This PR adds Redis Sentinel support for high availability deployments by introducing 5 new configuration fields (`redis_sentinel_nodes`, `redis_s"
+    }
+  ],
+  "head_activity_at": "2026-02-11T12:31:40Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-02-11T12:22:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-02-11T12:22:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-02-11T12:22:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-02-11T12:22:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-02-11T12:22:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-02-12T20:48:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:12:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:12:49Z",
+      "state": "changes_requested"
+    }
+  ],
+  "last_author_activity_at": "2026-02-11T12:31:40Z",
+  "last_maintainer_activity_at": "2026-09-25T15:12:49Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

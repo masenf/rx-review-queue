@@ -1,0 +1,469 @@
+{
+  "number": 7308,
+  "fetched_at": "2026-10-19T17:38:19.252Z",
+  "author_login": "flcrom",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "flcrom/reflex",
+  "head_sha": "be801a3ca4c403a138c2d00ab787b91682346012",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7017,
+      "title": "State var default of dataclasses.field(...) fails with TypeError: cannot pickle 'mappingproxy' object",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:20:36Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-24T10:23:28Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:17:20Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T09:18:10Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:52Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-25T12:11:53Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T17:31:20Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:03:40Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:06:59Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T19:55:29Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T19:56:31Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T20:02:41Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T20:03:08Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T07:48:41Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T07:54:30Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-10T03:41:40Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 10,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=366cf796-c8aa-4b11-9f6a-9c992e44af8f -->\n<!-- cubic:review-run=16108169-2cc4-5453-9158-96c84eb97ade -->\n<!-- metadata:{\"confidence\":7} -->\nP2: Unannotated `dataclasses.field(default=mutable)` stores the mutable value directly, so state instances can reuse mutations; annotated fields go through `field()`, which creates a `deepcopy` factory. Convert mutable defaults to a deepcopy factory here too.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. At packages/reflex-base/src/reflex_base/vars/base.py, line 4214:\n\n<comment>Unannotated `dataclasses.field(default=mutable)` stores the mutable value directly, so state instances can reuse mutations; annotated fields go through `field()`, which creates a `deepcopy` factory. Convert mutable defaults to a deepcopy factory here too.</comment>\n\n<file context>\n@@ -4206,6 +4206,21 @@ def __new__(\n+                # annotated ones instead of deep-copying their mappingproxy.\n+                factory = None if value.default_factory is MISSING else value.default_factory\n+                value = Field(\n+                    default=value.default,\n+         ",
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "line": null
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Hardcoded dictionary key** The new test repeats `\"nested\"` as a dictionary key in its default and assertions. The repository requires string literals used as keys to be extracted into named constants. Please satisfy that requirement before merging.\n\n**Rule Used:** String literals that are used as identifiers or keys should be extracted into named constants rather than hardcoded. ([source](https://app.greptile.com/reflex-org-2/-/custom-context?memory=00021259-e7c1-482a-928a-16d614fd1dff))\n\n**Learned From**\n[reflex-dev/flexgen#2170](https://github.com/reflex-dev/flexgen/pull/2170)\n\nNote: If this suggestion doesn't match your team's coding style, reply to this and let me know. I'll remember it for next time!",
+        "path": "tests/units/test_state.py",
+        "line": 5495
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=73d6e19e-cf84-4739-98c5-95d6a0675c86 -->\n<!-- cubic:review-run=6fe2d487-10c8-53bc-9c82-75f291d8eb20 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Both parameter runs register a state with the same module and class name, so the second replaces the first in the shared state registry. Include `name` in the generated class name to keep these test registrations distinct.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At tests/units/test_state.py, line 5342:\n\n<comment>Both parameter runs register a state with the same module and class name, so the second replaces the first in the shared state registry. Include `name` in the generated class name to keep these test registrations distinct.</comment>\n\n<file context>\n@@ -5330,6 +5330,30 @@ class UnannotatedFieldState(BaseState):\n+    \"\"\"\n+    default = {\"nested\": []}\n+    state_cls = type(\n+        \"MutableDataclassesFieldState\",\n+        (BaseState,),\n+        {\"__module__\": __name__, name: dataclasses.field(default=default)}",
+        "path": "tests/units/test_state.py",
+        "line": 5489
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> <a href=\"#\"><img alt=\"security\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Security.svg?v=2\" align=\"top\"></a> **Backend field becomes public** When a child state replaces an inherited backend-only field with an unannotated `dataclasses.field(default=...)`, this conversion creates a field with `is_var=True` instead of preserving the backend-only setting. The replacement is registered as a frontend var, so its value is sent to the browser. **How this was verified:** The replacement defaults to `is_var=True`, and state registration includes fields that are not marked backend-only.",
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "line": 4643
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 146,
+    "actions_total": 142,
+    "by_state": {
+      "SUCCESS": 143,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: Unannotated `dataclasses.field(default=mutable)` stores the mutable value directly, so state instances can reuse mutations; annotated fields go through `field()`, which creates a `deepcopy` factory. Convert mutable defaults to a deepcopy factory here too. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. At packages/reflex-base/src/reflex_base/vars/base.py, line 4214: Unannotated `dataclasses.field(default=mutable)` stores the mutable value directly, so state instances can reuse mutations; annotated fields go through `field()`, which creates a `deepcopy` factory. Convert mutable defaults to a deepcopy factory here too. @@ -4206,6 +42",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Hardcoded dictionary key** The new test repeats `\"nested\"` as a dictionary key in its default and assertions. The repository requires string literals used as keys to be extracted into named constants. Please satisfy that requirement before merging. **Rule Used:** String literals that are used as identifiers or keys should be extracted into named constants rather than hardcoded. ([source](https://app.greptile.com/reflex-org-2/-/custom-context?memory=00021259-e7c1-482a-928a-16d614fd1dff)) **Learned From** [reflex-dev/flexgen#2170](https://github.com/reflex-dev/flexgen/pull/2170) Note: If this suggestion doesn't match your team's coding style, reply to this and let me know. I'll remember it f",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: Both parameter runs register a state with the same module and class name, so the second replaces the first in the shared state registry. Include `name` in the generated class name to keep these test registrations distinct. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At tests/units/test_state.py, line 5342: Both parameter runs register a state with the same module and class name, so the second replaces the first in the shared state registry. Include `name` in the generated class name to keep these test registr",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Backend field becomes public** When a child state replaces an inherited backend-only field with an unannotated `dataclasses.field(default=...)`, this conversion creates a field with `is_var=True` instead of preserving the backend-only setting. The replacement is registered as a frontend var, so its value is sent to the browser. **How this was verified:** The replacement defaults to `is_var=True`, and state registration includes fields that are not marked backend-only.",
+      "addressed": false
+    },
+    {
+      "by": "masenf",
+      "ask": "Preserve independent mutable defaults for unannotated dataclasses.field(default=...) state fields.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:21:56Z",
+      "excerpt": "## Merging this PR will **not alter performance** :warning: 15 benchmarks spent significant time in system calls > System calls cannot be consistently instrumented, so they are not included in the measure, which understates the real cost. Please switch to [the Walltime instrument](https://codspeed.io/docs/instruments/walltime?utm_source=github&utm_medium=comment-v2&utm_content=significant_sys_time) to accurately measure system calls. > > [Measurement and system calls](https://codspeed.io/docs/in"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:23Z",
+      "excerpt": "Confidence Score: 3/5 **[Medium impact]** Fixes state variable defaults from dataclass fields\\. The PR is not safe to merge until an inherited backend-only field remains server-side when overridden with `dataclasses.field(...)`. Findings 1. &nbsp; &nbsp;**Backend field becomes public** ▶ 2. &nbsp;**Hardcoded dictionary key** ▶ Summary This PR converts `dataclasses.field(...)` declarations into Reflex fields so their defaults and factories work during state initialization. - Adds coverage for ann"
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T09:10:02Z",
+      "excerpt": "Could a maintainer rerun the failed build jobs? Setup timed out downloading Plotly 7.1.0 from PyPI after three retries, before the minimum-dependency check ran. The build gate failed because of that setup failure. https://github.com/reflex-dev/reflex/actions/runs/36835213735/job/110282575310"
+    }
+  ],
+  "head_activity_at": "2026-10-10T03:34:52Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:20:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:21:56Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-24T10:23:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:17:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:17:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:18:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T09:18:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-25T12:11:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:31:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T17:31:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:03:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:03:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:06:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T18:06:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-30T19:55:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-30T19:55:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T19:56:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T19:56:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-30T20:02:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-30T20:02:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-30T20:03:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T07:48:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T07:48:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T07:54:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T07:54:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T09:10:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-10T03:41:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-10T03:41:40Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-10T03:34:52Z",
+  "last_maintainer_activity_at": "2026-09-30T20:03:08Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

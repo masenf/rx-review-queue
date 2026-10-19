@@ -1,0 +1,446 @@
+{
+  "number": 7540,
+  "fetched_at": "2026-10-19T17:51:27.653Z",
+  "author_login": "masenf",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "cd8421d23c194701289f961d492d4bea5ef4bb6c",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "reflex/compiler/utils.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-09T21:33:52Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-09T21:39:00Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-09T22:00:52Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-09T22:02:56Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-09T22:02:59Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-09T22:03:01Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-13T15:39:01Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-13T16:09:53Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-14T07:57:03Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T08:00:11Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T08:00:14Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T08:00:16Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "SUCCESS": 141,
+      "FAILURE": 1,
+      "SKIPPED": 2
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_run_id": 116103455958,
+      "cause": "CodSpeed reports a 4.77% aggregate regression from test_get_state[disk] (-5.08%) and test_state_access[write_own] (-4.46%). Its own output warns that different runtime environments were compared and that the disk benchmark spends significant time in unmeasured system calls.",
+      "evidence": "This is a third-party check, so no GitHub Actions job log is available; the complete current-head check output was inspected. The author notes that the same 18-file diff was green on the preceding head and that neither benchmark exercises form submission code."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Accept bracketed `name[]` controls when validating required list fields in a TypedDict handler and add a regression test.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Raise the minimum reflex-components-core version, or retain memo ref delegation for still-supported versions.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Raise the dependency floor or preserve the two-argument `getFormData` compatibility path for still-allowed reflex-components-core versions.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Scope the `name[]` documentation heading to plain-dict decoding rather than implying every access returns a list.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Read controlled-input names from `custom_attrs` during TypedDict form validation and add a regression test.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Test that an id matching a submitted name cannot overwrite the name-based field value.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Document the compile-time warning for value-bearing controls that have a static id but no name.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the breaking-change fragment state the exact reflex-components-core `.dev0` dependency floor.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-09T21:33:56Z",
+      "excerpt": "## Merging this PR will **degrade performance by 4.77%**"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T21:49:10Z",
+      "excerpt": "CodSpeed's \u22124.33% on 5b28d3fd5 (`test_state_access[read_inherited]`) is noise, not this change: - **No relevant code changed:** the only source difference from 64fe7e0, which CodSpeed reported as \"not alter performance\", is the compile-time TypedDict field check in `Form.create`. State access never runs that code. - **This benchmark keeps swinging both ways:** across the stacked commits today it moved \u22124.3% and \u22127.8% on #7386 heads that changed only `state.js` or form validation, and those swing"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-13T16:18:39Z",
+      "excerpt": "CodSpeed's \u22124.42% on 8fc9c502d (`test_arithmetic_operations[state]` and `[bare]`) isn't caused by this PR: - **Untouched code path:** the benchmark only builds `NumberVar` arithmetic (`count + i`, `count * i`, \u2026). This PR's diff against #7386 touches form data, form validation, `state.js` and the memo/compiler ref plumbing, and none of that runs when building a Var operation. - **Unreliable comparison:** CodSpeed flags \"Different runtime environments detected\" for exactly these regressed benchma"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T07:53:19Z",
+      "excerpt": "`playground-0.8.23` (examples workflow) fails for a reason outside this PR. The job installs the published reflex 0.8.23, whose `import reflex` crashes because `sqlalchemy.ext.asyncio` needs `greenlet`, before any code from this branch runs. The same workflow is red on main's latest pushes (3634eed3c, 9a92690a4, 8fa6cb6cd). It's listed as `ADVISORY` in `tests/units/test_workflow_gates.py`, so it doesn't block the merge. This PR has no fix for it: #7440 made `sqlalchemy.ext.asyncio` load lazily o"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T21:03:58Z",
+      "excerpt": "CodSpeed's \u22124.77% on cd8421d23 (`test_get_state[disk]` \u22125.08% and `test_state_access[write_own]` \u22124.46%) isn't caused by this PR: - **Same diff, clean report:** cd8421d23 only merges main. Its diff against main is identical to 0b738e8ae's (18 files, +167/\u2212439), and CodSpeed reported 0b738e8ae as \"will not alter performance\" with all 148 benchmarks untouched. - **Untouched code path:** neither benchmark builds or submits a form. This PR changes form data, form validation, `state.js` and memo ref "
+    }
+  ],
+  "head_activity_at": "2026-10-14T20:50:06Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-09T21:33:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-09T21:33:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-09T21:33:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-09T21:33:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T21:39:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T21:39:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T21:49:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-09T22:00:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-09T22:00:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-09T22:00:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-09T22:00:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T22:02:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T22:02:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T22:02:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T22:02:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T22:03:01Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-09T22:03:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-13T15:39:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-13T15:39:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-13T16:09:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-13T16:09:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-13T16:18:39Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T07:53:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-14T07:57:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-14T07:57:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-14T07:57:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-14T07:57:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T08:00:11Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T08:00:11Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T08:00:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T08:00:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T08:00:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T08:00:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-14T21:03:58Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-14T21:03:58Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

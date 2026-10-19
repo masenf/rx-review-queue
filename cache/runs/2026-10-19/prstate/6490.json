@@ -1,0 +1,145 @@
+{
+  "number": 6490,
+  "fetched_at": "2026-10-19T17:32:43Z",
+  "author_login": "riebecj",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "riebecj/reflex",
+  "head_sha": "62019f3edc491eaebf30885a24325854a918346b",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/config.py",
+    "reflex/istate/manager/redis.py",
+    "reflex/utils/token_manager.py",
+    "tests/units/istate/manager/test_redis.py",
+    "tests/units/reflex_cli/conftest.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-05-11T23:09:52Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-25T14:50:44Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "[P1] Use a cluster-aware client when cluster mode is enabled\n\nPlease select a cluster-aware Redis client for the state and token managers when `redis_cluster=True`. The current factory still creates `redis.asyncio.client.Redis`. Against a healthy three-primary Redis Cluster, `set_state` for token `review-cluster` raises `MovedError` for slot 16341, and the real app fails to hydrate or handle events. A `RedisCluster` control writes and reads the same generated key successfully. Hash tags keep related keys in one slot, but the client must also route commands to that slot's owner.",
+        "path": "reflex/istate/manager/__init__.py",
+        "at": "2026-09-25T14:50:44Z"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 70,
+    "actions_total": 68,
+    "by_state": {
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 67
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "ci_awaiting_approval_workflows": [],
+  "ci_never_ran_reason": null,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "[P1] Use a cluster-aware client when cluster mode is enabled Please select a cluster-aware Redis client for the state and token managers when `redis_cluster=True`. The current factory still creates `redis.asyncio.client.Redis`. Against a healthy three-primary Redis Cluster, `set_state` for token `review-cluster` raises `MovedError` for slot 16341, and the real app fails to hydrate or handle events. A `RedisCluster` control writes and reads the same generated key successfully. Hash tags keep related keys in one slot, but the client must also route commands to that slot's owner.",
+      "addressed": false,
+      "path": "reflex/istate/manager/__init__.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-11T23:01:45Z",
+      "excerpt": "## Merging this PR will **not alter performance** `✅ 24` untouched benchmarks --- Comparing riebecj:redis-cluster (62019f3) with main (dc8a23c)"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:46Z",
+      "excerpt": "Greptile Summary This PR adds opt-in Redis Cluster support via `rx.Config(redis_cluster=True)`, keeping the default `False` to preserve existing behavior. When enabled, all Redis k"
+    }
+  ],
+  "head_activity_at": "2026-05-26T14:19:21Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-11T23:01:45Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:50Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T14:50:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T14:50:44Z",
+      "state": "changes_requested"
+    }
+  ],
+  "last_author_activity_at": "2026-05-26T14:19:21Z",
+  "last_maintainer_activity_at": "2026-09-25T14:50:44Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

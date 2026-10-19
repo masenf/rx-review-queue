@@ -1,0 +1,1077 @@
+{
+  "number": 7033,
+  "fetched_at": "2026-10-19T17:32:43.334Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "6004f7445b09c14915a065bb8002805211c8f765",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/event/__init__.py",
+    "tests/units/utils/test_exec.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7032,
+      "title": "disable implicit @rx.event handlers",
+      "filed_by": "benedikt-bartscher"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T09:48:30Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T09:59:18Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T10:05:59Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T10:24:02Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T10:27:53Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T11:14:50Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T12:04:30Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T12:09:20Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T12:20:18Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-02T16:35:00Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "abulvenz",
+      "association": "CONTRIBUTOR",
+      "state": "APPROVED",
+      "at": "2026-09-02T17:56:44Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-02T18:06:01Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-10T11:41:00Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-10T11:41:02Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-10T11:41:04Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T12:12:33Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T14:57:45Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T14:57:47Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T15:38:23Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T15:44:57Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T16:34:53Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-10T16:34:56Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-15T10:12:25Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-15T11:11:59Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-15T11:12:30Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-16T21:45:28Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-16T21:47:24Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-16T21:49:12Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T10:00:28Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T10:03:47Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T10:11:57Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T10:14:34Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-27T10:27:42Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-28T21:02:56Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-29T11:30:57Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:26:47Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:26:49Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:26:51Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:26:53Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:26:54Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:26:56Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-29T18:27:02Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "masenf",
+    "abulvenz",
+    "Alek99"
+  ],
+  "threads": {
+    "total": 28,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "If the env var is not set and no config is cached, the flag falls back to `False` with no warning. Every public method then becomes an event handler again. This happens for any entry point other than `reflex run`, for example `uvicorn`/`gunicorn` pointed at the app module, or a test suite that imports the state modules.\n\nRepro with an app that sets `state_explicit_event_handlers=True`, and no `REFLEX_STATE_EXPLICIT_EVENT_HANDLERS` in the environment:\n\n```python\nfrom uvicorn.importer import import_from_string\nimport_from_string(\"pr7033_repro.pr7033_repro:app\")\nsorted(ExplicitState.event_handlers)\n# [..., 'mixin_helper', ..., 'step', ...]  <- undecorated helpers are handlers\n```\n\nThe docs mention this. But for a security switch, a silent fallback to the permissive mode is the wrong failure. Please make it fail closed. For example: record the value the first user State was built with. When the config is loaded (e.g. in `App.__init__`), raise if the config value differs.\n",
+        "path": "packages/reflex-base/src/reflex_base/config.py",
+        "line": 988
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "The exported env var also wins over later `rxconfig.py` edits, because `update_from_env` applies `REFLEX_*` over the file values. In dev, the worker reloads with the value from startup.\n\nRepro: start `reflex run` with `state_explicit_event_handlers=False`, then set it to `True` and save. After the reload, `step` and `mixin_helper` are still registered handlers. Only a full restart applies the change. The reverse edit (`True` to `False`) is also ignored.\n\nPlease do not let the persisted value override the file, or document that a change to this flag needs a restart.\n",
+        "path": "reflex/utils/exec.py",
+        "line": 581
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This check runs only when a trigger is compiled. The runtime paths through `Event.from_event_type` and `fix_events` do not call it. Both cases below work in implicit mode, so users who migrate will hit them:\n\n- `app.add_page(page, on_load=State.undecorated)` is accepted. Every load of the page then fails in the backend with `ValueError: Unexpected event type, <class 'function'>`. The browser shows no error, and `on_load` does not run.\n- An event handler that does `return State.undecorated` (or yields it) fails with `TypeError: Your handler State.chain must only return/yield: None, Events...`.\n\nNeither message mentions `@rx.event` or `state_explicit_event_handlers`. Please call this check on the runtime path too, so that `on_load` and return/yield values get the same targeted error. Please also add tests for both cases.\n",
+        "path": "packages/reflex-base/src/reflex_base/event/__init__.py",
+        "line": 2368
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "A decorator without `functools.wraps` on top of `@rx.event` loses this marker. So the method silently stops being an event handler:\n\n```python\ndef require_login(f):\n    def inner(self, *a, **k):\n        return f(self, *a, **k)\n    return inner\n\nclass S(rx.State):\n    @require_login\n    @rx.event\n    def save(self): ...\n\nrx.button(on_click=S.save)\n```\n```\nEventFnArgMismatchError: Event on_click only provides 1 arguments, but <function require_login.<locals>.inner ...> requires at least 3 arguments to be passed to the event handler.\n```\n\nThe wrapper's `__qualname__` is `require_login.<locals>.inner`, so `_mark_undecorated_methods` also skips it, and the targeted error does not fire. The same code works on `main`. It also works with `functools.wraps`, or with `@rx.event` as the outer decorator.\n\nPlease give this case a clear error that names the flag. Or at least document that `@rx.event` must be the outermost decorator, or that wrappers must use `functools.wraps`.\n",
+        "path": "reflex/state.py",
+        "line": 848
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This `setattr` runs in the default mode too. So `rx.event(x)` now raises for any `x` without a `__dict__`:\n\n```python\nrx.event(Obj().m)\n# AttributeError: 'method' object has no attribute '_rx_event' and no __dict__ for setting new attributes\nrx.event(len)\n# AttributeError: 'builtin_function_or_method' object has no attribute '_rx_event' ...\n```\n\nOn `main`, both calls return the value unchanged. I did not find this usage in the repo or the docs, but it is a behavior change for users who do not enable the flag. Please guard the `setattr`, or give a clear error.\n",
+        "path": "packages/reflex-base/src/reflex_base/event/__init__.py",
+        "line": 3188
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "These two markers are internal, but adding them to `EventNamespace` makes them public as `rx.event.EVENT_MARKER` and `rx.event.UNDECORATED_STATE_METHOD_MARKER`. `reflex/state.py` imports them from `reflex_base.event` directly, so the namespace entries are not needed. Please remove them, so that no new public API has to be supported.\n",
+        "path": "packages/reflex-base/src/reflex_base/event/__init__.py",
+        "line": 3060
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 151,
+    "actions_total": 148,
+    "by_state": {
+      "SKIPPED": 4,
+      "SUCCESS": 144,
+      "FAILURE": 3
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.15)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "job_id": 111041243912,
+      "run_id": 37066132190,
+      "cause": "Gate propagation only: the log reports `Blocking job results: unit-tests=failure` after changes=success, unit-tests=failure, and unit-tests-macos=skipped."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "job_id": 111034299413,
+      "run_id": 37066132190,
+      "cause": "The third unit-test pass failed tests/units/test_state.py::test_state_manager_lock_expire_contend with LockExpiredError after the current lock id became None (1 failed, 12,143 passed). The PR touches test_state.py but not reflex/istate/manager/redis.py; the first two passes in this job were green."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 111037231036,
+      "run_id": null,
+      "cause": "External CodSpeed output reports test_state_access[get_handler] regressed 4.43% (81.7 ms to 85.5 ms); 145 benchmarks were unchanged and 18 skipped."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "If the env var is not set and no config is cached, the flag falls back to `False` with no warning. Every public method then becomes an event handler again. This happens for any entry point other than `reflex run`, for example `uvicorn`/`gunicorn` pointed at the app module, or a test suite that imports the state modules. Repro with an app that sets `state_explicit_event_handlers=True`, and no `REFLEX_STATE_EXPLICIT_EVENT_HANDLERS` in the environment: ```python from uvicorn.importer import import_",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "The exported env var also wins over later `rxconfig.py` edits, because `update_from_env` applies `REFLEX_*` over the file values. In dev, the worker reloads with the value from startup. Repro: start `reflex run` with `state_explicit_event_handlers=False`, then set it to `True` and save. After the reload, `step` and `mixin_helper` are still registered handlers. Only a full restart applies the change. The reverse edit (`True` to `False`) is also ignored. Please do not let the persisted value overr",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This check runs only when a trigger is compiled. The runtime paths through `Event.from_event_type` and `fix_events` do not call it. Both cases below work in implicit mode, so users who migrate will hit them: - `app.add_page(page, on_load=State.undecorated)` is accepted. Every load of the page then fails in the backend with `ValueError: Unexpected event type, <class 'function'>`. The browser shows no error, and `on_load` does not run. - An event handler that does `return State.undecorated` (or yi",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "A decorator without `functools.wraps` on top of `@rx.event` loses this marker. So the method silently stops being an event handler: ```python def require_login(f): def inner(self, *a, **k): return f(self, *a, **k) return inner class S(rx.State): @require_login @rx.event def save(self): ... rx.button(on_click=S.save) ``` ``` EventFnArgMismatchError: Event on_click only provides 1 arguments, but <function require_login.<locals>.inner ...> requires at least 3 arguments to be passed to the event han",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This `setattr` runs in the default mode too. So `rx.event(x)` now raises for any `x` without a `__dict__`: ```python rx.event(Obj().m) # AttributeError: 'method' object has no attribute '_rx_event' and no __dict__ for setting new attributes rx.event(len) # AttributeError: 'builtin_function_or_method' object has no attribute '_rx_event' ... ``` On `main`, both calls return the value unchanged. I did not find this usage in the repo or the docs, but it is a behavior change for users who do not enab",
+      "addressed": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "These two markers are internal, but adding them to `EventNamespace` makes them public as `rx.event.EVENT_MARKER` and `rx.event.UNDECORATED_STATE_METHOD_MARKER`. `reflex/state.py` imports them from `reflex_base.event` directly, so the namespace entries are not needed. Please remove them, so that no new public API has to be supported.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T09:48:26Z",
+      "excerpt": "<h2><a href=\"https://app.greptile.com/api/retrigger?id=59435341\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a>Confidence Score: 5/5</h2> **[Medium ri"
+    },
+    {
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T09:49:00Z",
+      "excerpt": "## Merging this PR will **degrade performance by 4.43%** `❌ 1` regressed benchmark `✅ 145` untouched benchmarks `⏩ 18` skipped benchmarks[^skipped] > [!WARNING] > Please fix the performance issues or [acknowledge them on CodSpeed](https://app.codspeed.io/reflex-dev/reflex/branches/benedikt-bartscher%3Adisable-implicit-event-handlers?q=is%3Aregression&utm_source=github&utm_medium=comment-v2&utm_content=acknowledge). ### Performance Changes | | Benchmark | `BASE` | `HEAD` | Efficiency | | --- | --"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-04T18:16:42Z",
+      "excerpt": "@masenf i think this PR is important from a security perspective - can we get it in?"
+    }
+  ],
+  "head_activity_at": "2026-10-02T21:19:10Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T09:48:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T09:48:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T09:48:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T09:49:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T09:59:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T09:59:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T10:05:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T10:06:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T10:06:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T10:06:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T10:24:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T10:24:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T10:27:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T10:27:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T11:14:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T11:14:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T12:04:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T12:04:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T12:09:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T12:09:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T12:20:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T12:20:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-02T16:35:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "abulvenz",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T17:56:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "abulvenz",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T17:56:44Z",
+      "state": "approved"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T18:06:01Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-02T18:06:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-04T18:16:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-10T11:41:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-10T11:41:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-10T11:41:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-10T11:41:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-10T11:41:04Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T12:12:33Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T12:12:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T14:57:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T14:57:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T14:57:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T14:57:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T15:38:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T15:38:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T15:44:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T15:44:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T15:44:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T16:34:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T16:34:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T16:34:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-10T16:34:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T10:12:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T10:12:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T11:11:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T11:11:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T11:12:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-15T11:12:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-16T21:45:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-16T21:45:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-16T21:47:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-16T21:47:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-16T21:49:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-16T21:49:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:00:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:00:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:03:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:03:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:11:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:11:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:14:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:14:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:27:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-27T10:27:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-28T21:02:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-28T21:02:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T11:30:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-29T11:30:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:26:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-29T18:27:02Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-02T21:19:10Z",
+  "last_maintainer_activity_at": "2026-09-29T18:27:02Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

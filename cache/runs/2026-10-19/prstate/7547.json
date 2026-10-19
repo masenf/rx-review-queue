@@ -1,0 +1,284 @@
+{
+  "number": 7547,
+  "fetched_at": "2026-10-19T17:51:27.653Z",
+  "author_login": "flcrom",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "flcrom/reflex",
+  "head_sha": "e65c00a74b87f3591a909398b330befd7acf1b35",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7488,
+      "title": "With `from __future__ import annotations`, an undefined name in a var annotation fails with `TypeError: Unsupported type ForwardRef('list[Item]') for guess_type` instead of a NameError naming the symbol",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-11T05:26:17Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-11T05:28:28Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-11T05:45:23Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-11T05:49:47Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-11T05:50:16Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-16T18:59:52Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T19:52:58Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-16T19:55:59Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T09:38:29Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 150,
+    "actions_total": 146,
+    "by_state": {
+      "SKIPPED": 7,
+      "SUCCESS": 143
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Handle postponed annotations without defaults so an unresolved type still raises the useful NameError.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Move the new `ForwardRef` import to module scope to follow the repository import rule.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Resolve annotations strictly only after excluding private attributes, descriptors, and other non-state fields.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Do not treat qualified `typing.ClassVar[MissingItem]` as a state field that must resolve at runtime.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-11T05:28:24Z",
+      "excerpt": "Confidence Score: 5/5 **[Medium impact]** The PR appears safe to merge; no actionable new issues were found. Summary This PR restores a useful `NameError` when a state field's annotation names an undefined symbol. - State class creation names missing types in state var annotations. All three supplied previous threads are unnumbered. Their fixes remain present: no-default fields reach strict resolution, `ForwardRef` is imported at module level, and private attributes and descriptors skip resoluti"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-11T05:32:06Z",
+      "excerpt": "## Merging this PR will **not alter performance**"
+    }
+  ],
+  "head_activity_at": "2026-10-19T09:36:56Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-11T05:26:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-11T05:28:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-11T05:28:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-11T05:28:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-11T05:32:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T05:45:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T05:45:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-11T05:49:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-11T05:49:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T05:50:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "flcrom",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T05:50:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-16T18:59:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-16T18:59:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T19:52:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-16T19:52:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-16T19:55:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-16T19:55:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T09:38:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T09:38:29Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T09:36:56Z",
+  "last_maintainer_activity_at": "2026-10-19T09:38:29Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

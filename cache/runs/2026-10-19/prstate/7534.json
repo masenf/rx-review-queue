@@ -1,0 +1,211 @@
+{
+  "number": 7534,
+  "fetched_at": "2026-10-19T17:51:27.653Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "63eb608e61e63f236c89412ea1e5390dd2aaa933",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BEHIND",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-08T23:53:19Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-09T08:58:10Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-11T11:16:19Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-11T11:20:33Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-11T12:48:08Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "SUCCESS": 141,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Renew only the lease's own Redis lock, checking ownership atomically so a resumed stale worker cannot extend another worker's lock.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Propagate and await keep-alive task failures instead of allowing renewal errors to become detached task errors.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Renew on cached-state handoff, or wake the renewal task before the current holder's deadline, so the next queued event cannot lose its changes.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "After cancellation, wait for the shielded flush to finish before releasing the lease context and re-raising.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add the required Google-style docstrings to the new lock renewal, flush, and unstarted-lease helpers.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T23:53:14Z",
+      "excerpt": "Confidence Score: 5/5 **[High impact]** The PR appears safe to merge; no new actionable issues were found. Summary Fixes Redis lock handoffs so cancelled events release their locks and queued events can continue. - Redis locks stay with their owner when events are cancelled or replaced. - Leased state updates stay saved while events share cached state. - Queued events get another chance when a lock is released. All four previous threads were rechecked. The owner check, renewal error check, hando"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-08T23:57:48Z",
+      "excerpt": "## Merging this PR will **not alter performance**"
+    }
+  ],
+  "head_activity_at": "2026-10-17T09:57:41Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T23:53:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T23:53:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T23:53:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T23:53:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-08T23:57:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-09T08:58:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-09T08:58:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-11T11:16:19Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-11T11:16:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-11T11:20:32Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-11T11:20:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T12:48:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T12:48:08Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-17T09:57:41Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 10
+}

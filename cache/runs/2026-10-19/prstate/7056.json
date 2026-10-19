@@ -1,0 +1,363 @@
+{
+  "number": 7056,
+  "fetched_at": "2026-10-19T17:33:35.842Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "d640f035d22e24c8d0ef0c514df65d430aabdba1",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/utils/format.py",
+    "packages/reflex-base/src/reflex_base/utils/serializers.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "reflex/istate/proxy.py",
+    "tests/units/reflex_base/utils/test_types.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:04:26Z",
+      "can_push": false,
+      "commit_id": "a2d92b8a9f1e877c5c4e4383c8f9003c7b50c686"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:10:01Z",
+      "can_push": false,
+      "commit_id": "a2d92b8a9f1e877c5c4e4383c8f9003c7b50c686"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:12:02Z",
+      "can_push": true,
+      "commit_id": "0f97c66ada0b17f26aedb175695d189e698263e5"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:12:08Z",
+      "can_push": true,
+      "commit_id": "0f97c66ada0b17f26aedb175695d189e698263e5"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:17:54Z",
+      "can_push": true,
+      "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:18:00Z",
+      "can_push": true,
+      "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:18:06Z",
+      "can_push": true,
+      "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:20:11Z",
+      "can_push": false,
+      "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:20:59Z",
+      "can_push": true,
+      "commit_id": "e84cc6129a533f34270065d55e35acef3040cad3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:21:12Z",
+      "can_push": true,
+      "commit_id": "e84cc6129a533f34270065d55e35acef3040cad3"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team",
+    "Alek99"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "actions_total": 141,
+    "by_state": {
+      "SUCCESS": 141,
+      "FAILURE": 1,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 110164284219,
+      "run_id": null,
+      "cause": "CodSpeed reports one regression: test_state_update_wire_serialization[scalar_100b] slowed from 165.6 us to 186.4 us (-11.16% efficiency). Its report also warns that base and head ran in different runtime environments; 28 benchmarks improved and all GitHub Actions checks were non-failing."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "ask": "Split the three independent performance changes into separate pull requests.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-07T16:56:12Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the Codex usage dashboard."
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-07T16:59:40Z",
+      "excerpt": "## Merging this PR will regress 1 benchmark"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-07T17:04:19Z",
+      "excerpt": "Confidence Score: 5/5 **[High risk]** Adds new JSON encoding and type\\-checking paths used in state updates\\. The PR appears safe to merge based on the reviewed changes and resolved prior findings. Summary The PR speeds state validation, mu"
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-30T23:08:01Z",
+      "excerpt": "seems like this should be three PRs"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T00:43:27Z",
+      "excerpt": "CodSpeed on d640f03: 28 benchmarks improved and 1 regressed, `test_state_update_wire_serialization[scalar_100b]` at −11% (165.6 → 186.4 µs). CodSpeed also flags that this comparison ran in different runtime environments. That regression doe"
+    }
+  ],
+  "head_activity_at": "2026-10-01T00:28:32Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-07T16:56:12Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-07T16:59:40Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-07T17:04:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-07T17:04:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-07T17:04:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-07T17:04:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-07T17:10:01Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-07T17:10:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-07T17:10:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-07T17:10:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-07T17:10:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-09-07T17:10:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:12:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:12:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:12:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:12:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:17:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:17:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:18:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:18:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:18:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:18:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-07T17:20:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-09-07T17:20:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:20:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:20:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:21:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-09-07T17:21:12Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-09-30T23:08:01Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T00:43:27Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-01T00:43:27Z",
+  "last_maintainer_activity_at": "2026-09-30T23:08:01Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

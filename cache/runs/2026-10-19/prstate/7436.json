@@ -1,0 +1,152 @@
+{
+  "number": 7436,
+  "fetched_at": "2026-10-19T17:41:11.450Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "5273a6a149dc84dbe73ed1a458bd3b74849f4b0a",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "reflex/state.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7253,
+      "title": "#6946 uncached-var dedupe: every uncached var is re-sent once right after hydrate, dict key order defeats the dedupe, and the _UNKEYABLE_VALUE branch is unreachable",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-06T04:48:55Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-07T16:41:30Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "kr1shna-exe",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-07T16:52:01Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-07T16:52:41Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "path": "reflex/state.py",
+        "line": 2385,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Repeated computed-value evaluation** The snapshot already evaluates uncached computed vars, but this correction pass evaluates them again on every hydration and reconnect. If one makes an expensive database query or API call, that work is repeated while the session state lock is held, delaying hydration and other events for the session. This is a non-blocking performance concern. **Knowledge Base Used:** [State management and event processing](https://app.greptile.com/reflex-org-2/-/custom-context/knowledge-base/reflex-dev/reflex/-/docs/state-and-events.md) Note: If this suggestion doesn't match your team's coding style, reply to this and let me know. I'll remember it for next time!",
+        "at": "2026-10-07T16:41:28Z"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-06T04:51:37Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=75349305\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a>Confidence Sc"
+    }
+  ],
+  "head_activity_at": "2026-10-07T16:36:58Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-06T04:48:55Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-06T04:51:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-07T16:41:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-07T16:41:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "kr1shna-exe",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:52:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "kr1shna-exe",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:52:01Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-07T16:52:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-07T16:52:41Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-07T16:52:01Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

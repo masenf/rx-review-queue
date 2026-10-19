@@ -1,0 +1,151 @@
+{
+  "number": 7595,
+  "fetched_at": "2026-10-19T17:33:51.938Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "f591cc4e74e7cdab048e4ac116b9558301646ad2",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6828,
+      "title": "ClientStateVar accepts invalid JavaScript identifiers and emits broken hook code",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T14:00:51Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T14:03:26Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Valid Unicode names are rejected**\n\nPython's `isidentifier()` rejects some valid JavaScript names. For example, `\"value\\u20"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 100,
+    "actions_total": 97,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 98
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Valid Unicode names are rejected**\n\nPython's `isidentifier()` rejects some valid JavaScript names. For example, `\"value\\u20",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T14:03:21Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=83147728\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T14:03:24Z",
+      "excerpt": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Accepted names break state updates** The new check still accepts `Object` and `Array`, although the generated global setter"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T14:03:24Z",
+      "excerpt": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Valid Unicode names are rejected** Python's `isidentifier()` rejects some valid JavaScript names. For example, `\"value\\u200"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T14:03:26Z",
+      "excerpt": ""
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-18T14:05:35Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **not alter performance** <details> <summary>:warning: <b>16 benchmarks spent significant time in system calls</b></summary> > System calls cannot be consistently inst"
+    }
+  ],
+  "head_activity_at": "2026-10-18T14:37:08Z",
+  "interaction_events": [
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T14:00:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T14:00:51Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T14:03:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T14:03:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T14:03:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T14:03:26Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T14:05:35Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-18T14:37:08Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

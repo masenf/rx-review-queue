@@ -1,0 +1,899 @@
+{
+  "number": 7379,
+  "fetched_at": "2026-10-19T17:52:33.557Z",
+  "author_login": "adhami3310",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "41697d086bf31345c41a34888a78ff6d6fd8c9ea",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:49:17Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:51:27Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:51:29Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:51:31Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:51:32Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:51:34Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:56:31Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:58:24Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:58:26Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T19:58:27Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:02:15Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:02:40Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:05:04Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:05:06Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:05:08Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:05:10Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:05:12Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:05:46Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T20:48:52Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T21:01:49Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T22:25:43Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:41:23Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:44:30Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:49:54Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:52:35Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:53:20Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:53:22Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:53:23Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:53:25Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T00:57:03Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T00:57:20Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T00:57:42Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T01:01:06Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 21,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 148,
+    "actions_total": 144,
+    "by_state": {
+      "SUCCESS": 146,
+      "SKIPPED": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": null,
+  "recent_comments": [
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:25Z",
+      "excerpt": "The revert is deliberate: rather than rewording around it, the renderer bug is fixed at its source in #7383, which keeps inline code inside link text. These links render as written once that merges, and the same fix covers the pages on main that already use this pattern. _🤖 Addressed by [Claude Code](https://claude.com/claude-code)_"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T00:57:02Z",
+      "excerpt": "**Wake can return mid-step** When a worker starts a long-running step, its next pass can find nothing else to claim and make `wake()` return `True` while that step is still running. On a host that suspends after a successful wake response, this newly documented guarantee can cause the host to suspend mid-step. The API reference repeats the same guarantee."
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-02T00:57:20Z",
+      "excerpt": "Right about current main: that is the bug fixed in #7385, where a pass only counts as settled when no step is in flight, so wake() no longer returns True mid-step. These docs describe that behavior, so #7385 should merge before or with this PR. _🤖 Addressed by [Claude Code](https://claude.com/claude-code)_"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T00:57:42Z",
+      "excerpt": "P2: `wake` does not wait for the steps it started to finish in the current runner, so this sentence is inaccurate. `Runner.loop` records a settled pass whenever a pass claims nothing, which also happens while steps are still in flight once `max_concurrency` is saturated (free becomes 0, so `started` stays 0), and `Settled.after` then returns `True`. The commit notes this matches #7385, but that runner change is not in this checkout. Either drop \"every step it started has finished\" to match curre"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T00:57:42Z",
+      "excerpt": "**All reported issues were addressed** across 2 files (changes from recent commits). **Tip**: Review your code locally with the [cubic CLI](https://docs.cubic.dev/ide/cli-review?utm_source=github&utm_content=general_review_body) to iterate faster. [Re-trigger cubic](https://www.cubic.dev/action/re-review/pr/reflex-dev/reflex/7379/ai_pr_review_github_delivery_3e813784eae3951303f379472318b307101e5b7c55d820d5f29cdb08e9ea9e0b?returnTo=https%3A%2F%2Fgithub.com%2Freflex-dev%2Freflex%2Fpull%2F7379)"
+    },
+    {
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-02T01:01:06Z",
+      "excerpt": "Not changed here: this sentence describes the behavior in #7385, which records a settled pass only when no step is in flight (the saturated-concurrency case included, since those steps are in flight). Your second point was valid there too: #7385 now also skips a pass during which the wake event was set, with a test that starts a run in that gap. #7385 should merge before or with this PR. _🤖 Addressed by [Claude Code](https://claude.com/claude-code)_"
+    }
+  ],
+  "head_activity_at": "2026-10-02T23:35:17Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:49:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:49:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:49:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:49:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:49:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:49:17Z"
+    },
+    {
+      "kind": "comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:49:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:27Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:32Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:51:34Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:55:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:56:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:56:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:56:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:56:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T19:56:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:58:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:58:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:58:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:58:26Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:58:27Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T19:58:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:02:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:02:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:02:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:02:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:02:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:02:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:02:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:02:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T20:05:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:05:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:05:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:48:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:48:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T20:48:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T21:01:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T21:01:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T22:25:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T22:25:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T22:41:07Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:26:33Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:41:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:44:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:44:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:49:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:49:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:52:35Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:52:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:52:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:52:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:52:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T23:52:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:53:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T00:57:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T00:57:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-02T00:57:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-02T00:57:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T00:57:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T00:57:42Z"
+    },
+    {
+      "kind": "comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T00:57:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-02T01:01:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "COLLABORATOR",
+      "at": "2026-10-02T01:01:06Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-02T23:35:17Z",
+  "last_maintainer_activity_at": "2026-10-01T23:41:23Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 17
+}

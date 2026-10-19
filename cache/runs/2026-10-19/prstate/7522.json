@@ -1,0 +1,163 @@
+{
+  "number": 7522,
+  "fetched_at": "2026-10-19T17:51:27.653Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "34c2a1e1fdd2372eda5d3bb9201d265ef1679b15",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+    "tests/units/compiler/state_js.test.mjs"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7487,
+      "title": "Navigating before the websocket connects runs the previous page's on_load first (and a redirect from it hijacks the new page)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-08T19:20:55Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T19:23:20Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-08T19:28:07Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "**Later navigation lacks coverage** The new mock calls `auth` and the `connect` handler together, so it cannot test navigation between those steps. The browser test also navigates before auth is sent. Neither covers `bootRoute` differing from the current route, where queued `on_load_internal` events must be kept. Split auth capture from the connection acknowledgement and add a test that navigates between them. Otherwise, removing the route check could drop the new page\u2019s load event while both te"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 146,
+    "actions_total": 142,
+    "by_state": {
+      "SUCCESS": 143,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the unit test defer the mock websocket handshake, navigate after `app.connect()`, then invoke auth so the old eager-auth implementation demonstrably fails.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Split auth capture from connection acknowledgement and test navigation between them so queued `on_load_internal` events for the new route are preserved.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T19:28:02Z",
+      "excerpt": "Confidence Score: 5/5 **[Medium impact]** The PR appears safe to merge; the remaining test coverage suggestion is non-blocking. Findings 1. &nbsp;**Later navigation lacks coverage** \u25b6 Summary The PR builds the initial websocket hydration event when connection auth is sent, using the current route. - Removes queued `on_load_internal` events when hydration covers the route still open. - Adds unit and dev/production browser regression tests. - Adds a bugfix news fragment. Reviews (2) \u00b7 Last reviewe"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-08T19:43:34Z",
+      "excerpt": "## Merging this PR will **improve performance by 8.14%** `\u26a1 2` improved benchmarks `\u2705 148` untouched benchmarks `\u23e9 18` skipped benchmarks[^skipped] ### Performance Changes | | Benchmark | `BASE` | `HEAD` | Efficiency | | --- | --------- | ------ | ------ | ---------- | | \u26a1 | [`` test_hydration_metadata[200] ``](https://app.codspeed.io/reflex-dev/reflex/branches/harsh21234i%3Afix%2F7487-stale-on-load?uri=tests%2Fbenchmarks%2Ftest_state_hydration.py%3A%3Atest_hydration_metadata%255B200%255D&runner"
+    }
+  ],
+  "head_activity_at": "2026-10-08T19:33:07Z",
+  "interaction_events": [
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-08T19:20:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-08T19:20:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:23:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:23:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T19:28:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T19:28:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-08T19:28:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-08T19:43:34Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-08T19:33:07Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

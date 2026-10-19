@@ -1,0 +1,301 @@
+{
+  "number": 7007,
+  "fetched_at": "2026-10-19T17:32:43.334Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "dd8c0080693bccb50966571d1ba134e876a1a8ce",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    ".github/workflows/dispatch_release.yml",
+    "packages/reflex-base/src/reflex_base/utils/log.py",
+    "pyproject.toml",
+    "uv.lock"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-30T18:26:42Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-30T18:28:51Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-30T18:29:37Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Registrations outlive their routes**\n\nWhen client-side navigation unmounts a route-specific component tree, its tool remains in the document-global registry with an executable closure, causing agents to keep discovering and dispatching backend actions that are no longer represented by the active page.\n\n**Knowledge Base Used:**\n- [Frontend compilation pipeline](https://app.greptile.com/reflex-org-2/-/custom-context/knowledge-base/reflex-dev/reflex/-/docs/frontend-compilation.md)\n- [State management and event processing](https://app.greptile.com/reflex-org-2/-/custom-context/knowledge-base/reflex-dev/reflex/-/docs/state-and-events.md)",
+        "path": "packages/reflex-webmcp/src/reflex_webmcp/__init__.py",
+        "line": 393
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Qualified state names collide**\n\nWhen different modules define bound State classes and handlers with the same class and method names, `_tool_name` collapses their distinct qualified backend identities into one global tool name. The second registration is suppressed, causing its action to disappear while the surviving tool dispatches the other state's event.\n\n**Knowledge Base Used:** [State management and event processing](https://app.greptile.com/reflex-org-2/-/custom-context/knowledge-base/reflex-dev/reflex/-/docs/state-and-events.md)",
+        "path": "packages/reflex-webmcp/src/reflex_webmcp/__init__.py",
+        "line": 369
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=ae6fa27c-34cc-4088-a568-a170098f5a5b -->\n<!-- cubic:review-run=5b9316fa-43ae-4705-9243-9d6d6d27383a -->\n<!-- metadata:{\"confidence\":8} -->\nP2: The new workspace package `reflex-webmcp` (import module `reflex_webmcp`) was added to the workspace, but its import module was not added to `[tool.coverage.run] source`. Every other internal package appears there (`reflex_docgen`, `reflex_release`, `reflex_site_shared`, etc.), so its tests will not be measured and the package's lines won't contribute to the 72% `fail_under` coverage gate. Add `\"reflex_webmcp\"` to the `source` list.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. At pyproject.toml, line 112:\n\n<comment>The new workspace package `reflex-webmcp` (import module `reflex_webmcp`) was added to the workspace, but its import module was not added to `[tool.coverage.run] source`. Every other internal package appears there (`reflex_docgen`, ",
+        "path": "pyproject.toml",
+        "line": 112
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9f191d10-6e46-486d-9cb9-2a4c7000905a -->\n<!-- cubic:review-run=5b9316fa-43ae-4705-9243-9d6d6d27383a -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When two state classes in different modules share a class and handler name, this generates the same WebMCP name and the global deduplication set skips the second tool. Use a sanitized qualified state name or add a collision suffix.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. At packages/reflex-webmcp/src/reflex_webmcp/__init__.py, line 369:\n\n<comment>When two state classes in different modules share a class and handler name, this generates the same WebMCP name and the global deduplication set skips the second tool. Use a sanitized qualified state name or add a collision suffix.</comment>\n\n<file context>\n@@ -0,0 +1,511 @@\n+\n+    fixed_payload = _fixed_payload(event_spec)\n+    input_schema = _specialize_schema(handler_schema, fixed_payload)\n+  ",
+        "path": "packages/reflex-webmcp/src/reflex_webmcp/__init__.py",
+        "line": 369
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b347a44d-b70a-4d73-9e8f-c3872e4c619e -->\n<!-- cubic:review-run=5b9316fa-43ae-4705-9243-9d6d6d27383a -->\n<!-- metadata:{\"confidence\":9} -->\nP2: When a route component is unmounted, this registration remains in `document.modelContext` because it passes no `AbortSignal` and never aborts a controller. Register each tool with a route-scoped signal and abort it during route cleanup so agents cannot invoke stale handlers.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. At packages/reflex-webmcp/src/reflex_webmcp/__init__.py, line 393:\n\n<comment>When a route component is unmounted, this registration remains in `document.modelContext` because it passes no `AbortSignal` and never aborts a controller. Register each tool with a route-scoped signal and abort it during route cleanup so agents cannot invoke stale handlers.</comment>\n\n<file context>\n@@ -0,0 +1,511 @@\n+  if (!globalThis[Symbol.for(\\\"ref",
+        "path": "packages/reflex-webmcp/src/reflex_webmcp/__init__.py",
+        "line": 393
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a6203fe3-e449-48ce-8828-0cc8c6223298 -->\n<!-- cubic:review-run=5b9316fa-43ae-4705-9243-9d6d6d27383a -->\n<!-- metadata:{\"confidence\":6} -->\nP3: The example code block calls `search_products(query, limit=limit)` but never defines or imports it, so a user who copies this snippet (and others in the PR) gets a `NameError` on first run. Every other plugin example in this file is self-contained. Either define a small `search_products` helper in the block or note that it is a stand-in for the app's own lookup, so the \"no separate tool definitions\" example is actually runnable.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. At docs/api-reference/plugins.md, line 88:\n\n<comment>The example code block calls `search_products(query, limit=limit)` but never defines or imports it, so a user who copies this snippet (and others in the PR) gets a `NameError` on first run. Every other plugin example in th",
+        "path": "docs/api-reference/plugins.md",
+        "line": 88
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Include the full state identity in tool names**\n\nWhen two page modules define the same class and handler names (for example, the common `State.submit` pattern), their backend event names remain distinct because Reflex includes the module-qualified state name, but this call reduces both tools to `reflex_State_submit`. The document-global name set then keeps only the first registration, so invoking the tool on the other page can dispatch the wrong module's handler. Derive the tool name from the qualified state/event identity instead of `state.__name__`.\n\nUseful? React with 👍 / 👎.",
+        "path": "packages/reflex-webmcp/src/reflex_webmcp/__init__.py",
+        "line": 369
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Scope registered tools to the active route**\n\nIn a multi-route Reflex app, client-side navigation reuses the same document, but these top-level `document.modelContext` registrations are never removed. Once a route module runs, its tools and callbacks remain available after navigating away, allowing agents to invoke handlers that are no longer present on the active page; the global set also prevents a later route from replacing an identically named registration. Register and unregister tools with the route/page lifecycle rather than retaining them for the document lifetime.\n\nUseful? React with 👍 / 👎.",
+        "path": "packages/reflex-webmcp/src/reflex_webmcp/__init__.py",
+        "line": 393
+      },
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": false,
+        "first_comment": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Unwrap TypedDict field requirement annotations**\n\nWhen a `TypedDict` uses `Required[T]` or `NotRequired[T]`—the standard way to mix required and optional fields—`get_origin()` returns the requirement wrapper, which falls through here to `{}`. The generated object schema records whether the key is required but loses its advertised field type entirely, so agents receive an unconstrained value schema. Treat these wrappers like `Annotated` and recurse into their first argument.\n\nUseful? React with 👍 / 👎.",
+        "path": "packages/reflex-webmcp/src/reflex_webmcp/__init__.py",
+        "line": 160
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 115,
+    "actions_total": 112,
+    "by_state": {
+      "SUCCESS": 113,
+      "SKIPPED": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Registrations outlive their routes** When client-side navigation unmounts a route-specific component tree, its tool remains in the document-global registry with an executable closure, causing agents to keep discovering and dispatching backend actions that are no longer represented by the active page. **Knowledge Base Used:** - [Frontend compilation pipeline](https://app.greptile.c",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Qualified state names collide** When different modules define bound State classes and handlers with the same class and method names, `_tool_name` collapses their distinct qualified backend identities into one global tool name. The second registration is suppressed, causing its action to disappear while the surviving tool dispatches the other state's event. **Knowledge Base Used:**",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The new workspace package `reflex-webmcp` (import module `reflex_webmcp`) was added to the workspace, but its import module was not added to `[tool.coverage.run] source`. Every other internal package appears there (`reflex_docgen`, `reflex_release`, `reflex_site_shared`, etc.), so its tests will not be measured and the package's lines won't contribute to the 72% `fail_under` coverage gate. Add `\"reflex_webmcp\"` to the `source` list. <details> <summary>Prompt for AI agents</summary> ```text C",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: When two state classes in different modules share a class and handler name, this generates the same WebMCP name and the global deduplication set skips the second tool. Use a sanitized qualified state name or add a collision suffix. <details> <summary>Prompt for AI agents</summary> ```text Check if this issue is valid — if so, understand the root cause and fix it. At packages/reflex-webmcp/src/reflex_webmcp/__init__.py, line 369: <comment>When two state classes in different modules share a cl",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: When a route component is unmounted, this registration remains in `document.modelContext` because it passes no `AbortSignal` and never aborts a controller. Register each tool with a route-scoped signal and abort it during route cleanup so agents cannot invoke stale handlers. <details> <summary>Prompt for AI agents</summary> ```text Check if this issue is valid — if so, understand the root cause and fix it. At packages/reflex-webmcp/src/reflex_webmcp/__init__.py, line 393: <comment>When a rou",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: The example code block calls `search_products(query, limit=limit)` but never defines or imports it, so a user who copies this snippet (and others in the PR) gets a `NameError` on first run. Every other plugin example in this file is self-contained. Either define a small `search_products` helper in the block or note that it is a stand-in for the app's own lookup, so the \"no separate tool definitions\" example is actually runnable. <details> <summary>Prompt for AI agents</summary> ```text Check",
+      "addressed": false
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub> Include the full state identity in tool names** When two page modules define the same class and handler names (for example, the common `State.submit` pattern), their backend event names remain distinct because Reflex includes the module-qualified state name, but this call reduces both tools to `reflex_State_submit`. The document-global name set then keeps only the first registration, so invoking the tool on th",
+      "addressed": false
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub> Scope registered tools to the active route** In a multi-route Reflex app, client-side navigation reuses the same document, but these top-level `document.modelContext` registrations are never removed. Once a route module runs, its tools and callbacks remain available after navigating away, allowing agents to invoke handlers that are no longer present on the active page; the global set also prevents a later rout",
+      "addressed": false
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub> Unwrap TypedDict field requirement annotations** When a `TypedDict` uses `Required[T]` or `NotRequired[T]`—the standard way to mix required and optional fields—`get_origin()` returns the requirement wrapper, which falls through here to `{}`. The generated object schema records whether the key is required but loses its advertised field type entirely, so agents receive an unconstrained value schema. Treat these ",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": null,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:24:18Z",
+      "excerpt": "## Codex Review Summary This comment shows the latest Codex review activity on this pull request. | Review | Status | Commit | Review trigger | | --- | --- | --- | --- | | 📝 **Code Review** | ✅ **Completed** <relative-time datetime=\"2026-08-30T18:29:40.087613Z\">2026-08-30T18:29:40.087613Z</relative-time> | `5a700c2` | PR opened | <details> <summary>ℹ️ About Codex in GitHub</summary> <br/> [Your team has set up Codex to review pull requests in this repo](https://chatgpt.com/codex/cloud/settings/"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:26:37Z",
+      "excerpt": "<h3>Greptile Summary</h3> The PR adds the `reflex-webmcp` workspace package, which discovers component-bound backend events during compilation and exposes them as browser WebMCP tools. - Generates tool descriptions and JSON input schemas from event-handler metadata. - Preserves fixed arguments and event actions when dispatching through the existing Reflex event pipeline. - Adds package, release-workflow, logging, documentation, lockfile, and unit-test integration. <h3>Confidence Score: 3/5</h3> "
+    },
+    {
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:27:28Z",
+      "excerpt": "## Merging this PR will **not alter performance** `✅ 32` untouched benchmarks `⏩ 8` skipped benchmarks[^skipped] --- <sub>Comparing <code>FarhanAliRaza:webmcp-plugin</code> (dd8c008) with <code>main</code> (dd96aea)</sub> <a href=\"https://app.codspeed.io/reflex-dev/reflex/branches/FarhanAliRaza%3Awebmcp-plugin?utm_source=github&utm_medium=comment-v2&utm_content=button\"> <picture> <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\"> <sourc"
+    }
+  ],
+  "head_activity_at": "2026-08-30T18:31:49Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:24:18Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:26:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:26:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:26:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:26:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:27:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:28:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:28:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:28:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:28:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:28:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:29:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:29:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:29:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-30T18:29:37Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-08-30T18:31:49Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

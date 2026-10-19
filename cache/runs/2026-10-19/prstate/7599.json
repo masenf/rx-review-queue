@@ -1,0 +1,108 @@
+{
+  "number": 7599,
+  "fetched_at": "2026-10-19T17:34:02.315Z",
+  "author_login": "RaphaelFakhri",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "RaphaelFakhri/reflex",
+  "head_sha": "a3664388d593a267b852155841b8204aca7345aa",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7598,
+      "title": "Page routes that differ only in letter case skip on_load and report the 404 route",
+      "filed_by": "RaphaelFakhri"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T08:23:27Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b793b951-9de6-4b92-a1cd-00d6874c0038 -->\n<!-- cubic:review-run=66767651-641b-5ca0-bbb5-9ac4c9ec57cd -->\n<!-- metadata:{\"confidence\":9} -->\nP2: `re.IGNORECASE` enables Unicode case folding, so an ASCII route such as `/i` also ma"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "<!-- cubic:v=b793b951-9de6-4b92-a1cd-00d6874c0038 -->\n<!-- cubic:review-run=66767651-641b-5ca0-bbb5-9ac4c9ec57cd -->\n<!-- metadata:{\"confidence\":9} -->\nP2: `re.IGNORECASE` enables Unicode case folding, so an ASCII route such as `/i` also ma",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-19T08:23:09Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=83473313\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-19T08:23:27Z",
+      "excerpt": "<!-- cubic:v=b793b951-9de6-4b92-a1cd-00d6874c0038 --> <!-- cubic:review-run=66767651-641b-5ca0-bbb5-9ac4c9ec57cd --> <!-- metadata:{\"confidence\":9} --> P2: `re.IGNORECASE` enables Unicode case folding, so an ASCII route such as `/i` also ma"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-19T08:23:27Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **1 issue found** across 3 files <!-- cubic:review-summary:end --> <details> <summary>Prompt for AI agents (unresolved issues)</summary> ```text Check if these issues are valid — if so, understand the roo"
+    }
+  ],
+  "head_activity_at": "2026-10-19T08:23:27Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T08:23:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T08:23:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T08:23:27Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T08:23:27Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,183 @@
+{
+  "previous_run": "2026-10-06",
+  "merged": [
+    7052,
+    7079,
+    7234,
+    7273,
+    7304,
+    7340,
+    7345,
+    7359,
+    7360,
+    7386,
+    7390,
+    7401,
+    7402,
+    7403,
+    7404,
+    7405,
+    7406,
+    7407,
+    7410,
+    7411,
+    7418,
+    7419,
+    7422,
+    7428,
+    7433,
+    7434,
+    7435,
+    7437,
+    7438,
+    7440,
+    7441,
+    7447,
+    7449
+  ],
+  "closed": [
+    {
+      "number": 7054,
+      "note": "closed without merge"
+    },
+    {
+      "number": 7219,
+      "note": "closed without merge"
+    },
+    {
+      "number": 7272,
+      "note": "closed without merge"
+    },
+    {
+      "number": 7399,
+      "note": "closed without merge"
+    },
+    {
+      "number": 7420,
+      "note": "closed without merge"
+    },
+    {
+      "number": 7446,
+      "note": "closed without merge"
+    }
+  ],
+  "opened": [
+    7451,
+    7453,
+    7455,
+    7500,
+    7522,
+    7534,
+    7539,
+    7540,
+    7547,
+    7548,
+    7551,
+    7558,
+    7564,
+    7565,
+    7570,
+    7572,
+    7573,
+    7574,
+    7575,
+    7578,
+    7580,
+    7581,
+    7582,
+    7583,
+    7585,
+    7586,
+    7588,
+    7590,
+    7591,
+    7592,
+    7594,
+    7595,
+    7597,
+    7599,
+    7602,
+    7603,
+    7604
+  ],
+  "entered_top15": [
+    7602,
+    7558,
+    7594,
+    7585,
+    7548,
+    7547,
+    7573,
+    7534,
+    7113,
+    7551,
+    7595,
+    7603,
+    7604
+  ],
+  "left_top15": [
+    7438,
+    7416,
+    7273,
+    7408,
+    7441,
+    7407,
+    7404,
+    7345,
+    7434,
+    7442,
+    7410,
+    7437,
+    7411
+  ],
+  "newly_blocked": [
+    {
+      "number": 7408,
+      "note": "new head is workflow-gated"
+    },
+    {
+      "number": 7416,
+      "note": "new head is workflow-gated and retains one unresolved thread"
+    }
+  ],
+  "newly_unblocked": [
+    {
+      "number": 7113,
+      "note": "full CI is now green and all threads are resolved"
+    },
+    {
+      "number": 7443,
+      "note": "workflow gate cleared; full CI is green and threads are resolved"
+    }
+  ],
+  "draft_flips": [
+    {
+      "number": 6796,
+      "now_draft": true
+    },
+    {
+      "number": 6873,
+      "now_draft": false
+    },
+    {
+      "number": 7361,
+      "now_draft": false
+    },
+    {
+      "number": 7362,
+      "now_draft": false
+    },
+    {
+      "number": 7363,
+      "now_draft": false
+    },
+    {
+      "number": 7364,
+      "now_draft": false
+    },
+    {
+      "number": 7397,
+      "now_draft": true
+    }
+  ]
+}

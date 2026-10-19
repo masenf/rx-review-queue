@@ -1,0 +1,175 @@
+{
+  "number": 7588,
+  "fetched_at": "2026-10-19T17:45:04.825Z",
+  "author_login": "ybai08",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "ybai08/reflex",
+  "head_sha": "0dfb96c51ee41b74f6d551c86ef3515a45c24f01",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-17T02:57:14Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T08:54:16Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T08:54:18Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "APPROVED",
+      "at": "2026-10-19T17:25:50Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 100,
+    "actions_total": 98,
+    "by_state": {
+      "SUCCESS": 98,
+      "FAILURE": 1,
+      "SKIPPED": 1
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "One off-path route-argument benchmark regressed 4.47%; CodSpeed warns that base and head used different runtime environments."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T08:54:16Z",
+      "excerpt": "Valid but out of scope for this PR — tracked in #7601. The root cause is older than this PR. `client_ip` trusts the leftmost `x-forwarded-for` entry, and the client controls that entry. With a spoofed `6.6.6.6` from the client: | Layout | m"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T08:54:16Z",
+      "excerpt": ""
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T08:54:18Z",
+      "excerpt": "Not changing this. The case does not occur with the ASGI servers Reflex runs on. The ASGI spec says header names \"should be lowercased, but it is not required\". I tested both servers with a raw request that sends `COOKIE: a=1` and `Cookie: "
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T08:54:18Z",
+      "excerpt": ""
+    },
+    {
+      "by": "FarhanAliRaza",
+      "at": "2026-10-19T17:25:50Z",
+      "excerpt": ""
+    }
+  ],
+  "head_activity_at": "2026-10-19T14:28:11Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T02:56:07Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T02:57:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T02:57:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T02:57:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T08:16:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:54:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:54:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:54:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T08:54:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-19T17:25:50Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T14:28:11Z",
+  "last_maintainer_activity_at": "2026-10-19T17:25:50Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

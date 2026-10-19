@@ -1,0 +1,219 @@
+{
+  "number": 7565,
+  "fetched_at": "2026-10-19T17:50:45.088Z",
+  "author_login": "darshjoshi",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "darshjoshi/reflex",
+  "head_sha": "21503186ea4850c5f91d803ed3f83311b03352b1",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T15:34:32Z",
+      "can_push": false,
+      "commit_id": "1b63beb675d46b6250d30aaa570de4722b582955"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T15:36:50Z",
+      "can_push": false,
+      "commit_id": "1b63beb675d46b6250d30aaa570de4722b582955"
+    },
+    {
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:28:02Z",
+      "can_push": false,
+      "commit_id": "d297ce9fae4df5364b1e91f22f797821045e5b54"
+    },
+    {
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:28:04Z",
+      "can_push": false,
+      "commit_id": "d297ce9fae4df5364b1e91f22f797821045e5b54"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:29:01Z",
+      "can_push": false,
+      "commit_id": "d297ce9fae4df5364b1e91f22f797821045e5b54"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:31:15Z",
+      "can_push": false,
+      "commit_id": "d297ce9fae4df5364b1e91f22f797821045e5b54"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "P2: This test expects `code_uses_state_contexts` to recognize `useStateContext`, but the helper only recognizes `useContext(StateContexts...)`; the unit suite will fail. Use a representative `useConte"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "FAILURE": 2,
+      "SUCCESS": 139,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.14)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "cause": "Gate failed because the unit-tests job reported failure."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.14)",
+      "cause": "tests/units/istate/manager/test_redis.py::test_oplock_contention_queue failed with assert 2 == 1; 13,004 other tests passed. The PR touches reflex-base number compilation, its focused unit test, and a news fragment, so this failure is outside the changed files."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: This test expects `code_uses_state_contexts` to recognize `useStateContext`, but the helper only recognizes `useContext(StateContexts...)`; the unit suite will fail. Use a representative `useConte",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:44Z",
+      "excerpt": "Confidence Score: 5/5 **[Medium impact]** The PR appears safe to merge; no outstanding findings remain. Summary Fixes JavaScript builds for powers with negative"
+    },
+    {
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-14T15:39:26Z",
+      "excerpt": "## Merging this PR will **not alter performance** :warning: 15 benchmarks spent significant time in system calls > System calls cannot be consistently instrumen"
+    }
+  ],
+  "head_activity_at": "2026-10-18T21:50:49Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:34:32Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:50Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-14T15:39:26Z"
+    },
+    {
+      "kind": "review",
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:28:02Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:28:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:28:04Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:28:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:29:01Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:29:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:31:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:31:15Z",
+      "state": "COMMENTED"
+    }
+  ],
+  "last_author_activity_at": "2026-10-18T21:50:49Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

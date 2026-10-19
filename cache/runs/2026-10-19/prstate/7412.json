@@ -1,0 +1,137 @@
+{
+  "number": 7412,
+  "fetched_at": "2026-10-19T17:41:11.449Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "055d695183963a7a8df435dc2d380595e5a12943",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNSTABLE",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7248,
+      "title": "A cancelled foreground supersedes=True handler loses all of its state writes under StateManagerRedis but keeps them under the in-memory manager",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T16:47:59Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T16:49:46Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 52,
+    "actions_total": 49,
+    "by_state": {
+      "FAILURE": 7,
+      "SUCCESS": 23,
+      "SKIPPED": 7,
+      "CANCELLED": 14,
+      "NEUTRAL": 1
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "integration-tests-gate",
+      "build-packages-gate",
+      "codeql-gate",
+      "reflex-init-in-docker-test-gate",
+      "integration-app-harness-gate",
+      "performance-tests-gate",
+      "reflex-docs (3.12)",
+      "Analyze (actions)",
+      "discover",
+      "changes",
+      "playground-head",
+      "playground-0.8.23",
+      "changes",
+      "changelog",
+      "Run browser performance smoke",
+      "Run benchmarks",
+      "pre-commit",
+      "size-budgets"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10), unit-tests (windows-latest, 3.10), unit-tests-gate",
+      "cause": "Both Python 3.10 jobs fail the five PR-owned Redis cancellation tests because CancelledError arrives with an empty message instead of 'superseded'; the gate log reports unit-tests=failure."
+    },
+    {
+      "check": "build-packages-gate, codeql-gate, integration-app-harness-gate, performance-tests-gate and cancelled jobs",
+      "cause": "The gate logs show their dependencies were abandoned or cancelled (discover, analyze, changes, benchmarks and browser-performance), so these failures are cancellation fallout rather than additional test diagnostics."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:41Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=74413205\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a>Confidence Sc"
+    }
+  ],
+  "head_activity_at": "2026-10-04T21:15:16Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-04T16:47:59Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:46Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-04T21:15:16Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}
