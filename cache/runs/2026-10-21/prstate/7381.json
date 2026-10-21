@@ -1,0 +1,461 @@
+{
+  "number": 7381,
+  "fetched_at": "2026-10-21T17:50:13.234Z",
+  "author_login": "masenf",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "4bf23786b527e919cb393fcccc468ed2ca71e818",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "tests/units/reflex_base/vars/test_base.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T22:39:54Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T22:42:14Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:27:39Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:27:41Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:27:43Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T23:27:45Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:52Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:53Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:55Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:57Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:42:58Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:43:07Z",
+      "can_push": true,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "The exemption checks the parent, but `_declared_value` resolves the var by MRO. The two rules disagree:\n\n```python\nclass Typing(BaseState, mixin=True):\n    count: int\n\nclass Value(BaseState, mixin=True):\n    count: int = 3\n\nclass S(Typing, Value, BaseState): ...   # raises MixinVarNameConflictError\n\nclass P(BaseState):\n    count: int = 1\n\nclass S(Typing, Value, P): ...           # accepted, owner=S, default=3\n```\n\nIn the second case the parent var permits the combination, but `Typing` does not use it. `Typing` gets the separate var of `Value`. Please base the exemption on the declaration that `_declared_value` returns. For example, a mixin var without a default does not conflict when a declaration with a default exists further along the MRO.",
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "at": "2026-10-05T19:42:52Z",
+        "line": 4458
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "`BaseVarShadowsInheritedVarError` shipped in reflex-base 0.9.12, and `reflex.utils.exceptions` re-exports it. Code that catches it now fails with `ImportError`. Please keep a deprecated alias for one release, as CLAUDE.md requires a fallback path.",
+        "path": "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+        "at": "2026-10-05T19:42:53Z",
+        "line": 209
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "Two mixins with the same var work on `main` today, and the MRO selects one. This line raises at once. CLAUDE.md asks for a `console.deprecate` warning first and an error in a later release. If 0.10.0 is an agreed break for this, please state that in the PR. Otherwise warn here for one release.",
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "at": "2026-10-05T19:42:55Z",
+        "line": 4470
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This returns the parent field without a type check. With `count: str = \"a\"` on the parent and `count: int` on the mixin, the mixin now uses the `str` var. On `main` it got its own `int` var. Mixin code such as `self.count *= 2` then gives `\"aa\"`. Please raise or warn when the annotated types differ.",
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "at": "2026-10-05T19:42:57Z",
+        "line": 4307
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "This loop calls `_restates_type` two times for each step. This shorter loop has the same behavior:\n\n```python\nfound = MISSING\nfor klass in lookup_order:\n    if name not in klass.__dict__:\n        continue\n    value = klass.__dict__[name]\n    if not _restates_type(value):\n        return value if found is MISSING or isinstance(value, Field) else found\n    if found is MISSING:\n        found = value\nreturn found\n```",
+        "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+        "at": "2026-10-05T19:42:58Z",
+        "line": 4311
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 157,
+    "actions_total": 153,
+    "by_state": {
+      "SKIPPED": 8,
+      "SUCCESS": 146,
+      "CANCELLED": 1,
+      "FAILURE": 2
+    },
+    "failing": [
+      "changelog",
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.14)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.14)",
+      "job": "110631994929",
+      "run": "36940923185",
+      "cause": "The job log ends with tests/units/reflex_workflow/examples/test_ex13_conversation.py::test_the_conversation_carries_on_while_a_transfer_waits timing out with 'condition not met before timeout' after 1,039 tests passed. This PR does not change reflex_workflow or that test."
+    },
+    {
+      "check": "unit-tests-gate",
+      "job": "110638178195",
+      "run": "36940923185",
+      "cause": "The gate log reports changes=success, unit-tests=failure and exits on 'Blocking job results: unit-tests=failure'; it is propagation of the ubuntu-3.14 timeout, not an independent failure."
+    },
+    {
+      "check": "changelog",
+      "job": "112413288685",
+      "run": "37505582065",
+      "cause": "The cancelled job log completed heading, fragment, towncrier and scaffold-sync checks successfully and reached cleanup without an error; another changelog check on the same head succeeded, so this is a cancelled duplicate rather than a changelog defect."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "The exemption checks the parent, but `_declared_value` resolves the var by MRO. The two rules disagree:\n\n```python\nclass Typing(BaseState, mixin=True):\n    count: int\n\nclass Value(BaseState, mixin=True):\n    count: int = 3\n\nclass S(Typing, Value, BaseState): ...   # raises MixinVarNameConflictError\n\nclass P(BaseState):\n    count: int = 1\n\nclass S(Typing, Value, P): ...           # accepted, owner=S, default=3\n```\n\nIn the second case the parent var permits the combination, but `Typing` does not use it. `Typing` gets the separate var of `Value`. Please base the exemption on the declaration that `_declared_value` returns. For example, a mixin var without a default does not conflict when a declaration with a default exists further along the MRO.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+      "outdated": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "`BaseVarShadowsInheritedVarError` shipped in reflex-base 0.9.12, and `reflex.utils.exceptions` re-exports it. Code that catches it now fails with `ImportError`. Please keep a deprecated alias for one release, as CLAUDE.md requires a fallback path.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+      "outdated": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Two mixins with the same var work on `main` today, and the MRO selects one. This line raises at once. CLAUDE.md asks for a `console.deprecate` warning first and an error in a later release. If 0.10.0 is an agreed break for this, please state that in the PR. Otherwise warn here for one release.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+      "outdated": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This returns the parent field without a type check. With `count: str = \"a\"` on the parent and `count: int` on the mixin, the mixin now uses the `str` var. On `main` it got its own `int` var. Mixin code such as `self.count *= 2` then gives `\"aa\"`. Please raise or warn when the annotated types differ.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+      "outdated": false
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This loop calls `_restates_type` two times for each step. This shorter loop has the same behavior:\n\n```python\nfound = MISSING\nfor klass in lookup_order:\n    if name not in klass.__dict__:\n        continue\n    value = klass.__dict__[name]\n    if not _restates_type(value):\n        return value if found is MISSING or isinstance(value, Field) else found\n    if found is MISSING:\n        found = value\nreturn found\n```",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": null,
+  "recent_comments": [
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:52Z",
+      "excerpt": "The exemption checks the parent, but `_declared_value` resolves the var by MRO. The two rules disagree: ```python class Typing(BaseState, mixin=True): count: int class Value(BaseState, mixin=True): count: int = 3 class S(Typing, Value, BaseState): ... # raises MixinVarNameConflictError class P(BaseState): count: int = 1 class S(Typing, Value, P): ... # accepted, owner=S, default=3 ``` In the second case the parent var permits the combination, but `Typing` does not use it. `Typing` gets the separ"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:53Z",
+      "excerpt": "`BaseVarShadowsInheritedVarError` shipped in reflex-base 0.9.12, and `reflex.utils.exceptions` re-exports it. Code that catches it now fails with `ImportError`. Please keep a deprecated alias for one release, as CLAUDE.md requires a fallback path."
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:55Z",
+      "excerpt": "Two mixins with the same var work on `main` today, and the MRO selects one. This line raises at once. CLAUDE.md asks for a `console.deprecate` warning first and an error in a later release. If 0.10.0 is an agreed break for this, please state that in the PR. Otherwise warn here for one release."
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:57Z",
+      "excerpt": "This returns the parent field without a type check. With `count: str = \"a\"` on the parent and `count: int` on the mixin, the mixin now uses the `str` var. On `main` it got its own `int` var. Mixin code such as `self.count *= 2` then gives `\"aa\"`. Please raise or warn when the annotated types differ."
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:58Z",
+      "excerpt": "This loop calls `_restates_type` two times for each step. This shorter loop has the same behavior: ```python found = MISSING for klass in lookup_order: if name not in klass.__dict__: continue value = klass.__dict__[name] if not _restates_type(value): return value if found is MISSING or isinstance(value, Field) else found if found is MISSING: found = value return found ```"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:43:07Z",
+      "excerpt": "I tested this PR in a small Reflex app. The app has a parent state with `count = 5` and `_secret = 7`. Mixins declare these vars without a default. The app has a child with one such mixin, a child with two such mixins, a standalone state, and a child whose mixin redeclares `count = 100`. I ran the same app on `main` as a baseline. On `main`, the child gets a separate var with value 0. The mixin events do not change the parent. On this PR, the child shows 5. The mixin events change the parent var"
+    }
+  ],
+  "head_activity_at": "2026-10-01T23:27:27Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:39:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:39:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:39:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:42:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:42:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:42:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:42:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T22:43:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:27:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:27:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:27:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:27:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:27:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:27:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:27:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "COLLABORATOR",
+      "at": "2026-10-01T23:27:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:42:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:43:07Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-01T23:27:45Z",
+  "last_maintainer_activity_at": "2026-10-05T19:43:07Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

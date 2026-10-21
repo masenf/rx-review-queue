@@ -1,0 +1,202 @@
+{
+  "number": 7233,
+  "fetched_at": "2026-10-21T17:43:34.116Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "28f5ea084f6dd52f3f7ddb8827c12c2e83f87ea4",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "reflex/utils/path_ops.py",
+    "tests/units/compiler/test_compiler_utils.py",
+    "tests/units/utils/test_path_ops.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7231,
+      "title": "Deleted assets remain in .web/public and subsequent production exports",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-21T18:34:05Z",
+      "can_push": false,
+      "commit_id": "3ee9396d0c3ea2f5de8ce2c1e6f29e7c676b38c6"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-21T18:52:28Z",
+      "can_push": false,
+      "commit_id": "9af400a597bf98df84a658bbbfc462b5956a608b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T20:18:41Z",
+      "can_push": false,
+      "commit_id": "28f5ea084f6dd52f3f7ddb8827c12c2e83f87ea4"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team",
+    "Alek99"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "reflex/compiler/utils.py",
+        "line": 1161,
+        "first_comment": "P1: When a generated directory replaces an app asset while the source file remains and is later edited, this call can fail the compile: `update_directory_tree` copies into the directory and `record_copy` fingerprints the directory. Handle destination type mismatches before copying, preserving the replacement or replacing it safely without fingerprinting a directory. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. At reflex/compiler/utils.py, line 1160: When a generated directory replaces an app asset while the source file remains and is later edited, this call can fail the compile: `update_directory_tree` copies into the directory and `record_copy` fingerprints the directory. Handle destination type mismatches before copying, preserving the replacement or replacing it safely without fingerprinting a directory. @@ -994,56 +995,176 @@ def resolve_path_of_web_dir(path: str | Path) -> Path: + path + ) + + path_ops.update_directory_tree(assets, public, on_copy=record_copy) + # Adopt old copies from their source, never from skipped plugin output. + for relative in current - fingerprints.keys(): ```"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "reflex/compiler/compiler.py",
+        "line": 1432,
+        "first_comment": "P2: When two production compiles share `.web`, this destructive sync can interleave with the other compile and delete or preserve assets using stale source and manifest state. Serialize the complete shared-workspace build around this call, rather than relying only on the manifest’s atomic replacement. (Based on your team's feedback about serializing shared production builds.) [View Feedback](https://www.cubic.dev/ai-review?tab=learnings&feedbackId=79fab254-a344-4c37-9717-b10faa31ef88&repo=557075997) Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. At reflex/compiler/compiler.py, line 1432: When two production compiles share `.web`, this destructive sync can interleave with the other compile and delete or preserve assets using stale source and manifest state. Serialize the complete shared-workspace build around this call, rather than relying only on the manifest’s atomic replacement. (Based on your team's feedback about serializing shared production builds.) @@ -1427,13 +1427,9 @@ def compile_app( - src=assets_src, - dest=Path.cwd() / prerequisites.get_web_dir() / constants.Dirs.PUBLIC, - ) + utils._sync_app_assets() save_tasks"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "path": "tests/units/compiler/test_compiler_utils.py",
+        "line": 86,
+        "first_comment": "**Unexplained timestamp duration** The test subtracts `10_000_000_000` nanoseconds without a comment explaining the duration in human-readable terms. The repository requires that explanation for time-based calculations before merging. The later timestamp adjustment and the replacement-copy test use the same pattern. **Rule Used:** When using time-based calculations in code, include comments that explain the time duration in human-readable terms (e.g., '# 2 days in milli'). ([source](https://app.greptile.com/reflex-org-2/-/custom-context?memory=f12765cb-0537-4be8-81ad-061314e0e5d0)) **Learned From** [reflex-dev/flexgen#2190](https://github.com/reflex-dev/flexgen/pull/2190) Note: If this suggestion doesn't match your team's coding style, reply to this and let me know. I'll remember it for next time!"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "actions_total": 141,
+    "by_state": {
+      "SUCCESS": 142,
+      "FAILURE": 1,
+      "SKIPPED": 2
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 110082858252,
+      "run_id": null,
+      "cause": "CodSpeed's third-party check reports -0.23% overall: test_state_access[get_handler] regressed 4.36% (81.1 ms to 84.7 ms) while read_cached_computed improved 4.07%. This PR changes compiler and asset paths, not the reported state-access benchmark; no GitHub Actions job log exists for this third-party check."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P1: When a generated directory replaces an app asset while the source file remains and is later edited, this call can fail the compile: `update_directory_tree` copies into the directory and `record_copy` fingerprints the directory. Handle destination type mismatches before copying, preserving the replacement or replacing it safely without fingerprinting a directory. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. At reflex/compiler/utils.py, line 1160: When a generated directory replaces an app asset while the source file remains and is later edited, this call can fail the compile: `update_directory_tree` copies into the directory and `record_copy` fingerprints the directory. Handle destination type mismatches before copying, preserving the replacement or replacing it safely without fingerprinting a directory. @@ -994,56 +995,176 @@ def resolve_path_of_web_dir(path: str | Path) -> Path: + path + ) + + path_ops.update_directory_tree(assets, public, on_copy=record_copy) + # Adopt old copies from their source, never from skipped plugin output. + for relative in current - fingerprints.keys(): ```",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: When two production compiles share `.web`, this destructive sync can interleave with the other compile and delete or preserve assets using stale source and manifest state. Serialize the complete shared-workspace build around this call, rather than relying only on the manifest’s atomic replacement. (Based on your team's feedback about serializing shared production builds.) [View Feedback](https://www.cubic.dev/ai-review?tab=learnings&feedbackId=79fab254-a344-4c37-9717-b10faa31ef88&repo=557075997) Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. At reflex/compiler/compiler.py, line 1432: When two production compiles share `.web`, this destructive sync can interleave with the other compile and delete or preserve assets using stale source and manifest state. Serialize the complete shared-workspace build around this call, rather than relying only on the manifest’s atomic replacement. (Based on your team's feedback about serializing shared production builds.) @@ -1427,13 +1427,9 @@ def compile_app( - src=assets_src, - dest=Path.cwd() / prerequisites.get_web_dir() / constants.Dirs.PUBLIC, - ) + utils._sync_app_assets() save_tasks",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Unexplained timestamp duration** The test subtracts `10_000_000_000` nanoseconds without a comment explaining the duration in human-readable terms. The repository requires that explanation for time-based calculations before merging. The later timestamp adjustment and the replacement-copy test use the same pattern. **Rule Used:** When using time-based calculations in code, include comments that explain the time duration in human-readable terms (e.g., '# 2 days in milli'). ([source](https://app.greptile.com/reflex-org-2/-/custom-context?memory=f12765cb-0537-4be8-81ad-061314e0e5d0)) **Learned From** [reflex-dev/flexgen#2190](https://github.com/reflex-dev/flexgen/pull/2190) Note: If this suggestion doesn't match your team's coding style, reply to this and let me know. I'll remember it for next time!",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T18:33:57Z",
+      "excerpt": "Confidence Score: 4/5 **[Medium risk]** Changes how app assets are copied during compilation\\. The asset cleanup appears safe to merge after the test’s timestamp comments satisfy the repository requirement. Findings 1. &nbsp;**Unexplained timestamp duration** ▶ Summary The PR tracks copied app assets in a fingerprint manifest and removes copies of deleted assets during later compiles while preserving changed or plugin-generated public files. - Adds coverage for renames, directory removal, replacement files, symlinks, and dry runs. - Documents the one-time cleanup needed for assets that were stale before tracking began. Reviews (3) · Last reviewed commit: [\"Merge branch &#39;main&#39; into fi"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-21T18:35:38Z",
+      "excerpt": "## Merging this PR will **degrade performance by 0.23%** `⚡ 1` improved benchmark `❌ 1` regressed benchmark `✅ 145` untouched benchmarks `⏩ 17` skipped benchmarks[^skipped] > [!WARNING] > Please fix the performance issues or [acknowledge them on CodSpeed](https://app.codspeed.io/reflex-dev/reflex/branches/FarhanAliRaza%3Afix%2Fremove-deleted-app-assets?q=is%3Aregression&utm_source=github&utm_medium=comment-v2&utm_content=acknowledge). ### Performance Changes | | Benchmark | `BASE` | `HEAD` | Efficiency | | --- | --------- | ------ | ------ | ---------- | | ❌ | [`` test_state_access[get_handler] ``](https://app.codspeed.io/reflex-dev/reflex/branches/FarhanAliRaza%3Afix%2Fremove-deleted-app-as"
+    }
+  ],
+  "head_activity_at": "2026-09-30T20:15:03Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T18:33:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T18:34:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T18:34:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-21T18:35:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T18:52:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T18:52:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-21T18:52:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T20:18:35Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T20:18:41Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-09-30T20:15:03Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

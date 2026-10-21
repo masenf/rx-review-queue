@@ -1,0 +1,123 @@
+{
+  "number": 7604,
+  "fetched_at": "2026-10-21T17:57:02Z",
+  "author_login": "sansynx",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "sansynx/reflex",
+  "head_sha": "0215ea166dce197170b5f7db23be0a0a0f7244cf",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7111,
+      "title": "Declare Lucide deep imports through import_var instead of _get_imports",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T15:52:24Z",
+      "can_push": true,
+      "commit_id": "a8c2a6a402d22cf11a724251fa04b626f3589563"
+    },
+    {
+      "by": "sansynx",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-19T16:25:45Z",
+      "can_push": false,
+      "commit_id": "0215ea166dce197170b5f7db23be0a0a0f7244cf"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-19T15:52:19Z",
+      "excerpt": "Confidence Score: 5/5 [Medium impact] The PR appears safe to merge; no blocking issues were found. Summary The PR exposes Lucide’s deep imports through import var while preserving imports required by icon props. - Lucide icons expose deep m"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-19T15:52:24Z",
+      "excerpt": "All reported issues were addressed across 5 files Reply to a comment to ask cubic a question or push back. It learns from your replies. View guided diff Re-trigger cubic"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-19T15:52:24Z",
+      "excerpt": "P2: DynamicIcon can now emit an invalid default import when callers set is default=True ; keep this component's /dynamic.mjs binding named as the previous implementation did. Set is default=False in this replacement. Prompt for AI agents te"
+    },
+    {
+      "by": "sansynx",
+      "at": "2026-10-19T16:25:45Z",
+      "excerpt": "Fixed in 0215ea166dce197170b5f7db23be0a0a0f7244cf: DynamicIcon now explicitly retains its named binding. Added direct/reactive factory regressions for both caller flags; the two true-flag cases failed before the correction. The final unit/c"
+    }
+  ],
+  "head_activity_at": "2026-10-19T16:24:50Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:19Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "sansynx",
+      "association": "NONE",
+      "at": "2026-10-19T16:25:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "sansynx",
+      "association": "NONE",
+      "at": "2026-10-19T16:25:45Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T16:25:45Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

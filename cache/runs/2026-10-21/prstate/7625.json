@@ -1,0 +1,86 @@
+{
+  "number": 7625,
+  "fetched_at": "2026-10-21T17:57:02Z",
+  "author_login": "Huzi-06",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "Huzi-06/reflex",
+  "head_sha": "a3857c9010611b6daa0f6c36c1e49c74682ad111",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7623,
+      "title": "Cover set and frozenset in the static array var types",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-21T07:09:17Z",
+      "can_push": true,
+      "commit_id": "a3857c9010611b6daa0f6c36c1e49c74682ad111"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-21T07:09:17Z",
+      "excerpt": "No issues found across 4 files View guided diff Re-trigger cubic"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-21T07:09:52Z",
+      "excerpt": "Confidence Score: 5/5 [Low impact] The PR appears safe to merge. Summary Fixes static typing for set and frozenset array vars. - Set and frozenset vars keep their types through array use. No actionable issues found. Tests were not run durin"
+    }
+  ],
+  "head_activity_at": "2026-10-21T06:48:07Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T07:09:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T07:09:52Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-21T06:48:07Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

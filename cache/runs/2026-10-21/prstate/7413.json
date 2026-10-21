@@ -1,0 +1,253 @@
+{
+  "number": 7413,
+  "fetched_at": "2026-10-21T17:50:13.234Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "69c1180247bbf79702f3a8396de57a9cc79ffe07",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNSTABLE",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T18:16:29Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T18:17:22Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:08:14Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:08:48Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:39:09Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-10-05T19:39:14Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T21:21:24Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "FarhanAliRaza"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 169,
+    "actions_total": 165,
+    "by_state": {
+      "SUCCESS": 165,
+      "FAILURE": 1,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "The fresh check output reports one regression: test_on_event_router_data increased from 1.9 ms to 2.1 ms (-8.87% efficiency), with 147 benchmarks unchanged. CodSpeed also warns that the comparison used different runtime environments and that nine benchmarks spent significant time in system calls."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Remove the incorrect mypy claim, name ty explicitly, and correct the fragment and PR description.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:08:14Z",
+      "excerpt": "This order is what the repo's ruff isort config produces: with no `known-first-party` set, ruff treats `reflex` (at the repo root) as first-party and `reflex_base` (under `packages/reflex-base/src`) as third-party, so `from reflex.state import State` goes in its own block after the third-party imports. `ruff check --select I` passes on this file and flags the order you suggested as `I001`. Other tests such as `tests/units/test_route.py` and `test_state_tree.py` use the same layout."
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:08:48Z",
+      "excerpt": "You're right — I incorrectly assumed `reflex_base` and `reflex` would be grouped as first-party imports. Given the repository's Ruff configuration, Ruff classifies them into separate sections, and the current ordering is the one `ruff check --select I` requires. The examples in `tests/units` are consistent with that convention, so this is not an issue and I'll retract the comment."
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:39:09Z",
+      "excerpt": "Please remove mypy from this entry, and from the \"after\" row of the table in the PR description. Name ty instead of \"type checkers other than pyright\". mypy 2.3.1 still fails all six `assert_type` lines in `tests/type_checking/fields.py` on this branch. The required fields fail too. It gives `ArrayVar[Never]` on `main` and on this branch. mypy matches the earlier `Field[SEQUENCE_TYPE] | Field[SEQUENCE_TYPE | None]` overload first and solves `SEQUENCE_TYPE = Never`. I removed that overload as a t"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:39:14Z",
+      "excerpt": "I tested this change with pyright, ty and mypy, and in a small app. I ran each checker on `tests/type_checking` with this branch, and again with `vars/base.py` from `main`. I kept the new test file in both runs. On `main`, ty fails the three optional asserts. On this branch, ty passes. pyright passes on both. I also ran ty over `tests/units/vars` and `tests/units/test_state.py`. The branch removes the two existing ty failures for `sqlamodel_optional` and `dataclass_optional` in `test_object.py`."
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T21:21:24Z",
+      "excerpt": "Thanks for checking mypy, you're right: mypy 2.3.1 still fails all six on this branch, with `ArrayVar[Never]`. 15c99c5aea names only ty in the fragment, and I dropped the mypy column from the table in the description, since its \"before\" value was off too."
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T15:59:07Z",
+      "excerpt": "@FarhanAliRaza Thanks for testing this with all three checkers and in an app. The fragment names only ty since 15c99c5aea. The title now says ty instead of every checker, and the description notes that mypy still fails all six asserts. Could you take another look?"
+    }
+  ],
+  "head_activity_at": "2026-10-20T20:37:20Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T17:56:53Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-04T18:01:26Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-04T18:16:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T18:17:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T18:17:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:08:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:08:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:08:48Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T19:08:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:39:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:39:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "COLLABORATOR",
+      "at": "2026-10-05T19:39:14Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T21:21:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T21:21:24Z"
+    },
+    {
+      "kind": "comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T15:59:07Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-20T20:37:20Z",
+  "last_maintainer_activity_at": "2026-10-05T19:39:14Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

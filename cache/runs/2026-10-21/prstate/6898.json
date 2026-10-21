@@ -1,0 +1,216 @@
+{
+  "number": 6898,
+  "fetched_at": "2026-10-21T17:43:30.198Z",
+  "author_login": "Alek99",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "7c580aaba195f0fec2461852f7e493c64124804d",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "docs/app/agent_files/_plugin.py",
+    "docs/app/reflex_docs/redirects.py",
+    "docs/app/reflex_docs/reflex_docs.py",
+    "docs/app/tests/test_agent_files.py",
+    "docs/app/tests/test_routes.py",
+    "docs/app/tests/test_sidebar.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-17T21:07:35Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "DISMISSED",
+      "at": "2026-08-17T21:56:24Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-18T02:43:25Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "adhami3310",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-18T02:47:38Z",
+      "can_push": true,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-04T20:13:09Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": true,
+        "path": "docs/state_structure/scaling_state.md",
+        "line": null,
+        "first_comment": "this is the only one that i'm hesitant on because decentralized handlers are defined in a weird way and don't feel very reflexy to me, so idk if we should recommend them."
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "path": "docs/state_structure/scaling_state.md",
+        "line": 59,
+        "first_comment": "P2: This change removes `events.py` from the feature directory tree and updates the bullet to say `state.py` owns the event handlers, but the 'Separate Schema from Large Handler Sets' section later in the same file still instructs readers to put large handler sets into a feature's `events.py` module (line 223) and provides an example handler bound to that State. The directory tree and the guidance now contradict each other, so a reader following the tree has no `events.py` while the section tells them to create one. Update the section (and the table row and review-checklist item that still recommend decentralized handlers) to match the new tree, or keep `events.py` in the tree. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. At docs/state_structure/scaling_state.md, line 59: This change removes `events.py` from the feature directory tree and updates the bullet to say `state.py` owns the event handlers, but the 'Separate Schema fr"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 112,
+    "actions_total": 109,
+    "by_state": {
+      "SUCCESS": 110,
+      "SKIPPED": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "ask": "this is the only one that i'm hesitant on because decentralized handlers are defined in a weird way and don't feel very reflexy to me, so idk if we should recommend them.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: This change removes `events.py` from the feature directory tree and updates the bullet to say `state.py` owns the event handlers, but the 'Separate Schema from Large Handler Sets' section later in the same file still instructs readers to put large handler sets into a feature's `events.py` module (line 223) and provides an example handler bound to that State. The directory tree and the guidance now contradict each other, so a reader following the tree has no `events.py` while the section tells them to create one. Update the section (and the table row and review-checklist item that still recommend decentralized handlers) to match the new tree, or keep `events.py` in the tree. Prompt for AI agents ```text Check if this issue is valid — if so, understand the root cause and fix it. At docs/state_structure/scaling_state.md, line 59: This change removes `events.py` from the feature directory tree and updates the bullet to say `state.py` owns the event handlers, but the 'Separate Schema fr",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T20:43:11Z",
+      "excerpt": "## Merging this PR will **not alter performance** `✅ 32` untouched benchmarks `⏩ 8` skipped benchmarks[^skipped] --- Comparing docs/scaling-state (7c580aa) with main (c83ec64) [^skipped]: 8 benchmarks were skipped, so the baseline results w"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T20:43:51Z",
+      "excerpt": "Greptile Summary The PR adds a comprehensive Scaling State guide and makes it the architectural entry point for large and multi-page Reflex applications. - Reconciles existing State structure, mixin, ComponentState, project-structure, and A"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T21:03:17Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage)."
+    }
+  ],
+  "head_activity_at": "2026-09-04T20:09:36Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T20:43:11Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T20:43:51Z"
+    },
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T21:03:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T21:07:35Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-17T21:07:35Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-08-17T21:56:24Z",
+      "state": "dismissed"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-18T02:43:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-18T02:43:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "adhami3310",
+      "association": "MEMBER",
+      "at": "2026-08-18T02:47:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "adhami3310",
+      "association": "MEMBER",
+      "at": "2026-08-18T02:47:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-04T20:13:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-04T20:13:09Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-09-04T20:09:36Z",
+  "last_maintainer_activity_at": "2026-08-18T02:47:38Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

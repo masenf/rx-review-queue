@@ -1,0 +1,485 @@
+{
+  "number": 7570,
+  "fetched_at": "2026-10-21T17:51:34Z",
+  "author_login": "Kastier1",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "f63c762eb97db4eebe1ca3ef135ffc603a63c326",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "APPROVED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T19:34:37Z",
+      "can_push": true,
+      "commit_id": "324d88d42846262e32cbca3b4c3c0b9b2b0bcaa4"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T20:28:52Z",
+      "can_push": true,
+      "commit_id": "324d88d42846262e32cbca3b4c3c0b9b2b0bcaa4"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-16T18:45:28Z",
+      "can_push": true,
+      "commit_id": "e29bd80cd5226c8ea4ac376639630d2a22be8a60"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:09:01Z",
+      "can_push": true,
+      "commit_id": "c553a8d1f703f46a97ec9b7484f14213f9db5ef8"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:09:25Z",
+      "can_push": true,
+      "commit_id": "c553a8d1f703f46a97ec9b7484f14213f9db5ef8"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:09:41Z",
+      "can_push": true,
+      "commit_id": "c553a8d1f703f46a97ec9b7484f14213f9db5ef8"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:10:03Z",
+      "can_push": true,
+      "commit_id": "c553a8d1f703f46a97ec9b7484f14213f9db5ef8"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:10:16Z",
+      "can_push": true,
+      "commit_id": "c553a8d1f703f46a97ec9b7484f14213f9db5ef8"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:10:39Z",
+      "can_push": true,
+      "commit_id": "c553a8d1f703f46a97ec9b7484f14213f9db5ef8"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:10:53Z",
+      "can_push": true,
+      "commit_id": "c553a8d1f703f46a97ec9b7484f14213f9db5ef8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:17:34Z",
+      "can_push": true,
+      "commit_id": "c553a8d1f703f46a97ec9b7484f14213f9db5ef8"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:26:16Z",
+      "can_push": true,
+      "commit_id": "401bb91efc7b80637dedc3ad22e269339c2d3e9d"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:28:30Z",
+      "can_push": true,
+      "commit_id": "401bb91efc7b80637dedc3ad22e269339c2d3e9d"
+    },
+    {
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-19T19:46:34Z",
+      "can_push": true,
+      "commit_id": "718849767258323166e9a2edc68d233e04504d60"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-20T15:56:40Z",
+      "can_push": true,
+      "commit_id": "f63c762eb97db4eebe1ca3ef135ffc603a63c326"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 18,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 168,
+    "actions_total": 164,
+    "by_state": {
+      "SUCCESS": 166,
+      "SKIPPED": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "linear-code",
+      "association": "NONE",
+      "at": "2026-10-14T19:33:08Z",
+      "excerpt": "ENG-12238"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-10-14T19:36:20Z",
+      "excerpt": "## Codex Review Summary This comment shows the latest Codex review activity on this pull request. | Review | Status | Commit | Review trigger | | --- | --- | --"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T19:37:52Z",
+      "excerpt": "Confidence Score: 5/5 **[Low impact]** The PR appears safe to merge; no actionable new issues were found. Summary Adds a scaling guide covering replaceable back"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-14T19:40:59Z",
+      "excerpt": "## Merging this PR will **not alter performance** `✅ 148` untouched benchmarks --- Comparing codex/eng-12238-scaling-docs (f63c762) with main (4be8b4d)"
+    }
+  ],
+  "head_activity_at": "2026-10-20T15:56:14Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "linear-code",
+      "association": "NONE",
+      "at": "2026-10-14T19:33:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T19:34:37Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-10-14T19:36:20Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T19:37:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-14T19:40:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T19:51:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T19:56:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:05:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:10:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:15:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:17:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:18:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:19:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:20:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:23:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:28:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T20:28:52Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:45:28Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:45:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:45:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:45:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:45:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:45:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:09:01Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:09:01Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:09:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:09:25Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:09:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:09:41Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:10:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:10:03Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:10:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:10:16Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:10:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:10:39Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:10:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:10:53Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T19:17:33Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T19:17:34Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:26:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:26:16Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T19:28:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T19:28:30Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:46:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "Kastier1",
+      "association": "MEMBER",
+      "at": "2026-10-19T19:46:34Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-20T15:56:40Z",
+      "state": "APPROVED"
+    }
+  ],
+  "last_author_activity_at": "2026-10-20T15:56:14Z",
+  "last_maintainer_activity_at": "2026-10-20T15:56:40Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

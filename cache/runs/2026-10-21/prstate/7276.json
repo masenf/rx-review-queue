@@ -1,0 +1,239 @@
+{
+  "number": 7276,
+  "fetched_at": "2026-10-21T17:44:10.087Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "4966b11ee17196d231dd60e44543795c2c115090",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7262,
+      "title": "Confirm: frontend_lazy_bundled_libraries=True added ~65 KB of initial JS on every page of the QA app (possible regression against #7078's claim)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:26:49Z",
+      "can_push": false,
+      "commit_id": "2000beec7b164ba0e6460104685660e291dd4a3b"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T19:09:09Z",
+      "can_push": false,
+      "commit_id": "6f44747d5411d301acd20343bb6e4e88fea0f33c"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T19:32:14Z",
+      "can_push": false,
+      "commit_id": "d3d1d903c94caefde606c9dbd8c556faa25fd0d1"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-25T15:09:34Z",
+      "can_push": true,
+      "commit_id": "7ee8505caf1eeee603fdbfefe28bce9e394cbfd9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "[P2] Keep failed library loads recoverable for the same component\n\nPlease keep recoverable loading outside the cached module evaluation, or invalidate failed module imports. Moving this await into the generated module makes a transient library-load rejection an ESM evaluation failure cached for that component's data URI. In a probe using the actual evaluator and compiled loader, retrying the same component source rejected again without invoking the loader; even successfully loading the namespace"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "[P2] Give the rejection fixture an uncached module source\n\nThe optional-registry test still fails at `assert.rejects` after this source change. Its first scenario successfully imports this source, then the rejection scenario replaces `window` and evaluates the identical source again. The module cache returns the old component without running the new loader (`attempts=0`, cached value `42`), producing `Missing expected rejection`. Give the rejection scenario distinct module source so it actually "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 146,
+    "actions_total": 142,
+    "by_state": {
+      "SUCCESS": 144,
+      "SKIPPED": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "[P2] Keep failed library loads recoverable for the same component Please keep recoverable loading outside the cached module evaluation, or invalidate failed module imports. Moving this await into the generated module makes a transient library-load rejection an ESM evaluation failure cached for that component's data URI. In a probe using the actual evaluator and compiled loader, retrying the same component source rejected again without invoking the loader; even successfully loading the namespace separately did not recover it. The baseline evaluator retried the loader and returned the component successfully. A transient chunk-load failure can therefore leave that dynamic component unusable unt",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "[P2] Give the rejection fixture an uncached module source The optional-registry test still fails at `assert.rejects` after this source change. Its first scenario successfully imports this source, then the rejection scenario replaces `window` and evaluates the identical source again. The module cache returns the old component without running the new loader (`attempts=0`, cached value `42`), producing `Missing expected rejection`. Give the rejection scenario distinct module source so it actually exercises a failing load; adding a unique suffix makes the fixture pass. Keep a separate identical-source recovery test for the runtime retry behavior.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Active changes-requested review covers recoverable dynamic-library retries and a test fixture that reused an already-cached module source.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:24:28Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=68174643\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source m"
+    },
+    {
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-23T17:30:16Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **not alter performance** <details> <summary>:warning: <b>15 benchmarks spent significant time in system calls</b></summary> > System calls cannot be consistently inst"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-23T18:10:36Z",
+      "excerpt": "the finding in the issue is that with the setting on, it actually ships larger initial JS payload than with it turned off... is that incorrect? the proposed change seems to paper over the reported issue"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:03:28Z",
+      "excerpt": "Implemented the runtime fix for the reported regression in 6f44747d5. The lazy path no longer preloads every registered optional library on the first dynamic-component evaluation; generated dynamic modules request only their own bundled mod"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-26T16:01:41Z",
+      "excerpt": "Addressed the review findings: - Moved selective library loading outside the cached data-URI module evaluation. Generated components now carry their required libraries in the `//__reflex_evaluate` metadata header, and `evalReactComponent` l"
+    }
+  ],
+  "head_activity_at": "2026-10-13T08:12:02Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:24:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:26:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-23T17:30:16Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-23T18:10:36Z"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:03:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:09:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:09:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:09:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:09:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:32:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:32:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:09:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:09:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:09:34Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-26T16:01:41Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-13T08:12:02Z",
+  "last_maintainer_activity_at": "2026-09-25T15:09:34Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

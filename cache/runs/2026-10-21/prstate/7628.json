@@ -1,0 +1,129 @@
+{
+  "number": 7628,
+  "fetched_at": "2026-10-21T18:07:33Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "cb3d63bd508c1231ddac5efdcc46f96d6419d321",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": true,
+  "review_decision": "APPROVED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-21T17:50:01Z",
+      "can_push": false,
+      "commit_id": "75ece5f23d3a911a6792fe3a513cb73bbe161f7c"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-21T18:00:32Z",
+      "can_push": true,
+      "commit_id": "cb3d63bd508c1231ddac5efdcc46f96d6419d321"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 172,
+    "actions_total": 168,
+    "by_state": {
+      "SUCCESS": 156,
+      "SKIPPED": 5,
+      "PENDING": 11
+    },
+    "failing": [],
+    "pending": [
+      "integration-app-harness-playwright (memory, 3.15)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.13)"
+    ]
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "at": "2026-10-21T17:48:40Z",
+      "excerpt": "Codex review completed on 75ece5f with no findings."
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-21T17:50:01Z",
+      "excerpt": "No issues found across three files."
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-21T17:52:46Z",
+      "excerpt": "Confidence 5/5: dependency locks select patched releases; no new actionable findings."
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-21T17:58:34Z",
+      "excerpt": "Performance report: merging the PR will not alter performance; 148 benchmarks were untouched."
+    }
+  ],
+  "head_activity_at": "2026-10-21T17:54:20Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-21T17:48:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T17:50:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T17:52:46Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-21T17:58:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-21T18:00:32Z",
+      "state": "approved"
+    }
+  ],
+  "last_author_activity_at": "2026-10-21T17:54:20Z",
+  "last_maintainer_activity_at": "2026-10-21T18:00:32Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

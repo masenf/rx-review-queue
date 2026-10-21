@@ -1,0 +1,256 @@
+{
+  "number": 7614,
+  "fetched_at": "2026-10-21T17:57:02Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "5ca62ee7ecd2645937e6a678c87c3e317096959b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7601,
+      "title": "client_ip trusts the client-controlled leftmost X-Forwarded-For entry",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-20T09:16:14Z",
+      "can_push": true,
+      "commit_id": "42b604dcd3d9ef2bbd96861be6b1326232c9e144"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-20T09:17:19Z",
+      "can_push": true,
+      "commit_id": "42b604dcd3d9ef2bbd96861be6b1326232c9e144"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-21T05:40:01Z",
+      "can_push": false,
+      "commit_id": "5ca62ee7ecd2645937e6a678c87c3e317096959b"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-21T05:40:04Z",
+      "can_push": false,
+      "commit_id": "5ca62ee7ecd2645937e6a678c87c3e317096959b"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-21T05:40:07Z",
+      "can_push": false,
+      "commit_id": "5ca62ee7ecd2645937e6a678c87c3e317096959b"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-21T05:40:10Z",
+      "can_push": false,
+      "commit_id": "5ca62ee7ecd2645937e6a678c87c3e317096959b"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 175,
+    "actions_total": 171,
+    "by_state": {
+      "CANCELLED": 1,
+      "SKIPPED": 6,
+      "SUCCESS": 168
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "cause": "Cancelled by Actions concurrency before any steps or log output because the higher-priority changelog-4933609459 request was waiting; a newer changelog run on the same head completed successfully."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-20T09:16:14Z",
+      "excerpt": "All reported issues were addressed across 8 files Reply with feedback, questions, or to request a fix. View guided diff Re-trigger cubic"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-20T09:16:14Z",
+      "excerpt": "P2: This fragment should be classified as breaking , not bugfix : the default change alters router.session.client ip for existing proxy deployments unless they configure the new setting. Rename it to news/+7601-trusted-proxy-client-ip.break"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-20T09:16:14Z",
+      "excerpt": "P2: Classify this reflex-base fragment as a feature: it adds the public trusted proxy hops configuration option, while the runtime client-IP fix is covered by the root package’s bugfix fragment. Rename the file from +7601-trusted-proxy-clie"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-20T09:16:14Z",
+      "excerpt": "P2: This regression test covers only negative integers, not the promised rejection of non-integer values such as strings or booleans. Parametrize the invalid-input case so future changes cannot silently accept those values. Prompt for AI ag"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-20T09:17:15Z",
+      "excerpt": "Confidence Score: 5/5 [Medium impact] The PR appears safe to merge, with no outstanding findings. Summary The PR makes router.session.client ip ignore forwarded headers by default. Apps behind trusted proxies can opt in with trusted proxy h"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-20T09:17:18Z",
+      "excerpt": "Invalid types go untested The new rejection test only checks -1 . The checks for booleans and non-integers could be removed without failing this test, even though accepting True would enable forwarded-header trust. Add cases for True , Fals"
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-20T09:21:28Z",
+      "excerpt": "Merging this PR will not alter performance :warning: 10 benchmarks spent significant time in system calls System calls cannot be consistently instrumented, so they are not included in the measure, which understates the real cost. Please swi"
+    },
+    {
+      "by": "harsh21234i",
+      "at": "2026-10-21T05:40:00Z",
+      "excerpt": "Addressed in commit 5ca62ee7e: corrected the changelog classification and added invalid-value coverage for trusted proxy hops."
+    },
+    {
+      "by": "harsh21234i",
+      "at": "2026-10-21T05:40:04Z",
+      "excerpt": "Addressed in commit 5ca62ee7e: corrected the changelog classification and added invalid-value coverage for trusted proxy hops."
+    },
+    {
+      "by": "harsh21234i",
+      "at": "2026-10-21T05:40:07Z",
+      "excerpt": "Addressed in commit 5ca62ee7e: corrected the changelog classification and added invalid-value coverage for trusted proxy hops."
+    },
+    {
+      "by": "harsh21234i",
+      "at": "2026-10-21T05:40:10Z",
+      "excerpt": "Addressed in commit 5ca62ee7e: corrected the changelog classification and added invalid-value coverage for trusted proxy hops."
+    }
+  ],
+  "head_activity_at": "2026-10-21T05:39:46Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T09:16:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T09:16:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T09:17:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T09:17:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T09:17:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-20T09:21:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T05:40:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T05:40:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T05:40:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T05:40:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T05:40:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T05:40:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T05:40:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T05:40:10Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-21T05:40:10Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,220 @@
+{
+  "number": 6873,
+  "fetched_at": "2026-10-21T17:43:32.232Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "284a3040e3094d8dc321ea1fde21f24dfddab0d8",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T21:27:25Z",
+      "can_push": false,
+      "commit_id": "d7ddebee146f86ffd9bff4d2066968772733d81b"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T20:17:52Z",
+      "can_push": false,
+      "commit_id": "1b612211f111a61f291abd219d67799006d7d072"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T20:18:07Z",
+      "can_push": false,
+      "commit_id": "1b612211f111a61f291abd219d67799006d7d072"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-17T13:10:55Z",
+      "can_push": false,
+      "commit_id": "3faffa9f37abf361181fa262524ee14bb1f7984a"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 169,
+    "actions_total": 165,
+    "by_state": {
+      "FAILURE": 7,
+      "SUCCESS": 159,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.14)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "job_id": 119097112066,
+      "run_id": 39560173423,
+      "cause": "Gate propagation only: the log reports `Blocking job results: unit-tests=failure` after changes=success, unit-tests=failure, and unit-tests-macos=skipped."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.11)",
+      "job_id": 119089302582,
+      "run_id": 39560173423,
+      "cause": "The PR-owned test tests/units/test_state.py::test_state_manager_mixin_token[redis] failed at line 7204: after writing `note = \"written\"` through the mixin token, reloading via the concrete token returned an empty note (1 failed, 13,098 passed)."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "job_id": 119089302625,
+      "run_id": 39560173423,
+      "cause": "The same PR-owned Redis mixin-token persistence test failed at tests/units/test_state.py:7204 because the reloaded note was empty instead of `written` (1 failed, 13,105 passed)."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13)",
+      "job_id": 119089302668,
+      "run_id": 39560173423,
+      "cause": "The same PR-owned Redis mixin-token persistence test failed at tests/units/test_state.py:7204 because the reloaded note was empty instead of `written` (1 failed, 13,106 passed)."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.14)",
+      "job_id": 119089302566,
+      "run_id": 39560173423,
+      "cause": "The same PR-owned Redis mixin-token persistence test failed at tests/units/test_state.py:7204 because the reloaded note was empty instead of `written` (1 failed, 13,109 passed)."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "job_id": 119089302704,
+      "run_id": 39560173423,
+      "cause": "The same PR-owned Redis mixin-token persistence test failed at tests/units/test_state.py:7204 because the reloaded note was empty instead of `written` (1 failed, 13,101 passed)."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 119093013849,
+      "run_id": null,
+      "cause": "External CodSpeed output reports tests/benchmarks/test_state_manager.py::test_get_state[memory] slowed 4.2%, from 1.1 ms to 1.2 ms; 147 benchmarks were unchanged."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Add required news fragments for both reflex and reflex-base.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Close the StateManagerMemory test manager in a finally block so its expiration task is cancelled.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Remove the redundant inline RegistrationContext import from get_state.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": null,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-11T23:07:13Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=52402642\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a><a href=\"htt"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-21T22:56:36Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.2%**\n\n<details>\n<summary>:warning: <b>19 benchmarks spent significant time in system calls</b></summary>\n\n> System calls cannot be consistently instrumented, so they are not included in the measure, which understates the real cost. Please switch to [the Walltime instrument](https://codspeed.io/docs/instruments/walltime?utm_source=github&utm_medium=comment-v2&utm_content=significant_sys_time) to ac"
+    }
+  ],
+  "head_activity_at": "2026-10-21T07:09:42Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-11T23:07:13Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-21T22:56:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T21:27:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T21:27:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T20:17:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T20:17:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T20:18:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T13:10:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-17T13:10:55Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-21T07:09:42Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

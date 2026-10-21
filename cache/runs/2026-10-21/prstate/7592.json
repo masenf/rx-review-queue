@@ -1,0 +1,114 @@
+{
+  "number": 7592,
+  "fetched_at": "2026-10-21T17:49:11Z",
+  "author_login": "LaoChouPro",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "LaoChouPro/reflex",
+  "head_sha": "65995f53d032e2f4ecbeae6cfb1b1a200f14daaf",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7561,
+      "title": "`get_field_type` and `get_attribute_access_type` read `__fields__` and emit `PydanticDeprecatedSince20` on each field access",
+      "filed_by": "wevonosky"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:29:14Z",
+      "can_push": false,
+      "commit_id": "b9a9031ddfa850146692df9d7f333892d9dd5e13"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:30:39Z",
+      "can_push": false,
+      "commit_id": "b9a9031ddfa850146692df9d7f333892d9dd5e13"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:30:54Z",
+      "can_push": false,
+      "commit_id": "b9a9031ddfa850146692df9d7f333892d9dd5e13"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "chatgpt-codex-connector",
+        "outdated": true,
+        "first_comment": "Validate model_fields before treating it as Pydantic metadata; non-mapping model_fields attributes must fall back to __fields__ or type hints."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "Validate model_fields as mapping-like metadata before using it.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T06:29:14Z",
+      "excerpt": "P2: Guard `model_fields` by its mapping shape before treating it as the Pydantic field map. Addressed in 65995f5."
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T06:30:38Z",
+      "excerpt": "Tests fail without Pydantic: import Pydantic with pytest.importorskip so the no-database-dependencies job can collect the tests."
+    },
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "at": "2026-10-18T06:30:54Z",
+      "excerpt": "Validate model_fields before treating it as Pydantic metadata."
+    }
+  ],
+  "head_activity_at": "2026-10-18T06:41:35Z",
+  "interaction_events": [
+    {"kind": "comment", "by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-10-18T06:27:14Z"},
+    {"kind": "review_comment", "by": "cubic-dev-ai[bot]", "association": "CONTRIBUTOR", "at": "2026-10-18T06:29:14Z"},
+    {"kind": "review", "by": "cubic-dev-ai[bot]", "association": "CONTRIBUTOR", "at": "2026-10-18T06:29:14Z", "state": "commented"},
+    {"kind": "comment", "by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-10-18T06:30:35Z"},
+    {"kind": "review_comment", "by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-10-18T06:30:38Z"},
+    {"kind": "review", "by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-10-18T06:30:39Z", "state": "commented"},
+    {"kind": "review_comment", "by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-10-18T06:30:54Z"},
+    {"kind": "review", "by": "chatgpt-codex-connector[bot]", "association": "NONE", "at": "2026-10-18T06:30:54Z", "state": "commented"}
+  ],
+  "last_author_activity_at": "2026-10-18T06:41:35Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

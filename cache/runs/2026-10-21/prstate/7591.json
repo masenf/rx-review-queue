@@ -1,0 +1,305 @@
+{
+  "number": 7591,
+  "fetched_at": "2026-10-21T17:50:31.910Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "7a5aa7f8caed117cd786cef0901b97a2ded0c754",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7100,
+      "title": "Unsupported Moment options silently become CSS during the react-moment migration",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T05:40:44Z",
+      "can_push": false,
+      "commit_id": "628e2e6d471cfef06b670744498af55e99749390"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T05:42:39Z",
+      "can_push": false,
+      "commit_id": "628e2e6d471cfef06b670744498af55e99749390"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:21:22Z",
+      "can_push": false,
+      "commit_id": "2e2108c62d528101897973f29f2b6fd3336667ad"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:22:56Z",
+      "can_push": false,
+      "commit_id": "2e2108c62d528101897973f29f2b6fd3336667ad"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T07:03:54Z",
+      "can_push": false,
+      "commit_id": "68ee8307e183ab6c485fb57f81708fde48adeac1"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T07:04:28Z",
+      "can_push": false,
+      "commit_id": "68ee8307e183ab6c485fb57f81708fde48adeac1"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:23:38Z",
+      "can_push": false,
+      "commit_id": "deea560276e2a74b4596df57aaf88dcc80f4bf62"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T10:17:18Z",
+      "can_push": false,
+      "commit_id": "7a5aa7f8caed117cd786cef0901b97a2ded0c754"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 12,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 147,
+    "actions_total": 143,
+    "by_state": {
+      "SKIPPED": 4,
+      "SUCCESS": 142,
+      "FAILURE": 1
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reported one regression in test_state_access[write_own]: 126.1 ms on BASE versus 131.4 ms on HEAD (-4.07% efficiency); 147 other benchmarks were unchanged. The failing benchmark is outside the Moment files changed by this PR."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T06:22:55Z",
+      "excerpt": "Unrelated dates change language Removing the English default also changes rx.moment outside a provider. When a sibling loads moment/locale/fr , an omitted locale follows Moment's global locale, so ordinary dates and relative times can become French. This resto"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T07:03:54Z",
+      "excerpt": "All reported issues were addressed across 4 files changes from recent commits . Reply with feedback, questions, or to request a fix. View guided diff https://www.cubic.dev/pr/reflex dev/reflex/pull/7591?utm source=github&utm medium=review footer Re trigger cub"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T07:03:55Z",
+      "excerpt": "P3: This test only checks a Moment as a direct provider child. Add a case with an implicit Moment nested in a wrapper component, such as rx.box Moment.create ... , so the recursive clone in inherit provider locale is covered. ✅ Addressed in deea560 https://git"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T07:04:26Z",
+      "excerpt": "Some dates ignore shared language The new walk only visits children , so it misses dates inside @rx.memo bodies and component valued props. For example, a memoized function returning rx.moment \"2024 03 14\", format=\"dddd\" still renders English inside rx.moment "
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T08:23:38Z",
+      "excerpt": "Import logic is duplicated MomentProvider.add imports repeats the locale and timezone choices in Moment.add imports . The repository guide requires: “Extract duplicated code into parameterized helpers.” Move these choices into a shared helper that accepts the "
+    },
+    {
+      "by": "harsh21234i",
+      "at": "2026-10-18T10:17:18Z",
+      "excerpt": "Addressed in 7a5aa7f8c. Locale and timezone import selection now lives in locale timezone imports , shared by MomentProvider.add imports and Moment.add imports . Existing Moment tests cover literal and reactive locale imports and provider timezone imports; tar"
+    }
+  ],
+  "head_activity_at": "2026-10-18T09:47:20Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:40:44Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:40:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:40:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:40:44Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:42:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:42:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:42:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:42:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:42:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T05:42:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-18T05:48:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:21:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:21:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:22:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:22:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T07:03:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T07:03:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T07:04:26Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T07:04:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:23:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:23:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T10:17:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T10:17:18Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-18T10:17:18Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

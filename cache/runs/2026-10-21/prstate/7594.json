@@ -1,0 +1,82 @@
+{
+  "number": 7594,
+  "fetched_at": "2026-10-21T17:49:11Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "6ddde446d2fd5fdf92e535d6622720314548e218",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7099,
+      "title": "Mixing literal and reactive Moment locales emits duplicate defineLocale deprecation warnings",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T10:45:38Z",
+      "can_push": false,
+      "commit_id": "9537d81939f9dabdb8d9a549efab47839a92a899"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 147,
+    "actions_total": 143,
+    "by_state": {
+      "SUCCESS": 142,
+      "SKIPPED": 5
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T10:45:38Z",
+      "excerpt": "No issues found across 3 files."
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T10:45:42Z",
+      "excerpt": "Greptile review summary."
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-18T10:53:38Z",
+      "excerpt": "Merging this PR will not alter performance."
+    }
+  ],
+  "head_activity_at": "2026-10-18T10:54:01Z",
+  "interaction_events": [
+    {"kind": "review", "by": "cubic-dev-ai[bot]", "association": "CONTRIBUTOR", "at": "2026-10-18T10:45:38Z", "state": "commented"},
+    {"kind": "comment", "by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-10-18T10:45:42Z"},
+    {"kind": "comment", "by": "codspeed[bot]", "association": "NONE", "at": "2026-10-18T10:53:38Z"}
+  ],
+  "last_author_activity_at": "2026-10-18T10:54:01Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 3
+}

@@ -1,0 +1,42 @@
+{
+  "fetched_at": "2026-10-21T17:37:10Z",
+  "audited_open_prs": 113,
+  "reconciled_at": "2026-10-21T18:07:33Z",
+  "final_open_prs": 112,
+  "additions": {
+    "Bug": [
+      7614,
+      7616,
+      7621,
+      7624,
+      7625,
+      7627,
+      7628
+    ],
+    "Documentation": [
+      7614,
+      7624
+    ],
+    "Perf": [
+      7624
+    ],
+    "breaking": [
+      7614,
+      7624
+    ]
+  },
+  "notes": {
+    "7614": "Issue-backed security fix whose corrected changelog documents a breaking change to the public client_ip behavior behind proxies.",
+    "7624": "Issue-backed fix with measured performance improvement, user-facing documentation, and an explicitly documented external ASGI app contract break.",
+    "7627": "Security bug linked to ENG-13482; the current patch updates certifi to remove a compromised CA root.",
+    "7628": "Security dependency update tied to active GitHub advisories and Dependabot alerts.",
+    "reconciliation": "#7627 closed unmerged after the opening audit; its broader dependency-security replacement #7628 remains open.",
+    "7626": "Review-follow-up cleanup was not labeled Bug because the PR does not identify a concrete user-facing defect."
+  },
+  "live_counts": {
+    "bug": 36,
+    "perf": 26,
+    "documentation": 33,
+    "breaking": 11
+  }
+}

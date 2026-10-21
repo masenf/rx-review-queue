@@ -1,0 +1,80 @@
+{
+  "number": 7575,
+  "fetched_at": "2026-10-21T17:50:31.910Z",
+  "author_login": "quotentiroler",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "quotentiroler/reflex",
+  "head_sha": "d5556eab1a11b173db51d5f4348024ec5ec94198",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T08:29:23Z",
+      "can_push": false,
+      "commit_id": "d5556eab1a11b173db51d5f4348024ec5ec94198"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-15T08:29:23Z",
+      "excerpt": "No issues found across 1 file View guided diff https://www.cubic.dev/pr/reflex dev/reflex/pull/7575?utm source=github&utm medium=review footer Re trigger cubic https://www.cubic.dev/action/re review/pr/reflex dev/reflex/7575/ai pr review github delivery 2d0f3f"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-15T08:30:37Z",
+      "excerpt": "Confidence Score: 5/5 Low impact This test only change appears safe to merge. Summary Builds the test repository once with session scoped repo template , then copies it for each test. Release tests build their Git repository once and copy it per test. Reviews "
+    }
+  ],
+  "head_activity_at": "2026-10-15T00:22:50Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T08:29:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T08:30:37Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-15T08:28:10Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

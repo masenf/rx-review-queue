@@ -1,0 +1,150 @@
+{
+  "number": 7412,
+  "fetched_at": "2026-10-21T17:50:13.234Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "055d695183963a7a8df435dc2d380595e5a12943",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNSTABLE",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7248,
+      "title": "A cancelled foreground supersedes=True handler loses all of its state writes under StateManagerRedis but keeps them under the in-memory manager",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T16:47:59Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-04T16:49:46Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 52,
+    "actions_total": 49,
+    "by_state": {
+      "FAILURE": 7,
+      "SUCCESS": 23,
+      "SKIPPED": 7,
+      "CANCELLED": 14,
+      "NEUTRAL": 1
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "integration-tests-gate",
+      "build-packages-gate",
+      "codeql-gate",
+      "reflex-init-in-docker-test-gate",
+      "integration-app-harness-gate",
+      "performance-tests-gate",
+      "reflex-docs (3.12)",
+      "Analyze (actions)",
+      "discover",
+      "changes",
+      "playground-head",
+      "playground-0.8.23",
+      "changelog",
+      "Run browser performance smoke",
+      "Run benchmarks",
+      "pre-commit",
+      "size-budgets"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10), unit-tests (windows-latest, 3.10), unit-tests-gate",
+      "cause": "Both Python 3.10 job logs show the five PR-owned Redis cancellation tests failing because CancelledError has an empty message instead of matching 'superseded' (10,435 passed on Ubuntu; 9,460 on Windows). The gate log then exits on unit-tests=failure."
+    },
+    {
+      "check": "build-packages-gate and cancelled/abandoned dependent jobs",
+      "cause": "The inspected build-packages gate log shows discover=abandoned, build=skipped and check-min-deps=skipped, then fails only on 'Blocking job results: discover=abandoned'. The inspected abandoned `changes` job returns no log; the other cancelled gates and jobs are dependency-abandonment fallout, not additional test diagnostics."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-04T16:47:59Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **No issues found** across 5 files <!-- cubic:review-summary:end --> <sub>[Re-trigger cubic](https://www.cubic.dev/action/re-review/pr/reflex-dev/reflex/7412/ai_pr_review_github_delivery_703deb5cee8c864290cdfb7a382d93c89c58dc1e9af29b5e55411d1a3cc0150f?returnTo=https%3A%2F%2Fgithub.com%2Freflex-dev%2Freflex%2Fpull%2F7412)</sub> <!-- cubic:review-post:ai_pr_review_github_delivery_703deb5cee8c864290cdfb7a382d93c89c58dc1e9af29b5e55411d1a3cc0150f:e85c14117ce066efda"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:41Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=74413205\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a>Confidence Sc"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:45Z",
+      "excerpt": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **A second cancellation drops state** When a superseded handler is cancelled again during shutdown while this Redis write is awaiting I/O, the second cancellation can interrupt the write. The lock context then exits without ensuring the save completes, so state changes already yielded to the client can be lost."
+    }
+  ],
+  "head_activity_at": "2026-10-04T21:15:16Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "NONE",
+      "at": "2026-10-04T16:47:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "NONE",
+      "at": "2026-10-04T16:49:46Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-04T21:15:16Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

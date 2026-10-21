@@ -1,0 +1,119 @@
+{
+  "number": 7573,
+  "fetched_at": "2026-10-21T17:51:34Z",
+  "author_login": "quotentiroler",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "quotentiroler/reflex",
+  "head_sha": "68cf314d070da868f60127c709ba8859864f444e",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": true,
+  "review_decision": "APPROVED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T08:28:59Z",
+      "can_push": true,
+      "commit_id": "c488d01e6f8395b6d3126b7a3d789339789adea0"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-19T09:18:25Z",
+      "can_push": true,
+      "commit_id": "68cf314d070da868f60127c709ba8859864f444e"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "FAILURE": 2,
+      "SUCCESS": 139,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.12)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "job": "117992339563",
+      "run": "39227957523",
+      "cause": "The gate log reports `changes=success unit-tests=failure unit-tests-macos=skipped` and blocks on `unit-tests=failure`; it is a downstream propagation failure."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "job": "117980611475",
+      "run": "39227957523",
+      "cause": "`tests/units/reflex_workflow/engine/test_runner.py::test_a_busy_customer_does_not_starve_a_quiet_one` failed with `assert 1 == 2`; 1,047 other tests passed. The PR changes the Tailwind plugin, its focused unit test, and a news fragment, so this failure is outside the changed files."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T08:30:15Z",
+      "excerpt": "Confidence Score: 5/5 **[Medium impact]** The PR appears safe to merge. Summary Fixes the generated Tailwind configuration so `important` is no longer written a"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-19T09:18:23Z",
+      "excerpt": "## Merging this PR will **not alter performance** `✅ 148` untouched benchmarks --- Comparing quotentiroler:fix/tailwind-important-key (68cf314) with main (75a08"
+    }
+  ],
+  "head_activity_at": "2026-10-19T09:09:33Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T08:28:59Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T08:30:15Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-19T09:18:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-19T09:18:25Z",
+      "state": "APPROVED"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T09:09:33Z",
+  "last_maintainer_activity_at": "2026-10-19T09:18:25Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

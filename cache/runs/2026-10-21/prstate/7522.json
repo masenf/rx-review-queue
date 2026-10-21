@@ -1,0 +1,156 @@
+{
+  "number": 7522,
+  "fetched_at": "2026-10-21T17:53:07.202Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "34c2a1e1fdd2372eda5d3bb9201d265ef1679b15",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+    "tests/units/compiler/state_js.test.mjs"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7487,
+      "title": "Navigating before the websocket connects runs the previous page's on_load first (and a redirect from it hijacks the new page)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T19:20:55Z",
+      "can_push": false,
+      "commit_id": "be54f6c6f8c6cdd414d90b1fe602b6f349f8ea02"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T19:23:20Z",
+      "can_push": false,
+      "commit_id": "54b6b33f8b71bf99e78f76d918d7073740b46486"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T19:28:07Z",
+      "can_push": false,
+      "commit_id": "54b6b33f8b71bf99e78f76d918d7073740b46486"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Later navigation lacks coverage** The new mock calls `auth` and the `connect` handler together, so it cannot test navigation between those steps. The browser test also navigates before auth is sent. Neither covers `bootRoute` differing from the current route, where queued `on_load_internal` events must be kept. Split auth capture from the connection acknowledgement and add a test "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 146,
+    "actions_total": 142,
+    "by_state": {
+      "SUCCESS": 143,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the unit test defer the mock websocket handshake, navigate after `app.connect()`, then invoke auth so the old eager-auth implementation demonstrably fails.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Split auth capture from connection acknowledgement and test navigation between them so queued `on_load_internal` events for the new route are preserved.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:28:02Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=77322532\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-08T19:43:34Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 8.14%**\n\n\n`⚡ 2` improved benchmarks  \n`✅ 148` untouched benchm"
+    }
+  ],
+  "head_activity_at": "2026-10-08T19:33:07Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:20:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:20:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:23:20Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:28:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:28:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T19:28:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-08T19:43:34Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-08T19:33:07Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

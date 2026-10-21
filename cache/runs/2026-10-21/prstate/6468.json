@@ -1,0 +1,675 @@
+{
+  "number": 6468,
+  "fetched_at": "2026-10-21T17:44:15.586Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "294365776349b342bdf3630bb9cf419ccee86959",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/plugins/compiler.py",
+    "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+    "packages/reflex-components-dataeditor/pyproject.toml",
+    "packages/reflex-components-dataeditor/src/reflex_components_dataeditor/dataeditor.py",
+    "packages/reflex-components-internal/pyproject.toml",
+    "packages/reflex-components-radix/pyproject.toml",
+    "reflex/compiler/utils.py",
+    "tests/units/compiler/test_compiler_utils.py",
+    "tests/units/components/datadisplay/test_dataeditor.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6214,
+      "title": "Single-pass compiler: Make Component effectively immutable",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-05-07T15:59:47Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T21:18:47Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T21:22:30Z",
+      "can_push": false,
+      "commit_id": null
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T22:03:06Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 16,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "**`ref` silently dropped when `DataTable` has an `id`** `Component._render(props=None)` auto-populates `ref` via `self.ref` / `self.get_ref()` only in the `props is None` branch. `DataTable._render` now builds the props dict itself and passes it to `super()._render(props=props)`, which takes the `else` branch and skips that logic entirely. Any `DataTable` constructed with an explicit `id` would previously have had a React `ref` included in the rendered output; that ref is silently absent now.",
+        "path": "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+        "at": "2026-05-07T15:59:43Z"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "**Stub manifest not updated** This PR changes component definitions, including the new `copy_with` API, but does not update `pyi_hashes.json`. The repository requires running `uv run python scripts/make_pyi.py` after adding or modifying components and committing the updated hash manifest, not generated `.pyi` files. Please satisfy that requirement before merging. **Context Used:** CLAUDE.md (source)",
+        "path": "packages/reflex-base/src/reflex_base/components/component.py",
+        "at": "2026-09-30T21:18:44Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P1: The rebuilt `VarData` drops `field_dependencies` and `app_wraps`, so styling a Bare can make state-driven content stop tracking all of its source fields and can prevent required app wrappers from being collected. Preserve those fields when rebuilding the metadata, or replace the existing `VarData` while changing only `components`.",
+        "path": "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+        "at": "2026-09-30T21:22:30Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: `_literalize_static_ids` no longer handles components embedded in `Var` props. Rebuild the `VarData` and its `components` entries with literalized copies, as `Bare._add_style_recursive` does, so head components reachable through `Bare.contents` do not retain `useRef` hooks.",
+        "path": "reflex/compiler/utils.py",
+        "at": "2026-09-30T21:22:30Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: This derived prop becomes stale when a caller uses `copy_with()` to replace `columns` or `data`: the rendered `get_cell_content` keeps the old digest, but `add_hooks()` emits a function using the new digest, so the grid references an undeclared callback. Recompute `get_cell_content` whenever either input is copied, or make hook generation use the stored callback consistently.",
+        "path": "packages/reflex-components-dataeditor/src/reflex_components_dataeditor/dataeditor.py",
+        "at": "2026-09-30T21:22:30Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: This bypasses `_get_all_var_data()`, so styling stops reaching components carried by converted or cached/composed Vars when their components exist only in the merged metadata. Use `self.contents._get_all_var_data()` here so the recursive rebuild sees the same embedded components as the other Bare traversal methods.",
+        "path": "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+        "at": "2026-09-30T21:22:30Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: `referenced` matches `getCellContent:name`, but Reflex renders component props as JSX attributes (`key={value}`), so the compiled output contains `getCellContent={getData_...}` — the colon pattern matches nothing, `referenced` is empty, and `assert len(referenced) == 2` always fails. Match the attribute form (or both forms) instead of hard-coding the colon format, and confirm the pattern against real compiled output.",
+        "path": "tests/integration/test_data_editor.py",
+        "at": "2026-09-30T21:22:30Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: Switching `self.style.pop(\"padding\")` to `self.style.get(\"padding\")` changes rendered output: the padding key now stays in `self.style`, so `_merge_app_style` (component.py `new_style.update(self.style)`) and `format_as_emotion` emit it as a top-level rule for the component root *in addition* to the `& textarea` rule. Previously the pop removed it, so only the inner `& textarea` element was padded. If the root element wraps the textarea, both now receive padding (double spacing); at minimum the rendered style set for TextArea changes as a side effect of an immutability refactor. Build a cleaned style without the key and pass it through `copy_with`, as `DebounceInput.create` does with `cleaned_child_style`, so the padding stays immutable while the component root keeps its original (unpadded) style.",
+        "path": "packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_area.py",
+        "at": "2026-09-30T21:22:31Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: `super()._render()` serializes each concrete dataframe once before `remove_props` discards it, so rendering performs the full dataframe conversion twice. Pass the derived props to `_render` directly so only the serialized columns and data are converted.",
+        "path": "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+        "at": "2026-09-30T21:22:31Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: `RADIX_TO_LUCIDE_SIZE[props[\"size\"]]` raises a raw `KeyError` when a user passes any string that is not \"1\"-\"4\" (e.g. size=\"5\"), since the value is validated only by a dict lookup on this line. Raise a clear `ValueError` listing the accepted sizes instead of surfacing the incidental KeyError.",
+        "path": "packages/reflex-components-radix/src/reflex_components_radix/themes/components/icon_button.py",
+        "at": "2026-09-30T21:22:31Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P3: Update `pyi_hashes.json` by running `uv run python scripts/make_pyi.py`; this change adds a component API and the repository tracks generated-stub hashes in that manifest.",
+        "path": "packages/reflex-base/src/reflex_base/components/component.py",
+        "at": "2026-09-30T21:22:31Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P3: `result._get_all_hooks()` only descends into `children`, but `script` lives in the `content` prop, so this assertion passes for the unliteralized `head` as well and never exercises the copy path the test claims to check. Assert on refs instead, since `Component._get_all_refs()` does traverse components stored as props: `assert not result._get_all_refs()` alongside the existing render assertions (optionally `assert \"ref_prop_probe\" in head._get_all_refs()` on the original).",
+        "path": "tests/units/compiler/test_compiler_utils.py",
+        "at": "2026-09-30T21:22:31Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P3: This PR made `_add_style_recursive` return a new component via `copy_with` instead of mutating in place, but `compiler.py:1393` still discards the result: `hydrate_fallback._add_style_recursive(app.style)` now styles only a temporary copy that is thrown away, and the instance passed to `create_component_memo` is left un-styled. Capture the returned component here like the other converted call sites (or drop the call if the memo-compile path re-applies style).",
+        "path": "reflex/compiler/compiler.py",
+        "at": "2026-09-30T21:22:31Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P3: The docstring and test name claim the compiler's hook dedupe collapses the two editors to a single declaration, but the assertions only compare names and hook bodies; compiler dedupe is never exercised (no render/compile step), so the test passes even if dedupe breaks. Either assert the hook appears once when both grids compile into the same page, or reword the docstring/name to what is actually verified.",
+        "path": "tests/units/components/datadisplay/test_dataeditor.py",
+        "at": "2026-09-30T21:22:31Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P3: `copy_with` writes values straight into `__dict__`, so `handle_submit_unique_name` ends up as a raw `str` even though the field is declared `Var[str]`. Every other prop assignment goes through `_post_init`'s `LiteralVar.create` wrapping, so this value is the only prop on the form that is not a `Var`. Wrap it with `LiteralVar.create(...)` to keep the field consistent with its declared type and with any Var-based prop consumers.",
+        "path": "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+        "at": "2026-09-30T21:22:31Z"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P1: This dev pin breaks the internal package's auto-release path: `auto_release_internal.yml` bypasses materialization, while `publish.yml` rejects the pin with `check-dev-pins`, so this source-triggered release cannot publish. Use a published `reflex-base` floor for internal releases or add the release-time repinning step to the internal path before the gate.",
+        "path": "packages/reflex-components-internal/pyproject.toml",
+        "at": "2026-09-30T22:03:06Z"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "actions_total": 141,
+    "by_state": {
+      "FAILURE": 8,
+      "SUCCESS": 135,
+      "SKIPPED": 2
+    },
+    "names": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "performance-tests-gate",
+      "integration-app-harness-gate",
+      "docs-tests-gate",
+      "build-packages-gate",
+      "integration-tests-gate",
+      "reflex-init-in-docker-test-gate",
+      "check-min-deps (reflex-hosting-cli, 3.14)",
+      "check-min-deps (reflex-components-react-player, 3.14)",
+      "check-min-deps (reflex-components-sonner, 3.10)",
+      "check-min-deps (reflex-otel, 3.14)",
+      "check-min-deps (reflex-release, 3.10)",
+      "check-min-deps (reflex-components-markdown, 3.10)",
+      "check-min-deps (reflex-otel, 3.10)",
+      "check-min-deps (reflex-components-recharts, 3.10)",
+      "check-min-deps (reflex-components-plotly, 3.14)",
+      "check-min-deps (reflex-components-radix, 3.10)",
+      "check-min-deps (reflex-components-react-player, 3.10)",
+      "check-min-deps (reflex-docgen, 3.14)",
+      "check-min-deps (reflex-components-radix, 3.14)",
+      "check-min-deps (reflex-release, 3.14)",
+      "check-min-deps (reflex-docgen, 3.10)",
+      "check-min-deps (reflex-components-moment, 3.14)",
+      "check-min-deps (reflex-components-recharts, 3.14)",
+      "check-min-deps (reflex-components-internal, 3.10)",
+      "check-min-deps (reflex-hosting-cli, 3.10)",
+      "check-min-deps (reflex-components-gridjs, 3.14)",
+      "check-min-deps (reflex-components-dataeditor, 3.14)",
+      "check-min-deps (reflex-components-sonner, 3.14)",
+      "check-min-deps (reflex-components-lucide, 3.10)",
+      "check-min-deps (reflex-components-lucide, 3.14)",
+      "check-min-deps (reflex-components-core, 3.14)",
+      "check-min-deps (reflex-components-markdown, 3.14)",
+      "check-min-deps (reflex-components-moment, 3.10)",
+      "check-min-deps (reflex-components-gridjs, 3.10)",
+      "check-min-deps (reflex, 3.10)",
+      "check-min-deps (reflex-components-plotly, 3.10)",
+      "check-min-deps (reflex-build-sdk, 3.14)",
+      "check-min-deps (reflex-components-internal, 3.14)",
+      "check-min-deps (reflex-components-dataeditor, 3.10)",
+      "check-min-deps (reflex-base, 3.14)",
+      "check-min-deps (reflex-components-code, 3.14)",
+      "check-min-deps (reflex-components-code, 3.10)",
+      "check-min-deps (reflex-base, 3.10)",
+      "check-min-deps (reflex, 3.14)",
+      "check-min-deps (reflex-bench, 3.10)",
+      "check-min-deps (reflex-bench, 3.14)",
+      "check-min-deps (reflex-build-sdk, 3.10)",
+      "check-min-deps (reflex-components-core, 3.10)",
+      "codeql-gate",
+      "CodeQL",
+      "build (reflex-docgen, packages/reflex-docgen/)",
+      "build (reflex-site-shared, packages/reflex-site-shared/)",
+      "build (reflex-otel, packages/reflex-otel/)",
+      "build (reflex-release, packages/reflex-release/)",
+      "build (reflex-components-sonner, packages/reflex-components-sonner/)",
+      "build (reflex-hosting-cli, packages/reflex-hosting-cli/)",
+      "build (reflex-components-recharts, packages/reflex-components-recharts/)",
+      "build (reflex-components-dataeditor, packages/reflex-components-dataeditor/)",
+      "build (reflex-components-lucide, packages/reflex-components-lucide/)",
+      "build (reflex-components-moment, packages/reflex-components-moment/)",
+      "build (reflex-components-react-player, packages/reflex-components-react-player/)",
+      "build (reflex-components-radix, packages/reflex-components-radix/)",
+      "build (reflex-components-markdown, packages/reflex-components-markdown/)",
+      "build (reflex-base, packages/reflex-base/)",
+      "build (reflex-components-core, packages/reflex-components-core/)",
+      "build (reflex-components-internal, packages/reflex-components-internal/)",
+      "build (integrations-docs, packages/integrations-docs/)",
+      "build (reflex-bench, packages/reflex-bench/)",
+      "build (reflex-components-plotly, packages/reflex-components-plotly/)",
+      "build (reflex-components-code, packages/reflex-components-code/)",
+      "build (reflex-components-gridjs, packages/reflex-components-gridjs/)",
+      "build (reflex, .)",
+      "build (reflex-build-sdk, packages/reflex-build-sdk/)",
+      "build (hatch-reflex-pyi, packages/hatch-reflex-pyi/)",
+      "reflex-install-and-init",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.15)",
+      "example-counter-and-nba-proxy (ubuntu-latest, 3.14)",
+      "reflex-docs (3.12)",
+      "rx-shout-from-template",
+      "example-counter-and-nba-proxy (windows-latest, 3.14)",
+      "reflex-docs (3.11)",
+      "docs-tests",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (memory, 3.15)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "Greptile Review",
+      "unit-tests-macos",
+      "reflex-docs-macos",
+      "changes",
+      "Analyze (python)",
+      "Analyze (actions)",
+      "changes",
+      "discover",
+      "pre-commit",
+      "changelog",
+      "Run browser performance smoke",
+      "Run Lighthouse benchmark",
+      "size-budgets",
+      "playground-head",
+      "Run benchmarks",
+      "changes",
+      "changes",
+      "changes",
+      "playground-0.8.23",
+      "cubic · AI code reviewer"
+    ],
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "docs-tests-gate",
+      "integration-tests-gate",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "reflex-docs (3.12)",
+      "reflex-docs (3.11)",
+      "docs-tests"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13) / unit-tests-gate",
+      "job_ids": [
+        110117288373,
+        110123099329
+      ],
+      "run_id": 36782888174,
+      "cause": "tests/units/reflex_bench/collectors/test_phases.py::test_tree_phases_samples_a_real_tree failed because the measured phase list was ['frontend'] instead of the expected ['frontend', 'install']; unit-tests-gate then failed on unit-tests=failure.",
+      "evidence": "The current-head job log reports this single pytest failure and exit code 1; the gate log names unit-tests=failure as its blocking dependency."
+    },
+    {
+      "check": "docs-tests, reflex-docs (3.11/3.12), docs-tests-gate, integration-tests-gate",
+      "job_ids": [
+        110117280719,
+        110117283151,
+        110117283188,
+        110120684405,
+        110118218455
+      ],
+      "run_ids": [
+        36782888100,
+        36782888093
+      ],
+      "cause": "The immutability change freezes WrappedAgGrid before reflex-enterprise's create path assigns _modules, raising AttributeError: Cannot set '_modules' on frozen WrappedAgGrid. The docs suite also finds test_repeated_page_evaluation_isolates_compiler_mutations trying to append to tuple children.",
+      "evidence": "The current-head docs-tests log shows 9 failures: eight enterprise AgGrid pages fail on the frozen _modules assignment and the page-plan test fails with AttributeError: 'tuple' object has no attribute 'append'. Both reflex-docs jobs crash on the same frozen _modules assignment; their gates propagate those failures."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_state_access[get_handler] regressed from 82 ms to 85.8 ms, a 4.42% efficiency loss.",
+      "evidence": "The current-head check output flags one regressed benchmark and warns that the comparison used different runtime environments, which may affect accuracy."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "**`ref` silently dropped when `DataTable` has an `id`** `Component._render(props=None)` auto-populates `ref` via `self.ref` / `self.get_ref()` only in the `props is None` branch. `DataTable._render` now builds the props dict itself and passes it to `super()._render(props=props)`, which takes the `else` branch and skips that logic entirely. Any `DataTable` constructed with an explicit `id` would previously have had a React `ref` included in the rendered output; that ref is silently absent now.",
+      "addressed": false,
+      "path": "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Stub manifest not updated** This PR changes component definitions, including the new `copy_with` API, but does not update `pyi_hashes.json`. The repository requires running `uv run python scripts/make_pyi.py` after adding or modifying components and committing the updated hash manifest, not generated `.pyi` files. Please satisfy that requirement before merging. **Context Used:** CLAUDE.md (source)",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/components/component.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P1: The rebuilt `VarData` drops `field_dependencies` and `app_wraps`, so styling a Bare can make state-driven content stop tracking all of its source fields and can prevent required app wrappers from being collected. Preserve those fields when rebuilding the metadata, or replace the existing `VarData` while changing only `components`.",
+      "addressed": false,
+      "path": "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: `_literalize_static_ids` no longer handles components embedded in `Var` props. Rebuild the `VarData` and its `components` entries with literalized copies, as `Bare._add_style_recursive` does, so head components reachable through `Bare.contents` do not retain `useRef` hooks.",
+      "addressed": false,
+      "path": "reflex/compiler/utils.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: This derived prop becomes stale when a caller uses `copy_with()` to replace `columns` or `data`: the rendered `get_cell_content` keeps the old digest, but `add_hooks()` emits a function using the new digest, so the grid references an undeclared callback. Recompute `get_cell_content` whenever either input is copied, or make hook generation use the stored callback consistently.",
+      "addressed": false,
+      "path": "packages/reflex-components-dataeditor/src/reflex_components_dataeditor/dataeditor.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: This bypasses `_get_all_var_data()`, so styling stops reaching components carried by converted or cached/composed Vars when their components exist only in the merged metadata. Use `self.contents._get_all_var_data()` here so the recursive rebuild sees the same embedded components as the other Bare traversal methods.",
+      "addressed": false,
+      "path": "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: `referenced` matches `getCellContent:name`, but Reflex renders component props as JSX attributes (`key={value}`), so the compiled output contains `getCellContent={getData_...}` — the colon pattern matches nothing, `referenced` is empty, and `assert len(referenced) == 2` always fails. Match the attribute form (or both forms) instead of hard-coding the colon format, and confirm the pattern against real compiled output.",
+      "addressed": false,
+      "path": "tests/integration/test_data_editor.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: Switching `self.style.pop(\"padding\")` to `self.style.get(\"padding\")` changes rendered output: the padding key now stays in `self.style`, so `_merge_app_style` (component.py `new_style.update(self.style)`) and `format_as_emotion` emit it as a top-level rule for the component root *in addition* to the `& textarea` rule. Previously the pop removed it, so only the inner `& textarea` element was padded. If the root element wraps the textarea, both now receive padding (double spacing); at minimum the rendered style set for TextArea changes as a side effect of an immutability refactor. Build a cleaned style without the key and pass it through `copy_with`, as `DebounceInput.create` does with `cleaned_child_style`, so the padding stays immutable while the component root keeps its original (unpadded) style.",
+      "addressed": false,
+      "path": "packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_area.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: `super()._render()` serializes each concrete dataframe once before `remove_props` discards it, so rendering performs the full dataframe conversion twice. Pass the derived props to `_render` directly so only the serialized columns and data are converted.",
+      "addressed": false,
+      "path": "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: `RADIX_TO_LUCIDE_SIZE[props[\"size\"]]` raises a raw `KeyError` when a user passes any string that is not \"1\"-\"4\" (e.g. size=\"5\"), since the value is validated only by a dict lookup on this line. Raise a clear `ValueError` listing the accepted sizes instead of surfacing the incidental KeyError.",
+      "addressed": false,
+      "path": "packages/reflex-components-radix/src/reflex_components_radix/themes/components/icon_button.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: Update `pyi_hashes.json` by running `uv run python scripts/make_pyi.py`; this change adds a component API and the repository tracks generated-stub hashes in that manifest.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/components/component.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: `result._get_all_hooks()` only descends into `children`, but `script` lives in the `content` prop, so this assertion passes for the unliteralized `head` as well and never exercises the copy path the test claims to check. Assert on refs instead, since `Component._get_all_refs()` does traverse components stored as props: `assert not result._get_all_refs()` alongside the existing render assertions (optionally `assert \"ref_prop_probe\" in head._get_all_refs()` on the original).",
+      "addressed": false,
+      "path": "tests/units/compiler/test_compiler_utils.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: This PR made `_add_style_recursive` return a new component via `copy_with` instead of mutating in place, but `compiler.py:1393` still discards the result: `hydrate_fallback._add_style_recursive(app.style)` now styles only a temporary copy that is thrown away, and the instance passed to `create_component_memo` is left un-styled. Capture the returned component here like the other converted call sites (or drop the call if the memo-compile path re-applies style).",
+      "addressed": false,
+      "path": "reflex/compiler/compiler.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: The docstring and test name claim the compiler's hook dedupe collapses the two editors to a single declaration, but the assertions only compare names and hook bodies; compiler dedupe is never exercised (no render/compile step), so the test passes even if dedupe breaks. Either assert the hook appears once when both grids compile into the same page, or reword the docstring/name to what is actually verified.",
+      "addressed": false,
+      "path": "tests/units/components/datadisplay/test_dataeditor.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: `copy_with` writes values straight into `__dict__`, so `handle_submit_unique_name` ends up as a raw `str` even though the field is declared `Var[str]`. Every other prop assignment goes through `_post_init`'s `LiteralVar.create` wrapping, so this value is the only prop on the form that is not a `Var`. Wrap it with `LiteralVar.create(...)` to keep the field consistent with its declared type and with any Var-based prop consumers.",
+      "addressed": false,
+      "path": "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P1: This dev pin breaks the internal package's auto-release path: `auto_release_internal.yml` bypasses materialization, while `publish.yml` rejects the pin with `check-dev-pins`, so this source-triggered release cannot publish. Use a published `reflex-base` floor for internal releases or add the release-time repinning step to the internal path before the gate.",
+      "addressed": false,
+      "path": "packages/reflex-components-internal/pyproject.toml",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:35Z",
+      "excerpt": "Confidence Score: 4/5 **[High risk]** Makes component instances immutable after creation\\. The PR is not ready to merge until the required component stub hash manifest is updated. Findings 1. &nbsp;**ref silently dropped when DataTable has an id** ▶ 2. &nbsp;**Stub manifest not updated** ▶ Summary The PR freezes create"
+    },
+    {
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-07T15:59:54Z",
+      "excerpt": "## Merging this PR will **degrade performance by 4.42%** `❌ 1` regressed benchmark `✅ 146` untouched benchmarks `⏩ 17` skipped benchmarks[^skipped] > [!WARNING] > Please fix the performance issues or acknowledge them on CodSpeed. ### Performance Changes | | Benchmark | `BASE` | `HEAD` | Efficiency | | --- | --------- |"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:19:08Z",
+      "excerpt": "Comments Outside Diff These findings could not be posted inline. - &nbsp;**Match comparison can raise** `packages/reflex-base/src/reflex_base/components/component.py:186` ▶ Comparing two separately created `Match` components can raise `VarTypeError` instead of returning a boolean. Their `match_cases` contain tuples wit"
+    }
+  ],
+  "head_activity_at": "2026-09-30T21:59:11Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-07T15:59:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:18:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:18:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:19:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T22:03:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T22:03:06Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-09-30T21:59:11Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

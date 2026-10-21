@@ -1,0 +1,91 @@
+{
+  "number": 7602,
+  "fetched_at": "2026-10-21T17:49:11Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "3d43f3c9c5ec56fda33c70cb12956878555082b0",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7600,
+      "title": "Websocket connect fails when a request header value is not valid UTF-8",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T13:51:47Z",
+      "can_push": false,
+      "commit_id": "d54e9873e92e64017524ae38cf787925ecfc68aa"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 169,
+    "actions_total": 165,
+    "by_state": {
+      "SUCCESS": 165,
+      "FAILURE": 1,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 119170369545,
+      "cause": "External CodSpeed output reports tests/benchmarks/test_routes.py::test_route_argument_extraction regressed 4.4%, from 116.9 us to 122.2 us; 147 benchmarks were unchanged, and CodSpeed warns that the base and head used different runtime environments. All 165 GitHub Actions checks succeeded."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-19T13:51:47Z",
+      "excerpt": "No issues found across 3 files."
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-19T13:53:06Z",
+      "excerpt": "Greptile review summary."
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-19T13:57:04Z",
+      "excerpt": "Merging this PR will degrade performance by 4.4%; test_route_argument_extraction changed from 116.9 us to 122.2 us."
+    }
+  ],
+  "head_activity_at": "2026-10-21T10:18:20Z",
+  "interaction_events": [
+    {"kind": "review", "by": "cubic-dev-ai[bot]", "association": "CONTRIBUTOR", "at": "2026-10-19T13:51:47Z", "state": "commented"},
+    {"kind": "comment", "by": "greptile-apps[bot]", "association": "CONTRIBUTOR", "at": "2026-10-19T13:53:06Z"},
+    {"kind": "comment", "by": "codspeed[bot]", "association": "NONE", "at": "2026-10-19T13:57:04Z"}
+  ],
+  "last_author_activity_at": "2026-10-21T10:18:20Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

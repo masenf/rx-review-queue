@@ -1,0 +1,932 @@
+{
+  "run": {
+    "date": "2026-10-21",
+    "started_at": "2026-10-21 10:37 PDT",
+    "runner": "local Codex desktop",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "authenticated local run"
+  },
+  "stats": {
+    "open": 112,
+    "nondraft": 80,
+    "drafts": 32,
+    "counting_approvals": 4,
+    "fast_lane": 6,
+    "one_fix_away": 35,
+    "waiting_on_maintainer": 8,
+    "never_maintainer_review": 42,
+    "fork_ci_unrun": 25,
+    "never_human_reviewed": 42
+  },
+  "attention": [
+    "Review #7614, #7594, and #7558 first: they offer the strongest combination of user impact, clean merge state, tests, and low review cost.",
+    "Use a short admin pass to approve workflows for #7616, #7621, #7625, #7626, and other clean fork PRs; they cannot earn green status until Actions runs.",
+    "#7624 is high-impact but remains author-owned: eight unresolved threads and broad missing-pydantic matrix failures make it a poor use of limited review time today.",
+    "#7628 is already approved with auto-merge enabled; monitor its 11 pending matrix jobs rather than spending another review block.",
+    "#7570 is clean and already approved; complete its final merge/check decision instead of spending another full review block."
+  ],
+  "top15": [
+    {
+      "number": 7614,
+      "score": 9.9,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 0 days for maintainer action.",
+      "evidence": [
+        "8 files (+92/-12), 2 ahead / 8 behind main; tests included.",
+        "Local merge is clean; 171 GitHub Actions checks; 0 unresolved of 4 review threads.",
+        "Linked issue #7601 filed by FarhanAliRaza."
+      ],
+      "blocker": "First maintainer review and approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "no maintainer review",
+        "issue #7601"
+      ],
+      "override_reason": "Security-sensitive public behavior change: prioritize the compact, green fix even though it is newer than the other waiting PRs."
+    },
+    {
+      "number": 7594,
+      "score": 9.8,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 3 days for maintainer action.",
+      "evidence": [
+        "4 files (+108/-6), 2 ahead / 17 behind main; tests included.",
+        "Local merge is clean; 143 GitHub Actions checks; 0 unresolved of 0 review threads.",
+        "Linked issue #7099 filed by masenf."
+      ],
+      "blocker": "First maintainer review and approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "no maintainer review",
+        "issue #7099"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7558,
+      "score": 9.7,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 7 days for maintainer action.",
+      "evidence": [
+        "3 files (+225/-23), 9 ahead / 23 behind main; tests included.",
+        "Local merge is clean; 143 GitHub Actions checks; 0 unresolved of 8 review threads.",
+        "Linked issue #7509 filed by masenf."
+      ],
+      "blocker": "First maintainer review and approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "no maintainer review",
+        "issue #7509"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7548,
+      "score": 9.6,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 9 days for maintainer action.",
+      "evidence": [
+        "8 files (+93/-9), 9 ahead / 17 behind main; tests included.",
+        "Local merge is clean; 146 GitHub Actions checks; 0 unresolved of 5 review threads.",
+        "Linked issue #7536 filed by FarhanAliRaza."
+      ],
+      "blocker": "First maintainer review and approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "no maintainer review",
+        "issue #7536"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7409,
+      "score": 9.5,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 17 days for maintainer action.",
+      "evidence": [
+        "6 files (+242/-6), 1 ahead / 143 behind main; tests included.",
+        "Local merge is clean; 144 GitHub Actions checks; 0 unresolved of 0 review threads.",
+        "Linked issue #7244 filed by masenf."
+      ],
+      "blocker": "First maintainer review and approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "no maintainer review",
+        "issue #7244"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7547,
+      "score": 9.4,
+      "summary": "Clean, full-green, tested, thread-free, and issue-backed; every recorded review ask is addressed on the current head.",
+      "evidence": [
+        "4 files (+137/-20), 7 ahead / 14 behind main; tests included.",
+        "Local merge is clean; 146 GitHub Actions checks; 0 unresolved of 4 review threads.",
+        "Linked issue #7488 filed by masenf."
+      ],
+      "blocker": "Approve the current head or leave an explicit follow-up.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7488"
+      ],
+      "override_reason": "Promoted after audit: no open thread or unaddressed ask remains."
+    },
+    {
+      "number": 7534,
+      "score": 9.3,
+      "summary": "Clean, full-green, tested, thread-free, and waiting 12 days for maintainer action.",
+      "evidence": [
+        "4 files (+1024/-112), 19 ahead / 7 behind main; tests included.",
+        "Local merge is clean; 165 GitHub Actions checks; 0 unresolved of 5 review threads."
+      ],
+      "blocker": "First maintainer review and approval.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer",
+        "no maintainer review"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7595,
+      "score": 9.2,
+      "summary": "Clean, full-green, tested, and issue-backed; one outdated automated-review thread is the only remaining review item.",
+      "evidence": [
+        "3 files (+123/-0), 2 ahead / 17 behind main; tests included.",
+        "Local merge is clean; 143 GitHub Actions checks; 1 unresolved of 3 review threads.",
+        "Linked issue #6828 filed by harsh21234i."
+      ],
+      "blocker": "Resolve the outdated bot thread while reviewing, then approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "no maintainer review",
+        "issue #6828"
+      ],
+      "override_reason": "Near-mergeable: one stale automated thread can be cleared during the review pass."
+    },
+    {
+      "number": 7455,
+      "score": 9.1,
+      "summary": "Clean, full-green, tested, thread-free, and waiting 0 days for maintainer action.",
+      "evidence": [
+        "9 files (+1218/-20), 19 ahead / 8 behind main; tests included.",
+        "Local merge is clean; 165 GitHub Actions checks; 0 unresolved of 12 review threads."
+      ],
+      "blocker": "Re-review the latest author update and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7570,
+      "score": 9.0,
+      "summary": "Clean, full-green, thread-free, and already approved on the current head.",
+      "evidence": [
+        "10 files (+1006/-5), 6 ahead / 7 behind main; no unit tests detected.",
+        "Local merge is clean; 164 GitHub Actions checks; 0 unresolved of 18 review threads."
+      ],
+      "blocker": "Complete the final merge/check decision.",
+      "whose_move": "maintainer",
+      "chips": [],
+      "override_reason": "Already approved: this is a final decision, not another full review."
+    },
+    {
+      "number": 7379,
+      "score": 8.9,
+      "summary": "Clean, full-green, tested, thread-free, and waiting 19 days for maintainer action.",
+      "evidence": [
+        "19 files (+1869/-2), 14 ahead / 156 behind main; no unit tests detected.",
+        "Local merge is clean; 144 GitHub Actions checks; 0 unresolved of 21 review threads."
+      ],
+      "blocker": "Re-review the latest author update and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "waiting on maintainer"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7573,
+      "score": 8.8,
+      "summary": "Clean, thread-free, tested, and already approved on the current head; the only underlying failure is outside the Tailwind diff.",
+      "evidence": [
+        "3 files (+23/-1), 2 ahead / 14 behind main; tests included.",
+        "Local merge is clean; 140 GitHub Actions checks; 0 unresolved of 0 review threads."
+      ],
+      "blocker": "Rerun the off-path reflex_workflow test failure; the current-head approval already counts.",
+      "whose_move": "maintainer",
+      "chips": [],
+      "override_reason": "Cheap unblock: preserve the existing approval and rerun the unrelated failing job."
+    },
+    {
+      "number": 7603,
+      "score": 8.7,
+      "summary": "Clean and tested, but the fork Actions suite has not run.",
+      "evidence": [
+        "4 files (+157/-1), 2 ahead / 14 behind main; tests included.",
+        "Local merge is clean; 0 GitHub Actions checks; 0 unresolved of 1 review threads.",
+        "Linked issue #7499 filed by masenf."
+      ],
+      "blocker": "Approve workflows so the full Actions suite can run.",
+      "whose_move": "maintainer",
+      "chips": [
+        "no maintainer review",
+        "issue #7499"
+      ],
+      "override_reason": "Cheap maintainer unblock: approve workflows before spending a full review block."
+    },
+    {
+      "number": 7616,
+      "score": 8.6,
+      "summary": "Clean and tested, but the fork Actions suite has not run.",
+      "evidence": [
+        "3 files (+140/-0), 2 ahead / 8 behind main; tests included.",
+        "Local merge is clean; 0 GitHub Actions checks; 0 unresolved of 1 review threads.",
+        "Linked issue #3989 filed by Lendemor."
+      ],
+      "blocker": "Approve workflows so the full Actions suite can run.",
+      "whose_move": "maintainer",
+      "chips": [
+        "no maintainer review",
+        "issue #3989"
+      ],
+      "override_reason": "Cheap maintainer unblock: approve workflows before spending a full review block."
+    },
+    {
+      "number": 7621,
+      "score": 8.5,
+      "summary": "Clean and tested, but the fork Actions suite has not run.",
+      "evidence": [
+        "3 files (+278/-1), 5 ahead / 7 behind main; tests included.",
+        "Local merge is clean; 0 GitHub Actions checks; 0 unresolved of 2 review threads.",
+        "Linked issue #7620 filed by FarhanAliRaza."
+      ],
+      "blocker": "Approve workflows so the full Actions suite can run.",
+      "whose_move": "maintainer",
+      "chips": [
+        "no maintainer review",
+        "issue #7620"
+      ],
+      "override_reason": "Cheap maintainer unblock: approve workflows before spending a full review block."
+    }
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {
+        "number": 7614,
+        "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 0 days for maintainer action.",
+        "blocker": "First maintainer review and approval."
+      },
+      {
+        "number": 7594,
+        "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 3 days for maintainer action.",
+        "blocker": "First maintainer review and approval."
+      },
+      {
+        "number": 7558,
+        "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 7 days for maintainer action.",
+        "blocker": "First maintainer review and approval."
+      },
+      {
+        "number": 7548,
+        "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 9 days for maintainer action.",
+        "blocker": "First maintainer review and approval."
+      },
+      {
+        "number": 7409,
+        "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 17 days for maintainer action.",
+        "blocker": "First maintainer review and approval."
+      },
+      {
+        "number": 7534,
+        "summary": "Clean, full-green, tested, thread-free, and waiting 12 days for maintainer action.",
+        "blocker": "First maintainer review and approval."
+      },
+      {
+        "number": 7455,
+        "summary": "Clean, full-green, tested, thread-free, and waiting 0 days for maintainer action.",
+        "blocker": "Re-review the latest author update and approve."
+      },
+      {
+        "number": 7379,
+        "summary": "Clean, full-green, tested, thread-free, and waiting 19 days for maintainer action.",
+        "blocker": "Re-review the latest author update and approve."
+      },
+      {
+        "number": 7595,
+        "summary": "Locally clean with 1 unresolved review threads.",
+        "blocker": "Dismiss or resolve the stale review state, then approve."
+      },
+      {
+        "number": 7547,
+        "summary": "Locally clean with current review state collected.",
+        "blocker": "Complete maintainer review and approve."
+      },
+      {
+        "number": 7603,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7616,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7625,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7621,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7564,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7604,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7626,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7276,
+        "summary": "Locally clean with 2 unresolved review threads.",
+        "blocker": "Dismiss or resolve the stale review state, then approve."
+      },
+      {
+        "number": 7592,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7599,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7416,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7575,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 6688,
+        "summary": "Locally clean with 1 unresolved review threads.",
+        "blocker": "Dismiss or resolve the stale review state, then approve."
+      },
+      {
+        "number": 7408,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7574,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7570,
+        "summary": "Clean with a current-head counting approval.",
+        "blocker": "Complete the final merge/check decision."
+      },
+      {
+        "number": 6126,
+        "summary": "Clean and tested, but the fork Actions suite has not run.",
+        "blocker": "Approve workflows so the full Actions suite can run."
+      },
+      {
+        "number": 7573,
+        "summary": "Clean with a current-head counting approval.",
+        "blocker": "Complete the final merge/check decision."
+      }
+    ],
+    "author": [
+      {
+        "number": 7590,
+        "summary": "Locally clean with 2 unresolved review threads.",
+        "blocker": "Address or resolve the open review findings before approval."
+      },
+      {
+        "number": 7323,
+        "summary": "Locally clean with 1 unresolved review threads.",
+        "blocker": "Address or resolve the open review findings before approval."
+      },
+      {
+        "number": 7500,
+        "summary": "Locally clean with 2 unresolved review threads.",
+        "blocker": "Address or resolve the open review findings before approval."
+      },
+      {
+        "number": 7565,
+        "summary": "Locally clean with 1 unresolved review threads.",
+        "blocker": "Address or resolve the open review findings before approval."
+      },
+      {
+        "number": 7065,
+        "summary": "Locally clean with 0 unresolved review threads.",
+        "blocker": "Address or resolve the open review findings before approval."
+      },
+      {
+        "number": 7413,
+        "summary": "Locally clean and tested, but current checks need adjudication.",
+        "blocker": "The fresh check output reports one regression: test_on_event_router_data increased from 1.9 ms to 2.1 ms (-8.87% efficiency), with 147 benchmarks unchanged. CodSpeed also warns that the comparison used different runtime environments and that nine benchmarks spent significant time in system calls."
+      },
+      {
+        "number": 7361,
+        "summary": "Locally clean with 2 unresolved review threads.",
+        "blocker": "Address or resolve the open review findings before approval."
+      }
+    ]
+  },
+  "fast_lane": [
+    {
+      "number": 7614,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 0 days for maintainer action."
+    },
+    {
+      "number": 7594,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 3 days for maintainer action."
+    },
+    {
+      "number": 7558,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 7 days for maintainer action."
+    },
+    {
+      "number": 7548,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 9 days for maintainer action."
+    },
+    {
+      "number": 7409,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 17 days for maintainer action."
+    },
+    {
+      "number": 7547,
+      "summary": "Locally clean with current review state collected."
+    }
+  ],
+  "waiting_on_maintainer": [
+    {
+      "number": 7614,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 0 days for maintainer action."
+    },
+    {
+      "number": 7594,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 3 days for maintainer action."
+    },
+    {
+      "number": 7558,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 7 days for maintainer action."
+    },
+    {
+      "number": 7548,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 9 days for maintainer action."
+    },
+    {
+      "number": 7409,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 17 days for maintainer action."
+    },
+    {
+      "number": 7534,
+      "summary": "Clean, full-green, tested, thread-free, and waiting 12 days for maintainer action."
+    },
+    {
+      "number": 7455,
+      "summary": "Clean, full-green, tested, thread-free, and waiting 0 days for maintainer action."
+    },
+    {
+      "number": 7379,
+      "summary": "Clean, full-green, tested, thread-free, and waiting 19 days for maintainer action."
+    }
+  ],
+  "never_maintainer_review": [
+    {
+      "number": 7594,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 3 days for maintainer action."
+    },
+    {
+      "number": 7548,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 9 days for maintainer action."
+    },
+    {
+      "number": 7558,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 7 days for maintainer action."
+    },
+    {
+      "number": 7409,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 17 days for maintainer action."
+    },
+    {
+      "number": 7614,
+      "summary": "Clean, full-green, tested, thread-free, issue-backed, and waiting 0 days for maintainer action."
+    },
+    {
+      "number": 7595,
+      "summary": "Locally clean with 1 unresolved review threads."
+    },
+    {
+      "number": 7534,
+      "summary": "Clean, full-green, tested, thread-free, and waiting 12 days for maintainer action."
+    },
+    {
+      "number": 7590,
+      "summary": "Locally clean with 2 unresolved review threads."
+    },
+    {
+      "number": 7603,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7616,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7625,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7621,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7564,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7604,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7626,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7592,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7599,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7602,
+      "summary": "Locally clean and tested, but current checks need adjudication."
+    },
+    {
+      "number": 7575,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7412,
+      "summary": "Locally clean and tested, but current checks need adjudication."
+    },
+    {
+      "number": 7591,
+      "summary": "Locally clean and tested, but current checks need adjudication."
+    },
+    {
+      "number": 7574,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 6873,
+      "summary": "Locally clean and tested, but current checks need adjudication."
+    },
+    {
+      "number": 7451,
+      "summary": "Locally conflicting with current review state collected."
+    },
+    {
+      "number": 7522,
+      "summary": "Locally conflicting with 1 unresolved review threads."
+    },
+    {
+      "number": 7500,
+      "summary": "Locally clean with 2 unresolved review threads."
+    },
+    {
+      "number": 7565,
+      "summary": "Locally clean with 1 unresolved review threads."
+    },
+    {
+      "number": 7065,
+      "summary": "Locally clean with 0 unresolved review threads."
+    },
+    {
+      "number": 7578,
+      "summary": "Locally clean with 4 unresolved review threads."
+    },
+    {
+      "number": 7361,
+      "summary": "Locally clean with 2 unresolved review threads."
+    },
+    {
+      "number": 7436,
+      "summary": "Locally conflicting with 1 unresolved review threads."
+    },
+    {
+      "number": 7415,
+      "summary": "Conflicting with current main and red checks."
+    },
+    {
+      "number": 7624,
+      "summary": "Locally clean with 8 unresolved review threads."
+    },
+    {
+      "number": 7362,
+      "summary": "Locally clean with 3 unresolved review threads."
+    },
+    {
+      "number": 7448,
+      "summary": "Locally conflicting with 6 unresolved review threads."
+    },
+    {
+      "number": 7540,
+      "summary": "Conflicting with current main and red checks."
+    },
+    {
+      "number": 7007,
+      "summary": "Locally conflicting with 9 unresolved review threads."
+    },
+    {
+      "number": 7337,
+      "summary": "Locally conflicting with 1 unresolved review threads."
+    },
+    {
+      "number": 7233,
+      "summary": "Locally conflicting with 3 unresolved review threads."
+    },
+    {
+      "number": 7364,
+      "summary": "Locally conflicting with 3 unresolved review threads."
+    },
+    {
+      "number": 6468,
+      "summary": "Locally conflicting with 16 unresolved review threads."
+    },
+    {
+      "number": 7363,
+      "summary": "Locally conflicting with 4 unresolved review threads."
+    }
+  ],
+  "closure": [
+    {
+      "number": 6125,
+      "summary": "Still conflicting, 872 behind main, 1 unresolved threads, and no full CI.",
+      "keep_issue": 5830
+    },
+    {
+      "number": 6490,
+      "summary": "Still conflicting, 638 behind main, 1 unresolved threads, and no credible merge path yet.",
+      "keep_issue": null
+    },
+    {
+      "number": 7040,
+      "summary": "Still conflicting, 346 behind main, 3 unresolved threads, and no full CI.",
+      "keep_issue": 7034
+    }
+  ],
+  "stacks": [
+    {
+      "chain": [
+        7361,
+        7362,
+        7363,
+        7364
+      ],
+      "note": "Review root to tip; measurements shown against main."
+    },
+    {
+      "chain": [
+        7314,
+        7315
+      ],
+      "note": "Review root to tip; measurements shown against main."
+    },
+    {
+      "chain": [
+        6100,
+        7337
+      ],
+      "note": "Review root to tip; measurements shown against main."
+    }
+  ],
+  "conflict_clusters": [
+    {
+      "prs": [
+        6100,
+        6768,
+        7036,
+        7056,
+        7314,
+        7315,
+        7337,
+        7381
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/vars/base.py"
+      ],
+      "note": "8 ready PRs conflict in packages/reflex-base/src/reflex_base/vars/base.py."
+    },
+    {
+      "prs": [
+        6100,
+        6932,
+        7315,
+        7337,
+        7363,
+        7364,
+        7522
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+      ],
+      "note": "7 ready PRs conflict in packages/reflex-base/src/reflex_base/.templates/web/utils/state.js."
+    },
+    {
+      "prs": [
+        6840,
+        6853,
+        7036,
+        7314,
+        7315
+      ],
+      "files": [
+        "tests/units/test_state.py"
+      ],
+      "note": "5 ready PRs conflict in tests/units/test_state.py."
+    },
+    {
+      "prs": [
+        7007,
+        7040,
+        7314,
+        7315,
+        7448
+      ],
+      "files": [
+        "uv.lock"
+      ],
+      "note": "5 ready PRs conflict in uv.lock."
+    },
+    {
+      "prs": [
+        7313,
+        7314,
+        7315,
+        7415
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py"
+      ],
+      "note": "4 ready PRs conflict in packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py."
+    }
+  ],
+  "structural": [
+    {
+      "number": 7624,
+      "summary": "Locally clean with 8 unresolved review threads."
+    },
+    {
+      "number": 7379,
+      "summary": "Clean, full-green, tested, thread-free, and waiting 19 days for maintainer action."
+    },
+    {
+      "number": 7408,
+      "summary": "Clean and tested, but the fork Actions suite has not run."
+    },
+    {
+      "number": 7583,
+      "summary": "Locally conflicting with 0 unresolved review threads."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Strictly waiting on maintainer: 8",
+      "detail": "#7614 (0d), #7594 (3d), #7558 (7d), #7548 (9d), #7409 (17d), #7534 (12d), #7455 (0d), #7379 (19d) are clean, full-green, and free of unresolved review threads."
+    },
+    {
+      "title": "Counting approvals repo-wide: 4",
+      "detail": "#7315, #7570, #7573, #7628 have a current-head peer approval."
+    },
+    {
+      "title": "No maintainer interaction: 42 non-draft PRs",
+      "detail": "The dedicated tab contains every ready PR with no peer human MEMBER, OWNER, or COLLABORATOR comment, review, or inline reply; author interaction does not count."
+    },
+    {
+      "title": "Never reviewed by another human: 42",
+      "detail": "#6468, #6873, #7007, #7065, #7233, #7337, #7361, #7362, #7363, #7364, #7409, #7412, #7415, #7436, #7448, #7451, #7500, #7522, #7534, #7540, #7548, #7558, #7564, #7565, #7574, #7575, #7578, #7590, #7591, #7592, #7594, #7595, #7599, #7602, #7603, #7604, #7614, #7616, #7621, #7624, #7625, #7626."
+    },
+    {
+      "title": "Fork PRs whose full CI never ran: 25",
+      "detail": "#6100, #6125, #6126, #6840, #6853, #6876, #6932, #7036, #7040, #7144, #7337, #7408, #7416, #7436, #7564, #7574, #7575, #7592, #7599, #7603, #7604, #7616, #7621, #7625, #7626."
+    },
+    {
+      "title": "Requested labels applied: 12 additions",
+      "detail": "Added Bug to 7 PRs, Documentation to 2, Perf to 1, and breaking to 2 after auditing all 113 open PRs, drafts included."
+    },
+    {
+      "title": "Author concentration",
+      "detail": "Top non-draft authors: FarhanAliRaza (14), harsh21234i (12), masenf (12), benedikt-bartscher (7), kr1shna-exe (6), quotentiroler (3), timon0305 (2), Alek99 (2), flcrom (2), sansynx (2)."
+    },
+    {
+      "title": "Conflict pressure",
+      "detail": "32 of 80 non-draft PRs conflict with today\u2019s main."
+    },
+    {
+      "title": "Red or cancelled checks: 26 PRs",
+      "detail": "Every affected PR has a current log-derived finding; cancelled superseded jobs are distinguished from underlying test failures."
+    }
+  ],
+  "delta": {
+    "previous_run": "2026-10-19",
+    "merged": [
+      7113,
+      7443,
+      7453,
+      7551,
+      7580,
+      7585,
+      7586,
+      7588
+    ],
+    "closed": [
+      {
+        "number": 7597,
+        "note": "closed without merge"
+      }
+    ],
+    "opened": [
+      7614,
+      7616,
+      7621,
+      7624,
+      7625,
+      7626,
+      7628
+    ],
+    "entered_top15": [
+      7614,
+      7455,
+      7570,
+      7379,
+      7616,
+      7621
+    ],
+    "left_top15": [
+      7602,
+      7443,
+      7585,
+      7113,
+      7551,
+      7604
+    ],
+    "newly_blocked": [],
+    "newly_unblocked": [],
+    "draft_flips": [
+      {
+        "number": 6116,
+        "note": "ready \u2192 draft"
+      }
+    ]
+  },
+  "method": {
+    "notes": [
+      "Authenticated as masenf through the GitHub app connector; the final listing contains 112 open PRs and all 80 non-drafts have fresh review/check state and local measurements.",
+      "Review and CI state came from the authenticated GitHub app connector and code-review checks; local git merge-tree supplied authoritative conflict status.",
+      "Git measurements and merge-tree use main 759eb60b8a3846c9a6b411005ff20f38c225f32a; local merge-tree is authoritative for clean versus conflicting.",
+      "Waiting on maintainer requires a clean local merge, SUCCESS with at least 60 GitHub Actions checks, zero unresolved review threads, and newer author activity; PR creation is the baseline when no peer maintainer has interacted.",
+      "Every red or cancelled PR has a current log-derived finding; superseded cancelled jobs with successful same-head replacements are not treated as substantive failures.",
+      "The label audit covered all 113 open PRs, drafts included; documentation requires real docs paths, while breaking labels require a current public-contract change."
+    ],
+    "audit_corrections": [
+      "Recomputed peer-maintainer interaction from event roles; collector mismatches corrected: none.",
+      "Recomputed strict waiting membership from local merge, Actions depth, threads, and activity order; collector mismatches corrected: none.",
+      "#7614\u2019s cancelled changelog job was superseded by a successful same-head run and does not block its strict waiting status.",
+      "#7624\u2019s failures were traced to missing pydantic during test collection, but its eight unresolved substantive threads keep it author-owned regardless.",
+      "#7627 opened during collection and closed unmerged during final reconciliation; it is retained only in the label audit history, while #7628 remains on the board.",
+      "The adversarial audit promoted #7570 and #7547, corrected one-fix ownership for workflow gates and stale threads, normalized bot identities for the human-review count, added approval membership, and restored the review_ci_layer schema enum."
+    ],
+    "caveats": [
+      "Latest commit or timeline activity is used as the push-time proxy because the connector does not expose a separate pushed timestamp.",
+      "Workflow-gated fork PRs show only reviewer-bot checks; they are not classified as green until the full Actions suite runs.",
+      "Automated review threads are counted as open issues when unresolved, but bots never count as maintainer interaction."
+    ]
+  }
+}

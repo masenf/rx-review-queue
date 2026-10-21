@@ -1,0 +1,185 @@
+{
+  "number": 7590,
+  "fetched_at": "2026-10-21T17:50:31.910Z",
+  "author_login": "nilaychugh",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "nilaychugh/reflex",
+  "head_sha": "38d8da1ef181b4a462e36161e965d3679eadca3e",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7483,
+      "title": "Python 3.14: state_auto_setters=True in rxconfig.py generates no set_<var> setters in the backend worker",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "copilot-pull-request-reviewer",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:50:40Z",
+      "can_push": false,
+      "commit_id": "38d8da1ef181b4a462e36161e965d3679eadca3e"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:52:57Z",
+      "can_push": false,
+      "commit_id": "38d8da1ef181b4a462e36161e965d3679eadca3e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:55:29Z",
+      "can_push": false,
+      "commit_id": "38d8da1ef181b4a462e36161e965d3679eadca3e"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f0996f31-12b1-42e8-9b57-78a906912a70 -->\n<!-- cubic:review-run=6085a04c-fe04-583d-9ce0-0f8ab7ceefa9 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: `get_state_auto_setters()` now implicitly caches the no-`rxconfig.py` fallback config when a `State` is imported outside the app directory. If the process later enters the app directory, `get_config()` sees that cached fallback and never loads the app’s `rxconfig.py`, leaving auto-setters disabled; avoid caching the fallback from this implicit probe or only probe when a project config exists.\n\n<details>\n<summary>Prompt for AI agents</summary>\n\n```text\nCheck if this issue is valid — if so, understand the root cause and fix it. When an issue isn't valid or won't be fixed in this PR, reply in its thread with the reason and then resolve the thread. At packages/reflex-base/src/reflex_base/config.py, line 964:\n\n<comment>`get_state_auto_setters()` now implicitly caches the no-`rxconfig.py` fallback config when a `State` is imported outside the app directory. If the process later enters the app directory, `get_config()` sees that cached fallback and never loads the app’s `rxconfig.py`, leaving auto-setters disabled; avoid caching the fallback from this implicit probe or only probe when a project config exists.</comment>\n\n<file context>\n@@ -938,23 +938,30 @@ def _record_imports() -> Iterator[_ImportRecorder]:\n     if _state_auto_setters is not None:\n         return _state_auto_setters\n+    if not getattr(_rxconfig_import, \"active\", False):\n+        return get_config().state_auto_setters\n     env_val = os.environ.get(Config._prefixes[0] + \"STATE_AUTO_SETTERS\")\n     if env_val and env_val.strip():\n</file context>\n```\n\n</details>",
+        "path": "packages/reflex-base/src/reflex_base/config.py",
+        "at": "2026-10-18T04:52:57Z"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Config imports register states twice**\n\nIf a fresh process directly imports `rxconfig.py` and the file defines a `State` before constructing its `Config`, this branch calls `get_config()` during class creation. `_get_config()` removes the partly loaded `rxconfig` and executes the file again. Both imports then register different State classes with the same name, leaving both in the parent's substates.\n\nDetect an already-running `rxconfig` import before taking this path, and add a regression test that imports `rxconfig` directly.",
+        "path": "packages/reflex-base/src/reflex_base/config.py",
+        "at": "2026-10-18T04:55:28Z"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 144,
+    "actions_total": 140,
+    "by_state": {
+      "SUCCESS": 141,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Avoid caching the no-rxconfig.py fallback during the implicit state-auto-setters probe, or only probe when a project config exists.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/config.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Detect an already-running rxconfig.py import so direct import does not execute the file twice and register duplicate State classes.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/config.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "copilot-pull-request-reviewer[bot]",
+      "at": "2026-10-18T04:50:40Z",
+      "excerpt": "Copilot was unable to review this pull request because the user who requested the review has reached their quota limit."
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T04:52:57Z",
+      "excerpt": "P2: get state auto setters now implicitly caches the no rxconfig.py fallback config when a State is imported outside the app directory. If the process later enters the app directory, get config sees that cached fallback and never loads the app’s rxconfig.py , "
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-18T04:52:57Z",
+      "excerpt": "1 issue found across 3 files Reply to a comment to ask cubic a question or push back. It learns from your replies. View guided diff https://www.cubic.dev/pr/reflex dev/reflex/pull/7590?utm source=github&utm medium=review footer Re trigger cubic https://www.cub"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T04:55:25Z",
+      "excerpt": "Confidence Score: 4/5 Medium impact Fixes state auto\\ setter generation in fresh worker processes\\. Protect direct imports of rxconfig before merging so they cannot register State classes twice. Findings 1. &nbsp; Config imports register states twice ▶ Summary"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-18T04:55:28Z",
+      "excerpt": "Config imports register states twice If a fresh process directly imports rxconfig.py and the file defines a State before constructing its Config , this branch calls get config during class creation. get config removes the partly loaded rxconfig and executes th"
+    },
+    {
+      "by": "codspeed[bot]",
+      "at": "2026-10-19T10:17:59Z",
+      "excerpt": "Merging this PR will not alter performance ✅ 148 untouched benchmarks Comparing nilaychugh:fix/7483 state auto setters worker 38d8da1 with main 5ae5dcd"
+    }
+  ],
+  "head_activity_at": "2026-10-18T04:50:12Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "copilot-pull-request-reviewer[bot]",
+      "association": "NONE",
+      "at": "2026-10-18T04:50:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:52:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:52:57Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-19T10:17:59Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-18T04:50:34Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

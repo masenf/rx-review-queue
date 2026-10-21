@@ -1,0 +1,384 @@
+{
+  "number": 7065,
+  "fetched_at": "2026-10-21T17:43:34.115Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "bf69e19a36cb3a98c7734f6115dee334dbcd426c",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:45:07Z",
+      "can_push": false,
+      "commit_id": "106a871815a0e9b868b4f8635b62a4cc515c5332"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T21:49:28Z",
+      "can_push": false,
+      "commit_id": "ea0d227b3764a2ca39d9d592513ba7ad0dee6fe4"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:30Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:36Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:42Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:47Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:35:52Z",
+      "can_push": true,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:39:05Z",
+      "can_push": false,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:40:21Z",
+      "can_push": false,
+      "commit_id": "70cb91cd4963318c8e882c5ae4a3e729c27af48d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T00:06:31Z",
+      "can_push": true,
+      "commit_id": "7ac5e9c9bb48537cd36085cbef990979bfbd14ec"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-01T00:06:37Z",
+      "can_push": true,
+      "commit_id": "7ac5e9c9bb48537cd36085cbef990979bfbd14ec"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-dev/reflex-team"
+  ],
+  "threads": {
+    "total": 7,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "actions_total": 144,
+    "by_state": {
+      "FAILURE": 2,
+      "SUCCESS": 142,
+      "SKIPPED": 3,
+      "CANCELLED": 1
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.12)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 111901842742,
+      "run_id": null,
+      "cause": "CodSpeed reports test_get_state_uncached[disk] regressed from 56.5 ms to 70.1 ms (-19.39% efficiency), while warning that base and head used different runtime environments. The PR deliberately adds one asyncio.to_thread hop to uncached disk-state reads so filesystem I/O no longer blocks the event loop; the author attributes the measured single-benchmark slowdown to that intended thread hop."
+    },
+    {
+      "check": "unit-tests-gate; unit-tests (ubuntu-latest, 3.12)",
+      "check_id": 111910196263,
+      "run_id": 37349734439,
+      "cause": "The Ubuntu 3.12 job log shows both setup and the first 10,515-test pass succeeded. The second unit-test pass reached 87% before GitHub cancelled the job at the workflow's configured 30-minute timeout; no assertion failed. unit-tests-gate then failed only because unit-tests=cancelled."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Re-run the cancelled Ubuntu 3.12 unit-test job and decide whether to accept the expected disk cache-miss CodSpeed regression.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-07T21:41:20Z",
+      "excerpt": "## Codex Review Summary This comment shows the latest Codex review activity on this pull request. | Review | Status | Commit | Review trigger | | --- | --- | --- | --- | | 📝 **Code Review** | ✅ **Completed** 2026-09-07T21:45:09.562166Z | `106a871` | PR opened | ℹ️ About Codex in GitHub [Your team has set up Codex to review pull requests in this repo](https://chatgpt.com/codex/cloud/settings/general). Reviews are triggered when you - Open a pull request for review - Mark a draft as ready - Comment \"@codex review\" or \"@codex security review\". Codex reacts with 👀 while any review is running, comments if it has suggestions, and reacts with 👍 once all reviews finish with no findings."
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-07T21:44:24Z",
+      "excerpt": "## Merging this PR will **degrade performance by 19.39%** :warning: Different runtime environments detected > Some benchmarks with significant performance changes were compared across different runtime environments, > which may affect the accuracy of the results. > > [Open the report in CodSpeed to investigate](https://app.codspeed.io/reflex-dev/reflex/branches/claude%2Fblockbuster-reflex-analysis-06qhgm?utm_source=github&utm_medium=comment-v2&utm_content=comparison_issues) `❌ 1` regressed benchmark `✅ 149` untouched benchmarks `⏩ 18` skipped benchmarks[^skipped] > [!WARNING] > Please fix the performance issues or [acknowledge them on CodSpeed](https://app.codspeed.io/reflex-dev/reflex/branc"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:44:30Z",
+      "excerpt": "Confidence Score: 5/5 **[Medium risk]** Moves blocking I\\/O work off the event loop in three places\\. The PR appears safe to merge based on the reviewed changes. Summary The PR moves disk-state reads and precompressed sidecar checks off the event loop, pins the Redis driver version, and adds an audit script and regression tests. The post-review change avoids deriving tokens for substates that will not be written. Reviews (6) · Last reviewed commit: [\"Merge main into the off-loop disk IO bra...\"](https://github.com/reflex-dev/reflex/commit/bf69e19a36cb3a98c7734f6115dee334dbcd426c)"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:31:38Z",
+      "excerpt": "CodSpeed flags `test_get_state_uncached[disk]` at −19% on 8e22f9e (58.2 → 72 ms). The other 146 benchmarks show no regression. The slowdown comes from what this PR is for, not from a leftover bug. On a cache miss, `StateManagerDisk.get_state` now reads the session's pickles in a worker thread so file I/O no longer blocks the event loop. - **Before 7ac5e9c:** each substate took its own thread hop, about twice main's cost (+102%). - **Since 7ac5e9c:** the whole tree is read in one `asyncio.to_thread` call, so what's left is the cost of that single hop. - **Measured:** callgrind puts an uncached `get_state` on the benchmark tree at about 761k–778k instructions, against 633k on main. Cached `get"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T18:18:17Z",
+      "excerpt": "`unit-tests-gate` is red on bf69e19 because `unit-tests (ubuntu-latest, 3.12)` hit the job's 30-minute timeout and was cancelled. No test failed. That runner was slow at everything, compared with the 3.11 leg of the same run, including steps that run no test code: - installing packages: 939 ms vs 154 ms - collecting tests: 133 s vs 26 s - the \"without db dependencies\" pytest step: 805 s vs 238 s Tests that mostly wait on timers (`test_expiration.py`) ran at normal speed, so the CPU was starved rather than the code being slow. Nothing hung either: the longest pause between pytest output lines was 54 s, and the cancelled step had reached 87%. The other 11 unit-test jobs passed. This 3.12 job p"
+    }
+  ],
+  "head_activity_at": "2026-10-05T17:36:41Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-07T21:41:20Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-07T21:44:24Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:44:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-07T21:45:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-07T21:45:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:49:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:49:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:49:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:49:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T21:49:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:35:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:39:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:39:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:40:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:40:21Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:06:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:06:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:06:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:06:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:31:38Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T18:18:17Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-05T18:18:17Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

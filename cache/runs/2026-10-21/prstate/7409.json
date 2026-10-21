@@ -1,0 +1,102 @@
+{
+  "number": 7409,
+  "fetched_at": "2026-10-21T17:50:13.234Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "872cd61c93051cfc5852e5d578aaa302061645fb",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7244,
+      "title": "rx.upload_files() from a toast action or call_script callback throws \"ReferenceError: filesById is not defined\" (the scenario #7156's changelog names)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T15:54:25Z",
+      "can_push": false,
+      "commit_id": null
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 148,
+    "actions_total": 144,
+    "by_state": {
+      "SUCCESS": 146,
+      "SKIPPED": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:54:25Z",
+      "excerpt": "<!-- cubic:review-summary:start --> **No issues found** across 6 files <!-- cubic:review-summary:end --> <sub>[Re-trigger cubic](https://www.cubic.dev/action/re-review/pr/reflex-dev/reflex/7409/ai_pr_review_github_delivery_40dd597b9e242c6e4de96679af8dbf34bdc0a033d6ac71e04986221fba21ade6?returnTo=https%3A%2F%2Fgithub.com%2Freflex-dev%2Freflex%2Fpull%2F7409)</sub> <!-- cubic:review-post:ai_pr_review_github_delivery_40dd597b9e242c6e4de96679af8dbf34bdc0a033d6ac71e04986221fba21ade6:872cd61c93051cfc58"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:55:37Z",
+      "excerpt": "<!-- greptile_summary --> <h2><a href=\"https://app.greptile.com/api/retrigger?id=74400772\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\"><img alt=\"Retrigger\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/Retrigger.svg?v=2\" align=\"right\"></picture></a>Confidence Sc"
+    },
+    {
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:15:40Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ --> ## Merging this PR will **not alter performance** `✅ 150` untouched benchmarks `⏩ 18` skipped benchmarks[^skipped] --- <sub>Comparing <code>kr1shna-exe:fix/7244-upload-callback-files</code> (872cd61) with <code>main</code> (7970e91)</sub> <a href=\"https://app.codspeed.io/reflex-dev/reflex/branches/kr1shna-exe%3Afix%2F7244-upload-callback-files?utm_source=github&utm_medium=comment-v2&utm_content=button\"> <picture> <source media=\"(prefers-color-sche"
+    }
+  ],
+  "head_activity_at": "2026-10-04T15:52:08Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:54:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:55:37Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:15:40Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-04T15:52:08Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 17
+}

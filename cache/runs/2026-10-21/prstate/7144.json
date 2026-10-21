@@ -1,0 +1,464 @@
+{
+  "number": 7144,
+  "fetched_at": "2026-10-21T17:43:34.116Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "COLLABORATOR",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "98fbd9fc0dc0ad4972c522969b0851443c24951c",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "tests/units/test_app.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:03:38Z",
+      "can_push": false,
+      "commit_id": "fe952bca61685c9cd8c94fbc7aabed7761fe3128"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:03:43Z",
+      "can_push": false,
+      "commit_id": "fe952bca61685c9cd8c94fbc7aabed7761fe3128"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:08:08Z",
+      "can_push": false,
+      "commit_id": "fe952bca61685c9cd8c94fbc7aabed7761fe3128"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:13:32Z",
+      "can_push": true,
+      "commit_id": "dec17718fefadbcffb809bde6320ca5f58f1db63"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:13:35Z",
+      "can_push": true,
+      "commit_id": "dec17718fefadbcffb809bde6320ca5f58f1db63"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:13:36Z",
+      "can_push": true,
+      "commit_id": "dec17718fefadbcffb809bde6320ca5f58f1db63"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:13:38Z",
+      "can_push": true,
+      "commit_id": "dec17718fefadbcffb809bde6320ca5f58f1db63"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:16:14Z",
+      "can_push": false,
+      "commit_id": "dec17718fefadbcffb809bde6320ca5f58f1db63"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:20:56Z",
+      "can_push": true,
+      "commit_id": "fe3b1bd3a8730e6252b6fe6c1cba0c317b930f58"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:20:58Z",
+      "can_push": true,
+      "commit_id": "fe3b1bd3a8730e6252b6fe6c1cba0c317b930f58"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:21:00Z",
+      "can_push": true,
+      "commit_id": "fe3b1bd3a8730e6252b6fe6c1cba0c317b930f58"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:21:24Z",
+      "can_push": false,
+      "commit_id": "fe3b1bd3a8730e6252b6fe6c1cba0c317b930f58"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-14T22:29:43Z",
+      "can_push": false,
+      "commit_id": "fe3b1bd3a8730e6252b6fe6c1cba0c317b930f58"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T14:40:15Z",
+      "can_push": true,
+      "commit_id": "b36f309f294f55588b7492a6219ff4a33abc343b"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-15T19:11:41Z",
+      "can_push": true,
+      "commit_id": "5409e0e60ea630a014e56ba5c336598d4c4ec916"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-18T20:40:14Z",
+      "can_push": false,
+      "commit_id": "98fbd9fc0dc0ad4972c522969b0851443c24951c"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 11,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "path": "packages/reflex-base/src/reflex_base/config.py",
+        "line": 1103,
+        "first_comment": "**Forks Share Mutable Config** When project code has already imported `rxconfig`, a forked `RegistrationContext` receives that module's existing mutable `Config` object. This conflicts with `RegistrationContext.fork()`, which resets `_config` and promises that the next `get_config()` call reloads it. The parent and fork can therefore share configuration mutations, allowing persistent overrides or other changes from one app to leak into the other. **Knowledge Base Used:** [Application lifecycle and configuration](https://app.greptile.com/reflex-org-2/-/custom-context/knowledge-base/reflex-dev/reflex/-/docs/application-lifecycle.md)"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "**Forks Share Mutable Config** When project code has already imported `rxconfig`, a forked `RegistrationContext` receives that module's existing mutable `Config` object. This conflicts with `RegistrationContext.fork()`, which resets `_config` and promises that the next `get_config()` call reloads it. The parent and fork can therefore share configuration mutations, allowing persistent overrides or other changes from one app to leak into the other. **Knowledge Base Used:** [Application lifecycle and configuration](https://app.greptile.com/reflex-org-2/-/custom-context/knowledge-base/reflex-dev/reflex/-/docs/application-lifecycle.md)",
+      "addressed": false
+    },
+    {
+      "by": "masenf",
+      "ask": "Confirm that direct ASGI startup with Granian remains interoperable without requiring a Reflex-specific load_app shim; consider loading config inside App construction.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-14T21:59:59Z",
+      "excerpt": "## Codex Review Summary This comment shows the latest Codex review activity on this pull request. | Review | Status | Commit | Review trigger | | --- | --- | --- | --- | | 📝 **Code Review** | ✅ **Completed** 2026-09-14T22:03:46.895468Z | `fe952bc` | PR opened | ℹ️ About Codex in GitHub [Your team has set up Codex to review pull requests in this repo](https://chatgpt.com/codex/cloud/settings/general). Reviews are triggered when you - Open a pull request for review - Mark a draft as ready - Comment \"@codex review\" or \"@codex security review\". Codex reacts with 👀 while any review is running, comments if it has suggestions, and reacts with 👍 once all reviews finish with no findings."
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:03:33Z",
+      "excerpt": "Confidence Score: 4/5 The PR is not yet safe to merge because forked registration contexts can share one mutable Config instance instead of remaining independent. Findings 1. &nbsp;**Forks Share Mutable Config** ▶ Summary This PR changes configuration loading and app construction to preserve the identity of classes defined in a preloaded `rxconfig.py`. - Reuses a project-imported configuration module during the first context load. - Makes `App` read the cached configuration instead of forcing a reload. - Removes a redundant CLI reload after persisting host and port overrides. - Isolates cached App and Config slots between unit tests and adds class-identity regressions. Reviews (6) · Last rev"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-14T22:05:12Z",
+      "excerpt": "## Merging this PR will **not alter performance** `✅ 40` untouched benchmarks `⏩ 8` skipped benchmarks[^skipped] --- Comparing FarhanAliRaza:codex/config-reload-boundary (5409e0e) with main (2f63cb3) [^skipped]: 8 benchmarks were skipped, so the baseline results were used instead. If they were deleted from the codebase, [click here and archive them to remove them from the performance reports](https://app.codspeed.io/reflex-dev/reflex/branches/FarhanAliRaza%3Acodex%2Fconfig-reload-boundary?q=is%3Askipped&utm_source=github&utm_medium=comment-v2&utm_content=archive)."
+    }
+  ],
+  "head_activity_at": "2026-09-18T20:30:32Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-14T21:59:59Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:03:33Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:03:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:03:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:03:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-14T22:03:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-14T22:03:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-09-14T22:03:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-14T22:05:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:08:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:08:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:08:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:08:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:13:32Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:13:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:13:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:13:35Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:13:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:13:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:13:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:13:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:16:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:16:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:16:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:20:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:20:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:20:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:20:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:21:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-14T22:21:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:21:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:21:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:29:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-14T22:29:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T14:40:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-15T14:40:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-15T19:11:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T20:40:11Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-18T20:40:14Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-09-18T20:30:32Z",
+  "last_maintainer_activity_at": "2026-09-15T19:11:41Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}
