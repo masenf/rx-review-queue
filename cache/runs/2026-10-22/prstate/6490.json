@@ -1,0 +1,213 @@
+{
+  "number": 6490,
+  "fetched_at": "2026-10-22T17:03:45Z",
+  "author_login": "riebecj",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "riebecj/reflex",
+  "head_sha": "62019f3edc491eaebf30885a24325854a918346b",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-05-11T23:09:52Z",
+      "can_push": true,
+      "commit_id": "b58c1c6199c7d571011831940533e61c1ec0df4e"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-25T14:50:44Z",
+      "can_push": true,
+      "commit_id": "62019f3edc491eaebf30885a24325854a918346b"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "[P1] Use a cluster-aware client when cluster mode is enabled\n\nPlease select a cluster-aware Redis client for the state and token managers when `redis_cluster=True`. The current factory still creates `"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 70,
+    "by_state": {
+      "NEUTRAL": 1,
+      "SKIPPED": 2,
+      "SUCCESS": 67
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 68,
+    "names": [
+      "CodSpeed Performance Analysis",
+      "CodeQL",
+      "build (reflex-components-code, packages/reflex-components-code/)",
+      "build (reflex-hosting-cli, packages/reflex-hosting-cli/)",
+      "build (reflex-components-recharts, packages/reflex-components-recharts/)",
+      "build (reflex-docgen, packages/reflex-docgen/)",
+      "build (reflex-components-dataeditor, packages/reflex-components-dataeditor/)",
+      "build (reflex-components-sonner, packages/reflex-components-sonner/)",
+      "build (reflex-components-radix, packages/reflex-components-radix/)",
+      "build (integrations-docs, packages/integrations-docs/)",
+      "build (reflex-base, packages/reflex-base/)",
+      "build (reflex-site-shared, packages/reflex-site-shared/)",
+      "build (reflex-components-lucide, packages/reflex-components-lucide/)",
+      "build (reflex-components-react-player, packages/reflex-components-react-player/)",
+      "build (reflex-components-plotly, packages/reflex-components-plotly/)",
+      "build (reflex-components-markdown, packages/reflex-components-markdown/)",
+      "build (reflex-components-internal, packages/reflex-components-internal/)",
+      "build (reflex-components-moment, packages/reflex-components-moment/)",
+      "build (reflex-components-gridjs, packages/reflex-components-gridjs/)",
+      "build (hatch-reflex-pyi, packages/hatch-reflex-pyi/)",
+      "build (reflex-components-core, packages/reflex-components-core/)",
+      "build (reflex, .)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "unit-tests-macos",
+      "reflex-docs-macos",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "reflex-docs (3.12)",
+      "example-counter-and-nba-proxy (windows-latest, 3.14)",
+      "rx-shout-from-template",
+      "reflex-docs (3.11)",
+      "reflex-install-and-init",
+      "pre-commit",
+      "example-counter-and-nba-proxy (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "discover",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "Analyze (python)",
+      "Run Lighthouse benchmark",
+      "Run benchmarks",
+      "Analyze (actions)"
+    ]
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-05-11T23:01:45Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`\u2705 24` untouched benchmarks  \n\n\n\n\n\n---\n\n<sub>Comparing <c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:46Z",
+      "excerpt": "<h3>Greptile Summary</h3>\n\nThis PR adds opt-in Redis Cluster support via `rx.Config(redis_cluster=True)`, keeping the default `False` to preserve existing behav"
+    }
+  ],
+  "head_activity_at": "2026-05-26T14:19:21Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-11T23:01:45Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:50Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-11T23:09:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T14:50:44Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T14:50:44Z"
+    }
+  ],
+  "body_has_repro": false,
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "[P1] Use a cluster-aware client when cluster mode is enabled Please select a cluster-aware Redis client for the state and token managers when `redis_cluster=True`. The current factory still creates `redis.asyncio.client.Redis`. Against a healthy three-primary Redis Cluster, `set_state` for token `review-cluster` raises `MovedError` for slot 16341, and the real app fails to hydrate or handle events. A `RedisCluster` control writes and reads the same generated key successfully. Hash tags keep related keys in one slot, but the client must also route commands to that slot's owner.",
+      "addressed": false,
+      "path": "reflex/istate/manager/__init__.py",
+      "outdated": false
+    }
+  ],
+  "failing_job_findings": [],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/config.py",
+    "reflex/istate/manager/redis.py",
+    "reflex/utils/token_manager.py",
+    "tests/units/istate/manager/test_redis.py",
+    "tests/units/reflex_cli/conftest.py"
+  ],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-05-26T14:19:21Z",
+  "last_maintainer_activity_at": "2026-09-25T14:50:44Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

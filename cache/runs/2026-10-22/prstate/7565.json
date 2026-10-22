@@ -1,0 +1,289 @@
+{
+  "number": 7565,
+  "fetched_at": "2026-10-22T17:02:59Z",
+  "author_login": "darshjoshi",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "darshjoshi/reflex",
+  "head_sha": "3e82720244fe53b00b87b5019762afc86baadd41",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": true,
+  "review_decision": "APPROVED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T15:34:32Z",
+      "can_push": true,
+      "commit_id": "1b63beb675d46b6250d30aaa570de4722b582955"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T15:36:50Z",
+      "can_push": true,
+      "commit_id": "1b63beb675d46b6250d30aaa570de4722b582955"
+    },
+    {
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:28:02Z",
+      "can_push": false,
+      "commit_id": "d297ce9fae4df5364b1e91f22f797821045e5b54"
+    },
+    {
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:28:04Z",
+      "can_push": false,
+      "commit_id": "d297ce9fae4df5364b1e91f22f797821045e5b54"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:29:01Z",
+      "can_push": true,
+      "commit_id": "d297ce9fae4df5364b1e91f22f797821045e5b54"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T08:31:15Z",
+      "can_push": true,
+      "commit_id": "d297ce9fae4df5364b1e91f22f797821045e5b54"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-22T00:19:26Z",
+      "can_push": true,
+      "commit_id": "3e82720244fe53b00b87b5019762afc86baadd41"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-22T16:58:13Z",
+      "can_push": true,
+      "commit_id": "3e82720244fe53b00b87b5019762afc86baadd41"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [],
+  "threads": {
+    "total": 6,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 164,
+    "by_state": {
+      "IN_PROGRESS": 43,
+      "SKIPPED": 3,
+      "SUCCESS": 118
+    },
+    "failing": [],
+    "pending": [
+      "check-min-deps (reflex-bench, 3.14)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (memory, 3.15)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "reflex-docs (3.11)",
+      "Run benchmarks"
+    ],
+    "actions_total": 161
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:44Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=80755380\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-14T15:39:26Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-10-22T16:58:30Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:34:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-14T15:39:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:28:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "darshjoshi",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:28:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:29:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:29:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:31:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T08:31:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T00:19:26Z",
+      "state": "approved"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T16:58:13Z",
+      "state": "approved"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "body_has_repro": true,
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Add the required reflex-base bugfix news fragment.",
+      "addressed": true,
+      "path": "packages/reflex-base/news/7565.bugfix.md",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Move the number-var regression test into the reflex-base unit-test layout.",
+      "addressed": true,
+      "path": "tests/units/reflex_base/vars/test_number.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Use a representative `useContext(StateContexts...)` positive case in the state-context detector test.",
+      "addressed": true,
+      "path": "tests/units/test_state.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Move the state-context detector test to the state unit-test module.",
+      "addressed": true,
+      "path": "tests/units/test_state.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add the required docstring to the state-context detector test.",
+      "addressed": true,
+      "path": "tests/units/test_state.py",
+      "outdated": true
+    }
+  ],
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-22T16:58:30Z",
+  "last_maintainer_activity_at": "2026-10-22T16:58:13Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,95 @@
+{
+  "number": 7625,
+  "fetched_at": "2026-10-22T17:03:08Z",
+  "author_login": "Huzi-06",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "Huzi-06/reflex",
+  "head_sha": "a3857c9010611b6daa0f6c36c1e49c74682ad111",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7623,
+      "title": "Add a `SetVar` backed by the JS `Set` object",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-21T07:09:17Z",
+      "can_push": true,
+      "commit_id": "a3857c9010611b6daa0f6c36c1e49c74682ad111"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T00:41:48Z",
+      "can_push": true,
+      "commit_id": "a3857c9010611b6daa0f6c36c1e49c74682ad111"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T07:09:52Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=85021237\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-21T06:48:07Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T07:09:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-21T07:09:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T00:41:48Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "body_has_repro": false,
+  "outstanding_asks": [],
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-21T06:48:07Z",
+  "last_maintainer_activity_at": "2026-10-22T00:41:48Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

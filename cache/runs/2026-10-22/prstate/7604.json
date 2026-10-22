@@ -1,0 +1,102 @@
+{
+  "number": 7604,
+  "fetched_at": "2026-10-22T17:03:26Z",
+  "author_login": "sansynx",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "sansynx/reflex",
+  "head_sha": "0215ea166dce197170b5f7db23be0a0a0f7244cf",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7111,
+      "title": "Declare Lucide deep imports through import_var instead of _get_imports",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-19T15:52:24Z",
+      "can_push": true,
+      "commit_id": "a8c2a6a402d22cf11a724251fa04b626f3589563"
+    },
+    {
+      "by": "sansynx",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-19T16:25:45Z",
+      "can_push": false,
+      "commit_id": "0215ea166dce197170b5f7db23be0a0a0f7244cf"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:19Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=83698508\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-19T16:24:50Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:19Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-19T15:52:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "sansynx",
+      "association": "NONE",
+      "at": "2026-10-19T16:25:45Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T16:25:45Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

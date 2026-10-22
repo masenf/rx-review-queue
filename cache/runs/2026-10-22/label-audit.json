@@ -1,0 +1,30 @@
+{
+  "fetched_at": "2026-10-22T17:34:55Z",
+  "audited_open_prs": 108,
+  "reconciled_at": "2026-10-22T17:34:55Z",
+  "final_open_prs": 108,
+  "additions": {
+    "Bug": [
+      7522,
+      7630,
+      7631
+    ],
+    "Documentation": [],
+    "Perf": [],
+    "breaking": []
+  },
+  "notes": {
+    "7522": "Issue-backed fix for stale on_load handling during websocket reconnection.",
+    "7630": "Issue-backed compiler bug fix with focused regression tests and a bugfix fragment.",
+    "7631": "Issue-backed disk-state recovery visibility fix with focused regression tests and a bugfix fragment.",
+    "7632": "Reverts an unreleased change and is not treated as a current public-contract break.",
+    "7635": "OpenTelemetry workflow tracing is a feature with package README updates, not a performance, bug, breaking, or real-docs change.",
+    "reconciliation": "#7413 and #7626 merged during the final scan; the final label audit covers the remaining 108 open PRs."
+  },
+  "live_counts": {
+    "bug": 35,
+    "perf": 26,
+    "documentation": 31,
+    "breaking": 9
+  }
+}

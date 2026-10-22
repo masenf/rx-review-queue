@@ -1,0 +1,194 @@
+{
+  "number": 7416,
+  "fetched_at": "2026-10-22T17:03:35Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "29bfd58deba9666976f051c6751c2d4b35030c59",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7252,
+      "title": "Dev \"reflex run\" prints \"Backend running at \u2026\" / \"App running at \u2026\" and idles after the app module raised at import",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:49:42Z",
+      "can_push": true,
+      "commit_id": "a4cde41f927acf2620bb8e90c14db37d4cd2072b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:49:51Z",
+      "can_push": true,
+      "commit_id": "a4cde41f927acf2620bb8e90c14db37d4cd2072b"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-08T20:39:08Z",
+      "can_push": true,
+      "commit_id": "27ddc54d801dbbbc25bf83ef45efa9f53f23596a"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 4,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "In dev mode with Granian (the default whenever uvicorn or gunicorn isn't installed), `App running at:` is never printed now. Nothing replaces it later either: the backend announces itself only through"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:46Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74464222\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-06T16:00:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 150` untouched benchmarks  \n`\u23e9 18` skipped benchmarks[^s"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T21:07:04Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nThese findings could not be posted inline.\n\n- <img alt=\"P2\" src=\"https://greptile-static-assets."
+    },
+    {
+      "by": "kr1shna-exe",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T21:20:43Z",
+      "excerpt": "@greptile-apps the \"App Running\" banner is unchanged from main. This push only reverted my earlier rename so dev output stays the same for anything reading it, "
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T21:21:25Z",
+      "excerpt": "That\u2019s fair. Since the `App Running` banner is intentionally unchanged from `main` to preserve existing dev output, this PR does not introduce the concern I rai"
+    }
+  ],
+  "head_activity_at": "2026-10-08T21:04:18Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:42Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:49Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:49:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T16:00:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-08T20:39:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-08T20:39:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T21:07:04Z"
+    },
+    {
+      "kind": "comment",
+      "by": "kr1shna-exe",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T21:20:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T21:21:25Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "body_has_repro": true,
+  "outstanding_asks": [
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Restore the existing App running at line so dev tooling continues to see the frontend URL.",
+      "addressed": true
+    }
+  ],
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-08T21:20:43Z",
+  "last_maintainer_activity_at": "2026-10-08T20:39:08Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

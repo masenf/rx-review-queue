@@ -1,0 +1,165 @@
+{
+  "number": 7500,
+  "fetched_at": "2026-10-22T17:03:30Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "c8d9695ac121d4ecf309f2aa126f1c8779a7129b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7477,
+      "title": "Mutating nested dict entries through dict.values() / dict.items() bypasses dirty tracking: rendered values and cached vars go stale",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-07T18:17:31Z",
+      "can_push": true,
+      "commit_id": "c8d9695ac121d4ecf309f2aa126f1c8779a7129b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-07T18:21:45Z",
+      "can_push": true,
+      "commit_id": "c8d9695ac121d4ecf309f2aa126f1c8779a7129b"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c4d2a6df-3cf8-4ce5-b305-a84bd1d97143 -->\n<!-- cubic:review-run=12dcc473-c95e-5e23-8b92-05f110386400 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: These replacement views drop the native dict"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **View `mapping` access breaks**\n\nThe replacement views drop the native dict view\u2019s `"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 148,
+    "by_state": {
+      "CANCELLED": 1,
+      "FAILURE": 3,
+      "SKIPPED": 5,
+      "SUCCESS": 139
+    },
+    "failing": [
+      "performance-tests-gate",
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "Run benchmarks"
+    ],
+    "pending": [],
+    "actions_total": 145
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "job_id": 112952668459,
+      "run_id": 37665340366,
+      "cause": "Gate propagation only: the log reports `Blocking job results: unit-tests=failure`; changes succeeded and the macOS unit job was skipped."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "job_id": 112943074116,
+      "run_id": 37665340366,
+      "cause": "tests/units/istate/manager/test_redis.py::test_oplock_contention_queue failed because the interim state count was 2 instead of 1; 12,455 tests passed. The PR changes reflex/istate/proxy.py and tests/units/istate/test_proxy.py, so this Redis-lock failure is outside the PR diff.",
+      "evidence": "The current-head log shows `AssertionError: assert 2 == 1` at test_redis.py:501."
+    },
+    {
+      "check": "performance-tests-gate",
+      "job_id": 112969468090,
+      "run_id": 37665340684,
+      "cause": "Gate propagation only: browser-performance and Lighthouse succeeded, but the gate failed because the benchmarks job was cancelled."
+    },
+    {
+      "check": "Run benchmarks",
+      "job_id": 112943006617,
+      "run_id": 37665340684,
+      "cause": "The CodSpeed action ran for about one hour and was cancelled with `The operation was canceled`; it reported no benchmark assertion or measured regression before cancellation."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Expose a proxy-backed read-only `.mapping` property on the replacement dict views so callers retain the native view API without bypassing mutation tracking.",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add and test a read-only `.mapping` property for both replacement dict views.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T18:21:33Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=76529179\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-07T16:44:14Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T18:17:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T18:17:32Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T18:21:33Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T18:21:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T18:21:45Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-07T16:44:14Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

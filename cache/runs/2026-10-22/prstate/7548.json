@@ -1,0 +1,123 @@
+{
+  "number": 7548,
+  "fetched_at": "2026-10-22T17:03:25Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "4d25e09bfb530552ca98f55066563913e3211d41",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7536,
+      "title": "StringVar.reversed() and rx.foreach over strings still split surrogate pairs",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-12T13:58:47Z",
+      "can_push": true,
+      "commit_id": "388a94069159ae816de23b367db79ea2f8301c25"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-12T13:59:29Z",
+      "can_push": true,
+      "commit_id": "388a94069159ae816de23b367db79ea2f8301c25"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 150,
+    "by_state": {
+      "SKIPPED": 6,
+      "SUCCESS": 144
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 146
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-12T13:59:24Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=79164975\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-12T14:45:05Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary>:warning: <b>14 benchmarks spent signific"
+    }
+  ],
+  "head_activity_at": "2026-10-18T05:05:06Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-12T13:58:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-12T13:58:47Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-12T13:59:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-12T13:59:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-12T13:59:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-12T14:45:05Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-18T05:05:06Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 4
+}

@@ -1,0 +1,224 @@
+{
+  "number": 7583,
+  "fetched_at": "2026-10-22T17:03:30Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "dae7365a8cfd8165ddfa63b5d633a99d7b613d30",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/compiler/templates.py",
+    "tests/units/reflex_base/vars/test_base.py"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:31:48Z",
+      "can_push": true,
+      "commit_id": "4e5cd02fb968aaf3851c890ea075cac811f9dd3e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:33:09Z",
+      "can_push": true,
+      "commit_id": "4e5cd02fb968aaf3851c890ea075cac811f9dd3e"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:35:40Z",
+      "can_push": true,
+      "commit_id": "dae7365a8cfd8165ddfa63b5d633a99d7b613d30"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:35:43Z",
+      "can_push": true,
+      "commit_id": "dae7365a8cfd8165ddfa63b5d633a99d7b613d30"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:38:22Z",
+      "can_push": true,
+      "commit_id": "4e5cd02fb968aaf3851c890ea075cac811f9dd3e"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-16T17:38:46Z",
+      "can_push": true,
+      "commit_id": "dae7365a8cfd8165ddfa63b5d633a99d7b613d30"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 144,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 141
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 140
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "ask": "Investigate the hook-ordering regression in _merge_state_hooks: merging field subscriptions can lose an INTERNAL position requirement and emit a state read before its declaration; add a mixed-position regression test.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-10-16T17:29:27Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n<!-- codex-review-state:v1 {\"code_review\":{\"commit_sha\":\"4e5cd02fb968aaf3851c890ea075cac811f9dd3e\",\"has_any_findings\""
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:33:05Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=82379005\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-16T17:35:53Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary>:warning: <b>18 benchmarks spent signific"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T17:49:17Z",
+      "excerpt": "### A/B on real apps: main `5ae5dcd528` vs this PR `dae7365a8c`\n\n**Setup:**\n- **Apps:** `examples/playground` (the benchmark app: many pages, a sqlite table wit"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:33:36Z",
+      "excerpt": "Possible hook-ordering issue in `_merge_state_hooks`: it looks like merging two field subscriptions can lose an `INTERNAL` position requirement and put the stat"
+    }
+  ],
+  "head_activity_at": "2026-10-16T17:35:10Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-16T17:29:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:31:48Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:31:48Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:33:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:33:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-16T17:33:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T17:35:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T17:35:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-16T17:35:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-16T17:38:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-16T17:38:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T17:38:46Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-16T17:49:17Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-16T18:33:36Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-16T17:49:17Z",
+  "last_maintainer_activity_at": "2026-10-16T18:33:36Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,129 @@
+{
+  "number": 7564,
+  "fetched_at": "2026-10-22T17:03:28Z",
+  "author_login": "H4dr1en",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "H4dr1en/reflex",
+  "head_sha": "33ed785c7925320e5809a7b3d0c05eac2dcec20c",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7562,
+      "title": "Production builds are not reproducible: every `reflex export` renames every script",
+      "filed_by": "H4dr1en"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T15:36:00Z",
+      "can_push": true,
+      "commit_id": "4aba34e2506d30766aebdabdc51459d0a8eb113c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T15:37:21Z",
+      "can_push": true,
+      "commit_id": "4aba34e2506d30766aebdabdc51459d0a8eb113c"
+    },
+    {
+      "by": "H4dr1en",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-14T16:04:40Z",
+      "can_push": false,
+      "commit_id": "395f503ffba5a254b06ef8c24ef263322b073e62"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:37:16Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=80754804\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-19T09:46:57Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary>:warning: <b>14 benchmarks spent signific"
+    }
+  ],
+  "head_activity_at": "2026-10-19T16:11:38Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:36:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:37:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:37:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T15:37:21Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "H4dr1en",
+      "association": "NONE",
+      "at": "2026-10-14T16:04:40Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-19T09:46:57Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-19T16:11:38Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

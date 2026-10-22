@@ -1,0 +1,355 @@
+{
+  "number": 7558,
+  "fetched_at": "2026-10-22T17:32:07Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "450a2dea06f82b941025340f07f2ec5ea027cbae",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "CHANGES_REQUESTED",
+  "linked_issues": [
+    {
+      "number": 7509,
+      "title": "`reflex run --json` ignores SIGINT sent to its pid; under supervisord stopsignal=INT the app is orphaned and blocks the restart",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:04:45Z",
+      "can_push": true,
+      "commit_id": "b1ab2a65d1911b5191bd939933047926673f504d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:06:17Z",
+      "can_push": true,
+      "commit_id": "b1ab2a65d1911b5191bd939933047926673f504d"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:22:24Z",
+      "can_push": true,
+      "commit_id": "ca153c80622366c2fdad9734e493fe9a59db51c5"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:23:18Z",
+      "can_push": true,
+      "commit_id": "ca153c80622366c2fdad9734e493fe9a59db51c5"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T03:58:57Z",
+      "can_push": true,
+      "commit_id": "87dbe5908510f6dc21fc6cb7a2457448fdab487d"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T00:29:19Z",
+      "can_push": true,
+      "commit_id": "b78bd1a7d1a181d5c711352bb2cf1679d799b140"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T06:11:20Z",
+      "can_push": false,
+      "commit_id": "b78bd1a7d1a181d5c711352bb2cf1679d799b140"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-10-22T17:10:01Z",
+      "can_push": true,
+      "commit_id": "b4b5261afb3264f93d6ce15b422575a321a0a758"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 16,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": true,
+        "first_comment": "seems like this should also call the `previous_handler` for the given signal that it replaced, in case there was some other clean up work that needed to happen. i don't know if that's the case today, "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please remove `start_new_session`. It moves the app out of the supervisor's process group. A SIGKILL to that group now kills only the supervisor. The inner `reflex`, the backend workers, bun and node "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please go back to the shape of the first commit and remove the handler machinery. A real app stops cleanly after a double SIGINT, so the new session is not necessary:\n\n```python\nexcept KeyboardInterru"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please remove SIGHUP from this PR. Forwarding it does not stop a real app. Granian reloads its workers on SIGHUP. The inner `reflex` and the new workers continue to run, and the supervisor waits for m"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This code runs only on POSIX, where `os.killpg`, `signal.SIGHUP` and `signal.SIGQUIT` always exist. Please remove the `getattr`/`callable` checks here and at the `getattr(signal, signal_name, None)` l"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This loop has no deadline. When a test fails, the child loops forever and the test hangs. Against main's `log.py`, `test_supervise_output_forwards_sigint_during_setup` hung for more than 40 s and left"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "This assertion tests the new-session design, not the bug. The child does not need to get SIGINT exactly once. Please remove this test with the new session, and keep `test_supervise_output_forwards_pid"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": false,
+        "first_comment": "The fragment must match the final change. As the PR is now, it also changes SIGTERM, SIGHUP and SIGQUIT and the process group. If you change to the small SIGINT fix, this text is correct."
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 168,
+    "by_state": {
+      "SUCCESS": 157,
+      "IN_PROGRESS": 7,
+      "FAILURE": 1,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "unit-tests (windows-latest, 3.12)"
+    ],
+    "pending": [
+      "build (reflex-components-code, packages/reflex-components-code/)",
+      "build (reflex-components-markdown, packages/reflex-components-markdown/)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.11)"
+    ],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:06:11Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=80572144\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-14T10:12:00Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T17:18:38Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nThese findings could not be posted inline.\n\n- <img alt=\"P1\" src=\"https://greptile-static-assets."
+    }
+  ],
+  "head_activity_at": "2026-10-22T17:14:28Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:04:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:04:46Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:06:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:06:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:06:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-14T10:12:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:22:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:22:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:23:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:23:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T03:58:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T03:58:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T00:28:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T00:29:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T06:11:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T17:10:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T17:10:01Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T17:18:38Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests (windows-latest, 3.12)",
+      "cause": "tests/units/test_event.py::test_download_var_data_url_keeps_hash_and_percent timed out after 30 seconds while a Node subprocess fetched a data URL; 10,352 tests passed. The failing test is outside this PR's three changed files."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "ask": "Avoid replacing signal handlers without preserving any prior handler cleanup.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Remove start_new_session so group SIGKILL and terminal job-control signals still reach the app.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Return to the small SIGINT-only fix and remove the signal-handler machinery.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Remove SIGHUP forwarding because it reloads Granian workers instead of stopping the app.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Remove unnecessary getattr/callable guards from POSIX-only signal code.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Add a deadline to the child-waiting test loop so failures cannot hang indefinitely.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Remove the test that requires exactly one child SIGINT and retain the PID-targeted regression test.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Keep the changelog fragment aligned with the final small SIGINT-only change.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Handle a PID-only SIGINT arriving after Popen but before the wait loop so the child is not orphaned.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "last_author_activity_at": "2026-10-22T17:14:28Z",
+  "last_maintainer_activity_at": "2026-10-22T17:10:01Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

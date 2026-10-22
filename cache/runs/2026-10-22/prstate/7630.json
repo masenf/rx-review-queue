@@ -1,0 +1,117 @@
+{
+  "number": 7630,
+  "fetched_at": "2026-10-22T17:03:59Z",
+  "author_login": "fixfon",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "fixfon/reflex",
+  "head_sha": "65f86cc4dd2e5c8171a62b3aab709a7e1c3034f0",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7579,
+      "title": "enable_state=False guard (code_uses_state_contexts) misses memoized state reads",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T00:13:46Z",
+      "can_push": true,
+      "commit_id": "65f86cc4dd2e5c8171a62b3aab709a7e1c3034f0"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T00:15:33Z",
+      "can_push": true,
+      "commit_id": "65f86cc4dd2e5c8171a62b3aab709a7e1c3034f0"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **State-reading wraps escape the check**\n\nAn app wrap that opts out of memoization st"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:15:29Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=85636326\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-21T23:59:18Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:13:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:15:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:15:32Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:15:33Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "body_has_repro": true,
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Include the compiled app root in the disabled-state guard so non-memoized app wraps cannot escape validation.",
+      "addressed": false,
+      "path": "reflex/compiler/compiler.py",
+      "outdated": false
+    }
+  ],
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-21T23:59:18Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

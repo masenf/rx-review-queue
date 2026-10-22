@@ -1,0 +1,374 @@
+{
+  "number": 7578,
+  "fetched_at": "2026-10-22T17:02:57Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "4df572af3ddd5ddc2032af581b27b12fc597f912",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7510,
+      "title": "`reflex run --json`: the 30 s drain cap can end the stream mid-record, and a consumer that stops reading blocks shutdown forever",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:03:29Z",
+      "can_push": true,
+      "commit_id": "2fedb45ae9e294d5434672d83ce76c9cbf81adea"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:07:04Z",
+      "can_push": true,
+      "commit_id": "2fedb45ae9e294d5434672d83ce76c9cbf81adea"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:10:20Z",
+      "can_push": true,
+      "commit_id": "2fedb45ae9e294d5434672d83ce76c9cbf81adea"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:21:16Z",
+      "can_push": false,
+      "commit_id": "27d4e5e8c7b02b0a1f5224351ee702a05cdddb78"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:21:21Z",
+      "can_push": false,
+      "commit_id": "27d4e5e8c7b02b0a1f5224351ee702a05cdddb78"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:21:26Z",
+      "can_push": false,
+      "commit_id": "27d4e5e8c7b02b0a1f5224351ee702a05cdddb78"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:21:32Z",
+      "can_push": false,
+      "commit_id": "27d4e5e8c7b02b0a1f5224351ee702a05cdddb78"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:21:38Z",
+      "can_push": false,
+      "commit_id": "27d4e5e8c7b02b0a1f5224351ee702a05cdddb78"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:25:43Z",
+      "can_push": true,
+      "commit_id": "27d4e5e8c7b02b0a1f5224351ee702a05cdddb78"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:28:35Z",
+      "can_push": true,
+      "commit_id": "27d4e5e8c7b02b0a1f5224351ee702a05cdddb78"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:43:39Z",
+      "can_push": false,
+      "commit_id": "e7f0078af2dfd3074b0a2115205fd432792efd85"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:43:42Z",
+      "can_push": false,
+      "commit_id": "e7f0078af2dfd3074b0a2115205fd432792efd85"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:47:10Z",
+      "can_push": true,
+      "commit_id": "e7f0078af2dfd3074b0a2115205fd432792efd85"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-15T14:53:11Z",
+      "can_push": true,
+      "commit_id": "e7f0078af2dfd3074b0a2115205fd432792efd85"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T08:19:48Z",
+      "can_push": false,
+      "commit_id": "dc2ae3135bed99ce647fecb1d8804fb99bf87b54"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 17,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 169,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 165
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:03:23Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=81507212\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-15T14:06:40Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.79%**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :war"
+    }
+  ],
+  "head_activity_at": "2026-10-22T08:23:45Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:03:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:03:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:03:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-15T14:06:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:07:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:07:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:07:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:10:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:10:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:21:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:21:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:21:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:21:32Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:21:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:25:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:25:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:28:35Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:28:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:43:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:43:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:47:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:47:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:53:11Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-15T14:53:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T08:19:48Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "body_has_repro": true,
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Nested JSON logs can raise RecursionError in the recursive truncation walk and stop the output pump; use an iterative walk or bounded fallback.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/utils/log.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Replace the recursive traversal so deeply nested JSON records cannot terminate the output pump.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/utils/log.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Cap truncation retry work when non-string-heavy records cannot shrink, avoiding thousands of full copies and serializations.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/utils/log.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Normalize NaN and Infinity before serialization so every emitted line is strict JSON.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/utils/log.py",
+      "outdated": false
+    }
+  ],
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-22T08:23:45Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 0
+}

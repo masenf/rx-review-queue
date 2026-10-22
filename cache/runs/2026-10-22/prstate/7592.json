@@ -1,0 +1,193 @@
+{
+  "number": 7592,
+  "fetched_at": "2026-10-22T17:32:07Z",
+  "author_login": "LaoChouPro",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "LaoChouPro/reflex",
+  "head_sha": "615c3c958b473638c0eceb3c66551c702a660047",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": true,
+  "review_decision": "APPROVED",
+  "linked_issues": [
+    {
+      "number": 7561,
+      "title": "`get_field_type` and `get_attribute_access_type` read `__fields__` and emit `PydanticDeprecatedSince20` on each field access",
+      "filed_by": "wevonosky"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:29:14Z",
+      "can_push": true,
+      "commit_id": "b9a9031ddfa850146692df9d7f333892d9dd5e13"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:30:39Z",
+      "can_push": true,
+      "commit_id": "b9a9031ddfa850146692df9d7f333892d9dd5e13"
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-18T06:30:54Z",
+      "can_push": true,
+      "commit_id": "b9a9031ddfa850146692df9d7f333892d9dd5e13"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-22T00:59:12Z",
+      "can_push": true,
+      "commit_id": "615c3c958b473638c0eceb3c66551c702a660047"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 165,
+    "by_state": {
+      "SUCCESS": 139,
+      "IN_PROGRESS": 23,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": [
+      "check-min-deps (reflex-components-radix, 3.14)",
+      "check-min-deps (reflex-components-code, 3.14)",
+      "check-min-deps (reflex, 3.11)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "Run benchmarks"
+    ],
+    "actions_total": 162
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-10-18T06:27:14Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n<!-- codex-review-state:v1 {\"code_review\":{\"commit_sha\":\"b9a9031ddfa850146692df9d7f333892d9dd5e13\",\"has_any_findings\""
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:35Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=83046741\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-22T00:59:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 6.98%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-10-22T17:21:09Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-18T06:27:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:29:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:29:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T06:30:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-18T06:30:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-18T06:30:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T00:59:12Z",
+      "state": "approved"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-22T00:59:54Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "last_author_activity_at": "2026-10-22T17:21:09Z",
+  "last_maintainer_activity_at": "2026-10-22T00:59:12Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

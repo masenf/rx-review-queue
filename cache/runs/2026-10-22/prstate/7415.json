@@ -1,0 +1,175 @@
+{
+  "number": 7415,
+  "fetched_at": "2026-10-22T17:32:07Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "519f568be74f48c8123eafdc5684215b1caae669",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "APPROVED",
+  "linked_issues": [
+    {
+      "number": 7251,
+      "title": "A self-chaining event loop started from on_load keeps running after the client disconnects, logging \"Attempting to send delta to disconnected client\" once per tick",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:25:41Z",
+      "can_push": true,
+      "commit_id": "473b4b6e62c004e8b72a2182f9dedb198146db4e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T19:26:40Z",
+      "can_push": true,
+      "commit_id": "473b4b6e62c004e8b72a2182f9dedb198146db4e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T21:21:09Z",
+      "can_push": true,
+      "commit_id": "fcb2ce913589681e627d5269ff01294687cac08a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-22T17:17:23Z",
+      "can_push": true,
+      "commit_id": "519f568be74f48c8123eafdc5684215b1caae669"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 166,
+    "by_state": {
+      "SUCCESS": 143,
+      "IN_PROGRESS": 21,
+      "SKIPPED": 2
+    },
+    "failing": [],
+    "pending": [
+      "check-min-deps (reflex-components-recharts, 3.11)",
+      "install-check (reflex, .)",
+      "docs-tests",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (windows-latest, 3.11)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "integration-app-harness-playwright (memory, 3.15)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (redis, 3.14)"
+    ],
+    "actions_total": 162
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:26:36Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=74457594\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-06T15:59:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-10-22T17:12:04Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:25:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:26:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:26:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T19:26:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T21:21:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T21:21:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T15:59:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T17:17:23Z",
+      "state": "approved"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-10-22T17:12:04Z",
+  "last_maintainer_activity_at": "2026-10-22T17:17:23Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

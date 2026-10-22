@@ -1,0 +1,105 @@
+{
+  "number": 7632,
+  "fetched_at": "2026-10-22T17:32:07Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "4482e250f42bfc0a75f56e064a57691f1e55df38",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 167,
+    "by_state": {
+      "SUCCESS": 146,
+      "IN_PROGRESS": 18,
+      "SKIPPED": 3
+    },
+    "failing": [],
+    "pending": [
+      "performance-tests-gate",
+      "check-min-deps (reflex-components-gridjs, 3.14)",
+      "check-min-deps (reflex-release, 3.11)",
+      "check-min-deps (reflex-components-markdown, 3.14)",
+      "install-check (reflex-components-lucide, packages/reflex-components-lucide/)",
+      "build (reflex-components-dataeditor, packages/reflex-components-dataeditor/)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.13)"
+    ],
+    "actions_total": 163
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T16:43:54Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=86111707\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-22T16:47:42Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.69%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T16:49:33Z",
+      "excerpt": "CodSpeed reports a -4.69% regression on `test_var_access[mutable_dataclass_list]` in `tests/benchmarks/test_state_proxy.py`. That benchmark exercises the state "
+    }
+  ],
+  "head_activity_at": "2026-10-22T17:08:31Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T16:43:54Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-22T16:47:42Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T16:49:33Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "last_author_activity_at": "2026-10-22T17:08:31Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}
