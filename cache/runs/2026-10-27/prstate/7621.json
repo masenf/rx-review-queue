@@ -1,0 +1,385 @@
+{
+  "number": 7621,
+  "fetched_at": "2026-10-27T19:35:00Z",
+  "author_login": "anishgurjar",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "anishgurjar/reflex",
+  "head_sha": "304bdab77a1344234ee2d74bc9c050054a378d10",
+  "mergeable": "MERGEABLE",
+  "merge_state": "CLEAN",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "APPROVED",
+  "linked_issues": [
+    {
+      "number": 7620,
+      "title": "Polling transport: page stalls with no error after the server rejects an oversized CONNECT POST",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-20T20:31:38Z",
+      "can_push": false,
+      "commit_id": "e922e3ea973817285343bdad1bef4d4644361c63"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-20T20:34:01Z",
+      "can_push": false,
+      "commit_id": "e922e3ea973817285343bdad1bef4d4644361c63"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-10-22T22:51:19Z",
+      "can_push": true,
+      "commit_id": "e108c5b6c7adf9125ea6733d9c7025b42d997fde"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T17:49:24Z",
+      "can_push": false,
+      "commit_id": "21918f7c1b07247afbd09f35ab20c60eb56d3e18"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T18:37:52Z",
+      "can_push": true,
+      "commit_id": "304bdab77a1344234ee2d74bc9c050054a378d10"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T18:37:54Z",
+      "can_push": true,
+      "commit_id": "304bdab77a1344234ee2d74bc9c050054a378d10"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T18:37:57Z",
+      "can_push": true,
+      "commit_id": "304bdab77a1344234ee2d74bc9c050054a378d10"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T18:37:59Z",
+      "can_push": true,
+      "commit_id": "304bdab77a1344234ee2d74bc9c050054a378d10"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T18:39:08Z",
+      "can_push": false,
+      "commit_id": "304bdab77a1344234ee2d74bc9c050054a378d10"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-27T18:43:58Z",
+      "can_push": true,
+      "commit_id": "304bdab77a1344234ee2d74bc9c050054a378d10"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [],
+  "threads": {
+    "total": 7,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 169,
+    "actions_total": 165,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Imports break repository guidance: `_polling_engine_app` imports `socketio` inside the helper without needing to avoid a circular dependency.",
+      "addressed": true,
+      "path": "tests/units/test_app.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Callbacks lack required docstrings: `drained_receive` has no docstring, but the repository guide requires Google-style docstrings on all functions.",
+      "addressed": true,
+      "path": "reflex/app.py",
+      "outdated": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "The drained request still goes to engine.io, and engine.io answers the oversized POST only after `disconnect(sid)` returns. `disconnect()` calls `socket.close(wait=True)`, which blocks in `queue.join()` until a poll GET consumes the CLOSE packet. When no poll is parked at that moment, the POST is never answered. Every later poll for that sid gets `400 'Session is disconnected'` from `_get_socket`, so nothing can consume the packet. The response is held forever.",
+      "addressed": true,
+      "path": "reflex/app.py",
+      "outdated": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This assumption does not hold. The engine.io client sends the CONNECT POST and the first poll GET at the same time, so the POST is often rejected before a poll is parked. Without the parked poll, this test hangs in `queue.join()`, which is the defect described on `app.py`. The parked poll hides it.",
+      "addressed": true,
+      "path": "tests/units/test_app.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Strict UTF-8 decoding can abort cleanup for malformed query bytes. Decode the raw query with Latin-1, as the previous implementation did, so oversized requests always reach SID cleanup.",
+      "addressed": true,
+      "path": "reflex/app.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "This changelog overstates the fix by guaranteeing an immediate reconnect. The middleware unblocks the failed request and allows reconnection, but the client\u2019s normal reconnect policy still controls when that happens; describe it as allowing or enabling the browser to reconnect instead.",
+      "addressed": true,
+      "path": "news/+drain-oversized-polling-post.bugfix.md",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "This regression test always indexes `eio.sockets` with `\\xff`, not the session ID, because the malformed `x` parameter is appended after `sid`. Extract the SID before appending the parameter, or parse the `sid` query field directly, so the test can reach its intended closure assertion.",
+      "addressed": true,
+      "path": "tests/units/test_app.py",
+      "outdated": false
+    },
+    {
+      "by": "anishgurjar",
+      "ask": "Approve the first-time-contributor workflow gate so CI can run on the updated head.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T20:33:57Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=84696245\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-22T20:21:29Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T01:25:16Z",
+      "excerpt": "Want your agent to iterate on Greptile's feedback? Try [*greploops*](https://github.com/greptileai/skills/blob/main/greploop/SKILL.md)."
+    },
+    {
+      "by": "anishgurjar",
+      "association": "NONE",
+      "at": "2026-10-23T02:04:03Z",
+      "excerpt": "The 11 workflows on the new head are awaiting maintainer approval. Could you approve the CI run? Local tests pass, but GitHub CI hasn't verified this head yet."
+    },
+    {
+      "by": "anishgurjar",
+      "association": "NONE",
+      "at": "2026-10-23T04:23:36Z",
+      "excerpt": "Both points addressed in 762788c. The middleware drains the oversized POST, returns 400 itself, and closes the engine.io socket with wait=False. The new no-park"
+    }
+  ],
+  "head_activity_at": "2026-10-27T18:37:19Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T20:31:38Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T20:33:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T20:34:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T20:34:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T20:34:01Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-22T20:21:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T22:51:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T22:51:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T22:51:19Z",
+      "state": "CHANGES_REQUESTED"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T01:25:16Z"
+    },
+    {
+      "kind": "comment",
+      "by": "anishgurjar",
+      "association": "NONE",
+      "at": "2026-10-23T02:04:03Z"
+    },
+    {
+      "kind": "comment",
+      "by": "anishgurjar",
+      "association": "NONE",
+      "at": "2026-10-23T04:23:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T17:49:24Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T17:49:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T17:49:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:37:52Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:37:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:37:54Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:37:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:37:57Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:37:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:37:59Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:37:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T18:39:08Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T18:39:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:43:58Z",
+      "state": "APPROVED"
+    }
+  ],
+  "last_author_activity_at": "2026-10-27T18:37:19Z",
+  "last_maintainer_activity_at": "2026-10-27T18:43:58Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

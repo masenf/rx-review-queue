@@ -1,0 +1,358 @@
+{
+  "number": 7534,
+  "fetched_at": "2026-10-27T19:35:39.343Z",
+  "author_login": "benedikt-bartscher",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "benedikt-bartscher/reflex",
+  "head_sha": "b4320ce4b224ed7f838e19f8d6a390b7631e4393",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "APPROVED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-08T23:53:19Z",
+      "can_push": true,
+      "commit_id": "f98f09e0f6eec022c413d8a7fc69b24ef5c66d19"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-09T08:58:10Z",
+      "can_push": true,
+      "commit_id": "ed6beb3d1a21700d9a7c8f1055e5c0fcc2e02373"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-11T11:16:19Z",
+      "can_push": true,
+      "commit_id": "6a27e7995eac3e9b2a7c7e5c864aefe25bf08034"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-11T11:20:33Z",
+      "can_push": true,
+      "commit_id": "67a6120f6ce566f0ccf515a85d9cd1bce5c7902b"
+    },
+    {
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-11T12:48:08Z",
+      "can_push": false,
+      "commit_id": "1c17f4068346159d832cbf8d9f426cd5a2353908"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T23:08:40Z",
+      "can_push": true,
+      "commit_id": "8a237f20f8d72aa12a243746392c0b58f7720c7f"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-25T14:26:13Z",
+      "can_push": true,
+      "commit_id": "471e5403a8472eb5b437470ad8f0d0388b40bb81"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-25T14:27:09Z",
+      "can_push": true,
+      "commit_id": "471e5403a8472eb5b437470ad8f0d0388b40bb81"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-27T17:34:51Z",
+      "can_push": true,
+      "commit_id": "b4320ce4b224ed7f838e19f8d6a390b7631e4393"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [],
+  "threads": {
+    "total": 11,
+    "unresolved": [
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please move the lease out of `_create_lease_break_task` into its own unit: a small class (or module-level coroutines) that holds `token`, `lock_id`, `lease_ctx`, `started` and `broken_at` and exposes "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please retrieve the lease's exception here, so a failed flush is logged once:\n\n```python\nif lease_started:\n    if not lease.cancelled():\n        lease.exception()\n    return\n```\n\nEvidence: with a use "
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "A lease can now hold its lock for longer than `lock_expiration` (each queued use gets a full expiration from its handoff). A waiter on another instance registers in `{lock_key}_waiters` once, with `PE"
+      },
+      {
+        "by": "FarhanAliRaza",
+        "outdated": true,
+        "first_comment": "Please split this into short sentences, one per fixed case, for example:\n\n> Fixed the redis state manager stalling a token's events until its lock expired after an event was cancelled while taking the"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 169,
+    "actions_total": 165,
+    "by_state": {
+      "SUCCESS": 165,
+      "FAILURE": 1,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "Check diagnostics report test_modify_state[redis_oplock] regressed 4.36% (9.3 ms to 9.7 ms); the check also warns that 15 benchmarks are dominated by system calls."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Renew only the lease's own Redis lock, checking ownership atomically so a resumed stale worker cannot extend another worker's lock.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Propagate and await keep-alive task failures instead of allowing renewal errors to become detached task errors.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Renew on cached-state handoff, or wake the renewal task before the current holder's deadline, so the next queued event cannot lose its changes.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "After cancellation, wait for the shielded flush to finish before releasing the lease context and re-raising.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add the required Google-style docstrings to the new lock renewal, flush, and unstarted-lease helpers.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Extract the lease lifecycle from _create_lease_break_task into a small class or module-level helper unit.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Retrieve a completed lease task's exception so a failed flush is logged only once.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Refresh remote waiters' Redis registration while waiting so a long renewed lease cannot drop them from the waiter set.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Split the release note into short sentences, one per fixed user-visible case.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Give the remote Redis manager in the test its own client and guarantee cleanup in a finally block.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Condense the Redis handoff release note to one or two user-focused sentences.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T23:53:14Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=77485816\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-08T23:57:48Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.36%**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :war"
+    }
+  ],
+  "head_activity_at": "2026-10-25T15:12:30Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T23:53:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T23:53:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-08T23:53:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-08T23:57:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-09T08:58:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-09T08:58:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T11:16:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T11:16:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T11:20:32Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T11:20:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T12:48:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "benedikt-bartscher",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-11T12:48:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T23:08:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T23:08:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T23:08:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T23:08:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T23:08:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-25T14:26:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-25T14:26:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-25T14:27:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-25T14:27:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T17:34:51Z",
+      "state": "approved"
+    }
+  ],
+  "last_author_activity_at": "2026-10-25T15:12:30Z",
+  "last_maintainer_activity_at": "2026-10-27T17:34:51Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

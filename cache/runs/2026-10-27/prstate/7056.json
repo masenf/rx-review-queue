@@ -1,0 +1,523 @@
+{
+  "number": 7056,
+  "fetched_at": "2026-10-27T19:45:14.690Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "d640f035d22e24c8d0ef0c514df65d430aabdba1",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:04:26Z",
+      "can_push": true,
+      "commit_id": "a2d92b8a9f1e877c5c4e4383c8f9003c7b50c686"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:10:01Z",
+      "can_push": true,
+      "commit_id": "a2d92b8a9f1e877c5c4e4383c8f9003c7b50c686"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:12:02Z",
+      "can_push": true,
+      "commit_id": "0f97c66ada0b17f26aedb175695d189e698263e5"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:12:08Z",
+      "can_push": true,
+      "commit_id": "0f97c66ada0b17f26aedb175695d189e698263e5"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:17:54Z",
+      "can_push": true,
+      "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:18:00Z",
+      "can_push": true,
+      "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:18:06Z",
+      "can_push": true,
+      "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:20:11Z",
+      "can_push": true,
+      "commit_id": "375bb440ac33c629ba4ab976d2a54d65d653674a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:20:59Z",
+      "can_push": true,
+      "commit_id": "e84cc6129a533f34270065d55e35acef3040cad3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-09-07T17:21:12Z",
+      "can_push": true,
+      "commit_id": "e84cc6129a533f34270065d55e35acef3040cad3"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "actions_total": 141,
+    "by_state": {
+      "SUCCESS": 141,
+      "FAILURE": 1,
+      "SKIPPED": 3
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "names": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "performance-tests-gate",
+      "integration-app-harness-gate",
+      "integration-tests-gate",
+      "build-packages-gate",
+      "reflex-init-in-docker-test-gate",
+      "codeql-gate",
+      "check-min-deps (reflex-hosting-cli, 3.10)",
+      "check-min-deps (reflex-otel, 3.14)",
+      "check-min-deps (reflex-hosting-cli, 3.14)",
+      "check-min-deps (reflex-otel, 3.10)",
+      "check-min-deps (reflex-release, 3.10)",
+      "check-min-deps (reflex-components-sonner, 3.14)",
+      "check-min-deps (reflex-components-sonner, 3.10)",
+      "check-min-deps (reflex-docgen, 3.10)",
+      "check-min-deps (reflex-release, 3.14)",
+      "check-min-deps (reflex-docgen, 3.14)",
+      "check-min-deps (reflex-components-moment, 3.14)",
+      "check-min-deps (reflex-components-recharts, 3.14)",
+      "check-min-deps (reflex-components-markdown, 3.14)",
+      "check-min-deps (reflex-components-internal, 3.14)",
+      "check-min-deps (reflex-components-lucide, 3.10)",
+      "check-min-deps (reflex-components-recharts, 3.10)",
+      "check-min-deps (reflex-components-plotly, 3.14)",
+      "check-min-deps (reflex-components-moment, 3.10)",
+      "check-min-deps (reflex-components-radix, 3.10)",
+      "check-min-deps (reflex-components-markdown, 3.10)",
+      "check-min-deps (reflex-components-lucide, 3.14)",
+      "check-min-deps (reflex-bench, 3.14)",
+      "check-min-deps (reflex-components-gridjs, 3.10)",
+      "check-min-deps (reflex-components-internal, 3.10)",
+      "check-min-deps (reflex, 3.14)",
+      "check-min-deps (reflex-components-radix, 3.14)",
+      "check-min-deps (reflex-components-react-player, 3.14)",
+      "check-min-deps (reflex-components-react-player, 3.10)",
+      "check-min-deps (reflex-components-plotly, 3.10)",
+      "check-min-deps (reflex-components-dataeditor, 3.10)",
+      "check-min-deps (reflex-bench, 3.10)",
+      "check-min-deps (reflex-components-core, 3.14)",
+      "check-min-deps (reflex-components-gridjs, 3.14)",
+      "check-min-deps (reflex-build-sdk, 3.10)",
+      "check-min-deps (reflex-components-dataeditor, 3.14)",
+      "check-min-deps (reflex-components-core, 3.10)",
+      "check-min-deps (reflex-build-sdk, 3.14)",
+      "check-min-deps (reflex, 3.10)",
+      "check-min-deps (reflex-components-code, 3.10)",
+      "check-min-deps (reflex-components-code, 3.14)",
+      "check-min-deps (reflex-base, 3.10)",
+      "check-min-deps (reflex-base, 3.14)",
+      "CodeQL",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness-playwright (memory, 3.15)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "build (reflex-site-shared, packages/reflex-site-shared/)",
+      "build (reflex-hosting-cli, packages/reflex-hosting-cli/)",
+      "build (reflex-components-radix, packages/reflex-components-radix/)",
+      "build (reflex-components-plotly, packages/reflex-components-plotly/)",
+      "build (reflex-components-markdown, packages/reflex-components-markdown/)",
+      "build (reflex-components-sonner, packages/reflex-components-sonner/)",
+      "build (reflex-components-dataeditor, packages/reflex-components-dataeditor/)",
+      "build (reflex-components-core, packages/reflex-components-core/)",
+      "build (reflex-components-code, packages/reflex-components-code/)",
+      "build (reflex-components-lucide, packages/reflex-components-lucide/)",
+      "build (reflex-components-internal, packages/reflex-components-internal/)",
+      "build (reflex-release, packages/reflex-release/)",
+      "build (reflex-docgen, packages/reflex-docgen/)",
+      "build (reflex-components-moment, packages/reflex-components-moment/)",
+      "build (reflex-components-gridjs, packages/reflex-components-gridjs/)",
+      "build (reflex-components-react-player, packages/reflex-components-react-player/)",
+      "build (reflex-components-recharts, packages/reflex-components-recharts/)",
+      "build (reflex-otel, packages/reflex-otel/)",
+      "build (reflex, .)",
+      "build (reflex-build-sdk, packages/reflex-build-sdk/)",
+      "build (hatch-reflex-pyi, packages/hatch-reflex-pyi/)",
+      "build (integrations-docs, packages/integrations-docs/)",
+      "build (reflex-bench, packages/reflex-bench/)",
+      "build (reflex-base, packages/reflex-base/)",
+      "docs-tests",
+      "docs-tests-gate",
+      "reflex-install-and-init",
+      "rx-shout-from-template",
+      "example-counter-and-nba-proxy (ubuntu-latest, 3.14)",
+      "example-counter-and-nba-proxy (windows-latest, 3.14)",
+      "reflex-docs (3.11)",
+      "reflex-docs (3.12)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "unit-tests (windows-latest, 3.10)",
+      "cubic \u00b7 AI code reviewer",
+      "Greptile Review",
+      "reflex-docs-macos",
+      "unit-tests-macos",
+      "pre-commit",
+      "playground-head",
+      "changes",
+      "playground-0.8.23",
+      "Analyze (actions)",
+      "Analyze (python)",
+      "changes",
+      "changelog",
+      "size-budgets",
+      "changes",
+      "Run benchmarks",
+      "changes",
+      "discover",
+      "Run Lighthouse benchmark",
+      "Run browser performance smoke",
+      "changes"
+    ]
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-07T16:56:12Z",
+      "excerpt": "You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage"
+    },
+    {
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-07T16:59:40Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n<details>\n<summary>:warning: <b>Different runtime environments det"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:04:19Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=61298902\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:08:01Z",
+      "excerpt": "seems like this should be three PRs"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:43:27Z",
+      "excerpt": "CodSpeed on d640f03: 28 benchmarks improved and 1 regressed, `test_state_update_wire_serialization[scalar_100b]` at \u221211% (165.6 \u2192 186.4 \u00b5s). CodSpeed also flags"
+    }
+  ],
+  "head_activity_at": "2026-10-01T00:28:32Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-09-07T16:56:12Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-07T16:59:40Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:04:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:04:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:04:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:04:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:10:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:10:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:10:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:10:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:10:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:10:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:12:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:12:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:12:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:12:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:17:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:17:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:18:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:18:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:18:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:18:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:20:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-07T17:20:11Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:20:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:20:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:21:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-07T17:21:12Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-30T23:08:01Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-01T00:43:27Z"
+    }
+  ],
+  "body_has_repro": false,
+  "outstanding_asks": [
+    {
+      "by": "masenf",
+      "ask": "Split the three independent performance changes into separate pull requests.",
+      "addressed": false
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 110164284219,
+      "run_id": null,
+      "conclusion": "FAILURE",
+      "cause": "CodSpeed check diagnostics report test_state_update_wire_serialization[scalar_100b] slowing from 165.6 us to 186.4 us (-11.16% efficiency), alongside 28 improved benchmarks. The diagnostic warns that base and head used different runtime environments; the author reports the regression did not reproduce in local CodSpeed simulation after removing an extra Python call."
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/utils/format.py",
+    "packages/reflex-base/src/reflex_base/utils/serializers.py",
+    "packages/reflex-base/src/reflex_base/vars/base.py",
+    "reflex/istate/proxy.py",
+    "tests/units/reflex_base/utils/test_format.py",
+    "tests/units/reflex_base/utils/test_types.py",
+    "uv.lock"
+  ],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-01T00:43:27Z",
+  "last_maintainer_activity_at": "2026-09-30T23:08:01Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -38,7 +38,13 @@ def link(n):
 def linkify(text):
     """Turn bare #1234 references in free text into PR/issue links."""
     import re
-    return re.sub(r"(?<![\w/])#(\d{3,6})\b", lambda m: f'<a href="{GH}/pull/{m.group(1)}">#{m.group(1)}</a>', esc(text))
+    def replace(match):
+        number = match.group(2)
+        if match.group(1):
+            return f'<a href="{GH}/issues/{number}">issue #{number}</a>'
+        return f'<a href="{GH}/pull/{number}">#{number}</a>'
+
+    return re.sub(r"(?<![\w/])(?:(issue)\s+)?#(\d{3,6})\b", replace, esc(text), flags=re.IGNORECASE)
 
 
 class Board:

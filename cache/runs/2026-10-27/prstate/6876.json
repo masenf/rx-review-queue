@@ -1,0 +1,334 @@
+{
+  "number": 6876,
+  "fetched_at": "2026-10-27T19:47:06.358Z",
+  "author_login": "rawsun007",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "rawsun007/reflex",
+  "head_sha": "980dc51419bcc3a991d9d7aaa82db75cf6aaacba",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_field.py",
+    "pyi_hashes.json"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6874,
+      "title": "Hidden rx.input is not properly hidden",
+      "filed_by": "luator"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:36:22Z",
+      "can_push": false,
+      "commit_id": "82dfb96cbd5593dfe318ddcf6b432f6435fbea4b"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:38:28Z",
+      "can_push": false,
+      "commit_id": "82dfb96cbd5593dfe318ddcf6b432f6435fbea4b"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:41:22Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:41:23Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:42:52Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-14T17:07:17Z",
+      "can_push": true,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:20:25Z",
+      "can_push": false,
+      "commit_id": "132fd41e5ccd28f4296d4c64694bf4ae1b978399"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T02:41:28Z",
+      "can_push": false,
+      "commit_id": "9330c63bbff38cb0bc267e9888e96e335642eb3d"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T02:56:35Z",
+      "can_push": false,
+      "commit_id": "1cd6735c7e3029f6cd315aa6fa4e5a5322e4d213"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 7,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "P2: HTML treats input type keywords case-insensitively, so `type=\"HIDDEN\"` is hidden but misses this check and retains the Radix wrapper; compare the string case-insensitively. ```suggestion if isinstance(input_type, str) and input_type.lower() == \"hidden\": ```"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2,
+      "FAILURE": 0,
+      "PENDING": 0
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Allow the plain input returned for a statically hidden rx.input to remain valid inside FormControl.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add the repository-required docstring to the hidden-input regression test.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Preserve or update the FormControl child contract when hidden TextFieldRoot instances become plain input elements.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Move the changelog fragment into packages/reflex-components-radix/news.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Qualify the release note to the compile-time hidden cases that actually omit the wrapper.",
+      "addressed": true
+    },
+    {
+      "by": "masenf",
+      "ask": "Clarify whether this is only a discoverability issue given the rx.el.input(type=\"hidden\") workaround.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Compare static input type strings case-insensitively so type=\"HIDDEN\" also skips the Radix wrapper.",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Correct the release note so reactive values are not incorrectly said to retain the wrapper.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-01T02:56:34Z",
+      "excerpt": "**Release note misstates behavior** The note says a reactive `value` keeps the Radix wrapper, but the code checks whether `type` or `hidden` is static, not whether `value` is a `Var`. For example, `rx.input(type=\"hidden\", value=some_var)` also renders as a plain input. This could mislead developers choosing how to use hidden inputs with reactive va"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-01T02:41:46Z",
+      "excerpt": "Want your agent to iterate on Greptile's feedback? Try [*greploops*](https://github.com/greptileai/skills/blob/main/greploop/SKILL.md)."
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-01T02:41:29Z",
+      "excerpt": "P2: HTML treats input type keywords case-insensitively, so `type=\"HIDDEN\"` is hidden but misses this check and retains the Radix wrapper; compare the string case-insensitively. ```suggestion if isinstance(input_type, str) and input_type.lower() == \"hidden\": ```"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-01T02:41:28Z",
+      "excerpt": "**1 issue found** across 5 files Reply with feedback, questions, or to request a fix. [Re-trigger cubic](https://www.cubic.dev/action/re-review/pr/reflex-dev/reflex/6876/ai_pr_review_github_delivery_80733b40a514e702efa1db31dbb6e5c089296eec5d1a2a9648396ef397d67e6a?returnTo=https%3A%2F%2Fgithub.com%2Freflex-dev%2Freflex%2Fpull%2F6876)"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-01T02:41:28Z",
+      "excerpt": "P2: This overstates the optimization: runtime `Var` values and inputs with `size`, `variant`, `color_scheme`, or `radius` still render the wrapper. Qualify the note to cover only plain Python hidden values without Radix-only props. ```suggestion `rx.input(type=\"hidden\")` no longer leaves a stray bar on the page when `type` or `hidden` is a plain Py"
+    }
+  ],
+  "head_activity_at": "2026-10-01T03:02:16Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:38:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:38:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:41:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:41:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:41:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:41:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:42:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:42:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-14T17:07:17Z"
+    },
+    {
+      "kind": "comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-15T04:33:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:20:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:20:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:29Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:56:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:56:35Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-01T03:02:16Z",
+  "last_maintainer_activity_at": "2026-08-14T17:07:17Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

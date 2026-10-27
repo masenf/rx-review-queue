@@ -1,0 +1,224 @@
+{
+  "number": 7631,
+  "fetched_at": "2026-10-27T19:40:25.154Z",
+  "author_login": "gaurav0107",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "gaurav0107/reflex",
+  "head_sha": "bf6cee21436330b0433f3a49cef2a9ed2650b976",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7167,
+      "title": "StateManagerDisk silently resets corrupted persisted state",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T12:33:40Z",
+      "can_push": true,
+      "commit_id": "4500595ebbd1ee10e607a706dd1dc524e1fbabb4"
+    },
+    {
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T12:47:34Z",
+      "can_push": false,
+      "commit_id": "bf6cee21436330b0433f3a49cef2a9ed2650b976"
+    },
+    {
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T12:47:37Z",
+      "can_push": false,
+      "commit_id": "bf6cee21436330b0433f3a49cef2a9ed2650b976"
+    },
+    {
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T12:47:39Z",
+      "can_push": false,
+      "commit_id": "bf6cee21436330b0433f3a49cef2a9ed2650b976"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 172,
+    "actions_total": 168,
+    "by_state": {
+      "SKIPPED": 5,
+      "SUCCESS": 166,
+      "FAILURE": 1
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 119837405250,
+      "cause": "CodSpeed reports test_get_state_uncached[memory] at 8.5 ms versus 8.1 ms on the base (-4.48%). It also warns that base and head ran on different runner types; the benchmark covers state-manager access, which is related to this disk-state-manager change."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Treat only an unchained StateSchemaMismatchError as an expected schema reset so damaged pickles still warn.",
+      "addressed": true,
+      "path": "reflex/istate/manager/disk.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Assert that disk-load warnings identify the affected state token as well as the file path.",
+      "addressed": true,
+      "path": "tests/units/istate/manager/test_disk.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Clarify that damaged or unreadable files warn while expected schema mismatches log at debug.",
+      "addressed": true,
+      "path": "news/+disk-state-load-errors.bugfix.md",
+      "outdated": true
+    },
+    {
+      "by": "masenf",
+      "ask": "Determine whether this PR duplicates #7323.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:23:22Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=85952524\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://grepti"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-22T12:30:55Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :warning: **9 benchmarks are dominated by system calls**\n>\n> System calls cannot be simulated consistently and are left out of the measure. The reported val"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:32:18Z",
+      "excerpt": "dupe of #7323?"
+    }
+  ],
+  "head_activity_at": "2026-10-22T12:47:21Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:23:22Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-22T12:30:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:33:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:33:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:33:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:33:40Z"
+    },
+    {
+      "kind": "review",
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:47:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:47:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:47:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:47:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:47:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "gaurav0107",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T12:47:39Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:32:18Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-22T12:47:39Z",
+  "last_maintainer_activity_at": "2026-10-27T19:32:18Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

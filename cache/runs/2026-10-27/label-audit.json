@@ -1,0 +1,46 @@
+{
+  "fetched_at": "2026-10-27T19:48:11Z",
+  "audited_open_prs": 116,
+  "reconciled_at": "2026-10-27T19:48:11Z",
+  "final_open_prs": 116,
+  "additions": {
+    "Bug": [
+      6733,
+      7637,
+      7641,
+      7647,
+      7648,
+      7650,
+      7651,
+      7652,
+      7656,
+      7670,
+      7671
+    ],
+    "Documentation": [
+      7641,
+      7642,
+      7653,
+      7655,
+      7668,
+      7672,
+      7673
+    ],
+    "Perf": [],
+    "breaking": [
+      7673
+    ]
+  },
+  "notes": {
+    "bug": "Each Bug addition is a clear fix with a linked GitHub or explicit project issue and focused regression coverage.",
+    "documentation": "Each Documentation addition changes at least one real docs/**/*.md or docs/**/*.mdx path; fragments and package READMEs alone do not qualify.",
+    "breaking": "#7673 changes current event-handler registration and return/await behavior and ships breaking fragments despite describing itself as non-breaking.",
+    "perf": "Benchmark coverage on the state refactor stacks does not make those PRs primarily performance work; no Perf addition was warranted."
+  },
+  "live_counts": {
+    "bug": 38,
+    "perf": 26,
+    "documentation": 36,
+    "breaking": 12
+  }
+}

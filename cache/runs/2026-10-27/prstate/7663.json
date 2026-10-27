@@ -1,0 +1,520 @@
+{
+  "number": 7663,
+  "fetched_at": "2026-10-27T19:33:26Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "4e1a9858b602bb036fd2adef4890713d186f4a5d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-26T21:43:11Z",
+      "can_push": true,
+      "commit_id": "4e1a9858b602bb036fd2adef4890713d186f4a5d"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-26T21:47:12Z",
+      "can_push": true,
+      "commit_id": "4e1a9858b602bb036fd2adef4890713d186f4a5d"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 23,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Setup loses required settings**\n\nThe comment after `ENT_SPEC` ends the assignment c"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Retry skips unfinished setup**\n\n`mk` treats an executable Python as proof that an e"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Redis exceeds assigned ports**\n\nThe suggested `<BP+9>` Redis port falls outside a v"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Audit misses renamed files**\n\nWith `git diff --name-only`, a detected rename lists "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c02ce49d-f81f-48ef-bafc-8c5349a8f0c0 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP1: This bootstrap example cannot run as writte"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9baab311-9d46-425d-876b-7a4719de41a0 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: The smoke test does not select the venv it j"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9a5b98ce-7918-40fb-b73c-ea94f9d15c72 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Git rename detection makes this diff list o"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=672ead65-2d62-4f9c-aa13-15860ba5dfe5 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: The commit loop's per-file 2 MB skip does no"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9a9e5d17-350e-4a04-80d1-b8619209f89c -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: A venv whose `uv pip install` failed still h"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=ebeac1c2-025f-41a7-9b6a-17609813dc83 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: `prev-ent` ignores `PREV_EXTRAS`, unlike `pr"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5f35e504-0d3d-4f07-ba3c-b52686be27da -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: A site-packages without `reflex` still exits"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c5426ca0-a92d-44e4-8022-06ed09a52a55 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: `git reset` without a path unstages the enti"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9efb87e3-fa72-4ed8-8123-cd761d0cd82f -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: A relative `ENT_WHEEL` is checked after the "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=bcdbd8f9-12e5-4b9d-8115-5b3e374c5ed5 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: `--no-config` does not guarantee PyPI-only r"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9dd7c621-7b32-496a-a043-ca9a5a86c77e -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: The Playwright fallback installs Chromium s"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=7f7bb54c-db69-4087-a329-4945d56ee80f -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: Relative scratch paths are resolved twice a"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a42c932a-a200-48a5-b297-a64a351cd76d -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: The documented bootstrap script path does n"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=76873a3f-622a-43cb-b1fb-8eb8b8692243 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: The new final-message template does not mat"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=86c29372-51cf-49ff-991e-1250fec765e4 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: The Redis example violates the reserved-por"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d9a55c0f-5b84-46a6-8b7b-d1b568ea0cc4 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: The brief\u2019s new run-directory path disagree"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2259a88d-bf01-4530-8894-8c34b598d7ac -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":5} -->\nP3: This adds a third-agent exception that contr"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=92963e35-8097-47c4-9ef1-89f35008a533 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP3: The re-verification table is missing its Ma"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f504dd0a-6abb-4736-b777-25543e004bc0 -->\n<!-- cubic:review-run=5818fd55-d4d0-5012-bbd0-3980b2e0a7a8 -->\n<!-- metadata:{\"confidence\":10} -->\nP3: The printed `export SB` command is not shel"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 171,
+    "actions_total": 167,
+    "by_state": {
+      "SKIPPED": 5,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "**Setup loses required settings** The comment after `ENT_SPEC` ends the assignment command. The next line runs `bootstrap_envs.sh` without those variables exported. In a fresh shell, the script exits at its required-variable checks before creating any environments. Move the comment above the command and continue the assignments through the script invocation.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/SKILL.md",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Retry skips unfinished setup** `mk` treats an executable Python as proof that an environment is ready. If `uv pip install` fails after `uv venv` succeeds, the next run skips that environment and leaves its packages missing. Record success only after installation finishes, or retry the install before reusing the environment.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/bootstrap_envs.sh",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Redis exceeds assigned ports** The suggested ` ` Redis port falls outside a verifier's assigned range. `orchestration.md` gives each verifier four backend ports. A verifier starting at 8600 would start Redis on 8609, inside another verifier's range. This can cause collisions and misleading test results. Choose an unused port within the assigned range, or reserve a separate Redis range.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/agent-brief.md",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Audit misses renamed files** With `git diff --name-only`, a detected rename lists only the new path. The old path never reaches the deleted-file check, so a wheel containing both the correct new file and a stale old file can receive `PASS`. Disable rename detection with `--no-renames`, or read both paths from rename records.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/check_wheel_sources.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P1: This bootstrap example cannot run as written: the inline comment ends the environment-assignment continuation, and the relative script path is unavailable from the required neutral directory. Keep the assignment continued and invoke the script through ` `. ```suggestion ENT_SPEC='reflex-enterprise[mcp]== ' \\ /.claude/skills/prerelease-test/scripts/bootstrap_envs.sh \"$SB\" --enterprise ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/SKILL.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The smoke test does not select the venv it just built, so `reflex` may be unavailable or resolve to the wrong installation. Invoke the new venv explicitly and run the driver with the dedicated driver interpreter. ```suggestion Before any fan-out: `$SB/envs/new/bin/reflex init --template blank`, `$SB/envs/new/bin/reflex run`, then drive it in Chromium with `$SB/envs/driver/bin/python /.claude/skills/prerelease-test/scripts/drive_app.py`, in dev and in prod. This shakes out ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/SKILL.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: Git rename detection makes this diff list only the destination path, so a stale installed file at the old path is never checked. Disable rename detection so renames are checked as a deletion and an addition. ```suggestion diff = git(args.repo, \"diff\", \"--no-renames\", \"--name-only\", f\"{args.base}..{args.ref}\", \"--\") ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/check_wheel_sources.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The commit loop's per-file 2 MB skip does not enforce the documented budget of about 2 MB per cluster and 10 MB per pass. Logs and screenshots under 2 MB will still be committed on every pass, which is the bloat SKILL.md warns about. Have the loop commit only the trimmed evidence files, or check the total size per cluster and per pass before committing.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/orchestration.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: A venv whose `uv pip install` failed still has `bin/python`, so the next run reuses it without reinstalling. Mark completion only after the install succeeds, for example with a marker file, or build into a temp directory and rename it.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/bootstrap_envs.sh",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: `prev-ent` ignores `PREV_EXTRAS`, unlike `prev`. For a 0.9.x previous release the enterprise baseline will lack greenlet. Pass `${PREV_EXTRAS:-}` here too. ```suggestion # shellcheck disable=SC2086 mk prev-ent \"$PREV_VERSION\" \"reflex[db]==$PREV_VERSION\" \"$PYDANTIC_PIN\" ${PREV_EXTRAS:-} \"$ENT_REQ\" oidc-provider-mock ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/bootstrap_envs.sh",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: A site-packages without `reflex` still exits 0 and prints `PASS`, because every `reflex/` change is only reported as `not installed`. The package under test should be required, so fail when `reflex` is missing from `dists`. ```suggestion dists = installed_dists(site) if \"reflex\" not in dists: print(f\"reflex is not installed in {site}\", file=sys.stderr) return 2 ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/check_wheel_sources.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: `git reset` without a path unstages the entire index, not just the oversized file, so one large artifact can prevent other reports from being committed. Reset only the oversized path.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/orchestration.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: A relative `ENT_WHEEL` is checked after the script changes into the scratch directory, so a valid wheel path from the caller's directory is rejected. Resolve the wheel path before `cd \"$SB\"`.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/bootstrap_envs.sh",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: `--no-config` does not guarantee PyPI-only resolution, because uv index environment variables still override or add indexes. Pin the install to PyPI and clear additional index settings before building the campaign environments. ```suggestion env -u UV_INDEX -u UV_INDEX_URL -u UV_DEFAULT_INDEX -u UV_EXTRA_INDEX_URL \\ uv --no-config pip install -q --index-url https://pypi.org/simple --python \"$SB/envs/$name/bin/python\" \"${opts[@]}\" \"$@\" ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/bootstrap_envs.sh",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The Playwright fallback installs Chromium somewhere the driver never uses; when `/opt/pw-browsers/chromium` is absent, bootstrap can pass and every browser run still fails. Use the installed path or fail when the fixed executable is missing. ```suggestion [ -x /opt/pw-browsers/chromium ] || { echo \"Chromium missing: /opt/pw-browsers/chromium\" >&2 exit 4 } ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/bootstrap_envs.sh",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: Relative scratch paths are resolved twice after `cd \"$SB\"`, so `bootstrap_envs.sh scratch` builds under `scratch/scratch` and prints an unusable `SB`. Canonicalize `SB` before changing directories. ```suggestion mkdir -p \"$SB/envs\" \"$SB/apps\" \"$SB/logs\" \"$SB/downloads\"; SB=\"$(cd \"$SB\" && pwd -P)\"; cd \"$SB\" ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/bootstrap_envs.sh",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The documented bootstrap script path does not exist from the campaign\u2019s documented working locations. Point agents to `.claude/skills/prerelease-test/scripts/bootstrap_envs.sh` so the required environment setup is runnable. ```suggestion `.claude/skills/prerelease-test/scripts/bootstrap_envs.sh`: `$SB/envs/new` (`reflex[db]== `, the version under test), ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/agent-brief.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The new final-message template does not match the Workflow schema that consumes agent results. It uses `ARTIFACTS` and string regression values, while the schema requires `artifacts_dir` and a boolean `regression`; align the template and parser before running the campaign.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/agent-brief.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The Redis example violates the reserved-port rule for verifier agents: their range is only four ports wide, so `BP+9` is outside it. Reserve and pass an explicit Redis port in each cluster\u2019s port map instead of deriving it this way. ```suggestion - Redis: start your own on an explicitly assigned port in YOUR range (` `): `redis-server --port --save '' --appendonly no &` and point the app at it with `REFLEX_REDIS_URL`. Prod with Redis forks ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/agent-brief.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: The brief\u2019s new run-directory path disagrees with the orchestration prompt, which still tells agents to read ` /AGENT_BRIEF.md`. Agents can therefore start without the isolation rules; update the prompt to pass the run-directory brief path, or create the documented scratchpad copy.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/agent-brief.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: This adds a third-agent exception that contradicts the SKILL.md concurrency guidance ('more just makes everything slow and flaky') without evidence. Either cite a measurement or keep the two-agent limit and drop the exception.",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/orchestration.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: The re-verification table is missing its Markdown separator row, so generated `FINDINGS.md` reports will not render this required data as a table. Add the separator immediately after the header. ```suggestion | registry id | what | positive control (version, result) | new result | cluster | |---|---|---|---|---| ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/references/reporting.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P3: The printed `export SB` command is not shell-escaped, so scratch paths containing spaces or shell metacharacters cannot be reused. Print it with `printf '%q'`. ```suggestion printf 'export SB=%q\\n' \"$SB\" ```",
+      "addressed": false,
+      "path": ".claude/skills/prerelease-test/scripts/bootstrap_envs.sh",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:43:06Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=88463090\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-26T21:54:06Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-10-26T21:38:33Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:43:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:43:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:43:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:43:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:43:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:43:11Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T21:47:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-26T21:54:06Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-26T21:38:33Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

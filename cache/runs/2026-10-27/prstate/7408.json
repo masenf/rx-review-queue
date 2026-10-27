@@ -1,0 +1,281 @@
+{
+  "number": 7408,
+  "fetched_at": "2026-10-27T19:47:06.358Z",
+  "author_login": "kr1shna-exe",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "kr1shna-exe/reflex",
+  "head_sha": "a1840bad48227c1e35033ff1f74254e8c17a9da4",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "conflicting_files": [
+    "docs/app/reflex.lock/bun.lock",
+    "docs/app/reflex.lock/package.json",
+    "pyi_hashes.json"
+  ],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7002,
+      "title": "Migrate to plotly.js 4.x (removes the mapbox traces `rx.plotly.mapbox` wraps)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T15:14:56Z",
+      "can_push": false,
+      "commit_id": "d60aca90140a094ccb1bbb8a8c46f76d6f6c9533"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-04T15:16:24Z",
+      "can_push": false,
+      "commit_id": "d60aca90140a094ccb1bbb8a8c46f76d6f6c9533"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-07T14:39:47Z",
+      "can_push": true,
+      "commit_id": "f6778721d95ecc4ec89e3eb7cd58692bf60c1fb0"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-07T16:39:44Z",
+      "can_push": false,
+      "commit_id": "a19690ce3f6f10c02b3ed1b386a6cbe1dd810084"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-07T16:41:46Z",
+      "can_push": false,
+      "commit_id": "a19690ce3f6f10c02b3ed1b386a6cbe1dd810084"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "FarhanAliRaza"
+  ],
+  "threads": {
+    "total": 9,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2,
+      "FAILURE": 0,
+      "PENDING": 0
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Regenerate the docs app lockfiles so Plotly.js and locale packages are locked at 4.0.0.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Verify translated control labels on both the Plotly 4 MapLibre map and the legacy Plotly 3.7 Mapbox map.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Warn when the default rx.plotly renderer receives Mapbox traces or layout.mapbox instead of silently rendering blank axes.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Use the actual 0.10.0 target as the Mapbox component's deprecation version.",
+      "addressed": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Validate the legacy Mapbox component's locale bundle compatibility, either by pinning matching locale data or testing a translated label.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Skip the Node-backed unit test when Node.js is unavailable.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Guard a null reactive figure before dereferencing data or layout.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add docstrings to the new Playwright page functions.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Make all Node-dependent unit cases skip cleanly when Node.js is unavailable.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-07T17:01:31Z",
+      "excerpt": "Comments Outside Diff No findings outside the diff remain."
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-07T16:42:23Z",
+      "excerpt": "Want your agent to iterate on Greptile's feedback? Try [*greploops*](https://github.com/greptileai/skills/blob/main/greploop/SKILL.md)."
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-07T16:41:42Z",
+      "excerpt": "**Unit tests require Node** If a contributor runs the documented unit suite without Node.js installed, each of these eight test cases raises `FileNotFoundError` instead of skipping. Other Node-dependent unit tests check whether Node.js is available; without that guard here, the Python unit suite fails in an environment that meets the documented pre"
+    },
+    {
+      "by": "greptile-apps[bot]",
+      "at": "2026-10-07T16:41:42Z",
+      "excerpt": "**New page functions lack docstrings** The new `mapbox_literal`, `mapbox_layout`, and `mapbox_state` page functions have no docstrings. The repository guideline requires Google-style docstrings on all functions, so please add a brief summary and a Returns section to each before merging. **Context Used:** CLAUDE.md ([source](https://github.com/refle"
+    },
+    {
+      "by": "cubic-dev-ai[bot]",
+      "at": "2026-10-07T16:39:45Z",
+      "excerpt": "P2: A reactive figure that evaluates to `null` makes this dereference throw during render. Guard `figure` before reading either `data` or `layout` so an empty/loading figure does not crash the component. ```suggestion if (figure && !_rxDidWarnPlotlyMapbox && ( ``` \u2705 Addressed in [`708a221`](https://github.com/reflex-dev/reflex/commit/708a22185221bb"
+    }
+  ],
+  "head_activity_at": "2026-10-07T17:03:57Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:14:56Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:16:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:16:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:16:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-04T15:16:24Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T15:58:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-07T14:39:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-07T14:39:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-07T14:39:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-07T14:39:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:39:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:39:45Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:39:45Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:41:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:41:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:41:46Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T16:42:23Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-07T17:01:31Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-07T17:03:57Z",
+  "last_maintainer_activity_at": "2026-10-07T14:39:47Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

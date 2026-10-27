@@ -1,0 +1,765 @@
+{
+  "number": 7394,
+  "fetched_at": "2026-10-27T19:45:14.690Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "33e11e6bd727a98eaa9127053e4498cd474a3e1e",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T22:43:23Z",
+      "can_push": true,
+      "commit_id": "2380042ae07ea0efb491fde2a8c8bc08d1f54ec4"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-02T22:48:30Z",
+      "can_push": true,
+      "commit_id": "2380042ae07ea0efb491fde2a8c8bc08d1f54ec4"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:46:22Z",
+      "can_push": true,
+      "commit_id": "2380042ae07ea0efb491fde2a8c8bc08d1f54ec4"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:46:23Z",
+      "can_push": true,
+      "commit_id": "2380042ae07ea0efb491fde2a8c8bc08d1f54ec4"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T19:46:31Z",
+      "can_push": true,
+      "commit_id": "2380042ae07ea0efb491fde2a8c8bc08d1f54ec4"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:45Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:47Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:50Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:52Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:54Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:55Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:06:58Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:00Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:02Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:04Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:05Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-05T20:07:24Z",
+      "can_push": true,
+      "commit_id": "33e11e6bd727a98eaa9127053e4498cd474a3e1e"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 11,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 51,
+    "actions_total": 49,
+    "by_state": {
+      "CANCELLED": 27,
+      "SKIPPED": 15,
+      "FAILURE": 3,
+      "SUCCESS": 6
+    },
+    "failing": [
+      "unit-tests-gate",
+      "reflex-init-in-docker-test-gate",
+      "build-packages-gate",
+      "performance-tests-gate",
+      "integration-app-harness-gate",
+      "integration-tests-gate",
+      "codeql-gate",
+      "docs-tests-gate",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "playground-0.8.23",
+      "playground-head",
+      "changelog",
+      "changes",
+      "pre-commit",
+      "changes",
+      "changes",
+      "changes",
+      "changes",
+      "Analyze (python)",
+      "changes",
+      "Analyze (actions)"
+    ],
+    "pending": [],
+    "names": [
+      "unit-tests-gate",
+      "reflex-install-and-init",
+      "reflex-init-in-docker-test-gate",
+      "check-min-deps",
+      "build-packages-gate",
+      "build",
+      "Run browser performance smoke",
+      "Run benchmarks",
+      "Run Lighthouse benchmark",
+      "rx-shout-from-template",
+      "reflex-docs-macos",
+      "integration-app-harness-playwright",
+      "reflex-docs",
+      "example-counter-and-nba-proxy",
+      "discover",
+      "performance-tests-gate",
+      "integration-app-harness",
+      "integration-app-harness-gate",
+      "integration-tests-gate",
+      "codeql-gate",
+      "docs-tests",
+      "docs-tests-gate",
+      "unit-tests-macos",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (windows-latest, 3.10)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.10)",
+      "playground-0.8.23",
+      "playground-head",
+      "changelog",
+      "size-budgets",
+      "cubic \u00b7 AI code reviewer",
+      "Greptile Review",
+      "changes",
+      "pre-commit",
+      "changes",
+      "changes",
+      "changes",
+      "changes",
+      "changes",
+      "Analyze (python)",
+      "changes",
+      "Analyze (actions)"
+    ]
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:19Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=73816340\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-02T22:50:22Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n`\u2705 150` untouched benchmarks  \n`\u23e9 18` skipped benchmarks[^s"
+    }
+  ],
+  "head_activity_at": "2026-10-05T20:06:31Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:43:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-02T22:48:31Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-02T22:50:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:46:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:46:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:46:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:46:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-05T19:46:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:47Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:55Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:06:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:07:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:07:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:07:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:07:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:07:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:07:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:07:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-05T20:07:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:07:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-05T20:07:24Z"
+    }
+  ],
+  "body_has_repro": false,
+  "outstanding_asks": [],
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "check_id": 111967456467,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:52:34Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "reflex-init-in-docker-test-gate",
+      "check_id": 111961965962,
+      "run_id": 37367697127,
+      "conclusion": "FAILURE",
+      "cause": "The gate log reports changes=abandoned and reflex-install-and-init=skipped, then fails only with 'Blocking job results: changes=abandoned'."
+    },
+    {
+      "check": "build-packages-gate",
+      "check_id": 111961962754,
+      "run_id": 37367697182,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:36:46Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "performance-tests-gate",
+      "check_id": 111961961300,
+      "run_id": 37367697154,
+      "conclusion": "FAILURE",
+      "cause": "The gate log reports changes=abandoned with benchmarks, browser-performance and lighthouse skipped, then fails only with 'Blocking job results: changes=abandoned'."
+    },
+    {
+      "check": "integration-app-harness-gate",
+      "check_id": 111961960711,
+      "run_id": 37367697184,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:36:46Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "integration-tests-gate",
+      "check_id": 111961960612,
+      "run_id": 37367697003,
+      "conclusion": "FAILURE",
+      "cause": "The gate log reports changes=abandoned with all dependent integration jobs skipped, then fails only with 'Blocking job results: changes=abandoned'."
+    },
+    {
+      "check": "codeql-gate",
+      "check_id": 111961958769,
+      "run_id": 37367697064,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:36:45Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "docs-tests-gate",
+      "check_id": 111961957128,
+      "run_id": 37367697094,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:36:45Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13)",
+      "check_id": 111958739061,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:30Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.10)",
+      "check_id": 111958739007,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:30Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "check_id": 111958738965,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:29Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.12)",
+      "check_id": 111958738952,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:30Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "check_id": 111958738950,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:30Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.11)",
+      "check_id": 111958738941,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:30Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.13)",
+      "check_id": 111958738933,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:30Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.11)",
+      "check_id": 111958738878,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:30Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.15)",
+      "check_id": 111958738852,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:29Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.10)",
+      "check_id": 111958738800,
+      "run_id": 37367697140,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:27:29Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "playground-0.8.23",
+      "check_id": 111957513417,
+      "run_id": 37367923458,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:23:55Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "playground-head",
+      "check_id": 111957513125,
+      "run_id": 37367923458,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:23:55Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "changelog",
+      "check_id": 111957129514,
+      "run_id": 37367810149,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:22:49Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "changes",
+      "check_id": 111956750435,
+      "run_id": 37367697127,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:45Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "pre-commit",
+      "check_id": 111956749885,
+      "run_id": 37367697199,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:44Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "changes",
+      "check_id": 111956749618,
+      "run_id": 37367697182,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:44Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "changes",
+      "check_id": 111956749586,
+      "run_id": 37367697184,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:44Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "changes",
+      "check_id": 111956749514,
+      "run_id": 37367697154,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:44Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "changes",
+      "check_id": 111956749511,
+      "run_id": 37367697003,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:44Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "Analyze (python)",
+      "check_id": 111956749178,
+      "run_id": 37367697064,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:44Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "changes",
+      "check_id": 111956748897,
+      "run_id": 37367697094,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:44Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    },
+    {
+      "check": "Analyze (actions)",
+      "check_id": 111956748759,
+      "run_id": 37367697064,
+      "conclusion": "CANCELLED",
+      "cause": "GitHub check diagnostics record this job as CANCELLED at 2026-10-05T20:21:44Z; the job-log endpoint returns no content, so it exposes no failing assertion. The current-head gate logs that did complete identify an abandoned changes prerequisite, making this cancellation/abandonment fallout rather than a demonstrated code-test failure."
+    }
+  ],
+  "conflicting_files": [
+    ".github/workflows/build_packages.yml",
+    ".github/workflows/examples.yml"
+  ],
+  "update_branch_offered": false,
+  "last_author_activity_at": "2026-10-05T20:07:05Z",
+  "last_maintainer_activity_at": "2026-10-05T19:46:31Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,748 @@
+{
+  "number": 7642,
+  "fetched_at": "2026-10-27T19:40:25.154Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "7374337e4fde803ed97ddcccce1a475e63b06203",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7623,
+      "title": "Add a `SetVar` backed by the JS `Set` object",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:12:29Z",
+      "can_push": true,
+      "commit_id": "4fc60c7bdabf179b96d0218ccc1188de10a523c7"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:13:26Z",
+      "can_push": true,
+      "commit_id": "4fc60c7bdabf179b96d0218ccc1188de10a523c7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:15:36Z",
+      "can_push": true,
+      "commit_id": "4fc60c7bdabf179b96d0218ccc1188de10a523c7"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:03Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:06Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:08Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:11Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:13Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:16Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:18Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:20Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:22Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:25Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:27Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:29Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:31Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:33Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:41:51Z",
+      "can_push": true,
+      "commit_id": "7dbe5758a93a6c7d6dc27042d009235946443b6f"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:46:47Z",
+      "can_push": true,
+      "commit_id": "dd698e636929a7a084d1df9e79fe1084471154d3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:48:04Z",
+      "can_push": true,
+      "commit_id": "b6c5086985eb8cb2c56a16b0f83e302684564bb5"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-22T20:48:07Z",
+      "can_push": true,
+      "commit_id": "b6c5086985eb8cb2c56a16b0f83e302684564bb5"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 16,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 172,
+    "actions_total": 168,
+    "by_state": {
+      "SKIPPED": 4,
+      "SUCCESS": 168
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "Register frozenset serialization before exposing frozenset fields as SetVar values.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/set.py",
+      "outdated": false
+    },
+    {
+      "by": "chatgpt-codex-connector",
+      "ask": "Use value equality for structural set elements such as tuples and nested frozensets.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/set.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Preserve optionality when converting optional set vars for rx.foreach so None renders no children.",
+      "addressed": true,
+      "path": "packages/reflex-components-core/src/reflex_components_core/core/foreach.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Keep deprecated set concatenation compiling for set + set and array + set.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/set.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Compare tuple and other structured set elements by value instead of JavaScript object identity.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/set.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Make static result types for mixed-element union and symmetric_difference include both operand element types.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/set.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Use 0.10.1 rather than the already-tagged 0.10.0 as the deprecation start version.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/set.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Preserve Python value equality for tuple and other JSON-structured set elements.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/set.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Add frozenset serialization so frozenset state and computed values do not serialize as null.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/set.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Test VarData propagation from Vars nested inside set literals.",
+      "addressed": true,
+      "path": "tests/units/reflex_base/vars/test_set.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Do not claim frozenset state-field support unless serialization and validation support it.",
+      "addressed": true,
+      "path": "docs/api-reference/var_system.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Clarify frozenset support in the var-operations documentation unless state fields are made valid.",
+      "addressed": true,
+      "path": "docs/vars/var-operations.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Restrict the Field overload to set unless frozenset state fields gain serializer support.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/vars/base.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Keep the release-note state-var claim consistent with actual frozenset support.",
+      "addressed": true,
+      "path": "packages/reflex-base/news/+set-var.feature.md",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Deduplicate symmetric_difference results when a list operand repeats values.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Use distinct key prefixes for strings and structured values so different set elements cannot collide.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": true
+    },
+    {
+      "by": "masenf",
+      "ask": "Expose the loss of sequence-style indexing and operations on set-typed frontend vars prominently as a breaking change.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-10-22T20:09:21Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n<!-- codex-review-state:v1 {\"code_review\":{\"commit_sha\":\"4fc60c7bdabf179b96d0218ccc1188de10a523c7\",\"has_any_findings\":true,\"has_unresolved_findings\":true,\"status\":\"completed\"},\"security_review\":{\"commit_sha\":null,\"has_any_findings\":null,\"has_unresolved_find"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:13:20Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=86254800\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://greptile-static-assets.s3.amazonaws.com/badges/RetriggerDark.svg?v=2\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://grepti"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-22T20:24:08Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: **22 benchmarks are dominated by system calls**\n>\n> System calls cannot be simulated consistently and are left out of the measure. The report"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T21:37:13Z",
+      "excerpt": "marking as a [breaking] change, because before you could index into `set`-typed state vars in the frontend code. not sure if that was ever \"correct\", but it's a behavior change we need to expose prominently"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T21:38:09Z",
+      "excerpt": "Agreed. 7374337e4 moves the changelog fragment for this to the `breaking` type (in `reflex-base` and mirrored in the root `reflex` news), stating that a set var is no longer a sequence in frontend code and that indexing, `map`, `join`, `+` and the rest still compile with a deprecation warning until "
+    }
+  ],
+  "head_activity_at": "2026-10-22T21:38:01Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-22T20:09:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-22T20:12:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-22T20:12:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-10-22T20:12:30Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:13:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:13:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:13:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:13:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:13:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:13:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:13:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:15:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:15:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:15:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:15:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:15:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:15:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:15:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:15:36Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-22T20:24:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:05Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:11Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:11Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:13Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:27Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:29Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:41:33Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:41:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:41:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:46:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:46:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T20:46:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:48:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:48:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:48:07Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T20:48:07Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T21:37:13Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T21:38:09Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-22T21:38:09Z",
+  "last_maintainer_activity_at": "2026-10-22T21:37:13Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 4
+}

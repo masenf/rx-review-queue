@@ -1,0 +1,130 @@
+{
+  "number": 7648,
+  "fetched_at": "2026-10-27T19:39:02.431Z",
+  "author_login": "somiljain2006",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "somiljain2006/reflex",
+  "head_sha": "a24b9d34960d1d60984e00b95e637e3bc4075289",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7633,
+      "title": "Plain `@property` on a Pydantic model or dataclass state var compiles but renders empty",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-23T09:54:53Z",
+      "can_push": true,
+      "commit_id": "c2520226d52db344ecad4647c3a04b542c5cc059"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-23T09:58:09Z",
+      "can_push": true,
+      "commit_id": "c2520226d52db344ecad4647c3a04b542c5cc059"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-23T10:52:22Z",
+      "can_push": true,
+      "commit_id": "e0fd8709e0a34239ed997528c479d6fa64bb687f"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T09:54:47Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=86634005\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-23T10:53:21Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T09:54:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T09:54:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T09:54:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T09:58:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T09:58:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T10:52:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-23T10:52:22Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-23T10:53:21Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

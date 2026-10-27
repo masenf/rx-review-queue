@@ -1,0 +1,345 @@
+{
+  "number": 7624,
+  "fetched_at": "2026-10-27T19:41:03.523Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "27242f986c4c4ab30bc301f53ae4490f061b8623",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 5220,
+      "title": "Optimize lifespan middleware",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-20T23:27:14Z",
+      "can_push": true,
+      "commit_id": "27242f986c4c4ab30bc301f53ae4490f061b8623"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-20T23:28:15Z",
+      "can_push": true,
+      "commit_id": "27242f986c4c4ab30bc301f53ae4490f061b8623"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=81303c45-47c1-4bf3-982d-33d910442916 -->\n<!-- cubic:review-run=aac847cb-3a2e-547e-bb84-a9e5a5098f42 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: This fragment describes a backwards-incompat"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=6ed2b2bf-bb52-438a-85e1-269fa971046b -->\n<!-- cubic:review-run=aac847cb-3a2e-547e-bb84-a9e5a5098f42 -->\n<!-- metadata:{\"confidence\":5} -->\nP2: An exception raised during ASGI lifespan sta"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=777072d6-f5a5-47e9-95fc-161785045ba6 -->\n<!-- cubic:review-run=aac847cb-3a2e-547e-bb84-a9e5a5098f42 -->\n<!-- metadata:{\"confidence\":7} -->\nP2: `_run_asgi_lifespan` treats every shutdown r"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=707b3fd0-6a6a-4f42-a039-4ca49fcb4bfb -->\n<!-- cubic:review-run=aac847cb-3a2e-547e-bb84-a9e5a5098f42 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: The parenthetical is only accurate for Starl"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1d3777f8-9c6d-4fd7-a87c-4c437cb58794 -->\n<!-- cubic:review-run=aac847cb-3a2e-547e-bb84-a9e5a5098f42 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: `silent_app` is `async` but never awaits, so"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4c9f8292-5b38-4912-83a8-1131cdd216f5 -->\n<!-- cubic:review-run=aac847cb-3a2e-547e-bb84-a9e5a5098f42 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: Use a `with` block instead of calling `__ent"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Error responses lose CORS headers**\n\nWith no transformer, or an outermost Starlette"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Transformer cleanup can be interrupted**\n\n`_run_asgi_lifespan` cancels `app_task` a"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 185,
+    "actions_total": 181,
+    "by_state": {
+      "CANCELLED": 1,
+      "FAILURE": 11,
+      "SKIPPED": 14,
+      "SUCCESS": 159
+    },
+    "failing": [
+      "changelog",
+      "unit-tests-gate",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (windows-latest, 3.14)"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "check_run_id": 119381189315,
+      "conclusion": "CANCELLED",
+      "job": "119381189315",
+      "run": "39645878172",
+      "cause": "GitHub records this job as CANCELLED, and its retained job diagnostic contains no steps; it did not reach a recorded command.",
+      "evidence": "Current run metadata shows changelog started at 2026-10-21T17:40:25Z and ended cancelled at 2026-10-21T17:45:29Z; the archived job log is unavailable."
+    },
+    {
+      "check": "unit-tests-gate",
+      "check_run_id": 118944495531,
+      "conclusion": "FAILURE",
+      "job": "118944495531",
+      "run": "39514621186",
+      "cause": "The gate failed because the unit-test matrix failed; it reports no independent test error.",
+      "evidence": "Same-head gate log previously read, corroborated by today's retained ci_gate failure step."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.15)",
+      "check_run_id": 118943743913,
+      "conclusion": "FAILURE",
+      "job": "118943743913",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in windows-latest, 3.15.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.15)",
+      "check_run_id": 118943743899,
+      "conclusion": "FAILURE",
+      "job": "118943743899",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in ubuntu-latest, 3.15.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13)",
+      "check_run_id": 118943743870,
+      "conclusion": "FAILURE",
+      "job": "118943743870",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in ubuntu-latest, 3.13.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "check_run_id": 118943743832,
+      "conclusion": "FAILURE",
+      "job": "118943743832",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in ubuntu-latest, 3.12.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.11)",
+      "check_run_id": 118943743824,
+      "conclusion": "FAILURE",
+      "job": "118943743824",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in windows-latest, 3.11.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.13)",
+      "check_run_id": 118943743821,
+      "conclusion": "FAILURE",
+      "job": "118943743821",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in windows-latest, 3.13.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.11)",
+      "check_run_id": 118943743812,
+      "conclusion": "FAILURE",
+      "job": "118943743812",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in ubuntu-latest, 3.11.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.12)",
+      "check_run_id": 118943743785,
+      "conclusion": "FAILURE",
+      "job": "118943743785",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in windows-latest, 3.12.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.14)",
+      "check_run_id": 118943743782,
+      "conclusion": "FAILURE",
+      "job": "118943743782",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in ubuntu-latest, 3.14.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    },
+    {
+      "check": "unit-tests (windows-latest, 3.14)",
+      "check_run_id": 118943743752,
+      "conclusion": "FAILURE",
+      "job": "118943743752",
+      "run": "39514621186",
+      "cause": "Collection of tests/units/test_app.py stops with ModuleNotFoundError: No module named 'pydantic' while importing fastapi.exceptions; pytest exits before running tests in windows-latest, 3.14.",
+      "evidence": "Same-head job log previously read, corroborated by today's retained Run unit tests without db dependencies failure step."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Rename the performance fragment as a breaking-change fragment while retaining the performance explanation.",
+      "addressed": false,
+      "path": "news/+lighter-asgi-entrypoint.performance.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Log ASGI lifespan startup exceptions with traceback information before treating the app as unsupported.",
+      "addressed": false,
+      "path": "reflex/app_mixins/lifespan.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Require a lifespan.shutdown.complete response and reject missing or malformed shutdown responses.",
+      "addressed": false,
+      "path": "reflex/app_mixins/lifespan.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Clarify that only a Starlette api_transformer mounts the underlying Reflex Starlette app.",
+      "addressed": false,
+      "path": "docs/utility_methods/lifespan_tasks.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Add the RUF029 suppression to the async silent_app test helper.",
+      "addressed": false,
+      "path": "tests/units/app_mixins/test_lifespan.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Use TestClient as a context manager so its lifespan portal cannot leak when assertions fail.",
+      "addressed": false,
+      "path": "tests/units/test_app.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Keep CORS outside the outermost Starlette error handler and cover an unhandled route error with an Origin header.",
+      "addressed": false,
+      "path": "reflex/app.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Allow transformer lifespan tasks to finish cleanup, then await cancellation before leaving the context.",
+      "addressed": false,
+      "path": "reflex/app_mixins/lifespan.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T23:28:11Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=84812595\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-20T23:32:48Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary>:warning: <b>14 benchmarks spent signific"
+    }
+  ],
+  "head_activity_at": "2026-10-20T23:18:47Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T23:27:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T23:27:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T23:28:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T23:28:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T23:28:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-20T23:32:48Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-20T23:18:47Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

@@ -1,0 +1,620 @@
+{
+  "number": 7637,
+  "fetched_at": "2026-10-27T19:35:00Z",
+  "author_login": "anishgurjar",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "anishgurjar/reflex",
+  "head_sha": "52afe7277eb93948526eea5cf1ed0ee299aaaa48",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "APPROVED",
+  "linked_issues": [
+    {
+      "number": 7567,
+      "title": "Synced storage vars sharing one name stay stale in the tab that writes",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T18:35:29Z",
+      "can_push": false,
+      "commit_id": "d0cba9ff7e8c9a9e13d8535004cb709309dbd0b4"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T18:41:02Z",
+      "can_push": false,
+      "commit_id": "344ae42cd49d59ae5a03aa3fcf84356c430ac18a"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T18:41:05Z",
+      "can_push": false,
+      "commit_id": "344ae42cd49d59ae5a03aa3fcf84356c430ac18a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-10-22T22:46:26Z",
+      "can_push": true,
+      "commit_id": "ffde87e30682644133d75561ee5bdd20cb89567c"
+    },
+    {
+      "by": "anishgurjar",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-22T23:52:38Z",
+      "can_push": false,
+      "commit_id": "ffde87e30682644133d75561ee5bdd20cb89567c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T23:53:17Z",
+      "can_push": false,
+      "commit_id": "41d7be6de6dca1ab301568f8fcd3c30ddba96fc7"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T23:54:07Z",
+      "can_push": false,
+      "commit_id": "41d7be6de6dca1ab301568f8fcd3c30ddba96fc7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T18:57:10Z",
+      "can_push": false,
+      "commit_id": "2a13258243ab81c329e90282d991a3a80378f616"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T18:57:24Z",
+      "can_push": false,
+      "commit_id": "2a13258243ab81c329e90282d991a3a80378f616"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:02:04Z",
+      "can_push": true,
+      "commit_id": "6a9c88cb3f6455daac02e4cf632462d07fe6e107"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:02:07Z",
+      "can_push": true,
+      "commit_id": "6a9c88cb3f6455daac02e4cf632462d07fe6e107"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:02:10Z",
+      "can_push": true,
+      "commit_id": "6a9c88cb3f6455daac02e4cf632462d07fe6e107"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:02:12Z",
+      "can_push": true,
+      "commit_id": "6a9c88cb3f6455daac02e4cf632462d07fe6e107"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:02:15Z",
+      "can_push": true,
+      "commit_id": "6a9c88cb3f6455daac02e4cf632462d07fe6e107"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:04:20Z",
+      "can_push": false,
+      "commit_id": "6a9c88cb3f6455daac02e4cf632462d07fe6e107"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:08:11Z",
+      "can_push": true,
+      "commit_id": "5d9dab026d38c41e177321bd63e06ce31a5e1223"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:11:57Z",
+      "can_push": false,
+      "commit_id": "5d9dab026d38c41e177321bd63e06ce31a5e1223"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T19:16:51Z",
+      "can_push": true,
+      "commit_id": "52afe7277eb93948526eea5cf1ed0ee299aaaa48"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-10-27T19:25:34Z",
+      "can_push": true,
+      "commit_id": "52afe7277eb93948526eea5cf1ed0ee299aaaa48"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [],
+  "threads": {
+    "total": 11,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 165,
+    "actions_total": 162,
+    "by_state": {
+      "IN_PROGRESS": 17,
+      "SKIPPED": 3,
+      "SUCCESS": 145
+    },
+    "failing": [],
+    "pending": [
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (windows-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (windows-latest, 3.15)",
+      "unit-tests (windows-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (windows-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (memory, 3.15)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "Run benchmarks"
+    ]
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "This echo check cannot detect a repeated `localStorage.setItem`: the map value remains `\"from-cs0\"` after another identical write. Record setter calls (or expose a write log) and assert the echoed update leaves the write count unchanged.",
+      "addressed": true,
+      "path": "tests/units/compiler/state_js.test.mjs",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Shared vars stay different: When one delta writes `first=\"one\"` and then `second=\"two\"` to the same storage name, `pending_syncs` keeps the first write's target list, which excludes `first`.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "The dedupe by storage name keeps only the first writer's sync, and that sync excludes the first writer's own var. When two synced vars with the same name get different values in one delta, the first var stays on its old value while storage holds the last one. Build the sync set from every synced var with the name, or merge the writer into the pending entry for that name.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "This sync can send a value that is older than one this tab already sent for the sibling. The delta is the reply to an earlier event. If the tab sent `update_vars_internal` for a sibling after that event (from another tab's storage event), the backend applies this sync after that newer value, and the sync's echo overwrites it.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Please add a browser test for the fixed scenario to `tests/integration/tests_playwright/test_hydration_storage.py`. The `synced` page already has `SharedNameState`. Add a second synced var with the shared name, click a button that sets one of them, and expect both texts to update in the same tab.",
+      "addressed": true,
+      "path": "tests/units/compiler/state_js.test.mjs",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "This guard can permanently suppress sibling sync after a sent value is reconciled to a different backend value. `takeEcho` removes entries only on exact matches, so an outstanding entry left by a `get_delta` override makes every later delta skip `pending_syncs`; track pending sends by the applied backend update and clear or reconcile nonmatching echoes.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Shared vars stop updating: When a `get_delta` override replaces or drops a sent value, `takeEcho` leaves its entry in `sentStorageValues`: it only removes entries that exactly match the returned value.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "This assigns the source's raw object to the sibling. For list or dict values, both vars then share one object, so later in-place mutations on one var are never propagated to the other. The `!=` guard then skips the sibling, leaving it stale in this tab. Copy the value on assignment, or compare identity and mark the sibling dirty.",
+      "addressed": true,
+      "path": "reflex/state.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Shared writes erase later values: When two synced vars sharing a name are both dirty, `_sync_shared_storage` overwrites the second source before the loop reads it.",
+      "addressed": true,
+      "path": "reflex/state.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "The sibling-skip check only sees vars in `writes`, and `writes` only holds storage vars that have a synced sibling. A synced var whose only sibling is non-synced is not in `writes`, so a non-synced write in the same event can still overwrite it. Track every dirty member sharing the name, not only the keys, when building the skip set.",
+      "addressed": true,
+      "path": "reflex/state.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "`next(iter(written.values()))` uses set-dependent ordering to choose the fan-out value. If one event writes two different vars with the same storage name, an untouched synced sibling can receive either value across runs; choose an explicit precedence or reject conflicting writes before fan-out.",
+      "addressed": true,
+      "path": "reflex/state.py",
+      "outdated": false
+    },
+    {
+      "by": "anishgurjar",
+      "ask": "Approve the first-time-contributor workflow gate so CI can run.",
+      "addressed": true
+    },
+    {
+      "by": "masenf",
+      "ask": "Fix the deterministic cross-tab ordering regression without suppressing legitimate transformed backend deltas.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T18:40:57Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=86188062\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "anishgurjar",
+      "association": "NONE",
+      "at": "2026-10-22T19:11:37Z",
+      "excerpt": "Hi @masenf, this is ready for a look when you have a moment. The workflows are waiting on first-time-contributor approval; the new state.js tests pass locally ("
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-22T20:18:53Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T21:08:59Z",
+      "excerpt": "The required app-harness workflow now fails `test_synced_storage_echo_after_own_write_is_written[..., shared_name]` in both dev/prod modes across all ten memory"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:53:25Z",
+      "excerpt": "I changed the solution in this PR. The fix now sets the sibling vars on the backend, not from the frontend.\n\nWhy: the frontend sync had to track sent values tha"
+    }
+  ],
+  "head_activity_at": "2026-10-27T19:16:35Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T18:35:29Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T18:35:29Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T18:40:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T18:41:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T18:41:02Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T18:41:05Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T18:41:05Z"
+    },
+    {
+      "kind": "comment",
+      "by": "anishgurjar",
+      "association": "NONE",
+      "at": "2026-10-22T19:11:37Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-22T20:18:53Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-22T21:08:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T22:46:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T22:46:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-22T22:46:26Z",
+      "state": "CHANGES_REQUESTED"
+    },
+    {
+      "kind": "review",
+      "by": "anishgurjar",
+      "association": "NONE",
+      "at": "2026-10-22T23:52:38Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "anishgurjar",
+      "association": "NONE",
+      "at": "2026-10-22T23:52:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T23:53:17Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T23:53:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T23:54:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T23:54:07Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T18:53:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T18:57:10Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T18:57:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T18:57:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T18:57:24Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:04Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:07Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:10Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:12Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:15Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:02:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T19:04:20Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T19:04:20Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:08:11Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:08:11Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T19:11:57Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T19:11:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:16:51Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:16:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T19:25:34Z",
+      "state": "APPROVED"
+    }
+  ],
+  "last_author_activity_at": "2026-10-27T19:16:35Z",
+  "last_maintainer_activity_at": "2026-10-27T19:25:34Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

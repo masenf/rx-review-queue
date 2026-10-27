@@ -1,0 +1,327 @@
+{
+  "number": 7672,
+  "fetched_at": "2026-10-27T19:35:00Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "12c49640a5e0c58777d40deb61c3214d21b32548",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": false,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7619,
+      "title": "Implement event loop blocking detection",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T14:29:18Z",
+      "can_push": false,
+      "commit_id": "1349397c7c14ec51ed249e00f4aae1ff96b304fa"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T14:31:00Z",
+      "can_push": false,
+      "commit_id": "1349397c7c14ec51ed249e00f4aae1ff96b304fa"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T14:53:11Z",
+      "can_push": false,
+      "commit_id": "53b10f4dab35059ec97effae9039a9b9c282e0ab"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T15:40:38Z",
+      "can_push": false,
+      "commit_id": "745b9999d61529a7bfd752331d6c5d8fda761f7a"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T15:41:51Z",
+      "can_push": false,
+      "commit_id": "745b9999d61529a7bfd752331d6c5d8fda761f7a"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 12,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=639e3178-fd30-46d0-a2bb-08f65bd81385 -->\n<!-- cubic:review-run=3d1d86a8-392e-5743-88af-9a8b511f9104 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: The monitor can miss handlers that exceed th"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 175,
+    "actions_total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 6,
+      "SUCCESS": 168
+    },
+    "failing": [
+      "pre-commit"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "pre-commit",
+      "cause": "The `ruff-format` hook reformats the PR's own tests/units/reflex_base/event/processor/test_event_processor.py, collapsing the multiline caplog.set_level call; CI exits 1 because the hook changed the file."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "This feature changes `reflex-base`, but its fragment is only under the root `news/` directory. Add a corresponding `packages/reflex-base/news/+7619.feature.md` fragment so the package changelog check and release notes include the change.",
+      "addressed": true,
+      "path": "news/+7619.feature.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "The monitor can miss handlers that exceed the configured threshold because timing starts only when the delayed probe is submitted. Track elapsed time from `handler_started` (or account for the polling delay) so a 0.2-second block cannot evade detection based on probe phase.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/event/processor/blocking.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "The new `event_loop_blocking_threshold` setting is documented as overridable via `REFLEX_EVENT_LOOP_BLOCKING_THRESHOLD`, but no test covers that path. Add an entry for it to the `test_update_from_env` parametrize list.",
+      "addressed": true,
+      "path": "tests/units/test_config.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "This wiring has no test. Nothing verifies that `_setup_event_processor` forwards `get_config().event_loop_blocking_threshold` to the processor, so a dropped or mis-wired kwarg would pass CI. Add a unit test that sets the config threshold and asserts `app.event_processor._blocking_monitor` or `app._event_processor.event_loop_blocking_threshold` matches it.",
+      "addressed": true,
+      "path": "reflex/app.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "An oversized positive integer threshold raises `OverflowError` inside `math.isfinite` instead of the documented `ConfigError`. Reject integers beyond the representable float range before calling `math.isfinite` (or catch the conversion overflow).",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/config.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Older allowed package breaks startup: `App` now needs the new `reflex-base` setting and constructor argument, but `pyproject.toml` still allows `reflex-base >= 0.10.1`.",
+      "addressed": true,
+      "path": "reflex/app.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Package news entry is missing: The new public `reflex-base` setting has only a root news fragment.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/config.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Suggested fix still blocks: The warning recommends moving blocking work into a background event, but background handlers still run on the same asyncio loop.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/event/processor/blocking.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Polling limits lack an explanation: The new time calculation leaves readers to infer that `0.001` means one millisecond and `0.1` means 100 milliseconds.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/event/processor/blocking.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Constructor docstring is missing: The new `EventLoopBlockingMonitor.init` has no docstring.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/event/processor/blocking.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "The `asyncio.sleep(0.02)` here does not guarantee a probe is queued before blocking, which the comment claims. Use the same `probe_queued` synchronization as the threshold test so the ordering is deterministic in all three tests.",
+      "addressed": true,
+      "path": "tests/units/reflex_base/event/processor/test_blocking.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Imports fail the order check: The new `Callable` import appears before `asyncio`.",
+      "addressed": true,
+      "path": "tests/units/reflex_base/event/processor/test_blocking.py",
+      "outdated": true
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:30:54Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=88963842\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-27T14:35:09Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.39%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-10-27T18:01:20Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:29:18Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:29:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:29:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:29:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:29:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:29:18Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:30:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:30:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:30:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:30:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:30:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:31:00Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-27T14:35:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:53:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T14:53:11Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T15:40:38Z",
+      "state": "COMMENTED"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T15:40:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T15:41:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T15:41:51Z",
+      "state": "COMMENTED"
+    }
+  ],
+  "last_author_activity_at": "2026-10-27T18:01:20Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

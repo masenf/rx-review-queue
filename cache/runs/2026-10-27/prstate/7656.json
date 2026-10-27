@@ -1,0 +1,171 @@
+{
+  "number": 7656,
+  "fetched_at": "2026-10-27T19:33:26Z",
+  "author_login": "anishgurjar",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "anishgurjar/reflex",
+  "head_sha": "6cb42ef645a52dddac4c5822f811d75aeb382a50",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7654,
+      "title": "Comparing list Vars with < > <= >= gives wrong results (arrays are compared as strings in JS)",
+      "filed_by": "poojagosika"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-26T01:28:15Z",
+      "can_push": true,
+      "commit_id": "6cb42ef645a52dddac4c5822f811d75aeb382a50"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-26T01:29:29Z",
+      "can_push": true,
+      "commit_id": "6cb42ef645a52dddac4c5822f811d75aeb382a50"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=413a08a1-dbfa-467d-8f7b-fab0a4c54160 -->\n<!-- cubic:review-run=04eae58e-7755-5ce8-8aeb-698ff8b4d76a -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This numeric path does not preserve Python\u2019s"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Release notes omit this fix**\n\nThis user-facing array ordering change has no bugfix"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Tests miss the package layout**\n\nThe new array comparison tests cover `reflex_base."
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Tests omit required docstrings**\n\nNeither `test_array_comparison_uses_compare_array"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: This numeric path does not preserve Python\u2019s arbitrary-precision integer ordering: values above `Number.MAX_SAFE_INTEGER` have already collapsed to the same JavaScript `Number` before `compareArrays` compares them. Preserve integer precision in the frontend representation or explicitly reject/document this unsupported range so the helper does not claim Python list semantics for it.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/helpers/array.js",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Release notes omit this fix** This user-facing array ordering change has no bugfix fragment under `packages/reflex-base/news/`. `CLAUDE.md` requires a fragment for each affected package. Add a short entry explaining that arrays now compare element by element instead of as comma-joined strings. This repository requirement must be satisfied before merging. **Context Used:** CLAUDE.md (source) Note: If this suggestion doesn't match your team's coding style, reply to this and let me know. I'll remember it for next time!",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/vars/sequence.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Tests miss the package layout** The new array comparison tests cover `reflex_base.vars.sequence` but sit in the top-level `test_var.py`. `CLAUDE.md` requires subpackage unit tests to include the corresponding package path. Move these tests under `tests/units/reflex_base/vars/` before merging to satisfy that requirement. **Context Used:** CLAUDE.md (source) Note: If this suggestion doesn't match your team's coding style, reply to this and let me know. I'll remember it for next time!",
+      "addressed": false,
+      "path": "tests/units/test_var.py",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "**Tests omit required docstrings** Neither `test_array_comparison_uses_compare_arrays` nor `test_array_comparison_imports_compare_arrays` has a docstring. `CLAUDE.md` requires Google-style docstrings on all functions. Add a one-line summary to each test before merging to satisfy that requirement. **Context Used:** CLAUDE.md (source) Note: If this suggestion doesn't match your team's coding style, reply to this and let me know. I'll remember it for next time!",
+      "addressed": false,
+      "path": "tests/units/test_var.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T01:29:24Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=87847846\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-26T01:24:53Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T01:28:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T01:28:15Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T01:29:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T01:29:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T01:29:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T01:29:27Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-26T01:29:29Z",
+      "state": "commented"
+    }
+  ],
+  "last_author_activity_at": "2026-10-26T01:24:53Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}

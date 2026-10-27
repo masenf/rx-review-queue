@@ -1,0 +1,82 @@
+{
+  "number": 7652,
+  "fetched_at": "2026-10-27T19:34:30.616Z",
+  "author_login": "suryakant-source",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "suryakant-source/reflex",
+  "head_sha": "888dde85f08b613de781196ed36fd52bf4255f90",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7649,
+      "title": "Cross-tab localStorage clears do not synchronize configured state",
+      "filed_by": "sjmaple"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-24T02:43:37Z",
+      "can_push": true,
+      "commit_id": "888dde85f08b613de781196ed36fd52bf4255f90"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-24T02:44:02Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=87163614\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-24T02:37:26Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-24T02:43:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-24T02:44:02Z"
+    }
+  ],
+  "last_author_activity_at": "2026-10-24T02:37:26Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0
+}
