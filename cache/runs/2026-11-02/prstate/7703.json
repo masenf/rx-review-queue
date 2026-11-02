@@ -1,0 +1,301 @@
+{
+  "number": 7703,
+  "fetched_at": "2026-11-02T17:42:42Z",
+  "author_login": "AP24110011695",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "AP24110011695/reflex",
+  "head_sha": "90ff27f44f850edca1644389b98a9f867898a935",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T19:58:18Z",
+      "can_push": true,
+      "commit_id": "b8f9fe1716cc6b1282ebf8e041c1de7ffd33ede5"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T19:58:47Z",
+      "can_push": true,
+      "commit_id": "b8f9fe1716cc6b1282ebf8e041c1de7ffd33ede5"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:18:14Z",
+      "can_push": false,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:18:18Z",
+      "can_push": false,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:18:21Z",
+      "can_push": false,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:18:24Z",
+      "can_push": false,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:18:27Z",
+      "can_push": false,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:18:31Z",
+      "can_push": false,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:18:48Z",
+      "can_push": true,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:19:26Z",
+      "can_push": true,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:22:03Z",
+      "can_push": true,
+      "commit_id": "4c677433b4635c6cc509b1d8a081fbc90d7655fe"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:24:05Z",
+      "can_push": false,
+      "commit_id": "90ff27f44f850edca1644389b98a9f867898a935"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:58:42Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92066967\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-31T20:23:38Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:58:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:58:18Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:58:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:58:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:58:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:18:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:18:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:18:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:18:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:18:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:18:31Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:18:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:19:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:19:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:22:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:22:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:24:05Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Verify an unchanged copied asset is left alone before testing refresh after an edit.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Provide a cleanup strategy for hardlink/copy fallback artifacts whose source module is removed.",
+      "addressed": true,
+      "note": "Deferred to #7705 as a maintainer design decision; Greptile accepted the follow-up as non-blocking."
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Document copy fallback as applying whenever hardlinking is unavailable, not only across drives.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Avoid hashing both copied files on every compile when cheaper identity checks can rule out changes.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Keep fallback files replaceable when the Windows source is read-only and add a regression test.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Track and remove fallback artifacts after their source module is deleted or renamed.",
+      "addressed": true,
+      "note": "Deferred to #7705; the reviewer explicitly accepted it as a follow-up design question rather than a blocker."
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Do not treat same-size, same-mtime copied content as unchanged when its bytes differ.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Retain a content check for copied assets because FAT32 timestamps cannot prove identity.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-31T20:24:05Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

@@ -1,0 +1,187 @@
+{
+  "number": 7704,
+  "fetched_at": "2026-11-02T17:42:41Z",
+  "author_login": "AP24110011695",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "AP24110011695/reflex",
+  "head_sha": "a2c175be0d4610bd13bee6458a2ef7a280d560c1",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:09:09Z",
+      "can_push": true,
+      "commit_id": "af9302478cbc2634436d071bad756d341b7e2316"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:10:16Z",
+      "can_push": true,
+      "commit_id": "af9302478cbc2634436d071bad756d341b7e2316"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:15:56Z",
+      "can_push": false,
+      "commit_id": "267b8541e32c550a012ab9939d9c92a96267bbdc"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:15:59Z",
+      "can_push": false,
+      "commit_id": "267b8541e32c550a012ab9939d9c92a96267bbdc"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:16:04Z",
+      "can_push": false,
+      "commit_id": "267b8541e32c550a012ab9939d9c92a96267bbdc"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:17:11Z",
+      "can_push": true,
+      "commit_id": "267b8541e32c550a012ab9939d9c92a96267bbdc"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:10:11Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92069690\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-31T20:23:43Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:09:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:09:09Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:10:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:10:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:10:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:15:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:15:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T20:16:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:17:11Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:17:11Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Skip symlink-creation tests on Windows runners that lack symlink privileges.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Handle overwrite of dangling symlink destinations and add a regression test.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add the required user-facing bugfix news fragment.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the release note cover files, directories, and symlinks replaced by overwrite=True.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-31T20:23:43Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

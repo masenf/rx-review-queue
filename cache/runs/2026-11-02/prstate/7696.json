@@ -1,0 +1,132 @@
+{
+  "number": 7696,
+  "fetched_at": "2026-11-02T17:42:48Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "58ac79e276536cbc3fcaeb757be4f9db7407f3cf",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T17:10:38Z",
+      "can_push": true,
+      "commit_id": "58ac79e276536cbc3fcaeb757be4f9db7407f3cf"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T17:11:40Z",
+      "can_push": true,
+      "commit_id": "58ac79e276536cbc3fcaeb757be4f9db7407f3cf"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Cancellation test skips completion**\n\n`future.cancel()` has already completed the f"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 175,
+    "by_state": {
+      "CANCELLED": 1,
+      "SKIPPED": 7,
+      "SUCCESS": 167
+    },
+    "failing": [
+      "changelog"
+    ],
+    "pending": [],
+    "actions_total": 171
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T17:11:36Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=90736256\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-29T17:19:10Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :warni"
+    }
+  ],
+  "head_activity_at": "2026-10-29T17:07:54Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T17:10:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T17:11:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T17:11:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T17:11:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-29T17:19:10Z"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/reflex_base/event/processor/test_base_state_processor.py"
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Make the cancellation regression test wait for handler completion or a following event before leaving the processor context, so shutdown cannot create the flush being asserted.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "cause": "The cancelled duplicate run completed every substantive step successfully: heading check, towncrier fragment check for reflex-base, and release-workflow sync check all passed. A same-head changelog run started seven seconds later and succeeded, so this was superseded-run cancellation rather than a changelog failure."
+    }
+  ],
+  "last_author_activity_at": "2026-10-29T17:08:19Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

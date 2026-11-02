@@ -1,0 +1,171 @@
+{
+  "number": 7712,
+  "fetched_at": "2026-11-02T17:49:48Z",
+  "author_login": "Klu5ure",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "Klu5ure/reflex",
+  "head_sha": "d0aa05c8a8eabb55f48ec097bc2271fad75db1fa",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": true,
+  "review_decision": "APPROVED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-02T03:51:18Z",
+      "can_push": true,
+      "commit_id": "cff806015932af1f66dcfd39e4853959b40aa621"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-11-02T17:48:26Z",
+      "can_push": true,
+      "commit_id": "d0aa05c8a8eabb55f48ec097bc2271fad75db1fa"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 79,
+    "actions_total": 76,
+    "by_state": {
+      "IN_PROGRESS": 65,
+      "SKIPPED": 1,
+      "SUCCESS": 13
+    },
+    "failing": [],
+    "pending": [
+      "codeql-gate",
+      "build (reflex-hosting-cli, packages/reflex-hosting-cli/)",
+      "build (hatch-reflex-pyi, packages/hatch-reflex-pyi/)",
+      "build (reflex-components-lucide, packages/reflex-components-lucide/)",
+      "build (reflex-site-shared, packages/reflex-site-shared/)",
+      "build (reflex-components-markdown, packages/reflex-components-markdown/)",
+      "build (reflex-workflow, packages/reflex-workflow/)",
+      "build (reflex-components-code, packages/reflex-components-code/)",
+      "build (reflex-docgen, packages/reflex-docgen/)",
+      "build (reflex-components-sonner, packages/reflex-components-sonner/)",
+      "build (reflex-components-radix, packages/reflex-components-radix/)",
+      "build (integrations-docs, packages/integrations-docs/)",
+      "build (reflex-components-plotly, packages/reflex-components-plotly/)",
+      "build (reflex-components-gridjs, packages/reflex-components-gridjs/)",
+      "build (reflex-components-react-player, packages/reflex-components-react-player/)",
+      "build (reflex-components-core, packages/reflex-components-core/)",
+      "build (reflex-release, packages/reflex-release/)",
+      "build (reflex-otel, packages/reflex-otel/)",
+      "build (reflex-components-recharts, packages/reflex-components-recharts/)",
+      "build (reflex-components-internal, packages/reflex-components-internal/)",
+      "build (reflex-bench, packages/reflex-bench/)",
+      "build (reflex-base, packages/reflex-base/)",
+      "build (reflex-components-dataeditor, packages/reflex-components-dataeditor/)",
+      "build (reflex, .)",
+      "reflex-docs (3.11)",
+      "example-counter-and-nba-proxy (windows-latest, 3.14)",
+      "rx-shout-from-template",
+      "example-counter-and-nba-proxy (ubuntu-latest, 3.14)",
+      "reflex-docs (3.12)",
+      "docs-tests",
+      "reflex-install-and-init",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness-playwright (memory, 3.12)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (memory, 3.13)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "integration-app-harness-playwright (memory, 3.15)",
+      "integration-app-harness-playwright (memory, 3.14)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (memory, 3.11)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "Run Lighthouse benchmark",
+      "Run browser performance smoke",
+      "Run benchmarks",
+      "pre-commit"
+    ]
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T03:51:59Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92774852\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-02T17:38:37Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-11-02T17:46:31Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T03:51:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T03:51:59Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-02T17:38:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-02T17:48:26Z",
+      "state": "approved"
+    }
+  ],
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-02T17:46:31Z",
+  "last_maintainer_activity_at": "2026-11-02T17:48:26Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "conflicting_files": [],
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

@@ -1,0 +1,43 @@
+{
+  "fetched_at": "2026-11-02T17:48:55Z",
+  "audited_open_prs": 125,
+  "reconciled_at": "2026-11-02T17:48:55Z",
+  "final_open_prs": 125,
+  "additions": {
+    "Bug": [
+      7276,
+      7687,
+      7692,
+      7706,
+      7715,
+      7721
+    ],
+    "Documentation": [
+      7690,
+      7694,
+      7695,
+      7703,
+      7717,
+      7718
+    ],
+    "Perf": [
+      7694,
+      7695
+    ],
+    "breaking": [
+      7697
+    ]
+  },
+  "notes": {
+    "bug": "Every Bug addition is a clear issue-backed fix; targeted regression coverage was recorded where present but was not a labeling prerequisite. Draft metadata was audited too.",
+    "documentation": "Every Documentation addition changes real docs/**/*.md content, not only fragments.",
+    "perf": "#7694 and #7695 primarily reduce generated frontend or docs-page runtime cost.",
+    "breaking": "#7697 removes the current Selenium AppHarness API and ships breaking fragments in both affected packages."
+  },
+  "live_counts": {
+    "bug": 32,
+    "perf": 27,
+    "documentation": 37,
+    "breaking": 11
+  }
+}

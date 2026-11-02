@@ -138,6 +138,9 @@ appear in both queues. "No open issues" means no unresolved review threads.
   "fast_lane": [{"number":..., "summary": "why it is mergeable at a glance; real file list checked"}],
   "waiting_on_maintainer": [{"number":..., "summary": "clean merge, full CI green, no unresolved review threads, and newer author activity"}],
   "never_maintainer_review": [{"number":..., "summary": "no comment, review, or review-thread reply from a human maintainer"}],
+  "duplicates": [{"number":..., "summary": "why this PR duplicates or is superseded by another open PR",
+                  "evidence": ["shared issue/files/confirmed author comment"],
+                  "blocker": "close in favor of #...", "whose_move": "author|maintainer"}],
   "closure": [{"number":..., "summary":..., "keep_issue": 6812}],
   "stacks": [{"chain": [6901, 6902], "note": "..."}],          // optional; defaults to measurements.stacks
   "conflict_clusters": [{"prs": [7029, 7030], "files": ["reflex/x.py"], "note": "..."}],

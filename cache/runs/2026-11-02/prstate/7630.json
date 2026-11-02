@@ -1,0 +1,155 @@
+{
+  "number": 7630,
+  "fetched_at": "2026-11-02T17:42:55Z",
+  "author_login": "fixfon",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "fixfon/reflex",
+  "head_sha": "1617db08600cc6eea5b4072d4f4a170ecf4cefb9",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7579,
+      "title": "enable_state=False guard (code_uses_state_contexts) misses memoized state reads",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T00:13:46Z",
+      "can_push": true,
+      "commit_id": "65f86cc4dd2e5c8171a62b3aab709a7e1c3034f0"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-22T00:15:33Z",
+      "can_push": true,
+      "commit_id": "65f86cc4dd2e5c8171a62b3aab709a7e1c3034f0"
+    },
+    {
+      "by": "fixfon",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-25T02:17:58Z",
+      "can_push": false,
+      "commit_id": "43422905a703d1232943624e8ce90b3a0e63c851"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 169,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 164
+    },
+    "failing": [
+      "unit-tests-gate",
+      "unit-tests (ubuntu-latest, 3.12)"
+    ],
+    "pending": [],
+    "actions_total": 165
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:15:29Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=85636326\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-25T02:28:01Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-10-25T03:34:45Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:13:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:15:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:15:32Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-22T00:15:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "fixfon",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-25T02:17:58Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-25T02:28:01Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Scan the compiled app root too so an unmemoized app wrap cannot escape the enable_state=False guard.",
+      "addressed": true,
+      "path": "reflex/compiler/compiler.py",
+      "outdated": true
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "job_id": 121070096132,
+      "run_id": 40158746899,
+      "cause": "The gate log reports changes=success, unit-tests=failure, and unit-tests-macos=skipped, then fails on the blocking unit-tests=failure result."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.12)",
+      "job_id": 121065639293,
+      "run_id": 40158746899,
+      "cause": "The log shows 1 failed and 13,399 passed: tests/units/istate/manager/test_redis.py::test_oplock_contention_queue expected interim_state.count == 1 but got 2. This PR changes compiler.py, compiler tests, and a news fragment, not the failing Redis test or state-manager code."
+    }
+  ],
+  "last_author_activity_at": "2026-10-25T03:34:45Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

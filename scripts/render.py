@@ -11,7 +11,7 @@ Inputs (all in the run directory; schema in cache/SCHEMA.md):
 
 Output: a self-contained light-mode HTML page built from artifacts/template.html
 with tabbed panes: Top 15 / One fix away / Fast lane / Waiting on maintainer /
-No maintainer review / Close candidates / Stacks / Changes since last run / Method. It is also copied to
+No maintainer review / Duplicates / Close candidates / Stacks / Changes since last run / Method. It is also copied to
 artifacts/history/YYYY-MM-DD.html unless --no-history.
 
 The renderer is deliberately dumb: it prints what report.json says and
@@ -173,6 +173,10 @@ class Board:
         out = "".join(self.card(dict(it, chips=(["keep issue #%s" % it["keep_issue"]] if it.get("keep_issue") else []) + list(it.get("chips", ())))) for it in items)
         return out or '<p class="empty">No closure candidates.</p>'
 
+    def pane_duplicates(self):
+        items = self.report.get("duplicates", [])
+        return "".join(self.card(it) for it in items) or '<p class="empty">No likely duplicate or superseded PRs identified.</p>'
+
     def pane_stacks(self):
         out = ""
         chains = self.report.get("stacks") or [{"chain": c} for c in self.meas.get("stacks", [])]
@@ -270,6 +274,7 @@ class Board:
             ("fast", "Fast lane", len(r.get("fast_lane", [])), self.pane_simple("fast_lane", "Nothing verified mergeable at a glance.")),
             ("waiting", "Waiting on maintainer", len(r.get("waiting_on_maintainer", [])), self.pane_simple("waiting_on_maintainer", "No clean, green PRs have new author activity after the last maintainer interaction.")),
             ("nevermaint", "No maintainer review", len(r.get("never_maintainer_review", [])), self.pane_simple("never_maintainer_review", "Every open non-draft PR has maintainer interaction.")),
+            ("duplicates", "Duplicates", len(r.get("duplicates", [])), self.pane_duplicates()),
             ("close", "Close candidates", len(r.get("closure", [])), self.pane_close()),
             ("stacks", "Stacks", len(r.get("stacks") or self.meas.get("stacks", [])), self.pane_stacks()),
             ("delta", "Since last run", None, self.pane_delta()),

@@ -1,0 +1,263 @@
+{
+  "number": 7590,
+  "fetched_at": "2026-11-02T17:49:48Z",
+  "author_login": "nilaychugh",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "nilaychugh/reflex",
+  "head_sha": "03324a05b818f8a68e486a8c85956832187832fb",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7483,
+      "title": "Python 3.14: state_auto_setters=True in rxconfig.py generates no set_<var> setters in the backend worker",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "copilot-pull-request-reviewer",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:50:40Z",
+      "can_push": false,
+      "commit_id": "38d8da1ef181b4a462e36161e965d3679eadca3e"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:52:57Z",
+      "can_push": true,
+      "commit_id": "38d8da1ef181b4a462e36161e965d3679eadca3e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-18T04:55:29Z",
+      "can_push": true,
+      "commit_id": "38d8da1ef181b4a462e36161e965d3679eadca3e"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-02T16:45:39Z",
+      "can_push": true,
+      "commit_id": "93ade6f24e31b4230508db5a227846cc885aae8d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-02T16:45:42Z",
+      "can_push": true,
+      "commit_id": "93ade6f24e31b4230508db5a227846cc885aae8d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-02T16:48:17Z",
+      "can_push": true,
+      "commit_id": "93ade6f24e31b4230508db5a227846cc885aae8d"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-02T16:49:30Z",
+      "can_push": true,
+      "commit_id": "93ade6f24e31b4230508db5a227846cc885aae8d"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-02T17:27:02Z",
+      "can_push": true,
+      "commit_id": "03324a05b818f8a68e486a8c85956832187832fb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-02T17:27:04Z",
+      "can_push": true,
+      "commit_id": "03324a05b818f8a68e486a8c85956832187832fb"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "actions_total": 0,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": []
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:25Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=83025697\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-19T10:17:59Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary>:warning: <b>11 benchmarks spent signific"
+    }
+  ],
+  "head_activity_at": "2026-11-02T17:26:43Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "Copilot",
+      "association": "NONE",
+      "at": "2026-10-18T04:50:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:52:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:52:57Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-18T04:55:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-19T10:17:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-02T16:45:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-02T16:45:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T16:48:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T16:48:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T16:49:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T16:49:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-02T17:27:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-02T17:27:04Z"
+    }
+  ],
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Avoid caching an empty fallback Config when a State is imported outside the app directory.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/config.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Avoid recursively importing rxconfig when it defines a State before constructing Config.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/config.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Update granian module-target tests for the new backend app factory while preserving installed-app and project-path coverage.",
+      "addressed": true,
+      "path": "reflex/utils/exec.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Update the existing granian target tests for reflex.utils.exec:_backend_app while preserving namespace-package coverage.",
+      "addressed": true,
+      "path": "reflex/utils/exec.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-02T17:26:43Z",
+  "last_maintainer_activity_at": "2026-11-02T17:27:04Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "conflicting_files": [],
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

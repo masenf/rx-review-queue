@@ -1,0 +1,146 @@
+{
+  "number": 7694,
+  "fetched_at": "2026-11-02T17:49:48Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "595130f1de31123e86c7d5a38d1968896d7e8fb9",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T16:46:58Z",
+      "can_push": true,
+      "commit_id": "b769ada0019a0c1d4b97b7c2b3996ebe89cb1f58"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-02T17:29:34Z",
+      "can_push": true,
+      "commit_id": "595130f1de31123e86c7d5a38d1968896d7e8fb9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 174,
+    "actions_total": 170,
+    "by_state": {
+      "CANCELLED": 1,
+      "IN_PROGRESS": 6,
+      "SKIPPED": 6,
+      "SUCCESS": 161
+    },
+    "failing": [
+      "changelog"
+    ],
+    "pending": [
+      "unit-tests (ubuntu-latest, 3.14)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (windows-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.11)"
+    ]
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "linear-code",
+      "association": "NONE",
+      "at": "2026-10-29T16:44:19Z",
+      "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-12682\">ENG-12682</a></p>"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:48:21Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=90718713\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-29T16:54:02Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-11-02T17:29:23Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "linear-code[bot]",
+      "association": "NONE",
+      "at": "2026-10-29T16:44:19Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:46:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:46:59Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:48:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-29T16:54:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-02T17:29:34Z"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "cause": "GitHub created the pull_request workflow run at 17:46:46Z and cancelled it one second later before assigning a runner; job metadata has no runner, no steps, and no downloadable log, so this is an orchestration cancellation rather than a changelog test failure."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the compiler plugin test independent of ambient .web state and REFLEX_SKIP_COMPILE by using dry_run and disabling rich output.",
+      "addressed": true,
+      "path": "tests/units/compiler/test_plugins.py",
+      "outdated": true
+    }
+  ],
+  "body_has_repro": false,
+  "last_author_activity_at": "2026-11-02T17:29:34Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "conflicting_files": [],
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

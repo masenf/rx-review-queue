@@ -1,0 +1,573 @@
+{
+  "number": 7364,
+  "fetched_at": "2026-11-02T17:42:49Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "d5e211ba5cf05a05bb2eb2c455c5d103a9c445a9",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T00:48:48Z",
+      "can_push": true,
+      "commit_id": "80666f1dde10390cb79d606062786cbac73e5916"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:12Z",
+      "can_push": true,
+      "commit_id": "6b07618e786d92ba074d7a89768bb2bd5ee1ae24"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:15Z",
+      "can_push": true,
+      "commit_id": "6b07618e786d92ba074d7a89768bb2bd5ee1ae24"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:37Z",
+      "can_push": true,
+      "commit_id": "6b07618e786d92ba074d7a89768bb2bd5ee1ae24"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:58:26Z",
+      "can_push": true,
+      "commit_id": "d5e211ba5cf05a05bb2eb2c455c5d103a9c445a9"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:00:40Z",
+      "can_push": true,
+      "commit_id": "d5e211ba5cf05a05bb2eb2c455c5d103a9c445a9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b5a63a0f-c5c8-4570-bf71-dcbe8725decb -->\n<!-- cubic:review-run=78156b10-3caf-5b06-a7d0-d3119f53b850 -->\n<!-- metadata:{\"confidence\":5} -->\nP3: This fragment reads as an instruction to con"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=6461f45c-3f54-447a-be5a-dd61886a493d -->\n<!-- cubic:review-run=78156b10-3caf-5b06-a7d0-d3119f53b850 -->\n<!-- metadata:{\"confidence\":9} -->\nP3: This describes the `__Host-` name as univers"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **State update example fails**\n\nThe server-side example passes positional arguments t"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 179,
+    "by_state": {
+      "CANCELLED": 15,
+      "FAILURE": 34,
+      "SKIPPED": 7,
+      "SUCCESS": 123
+    },
+    "failing": [
+      "changelog",
+      "integration-app-harness-gate",
+      "performance-tests-gate",
+      "performance-tests-gate",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness-playwright (redis, 3.12)",
+      "integration-app-harness-playwright (redis, 3.11)",
+      "integration-app-harness-playwright (redis, 3.13)",
+      "integration-app-harness-playwright (redis, 3.15)",
+      "integration-app-harness-playwright (redis, 3.14)",
+      "rx-shout-from-template",
+      "reflex-docs",
+      "example-counter-and-nba-proxy",
+      "integration-tests-gate",
+      "playground-0.8.23",
+      "build",
+      "check-min-deps",
+      "reflex-install-and-init",
+      "build-packages-gate",
+      "reflex-init-in-docker-test-gate",
+      "Run benchmarks",
+      "playground-0.8.23",
+      "Run benchmarks",
+      "playground-head",
+      "pre-commit",
+      "changes",
+      "changes",
+      "size-budgets",
+      "discover",
+      "changelog"
+    ],
+    "pending": [],
+    "actions_total": 176
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:48:35Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=71764167\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "linear-code",
+      "association": "NONE",
+      "at": "2026-10-07T21:26:10Z",
+      "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-12921\">ENG-12921</a></p>\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-9088\">"
+    }
+  ],
+  "head_activity_at": "2026-10-14T09:51:13Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:48:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:48:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:48:48Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "linear-code[bot]",
+      "association": "NONE",
+      "at": "2026-10-07T21:26:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:37:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:37:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:37:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:58:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:00:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:00:40Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+    "pyproject.toml",
+    "reflex/app.py",
+    "tests/units/compiler/state_js.test.mjs",
+    "tests/units/reflex_base/client_event_queue_runtime.mjs",
+    "tests/units/reflex_base/client_state_updates.mjs"
+  ],
+  "update_branch_offered": false,
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "conclusion": "CANCELLED",
+      "job_id": 120159604906,
+      "cause": "GitHub reports the job cancelled with no diagnostic lines in its log."
+    },
+    {
+      "check": "integration-app-harness-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115795366084,
+      "cause": "Gate failed because both integration-app-harness and integration-app-harness-playwright failed."
+    },
+    {
+      "check": "performance-tests-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115794013336,
+      "cause": "Gate failed because the benchmarks job failed."
+    },
+    {
+      "check": "performance-tests-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115793098260,
+      "cause": "Gate failed because the benchmarks job failed."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.15, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790769143,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.14, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790769068,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.13, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768969,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.14, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768932,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.15, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768844,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.12, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768837,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.12, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768807,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.15, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768799,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.14, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768746,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.12, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768733,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.13, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768714,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.11, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768675,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.13, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768674,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.11, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768673,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.12, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768671,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.15, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768665,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.11, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768660,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.11, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768647,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.14, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768632,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.13, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768614,
+      "cause": "Integration assertions repeatedly could not find the expected session token."
+    },
+    {
+      "check": "integration-app-harness-playwright (redis, 3.12)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768438,
+      "cause": "Backend restart and cross-site iframe session tests timed out after 30 seconds waiting for an HTTP response."
+    },
+    {
+      "check": "integration-app-harness-playwright (redis, 3.11)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768402,
+      "cause": "Backend restart and cross-site iframe session tests timed out after 30 seconds waiting for an HTTP response."
+    },
+    {
+      "check": "integration-app-harness-playwright (redis, 3.13)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768304,
+      "cause": "Backend restart and cross-site iframe session tests timed out after 30 seconds waiting for an HTTP response."
+    },
+    {
+      "check": "integration-app-harness-playwright (redis, 3.15)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768292,
+      "cause": "Backend restart and cross-site iframe session tests timed out after 30 seconds waiting for an HTTP response."
+    },
+    {
+      "check": "integration-app-harness-playwright (redis, 3.14)",
+      "conclusion": "FAILURE",
+      "job_id": 115790768291,
+      "cause": "Backend restart and cross-site iframe session tests timed out after 30 seconds waiting for an HTTP response."
+    },
+    {
+      "check": "rx-shout-from-template",
+      "conclusion": "CANCELLED",
+      "job_id": 115790059401,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "reflex-docs",
+      "conclusion": "CANCELLED",
+      "job_id": 115790059040,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "example-counter-and-nba-proxy",
+      "conclusion": "CANCELLED",
+      "job_id": 115790058991,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "integration-tests-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115790058208,
+      "cause": "Gate failed because changes and all three integration jobs were cancelled."
+    },
+    {
+      "check": "playground-0.8.23",
+      "conclusion": "FAILURE",
+      "job_id": 115790057653,
+      "cause": "Reflex 0.8.23 failed to start because SQLAlchemy asyncio could not import the missing greenlet dependency."
+    },
+    {
+      "check": "build",
+      "conclusion": "CANCELLED",
+      "job_id": 115790057617,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "check-min-deps",
+      "conclusion": "CANCELLED",
+      "job_id": 115790057240,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "reflex-install-and-init",
+      "conclusion": "CANCELLED",
+      "job_id": 115790056380,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "build-packages-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115790056202,
+      "cause": "Gate failed because discover, build, and check-min-deps were cancelled."
+    },
+    {
+      "check": "reflex-init-in-docker-test-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115790055159,
+      "cause": "Gate failed because changes and reflex-install-and-init were cancelled."
+    },
+    {
+      "check": "Run benchmarks",
+      "conclusion": "FAILURE",
+      "job_id": 115790055115,
+      "cause": "test_on_event_router_data failed during setup because App.on_connect read EventContext before the ContextVar was set."
+    },
+    {
+      "check": "playground-0.8.23",
+      "conclusion": "CANCELLED",
+      "job_id": 115790050738,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "Run benchmarks",
+      "conclusion": "FAILURE",
+      "job_id": 115790050615,
+      "cause": "test_on_event_router_data failed during setup because App.on_connect read EventContext before the ContextVar was set."
+    },
+    {
+      "check": "playground-head",
+      "conclusion": "CANCELLED",
+      "job_id": 115790050317,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "pre-commit",
+      "conclusion": "CANCELLED",
+      "job_id": 115790050310,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "changes",
+      "conclusion": "CANCELLED",
+      "job_id": 115790050037,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "changes",
+      "conclusion": "CANCELLED",
+      "job_id": 115790049972,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "size-budgets",
+      "conclusion": "CANCELLED",
+      "job_id": 115790049568,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "discover",
+      "conclusion": "CANCELLED",
+      "job_id": 115790049422,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "changelog",
+      "conclusion": "CANCELLED",
+      "job_id": 115790048332,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Rewrite the AppHarness news fragment as a description of the localhost backend change rather than a configuration instruction.",
+      "addressed": false,
+      "path": "news/+session-harness.bugfix.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Qualify the __Host- cookie-name documentation to secure cookies; insecure non-loopback development uses the bare name.",
+      "addressed": false,
+      "path": "docs/api-routes/sessions.md",
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Construct BaseStateToken with ident= and cls= keywords in the state-update documentation example.",
+      "addressed": false,
+      "path": "docs/api-routes/sessions.md",
+      "outdated": false
+    }
+  ],
+  "last_author_activity_at": "2026-10-14T09:51:13Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

@@ -1,0 +1,96 @@
+{
+  "number": 7715,
+  "fetched_at": "2026-11-02T17:42:44Z",
+  "author_login": "vjymisal0",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "vjymisal0/reflex",
+  "head_sha": "7126fffefe8072c015dc2d194cfbf6575fa75af7",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7709,
+      "title": "`@rx.event` handlers are typed as `EventNamespace`, so calling them is \"not callable\"",
+      "filed_by": "JPDSousa"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-02T04:58:10Z",
+      "can_push": true,
+      "commit_id": "7126fffefe8072c015dc2d194cfbf6575fa75af7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 169,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 165
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:58:31Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92805505\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-02T05:04:56Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-11-02T04:56:16Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:58:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:58:31Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-02T05:04:56Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-02T04:56:56Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

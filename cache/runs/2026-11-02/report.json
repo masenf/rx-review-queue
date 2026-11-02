@@ -1,0 +1,1049 @@
+{
+  "run": {
+    "date": "2026-11-02",
+    "started_at": "2026-11-02 09:57 PST",
+    "runner": "codex-local",
+    "github_login": "masenf",
+    "review_ci_layer": "present",
+    "session": "authenticated gh + local git measurement"
+  },
+  "stats": {
+    "open": 125,
+    "nondraft": 93,
+    "drafts": 32,
+    "counting_approvals": 3,
+    "fast_lane": 6,
+    "one_fix_away": 30,
+    "waiting_on_maintainer": 13,
+    "never_maintainer_review": 54,
+    "fork_ci_unrun": 31,
+    "never_human_reviewed": 61
+  },
+  "attention": [
+    "#7712 is already approved on the current head; let its fresh CI finish, then make the final merge decision rather than spending another review block.",
+    "Review #7693 and #7716 first, then #7670: all are clean, full-green, thread-free, issue-backed, compact, and still awaiting a first maintainer review; #7670 wins the #7668 tie-break with a smaller diff.",
+    "Use a short documentation pass on #7717 (2 files, 7 lines) before spending a larger review block.",
+    "Approve fork workflows for #7652, #7590, and #7648 to reveal full CI on three clean issue-backed fixes.",
+    "Duplicate cleanup: close confirmed duplicate #7631 in favor of #7323; confirm #7642 supersedes #7625, then close #7625."
+  ],
+  "top15": [
+    {
+      "number": 7712,
+      "score": 10.0,
+      "summary": "Clean with a current-head counting approval; one CI decision remains.",
+      "evidence": [
+        "1 files (+6/-0), 2 ahead / 1 behind main; no targeted tests.",
+        "Local merge is clean; 76 GitHub Actions checks; 0 unresolved of 0 review threads."
+      ],
+      "blocker": "Let the current check suite finish; no additional review is needed now.",
+      "whose_move": "maintainer",
+      "chips": [],
+      "override_reason": "Already approved on the current head: this is a final CI or merge decision, not another full review."
+    },
+    {
+      "number": 7693,
+      "score": 9.5,
+      "summary": "Clean, full-green, thread-free, targeted tests present, and waiting 4 day(s) for maintainer action.",
+      "evidence": [
+        "3 files (+102/-2), 2 ahead / 6 behind main; tests included.",
+        "Local merge is clean; 165 GitHub Actions checks; 0 unresolved of 2 review threads.",
+        "Linked issue #7686 filed by FarhanAliRaza."
+      ],
+      "blocker": "Complete the first maintainer review and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7686"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7716,
+      "score": 9.3,
+      "summary": "Clean, full-green, thread-free, targeted tests present, and waiting 0 day(s) for maintainer action.",
+      "evidence": [
+        "4 files (+54/-8), 3 ahead / 0 behind main; tests included.",
+        "Local merge is clean; 165 GitHub Actions checks; 0 unresolved of 3 review threads.",
+        "Linked issue #3189 filed by masenf."
+      ],
+      "blocker": "Complete the first maintainer review and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #3189"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7670,
+      "score": 9.1,
+      "summary": "Clean, full-green, thread-free, targeted tests present, and waiting 6 day(s) for maintainer action.",
+      "evidence": [
+        "4 files (+79/-3), 1 ahead / 30 behind main; tests included.",
+        "Local merge is clean; 168 GitHub Actions checks; 0 unresolved of 0 review threads.",
+        "Linked issue #7092 filed by masenf."
+      ],
+      "blocker": "Complete the first maintainer review and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7092"
+      ],
+      "override_reason": "Tie-break over #7668: the same readiness signals in a smaller 4-file, 82-line diff."
+    },
+    {
+      "number": 7668,
+      "score": 9.0,
+      "summary": "Clean, full-green, thread-free, targeted tests present, and waiting 6 day(s) for maintainer action.",
+      "evidence": [
+        "6 files (+111/-0), 2 ahead / 30 behind main; tests included.",
+        "Local merge is clean; 168 GitHub Actions checks; 0 unresolved of 1 review threads.",
+        "Linked issue #6903 filed by FarhanAliRaza."
+      ],
+      "blocker": "Complete the first maintainer review and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #6903"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7717,
+      "score": 8.8,
+      "summary": "Clean, full-green, thread-free, no targeted tests in the diff, and waiting 0 day(s) for maintainer action.",
+      "evidence": [
+        "2 files (+7/-0), 1 ahead / 0 behind main; no targeted tests.",
+        "Local merge is clean; 125 GitHub Actions checks; 0 unresolved of 0 review threads.",
+        "Linked issue #7250 filed by masenf."
+      ],
+      "blocker": "Review the two-file documentation fix and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7250"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7409,
+      "score": 8.5,
+      "summary": "Clean, full-green, thread-free, targeted tests present, and waiting 29 day(s) for maintainer action.",
+      "evidence": [
+        "6 files (+242/-6), 1 ahead / 205 behind main; tests included.",
+        "Local merge is clean; 144 GitHub Actions checks; 0 unresolved of 0 review threads.",
+        "Linked issue #7244 filed by masenf."
+      ],
+      "blocker": "Complete the first maintainer review; the branch is old but locally clean against current main.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7244"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7594,
+      "score": 8.3,
+      "summary": "Clean, full-green, thread-free, targeted tests present, and waiting 10 day(s) for maintainer action.",
+      "evidence": [
+        "4 files (+108/-6), 3 ahead / 43 behind main; tests included.",
+        "Local merge is clean; 165 GitHub Actions checks; 0 unresolved of 0 review threads.",
+        "Linked issue #7099 filed by masenf."
+      ],
+      "blocker": "Complete the first maintainer review and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7099"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7715,
+      "score": 8.0,
+      "summary": "Clean, full-green, thread-free, no targeted tests in the diff, and waiting 0 day(s) for maintainer action.",
+      "evidence": [
+        "2 files (+29/-27), 1 ahead / 1 behind main; no targeted tests.",
+        "Local merge is clean; 165 GitHub Actions checks; 0 unresolved of 0 review threads.",
+        "Linked issue #7709 filed by JPDSousa."
+      ],
+      "blocker": "Complete the first maintainer review and approve.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7709"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7276,
+      "score": 7.8,
+      "summary": "Clean with a current-head counting approval; one CI decision remains.",
+      "evidence": [
+        "12 files (+132/-40), 16 ahead / 0 behind main; tests included.",
+        "Local merge is clean; 168 GitHub Actions checks; 0 unresolved of 6 review threads.",
+        "Linked issue #7262 filed by masenf.",
+        "Current red-check diagnosis: CodSpeed reports test_get_state[disk] regressed from 939.3 us to 979 us (-4.06%); its output also warns the significant result used different base/head hardware and that 22 benchmarks are dominated by system calls, so the measured regression may not be code-induced."
+      ],
+      "blocker": "Adjudicate or acknowledge the current CodSpeed regression, then merge.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7262"
+      ],
+      "override_reason": "Already approved on the current head: this needs a CI decision, not another full review."
+    },
+    {
+      "number": 7688,
+      "score": 7.5,
+      "summary": "Clean, full-green, thread-free, targeted tests present, and waiting 5 day(s) for maintainer action.",
+      "evidence": [
+        "3 files (+117/-1), 2 ahead / 16 behind main; tests included.",
+        "Local merge is clean; 165 GitHub Actions checks; 0 unresolved of 2 review threads."
+      ],
+      "blocker": "Review the compact docs-permalink fix and approve.",
+      "whose_move": "maintainer",
+      "chips": [],
+      "override_reason": null
+    },
+    {
+      "number": 7647,
+      "score": 7.0,
+      "summary": "Clean, full-green, thread-free, targeted tests present, and waiting 10 day(s) for maintainer action.",
+      "evidence": [
+        "7 files (+107/-1), 3 ahead / 43 behind main; tests included.",
+        "Local merge is clean; 165 GitHub Actions checks; 0 unresolved of 2 review threads."
+      ],
+      "blocker": "Complete the first maintainer review and approve.",
+      "whose_move": "maintainer",
+      "chips": [],
+      "override_reason": null
+    },
+    {
+      "number": 7652,
+      "score": 7.0,
+      "summary": "Locally clean, but the fork workflow gate has never been approved.",
+      "evidence": [
+        "3 files (+72/-7), 3 ahead / 38 behind main; tests included.",
+        "Local merge is clean; 0 GitHub Actions checks; 0 unresolved of 0 review threads.",
+        "Linked issue #7649 filed by sjmaple."
+      ],
+      "blocker": "Approve the fork workflows so full CI can run.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7649"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7590,
+      "score": 7.0,
+      "summary": "Locally clean, but the fork workflow gate has never been approved.",
+      "evidence": [
+        "4 files (+84/-15), 4 ahead / 1 behind main; tests included.",
+        "Local merge is clean; 0 GitHub Actions checks; 0 unresolved of 4 review threads.",
+        "Linked issue #7483 filed by masenf."
+      ],
+      "blocker": "Approve the fork workflows so full CI can run.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7483"
+      ],
+      "override_reason": null
+    },
+    {
+      "number": 7651,
+      "score": 6.8,
+      "summary": "Clean and full-green with 1 active review ask(s).",
+      "evidence": [
+        "5 files (+95/-5), 3 ahead / 39 behind main; tests included.",
+        "Local merge is clean; 168 GitHub Actions checks; 1 unresolved of 1 review threads.",
+        "Linked issue #7459 filed by masenf."
+      ],
+      "blocker": "Clarify the release-note example and resolve the Cubic thread.",
+      "whose_move": "author",
+      "chips": [
+        "issue #7459"
+      ],
+      "override_reason": null
+    }
+  ],
+  "one_fix_away": {
+    "maintainer": [
+      {
+        "number": 7379,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7409,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7455,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7594,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7647,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 6873,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7668,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7670,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7688,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7693,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7715,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7716,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7717,
+        "summary": "Only a maintainer review and approval remains.",
+        "blocker": "Review and approve the current head."
+      },
+      {
+        "number": 7574,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7575,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7590,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7648,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7652,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7699,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7700,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7701,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7703,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7704,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7707,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7710,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7713,
+        "summary": "The fork workflow gate is the only blocker visible before full CI runs.",
+        "blocker": "Approve the fork workflows."
+      },
+      {
+        "number": 7276,
+        "summary": "Already approved on the current head; only the CodSpeed regression decision remains.",
+        "blocker": "Adjudicate or acknowledge the CodSpeed result."
+      }
+    ],
+    "author": [
+      {
+        "number": 7323,
+        "summary": "One unresolved review thread is the only current blocker.",
+        "blocker": "Address and resolve the remaining review thread."
+      },
+      {
+        "number": 7595,
+        "summary": "One unresolved review thread is the only current blocker.",
+        "blocker": "Address and resolve the remaining review thread."
+      },
+      {
+        "number": 7651,
+        "summary": "One unresolved review thread is the only current blocker.",
+        "blocker": "Address and resolve the remaining review thread."
+      }
+    ]
+  },
+  "fast_lane": [
+    {
+      "number": 7693,
+      "summary": "Verified clean, full-green, thread-free, and compact: 3 files and 104 changed lines.",
+      "chips": [
+        "issue #7686"
+      ]
+    },
+    {
+      "number": 7670,
+      "summary": "Verified clean, full-green, thread-free, and compact: 4 files and 82 changed lines.",
+      "chips": [
+        "issue #7092"
+      ]
+    },
+    {
+      "number": 7716,
+      "summary": "Verified clean, full-green, thread-free, and compact: 4 files and 62 changed lines.",
+      "chips": [
+        "issue #3189"
+      ]
+    },
+    {
+      "number": 7717,
+      "summary": "Verified clean, full-green, thread-free, and compact: 2 files and 7 changed lines.",
+      "chips": [
+        "issue #7250"
+      ]
+    },
+    {
+      "number": 7715,
+      "summary": "Verified clean, full-green, thread-free, and compact: 2 files and 56 changed lines.",
+      "chips": [
+        "issue #7709"
+      ]
+    },
+    {
+      "number": 7594,
+      "summary": "Verified clean, full-green, thread-free, and compact: 4 files and 114 changed lines.",
+      "chips": [
+        "issue #7099"
+      ]
+    }
+  ],
+  "waiting_on_maintainer": [
+    {
+      "number": 7379,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 30 day(s).",
+      "chips": []
+    },
+    {
+      "number": 7409,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 29 day(s).",
+      "chips": [
+        "issue #7244"
+      ]
+    },
+    {
+      "number": 7455,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 12 day(s).",
+      "chips": []
+    },
+    {
+      "number": 7594,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 10 day(s).",
+      "chips": [
+        "issue #7099"
+      ]
+    },
+    {
+      "number": 7647,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 10 day(s).",
+      "chips": []
+    },
+    {
+      "number": 6873,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 8 day(s).",
+      "chips": []
+    },
+    {
+      "number": 7668,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 6 day(s).",
+      "chips": [
+        "issue #6903"
+      ]
+    },
+    {
+      "number": 7670,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 6 day(s).",
+      "chips": [
+        "issue #7092"
+      ]
+    },
+    {
+      "number": 7688,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 5 day(s).",
+      "chips": []
+    },
+    {
+      "number": 7693,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 4 day(s).",
+      "chips": [
+        "issue #7686"
+      ]
+    },
+    {
+      "number": 7715,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 0 day(s).",
+      "chips": [
+        "issue #7709"
+      ]
+    },
+    {
+      "number": 7716,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 0 day(s).",
+      "chips": [
+        "issue #3189"
+      ]
+    },
+    {
+      "number": 7717,
+      "summary": "Clean merge, full CI green, no unresolved review threads or open asks, and newer author activity; waiting 0 day(s).",
+      "chips": [
+        "issue #7250"
+      ]
+    }
+  ],
+  "never_maintainer_review": [
+    {
+      "number": 6873,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7409,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7594,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7647,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7668,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7670,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7688,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7693,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7715,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7716,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7717,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 6468,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7007,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7065,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7233,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7337,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7361,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7362,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7363,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7364,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7436,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7448,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7451,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7540,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7574,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7575,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7595,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7616,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7630,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7638,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7648,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7651,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7652,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7655,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7656,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7659,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7671,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7690,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7694,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7695,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7696,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7697,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7698,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7699,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7700,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7701,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7703,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7704,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7706,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7707,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7710,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7713,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7714,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    },
+    {
+      "number": 7718,
+      "summary": "No comment, review, or review-thread reply from a human maintainer other than the PR author."
+    }
+  ],
+  "duplicates": [
+    {
+      "number": 7631,
+      "summary": "Confirmed duplicate of #7323: both fix issue #7167 in reflex/istate/manager/disk.py with overlapping disk-state regression tests; #7631's author confirmed that #7323 fixes the same issue and was opened first.",
+      "evidence": [
+        "Both PRs change reflex/istate/manager/disk.py and tests/units/istate/manager/test_disk.py.",
+        "#7631's author wrote that #7323 fixes the same issue and was opened first."
+      ],
+      "blocker": "Close #7631 in favor of #7323.",
+      "whose_move": "author",
+      "chips": [
+        "issue #7167",
+        "confirmed duplicate"
+      ]
+    },
+    {
+      "number": 7625,
+      "summary": "Likely superseded by #7642: both close issue #7623 and overlap in vars/base.py, vars/sequence.py, and test_var.py; #7642 implements the broader SetVar design requested in #7625's maintainer review.",
+      "evidence": [
+        "Both PRs close issue #7623 and change the same set/frozenset typing paths.",
+        "#7625 was explicitly held while maintainers decided whether sets should become a dedicated frontend SetVar; #7642 implements that design with docs and integration tests."
+      ],
+      "blocker": "Confirm #7642 covers the static-typing regression, then close #7625 as superseded.",
+      "whose_move": "maintainer",
+      "chips": [
+        "issue #7623",
+        "superseded candidate"
+      ]
+    }
+  ],
+  "closure": [
+    {
+      "number": 7631,
+      "summary": "Confirmed duplicate of #7323; the author confirmed it fixes the same issue and was opened first.",
+      "keep_issue": 7167
+    },
+    {
+      "number": 7625,
+      "summary": "Likely superseded by the broader #7642 implementation of the same issue and maintainer-requested design.",
+      "keep_issue": 7623
+    },
+    {
+      "number": 6125,
+      "summary": "Still conflicting, 934 behind main, with unresolved review work and no full CI.",
+      "keep_issue": 5830
+    },
+    {
+      "number": 6490,
+      "summary": "Still conflicting, 700 behind main, with no credible merge path yet.",
+      "keep_issue": null
+    },
+    {
+      "number": 7040,
+      "summary": "Still conflicting, 408 behind main, with unresolved review work and no full CI.",
+      "keep_issue": 7034
+    }
+  ],
+  "stacks": [
+    {
+      "chain": [
+        7361,
+        7362,
+        7363,
+        7364
+      ],
+      "note": "State refactor stack; review root to tip. Later members remain broadly red and several conflict with current main."
+    },
+    {
+      "chain": [
+        7314,
+        7315
+      ],
+      "note": "Core-state extraction followed by speculative frontend dispatch; #7315 includes #7314's vs-main diff."
+    },
+    {
+      "chain": [
+        6100,
+        7337
+      ],
+      "note": "Compiler error-boundary stack; #7337 contains #6100 and shares the same current-main conflict surface."
+    }
+  ],
+  "conflict_clusters": [
+    {
+      "prs": [
+        6100,
+        7337
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/compiler/templates.py",
+        "packages/reflex-base/src/reflex_base/utils/format.py",
+        "tests/integration/tests_playwright/test_client_error.py",
+        "tests/units/compiler/state_js.test.mjs"
+      ],
+      "note": "Every listed PR conflicts in exactly these shared compiler/runtime test paths."
+    },
+    {
+      "prs": [
+        7314,
+        7315
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/event/context.py",
+        "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+        "packages/reflex-base/src/reflex_base/vars/base.py",
+        "pyproject.toml",
+        "reflex/app.py",
+        "reflex/compiler/utils.py",
+        "reflex/istate/__init__.py",
+        "reflex/istate/delta.py",
+        "reflex/istate/manager/token.py",
+        "reflex/istate/proxy.py",
+        "reflex/istate/shared.py",
+        "reflex/state.py",
+        "tests/units/istate/manager/test_redis.py",
+        "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+        "tests/units/reflex_base/state/test_proxy.py",
+        "tests/units/test_state.py",
+        "uv.lock"
+      ],
+      "note": "Shared conflicts for this exact two-PR state stack."
+    },
+    {
+      "prs": [
+        7363,
+        7364
+      ],
+      "files": [
+        "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+        "pyproject.toml",
+        "reflex/app.py",
+        "tests/units/compiler/state_js.test.mjs",
+        "tests/units/reflex_base/client_event_queue_runtime.mjs",
+        "tests/units/reflex_base/client_state_updates.mjs"
+      ],
+      "note": "Shared conflicts for the two event-queue stack tips."
+    }
+  ],
+  "structural": [
+    {
+      "number": 7697,
+      "summary": "Large Selenium-to-Playwright migration with breaking fragments and a current integration failure; review as an API removal, not a test-only cleanup."
+    },
+    {
+      "number": 7673,
+      "summary": "Broad event-handler contract redesign (26 files, +2856/-132) with a current CodSpeed regression; split review into API, runtime, and migration passes."
+    },
+    {
+      "number": 7695,
+      "summary": "Compact docs-performance patch but five unresolved review threads remain; resolve those before a maintainer review block."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Counting approvals repo-wide: 3",
+      "detail": "#7276, #7315, #7712"
+    },
+    {
+      "title": "Never human-reviewed: 61",
+      "detail": "#6468, #6688, #6853, #6873, #7007, #7036, #7056, #7065, #7233, #7337, #7361, #7362, #7363, #7364, #7409, #7436, #7448, #7451, #7540, #7574, #7575, #7583, #7594, #7595, #7616, #7630, #7631, #7638, #7642, #7647, #7648, #7651, #7652, #7655, #7656, #7659, #7668, #7670, #7671, #7688, #7690, #7693, #7694, #7695, #7696, #7697, #7698, #7699, #7700, #7701, #7703, #7704, #7706, #7707, #7710, #7713, #7714, #7715, #7716, #7717, #7718"
+    },
+    {
+      "title": "Waiting on maintainer: 13",
+      "detail": "#7379 (30d), #7409 (29d), #7455 (12d), #7594 (10d), #7647 (10d), #6873 (8d), #7668 (6d), #7670 (6d), #7688 (5d), #7693 (4d), #7715 (0d), #7716 (0d), #7717 (0d)"
+    },
+    {
+      "title": "Fork PRs without full CI: 31",
+      "detail": "#6125, #6126, #6853, #6876, #7036, #7040, #7144, #7408, #7416, #7436, #7574, #7575, #7590, #7616, #7625, #7638, #7648, #7652, #7655, #7656, #7659, #7699, #7700, #7701, #7703, #7704, #7706, #7707, #7710, #7713, #7714"
+    },
+    {
+      "title": "Fragment coverage gaps: 4",
+      "detail": "#7656 (0/1), #6853 (0/1), #6125 (0/1), #6490 (0/2)"
+    },
+    {
+      "title": "Open non-draft author concentration",
+      "detail": "FarhanAliRaza: 21, masenf: 11, benedikt-bartscher: 6, harsh21234i: 6, AP24110011695: 4, kr1shna-exe: 4"
+    }
+  ],
+  "delta": {
+    "previous_run": "2026-10-27",
+    "merged": [
+      7412,
+      7522,
+      7534,
+      7548,
+      7564,
+      7582,
+      7599,
+      7621,
+      7624,
+      7635,
+      7637,
+      7641,
+      7650,
+      7653,
+      7661,
+      7663,
+      7672
+    ],
+    "closed": [
+      {
+        "number": 7578,
+        "note": "Closed without merge on 2026-10-27."
+      }
+    ],
+    "opened": [
+      7679,
+      7687,
+      7688,
+      7690,
+      7692,
+      7693,
+      7694,
+      7695,
+      7696,
+      7697,
+      7698,
+      7699,
+      7700,
+      7701,
+      7703,
+      7704,
+      7706,
+      7707,
+      7710,
+      7712,
+      7713,
+      7714,
+      7715,
+      7716,
+      7717,
+      7718,
+      7721
+    ],
+    "entered_top15": [
+      7712,
+      7693,
+      7716,
+      7717,
+      7715,
+      7276,
+      7688,
+      7652,
+      7590,
+      7651
+    ],
+    "left_top15": [
+      7621,
+      7522,
+      7548,
+      7637,
+      7582,
+      7642,
+      7653,
+      6841,
+      7578,
+      6873
+    ],
+    "newly_blocked": [
+      6841,
+      7642
+    ],
+    "newly_unblocked": [],
+    "draft_flips": []
+  },
+  "method": {
+    "notes": [
+      "All 125 open PRs were enumerated with authenticated REST data; drafts are excluded from ranking but included in the label audit.",
+      "All 93 non-draft heads were measured against main 58d798fbb72a; local mergeability was recomputed for every PR with merge-tree staged entries.",
+      "Duplicate detection combined exact patch identities, title and file overlap, shared linked issues, and maintainer/author discussion; stacks were excluded from duplicate heuristics.",
+      "Strict waiting requires a clean local merge, full-green current-head Actions coverage, zero unresolved threads, no open asks, and newer author activity.",
+      "Failed checks were inspected through current check output and available job logs; expired historical logs are called out rather than guessed."
+    ],
+    "audit_corrections": [
+      "Removed unsupported targeted-test claims from #7715 and #7717 and from the Bug-label audit note.",
+      "Promoted #7670 over #7668 on an explicit smaller-diff tie-break for a limited review window.",
+      "Narrowed #7631 duplicate wording to the author's cached same-issue confirmation.",
+      "Recorded the #7065 unit timeout and its dependent gate separately from the CodSpeed regression."
+    ],
+    "caveats": [
+      "Four recently pushed PRs still had checks running at the final rescan; none are promoted into the limited-time review shortlist on pending evidence.",
+      "Some historical Actions logs have expired; their failed check names and annotations remain recorded, but no unsupported root cause is asserted.",
+      "#7625 is classified as likely superseded, not an exact duplicate, pending a maintainer confirmation that #7642 covers its narrower static-typing regression."
+    ]
+  }
+}

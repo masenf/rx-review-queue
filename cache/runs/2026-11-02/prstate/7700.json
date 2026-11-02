@@ -1,0 +1,117 @@
+{
+  "number": 7700,
+  "fetched_at": "2026-11-02T17:42:44Z",
+  "author_login": "DevChiniwala",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "DevChiniwala/reflex",
+  "head_sha": "b284a9cebe865dcf9dc966334a79be685606786b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "copilot-pull-request-reviewer",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T11:27:20Z",
+      "can_push": false,
+      "commit_id": "c7f14b90dbf7b4ab7df5a118742265d512dbdcc1"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T11:29:19Z",
+      "can_push": true,
+      "commit_id": "c7f14b90dbf7b4ab7df5a118742265d512dbdcc1"
+    },
+    {
+      "by": "DevChiniwala",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T11:34:44Z",
+      "can_push": false,
+      "commit_id": "b284a9cebe865dcf9dc966334a79be685606786b"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T11:29:06Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=91928216\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-10-31T11:34:40Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "Copilot",
+      "association": "NONE",
+      "at": "2026-10-31T11:27:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T11:29:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T11:29:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T11:29:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "DevChiniwala",
+      "association": "NONE",
+      "at": "2026-10-31T11:34:44Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Seed an unrelated hash in the encoding test so prune_stale=False proves merge semantics and prune_stale=True proves replacement semantics.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-31T11:34:44Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

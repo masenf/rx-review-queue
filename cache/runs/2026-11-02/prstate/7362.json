@@ -1,0 +1,309 @@
+{
+  "number": 7362,
+  "fetched_at": "2026-11-02T17:42:48Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "ebed735dae423f429e3a2a8bc7e1f9caaa142c8a",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T00:45:45Z",
+      "can_push": true,
+      "commit_id": "9eb0a30dd84f1881a35fe65edf5d27d7332a0607"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:36:44Z",
+      "can_push": true,
+      "commit_id": "9120624b655fd7084e817135448af4af6ef60669"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:36:48Z",
+      "can_push": true,
+      "commit_id": "9120624b655fd7084e817135448af4af6ef60669"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:36:52Z",
+      "can_push": true,
+      "commit_id": "9120624b655fd7084e817135448af4af6ef60669"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:13Z",
+      "can_push": true,
+      "commit_id": "9120624b655fd7084e817135448af4af6ef60669"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:22Z",
+      "can_push": true,
+      "commit_id": "9120624b655fd7084e817135448af4af6ef60669"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:41:23Z",
+      "can_push": true,
+      "commit_id": "9120624b655fd7084e817135448af4af6ef60669"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:47:52Z",
+      "can_push": true,
+      "commit_id": "ebed735dae423f429e3a2a8bc7e1f9caaa142c8a"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:48:15Z",
+      "can_push": true,
+      "commit_id": "ebed735dae423f429e3a2a8bc7e1f9caaa142c8a"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:59:46Z",
+      "can_push": true,
+      "commit_id": "ebed735dae423f429e3a2a8bc7e1f9caaa142c8a"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 7,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=12d316a4-b5c0-4c66-bb08-af04d2114d3a -->\n<!-- cubic:review-run=2728b6b0-5c11-5c2e-bf2b-aae99f6a493f -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Deeply nested JSON can make `json.loads` rai"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=e7eedd05-4114-4bdb-a3ef-a40d2a43bb5f -->\n<!-- cubic:review-run=2728b6b0-5c11-5c2e-bf2b-aae99f6a493f -->\n<!-- metadata:{\"confidence\":6} -->\nP2: An empty client token bypasses enforcement e"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4bfb576e-fe29-42c8-a3ae-b1a51be2ae15 -->\n<!-- cubic:review-run=2728b6b0-5c11-5c2e-bf2b-aae99f6a493f -->\n<!-- metadata:{\"confidence\":8} -->\nP2: A failed connect can leave `_sessions` and `"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 151,
+    "by_state": {
+      "CANCELLED": 1,
+      "FAILURE": 3,
+      "SKIPPED": 7,
+      "SUCCESS": 140
+    },
+    "failing": [
+      "changelog",
+      "performance-tests-gate",
+      "Run benchmarks",
+      "playground-0.8.23"
+    ],
+    "pending": [],
+    "actions_total": 148
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:45:39Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=71764102\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "linear-code",
+      "association": "NONE",
+      "at": "2026-10-07T21:26:05Z",
+      "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-9088\">ENG-9088</a></p>\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-12913\">E"
+    }
+  ],
+  "head_activity_at": "2026-10-14T09:41:04Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:45:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:45:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:45:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "linear-code[bot]",
+      "association": "NONE",
+      "at": "2026-10-07T21:26:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:36:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:36:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:36:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:37:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:37:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:41:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:41:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:47:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:48:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:59:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:59:47Z"
+    }
+  ],
+  "conflicting_files": [
+    "pyproject.toml",
+    "reflex/app.py"
+  ],
+  "update_branch_offered": false,
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "conclusion": "CANCELLED",
+      "job_id": 120159850789,
+      "cause": "GitHub reports the job cancelled and provides no job log; it was cancelled before producing diagnostic output."
+    },
+    {
+      "check": "performance-tests-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115791863557,
+      "cause": "Gate failed because the benchmarks job failed."
+    },
+    {
+      "check": "Run benchmarks",
+      "conclusion": "FAILURE",
+      "job_id": 115788000322,
+      "cause": "test_on_event_router_data failed during setup because App.on_connect read EventContext before the ContextVar was set (132 passed, 1 error)."
+    },
+    {
+      "check": "playground-0.8.23",
+      "conclusion": "FAILURE",
+      "job_id": 115787999178,
+      "cause": "Reflex 0.8.23 failed to start because SQLAlchemy asyncio could not import the missing greenlet dependency."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Catch RecursionError from deeply nested session JSON and return the endpoint's 400 response instead of a 500.",
+      "addressed": false,
+      "path": "reflex/session_middleware.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Prevent anonymous tokenless contexts from bypassing enforcement when state access can still use the empty client token as a key.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/event/context.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Clean up _sessions and _session_refresh_at when connection initialization fails before on_disconnect can run.",
+      "addressed": false,
+      "path": "reflex/app.py",
+      "outdated": false
+    }
+  ],
+  "last_author_activity_at": "2026-10-14T09:47:52Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

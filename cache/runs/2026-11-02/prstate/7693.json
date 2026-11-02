@@ -1,0 +1,165 @@
+{
+  "number": 7693,
+  "fetched_at": "2026-11-02T17:42:51Z",
+  "author_login": "ybai08",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "ybai08/reflex",
+  "head_sha": "47605e688100656c269af234559a02fdf87b50f2",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7686,
+      "title": "reflex run --frontend-only / --backend-only fails when rxconfig sets the ports",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T05:18:37Z",
+      "can_push": true,
+      "commit_id": "ebd5c5e6cfcdb7601228b7bce0312ca168795a80"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T05:18:41Z",
+      "can_push": true,
+      "commit_id": "ebd5c5e6cfcdb7601228b7bce0312ca168795a80"
+    },
+    {
+      "by": "ybai08",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-29T07:35:12Z",
+      "can_push": false,
+      "commit_id": "ebd5c5e6cfcdb7601228b7bce0312ca168795a80"
+    },
+    {
+      "by": "ybai08",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-29T07:35:15Z",
+      "can_push": false,
+      "commit_id": "47605e688100656c269af234559a02fdf87b50f2"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 169,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 165
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T05:18:32Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=90347693\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-29T05:24:57Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-10-29T07:35:09Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T05:18:32Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T05:18:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T05:18:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T05:18:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T05:18:42Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-29T05:24:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "ybai08",
+      "association": "NONE",
+      "at": "2026-10-29T07:35:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "ybai08",
+      "association": "NONE",
+      "at": "2026-10-29T07:35:15Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Move the test fixture's environment import to module scope.",
+      "addressed": true,
+      "path": "tests/units/test_reflex.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Clear REFLEX_LOG_JSON in the CLI fixture so the port tests cannot enter the output-supervisor path.",
+      "addressed": true,
+      "path": "tests/units/test_reflex.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-29T07:35:15Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 4,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

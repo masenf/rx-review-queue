@@ -1,0 +1,127 @@
+{
+  "number": 7710,
+  "fetched_at": "2026-11-02T17:42:47Z",
+  "author_login": "Parsiffall1",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "Parsiffall1/reflex",
+  "head_sha": "baba3a8fc1926d81ee432af99f295909e5ae13e0",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7708,
+      "title": "`reflex-components-*` packages ship `.pyi` stubs but no `py.typed`, so mypy types every component as `Any`",
+      "filed_by": "JPDSousa"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-01T18:12:17Z",
+      "can_push": true,
+      "commit_id": "6bb980b19d75ea118d0d37a01ca6b36efeda04f4"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-01T18:13:59Z",
+      "can_push": true,
+      "commit_id": "6bb980b19d75ea118d0d37a01ca6b36efeda04f4"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T18:13:46Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92509466\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T18:14:03Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nThese findings could not be posted inline.\n\n- <img alt=\"P1\" src=\"https://greptile-static-assets."
+    }
+  ],
+  "head_activity_at": "2026-11-01T18:17:39Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T18:12:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T18:13:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T18:13:58Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T18:13:59Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T18:14:03Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Add the required Args documentation for the package parameter in test_package_ships_py_typed.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Explicitly re-export package-root symbols such as sonner.toast, Moment, and MomentProvider after adding py.typed.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-01T18:17:39Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

@@ -1,0 +1,575 @@
+{
+  "number": 7679,
+  "fetched_at": "2026-11-02T17:49:48Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "79b3eb96eec7129f7e07d702bf9ef4d1adea00f2",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T20:20:08Z",
+      "can_push": true,
+      "commit_id": "33a05576b98b550cb89b021ade9250dac32b329c"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T20:20:43Z",
+      "can_push": true,
+      "commit_id": "33a05576b98b550cb89b021ade9250dac32b329c"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T20:23:18Z",
+      "can_push": true,
+      "commit_id": "ec95873f0a199d7888b00506df8e9cd9359a7792"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T20:23:21Z",
+      "can_push": true,
+      "commit_id": "ec95873f0a199d7888b00506df8e9cd9359a7792"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T22:36:31Z",
+      "can_push": true,
+      "commit_id": "70977dc8bc6e1bea7543a86e191da6e9c4454781"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T22:37:30Z",
+      "can_push": true,
+      "commit_id": "17b7b32d7bf35c42c08073dcdab011b22e29a526"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-27T22:40:29Z",
+      "can_push": true,
+      "commit_id": "17b7b32d7bf35c42c08073dcdab011b22e29a526"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T22:41:38Z",
+      "can_push": true,
+      "commit_id": "2551222ca272b62917ed21b0703d82eef1fa7df1"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T22:41:41Z",
+      "can_push": true,
+      "commit_id": "2551222ca272b62917ed21b0703d82eef1fa7df1"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-27T22:41:44Z",
+      "can_push": true,
+      "commit_id": "2551222ca272b62917ed21b0703d82eef1fa7df1"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:33:01Z",
+      "can_push": true,
+      "commit_id": "2551222ca272b62917ed21b0703d82eef1fa7df1"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:43:02Z",
+      "can_push": true,
+      "commit_id": "00c5f604586b6f81473b05420889474df3af493c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:45:56Z",
+      "can_push": true,
+      "commit_id": "00c5f604586b6f81473b05420889474df3af493c"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:48:25Z",
+      "can_push": true,
+      "commit_id": "13c32e43917d217521c1ee55ab34b43cfcd16ccf"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:48:28Z",
+      "can_push": true,
+      "commit_id": "13c32e43917d217521c1ee55ab34b43cfcd16ccf"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:48:30Z",
+      "can_push": true,
+      "commit_id": "13c32e43917d217521c1ee55ab34b43cfcd16ccf"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:48:32Z",
+      "can_push": true,
+      "commit_id": "13c32e43917d217521c1ee55ab34b43cfcd16ccf"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:48:35Z",
+      "can_push": true,
+      "commit_id": "13c32e43917d217521c1ee55ab34b43cfcd16ccf"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:50:29Z",
+      "can_push": true,
+      "commit_id": "13c32e43917d217521c1ee55ab34b43cfcd16ccf"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:50:53Z",
+      "can_push": true,
+      "commit_id": "eea09ae00fa5f3f1074227ccaf84f0983dc89263"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:54:32Z",
+      "can_push": true,
+      "commit_id": "eea09ae00fa5f3f1074227ccaf84f0983dc89263"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-30T19:54:57Z",
+      "can_push": true,
+      "commit_id": "0f453b9edecf27ba1ab8b52a1f2f8bf586a4fa2a"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 14,
+    "unresolved": [
+      {
+        "by": "masenf",
+        "outdated": false,
+        "first_comment": "should we implement this kind of thing in the core framework? seems annoying for users to have to define this separately in every app"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "PENDING",
+    "total": 168,
+    "actions_total": 164,
+    "by_state": {
+      "IN_PROGRESS": 5,
+      "SKIPPED": 2,
+      "SUCCESS": 161
+    },
+    "failing": [],
+    "pending": [
+      "unit-tests (ubuntu-latest, 3.11)",
+      "unit-tests (ubuntu-latest, 3.12)",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "unit-tests (ubuntu-latest, 3.15)",
+      "unit-tests (ubuntu-latest, 3.14)"
+    ]
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T20:20:39Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=89245042\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-27T20:27:49Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    },
+    {
+      "by": "linear-code",
+      "association": "NONE",
+      "at": "2026-10-27T20:33:07Z",
+      "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-13589\">ENG-13589</a></p>"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:42:58Z",
+      "excerpt": "@masenf thanks, done in 00c5f6045: every example now uses the async session.\n\n- The overview sets both `db_url` (still used by the `reflex db` migration command"
+    }
+  ],
+  "head_activity_at": "2026-11-02T17:29:50Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T20:20:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T20:20:08Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T20:20:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T20:20:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T20:20:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T20:23:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T20:23:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-27T20:27:49Z"
+    },
+    {
+      "kind": "comment",
+      "by": "linear-code[bot]",
+      "association": "NONE",
+      "at": "2026-10-27T20:33:07Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T22:36:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T22:36:31Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T22:37:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T22:40:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-27T22:40:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T22:41:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T22:41:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-27T22:41:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:28:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:33:01Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:42:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:43:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T19:45:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T19:45:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:48:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:48:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:48:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:48:32Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:48:35Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T19:50:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T19:50:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:50:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T19:54:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T19:54:32Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-10-30T19:54:57Z"
+    }
+  ],
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Remove the incorrect claim that rx.session is deprecated.",
+      "addressed": true,
+      "path": "docs/database/tables.md",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Remove rx.session from the deprecation notices unless a separate deprecation is confirmed.",
+      "addressed": true,
+      "path": "docs/database/queries.md",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Register each documented DeclarativeBase so reflex db migrations can discover its tables.",
+      "addressed": true,
+      "path": "docs/database/queries.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Guard the transient Post update_ts value before calling replace on it.",
+      "addressed": true,
+      "path": "docs/database/tables.md",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Isolate temporary serializer registrations in the documentation tests and clear lookup caches.",
+      "addressed": true,
+      "path": "docs/app/tests/test_database_examples.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Describe session.scalar as returning the first column of the first row.",
+      "addressed": true,
+      "path": "docs/database/queries.md",
+      "outdated": true
+    },
+    {
+      "by": "masenf",
+      "ask": "Consider implementing loaded SQLAlchemy model serialization in the core framework instead of requiring per-app boilerplate.",
+      "addressed": false,
+      "path": "docs/database/relationships.md",
+      "outdated": false,
+      "note": "The author proposed a follow-up framework design, but the maintainer thread remains unresolved."
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Wrap standalone async query fragments in async functions so the examples are valid Python.",
+      "addressed": true,
+      "path": "docs/database/queries.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Avoid a database-backed computed var that caches forever without a state dependency.",
+      "addressed": true,
+      "path": "docs/database/queries.md",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Explain that session.refresh requires an object persistent in the current session and recommend re-querying stored objects.",
+      "addressed": true,
+      "path": "docs/database/relationships.md",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Include annotated Python fences in the async-session and syntax checks.",
+      "addressed": true,
+      "path": "docs/app/tests/test_database_examples.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Document usable async drivers and URL schemes for MySQL and SQL Server alongside sync migration drivers.",
+      "addressed": true,
+      "path": "docs/database/overview.md",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the one-off table creation example actually invoke create_tables.",
+      "addressed": true,
+      "path": "docs/database/overview.md",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Dispose the module-level AsyncEngine before the one-off script event loop exits.",
+      "addressed": true,
+      "path": "docs/database/overview.md",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": false,
+  "last_author_activity_at": "2026-11-02T17:29:50Z",
+  "last_maintainer_activity_at": "2026-10-30T19:33:01Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "conflicting_files": [],
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

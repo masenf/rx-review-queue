@@ -1,0 +1,231 @@
+{
+  "number": 7690,
+  "fetched_at": "2026-11-02T17:42:47Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "6b49ab15d11c2015c36b1142dd0780aa8be1b6e5",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNSTABLE",
+  "auto_merge": false,
+  "review_decision": null,
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-28T18:26:37Z",
+      "can_push": true,
+      "commit_id": "32354b908c6edd970e64ba3a2e3a6c69cb8d5b16"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-28T18:28:47Z",
+      "can_push": true,
+      "commit_id": "32354b908c6edd970e64ba3a2e3a6c69cb8d5b16"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 10,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Keyed example fails to build**\n\nThe example calls `todo_row(item, key=item)`, but `"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Mount reset leaves old values**\n\n`on_mount=count.set(index)` does not make the valu"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a8b537f1-9f0c-4146-87d4-11d769a7b866 -->\n<!-- cubic:review-run=557e088d-a4ac-5f82-a02d-04a1118de636 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: `on_mount=count.set(index)` does not make t"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9df317e8-c54e-4668-8c10-d2a262bc4c06 -->\n<!-- cubic:review-run=557e088d-a4ac-5f82-a02d-04a1118de636 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This release note overstates the per-item st"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=23cbb48e-e1b9-4464-a8cc-a7732aeb2397 -->\n<!-- cubic:review-run=557e088d-a4ac-5f82-a02d-04a1118de636 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: `handler is not foreach_block` compares obj"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=f360d230-70ef-406d-b49b-0264289d6a45 -->\n<!-- cubic:review-run=557e088d-a4ac-5f82-a02d-04a1118de636 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: This identity-key example raises `TypeError"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=cfcddc4e-3dcb-4bf2-8a5d-839bfad9f1ae -->\n<!-- cubic:review-run=557e088d-a4ac-5f82-a02d-04a1118de636 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: `ScopedValues` creates a new context value o"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b6c0283b-ea27-48d4-a273-b3d92ed43564 -->\n<!-- cubic:review-run=557e088d-a4ac-5f82-a02d-04a1118de636 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This release note overstates the guarantee: "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=48ea34d9-dfca-4dc5-9a7b-c8bcecdd7478 -->\n<!-- cubic:review-run=557e088d-a4ac-5f82-a02d-04a1118de636 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: This example cannot run: `row` is undefined"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=23826f8d-669e-4408-b0b9-e25ae3f21f14 -->\n<!-- cubic:review-run=557e088d-a4ac-5f82-a02d-04a1118de636 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Clarify that `on_mount=count.set(index)` onl"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 8,
+    "by_state": {
+      "FAILURE": 1,
+      "SUCCESS": 7
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 5
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T18:26:32Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=89970727\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-28T18:30:50Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 11.33%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :w"
+    }
+  ],
+  "head_activity_at": "2026-10-30T17:09:46Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T18:26:32Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T18:26:35Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T18:26:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T18:28:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T18:28:47Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-28T18:30:50Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Fix the keyed foreach example: todo_row requires index and does not accept key; put key on the component returned by a callback that supplies both arguments.",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Clarify that on_mount=count.set(index) resets only when a row mounts and does not follow later index changes under positional keys.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Correct the wrapping-react example so it does not imply on_mount state follows later item changes; key the row or document an explicit update.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Qualify the root release note: foreach inside an explicit @rx.memo body does not automatically provide per-item unnamed client state.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Replace the object-identity assertion between separately split strings with a value or export-name assertion that proves separate memo blocks were emitted.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Fix the identity-key docs examples so the render callback supplies index and puts key on the returned component rather than passing key to todo_row.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Memoize the ScopedValues context chain when parent and provided entries are Object.is-equal so unchanged memoized item consumers do not re-render.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Qualify the reflex-base release note with the explicit @rx.memo exception to per-item unnamed client state.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Fix the earlier docs example that calls an undefined row and passes key through the wrong helper signature.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the foreach docs explicitly state that on_mount reset does not track later index changes under positional keys, matching the wrapping-react correction.",
+      "addressed": false
+    },
+    {
+      "by": "codspeed",
+      "ask": "Fix or acknowledge the six current-head benchmark regressions reported by CodSpeed.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports six regressions against the stacked base: four _stateful_page compilation benchmarks regressed 14.23%-15.8%, two _stateful_page evaluation benchmarks regressed 5.71%-6.24%, and read_cached_computed regressed 4.16%. Diagnostics say all six significant base/head measurements used different hardware and warn about omitted system-call time."
+    }
+  ],
+  "last_author_activity_at": "2026-10-30T17:09:46Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

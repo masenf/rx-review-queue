@@ -1,0 +1,189 @@
+{
+  "number": 7706,
+  "fetched_at": "2026-11-02T17:42:44Z",
+  "author_login": "sonu4578",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "sonu4578/reflex",
+  "head_sha": "886d1124b16bd0b5e47c838c8fc447db38e60382",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 5443,
+      "title": "No error is raised when EventSpec is used as a Component child",
+      "filed_by": "j-bennet"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-01T04:20:34Z",
+      "can_push": true,
+      "commit_id": "f28d748bdef0086938b345ac533fdf0794bd08d4"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-01T04:22:19Z",
+      "can_push": true,
+      "commit_id": "f28d748bdef0086938b345ac533fdf0794bd08d4"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-01T19:14:41Z",
+      "can_push": true,
+      "commit_id": "5f65228c58a2b39ef6ef964d16dfeec45ceb4e0f"
+    },
+    {
+      "by": "sonu4578",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-01T19:15:16Z",
+      "can_push": false,
+      "commit_id": "f28d748bdef0086938b345ac533fdf0794bd08d4"
+    },
+    {
+      "by": "sonu4578",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-02T03:44:39Z",
+      "can_push": false,
+      "commit_id": "5f65228c58a2b39ef6ef964d16dfeec45ceb4e0f"
+    },
+    {
+      "by": "sonu4578",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-02T03:47:22Z",
+      "can_push": false,
+      "commit_id": "5f65228c58a2b39ef6ef964d16dfeec45ceb4e0f"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=aa74ffb4-99ea-42cc-9055-90503c03bc96 -->\n<!-- cubic:review-run=5278188c-5e47-52bf-9c70-3689fa4826d5 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: This is a backwards-incompatible change: pag"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T04:22:15Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92222672\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    }
+  ],
+  "head_activity_at": "2026-11-02T03:47:47Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T04:20:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T04:22:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T04:22:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T04:22:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T19:14:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-01T19:14:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "sonu4578",
+      "association": "NONE",
+      "at": "2026-11-01T19:15:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "sonu4578",
+      "association": "NONE",
+      "at": "2026-11-02T03:44:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "sonu4578",
+      "association": "NONE",
+      "at": "2026-11-02T03:47:22Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Include every rx.match branch in the result type and add mixed-branch regression coverage.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Account for the compatibility impact in the release note and document the migration, including whether the fragment should be breaking.",
+      "addressed": true
+    },
+    {
+      "by": "sonu4578",
+      "ask": "Choose the rollout policy: hard error as a bugfix, deprecation first, or hard error with a breaking fragment.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-02T03:47:47Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

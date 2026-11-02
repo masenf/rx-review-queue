@@ -1,0 +1,132 @@
+{
+  "number": 7713,
+  "fetched_at": "2026-11-02T17:42:45Z",
+  "author_login": "Dengzi555",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "Dengzi555/reflex",
+  "head_sha": "0c8281c06a57f107c4538e8b7440ae5f38f4e987",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-02T04:29:30Z",
+      "can_push": true,
+      "commit_id": "60809100b30fbaa35a1c2443b057ebc6f6214148"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-02T04:30:50Z",
+      "can_push": true,
+      "commit_id": "60809100b30fbaa35a1c2443b057ebc6f6214148"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:30:45Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92791098\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "Dengzi555",
+      "association": "NONE",
+      "at": "2026-11-02T04:54:28Z",
+      "excerpt": "Good catch, both reviews are right - the tests were passing for the wrong reason.\n\nEach operator now starts from a clean state (`state._clean()` before `*=`, `&"
+    }
+  ],
+  "head_activity_at": "2026-11-02T04:54:11Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:29:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:29:30Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:30:45Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:30:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-02T04:30:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "Dengzi555",
+      "association": "NONE",
+      "at": "2026-11-02T04:54:28Z"
+    }
+  ],
+  "conflicting_files": [],
+  "update_branch_offered": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Clean the set state before each of &=, ^=, and -= so every dirty-tracking assertion is independent.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Clean the list state before *= so that operator is tested from a clean state.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Reset dirty state before every list and set in-place operator to prevent false-positive regression tests.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-02T04:54:28Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

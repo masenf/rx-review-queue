@@ -1,0 +1,457 @@
+{
+  "number": 7363,
+  "fetched_at": "2026-11-02T17:42:47Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "9e9b3b60120a2a2e4c002784fea9c11fc528ccbe",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T00:44:58Z",
+      "can_push": true,
+      "commit_id": "12859c9eb25dafcfc3f31fe7fd2430911cc0bc0f"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:36:55Z",
+      "can_push": true,
+      "commit_id": "c8b68205724e017b2e9e906b4885eb62c4a065e8"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:36:59Z",
+      "can_push": true,
+      "commit_id": "c8b68205724e017b2e9e906b4885eb62c4a065e8"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:02Z",
+      "can_push": true,
+      "commit_id": "c8b68205724e017b2e9e906b4885eb62c4a065e8"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:37:07Z",
+      "can_push": true,
+      "commit_id": "c8b68205724e017b2e9e906b4885eb62c4a065e8"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:40:10Z",
+      "can_push": true,
+      "commit_id": "c8b68205724e017b2e9e906b4885eb62c4a065e8"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:51:49Z",
+      "can_push": true,
+      "commit_id": "9e9b3b60120a2a2e4c002784fea9c11fc528ccbe"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T09:59:40Z",
+      "can_push": true,
+      "commit_id": "9e9b3b60120a2a2e4c002784fea9c11fc528ccbe"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-14T10:02:14Z",
+      "can_push": true,
+      "commit_id": "9e9b3b60120a2a2e4c002784fea9c11fc528ccbe"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 10,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Full storage blocks uploads**\n\nIf `localStorage` is full, `setItem` throws after th"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d955bc5a-4049-4b6c-b698-cf5445ee6d03 -->\n<!-- cubic:review-run=4341d81d-9c30-5acb-a55a-11d75a120a17 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: A full localStorage quota makes this write t"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4918ac72-23b6-4b89-a62b-a61cad34123f -->\n<!-- cubic:review-run=4341d81d-9c30-5acb-a55a-11d75a120a17 -->\n<!-- metadata:{\"confidence\":9} -->\nP3: This mock returns a fresh expiry for every l"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=aa92c48a-ce27-4b15-9473-a3a68eba2956 -->\n<!-- cubic:review-run=4341d81d-9c30-5acb-a55a-11d75a120a17 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This overstates isolation: the bootstrap sti"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "by_state": {
+      "FAILURE": 24,
+      "SKIPPED": 3,
+      "SUCCESS": 118
+    },
+    "failing": [
+      "integration-app-harness-gate",
+      "performance-tests-gate",
+      "integration-app-harness (redis, 3.15, 2)",
+      "integration-app-harness (redis, 3.14, 1)",
+      "integration-app-harness (memory, 3.14, 2)",
+      "integration-app-harness (redis, 3.14, 2)",
+      "integration-app-harness (redis, 3.11, 2)",
+      "integration-app-harness (redis, 3.13, 2)",
+      "integration-app-harness (memory, 3.11, 2)",
+      "integration-app-harness (memory, 3.12, 1)",
+      "integration-app-harness (redis, 3.15, 1)",
+      "integration-app-harness (redis, 3.11, 1)",
+      "integration-app-harness (memory, 3.13, 2)",
+      "integration-app-harness (redis, 3.12, 2)",
+      "integration-app-harness (memory, 3.15, 2)",
+      "integration-app-harness (memory, 3.14, 1)",
+      "integration-app-harness (memory, 3.11, 1)",
+      "integration-app-harness (redis, 3.13, 1)",
+      "integration-app-harness (memory, 3.15, 1)",
+      "integration-app-harness (memory, 3.13, 1)",
+      "integration-app-harness (redis, 3.12, 1)",
+      "integration-app-harness (memory, 3.12, 2)",
+      "playground-0.8.23",
+      "Run benchmarks"
+    ],
+    "pending": [],
+    "actions_total": 142
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:44:53Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=71764130\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "linear-code",
+      "association": "NONE",
+      "at": "2026-10-07T21:26:06Z",
+      "excerpt": "<!-- linear-linkback -->\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-9088\">ENG-9088</a></p>\n<p><a href=\"https://linear.app/reflex-dev/issue/ENG-12919\">E"
+    }
+  ],
+  "head_activity_at": "2026-10-14T09:50:38Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:44:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:44:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T00:44:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "linear-code[bot]",
+      "association": "NONE",
+      "at": "2026-10-07T21:26:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:36:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:36:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:37:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:37:07Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:40:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:40:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-10-14T09:51:49Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:59:39Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T09:59:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:02:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-14T10:02:14Z"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+    "pyproject.toml",
+    "reflex/app.py",
+    "tests/units/compiler/state_js.test.mjs",
+    "tests/units/reflex_base/client_event_queue_runtime.mjs",
+    "tests/units/reflex_base/client_state_updates.mjs"
+  ],
+  "update_branch_offered": false,
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "integration-app-harness-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115794522655,
+      "cause": "Gate failed because the integration-app-harness matrix failed."
+    },
+    {
+      "check": "performance-tests-gate",
+      "conclusion": "FAILURE",
+      "job_id": 115793843127,
+      "cause": "Gate failed because the benchmarks job failed."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.15, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342382,
+      "cause": "Shard stopped after linked-state integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.14, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342298,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.14, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342253,
+      "cause": "Shard stopped after linked-state/navigation integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.14, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342252,
+      "cause": "Shard stopped after linked-state integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.11, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342248,
+      "cause": "Shard stopped after linked-state integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.13, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342235,
+      "cause": "Shard stopped after linked-state integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.11, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342223,
+      "cause": "Shard stopped after linked-state/navigation integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.12, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342213,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.15, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342194,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.11, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342182,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.13, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342178,
+      "cause": "Shard stopped after linked-state/navigation integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.12, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342171,
+      "cause": "Shard stopped after linked-state integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.15, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342170,
+      "cause": "Shard stopped after linked-state/navigation integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.14, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342159,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.11, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342152,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.13, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342112,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.15, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342075,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.13, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342067,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (redis, 3.12, 1)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342037,
+      "cause": "Shard stopped after call-script/component-state assertions could not find tokens and the client-storage test found an unexpected expires_at key."
+    },
+    {
+      "check": "integration-app-harness (memory, 3.12, 2)",
+      "conclusion": "FAILURE",
+      "job_id": 115790342001,
+      "cause": "Shard stopped after linked-state/navigation integration assertions repeatedly could not find the expected token."
+    },
+    {
+      "check": "playground-0.8.23",
+      "conclusion": "FAILURE",
+      "job_id": 115790045982,
+      "cause": "Reflex 0.8.23 failed to start because SQLAlchemy asyncio could not import the missing greenlet dependency."
+    },
+    {
+      "check": "Run benchmarks",
+      "conclusion": "FAILURE",
+      "job_id": 115790045223,
+      "cause": "test_on_event_router_data failed during setup because App.on_connect read EventContext before the ContextVar was set (132 passed, 1 error)."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Treat localStorage freshness writes as best-effort so quota errors after a successful cookie exchange do not leave uploads waiting forever.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Treat localStorage quota failures as best-effort after cookie installation and resolve initialSessionExchange instead of retrying forever.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the warm-transport localStorage mock return an expiry only for the scoped backend key.",
+      "addressed": false,
+      "path": "tests/units/compiler/state_js.test.mjs",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Narrow the release note's storage-isolation claim because the bootstrap still reads the shared legacy sessionStorage token key.",
+      "addressed": false,
+      "path": "packages/reflex-base/news/+session-cookie-bootstrap.feature.md",
+      "outdated": false
+    }
+  ],
+  "last_author_activity_at": "2026-10-14T09:51:49Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

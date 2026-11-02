@@ -1,0 +1,242 @@
+{
+  "number": 7616,
+  "fetched_at": "2026-11-02T17:42:51Z",
+  "author_login": "ShaanGS",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "ShaanGS/reflex",
+  "head_sha": "80a478ea794127e53635a78ec6a3cc6cf8409bd0",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 3989,
+      "title": "Cached var are not busted on hot reload",
+      "filed_by": "Lendemor"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-20T13:35:00Z",
+      "can_push": true,
+      "commit_id": "2ed0b9d111273e74dac390c6400796f47eed3c19"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-20T13:36:23Z",
+      "can_push": true,
+      "commit_id": "2ed0b9d111273e74dac390c6400796f47eed3c19"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-28T17:48:37Z",
+      "can_push": true,
+      "commit_id": "e5c08acb43191287be8c31370483d33020fd7426"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-28T17:53:18Z",
+      "can_push": true,
+      "commit_id": "e5c08acb43191287be8c31370483d33020fd7426"
+    },
+    {
+      "by": "ShaanGS",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-29T13:20:56Z",
+      "can_push": false,
+      "commit_id": "32b4561057424e4ae5ec41ec3d2803daf8153702"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T13:22:52Z",
+      "can_push": true,
+      "commit_id": "32b4561057424e4ae5ec41ec3d2803daf8153702"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 7,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=1cdbf5c6-313c-4746-bbbe-e60f2e4f1f1c -->\n<!-- cubic:review-run=d479a0c2-6c54-57fe-b390-a17f5b776d10 -->\n<!-- metadata:{\"confidence\":6} -->\nP1: The first-read drop only lives in memory. If"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=7d5c5b41-9948-4beb-84be-4c800df7e22f -->\n<!-- cubic:review-run=d479a0c2-6c54-57fe-b390-a17f5b776d10 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Concurrent first reads can bypass invalidati"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=90dd2ab0-1b96-4efb-af30-4df74f7632f0 -->\n<!-- cubic:review-run=d479a0c2-6c54-57fe-b390-a17f5b776d10 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: `_dev_read_keys` grows forever in a long-liv"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T13:36:18Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=84383284\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-28T15:34:16Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    },
+    {
+      "by": "ShaanGS",
+      "association": "NONE",
+      "at": "2026-10-29T13:20:44Z",
+      "excerpt": "Merged main to clear the conflict (only the test_redis.py imports). I also changed the dev-mode Redis check from \"first read\" to \"not yet written by this proces"
+    }
+  ],
+  "head_activity_at": "2026-10-29T14:21:52Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T13:35:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T13:36:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T13:36:22Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-20T13:36:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-28T15:34:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T17:48:36Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T17:48:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T17:53:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-28T17:53:18Z"
+    },
+    {
+      "kind": "comment",
+      "by": "ShaanGS",
+      "association": "NONE",
+      "at": "2026-10-29T13:20:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "ShaanGS",
+      "association": "NONE",
+      "at": "2026-10-29T13:20:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T13:22:51Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T13:22:52Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Persist or repeatedly clear stale Redis cached-var values until the reloaded process writes the state.",
+      "addressed": true,
+      "path": "reflex/istate/manager/redis.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Prevent concurrent first reads from bypassing cached-var invalidation.",
+      "addressed": true,
+      "path": "reflex/istate/manager/redis.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Bound the dev-mode Redis key tracker or tie entries to state lifetime.",
+      "addressed": true,
+      "path": "reflex/istate/manager/redis.py",
+      "outdated": true
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-29T14:21:52Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

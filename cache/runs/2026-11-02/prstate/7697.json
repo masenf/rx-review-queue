@@ -1,0 +1,450 @@
+{
+  "number": 7697,
+  "fetched_at": "2026-11-02T17:42:48Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "afc753520d6f8550f40d1e6b5b89c2b42570397b",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7617,
+      "title": "Move the integration test suite to Playwright",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T20:24:20Z",
+      "can_push": true,
+      "commit_id": "bcac8defb3be3537f40a5a6f297ec83952aeb3b6"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T20:28:43Z",
+      "can_push": true,
+      "commit_id": "bcac8defb3be3537f40a5a6f297ec83952aeb3b6"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T21:04:34Z",
+      "can_push": true,
+      "commit_id": "4e8aaed096e91285ed393aa1684330602360ee75"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T06:46:12Z",
+      "can_push": true,
+      "commit_id": "8bf3b9e26ba648172b9f48d62a8d33a3ad5867b8"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T07:32:13Z",
+      "can_push": false,
+      "commit_id": "8a1fae4a9490e2cb76c12afbcbb7c3becf71db38"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T07:32:34Z",
+      "can_push": false,
+      "commit_id": "8a1fae4a9490e2cb76c12afbcbb7c3becf71db38"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T07:32:45Z",
+      "can_push": false,
+      "commit_id": "8a1fae4a9490e2cb76c12afbcbb7c3becf71db38"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T07:33:52Z",
+      "can_push": true,
+      "commit_id": "8a1fae4a9490e2cb76c12afbcbb7c3becf71db38"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T07:35:52Z",
+      "can_push": true,
+      "commit_id": "8a1fae4a9490e2cb76c12afbcbb7c3becf71db38"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T07:36:00Z",
+      "can_push": false,
+      "commit_id": "7c086b350246a34efae4bc680444196b1c1064ff"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T07:36:30Z",
+      "can_push": false,
+      "commit_id": "7c086b350246a34efae4bc680444196b1c1064ff"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T09:58:45Z",
+      "can_push": true,
+      "commit_id": "f5e7f0295ab764892cad25618ddc701771d84f00"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team",
+    "Alek99"
+  ],
+  "threads": {
+    "total": 24,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=ee1f19d0-be4e-4048-b566-8f2505c41c29 -->\n<!-- cubic:review-run=0621b3be-61c4-5c19-a0c7-d8e2d1c2f38a -->\n<!-- metadata:{\"confidence\":7} -->\nP2: This comment contradicts the assertion below"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 167,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 162
+    },
+    "failing": [
+      "integration-tests-gate",
+      "app-harness-playwright (redis, 3.13)"
+    ],
+    "pending": [],
+    "actions_total": 163
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T20:28:38Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=90882749\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-29T20:31:26Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-10-30T10:25:40Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T20:24:20Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T20:24:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T20:24:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T20:28:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T20:28:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T20:28:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-29T20:31:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T21:04:32Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T21:04:33Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T21:04:34Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T06:46:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T06:46:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:32:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:32:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:32:45Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:33:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:33:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:35:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:35:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:35:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T07:36:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T09:58:45Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T09:58:45Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Anchor the go_back URL assertion to the origin so it cannot pass while still on an internal route.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make test_deploy_url_in_app observe a real navigation instead of asserting the URL that page.goto already loaded.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Restore the final assertion that the configured component retains its value after another component changes.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Wait for the click result before checking unchanged server-side-event inputs.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Move the round-trip performance measurement out of the required integration gate while retaining functional coverage.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the migrated shared-state test actually load and assert the app in a browser.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Preserve the former 15-second backend-round-trip timeout in migrated Playwright assertions.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Use retrying Playwright text assertions instead of one-shot reads in test_var_operations.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Restore exact cookie-set and cookie-attribute coverage from the Selenium test.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Poll until the final upload progress entry reaches 1 instead of reading it once after upload_done.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Keep the original endswith('ago') strength by anchoring the Playwright text assertion.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Replace the no-op lazy locator lookup for #reset with a visibility assertion or remove it.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Verify localStorage contains the persisted login value before logout.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Treat timeout=0 as an explicit timeout by testing for None rather than truthiness.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Restore session, custom-name, and deeper-substate storage assertions after token expiration.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Restore browser coverage proving uploaded HTML downloads instead of executing, including content and dialog checks.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Use innerText semantics for paragraph-based var-operation assertions so correct rendered line breaks pass.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Keep the moved large-state test in a performance workflow so CI still runs it.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Honor performance-scale in the large-state test and write PerformanceReport output so smoke runs avoid the 10,000-variable case.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Preserve explicit dev/prod 404 hydration expectations in the migrated dynamic-routes test.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Reword the breaking fragment so it says integration browser tests use Playwright without implying AppHarness itself is Playwright-backed.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Wait for an exact allowed dynamic-route event sequence instead of only its row count.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Prevent the dynamic-route test from accepting a same-length intermediate event list after browser back.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Correct the dynamic-route comment: the registered /404 page renders and its on_load handler fires for the unknown route.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "app-harness-playwright (redis, 3.13)",
+      "cause": "The Playwright log ends with 1 failed, 520 passed, 2 skipped, and 3 reruns. test_lifespan[prod-mount_api_transformer-no_fastapi-chromium] expected lifespan_context_global == 2 but observed 4; this PR modifies and migrates test_lifespan.py. Redis event-loop cleanup warnings followed but were not the asserted failure."
+    },
+    {
+      "check": "integration-tests-gate",
+      "cause": "The gate's needs payload shows every listed dependency succeeded or was skipped except app-harness-playwright=failure; the gate failed solely because that matrix job was blocking, with no independent test failure."
+    }
+  ],
+  "last_author_activity_at": "2026-10-30T10:25:40Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

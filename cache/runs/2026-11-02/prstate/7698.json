@@ -1,0 +1,124 @@
+{
+  "number": 7698,
+  "fetched_at": "2026-11-02T17:42:47Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "b56e806ff838ccf6b4b29ccfb1513481606b035a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7148,
+      "title": "Restore unconditional psycopg[binary] once psycopg-binary ships cp315 wheels",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-30T17:57:27Z",
+      "can_push": true,
+      "commit_id": "b56e806ff838ccf6b4b29ccfb1513481606b035a"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=ff75b680-04bf-49e0-bcdf-3803ecb785db -->\n<!-- cubic:review-run=8009a903-b23c-586f-b1e0-8bbfa9b1f04a -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This unconditional extra breaks `uv sync` fo"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=3ef7e111-bd1a-445d-a589-5cf3aa5167bc -->\n<!-- cubic:review-run=8009a903-b23c-586f-b1e0-8bbfa9b1f04a -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This unconditional extra makes `uv sync` fai"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 169,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 167
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 165
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T17:56:37Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=91521010\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-30T18:08:34Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-10-30T17:20:18Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T17:56:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T17:57:27Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-30T17:57:28Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-30T18:08:34Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Keep a pure-Python psycopg fallback for free-threaded CPython 3.15 in docs/app, or explicitly exclude that interpreter; psycopg-binary 3.3.6 has no cp315t wheel or source fallback.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Preserve the pure-Python psycopg fallback for free-threaded CPython 3.15 in the root dev dependencies, or wait for cp315t psycopg-binary wheels.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-30T17:54:18Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

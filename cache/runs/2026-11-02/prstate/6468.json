@@ -1,0 +1,448 @@
+{
+  "number": 6468,
+  "fetched_at": "2026-11-02T17:42:47Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "294365776349b342bdf3630bb9cf419ccee86959",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 6214,
+      "title": "Single-pass compiler: Make Component effectively immutable",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-05-07T15:59:47Z",
+      "can_push": true,
+      "commit_id": "41e141c4ee80ef49103ada7ac1539695ec933c29"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T21:18:47Z",
+      "can_push": true,
+      "commit_id": "9306a427c79371544f97fad00eefee3258af3aa7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T21:22:30Z",
+      "can_push": true,
+      "commit_id": "9306a427c79371544f97fad00eefee3258af3aa7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T22:03:06Z",
+      "can_push": true,
+      "commit_id": "9f09d93a2bde1a9a6a17ded14a9ff83737e52cce"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 16,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=7\" align=\"top\"></a> **`ref` silently dropped when `DataTable` has an `id`**\n\n`Component._render(props=Non"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Stub manifest not updated**\n\nThis PR changes component definitions, including the n"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4cb3a7fc-7e90-4755-a187-af4752ece286 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":10} -->\nP1: The rebuilt `VarData` drops `field_dependen"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b3f1cea9-ead5-4491-bcd7-5b8663d82eb0 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: `_literalize_static_ids` no longer handles "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4560fabd-7b87-4fcc-8de6-89ad8cbeb5f3 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This derived prop becomes stale when a calle"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=15eab921-e9f8-428a-a007-20ebbfe1b451 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This bypasses `_get_all_var_data()`, so styl"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5bc9eed9-4222-4b6e-93c7-d1fc2922b485 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: `referenced` matches `getCellContent:name`, "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=90f7dacf-6ea8-4ce6-9299-95f6e0849e99 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":6} -->\nP2: Switching `self.style.pop(\"padding\")` to `se"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=3a8c9be5-31df-42e7-8d73-ac89d61b9f1d -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: `super()._render()` serializes each concret"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=95dec2ae-d41e-439b-9264-470d77d38ace -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: `RADIX_TO_LUCIDE_SIZE[props[\"size\"]]` raises"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=4691491e-64d1-4b2b-afe8-9886b3c838ae -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":9} -->\nP3: Update `pyi_hashes.json` by running `uv run "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=2e3178a8-8ddb-41c6-bc65-9ce2c02546e1 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: `result._get_all_hooks()` only descends into"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=67bbc6d9-d0d3-4ff8-852d-5c0ceedd8fa4 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This PR made `_add_style_recursive` return a"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=37616d8e-db0e-4a54-bb7f-9d44ac64f2f1 -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: The docstring and test name claim the compil"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9128416a-90d6-415e-8f16-f3aed4826dfa -->\n<!-- cubic:review-run=61eb0c7a-3295-5478-a829-547b82862b88 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: `copy_with` writes values straight into `__d"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=0425686d-0e32-432a-bfd3-b773ecb59d85 -->\n<!-- cubic:review-run=96a9650e-b96c-5d9f-b31c-5c01d5fcc888 -->\n<!-- metadata:{\"confidence\":10} -->\nP1: This dev pin breaks the internal package's "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 145,
+    "by_state": {
+      "FAILURE": 8,
+      "SKIPPED": 2,
+      "SUCCESS": 135
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "docs-tests-gate",
+      "integration-tests-gate",
+      "unit-tests (ubuntu-latest, 3.13)",
+      "reflex-docs (3.12)",
+      "reflex-docs (3.11)",
+      "docs-tests"
+    ],
+    "pending": [],
+    "actions_total": 141
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:35Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=31186539\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-05-07T15:59:54Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.42%**\n\n<details>\n<summary>:warning: <b>Different runtime env"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:19:08Z",
+      "excerpt": "<!-- greptile_outside_diff -->\n\n<h3>Comments Outside Diff</h3>\n\nThese findings could not be posted inline.\n\n- <img alt=\"P1\" src=\"https://greptile-static-assets."
+    }
+  ],
+  "head_activity_at": "2026-09-30T21:59:11Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:43Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-05-07T15:59:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-05-07T15:59:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:18:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:18:47Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:19:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T21:22:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T22:03:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T22:03:06Z"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-base/src/reflex_base/components/component.py",
+    "packages/reflex-base/src/reflex_base/components/memo.py",
+    "packages/reflex-base/src/reflex_base/plugins/compiler.py",
+    "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+    "packages/reflex-components-dataeditor/pyproject.toml",
+    "packages/reflex-components-dataeditor/src/reflex_components_dataeditor/dataeditor.py",
+    "packages/reflex-components-internal/pyproject.toml",
+    "packages/reflex-components-radix/pyproject.toml",
+    "reflex/compiler/utils.py",
+    "tests/units/compiler/test_compiler_utils.py",
+    "tests/units/components/datadisplay/test_dataeditor.py"
+  ],
+  "update_branch_offered": false,
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "conclusion": "FAILURE",
+      "job_id": 110123099329,
+      "cause": "Gate failed because the unit-tests dependency failed."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "conclusion": "FAILURE",
+      "check_run_id": 110121348421,
+      "cause": "CodSpeed reported a 4.42% performance regression; its report also warned that the compared runs used different runtime environments."
+    },
+    {
+      "check": "docs-tests-gate",
+      "conclusion": "FAILURE",
+      "job_id": 110120684405,
+      "cause": "Gate failed because docs-tests failed."
+    },
+    {
+      "check": "integration-tests-gate",
+      "conclusion": "FAILURE",
+      "job_id": 110118218455,
+      "cause": "Gate failed because reflex-docs failed."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13)",
+      "conclusion": "FAILURE",
+      "job_id": 110117288373,
+      "cause": "test_tree_phases_samples_a_real_tree saw only the frontend child process and missed the expected install child (1 failed, 10,235 passed)."
+    },
+    {
+      "check": "reflex-docs (3.12)",
+      "conclusion": "FAILURE",
+      "job_id": 110117283188,
+      "cause": "The docs app raised AttributeError while assigning _modules on frozen WrappedAgGrid."
+    },
+    {
+      "check": "reflex-docs (3.11)",
+      "conclusion": "FAILURE",
+      "job_id": 110117283151,
+      "cause": "The docs app raised AttributeError while assigning _modules on frozen WrappedAgGrid."
+    },
+    {
+      "check": "docs-tests",
+      "conclusion": "FAILURE",
+      "job_id": 110117280719,
+      "cause": "Nine docs tests failed: eight double-evaluation cases tried to mutate frozen WrappedAgGrid._modules, and the page-plan isolation test tried to append to tuple children."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Preserve the React ref when DataTable has an explicit id; passing a prebuilt props dict currently skips Component._render's ref population.",
+      "addressed": false,
+      "path": "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Regenerate and commit pyi_hashes.json for the component API changes.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/components/component.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Preserve VarData.field_dependencies and app_wraps when rebuilding Bare metadata.",
+      "addressed": false,
+      "path": "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Literalize components embedded in Var props so head components do not retain useRef hooks.",
+      "addressed": false,
+      "path": "reflex/compiler/utils.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Recompute DataEditor get_cell_content when copy_with replaces columns or data so the rendered callback matches generated hooks.",
+      "addressed": false,
+      "path": "packages/reflex-components-dataeditor/src/reflex_components_dataeditor/dataeditor.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Use contents._get_all_var_data() while styling Bare so embedded components in composed Vars are traversed.",
+      "addressed": false,
+      "path": "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Fix the DataEditor integration assertion to match actual JSX prop syntax instead of getCellContent:name.",
+      "addressed": false,
+      "path": "tests/integration/test_data_editor.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Remove padding from the copied TextArea root style while keeping it on the inner textarea.",
+      "addressed": false,
+      "path": "packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_area.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Avoid serializing DataTable dataframe props once before discarding them and then a second time.",
+      "addressed": false,
+      "path": "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Raise a clear ValueError for unsupported IconButton sizes instead of a raw RADIX_TO_LUCIDE_SIZE KeyError.",
+      "addressed": false,
+      "path": "packages/reflex-components-radix/src/reflex_components_radix/themes/components/icon_button.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Regenerate pyi_hashes.json for the new copy_with component API.",
+      "addressed": false,
+      "path": "packages/reflex-base/src/reflex_base/components/component.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Make the literalization regression test assert refs, since _get_all_hooks does not traverse the content prop.",
+      "addressed": false,
+      "path": "tests/units/compiler/test_compiler_utils.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Retain the component returned by hydrate_fallback._add_style_recursive instead of discarding the styled copy.",
+      "addressed": false,
+      "path": "reflex/compiler/compiler.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Exercise compiler hook deduplication in the DataEditor test or narrow the test's claim.",
+      "addressed": false,
+      "path": "tests/units/components/datadisplay/test_dataeditor.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Wrap handle_submit_unique_name as LiteralVar when copy_with updates the Form prop.",
+      "addressed": false,
+      "path": "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Remove the reflex-base dev pin from the internal package release path or add release-time repinning before check-dev-pins.",
+      "addressed": false,
+      "path": "packages/reflex-components-internal/pyproject.toml",
+      "outdated": false
+    }
+  ],
+  "last_author_activity_at": "2026-09-30T21:59:11Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

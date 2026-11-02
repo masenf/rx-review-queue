@@ -1,0 +1,202 @@
+{
+  "number": 7701,
+  "fetched_at": "2026-11-02T17:42:44Z",
+  "author_login": "AP24110011695",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "AP24110011695/reflex",
+  "head_sha": "7622e587f1a565a3d60496355af51e3505a128f1",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T19:01:39Z",
+      "can_push": true,
+      "commit_id": "a71c49a1bb406885027c2e9efca3626e09a25291"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T19:02:30Z",
+      "can_push": true,
+      "commit_id": "a71c49a1bb406885027c2e9efca3626e09a25291"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T19:22:03Z",
+      "can_push": true,
+      "commit_id": "51c1add639c7db3d022f6c8957507a2d6e7fab1e"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T19:22:05Z",
+      "can_push": true,
+      "commit_id": "51c1add639c7db3d022f6c8957507a2d6e7fab1e"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T19:37:36Z",
+      "can_push": false,
+      "commit_id": "7622e587f1a565a3d60496355af51e3505a128f1"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:02:25Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92046819\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T19:19:33Z",
+      "excerpt": "Addressed both review findings in 51c1add:\n\n1. **Numeric text still crashes** \u2014 both decoders now use `isdecimal()` (which `int()` always accepts) instead of `i"
+    }
+  ],
+  "head_activity_at": "2026-10-31T19:35:40Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:01:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:01:39Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:02:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:02:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:02:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T19:19:33Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:22:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:22:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:22:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T19:22:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "NONE",
+      "at": "2026-10-31T19:37:36Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Guard integer conversion for oversized or Unicode numeric marker text in both decoders.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Preserve numeric marker-like text such as one-half instead of raising ValueError.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Continue scanning inside unrecognized outer marker text so nested real Vars stay reactive.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Strengthen the nested-marker test to prove VarData/reactivity survives decoding.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Replace repeated suffix rescans with a single-pass nested-marker scan.",
+      "addressed": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Avoid quadratic compilation time for strings containing many repeated opening tags.",
+      "addressed": true
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-31T19:37:36Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

@@ -1,0 +1,5421 @@
+{
+ "main": "58d798fbb72a97bec56dde66a8ae82b389c736ec",
+ "main_date": "2026-11-02T18:19:28+05:00",
+ "listing_fetched_at": "2026-11-02T17:46:53Z",
+ "measured": 93,
+ "missing_refs": [],
+ "stacks": [
+  [
+   7361,
+   7362,
+   7363,
+   7364
+  ],
+  [
+   7314,
+   7315
+  ],
+  [
+   6100,
+   7337
+  ]
+ ],
+ "prs": {
+  "7703": {
+   "number": 7703,
+   "head": "90ff27f44f850edca1644389b98a9f867898a935",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 4,
+   "insertions": 233,
+   "deletions": 18,
+   "commits_ahead": 3,
+   "behind_main": 1,
+   "buckets": {
+    "docs": 1,
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/assets/overview.md"
+    ],
+    "fragments": [
+     "news/+shared-asset-windows-fallback.bugfix.md"
+    ],
+    "python": [
+     "reflex/assets.py"
+    ],
+    "unit_tests": [
+     "tests/units/assets/test_assets.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7718": {
+   "number": 7718,
+   "head": "d6a8037d74b196d0bd5f363b760f4d15793e3e81",
+   "merge_base": "58d798fbb72a97bec56dde66a8ae82b389c736ec",
+   "files": 16,
+   "insertions": 661,
+   "deletions": 21,
+   "commits_ahead": 1,
+   "behind_main": 0,
+   "buckets": {
+    "docs": 1,
+    "fragments": 2,
+    "frontend": 1,
+    "python": 5,
+    "unit_tests": 7
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/api-reference/plugins.md"
+    ],
+    "fragments": [
+     "news/7718.feature.md",
+     "packages/reflex-base/news/7718.feature.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/compiler/templates.py",
+     "packages/reflex-base/src/reflex_base/plugins/base.py",
+     "reflex/compiler/compiler.py",
+     "reflex/compiler/utils.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/state_js.test.mjs",
+     "tests/units/compiler/test_compiler.py",
+     "tests/units/compiler/test_context_js_template.py",
+     "tests/units/compiler/test_state_js_template.py",
+     "tests/units/reflex_base/client_event_queue_runtime.mjs",
+     "tests/units/reflex_base/client_state_updates.mjs",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     7718
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7695": {
+   "number": 7695,
+   "head": "c6a61b18d1084af8c1864e953aca58506de133cd",
+   "merge_base": "96dca47e927d90dd697f890ed5e6a3256c473c92",
+   "files": 8,
+   "insertions": 206,
+   "deletions": 69,
+   "commits_ahead": 4,
+   "behind_main": 3,
+   "buckets": {
+    "docs": 4,
+    "frontend": 3,
+    "python": 1
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/app/news/+docs-page-load.performance.md",
+     "docs/getting_started/introduction.md",
+     "docs/library/data-display/icon.md",
+     "docs/library/graphing/other-charts/pyplot.md"
+    ],
+    "frontend": [
+     "docs/app/assets/components/IconGallery.jsx",
+     "docs/app/assets/components/IconGrid.jsx",
+     "docs/app/assets/docs-theme.css"
+    ],
+    "python": [
+     "docs/app/reflex_docs/templates/docpage/docpage.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": true,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7717": {
+   "number": 7717,
+   "head": "ad284885499fd8d34cbcc5abf5b39ea9660cc7ea",
+   "merge_base": "58d798fbb72a97bec56dde66a8ae82b389c736ec",
+   "files": 2,
+   "insertions": 7,
+   "deletions": 0,
+   "commits_ahead": 1,
+   "behind_main": 0,
+   "buckets": {
+    "docs": 2
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/app/news/+dropdown-trigger-click.docs.md",
+     "docs/library/overlay/dropdown_menu.md"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": true,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7715": {
+   "number": 7715,
+   "head": "7126fffefe8072c015dc2d194cfbf6575fa75af7",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 2,
+   "insertions": 29,
+   "deletions": 27,
+   "commits_ahead": 1,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/7709.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/event/__init__.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7709
+    ],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7697": {
+   "number": 7697,
+   "head": "afc753520d6f8550f40d1e6b5b89c2b42570397b",
+   "merge_base": "96dca47e927d90dd697f890ed5e6a3256c473c92",
+   "files": 65,
+   "insertions": 4144,
+   "deletions": 6998,
+   "commits_ahead": 8,
+   "behind_main": 3,
+   "buckets": {
+    "ci": 4,
+    "config": 2,
+    "fragments": 2,
+    "markdown_other": 1,
+    "playwright": 35,
+    "python": 2,
+    "selenium": 17,
+    "tests_other": 2
+   },
+   "bucket_paths": {
+    "ci": [
+     ".github/rulesets/main-required-checks.json",
+     ".github/workflows/integration_app_harness.yml",
+     ".github/workflows/integration_tests.yml",
+     ".github/workflows/performance.yml"
+    ],
+    "config": [
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "fragments": [
+     "news/+7617-remove-selenium-appharness-api.breaking.md",
+     "packages/reflex-base/news/7697.breaking.md"
+    ],
+    "markdown_other": [
+     "AGENTS.md"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_auto_memo.py",
+     "tests/integration/tests_playwright/test_background_task.py",
+     "tests/integration/tests_playwright/test_call_script.py",
+     "tests/integration/tests_playwright/test_client_storage.py",
+     "tests/integration/tests_playwright/test_component_state.py",
+     "tests/integration/tests_playwright/test_computed_vars.py",
+     "tests/integration/tests_playwright/test_connection_banner.py",
+     "tests/integration/tests_playwright/test_deploy_url.py",
+     "tests/integration/tests_playwright/test_deprecated_memo.py",
+     "tests/integration/tests_playwright/test_dynamic_components.py",
+     "tests/integration/tests_playwright/test_dynamic_routes.py",
+     "tests/integration/tests_playwright/test_event_actions.py",
+     "tests/integration/tests_playwright/test_event_chain.py",
+     "tests/integration/tests_playwright/test_exception_handlers.py",
+     "tests/integration/tests_playwright/test_extra_overlay_function.py",
+     "tests/integration/tests_playwright/test_form_submit.py",
+     "tests/integration/tests_playwright/test_hybrid_properties.py",
+     "tests/integration/tests_playwright/test_icon.py",
+     "tests/integration/tests_playwright/test_input.py",
+     "tests/integration/tests_playwright/test_lifespan.py",
+     "tests/integration/tests_playwright/test_linked_state.py",
+     "tests/integration/tests_playwright/test_login_flow.py",
+     "tests/integration/tests_playwright/test_media.py",
+     "tests/integration/tests_playwright/test_memo.py",
+     "tests/integration/tests_playwright/test_memory_state_manager_expiration.py",
+     "tests/integration/tests_playwright/test_moment.py",
+     "tests/integration/tests_playwright/test_navigation.py",
+     "tests/integration/tests_playwright/test_playground.py",
+     "tests/integration/tests_playwright/test_server_side_event.py",
+     "tests/integration/tests_playwright/test_shared_state.py",
+     "tests/integration/tests_playwright/test_state_inheritance.py",
+     "tests/integration/tests_playwright/test_tailwind.py",
+     "tests/integration/tests_playwright/test_typeddict_form_submit.py",
+     "tests/integration/tests_playwright/test_upload.py",
+     "tests/integration/tests_playwright/test_var_operations.py"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "reflex/testing.py"
+    ],
+    "selenium": [
+     "tests/integration/test_client_storage.py",
+     "tests/integration/test_component_state.py",
+     "tests/integration/test_deploy_url.py",
+     "tests/integration/test_exception_handlers.py",
+     "tests/integration/test_extra_overlay_function.py",
+     "tests/integration/test_icon.py",
+     "tests/integration/test_input.py",
+     "tests/integration/test_large_state.py",
+     "tests/integration/test_linked_state.py",
+     "tests/integration/test_login_flow.py",
+     "tests/integration/test_media.py",
+     "tests/integration/test_navigation.py",
+     "tests/integration/test_shared_state.py",
+     "tests/integration/test_state_inheritance.py",
+     "tests/integration/test_tailwind.py",
+     "tests/integration/test_upload.py",
+     "tests/integration/utils.py"
+    ],
+    "tests_other": [
+     "tests/performance/conftest.py",
+     "tests/performance/test_large_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     7697
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7694": {
+   "number": 7694,
+   "head": "595130f1de31123e86c7d5a38d1968896d7e8fb9",
+   "merge_base": "96dca47e927d90dd697f890ed5e6a3256c473c92",
+   "files": 20,
+   "insertions": 558,
+   "deletions": 21,
+   "commits_ahead": 3,
+   "behind_main": 3,
+   "buckets": {
+    "docs": 1,
+    "fragments": 2,
+    "frontend": 2,
+    "playwright": 1,
+    "python": 7,
+    "unit_tests": 7
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/advanced_onboarding/configuration.md"
+    ],
+    "fragments": [
+     "news/+react-compiler-auto-memoize.feature.md",
+     "packages/reflex-base/news/+react-compiler-generated-code.feature.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/vite-plugin-react-compiler.js"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_memo.py"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/components/component.py",
+     "packages/reflex-base/src/reflex_base/components/memoize_helpers.py",
+     "packages/reflex-base/src/reflex_base/config.py",
+     "packages/reflex-base/src/reflex_base/constants/installer.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/compiler/compiler.py",
+     "reflex/compiler/plugins/builtin.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_memoize_plugin.py",
+     "tests/units/compiler/test_plugins.py",
+     "tests/units/components/test_component.py",
+     "tests/units/reflex_base/components/test_memoize_helpers.py",
+     "tests/units/reflex_base/templates/test_vite_plugin_react_compiler.py",
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/test_config.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7276": {
+   "number": 7276,
+   "head": "d9ffd71a9e47243b69c53146187370bd776b818a",
+   "merge_base": "58d798fbb72a97bec56dde66a8ae82b389c736ec",
+   "files": 12,
+   "insertions": 132,
+   "deletions": 40,
+   "commits_ahead": 16,
+   "behind_main": 0,
+   "buckets": {
+    "changelog": 2,
+    "docs": 1,
+    "fragments": 2,
+    "frontend": 1,
+    "other": 1,
+    "python": 2,
+    "selenium": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "changelog": [
+     "CHANGELOG.md",
+     "packages/reflex-base/CHANGELOG.md"
+    ],
+    "docs": [
+     "docs/app/README.md"
+    ],
+    "fragments": [
+     "news/+lazy-dynamic-library-chunks.performance.md",
+     "packages/reflex-base/news/+lazy-dynamic-library-chunks.performance.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "other": [
+     "docs/app/tests/frontend_quality.test.mjs"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/compiler/templates.py",
+     "packages/reflex-base/src/reflex_base/components/dynamic.py"
+    ],
+    "selenium": [
+     "tests/integration/test_dynamic_components.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_compiler.py",
+     "tests/units/compiler/test_dynamic_components_codegen.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7706": {
+   "number": 7706,
+   "head": "886d1124b16bd0b5e47c838c8fc447db38e60382",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 6,
+   "insertions": 113,
+   "deletions": 5,
+   "commits_ahead": 3,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 2,
+    "python": 3,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+event-child-error.bugfix.md",
+     "packages/reflex-components-core/news/+match-union-type.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/components/component.py",
+     "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/match.py"
+    ],
+    "unit_tests": [
+     "tests/units/components/test_component.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7690": {
+   "number": 7690,
+   "head": "6b49ab15d11c2015c36b1142dd0780aa8be1b6e5",
+   "merge_base": "5ec18fa95eb765eb4b179754875d89cc9f7d2812",
+   "files": 52,
+   "insertions": 7286,
+   "deletions": 723,
+   "commits_ahead": 65,
+   "behind_main": 9,
+   "buckets": {
+    "ci": 1,
+    "config": 3,
+    "docs": 3,
+    "fragments": 6,
+    "frontend": 2,
+    "markdown_other": 1,
+    "other": 1,
+    "playwright": 2,
+    "pyi": 1,
+    "python": 19,
+    "tests_other": 4,
+    "unit_tests": 9
+   },
+   "bucket_paths": {
+    "ci": [
+     ".github/workflows/unit_tests.yml"
+    ],
+    "config": [
+     "packages/reflex-components-core/pyproject.toml",
+     "packages/reflex-components-internal/pyproject.toml",
+     "pyproject.toml"
+    ],
+    "docs": [
+     "docs/library/data-display/icon.md",
+     "docs/library/dynamic-rendering/foreach.md",
+     "docs/wrapping-react/overview.md"
+    ],
+    "fragments": [
+     "news/+foreach-scoped-loop-vars.bugfix.md",
+     "news/6936.feature.md",
+     "packages/reflex-base/news/+foreach-scoped-loop-vars.bugfix.md",
+     "packages/reflex-base/news/6936.feature.md",
+     "packages/reflex-components-core/news/+foreach-scoped-loop-vars.bugfix.md",
+     "packages/reflex-components-internal/news/6936.misc.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/client_state.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "markdown_other": [
+     "AGENTS.md"
+    ],
+    "other": [
+     ".gitignore"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_client_state.py",
+     "tests/integration/tests_playwright/test_memo.py"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "docs/app/reflex_docs/pages/integrations/integration_gallery.py",
+     "docs/app/reflex_docs/templates/docpage/docpage.py",
+     "packages/reflex-base/src/reflex_base/client_state.py",
+     "packages/reflex-base/src/reflex_base/compiler/templates.py",
+     "packages/reflex-base/src/reflex_base/components/client_state_context.py",
+     "packages/reflex-base/src/reflex_base/components/memo.py",
+     "packages/reflex-base/src/reflex_base/components/tags/iter_tag.py",
+     "packages/reflex-base/src/reflex_base/constants/base.py",
+     "packages/reflex-base/src/reflex_base/constants/state.py",
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "packages/reflex-base/src/reflex_base/utils/format.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/foreach.py",
+     "packages/reflex-components-internal/src/reflex_components_internal/blocks/demo_form.py",
+     "packages/reflex-components-internal/src/reflex_components_internal/blocks/intro_form.py",
+     "reflex/__init__.py",
+     "reflex/compiler/plugins/memoize.py",
+     "reflex/compiler/utils.py",
+     "reflex/experimental/__init__.py",
+     "reflex/experimental/client_state.py"
+    ],
+    "tests_other": [
+     "tests/js/client_state.test.js",
+     "tests/js/package-lock.json",
+     "tests/js/package.json",
+     "tests/js/vitest.config.js"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/state_js.test.mjs",
+     "tests/units/compiler/test_memoize_plugin.py",
+     "tests/units/compiler/test_state_js_template.py",
+     "tests/units/components/core/test_foreach.py",
+     "tests/units/experimental/test_client_state.py",
+     "tests/units/reflex_base/client_event_queue_runtime.mjs",
+     "tests/units/reflex_base/components/test_memo.py",
+     "tests/units/reflex_base/event/test_init.py",
+     "tests/units/reflex_base/test_client_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 4,
+    "fragment_numbers": [
+     6936
+    ],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core",
+     "reflex-components-internal"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7712": {
+   "number": 7712,
+   "head": "d0aa05c8a8eabb55f48ec097bc2271fad75db1fa",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 1,
+   "insertions": 6,
+   "deletions": 0,
+   "commits_ahead": 2,
+   "behind_main": 1,
+   "buckets": {
+    "python": 1
+   },
+   "bucket_paths": {
+    "python": [
+     "docs/app/reflex_docs/pages/docs/env_vars.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7642": {
+   "number": 7642,
+   "head": "965dc4fb8724ca622df05994462877c0dec5cf84",
+   "merge_base": "58d798fbb72a97bec56dde66a8ae82b389c736ec",
+   "files": 21,
+   "insertions": 1647,
+   "deletions": 39,
+   "commits_ahead": 8,
+   "behind_main": 0,
+   "buckets": {
+    "config": 1,
+    "docs": 2,
+    "fragments": 5,
+    "frontend": 1,
+    "playwright": 1,
+    "python": 8,
+    "unit_tests": 3
+   },
+   "bucket_paths": {
+    "config": [
+     "packages/reflex-components-core/pyproject.toml"
+    ],
+    "docs": [
+     "docs/api-reference/var_system.md",
+     "docs/vars/var-operations.md"
+    ],
+    "fragments": [
+     "news/+set-var-array-operations.breaking.md",
+     "news/+set-var.feature.md",
+     "packages/reflex-base/news/+set-var-array-operations.breaking.md",
+     "packages/reflex-base/news/+set-var.feature.md",
+     "packages/reflex-components-core/news/+foreach-set-var.feature.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_set_operations.py"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/serializers.py",
+     "packages/reflex-base/src/reflex_base/vars/__init__.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "packages/reflex-base/src/reflex_base/vars/number.py",
+     "packages/reflex-base/src/reflex_base/vars/sequence.py",
+     "packages/reflex-base/src/reflex_base/vars/set.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/foreach.py",
+     "reflex/vars/set.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/reflex_base/vars/test_set.py",
+     "tests/units/test_var.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7679": {
+   "number": 7679,
+   "head": "79b3eb96eec7129f7e07d702bf9ef4d1adea00f2",
+   "merge_base": "c458e335c4847ffae8d54b48e2158baf515eefe0",
+   "files": 9,
+   "insertions": 1185,
+   "deletions": 553,
+   "commits_ahead": 11,
+   "behind_main": 21,
+   "buckets": {
+    "config": 2,
+    "docs": 6,
+    "python": 1
+   },
+   "bucket_paths": {
+    "config": [
+     "docs/app/pyproject.toml",
+     "uv.lock"
+    ],
+    "docs": [
+     "docs/app/news/+sqlalchemy-database-docs.docs.md",
+     "docs/database/overview.md",
+     "docs/database/queries.md",
+     "docs/database/relationships.md",
+     "docs/database/tables.md",
+     "docs/library/tables-and-data-grids/table.md"
+    ],
+    "python": [
+     "docs/app/tests/test_database_examples.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": true,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7590": {
+   "number": 7590,
+   "head": "03324a05b818f8a68e486a8c85956832187832fb",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 4,
+   "insertions": 84,
+   "deletions": 15,
+   "commits_ahead": 4,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+backend-worker-config-first.bugfix.md"
+    ],
+    "python": [
+     "reflex/utils/exec.py"
+    ],
+    "unit_tests": [
+     "tests/units/utils/test_exec.py",
+     "tests/units/utils/test_granian_module_target.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7716": {
+   "number": 7716,
+   "head": "7113fa00b1e4407fdd26fe2c114b5f219a74b066",
+   "merge_base": "58d798fbb72a97bec56dde66a8ae82b389c736ec",
+   "files": 4,
+   "insertions": 54,
+   "deletions": 8,
+   "commits_ahead": 3,
+   "behind_main": 0,
+   "buckets": {
+    "fragments": 1,
+    "pyi": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-components-radix/news/+callout-icon-component.bugfix.md"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "packages/reflex-components-radix/src/reflex_components_radix/themes/components/callout.py"
+    ],
+    "unit_tests": [
+     "tests/units/components/radix/test_callout.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-components-radix"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7714": {
+   "number": 7714,
+   "head": "891ca5f96e609adcc7e4875e31054b9f0a46b7ae",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 3,
+   "insertions": 52,
+   "deletions": 5,
+   "commits_ahead": 1,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+exception-handler-annotations.bugfix.md"
+    ],
+    "python": [
+     "reflex/app.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_app.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7713": {
+   "number": 7713,
+   "head": "0c8281c06a57f107c4538e8b7440ae5f38f4e987",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 3,
+   "insertions": 182,
+   "deletions": 0,
+   "commits_ahead": 1,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+proxy-inplace-operator-dirty.bugfix.md"
+    ],
+    "python": [
+     "reflex/istate/proxy.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/test_proxy.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7710": {
+   "number": 7710,
+   "head": "baba3a8fc1926d81ee432af99f295909e5ae13e0",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 36,
+   "insertions": 45,
+   "deletions": 18,
+   "commits_ahead": 2,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 14,
+    "other": 14,
+    "python": 6,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-components-code/news/+py-typed.bugfix.md",
+     "packages/reflex-components-core/news/+py-typed.bugfix.md",
+     "packages/reflex-components-dataeditor/news/+py-typed.bugfix.md",
+     "packages/reflex-components-gridjs/news/+py-typed.bugfix.md",
+     "packages/reflex-components-internal/news/+py-typed.bugfix.md",
+     "packages/reflex-components-lucide/news/+py-typed.bugfix.md",
+     "packages/reflex-components-markdown/news/+py-typed.bugfix.md",
+     "packages/reflex-components-moment/news/+py-typed.bugfix.md",
+     "packages/reflex-components-plotly/news/+py-typed.bugfix.md",
+     "packages/reflex-components-radix/news/+py-typed.bugfix.md",
+     "packages/reflex-components-react-player/news/+py-typed.bugfix.md",
+     "packages/reflex-components-recharts/news/+py-typed.bugfix.md",
+     "packages/reflex-components-sonner/news/+py-typed.bugfix.md",
+     "packages/reflex-site-shared/news/+py-typed.bugfix.md"
+    ],
+    "other": [
+     "packages/reflex-components-code/src/reflex_components_code/py.typed",
+     "packages/reflex-components-core/src/reflex_components_core/py.typed",
+     "packages/reflex-components-dataeditor/src/reflex_components_dataeditor/py.typed",
+     "packages/reflex-components-gridjs/src/reflex_components_gridjs/py.typed",
+     "packages/reflex-components-internal/src/reflex_components_internal/py.typed",
+     "packages/reflex-components-lucide/src/reflex_components_lucide/py.typed",
+     "packages/reflex-components-markdown/src/reflex_components_markdown/py.typed",
+     "packages/reflex-components-moment/src/reflex_components_moment/py.typed",
+     "packages/reflex-components-plotly/src/reflex_components_plotly/py.typed",
+     "packages/reflex-components-radix/src/reflex_components_radix/py.typed",
+     "packages/reflex-components-react-player/src/reflex_components_react_player/py.typed",
+     "packages/reflex-components-recharts/src/reflex_components_recharts/py.typed",
+     "packages/reflex-components-sonner/src/reflex_components_sonner/py.typed",
+     "packages/reflex-site-shared/src/reflex_site_shared/py.typed"
+    ],
+    "python": [
+     "packages/reflex-components-gridjs/src/reflex_components_gridjs/__init__.py",
+     "packages/reflex-components-lucide/src/reflex_components_lucide/__init__.py",
+     "packages/reflex-components-moment/src/reflex_components_moment/__init__.py",
+     "packages/reflex-components-plotly/src/reflex_components_plotly/__init__.py",
+     "packages/reflex-components-react-player/src/reflex_components_react_player/__init__.py",
+     "packages/reflex-components-sonner/src/reflex_components_sonner/__init__.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_build_config.py",
+     "tests/units/utils/test_serializers.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 14,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-components-code",
+     "reflex-components-core",
+     "reflex-components-dataeditor",
+     "reflex-components-gridjs",
+     "reflex-components-internal",
+     "reflex-components-lucide",
+     "reflex-components-markdown",
+     "reflex-components-moment",
+     "reflex-components-plotly",
+     "reflex-components-radix",
+     "reflex-components-react-player",
+     "reflex-components-recharts",
+     "reflex-components-sonner",
+     "reflex-site-shared"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7707": {
+   "number": 7707,
+   "head": "2acb50ceda042acf0d45e084910903ac684332fa",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 3,
+   "insertions": 11,
+   "deletions": 0,
+   "commits_ahead": 1,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+array-ref-marker.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/format.py"
+    ],
+    "unit_tests": [
+     "tests/units/utils/test_format.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6841": {
+   "number": 6841,
+   "head": "333562e25aa4a3512534756bf052c3750835f7cd",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 6,
+   "insertions": 844,
+   "deletions": 15,
+   "commits_ahead": 25,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 2,
+    "unit_tests": 3
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/6841.bugfix.md"
+    ],
+    "python": [
+     "reflex/istate/shared.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_redis.py",
+     "tests/units/istate/test_shared.py",
+     "tests/units/utils/test_utils.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     6841
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7704": {
+   "number": 7704,
+   "head": "a2c175be0d4610bd13bee6458a2ef7a280d560c1",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 3,
+   "insertions": 96,
+   "deletions": 10,
+   "commits_ahead": 3,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+fix-ln-link-direction.bugfix.md"
+    ],
+    "python": [
+     "reflex/utils/path_ops.py"
+    ],
+    "unit_tests": [
+     "tests/units/utils/test_path_ops.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7701": {
+   "number": 7701,
+   "head": "7622e587f1a565a3d60496355af51e3505a128f1",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 4,
+   "insertions": 226,
+   "deletions": 25,
+   "commits_ahead": 3,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+literal-marker-text-hang.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "packages/reflex-base/src/reflex_base/vars/sequence.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/vars/test_sequence.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7700": {
+   "number": 7700,
+   "head": "b284a9cebe865dcf9dc966334a79be685606786b",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 3,
+   "insertions": 87,
+   "deletions": 2,
+   "commits_ahead": 2,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+utf8-generated-stubs.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/pyi_generator.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/utils/pyi_generator/test_encoding.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7699": {
+   "number": 7699,
+   "head": "10a54925031204e0b927a767ff267e9d847f4915",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 3,
+   "insertions": 47,
+   "deletions": 1,
+   "commits_ahead": 1,
+   "behind_main": 1,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+dataclass-serializer-type.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/serializers.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/utils/test_serializers.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7671": {
+   "number": 7671,
+   "head": "00472708a4bb2267f234e8d755400f03ed24983c",
+   "merge_base": "17370c28f7788a60cdeee0283ce50e6e483d6251",
+   "files": 3,
+   "insertions": 108,
+   "deletions": 2,
+   "commits_ahead": 4,
+   "behind_main": 20,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/7669.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_config.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7669
+    ],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7673": {
+   "number": 7673,
+   "head": "dcc9373bd3d991f2336758db0633f18b6b21e415",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 26,
+   "insertions": 2856,
+   "deletions": 132,
+   "commits_ahead": 28,
+   "behind_main": 1,
+   "buckets": {
+    "docs": 3,
+    "fragments": 5,
+    "python": 8,
+    "selenium": 2,
+    "unit_tests": 8
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/events/background_events.md",
+     "docs/events/chaining_events.md",
+     "docs/events/decentralized_event_handlers.md"
+    ],
+    "fragments": [
+     "news/+awaitable-event-handlers.breaking.md",
+     "news/+awaitable-event-handlers.feature.md",
+     "packages/reflex-base/news/+awaitable-event-handlers.breaking.md",
+     "packages/reflex-base/news/+awaitable-event-handlers.feature.md",
+     "packages/reflex-base/news/+literal-var-proxy-cache.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "packages/reflex-base/src/reflex_base/event/context.py",
+     "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/app.py",
+     "reflex/istate/proxy.py",
+     "reflex/state.py"
+    ],
+    "selenium": [
+     "tests/integration/test_background_task.py",
+     "tests/integration/test_event_chain.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/test_proxy.py",
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+     "tests/units/reflex_base/event/processor/test_event_processor.py",
+     "tests/units/reflex_base/event/test_context.py",
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/test_app.py",
+     "tests/units/test_event.py",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7698": {
+   "number": 7698,
+   "head": "b56e806ff838ccf6b4b29ccfb1513481606b035a",
+   "merge_base": "aeea15a3e41a866e57a762268b7c1e9ffedac789",
+   "files": 3,
+   "insertions": 6,
+   "deletions": 18,
+   "commits_ahead": 1,
+   "behind_main": 1,
+   "buckets": {
+    "config": 3
+   },
+   "bucket_paths": {
+    "config": [
+     "docs/app/pyproject.toml",
+     "pyproject.toml",
+     "uv.lock"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7696": {
+   "number": 7696,
+   "head": "58ac79e276536cbc3fcaeb757be4f9db7407f3cf",
+   "merge_base": "96dca47e927d90dd697f890ed5e6a3256c473c92",
+   "files": 3,
+   "insertions": 173,
+   "deletions": 6,
+   "commits_ahead": 1,
+   "behind_main": 3,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+flush-failed-handler-delta.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7616": {
+   "number": 7616,
+   "head": "80a478ea794127e53635a78ec6a3cc6cf8409bd0",
+   "merge_base": "6c371301252275961409e98e946198f1dd838ab7",
+   "files": 6,
+   "insertions": 244,
+   "deletions": 0,
+   "commits_ahead": 6,
+   "behind_main": 6,
+   "buckets": {
+    "fragments": 1,
+    "python": 3,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+cached-vars-hot-reload.bugfix.md"
+    ],
+    "python": [
+     "reflex/istate/manager/__init__.py",
+     "reflex/istate/manager/disk.py",
+     "reflex/istate/manager/redis.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_disk.py",
+     "tests/units/istate/manager/test_redis.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7693": {
+   "number": 7693,
+   "head": "47605e688100656c269af234559a02fdf87b50f2",
+   "merge_base": "6c371301252275961409e98e946198f1dd838ab7",
+   "files": 3,
+   "insertions": 102,
+   "deletions": 2,
+   "commits_ahead": 2,
+   "behind_main": 6,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+run-single-side-config-ports.bugfix.md"
+    ],
+    "python": [
+     "reflex/reflex.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_reflex.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7631": {
+   "number": 7631,
+   "head": "bf6cee21436330b0433f3a49cef2a9ed2650b976",
+   "merge_base": "be0c685ba370d1742b735600f1411837f718b507",
+   "files": 3,
+   "insertions": 135,
+   "deletions": 2,
+   "commits_ahead": 2,
+   "behind_main": 55,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+disk-state-load-errors.bugfix.md"
+    ],
+    "python": [
+     "reflex/istate/manager/disk.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_disk.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7688": {
+   "number": 7688,
+   "head": "334b0283ce8211b714161fdbfc2f570424f57ec1",
+   "merge_base": "1191a38df7a6114d4c57cbb4f0a3822b01922ebf",
+   "files": 3,
+   "insertions": 117,
+   "deletions": 1,
+   "commits_ahead": 2,
+   "behind_main": 16,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-site-shared/news/+heading-permalink-fragment.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-site-shared/src/reflex_site_shared/components/blocks/headings.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_site_shared/components/test_headings.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-site-shared"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7442": {
+   "number": 7442,
+   "head": "1211cbf3db1cbad1eaf8f3c8ffd7d5d43d9cf451",
+   "merge_base": "a9b6613efed497aec939bf1db7922db28ee367e1",
+   "files": 9,
+   "insertions": 607,
+   "deletions": 18,
+   "commits_ahead": 18,
+   "behind_main": 43,
+   "buckets": {
+    "fragments": 2,
+    "playwright": 1,
+    "python": 5,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+7426.bugfix.md",
+     "packages/reflex-base/news/+7426.bugfix.md"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_client_state.py"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/plugins/compiler.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/compiler/plugins/builtin.py",
+     "reflex/compiler/plugins/memoize.py",
+     "reflex/experimental/client_state.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_memoize_plugin.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7647": {
+   "number": 7647,
+   "head": "c09593568a09af6f58c4a679e99d662c85b9cfd2",
+   "merge_base": "a9b6613efed497aec939bf1db7922db28ee367e1",
+   "files": 7,
+   "insertions": 107,
+   "deletions": 1,
+   "commits_ahead": 3,
+   "behind_main": 43,
+   "buckets": {
+    "fragments": 1,
+    "frontend": 1,
+    "markdown_other": 1,
+    "other": 1,
+    "python": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-site-shared/news/+normalize-component-search.bugfix.md"
+    ],
+    "frontend": [
+     "packages/reflex-site-shared/src/reflex_site_shared/styles/assets/components/AlgoliaSearch.tsx"
+    ],
+    "markdown_other": [
+     "packages/reflex-site-shared/README.md"
+    ],
+    "other": [
+     "packages/reflex-site-shared/src/reflex_site_shared/styles/assets/components/search-query.mjs"
+    ],
+    "python": [
+     "packages/reflex-site-shared/src/reflex_site_shared/plugins.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_site_shared/test_algolia.py",
+     "tests/units/reflex_site_shared/test_plugins.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-site-shared"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6733": {
+   "number": 6733,
+   "head": "f315ecfab5eef15419323762708115492007d458",
+   "merge_base": "d54ad96ad2dff9db9cc67ffe27eb9b0e048cf910",
+   "files": 5,
+   "insertions": 153,
+   "deletions": 7,
+   "commits_ahead": 4,
+   "behind_main": 599,
+   "buckets": {
+    "fragments": 2,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/6733.bugfix.md",
+     "packages/reflex-base/news/6733.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/plugins/base.py",
+     "reflex/app.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_app.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     6733
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7656": {
+   "number": 7656,
+   "head": "6cb42ef645a52dddac4c5822f811d75aeb382a50",
+   "merge_base": "656e8c7e9a243c8597e29e4d858966800d459e40",
+   "files": 5,
+   "insertions": 213,
+   "deletions": 4,
+   "commits_ahead": 1,
+   "behind_main": 38,
+   "buckets": {
+    "frontend": 1,
+    "python": 1,
+    "unit_tests": 3
+   },
+   "bucket_paths": {
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/helpers/array.js"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/vars/sequence.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_var.py",
+     "tests/units/vars/array_helpers.test.mjs",
+     "tests/units/vars/test_array_helpers_template.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7670": {
+   "number": 7670,
+   "head": "7c688cd949adcb6cb93cb625ffa7e047b9bde957",
+   "merge_base": "9c64f1eea6a2522e5c7bb48cc314bc8657058781",
+   "files": 4,
+   "insertions": 79,
+   "deletions": 3,
+   "commits_ahead": 1,
+   "behind_main": 30,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-hosting-cli/news/+config-missing-pyyaml.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-hosting-cli/src/reflex_cli/utils/hosting.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_cli/utils/test_hosting.py",
+     "tests/units/reflex_cli/v2/test_vmtypes_regions.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-hosting-cli"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7668": {
+   "number": 7668,
+   "head": "a20f3cc327b1e077ce4acd550263a1442ead3d40",
+   "merge_base": "9c64f1eea6a2522e5c7bb48cc314bc8657058781",
+   "files": 6,
+   "insertions": 111,
+   "deletions": 0,
+   "commits_ahead": 2,
+   "behind_main": 30,
+   "buckets": {
+    "docs": 1,
+    "fragments": 1,
+    "python": 2,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/api-reference/observability.md"
+    ],
+    "fragments": [
+     "packages/reflex-base/news/+json-log-trace-ids.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/otel.py",
+     "packages/reflex-base/src/reflex_base/utils/log.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/test_otel.py",
+     "tests/units/reflex_base/utils/test_log.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7655": {
+   "number": 7655,
+   "head": "f8e79121e52c91f21c9980d0de20caaca022d591",
+   "merge_base": "656e8c7e9a243c8597e29e4d858966800d459e40",
+   "files": 10,
+   "insertions": 224,
+   "deletions": 5,
+   "commits_ahead": 2,
+   "behind_main": 38,
+   "buckets": {
+    "config": 2,
+    "docs": 1,
+    "fragments": 1,
+    "python": 3,
+    "unit_tests": 3
+   },
+   "bucket_paths": {
+    "config": [
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "docs": [
+     "docs/hosting/self-hosting.md"
+    ],
+    "fragments": [
+     "news/+process-titles.feature.md"
+    ],
+    "python": [
+     "reflex/reflex.py",
+     "reflex/utils/exec.py",
+     "reflex/utils/processes.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_reflex.py",
+     "tests/units/utils/test_exec.py",
+     "tests/units/utils/test_processes.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7651": {
+   "number": 7651,
+   "head": "046bcaa8ad7bad9475bd99991b1b74b50c85a176",
+   "merge_base": "d28eb2e0f2e361033bf1b7536a709451782f3216",
+   "files": 5,
+   "insertions": 95,
+   "deletions": 5,
+   "commits_ahead": 3,
+   "behind_main": 39,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 3
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+backend-var-literal-var.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/vars/base.py"
+    ],
+    "unit_tests": [
+     "tests/units/components/test_component.py",
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/test_event.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7648": {
+   "number": 7648,
+   "head": "a24b9d34960d1d60984e00b95e637e3bc4075289",
+   "merge_base": "a9b6613efed497aec939bf1db7922db28ee367e1",
+   "files": 4,
+   "insertions": 278,
+   "deletions": 16,
+   "commits_ahead": 6,
+   "behind_main": 43,
+   "buckets": {
+    "fragments": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/7633.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/types.py",
+     "packages/reflex-base/src/reflex_base/vars/object.py"
+    ],
+    "unit_tests": [
+     "tests/units/vars/test_object.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7633
+    ],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7652": {
+   "number": 7652,
+   "head": "888dde85f08b613de781196ed36fd52bf4255f90",
+   "merge_base": "656e8c7e9a243c8597e29e4d858966800d459e40",
+   "files": 3,
+   "insertions": 72,
+   "deletions": 7,
+   "commits_ahead": 3,
+   "behind_main": 38,
+   "buckets": {
+    "fragments": 1,
+    "frontend": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+sync-local-storage-clear.bugfix.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/state_js.test.mjs"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7659": {
+   "number": 7659,
+   "head": "2ea5e942d7ccafb8f0cf2170b23717f126c064a7",
+   "merge_base": "656e8c7e9a243c8597e29e4d858966800d459e40",
+   "files": 3,
+   "insertions": 70,
+   "deletions": 5,
+   "commits_ahead": 1,
+   "behind_main": 38,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+init-files-utf8.bugfix.md"
+    ],
+    "python": [
+     "reflex/utils/frontend_skeleton.py"
+    ],
+    "unit_tests": [
+     "tests/units/utils/test_utils.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6932": {
+   "number": 6932,
+   "head": "b0f9946f0bc7e29236827d90e8b56c3251d8c13c",
+   "merge_base": "656e8c7e9a243c8597e29e4d858966800d459e40",
+   "files": 80,
+   "insertions": 12162,
+   "deletions": 2807,
+   "commits_ahead": 93,
+   "behind_main": 38,
+   "buckets": {
+    "benchmarks": 5,
+    "config": 3,
+    "docs": 4,
+    "fragments": 11,
+    "frontend": 3,
+    "markdown_other": 1,
+    "other": 3,
+    "playwright": 4,
+    "pyi": 1,
+    "python": 21,
+    "selenium": 1,
+    "unit_tests": 23
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/support/idle_clients.py",
+     "tests/benchmarks/support/socket_client.py",
+     "tests/benchmarks/test_event_processing.py",
+     "tests/benchmarks/test_event_transport.py",
+     "tests/benchmarks/test_socket_headers.py"
+    ],
+    "config": [
+     "docs/app/pyproject.toml",
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "docs": [
+     "docs/api-reference/channels.md",
+     "docs/app/news/+channels-reference.docs.md",
+     "docs/changelog/upgrading/upgrading-to-0-10.md",
+     "docs/hosting/self-hosting.md"
+    ],
+    "fragments": [
+     "news/+event-namespace-handle-event.deprecation.md",
+     "news/+socket-deflate-flag.performance.md",
+     "news/+socketio-handler-failures.bugfix.md",
+     "news/+websocket-channels.feature.md",
+     "news/6932.breaking.md",
+     "news/6932.feature.md",
+     "packages/reflex-base/news/+cors-origins-string.bugfix.md",
+     "packages/reflex-base/news/+socket-deflate-flag.performance.md",
+     "packages/reflex-base/news/+websocket-channels.feature.md",
+     "packages/reflex-base/news/6932.breaking.md",
+     "packages/reflex-base/news/6932.feature.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/helpers/json.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/helpers/websocket.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "markdown_other": [
+     "packages/reflex-bench/README.md"
+    ],
+    "other": [
+     "docker-example/production-compose/Caddyfile",
+     "docker-example/production/Caddyfile",
+     "packages/reflex-bench/budgets.json"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_channels.py",
+     "tests/integration/tests_playwright/test_hydration_storage.py",
+     "tests/integration/tests_playwright/test_router_query.py",
+     "tests/integration/tests_playwright/test_stateless_app.py"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "docs/app/reflex_docs/pages/docs/apiref.py",
+     "docs/app/rxconfig.py",
+     "docs/app/tests/test_sidebar.py",
+     "packages/reflex-base/src/reflex_base/config.py",
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "packages/reflex-base/src/reflex_base/utils/log.py",
+     "packages/reflex-bench/src/reflex_bench/drivers/browser.py",
+     "packages/reflex-bench/src/reflex_bench/drivers/echo_server.py",
+     "packages/reflex-bench/src/reflex_bench/drivers/events.py",
+     "packages/reflex-bench/src/reflex_bench/suites/wire.py",
+     "reflex/__init__.py",
+     "reflex/app.py",
+     "reflex/channels.py",
+     "reflex/event_namespace.py",
+     "reflex/socketio_namespace.py",
+     "reflex/state.py",
+     "reflex/testing.py",
+     "reflex/utils/build.py",
+     "reflex/utils/exec.py",
+     "reflex/utils/uvicorn_worker.py"
+    ],
+    "selenium": [
+     "tests/integration/test_client_storage.py"
+    ],
+    "unit_tests": [
+     "tests/units/benchmarks/test_support.py",
+     "tests/units/compiler/state_js.test.mjs",
+     "tests/units/compiler/test_websocket_js_template.py",
+     "tests/units/compiler/websocket_js.test.mjs",
+     "tests/units/conftest.py",
+     "tests/units/reflex_base/client_event_queue_runtime.mjs",
+     "tests/units/reflex_base/client_state_updates.mjs",
+     "tests/units/reflex_bench/drivers/test_browser.py",
+     "tests/units/reflex_bench/drivers/test_echo_server.py",
+     "tests/units/reflex_bench/drivers/test_events.py",
+     "tests/units/reflex_bench/factories.py",
+     "tests/units/reflex_bench/suites/test_events.py",
+     "tests/units/reflex_bench/suites/test_memory.py",
+     "tests/units/reflex_bench/suites/test_wire.py",
+     "tests/units/reflex_bench/suites/test_wire_app.py",
+     "tests/units/test_app.py",
+     "tests/units/test_channels.py",
+     "tests/units/test_config.py",
+     "tests/units/test_event_namespace.py",
+     "tests/units/test_socketio_namespace.py",
+     "tests/units/test_testing.py",
+     "tests/units/utils/test_build.py",
+     "tests/units/utils/test_exec.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [
+     6932
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-bench"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7337": {
+   "number": 7337,
+   "head": "4af1902e1cde0740a126b9daeb25d0413b55f2a6",
+   "merge_base": "656e8c7e9a243c8597e29e4d858966800d459e40",
+   "files": 71,
+   "insertions": 9726,
+   "deletions": 417,
+   "commits_ahead": 202,
+   "behind_main": 38,
+   "buckets": {
+    "benchmarks": 1,
+    "docs": 3,
+    "fragments": 9,
+    "frontend": 2,
+    "playwright": 1,
+    "pyi": 1,
+    "python": 27,
+    "selenium": 2,
+    "unit_tests": 25
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/test_shared_state.py"
+    ],
+    "docs": [
+     "docs/api-reference/cli.md",
+     "docs/api-reference/minification.md",
+     "docs/state_structure/component_state.md"
+    ],
+    "fragments": [
+     "news/6100.feature.1.md",
+     "news/6100.feature.md",
+     "news/7337.feature.1.md",
+     "news/7337.feature.md",
+     "packages/reflex-base/news/6100.bugfix.md",
+     "packages/reflex-base/news/6100.feature.md",
+     "packages/reflex-base/news/7337.feature.md",
+     "packages/reflex-components-core/news/6100.bugfix.md",
+     "packages/reflex-components-core/news/7337.bugfix.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/helpers/upload.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_client_error.py"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "docs/app/reflex_docs/pages/docs/apiref.py",
+     "docs/app/tests/test_sidebar.py",
+     "packages/reflex-base/src/reflex_base/compiler/templates.py",
+     "packages/reflex-base/src/reflex_base/constants/compiler.py",
+     "packages/reflex-base/src/reflex_base/constants/event.py",
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "packages/reflex-base/src/reflex_base/registry.py",
+     "packages/reflex-base/src/reflex_base/utils/format.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "packages/reflex-base/src/reflex_base/vars/dep_tracking.py",
+     "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/banner.py",
+     "reflex/app.py",
+     "reflex/compiler/compiler.py",
+     "reflex/compiler/utils.py",
+     "reflex/istate/delta.py",
+     "reflex/istate/manager/token.py",
+     "reflex/istate/shared.py",
+     "reflex/minify.py",
+     "reflex/reflex.py",
+     "reflex/state.py",
+     "reflex/testing.py",
+     "reflex/utils/prerequisites.py"
+    ],
+    "selenium": [
+     "tests/integration/test_linked_state.py",
+     "tests/integration/test_minification.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/state_js.test.mjs",
+     "tests/units/compiler/test_compiler.py",
+     "tests/units/compiler/test_compiler_utils.py",
+     "tests/units/compiler/test_context_js_template.py",
+     "tests/units/compiler/test_state_js_template.py",
+     "tests/units/components/base/test_bare.py",
+     "tests/units/components/core/test_banner.py",
+     "tests/units/conftest.py",
+     "tests/units/istate/manager/test_token.py",
+     "tests/units/istate/test_shared.py",
+     "tests/units/minify_helpers.py",
+     "tests/units/name_resolvers.py",
+     "tests/units/reflex_base/client_event_queue_runtime.mjs",
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+     "tests/units/reflex_base/event/processor/test_event_processor.py",
+     "tests/units/reflex_base/test_registry.py",
+     "tests/units/reflex_base/utils/test_format.py",
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/test_app.py",
+     "tests/units/test_environment.py",
+     "tests/units/test_event.py",
+     "tests/units/test_minify.py",
+     "tests/units/test_reflex.py",
+     "tests/units/test_state.py",
+     "tests/units/test_testing.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [
+     6100,
+     7337
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [],
+   "contains": [
+    6100
+   ],
+   "parent_relative": {
+    "parent": 6100,
+    "files": 43,
+    "insertions": 2884,
+    "deletions": 837,
+    "commits": 36
+   }
+  },
+  "6100": {
+   "number": 6100,
+   "head": "d4a7d697e45626734af57860dc27ce707d1851ff",
+   "merge_base": "656e8c7e9a243c8597e29e4d858966800d459e40",
+   "files": 62,
+   "insertions": 7498,
+   "deletions": 236,
+   "commits_ahead": 166,
+   "behind_main": 38,
+   "buckets": {
+    "docs": 3,
+    "fragments": 5,
+    "frontend": 2,
+    "playwright": 1,
+    "pyi": 1,
+    "python": 25,
+    "selenium": 2,
+    "unit_tests": 23
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/api-reference/cli.md",
+     "docs/api-reference/minification.md",
+     "docs/state_structure/component_state.md"
+    ],
+    "fragments": [
+     "news/6100.feature.1.md",
+     "news/6100.feature.md",
+     "packages/reflex-base/news/6100.bugfix.md",
+     "packages/reflex-base/news/6100.feature.md",
+     "packages/reflex-components-core/news/6100.bugfix.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/helpers/upload.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_client_error.py"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "docs/app/reflex_docs/pages/docs/apiref.py",
+     "docs/app/tests/test_sidebar.py",
+     "packages/reflex-base/src/reflex_base/compiler/templates.py",
+     "packages/reflex-base/src/reflex_base/constants/compiler.py",
+     "packages/reflex-base/src/reflex_base/constants/event.py",
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "packages/reflex-base/src/reflex_base/registry.py",
+     "packages/reflex-base/src/reflex_base/utils/format.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/banner.py",
+     "reflex/app.py",
+     "reflex/compiler/compiler.py",
+     "reflex/compiler/utils.py",
+     "reflex/istate/manager/token.py",
+     "reflex/istate/shared.py",
+     "reflex/minify.py",
+     "reflex/reflex.py",
+     "reflex/state.py",
+     "reflex/testing.py",
+     "reflex/utils/prerequisites.py"
+    ],
+    "selenium": [
+     "tests/integration/test_linked_state.py",
+     "tests/integration/test_minification.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/state_js.test.mjs",
+     "tests/units/compiler/test_compiler.py",
+     "tests/units/compiler/test_compiler_utils.py",
+     "tests/units/compiler/test_context_js_template.py",
+     "tests/units/compiler/test_state_js_template.py",
+     "tests/units/components/base/test_bare.py",
+     "tests/units/components/core/test_banner.py",
+     "tests/units/conftest.py",
+     "tests/units/istate/manager/test_token.py",
+     "tests/units/istate/test_shared.py",
+     "tests/units/minify_helpers.py",
+     "tests/units/name_resolvers.py",
+     "tests/units/reflex_base/client_event_queue_runtime.mjs",
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+     "tests/units/reflex_base/event/processor/test_event_processor.py",
+     "tests/units/reflex_base/test_registry.py",
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/test_app.py",
+     "tests/units/test_environment.py",
+     "tests/units/test_event.py",
+     "tests/units/test_minify.py",
+     "tests/units/test_reflex.py",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [
+     6100
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [
+    7337
+   ],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7033": {
+   "number": 7033,
+   "head": "b9c3e712d58cfccb3fda05eb1065d156856b0877",
+   "merge_base": "656e8c7e9a243c8597e29e4d858966800d459e40",
+   "files": 11,
+   "insertions": 507,
+   "deletions": 35,
+   "commits_ahead": 20,
+   "behind_main": 38,
+   "buckets": {
+    "docs": 1,
+    "fragments": 2,
+    "python": 4,
+    "unit_tests": 4
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/events/events_overview.md"
+    ],
+    "fragments": [
+     "news/7033.feature.md",
+     "packages/reflex-base/news/7033.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py",
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "reflex/state.py",
+     "reflex/utils/exec.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_config.py",
+     "tests/units/test_event.py",
+     "tests/units/test_state.py",
+     "tests/units/utils/test_exec.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     7033
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6873": {
+   "number": 6873,
+   "head": "9618a3fc890b625f49eb4f1ac89fd1eabf982023",
+   "merge_base": "4be8b4d9b0c6d65e29f51849797a76780d7a4628",
+   "files": 7,
+   "insertions": 335,
+   "deletions": 4,
+   "commits_ahead": 14,
+   "behind_main": 69,
+   "buckets": {
+    "fragments": 2,
+    "python": 3,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+get-state-mixin.feature.md",
+     "packages/reflex-base/news/+registry-mixin-lookup.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/registry.py",
+     "reflex/istate/manager/__init__.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/test_registry.py",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7630": {
+   "number": 7630,
+   "head": "1617db08600cc6eea5b4072d4f4a170ecf4cefb9",
+   "merge_base": "eb0cd676599e6b04adb95072ba7e6bae4aa8cce2",
+   "files": 3,
+   "insertions": 158,
+   "deletions": 12,
+   "commits_ahead": 3,
+   "behind_main": 60,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+state-guard-memo-modules.bugfix.md"
+    ],
+    "python": [
+     "reflex/compiler/compiler.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_compiler.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7638": {
+   "number": 7638,
+   "head": "0ae0d85708122ed7112f8855be070f7f74035e90",
+   "merge_base": "74bcd8b45f4d45b0aecf2b5e1f9344876f44889b",
+   "files": 4,
+   "insertions": 22,
+   "deletions": 5,
+   "commits_ahead": 2,
+   "behind_main": 52,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+var-modulo-python-semantics.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/vars/number.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/vars/test_number.py",
+     "tests/units/test_var.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7594": {
+   "number": 7594,
+   "head": "04c3d2727d97045966897a3437adcf0f6d96fcb4",
+   "merge_base": "a9b6613efed497aec939bf1db7922db28ee367e1",
+   "files": 4,
+   "insertions": 108,
+   "deletions": 6,
+   "commits_ahead": 3,
+   "behind_main": 43,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "selenium": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+7099.bugfix.md"
+    ],
+    "python": [
+     "reflex/compiler/plugins/builtin.py"
+    ],
+    "selenium": [
+     "tests/integration/test_moment.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_plugins.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6688": {
+   "number": 6688,
+   "head": "9752de1e60cd1553ef3f06d8880c55c854eb7bdc",
+   "merge_base": "4be8b4d9b0c6d65e29f51849797a76780d7a4628",
+   "files": 51,
+   "insertions": 13805,
+   "deletions": 359,
+   "commits_ahead": 63,
+   "behind_main": 69,
+   "buckets": {
+    "fragments": 4,
+    "playwright": 1,
+    "pyi": 1,
+    "python": 25,
+    "unit_tests": 20
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+compile-daemon-windows-record.bugfix.md",
+     "news/+content-addressed-auto-memos.misc.md",
+     "news/6688.feature.md",
+     "packages/reflex-base/news/6688.misc.md"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_memo.py"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "docs/app/reflex_docs/pages/docs/component.py",
+     "docs/app/tests/test_prop_docs_ids.py",
+     "packages/reflex-base/src/reflex_base/components/memo.py",
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "packages/reflex-base/src/reflex_base/plugins/compiler.py",
+     "packages/reflex-base/src/reflex_base/utils/imports.py",
+     "packages/reflex-base/src/reflex_base/utils/serializers.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "packages/reflex-base/src/reflex_base/vars/sequence.py",
+     "reflex/app.py",
+     "reflex/compiler/compiler.py",
+     "reflex/compiler/disk_cache.py",
+     "reflex/compiler/page_cache.py",
+     "reflex/compiler/plugins/builtin.py",
+     "reflex/compiler/plugins/memoize.py",
+     "reflex/compiler/utils.py",
+     "reflex/reflex.py",
+     "reflex/state.py",
+     "reflex/utils/compile_daemon.py",
+     "reflex/utils/exec.py",
+     "reflex/utils/frontend_skeleton.py",
+     "reflex/utils/path_ops.py",
+     "reflex/utils/prerequisites.py",
+     "reflex/utils/telemetry.py",
+     "reflex/utils/telemetry_accounting.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_compiler.py",
+     "tests/units/compiler/test_compiler_utils.py",
+     "tests/units/compiler/test_disk_cache.py",
+     "tests/units/compiler/test_memoize_plugin.py",
+     "tests/units/compiler/test_page_cache.py",
+     "tests/units/compiler/test_stale_cleanup.py",
+     "tests/units/components/test_memo.py",
+     "tests/units/conftest.py",
+     "tests/units/reflex_base/compiler/__init__.py",
+     "tests/units/reflex_base/compiler/test_templates.py",
+     "tests/units/test_app.py",
+     "tests/units/test_reflex.py",
+     "tests/units/test_telemetry.py",
+     "tests/units/utils/test_compile_daemon.py",
+     "tests/units/utils/test_exec.py",
+     "tests/units/utils/test_imports.py",
+     "tests/units/utils/test_path_ops.py",
+     "tests/units/utils/test_serializers.py",
+     "tests/units/utils/test_telemetry_accounting.py",
+     "tests/units/vars/test_base.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     6688
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6468": {
+   "number": 6468,
+   "head": "294365776349b342bdf3630bb9cf419ccee86959",
+   "merge_base": "1d0f1ac94d347af92d9e611e41d8a96a59b3aa6d",
+   "files": 48,
+   "insertions": 944,
+   "deletions": 439,
+   "commits_ahead": 13,
+   "behind_main": 238,
+   "buckets": {
+    "config": 4,
+    "fragments": 8,
+    "python": 25,
+    "selenium": 1,
+    "unit_tests": 10
+   },
+   "bucket_paths": {
+    "config": [
+     "packages/reflex-components-dataeditor/pyproject.toml",
+     "packages/reflex-components-internal/pyproject.toml",
+     "packages/reflex-components-radix/pyproject.toml",
+     "uv.lock"
+    ],
+    "fragments": [
+     "news/6468.breaking.md",
+     "packages/reflex-base/news/6468.breaking.md",
+     "packages/reflex-components-core/news/6468.bugfix.md",
+     "packages/reflex-components-core/news/6468.misc.md",
+     "packages/reflex-components-dataeditor/news/6468.misc.md",
+     "packages/reflex-components-gridjs/news/6468.misc.md",
+     "packages/reflex-components-internal/news/6468.bugfix.md",
+     "packages/reflex-components-radix/news/6468.misc.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/components/component.py",
+     "packages/reflex-base/src/reflex_base/components/memo.py",
+     "packages/reflex-base/src/reflex_base/components/memoize_helpers.py",
+     "packages/reflex-base/src/reflex_base/components/tags/iter_tag.py",
+     "packages/reflex-base/src/reflex_base/plugins/compiler.py",
+     "packages/reflex-components-core/src/reflex_components_core/base/bare.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/banner.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/clipboard.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/debounce.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/foreach.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/upload.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/window_events.py",
+     "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+     "packages/reflex-components-dataeditor/src/reflex_components_dataeditor/dataeditor.py",
+     "packages/reflex-components-gridjs/src/reflex_components_gridjs/datatable.py",
+     "packages/reflex-components-internal/src/reflex_components_internal/components/icons/simple_icon.py",
+     "packages/reflex-components-radix/src/reflex_components_radix/themes/base.py",
+     "packages/reflex-components-radix/src/reflex_components_radix/themes/components/icon_button.py",
+     "packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_area.py",
+     "reflex/app.py",
+     "reflex/compiler/compiler.py",
+     "reflex/compiler/plugins/builtin.py",
+     "reflex/compiler/plugins/memoize.py",
+     "reflex/compiler/utils.py",
+     "reflex/state.py"
+    ],
+    "selenium": [
+     "tests/integration/test_data_editor.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_compiler.py",
+     "tests/units/compiler/test_compiler_utils.py",
+     "tests/units/compiler/test_memoize_plugin.py",
+     "tests/units/compiler/test_plugins.py",
+     "tests/units/components/core/test_foreach.py",
+     "tests/units/components/datadisplay/test_dataeditor.py",
+     "tests/units/components/test_component.py",
+     "tests/units/components/test_memo.py",
+     "tests/units/reflex_components_core/core/test_clipboard.py",
+     "tests/units/reflex_components_internal/components/icons/test_simple_icon.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 7,
+    "fragment_numbers": [
+     6468
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core",
+     "reflex-components-dataeditor",
+     "reflex-components-gridjs",
+     "reflex-components-internal",
+     "reflex-components-radix"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7315": {
+   "number": 7315,
+   "head": "d912047ceaa4c0645e5bd69387ade1960bf2f360",
+   "merge_base": "4c1161e755145ea09ac208fe4375e242449f57c1",
+   "files": 65,
+   "insertions": 3574,
+   "deletions": 2885,
+   "commits_ahead": 97,
+   "behind_main": 231,
+   "buckets": {
+    "benchmarks": 2,
+    "config": 3,
+    "docs": 2,
+    "fragments": 6,
+    "frontend": 2,
+    "playwright": 1,
+    "python": 27,
+    "selenium": 3,
+    "unit_tests": 19
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/test_event_processing.py",
+     "tests/benchmarks/test_state_manager.py"
+    ],
+    "config": [
+     "packages/reflex-base/pyproject.toml",
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "docs": [
+     "docs/events/background_events.md",
+     "docs/events/special_events.md"
+    ],
+    "fragments": [
+     "news/+state-locks.breaking.md",
+     "news/+state-node.misc.md",
+     "packages/reflex-base/news/+dispatch-value.feature.md",
+     "packages/reflex-base/news/+state-locks.feature.md",
+     "packages/reflex-base/news/+state-node.feature.md",
+     "packages/reflex-base/news/+type-var-check.bugfix.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/context-registry.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_dispatch_value.py"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/compiler/templates.py",
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "packages/reflex-base/src/reflex_base/event/context.py",
+     "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+     "packages/reflex-base/src/reflex_base/plugins/_screenshot.py",
+     "packages/reflex-base/src/reflex_base/registry.py",
+     "packages/reflex-base/src/reflex_base/state/__init__.py",
+     "packages/reflex-base/src/reflex_base/state/delta.py",
+     "packages/reflex-base/src/reflex_base/state/node.py",
+     "packages/reflex-base/src/reflex_base/state/proxy.py",
+     "packages/reflex-base/src/reflex_base/state/token.py",
+     "packages/reflex-base/src/reflex_base/utils/types.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/app.py",
+     "reflex/compiler/utils.py",
+     "reflex/istate/__init__.py",
+     "reflex/istate/delta.py",
+     "reflex/istate/manager/__init__.py",
+     "reflex/istate/manager/disk.py",
+     "reflex/istate/manager/memory.py",
+     "reflex/istate/manager/redis.py",
+     "reflex/istate/manager/token.py",
+     "reflex/istate/proxy.py",
+     "reflex/istate/shared.py",
+     "reflex/istate/wrappers.py",
+     "reflex/middleware/hydrate_middleware.py",
+     "reflex/state.py"
+    ],
+    "selenium": [
+     "tests/integration/test_background_task.py",
+     "tests/integration/test_lifespan.py",
+     "tests/integration/test_linked_state.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_disk.py",
+     "tests/units/istate/manager/test_expiration.py",
+     "tests/units/istate/manager/test_redis.py",
+     "tests/units/reflex_base/client_event_queue.mjs",
+     "tests/units/reflex_base/client_event_queue_runtime.mjs",
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+     "tests/units/reflex_base/state/__init__.py",
+     "tests/units/reflex_base/state/test_delta.py",
+     "tests/units/reflex_base/state/test_node.py",
+     "tests/units/reflex_base/state/test_proxy.py",
+     "tests/units/reflex_base/state/test_token.py",
+     "tests/units/reflex_base/utils/test_types.py",
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/test_app.py",
+     "tests/units/test_event.py",
+     "tests/units/test_sqlalchemy.py",
+     "tests/units/test_state.py",
+     "tests/units/test_state_tree.py",
+     "tests/units/utils/test_token_manager.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [
+    7314
+   ],
+   "parent_relative": {
+    "parent": 7314,
+    "files": 14,
+    "insertions": 553,
+    "deletions": 8,
+    "commits": 29
+   }
+  },
+  "7314": {
+   "number": 7314,
+   "head": "5977e24ed6b6d669abeaa134c75c3a973c37a086",
+   "merge_base": "4c1161e755145ea09ac208fe4375e242449f57c1",
+   "files": 53,
+   "insertions": 3021,
+   "deletions": 2877,
+   "commits_ahead": 68,
+   "behind_main": 231,
+   "buckets": {
+    "benchmarks": 2,
+    "config": 3,
+    "docs": 1,
+    "fragments": 4,
+    "python": 25,
+    "selenium": 3,
+    "unit_tests": 15
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/test_event_processing.py",
+     "tests/benchmarks/test_state_manager.py"
+    ],
+    "config": [
+     "packages/reflex-base/pyproject.toml",
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "docs": [
+     "docs/events/background_events.md"
+    ],
+    "fragments": [
+     "news/+state-locks.breaking.md",
+     "news/+state-node.misc.md",
+     "packages/reflex-base/news/+state-locks.feature.md",
+     "packages/reflex-base/news/+state-node.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "packages/reflex-base/src/reflex_base/event/context.py",
+     "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+     "packages/reflex-base/src/reflex_base/plugins/_screenshot.py",
+     "packages/reflex-base/src/reflex_base/registry.py",
+     "packages/reflex-base/src/reflex_base/state/__init__.py",
+     "packages/reflex-base/src/reflex_base/state/delta.py",
+     "packages/reflex-base/src/reflex_base/state/node.py",
+     "packages/reflex-base/src/reflex_base/state/proxy.py",
+     "packages/reflex-base/src/reflex_base/state/token.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/app.py",
+     "reflex/compiler/utils.py",
+     "reflex/istate/__init__.py",
+     "reflex/istate/delta.py",
+     "reflex/istate/manager/__init__.py",
+     "reflex/istate/manager/disk.py",
+     "reflex/istate/manager/memory.py",
+     "reflex/istate/manager/redis.py",
+     "reflex/istate/manager/token.py",
+     "reflex/istate/proxy.py",
+     "reflex/istate/shared.py",
+     "reflex/istate/wrappers.py",
+     "reflex/middleware/hydrate_middleware.py",
+     "reflex/state.py"
+    ],
+    "selenium": [
+     "tests/integration/test_background_task.py",
+     "tests/integration/test_lifespan.py",
+     "tests/integration/test_linked_state.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_disk.py",
+     "tests/units/istate/manager/test_expiration.py",
+     "tests/units/istate/manager/test_redis.py",
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+     "tests/units/reflex_base/state/__init__.py",
+     "tests/units/reflex_base/state/test_delta.py",
+     "tests/units/reflex_base/state/test_node.py",
+     "tests/units/reflex_base/state/test_proxy.py",
+     "tests/units/reflex_base/state/test_token.py",
+     "tests/units/test_app.py",
+     "tests/units/test_event.py",
+     "tests/units/test_sqlalchemy.py",
+     "tests/units/test_state.py",
+     "tests/units/test_state_tree.py",
+     "tests/units/utils/test_token_manager.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [
+    7315
+   ],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7313": {
+   "number": 7313,
+   "head": "0f8077be89ad079b58fae7f8ff16f384b7c4a73f",
+   "merge_base": "4c1161e755145ea09ac208fe4375e242449f57c1",
+   "files": 21,
+   "insertions": 1046,
+   "deletions": 923,
+   "commits_ahead": 46,
+   "behind_main": 231,
+   "buckets": {
+    "benchmarks": 1,
+    "docs": 1,
+    "fragments": 2,
+    "python": 9,
+    "selenium": 1,
+    "unit_tests": 7
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/test_event_processing.py"
+    ],
+    "docs": [
+     "docs/events/background_events.md"
+    ],
+    "fragments": [
+     "news/+state-locks.breaking.md",
+     "packages/reflex-base/news/+state-locks.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/event/__init__.py",
+     "packages/reflex-base/src/reflex_base/event/context.py",
+     "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/app.py",
+     "reflex/istate/proxy.py",
+     "reflex/istate/shared.py",
+     "reflex/istate/wrappers.py",
+     "reflex/state.py"
+    ],
+    "selenium": [
+     "tests/integration/test_background_task.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/test_proxy.py",
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+     "tests/units/reflex_base/event/test_context.py",
+     "tests/units/test_app.py",
+     "tests/units/test_event.py",
+     "tests/units/test_state.py",
+     "tests/units/utils/test_token_manager.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7362": {
+   "number": 7362,
+   "head": "ebed735dae423f429e3a2a8bc7e1f9caaa142c8a",
+   "merge_base": "d02ba5409579e24e67401f9dd6eb2fc4d3ef5e1b",
+   "files": 33,
+   "insertions": 2759,
+   "deletions": 69,
+   "commits_ahead": 9,
+   "behind_main": 90,
+   "buckets": {
+    "config": 1,
+    "fragments": 7,
+    "python": 13,
+    "unit_tests": 12
+   },
+   "bucket_paths": {
+    "config": [
+     "pyproject.toml"
+    ],
+    "fragments": [
+     "news/+browser-session-transport.feature.md",
+     "news/+session-secret-persistence.bugfix.md",
+     "packages/reflex-base/news/+session-context-authorization.deprecation.md",
+     "packages/reflex-base/news/+session-context-authorization.feature.md",
+     "packages/reflex-base/news/+session-token-primitives.feature.md",
+     "packages/reflex-base/news/+upload-transaction-context.bugfix.md",
+     "packages/reflex-components-core/news/+session-upload-authorization.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py",
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "packages/reflex-base/src/reflex_base/event/context.py",
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "packages/reflex-base/src/reflex_base/session.py",
+     "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+     "reflex/app.py",
+     "reflex/istate/shared.py",
+     "reflex/session_middleware.py",
+     "reflex/utils/build.py",
+     "reflex/utils/frontend_skeleton.py",
+     "reflex/utils/token_manager.py"
+    ],
+    "unit_tests": [
+     "tests/units/components/core/test_upload.py",
+     "tests/units/istate/test_shared.py",
+     "tests/units/reflex_base/event/processor/test_event_processor.py",
+     "tests/units/reflex_base/event/test_context.py",
+     "tests/units/reflex_base/test_session.py",
+     "tests/units/test_app.py",
+     "tests/units/test_model.py",
+     "tests/units/test_prerequisites.py",
+     "tests/units/test_session_middleware.py",
+     "tests/units/utils/test_build.py",
+     "tests/units/utils/test_path_ops.py",
+     "tests/units/utils/test_token_manager.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [
+    7363,
+    7364
+   ],
+   "contains": [
+    7361
+   ],
+   "parent_relative": {
+    "parent": 7361,
+    "files": 22,
+    "insertions": 1874,
+    "deletions": 63,
+    "commits": 5
+   }
+  },
+  "7361": {
+   "number": 7361,
+   "head": "44c4b4e8de06277fb7851600034151d03af83abb",
+   "merge_base": "d02ba5409579e24e67401f9dd6eb2fc4d3ef5e1b",
+   "files": 11,
+   "insertions": 885,
+   "deletions": 6,
+   "commits_ahead": 4,
+   "behind_main": 90,
+   "buckets": {
+    "fragments": 2,
+    "python": 5,
+    "unit_tests": 4
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+session-secret-persistence.bugfix.md",
+     "packages/reflex-base/news/+session-token-primitives.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py",
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "packages/reflex-base/src/reflex_base/session.py",
+     "reflex/utils/build.py",
+     "reflex/utils/frontend_skeleton.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/test_session.py",
+     "tests/units/test_prerequisites.py",
+     "tests/units/utils/test_build.py",
+     "tests/units/utils/test_path_ops.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [
+    7362,
+    7363,
+    7364
+   ],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7364": {
+   "number": 7364,
+   "head": "d5e211ba5cf05a05bb2eb2c455c5d103a9c445a9",
+   "merge_base": "d02ba5409579e24e67401f9dd6eb2fc4d3ef5e1b",
+   "files": 55,
+   "insertions": 4598,
+   "deletions": 172,
+   "commits_ahead": 18,
+   "behind_main": 90,
+   "buckets": {
+    "benchmarks": 2,
+    "config": 1,
+    "docs": 2,
+    "fragments": 9,
+    "frontend": 2,
+    "playwright": 2,
+    "python": 14,
+    "selenium": 1,
+    "tests_other": 1,
+    "unit_tests": 21
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/support/idle_clients.py",
+     "tests/benchmarks/support/socket_client.py"
+    ],
+    "config": [
+     "pyproject.toml"
+    ],
+    "docs": [
+     "docs/api-routes/overview.md",
+     "docs/api-routes/sessions.md"
+    ],
+    "fragments": [
+     "news/+browser-session-transport.feature.md",
+     "news/+session-harness.bugfix.md",
+     "news/+session-secret-persistence.bugfix.md",
+     "packages/reflex-base/news/+session-context-authorization.deprecation.md",
+     "packages/reflex-base/news/+session-context-authorization.feature.md",
+     "packages/reflex-base/news/+session-cookie-bootstrap.feature.md",
+     "packages/reflex-base/news/+session-token-primitives.feature.md",
+     "packages/reflex-base/news/+upload-transaction-context.bugfix.md",
+     "packages/reflex-components-core/news/+session-upload-authorization.feature.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/helpers/upload.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_backend_path.py",
+     "tests/integration/tests_playwright/test_mount_target.py"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py",
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "packages/reflex-base/src/reflex_base/event/context.py",
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "packages/reflex-base/src/reflex_base/session.py",
+     "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+     "reflex/app.py",
+     "reflex/istate/shared.py",
+     "reflex/session_middleware.py",
+     "reflex/testing.py",
+     "reflex/utils/build.py",
+     "reflex/utils/frontend_skeleton.py",
+     "reflex/utils/token_manager.py"
+    ],
+    "selenium": [
+     "tests/integration/test_granian_session.py"
+    ],
+    "tests_other": [
+     "tests/performance/test_event_load.py"
+    ],
+    "unit_tests": [
+     "tests/units/benchmarks/test_support.py",
+     "tests/units/compiler/state_js.test.mjs",
+     "tests/units/components/core/test_upload.py",
+     "tests/units/istate/test_shared.py",
+     "tests/units/reflex_base/client_event_queue_runtime.mjs",
+     "tests/units/reflex_base/client_session.mjs",
+     "tests/units/reflex_base/client_state_updates.mjs",
+     "tests/units/reflex_base/client_upload.mjs",
+     "tests/units/reflex_base/event/processor/test_event_processor.py",
+     "tests/units/reflex_base/event/test_context.py",
+     "tests/units/reflex_base/test_client_event_queue.py",
+     "tests/units/reflex_base/test_session.py",
+     "tests/units/reflex_bench/drivers/test_events.py",
+     "tests/units/test_app.py",
+     "tests/units/test_model.py",
+     "tests/units/test_prerequisites.py",
+     "tests/units/test_session_middleware.py",
+     "tests/units/test_testing.py",
+     "tests/units/utils/test_build.py",
+     "tests/units/utils/test_path_ops.py",
+     "tests/units/utils/test_token_manager.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [],
+   "contains": [
+    7361,
+    7362,
+    7363
+   ],
+   "parent_relative": {
+    "parent": 7363,
+    "files": 16,
+    "insertions": 845,
+    "deletions": 50,
+    "commits": 4
+   }
+  },
+  "7363": {
+   "number": 7363,
+   "head": "9e9b3b60120a2a2e4c002784fea9c11fc528ccbe",
+   "merge_base": "d02ba5409579e24e67401f9dd6eb2fc4d3ef5e1b",
+   "files": 42,
+   "insertions": 3756,
+   "deletions": 125,
+   "commits_ahead": 14,
+   "behind_main": 90,
+   "buckets": {
+    "config": 1,
+    "fragments": 8,
+    "frontend": 2,
+    "python": 13,
+    "unit_tests": 18
+   },
+   "bucket_paths": {
+    "config": [
+     "pyproject.toml"
+    ],
+    "fragments": [
+     "news/+browser-session-transport.feature.md",
+     "news/+session-secret-persistence.bugfix.md",
+     "packages/reflex-base/news/+session-context-authorization.deprecation.md",
+     "packages/reflex-base/news/+session-context-authorization.feature.md",
+     "packages/reflex-base/news/+session-cookie-bootstrap.feature.md",
+     "packages/reflex-base/news/+session-token-primitives.feature.md",
+     "packages/reflex-base/news/+upload-transaction-context.bugfix.md",
+     "packages/reflex-components-core/news/+session-upload-authorization.feature.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/helpers/upload.js",
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py",
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "packages/reflex-base/src/reflex_base/event/context.py",
+     "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+     "packages/reflex-base/src/reflex_base/session.py",
+     "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+     "reflex/app.py",
+     "reflex/istate/shared.py",
+     "reflex/session_middleware.py",
+     "reflex/utils/build.py",
+     "reflex/utils/frontend_skeleton.py",
+     "reflex/utils/token_manager.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/state_js.test.mjs",
+     "tests/units/components/core/test_upload.py",
+     "tests/units/istate/test_shared.py",
+     "tests/units/reflex_base/client_event_queue_runtime.mjs",
+     "tests/units/reflex_base/client_session.mjs",
+     "tests/units/reflex_base/client_state_updates.mjs",
+     "tests/units/reflex_base/client_upload.mjs",
+     "tests/units/reflex_base/event/processor/test_event_processor.py",
+     "tests/units/reflex_base/event/test_context.py",
+     "tests/units/reflex_base/test_client_event_queue.py",
+     "tests/units/reflex_base/test_session.py",
+     "tests/units/test_app.py",
+     "tests/units/test_model.py",
+     "tests/units/test_prerequisites.py",
+     "tests/units/test_session_middleware.py",
+     "tests/units/utils/test_build.py",
+     "tests/units/utils/test_path_ops.py",
+     "tests/units/utils/test_token_manager.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [
+    7364
+   ],
+   "contains": [
+    7361,
+    7362
+   ],
+   "parent_relative": {
+    "parent": 7362,
+    "files": 9,
+    "insertions": 997,
+    "deletions": 56,
+    "commits": 5
+   }
+  },
+  "7540": {
+   "number": 7540,
+   "head": "cd8421d23c194701289f961d492d4bea5ef4bb6c",
+   "merge_base": "8b48dc01c03a7014ce83cdeb0c8607f59f568cd6",
+   "files": 18,
+   "insertions": 167,
+   "deletions": 439,
+   "commits_ahead": 50,
+   "behind_main": 86,
+   "buckets": {
+    "config": 1,
+    "docs": 1,
+    "fragments": 3,
+    "frontend": 1,
+    "pyi": 1,
+    "python": 6,
+    "selenium": 1,
+    "unit_tests": 4
+   },
+   "bucket_paths": {
+    "config": [
+     "pyproject.toml"
+    ],
+    "docs": [
+     "docs/library/forms/form.md"
+    ],
+    "fragments": [
+     "news/+form-data-by-name.breaking.md",
+     "packages/reflex-base/news/+form-data-list-names.breaking.md",
+     "packages/reflex-components-core/news/+form-data-by-name.breaking.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/components/memo.py",
+     "packages/reflex-base/src/reflex_base/components/memoize_helpers.py",
+     "packages/reflex-base/src/reflex_base/utils/form.py",
+     "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+     "reflex/compiler/plugins/memoize.py",
+     "reflex/compiler/utils.py"
+    ],
+    "selenium": [
+     "tests/integration/test_form_submit.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_memoize_plugin.py",
+     "tests/units/compiler/test_state_js_template.py",
+     "tests/units/components/forms/test_form.py",
+     "tests/units/reflex_base/utils/test_form.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7625": {
+   "number": 7625,
+   "head": "a3857c9010611b6daa0f6c36c1e49c74682ad111",
+   "merge_base": "d3f4ab15d148c0bff00ee9eda67fb074e9ac4d6e",
+   "files": 4,
+   "insertions": 88,
+   "deletions": 19,
+   "commits_ahead": 1,
+   "behind_main": 65,
+   "buckets": {
+    "fragments": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+set-array-static-types.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "packages/reflex-base/src/reflex_base/vars/sequence.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_var.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7455": {
+   "number": 7455,
+   "head": "d181a8fe9c169f3afb8256f3fb360d744b9f499b",
+   "merge_base": "937c5a285c2d9a5c0844122b76fe2d3d09923ebf",
+   "files": 9,
+   "insertions": 1218,
+   "deletions": 20,
+   "commits_ahead": 19,
+   "behind_main": 70,
+   "buckets": {
+    "docs": 1,
+    "fragments": 2,
+    "python": 4,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/hosting/self-hosting.md"
+    ],
+    "fragments": [
+     "news/+cache-production-frontend.performance.md",
+     "packages/reflex-base/news/+frontend-build-cache.feature.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/environment.py",
+     "reflex/utils/build.py",
+     "reflex/utils/build_cache.py",
+     "reflex/utils/path_ops.py"
+    ],
+    "unit_tests": [
+     "tests/units/utils/test_build_cache.py",
+     "tests/units/utils/test_path_ops.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7051": {
+   "number": 7051,
+   "head": "6b16be4b01a5212a1205ba7b6964ad7b07975f31",
+   "merge_base": "937c5a285c2d9a5c0844122b76fe2d3d09923ebf",
+   "files": 9,
+   "insertions": 514,
+   "deletions": 100,
+   "commits_ahead": 14,
+   "behind_main": 70,
+   "buckets": {
+    "fragments": 2,
+    "python": 4,
+    "unit_tests": 3
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+serialize-frontend-installs.bugfix.md",
+     "packages/reflex-base/news/+corrupt-procedure-cache.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/decorator.py",
+     "reflex/utils/frontend_skeleton.py",
+     "reflex/utils/js_runtimes.py",
+     "reflex/utils/path_ops.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/utils/test_decorator.py",
+     "tests/units/test_prerequisites.py",
+     "tests/units/utils/test_js_runtimes.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7595": {
+   "number": 7595,
+   "head": "f591cc4e74e7cdab048e4ac116b9558301646ad2",
+   "merge_base": "5ae5dcd5281497b395bd9ec6b7b6ca229e293f39",
+   "files": 3,
+   "insertions": 123,
+   "deletions": 0,
+   "commits_ahead": 2,
+   "behind_main": 79,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+6828.bugfix.md"
+    ],
+    "python": [
+     "reflex/experimental/client_state.py"
+    ],
+    "unit_tests": [
+     "tests/units/experimental/test_client_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7583": {
+   "number": 7583,
+   "head": "dae7365a8cfd8165ddfa63b5d633a99d7b613d30",
+   "merge_base": "5ae5dcd5281497b395bd9ec6b7b6ca229e293f39",
+   "files": 9,
+   "insertions": 206,
+   "deletions": 12,
+   "commits_ahead": 2,
+   "behind_main": 79,
+   "buckets": {
+    "fragments": 1,
+    "frontend": 1,
+    "python": 2,
+    "unit_tests": 5
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+field-state-subscriptions.performance.md"
+    ],
+    "frontend": [
+     "packages/reflex-base/src/reflex_base/.templates/web/utils/context-registry.js"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/compiler/templates.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_context_js_template.py",
+     "tests/units/components/test_component.py",
+     "tests/units/reflex_base/compiler/__init__.py",
+     "tests/units/reflex_base/compiler/test_templates.py",
+     "tests/units/reflex_base/vars/test_base.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7323": {
+   "number": 7323,
+   "head": "19eb7743c2eea7e997b7e0809d591eee22df5bbb",
+   "merge_base": "7ccaa4e213fa1f67374002cb28709272866c3d53",
+   "files": 3,
+   "insertions": 105,
+   "deletions": 2,
+   "commits_ahead": 10,
+   "behind_main": 85,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/7323.bugfix.md"
+    ],
+    "python": [
+     "reflex/istate/manager/disk.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_disk.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7323
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7574": {
+   "number": 7574,
+   "head": "33d95fd840382f8d951c1c9310719f01848d422a",
+   "merge_base": "7ccaa4e213fa1f67374002cb28709272866c3d53",
+   "files": 5,
+   "insertions": 269,
+   "deletions": 233,
+   "commits_ahead": 2,
+   "behind_main": 85,
+   "buckets": {
+    "fragments": 1,
+    "python": 3,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/+share-tailwind-plugin-code.misc.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/plugins/shared_tailwind.py",
+     "packages/reflex-base/src/reflex_base/plugins/tailwind_v3.py",
+     "packages/reflex-base/src/reflex_base/plugins/tailwind_v4.py"
+    ],
+    "unit_tests": [
+     "tests/units/plugins/test_tailwind.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7575": {
+   "number": 7575,
+   "head": "d5556eab1a11b173db51d5f4348024ec5ec94198",
+   "merge_base": "7ccaa4e213fa1f67374002cb28709272866c3d53",
+   "files": 1,
+   "insertions": 30,
+   "deletions": 13,
+   "commits_ahead": 1,
+   "behind_main": 85,
+   "buckets": {
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "unit_tests": [
+     "tests/units/reflex_release/conftest.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7308": {
+   "number": 7308,
+   "head": "be801a3ca4c403a138c2d00ab787b91682346012",
+   "merge_base": "2eb1b44043ff39d6dd9586213fd405e13b17c585",
+   "files": 5,
+   "insertions": 220,
+   "deletions": 5,
+   "commits_ahead": 10,
+   "behind_main": 112,
+   "buckets": {
+    "fragments": 2,
+    "python": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/7308.bugfix.md",
+     "packages/reflex-base/news/7017.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/vars/base.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7017,
+     7308
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7416": {
+   "number": 7416,
+   "head": "29bfd58deba9666976f051c6751c2d4b35030c59",
+   "merge_base": "7970e91f089e3610d181cf338f9909c3fdf6a0f2",
+   "files": 4,
+   "insertions": 301,
+   "deletions": 10,
+   "commits_ahead": 3,
+   "behind_main": 205,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+backend-startup-status.bugfix.md"
+    ],
+    "python": [
+     "reflex/utils/exec.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_bench/drivers/test_app_process.py",
+     "tests/units/utils/test_exec.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7408": {
+   "number": 7408,
+   "head": "a1840bad48227c1e35033ff1f74254e8c17a9da4",
+   "merge_base": "e080fbf8cc66268f5c15c2fb44f7177465c001f8",
+   "files": 13,
+   "insertions": 519,
+   "deletions": 143,
+   "commits_ahead": 6,
+   "behind_main": 195,
+   "buckets": {
+    "config": 3,
+    "docs": 1,
+    "fragments": 4,
+    "playwright": 1,
+    "pyi": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "config": [
+     "docs/app/reflex.lock/bun.lock",
+     "docs/app/reflex.lock/package.json",
+     "pyproject.toml"
+    ],
+    "docs": [
+     "docs/library/graphing/other-charts/plotly.md"
+    ],
+    "fragments": [
+     "packages/reflex-components-plotly/news/+mapbox-migration-warning.bugfix.md",
+     "packages/reflex-components-plotly/news/+mapbox.deprecation.md",
+     "packages/reflex-components-plotly/news/+maplibre.feature.md",
+     "packages/reflex-components-plotly/news/+plotly-4.breaking.md"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_plotly.py"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "packages/reflex-components-plotly/src/reflex_components_plotly/__init__.py",
+     "packages/reflex-components-plotly/src/reflex_components_plotly/plotly.py"
+    ],
+    "unit_tests": [
+     "tests/units/components/graphing/test_plotly.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-components-plotly"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7436": {
+   "number": 7436,
+   "head": "5273a6a149dc84dbe73ed1a458bd3b74849f4b0a",
+   "merge_base": "82392594f85d349f757f6b39a1b1e9f9b87c03f2",
+   "files": 5,
+   "insertions": 259,
+   "deletions": 3,
+   "commits_ahead": 2,
+   "behind_main": 184,
+   "buckets": {
+    "fragments": 1,
+    "python": 2,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+record-hydrated-values.performance.md"
+    ],
+    "python": [
+     "reflex/istate/delta.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7451": {
+   "number": 7451,
+   "head": "6b9eb576556b5ea8a197bf8a8dc0cd117386ef49",
+   "merge_base": "62a56ba7f81c2c7da3c66f96542a0200fc967461",
+   "files": 3,
+   "insertions": 92,
+   "deletions": 3,
+   "commits_ahead": 2,
+   "behind_main": 193,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/+npm-save-dev.bugfix.md"
+    ],
+    "python": [
+     "reflex/utils/js_runtimes.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_prerequisites.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7448": {
+   "number": 7448,
+   "head": "3e7cdeff43f53a070da3ef24747d6a3ee71c9016",
+   "merge_base": "62a56ba7f81c2c7da3c66f96542a0200fc967461",
+   "files": 12,
+   "insertions": 363,
+   "deletions": 90,
+   "commits_ahead": 3,
+   "behind_main": 193,
+   "buckets": {
+    "config": 3,
+    "fragments": 2,
+    "python": 3,
+    "unit_tests": 4
+   },
+   "bucket_paths": {
+    "config": [
+     "packages/reflex-base/pyproject.toml",
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "fragments": [
+     "news/+yjson.performance.md",
+     "packages/reflex-base/news/+yjson.performance.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/format.py",
+     "packages/reflex-base/src/reflex_base/utils/serializers.py",
+     "reflex/istate/proxy.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/test_proxy.py",
+     "tests/units/reflex_base/utils/test_format.py",
+     "tests/units/utils/test_format.py",
+     "tests/units/utils/test_serializers.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7381": {
+   "number": 7381,
+   "head": "4bf23786b527e919cb393fcccc468ed2ca71e818",
+   "merge_base": "dcc38cb807778e5cbd08939290b86da17e075829",
+   "files": 9,
+   "insertions": 371,
+   "deletions": 11,
+   "commits_ahead": 11,
+   "behind_main": 227,
+   "buckets": {
+    "docs": 1,
+    "fragments": 3,
+    "python": 3,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/state_structure/mixins.md"
+    ],
+    "fragments": [
+     "news/7381.breaking.md",
+     "news/7381.bugfix.md",
+     "packages/reflex-base/news/7381.breaking.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/vars/test_base.py",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     7381
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7040": {
+   "number": 7040,
+   "head": "bccf225f713b8eb2115ccf3518a9b940316a90c7",
+   "merge_base": "8853e1457aef0785c652445df7828b03796d3e16",
+   "files": 13,
+   "insertions": 62,
+   "deletions": 43,
+   "commits_ahead": 4,
+   "behind_main": 408,
+   "buckets": {
+    "config": 2,
+    "fragments": 1,
+    "python": 7,
+    "tests_other": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "config": [
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "fragments": [
+     "news/7040.breaking.md"
+    ],
+    "python": [
+     "reflex/custom_components/custom_components.py",
+     "reflex/utils/frontend_skeleton.py",
+     "reflex/utils/js_runtimes.py",
+     "reflex/utils/net.py",
+     "reflex/utils/registry.py",
+     "reflex/utils/telemetry.py",
+     "reflex/utils/templates.py"
+    ],
+    "tests_other": [
+     "tests/test_node_version.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_telemetry.py",
+     "tests/units/utils/test_utils.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7040
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7409": {
+   "number": 7409,
+   "head": "872cd61c93051cfc5852e5d578aaa302061645fb",
+   "merge_base": "7970e91f089e3610d181cf338f9909c3fdf6a0f2",
+   "files": 6,
+   "insertions": 242,
+   "deletions": 6,
+   "commits_ahead": 1,
+   "behind_main": 205,
+   "buckets": {
+    "docs": 1,
+    "fragments": 1,
+    "playwright": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/library/forms/upload.md"
+    ],
+    "fragments": [
+     "packages/reflex-base/news/+upload-callback-selection.bugfix.md"
+    ],
+    "playwright": [
+     "tests/integration/tests_playwright/test_toast.py"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/compiler/templates.py",
+     "packages/reflex-base/src/reflex_base/event/__init__.py"
+    ],
+    "unit_tests": [
+     "tests/units/components/core/test_upload.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": true,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7233": {
+   "number": 7233,
+   "head": "28f5ea084f6dd52f3f7ddb8827c12c2e83f87ea4",
+   "merge_base": "47187ef1dbc26dc088dee4b91c401d8386fa8ede",
+   "files": 8,
+   "insertions": 631,
+   "deletions": 43,
+   "commits_ahead": 3,
+   "behind_main": 243,
+   "buckets": {
+    "docs": 1,
+    "fragments": 1,
+    "python": 3,
+    "unit_tests": 3
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/getting_started/project-structure.md"
+    ],
+    "fragments": [
+     "news/7233.bugfix.md"
+    ],
+    "python": [
+     "reflex/compiler/compiler.py",
+     "reflex/compiler/utils.py",
+     "reflex/utils/path_ops.py"
+    ],
+    "unit_tests": [
+     "tests/units/compiler/test_compiler.py",
+     "tests/units/compiler/test_compiler_utils.py",
+     "tests/units/utils/test_path_ops.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7233
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7007": {
+   "number": 7007,
+   "head": "dd8c0080693bccb50966571d1ba134e876a1a8ce",
+   "merge_base": "dd96aea556948ea95217ef1d8b5431546dc58363",
+   "files": 11,
+   "insertions": 1002,
+   "deletions": 31,
+   "commits_ahead": 2,
+   "behind_main": 428,
+   "buckets": {
+    "ci": 1,
+    "config": 3,
+    "docs": 1,
+    "fragments": 2,
+    "markdown_other": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "ci": [
+     ".github/workflows/dispatch_release.yml"
+    ],
+    "config": [
+     "packages/reflex-webmcp/pyproject.toml",
+     "pyproject.toml",
+     "uv.lock"
+    ],
+    "docs": [
+     "docs/api-reference/plugins.md"
+    ],
+    "fragments": [
+     "packages/reflex-base/news/7007.misc.md",
+     "packages/reflex-webmcp/news/7007.feature.md"
+    ],
+    "markdown_other": [
+     "packages/reflex-webmcp/README.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/log.py",
+     "packages/reflex-webmcp/src/reflex_webmcp/__init__.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_webmcp/test_init.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     7007
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-webmcp"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6898": {
+   "number": 6898,
+   "head": "7c580aaba195f0fec2461852f7e493c64124804d",
+   "merge_base": "7e57be7479c774a76e0075899c94db6582bcc187",
+   "files": 15,
+   "insertions": 489,
+   "deletions": 57,
+   "commits_ahead": 5,
+   "behind_main": 495,
+   "buckets": {
+    "docs": 8,
+    "python": 7
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/advanced_onboarding/code_structure.md",
+     "docs/ai_builder/integrations/agent_toolkit.md",
+     "docs/ai_builder/integrations/agents_md.md",
+     "docs/ai_builder/integrations/skills.md",
+     "docs/state_structure/component_state.md",
+     "docs/state_structure/mixins.md",
+     "docs/state_structure/overview.md",
+     "docs/state_structure/scaling_state.md"
+    ],
+    "python": [
+     "docs/app/agent_files/_plugin.py",
+     "docs/app/reflex_docs/redirects.py",
+     "docs/app/reflex_docs/reflex_docs.py",
+     "docs/app/reflex_docs/templates/docpage/sidebar/sidebar_items/learn.py",
+     "docs/app/tests/test_agent_files.py",
+     "docs/app/tests/test_routes.py",
+     "docs/app/tests/test_sidebar.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": true,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6876": {
+   "number": 6876,
+   "head": "980dc51419bcc3a991d9d7aaa82db75cf6aaacba",
+   "merge_base": "02efed72a6a1c770b432e293bba51ff2061950d7",
+   "files": 5,
+   "insertions": 97,
+   "deletions": 7,
+   "commits_ahead": 7,
+   "behind_main": 228,
+   "buckets": {
+    "fragments": 1,
+    "pyi": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-components-radix/news/6876.bugfix.md"
+    ],
+    "pyi": [
+     "pyi_hashes.json"
+    ],
+    "python": [
+     "packages/reflex-components-radix/src/reflex_components_radix/primitives/form.py",
+     "packages/reflex-components-radix/src/reflex_components_radix/themes/components/text_field.py"
+    ],
+    "unit_tests": [
+     "tests/units/components/radix/test_text_field.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": true,
+    "pyi_hashes_updated": true,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     6876
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-components-radix"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6853": {
+   "number": 6853,
+   "head": "cff19a4ce8bf42c6be15fae50c0d6dfd92dfa3f9",
+   "merge_base": "d8a132bc490b0c81190c5f826e6de9eea291db70",
+   "files": 3,
+   "insertions": 101,
+   "deletions": 19,
+   "commits_ahead": 1,
+   "behind_main": 519,
+   "buckets": {
+    "python": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "python": [
+     "reflex/istate/manager/redis.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_redis.py",
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7394": {
+   "number": 7394,
+   "head": "33e11e6bd727a98eaa9127053e4498cd474a3e1e",
+   "merge_base": "53e48ddb5115630c7379b6e2e360d162db686b73",
+   "files": 13,
+   "insertions": 425,
+   "deletions": 50,
+   "commits_ahead": 3,
+   "behind_main": 209,
+   "buckets": {
+    "ci": 10,
+    "scripts": 1,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "ci": [
+     ".github/actions/changed_paths/action.yml",
+     ".github/workflows/build_packages.yml",
+     ".github/workflows/docs_tests.yml",
+     ".github/workflows/examples.yml",
+     ".github/workflows/integration_app_harness.yml",
+     ".github/workflows/integration_tests.yml",
+     ".github/workflows/performance.yml",
+     ".github/workflows/reflex_init_in_docker_test.yml",
+     ".github/workflows/size_budgets.yml",
+     ".github/workflows/unit_tests.yml"
+    ],
+    "scripts": [
+     "scripts/changed_paths.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_changed_paths.py",
+     "tests/units/test_workflow_gates.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 0,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7065": {
+   "number": 7065,
+   "head": "bf69e19a36cb3a98c7734f6115dee334dbcd426c",
+   "merge_base": "d82c422affb3927798b7e1248b1fe4485d2eb6db",
+   "files": 9,
+   "insertions": 1052,
+   "deletions": 76,
+   "commits_ahead": 17,
+   "behind_main": 201,
+   "buckets": {
+    "fragments": 1,
+    "python": 3,
+    "scripts": 1,
+    "unit_tests": 4
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/7065.performance.md"
+    ],
+    "python": [
+     "reflex/istate/manager/disk.py",
+     "reflex/utils/precompressed_staticfiles.py",
+     "reflex/utils/prerequisites.py"
+    ],
+    "scripts": [
+     "scripts/blockbuster_audit.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_disk.py",
+     "tests/units/test_blockbuster_audit.py",
+     "tests/units/utils/test_precompressed_staticfiles.py",
+     "tests/units/utils/test_prerequisites.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7065
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7379": {
+   "number": 7379,
+   "head": "41697d086bf31345c41a34888a78ff6d6fd8c9ea",
+   "merge_base": "1716f557a628eed5b96957a005da1523b8d1e1ab",
+   "files": 19,
+   "insertions": 1869,
+   "deletions": 2,
+   "commits_ahead": 14,
+   "behind_main": 218,
+   "buckets": {
+    "docs": 14,
+    "fragments": 1,
+    "markdown_other": 1,
+    "python": 3
+   },
+   "bucket_paths": {
+    "docs": [
+     "docs/app/news/7379.docs.md",
+     "docs/workflows/concurrency.md",
+     "docs/workflows/defining_workflows.md",
+     "docs/workflows/events.md",
+     "docs/workflows/fan_out.md",
+     "docs/workflows/how_it_works.md",
+     "docs/workflows/inspecting_runs.md",
+     "docs/workflows/overview.md",
+     "docs/workflows/reference.md",
+     "docs/workflows/runs.md",
+     "docs/workflows/schedules.md",
+     "docs/workflows/steps.md",
+     "docs/workflows/tutorial.md",
+     "docs/workflows/workers.md"
+    ],
+    "fragments": [
+     "packages/reflex-workflow/news/7379.docs.md"
+    ],
+    "markdown_other": [
+     "packages/reflex-workflow/README.md"
+    ],
+    "python": [
+     "docs/app/reflex_docs/pages/docs/__init__.py",
+     "docs/app/reflex_docs/templates/docpage/sidebar/sidebar.py",
+     "docs/app/reflex_docs/templates/docpage/sidebar/sidebar_items/learn.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": true,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     7379
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-workflow"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7056": {
+   "number": 7056,
+   "head": "d640f035d22e24c8d0ef0c514df65d430aabdba1",
+   "merge_base": "02efed72a6a1c770b432e293bba51ff2061950d7",
+   "files": 19,
+   "insertions": 865,
+   "deletions": 67,
+   "commits_ahead": 10,
+   "behind_main": 228,
+   "buckets": {
+    "benchmarks": 1,
+    "config": 2,
+    "fragments": 4,
+    "python": 8,
+    "unit_tests": 4
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/test_event_processing.py"
+    ],
+    "config": [
+     "packages/reflex-base/pyproject.toml",
+     "uv.lock"
+    ],
+    "fragments": [
+     "news/+mutable-proxy-fast-path.performance.md",
+     "news/+runtime-type-validation.performance.md",
+     "packages/reflex-base/news/+runtime-type-validation.performance.md",
+     "packages/reflex-components-core/news/+upload-compact-json.performance.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/format.py",
+     "packages/reflex-base/src/reflex_base/utils/serializers.py",
+     "packages/reflex-base/src/reflex_base/utils/types.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+     "reflex/app.py",
+     "reflex/istate/proxy.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/reflex_base/utils/test_format.py",
+     "tests/units/reflex_base/utils/test_types.py",
+     "tests/units/test_reflex.py",
+     "tests/units/utils/test_format.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 3,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base",
+     "reflex-components-core"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7036": {
+   "number": 7036,
+   "head": "4ed537a69f40f3b8549a622561c2d15308136869",
+   "merge_base": "174f2c5fc993b04a84ccf77182cf50cf16bc95a8",
+   "files": 7,
+   "insertions": 479,
+   "deletions": 51,
+   "commits_ahead": 4,
+   "behind_main": 414,
+   "buckets": {
+    "benchmarks": 1,
+    "fragments": 2,
+    "python": 3,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "benchmarks": [
+     "tests/benchmarks/test_state_dirty.py"
+    ],
+    "fragments": [
+     "news/+dirty-tracking-cutoff.performance.md",
+     "packages/reflex-base/news/+dirty-tracking-cutoff.performance.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/utils/types.py",
+     "packages/reflex-base/src/reflex_base/vars/base.py",
+     "reflex/state.py"
+    ],
+    "unit_tests": [
+     "tests/units/test_state.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6125": {
+   "number": 6125,
+   "head": "f18922ac53509a66d715454d001bf0002bbd5643",
+   "merge_base": "5d1d6db5bce511397b720014c71e053c4416a065",
+   "files": 3,
+   "insertions": 142,
+   "deletions": 8,
+   "commits_ahead": 4,
+   "behind_main": 934,
+   "buckets": {
+    "python": 3
+   },
+   "bucket_paths": {
+    "python": [
+     "reflex/config.py",
+     "reflex/istate/manager/__init__.py",
+     "reflex/utils/prerequisites.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": false,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 1,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6490": {
+   "number": 6490,
+   "head": "62019f3edc491eaebf30885a24325854a918346b",
+   "merge_base": "dc8a23c2d67052eae8f5d14f2213a20fa2d2eed5",
+   "files": 11,
+   "insertions": 306,
+   "deletions": 26,
+   "commits_ahead": 5,
+   "behind_main": 700,
+   "buckets": {
+    "python": 5,
+    "unit_tests": 6
+   },
+   "bucket_paths": {
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py",
+     "reflex/istate/manager/__init__.py",
+     "reflex/istate/manager/redis.py",
+     "reflex/utils/redis_keys.py",
+     "reflex/utils/token_manager.py"
+    ],
+    "unit_tests": [
+     "tests/units/istate/manager/test_redis.py",
+     "tests/units/reflex_cli/conftest.py",
+     "tests/units/test_config.py",
+     "tests/units/test_state.py",
+     "tests/units/utils/test_redis_keys.py",
+     "tests/units/utils/test_token_manager.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": false,
+    "fragments_expected": 2,
+    "fragment_numbers": [],
+    "fragment_named_after_pr": false,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "7144": {
+   "number": 7144,
+   "head": "98fbd9fc0dc0ad4972c522969b0851443c24951c",
+   "merge_base": "2f63cb342150116b0625f2355c95f364a4cf7812",
+   "files": 7,
+   "insertions": 123,
+   "deletions": 11,
+   "commits_ahead": 6,
+   "behind_main": 352,
+   "buckets": {
+    "fragments": 2,
+    "python": 3,
+    "unit_tests": 2
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/7144.bugfix.md",
+     "packages/reflex-base/news/7144.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/config.py",
+     "reflex/app.py",
+     "reflex/reflex.py"
+    ],
+    "unit_tests": [
+     "tests/units/conftest.py",
+     "tests/units/test_app.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 2,
+    "fragment_numbers": [
+     7144
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6126": {
+   "number": 6126,
+   "head": "18181e5ad4f5fcae3587119fb9f0d70433b3ee6b",
+   "merge_base": "0d68f4615692eaef3b38a387eed76928ca88c1cb",
+   "files": 4,
+   "insertions": 397,
+   "deletions": 3,
+   "commits_ahead": 6,
+   "behind_main": 322,
+   "buckets": {
+    "fragments": 1,
+    "python": 2,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "news/6126.feature.md"
+    ],
+    "python": [
+     "reflex/__init__.py",
+     "reflex/utils/token_manager.py"
+    ],
+    "unit_tests": [
+     "tests/units/utils/test_token_manager.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     6126
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": []
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  },
+  "6768": {
+   "number": 6768,
+   "head": "e4123be238ea749bf0cca692265b312a260f01ba",
+   "merge_base": "416eb34ab3436f156067f2ea4b513aaa82edb11e",
+   "files": 3,
+   "insertions": 234,
+   "deletions": 3,
+   "commits_ahead": 4,
+   "behind_main": 558,
+   "buckets": {
+    "fragments": 1,
+    "python": 1,
+    "unit_tests": 1
+   },
+   "bucket_paths": {
+    "fragments": [
+     "packages/reflex-base/news/6768.bugfix.md"
+    ],
+    "python": [
+     "packages/reflex-base/src/reflex_base/vars/base.py"
+    ],
+    "unit_tests": [
+     "tests/units/vars/test_base.py"
+    ]
+   },
+   "flags": {
+    "touches_components_py": false,
+    "pyi_hashes_updated": false,
+    "components_without_pyi_hash": false,
+    "has_unit_tests": true,
+    "has_real_docs": false,
+    "has_fragment": true,
+    "fragments_expected": 1,
+    "fragment_numbers": [
+     6768
+    ],
+    "fragment_named_after_pr": true,
+    "packages_touched": [
+     "reflex-base"
+    ]
+   },
+   "contained_in": [],
+   "contains": [],
+   "parent_relative": null
+  }
+ }
+}

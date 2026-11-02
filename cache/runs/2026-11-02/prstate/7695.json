@@ -1,0 +1,168 @@
+{
+  "number": 7695,
+  "fetched_at": "2026-11-02T17:42:50Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "c6a61b18d1084af8c1864e953aca58506de133cd",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T16:53:32Z",
+      "can_push": true,
+      "commit_id": "c6a61b18d1084af8c1864e953aca58506de133cd"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-29T16:57:21Z",
+      "can_push": true,
+      "commit_id": "c6a61b18d1084af8c1864e953aca58506de133cd"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **New behavior lacks regression tests**\n\nThe new gallery and delayed plot loading hav"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **New functions lack required docstrings**\n\nThe new `_generate` and `load` functions "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9374d084-611f-4c60-b7e5-b6ee0b41aadc -->\n<!-- cubic:review-run=d61f4d6f-fd31-5efa-bef4-b0bc87751d86 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Add regression tests for the gallery\u2019s searc"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=183a39f0-3f21-49b7-94c2-faeaaeeff46c -->\n<!-- cubic:review-run=d61f4d6f-fd31-5efa-bef4-b0bc87751d86 -->\n<!-- metadata:{\"confidence\":6} -->\nP3: This changelog overstates the fix: the font "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=1e318ae1-2dee-4610-b893-4b2ca04ac142 -->\n<!-- cubic:review-run=d61f4d6f-fd31-5efa-bef4-b0bc87751d86 -->\n<!-- metadata:{\"confidence\":8} -->\nP3: These metric-adjusted fallbacks are ineffect"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 168,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:53:27Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=90722877\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-29T16:59:59Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-10-29T16:35:16Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:53:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:53:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:53:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:57:21Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-29T16:57:21Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-29T16:59:59Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Add regression coverage for icon-gallery search/copy behavior and pyplot on-mount loading with an empty initial state.",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add the required Google-style docstrings to the new pyplot _generate and load functions.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Add regression tests for gallery search/copy and the pyplot mount lifecycle, including the empty initial state.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Reword the changelog to say the changes reduce page-text jumps rather than eliminate them.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Provide an Android-available metric-matched fallback or narrow the claimed CLS protection because the current Arial/Liberation Sans/Helvetica chain may fall through to an unadjusted font.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "last_author_activity_at": "2026-10-29T16:50:05Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}

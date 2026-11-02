@@ -1,0 +1,266 @@
+{
+  "number": 7276,
+  "fetched_at": "2026-11-02T17:49:48Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "d9ffd71a9e47243b69c53146187370bd776b818a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNSTABLE",
+  "auto_merge": false,
+  "review_decision": "APPROVED",
+  "linked_issues": [
+    {
+      "number": 7262,
+      "title": "Confirm: frontend_lazy_bundled_libraries=True added ~65 KB of initial JS on every page of the QA app (possible regression against #7078's claim)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T17:26:49Z",
+      "can_push": true,
+      "commit_id": "2000beec7b164ba0e6460104685660e291dd4a3b"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T19:09:09Z",
+      "can_push": true,
+      "commit_id": "6f44747d5411d301acd20343bb6e4e88fea0f33c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-23T19:32:14Z",
+      "can_push": true,
+      "commit_id": "d3d1d903c94caefde606c9dbd8c556faa25fd0d1"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "CHANGES_REQUESTED",
+      "at": "2026-09-25T15:09:34Z",
+      "can_push": true,
+      "commit_id": "7ee8505caf1eeee603fdbfefe28bce9e394cbfd9"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "APPROVED",
+      "at": "2026-11-02T17:12:48Z",
+      "can_push": true,
+      "commit_id": "d9ffd71a9e47243b69c53146187370bd776b818a"
+    }
+  ],
+  "counting_approval": true,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 172,
+    "actions_total": 168,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 4,
+      "SUCCESS": 167
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": []
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:24:28Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=68174643\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-09-23T17:30:16Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.06%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-23T18:10:36Z",
+      "excerpt": "the finding in the issue is that with the setting on, it actually ships larger initial JS payload than with it turned off... is that incorrect? the proposed cha"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:03:28Z",
+      "excerpt": "Implemented the runtime fix for the reported regression in 6f44747d5. The lazy path no longer preloads every registered optional library on the first dynamic-co"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-26T16:01:41Z",
+      "excerpt": "Addressed the review findings:\n\n- Moved selective library loading outside the cached data-URI module evaluation. Generated components now carry their required l"
+    }
+  ],
+  "head_activity_at": "2026-11-02T16:56:54Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:24:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T17:26:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-09-23T17:30:16Z"
+    },
+    {
+      "kind": "comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-09-23T18:10:36Z"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:03:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:09:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:09:09Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:32:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-23T19:32:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:09:34Z",
+      "state": "changes_requested"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-09-25T15:09:34Z"
+    },
+    {
+      "kind": "comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-26T16:01:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-02T17:12:48Z",
+      "state": "approved"
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports test_get_state[disk] regressed from 939.3 us to 979 us (-4.06%); its output also warns the significant result used different base/head hardware and that 22 benchmarks are dominated by system calls, so the measured regression may not be code-induced."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Use own-property checks or null-prototype maps so optional library names cannot collide with Object.prototype.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Update the optional-registry regression source to request its library under the on-demand loading design.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Verify evalReactComponent callers outside generated modules still request the optional libraries they use.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/.templates/web/utils/state.js",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Scope the hasOwn helper so custom code cannot collide with its module-level binding.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "outdated": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Keep failed optional-library loads recoverable for the same dynamic component instead of caching a failed ESM evaluation.",
+      "addressed": true,
+      "path": "packages/reflex-base/src/reflex_base/components/dynamic.py",
+      "outdated": true
+    },
+    {
+      "by": "FarhanAliRaza",
+      "ask": "Give the rejection test fixture an uncached module source while retaining a separate identical-source retry test.",
+      "addressed": true,
+      "path": "docs/app/tests/frontend_quality.test.mjs",
+      "outdated": true
+    },
+    {
+      "by": "masenf",
+      "ask": "Verify that lazy bundling reduces the initial payload instead of loading every optional library.",
+      "addressed": true,
+      "note": "The author implemented selective per-component loading and supplied before/after payload measurements."
+    }
+  ],
+  "body_has_repro": false,
+  "last_author_activity_at": "2026-11-02T16:56:54Z",
+  "last_maintainer_activity_at": "2026-11-02T17:12:48Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "conflicting_files": [],
+  "reconciled_at": "2026-11-02T17:50:24.685420Z"
+}
