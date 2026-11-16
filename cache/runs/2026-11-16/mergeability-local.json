@@ -1,0 +1,823 @@
+{
+  "7911": {
+    "clean": true,
+    "files": [],
+    "detail": "4bd49d8ac36adc5d07ecc9f4e886cd65f8b744f7"
+  },
+  "7907": {
+    "clean": true,
+    "files": [],
+    "detail": "2c912ef750597b1e279472b1e3c88dec30ba87e3"
+  },
+  "7906": {
+    "clean": true,
+    "files": [],
+    "detail": "b44292766af18c0bc754941455cb982676a2e05e"
+  },
+  "7904": {
+    "clean": true,
+    "files": [],
+    "detail": "41704ea7c7af4bf7f10678cba5e1e96c76b224a6"
+  },
+  "7903": {
+    "clean": true,
+    "files": [],
+    "detail": "788fd1ae46ca25546957893e6cc90fb3d9b8c4f1"
+  },
+  "7901": {
+    "clean": true,
+    "files": [],
+    "detail": "5a1efc4ec9ddec8937560628280151f65475fb84"
+  },
+  "7900": {
+    "clean": true,
+    "files": [],
+    "detail": "4c11e41a560656f38308582df2646c536a99a6a4"
+  },
+  "7897": {
+    "clean": true,
+    "files": [],
+    "detail": "2d97234f3a80506f76527bd8515d990cf9d2e16d"
+  },
+  "7886": {
+    "clean": true,
+    "files": [],
+    "detail": "4c4c4508f83c3387f582c45c75756da14b269455"
+  },
+  "7872": {
+    "clean": true,
+    "files": [],
+    "detail": "3a39121af01610145fa020627acb2cb871a1de29"
+  },
+  "7764": {
+    "clean": true,
+    "files": [],
+    "detail": "dca03de63936d02e485258429941373e6249e56c"
+  },
+  "7315": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/event/__init__.py",
+      "packages/reflex-base/src/reflex_base/event/context.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/utils/types.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "packages/reflex-frontend/src/utils/state.js",
+      "pyproject.toml",
+      "reflex/app.py",
+      "reflex/compiler/utils.py",
+      "reflex/istate/__init__.py",
+      "reflex/istate/delta.py",
+      "reflex/istate/manager/token.py",
+      "reflex/istate/proxy.py",
+      "reflex/istate/shared.py",
+      "reflex/state.py",
+      "tests/benchmarks/test_event_processing.py",
+      "tests/integration/test_linked_state.py",
+      "tests/units/istate/manager/test_disk.py",
+      "tests/units/istate/manager/test_redis.py",
+      "tests/units/reflex_base/client_event_queue_runtime.mjs",
+      "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+      "tests/units/reflex_base/state/test_proxy.py",
+      "tests/units/reflex_base/utils/test_types.py",
+      "tests/units/reflex_base/vars/test_base.py",
+      "tests/units/test_sqlalchemy.py",
+      "tests/units/test_state.py",
+      "uv.lock"
+    ],
+    "detail": "9a22ba843a8a21eee0c83be42812cc6793c3b8c3"
+  },
+  "7908": {
+    "clean": true,
+    "files": [],
+    "detail": "217d876b319b57925b59b0ab43207a096c3bb7fd"
+  },
+  "7905": {
+    "clean": true,
+    "files": [],
+    "detail": "5c48e5c01550a1ac4d44cabe885c6d0d2c4f802e"
+  },
+  "7902": {
+    "clean": false,
+    "files": [
+      "tests/units/reflex_base/vars/test_sequence.py"
+    ],
+    "detail": "01dd7b1dcb57a06e939f78a99cc7f5e144469b42"
+  },
+  "7898": {
+    "clean": true,
+    "files": [],
+    "detail": "d91cbf392e65b8b2ddd6b49aacf8bb149f4f5940"
+  },
+  "7888": {
+    "clean": true,
+    "files": [],
+    "detail": "466817276031afd8d162329586cc1f9fb651212b"
+  },
+  "7880": {
+    "clean": true,
+    "files": [],
+    "detail": "0b8ecd5e7b8e794795ddfaff5540fdb78081a796"
+  },
+  "7761": {
+    "clean": true,
+    "files": [],
+    "detail": "dffacf0dc219ce613d26bcd7b15540354959ec6a"
+  },
+  "7727": {
+    "clean": true,
+    "files": [],
+    "detail": "9b342a79ae34aa9f2f8408b34bb9227b22eda6c1"
+  },
+  "7314": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/event/__init__.py",
+      "packages/reflex-base/src/reflex_base/event/context.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "pyproject.toml",
+      "reflex/app.py",
+      "reflex/compiler/utils.py",
+      "reflex/istate/__init__.py",
+      "reflex/istate/delta.py",
+      "reflex/istate/manager/token.py",
+      "reflex/istate/proxy.py",
+      "reflex/istate/shared.py",
+      "reflex/state.py",
+      "tests/benchmarks/test_event_processing.py",
+      "tests/integration/test_linked_state.py",
+      "tests/units/istate/manager/test_disk.py",
+      "tests/units/istate/manager/test_redis.py",
+      "tests/units/reflex_base/event/processor/test_base_state_processor.py",
+      "tests/units/reflex_base/state/test_proxy.py",
+      "tests/units/test_sqlalchemy.py",
+      "tests/units/test_state.py",
+      "uv.lock"
+    ],
+    "detail": "2fb77c6efdd1365020facbd118fa8e003ec9fdab"
+  },
+  "6932": {
+    "clean": false,
+    "files": [
+      "docs/app/pyproject.toml",
+      "packages/reflex-base/src/reflex_base/config.py",
+      "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+      "packages/reflex-frontend/src/utils/helpers/websocket.js",
+      "packages/reflex-frontend/src/utils/state.js",
+      "pyi_hashes.json",
+      "pyproject.toml",
+      "reflex/app.py",
+      "tests/benchmarks/test_event_processing.py",
+      "tests/benchmarks/test_socket_headers.py",
+      "tests/integration/test_client_storage.py",
+      "tests/units/compiler/state_js.test.mjs",
+      "tests/units/reflex_base/client_event_queue_runtime.mjs",
+      "tests/units/reflex_base/client_state_updates.mjs",
+      "tests/units/test_app.py",
+      "tests/units/utils/test_exec.py",
+      "uv.lock"
+    ],
+    "detail": "79078dc631c070df8d058c5b5311054091effad6"
+  },
+  "6876": {
+    "clean": true,
+    "files": [],
+    "detail": "582595af13ca87b6d15a2223636fba6d6a313d2c"
+  },
+  "7033": {
+    "clean": true,
+    "files": [],
+    "detail": "bd095baa5068a6b0e16bf0cb091752817fd31b47"
+  },
+  "7714": {
+    "clean": true,
+    "files": [],
+    "detail": "38994cc9d69216c0c054c64bc117b5805e0b3c76"
+  },
+  "7890": {
+    "clean": true,
+    "files": [],
+    "detail": "ff6bc40f8d4bfd1928f02a97d855ef7652eb09ac"
+  },
+  "7671": {
+    "clean": true,
+    "files": [],
+    "detail": "f4e32247afb2d193be2a442a22254395179cb14f"
+  },
+  "7887": {
+    "clean": true,
+    "files": [],
+    "detail": "573aab8264233daba40129ab0fb10f1399276e08"
+  },
+  "7885": {
+    "clean": true,
+    "files": [],
+    "detail": "03acc88e992c6fb1955e5c88917c85b4fb31f42a"
+  },
+  "7899": {
+    "clean": true,
+    "files": [],
+    "detail": "65bb0433fe3ae6c022a29caaffb83f402244fac4"
+  },
+  "7718": {
+    "clean": true,
+    "files": [],
+    "detail": "e3ce6ca8e44491232dc15a2c69542c341d01c318"
+  },
+  "7594": {
+    "clean": true,
+    "files": [],
+    "detail": "d9f53a808a4e2c1b231c68bdf6689eae2823ffe3"
+  },
+  "7874": {
+    "clean": true,
+    "files": [],
+    "detail": "441705731d8b41dff7a962f648d67c9c5cbd99b8"
+  },
+  "7883": {
+    "clean": true,
+    "files": [],
+    "detail": "df1745d2882c2e8d9f4255b3934efb4515578c87"
+  },
+  "7876": {
+    "clean": true,
+    "files": [],
+    "detail": "48ffe705608af7b8711c92b1ea05384da90cc6a6"
+  },
+  "7853": {
+    "clean": true,
+    "files": [],
+    "detail": "aa73d608978c12998575f1be19ba1c6123a929f3"
+  },
+  "7703": {
+    "clean": true,
+    "files": [],
+    "detail": "d4b344156c3b333041c225540651bd7d069da91f"
+  },
+  "7871": {
+    "clean": true,
+    "files": [],
+    "detail": "9e032e606242c89f60aaf152e79f6f8ac3117276"
+  },
+  "7881": {
+    "clean": true,
+    "files": [],
+    "detail": "0c9403a48959d6fffa6c526848d33e997c0f7f2c"
+  },
+  "7882": {
+    "clean": true,
+    "files": [],
+    "detail": "ac573b6bbfb5f7b94fcd6e6a55608532165fae07"
+  },
+  "7884": {
+    "clean": true,
+    "files": [],
+    "detail": "d6950f3ad9d4e47c969f9abec23aba741138e486"
+  },
+  "7790": {
+    "clean": true,
+    "files": [],
+    "detail": "c0848e3a89c5bee2cf0682e141657b6e4c5b4566"
+  },
+  "7892": {
+    "clean": true,
+    "files": [],
+    "detail": "4666210ddd2d916ebd69ddc239ba76d9201e3a1d"
+  },
+  "7893": {
+    "clean": true,
+    "files": [],
+    "detail": "d58babcdaf6dd6ef905eb089a0b6db58e546099c"
+  },
+  "7891": {
+    "clean": true,
+    "files": [],
+    "detail": "354c5d869942a1af832ce5288374996d8d5fc4e5"
+  },
+  "7823": {
+    "clean": true,
+    "files": [],
+    "detail": "330b5f1bc427532032bf80bd52c7c4f4b2d6ac0c"
+  },
+  "7829": {
+    "clean": true,
+    "files": [],
+    "detail": "3e07430ddc2636da0a4d947679a416f6d1650ab5"
+  },
+  "7781": {
+    "clean": true,
+    "files": [],
+    "detail": "50ea8139994fa5b6a7aac8c0b85d559191316b2c"
+  },
+  "7655": {
+    "clean": false,
+    "files": [
+      "reflex/utils/exec.py"
+    ],
+    "detail": "092a4f234b8a54a36a29022327c2a14ab1dd1689"
+  },
+  "7574": {
+    "clean": true,
+    "files": [],
+    "detail": "3ad180767c719a4e5e0f20e2c18b2db1c76d9331"
+  },
+  "7744": {
+    "clean": false,
+    "files": [
+      "packages/reflex-frontend/src/utils/helpers/upload.js"
+    ],
+    "detail": "c1a03c6421c36b4fce16d2fb475d282d0c6684d2"
+  },
+  "7759": {
+    "clean": false,
+    "files": [
+      "packages/reflex-frontend/src/utils/helpers/upload.js",
+      "tests/units/reflex_base/client_upload.mjs"
+    ],
+    "detail": "4f8c2051190e7aa67c09156241554d9c305414a8"
+  },
+  "7867": {
+    "clean": true,
+    "files": [],
+    "detail": "569bf19ad8019db3755d8cc08408383b6969c535"
+  },
+  "7769": {
+    "clean": false,
+    "files": [
+      "tests/units/istate/manager/test_disk.py"
+    ],
+    "detail": "5802d1c8c3b7e65ccb0dd2abb7a6a9b9f7ec40a1"
+  },
+  "7583": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "tests/units/components/datadisplay/test_dataeditor.py"
+    ],
+    "detail": "ac1cb8e3b2d29e903ccb7480449e4c5e62aca0b4"
+  },
+  "7408": {
+    "clean": false,
+    "files": [
+      "docs/app/reflex.lock/bun.lock",
+      "docs/app/reflex.lock/package.json",
+      "packages/reflex-components-plotly/src/reflex_components_plotly/__init__.py",
+      "pyi_hashes.json"
+    ],
+    "detail": "3b97634fa48222682379bd66a4237d4afa211aa2"
+  },
+  "7361": {
+    "clean": true,
+    "files": [],
+    "detail": "2259223d0757951fa6ae1f0568b20a833af59427"
+  },
+  "6100": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+      "packages/reflex-base/src/reflex_base/utils/format.py",
+      "packages/reflex-frontend/src/utils/state.js",
+      "reflex/compiler/utils.py",
+      "reflex/testing.py",
+      "tests/integration/test_linked_state.py",
+      "tests/integration/tests_playwright/test_client_error.py",
+      "tests/units/compiler/state_js.test.mjs",
+      "tests/units/compiler/test_context_js_template.py",
+      "tests/units/compiler/test_state_js_template.py",
+      "tests/units/test_app.py",
+      "tests/units/test_event.py",
+      "tests/units/test_reflex.py",
+      "tests/units/test_state.py"
+    ],
+    "detail": "9bf2a253ace89bea80d7d7d3240a69773636818a"
+  },
+  "6125": {
+    "clean": false,
+    "files": [
+      "reflex/config.py",
+      "reflex/istate/manager/__init__.py",
+      "reflex/utils/prerequisites.py"
+    ],
+    "detail": "2cb4a23c6d2898dcb681522ef734cfed1525b57c"
+  },
+  "6126": {
+    "clean": false,
+    "files": [
+      "tests/units/utils/test_token_manager.py"
+    ],
+    "detail": "093027cf093ecc64b7469c94fbc48e87cc00fc5e"
+  },
+  "6468": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/component.py",
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "packages/reflex-base/src/reflex_base/plugins/compiler.py",
+      "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+      "packages/reflex-components-dataeditor/pyproject.toml",
+      "packages/reflex-components-dataeditor/src/reflex_components_dataeditor/dataeditor.py",
+      "packages/reflex-components-internal/pyproject.toml",
+      "packages/reflex-components-radix/pyproject.toml",
+      "reflex/compiler/utils.py",
+      "tests/units/compiler/test_compiler_utils.py",
+      "tests/units/components/datadisplay/test_dataeditor.py"
+    ],
+    "detail": "9b4ccb90e9ce8d86ff7c66cd388f7ff832c05ecc"
+  },
+  "6490": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/config.py",
+      "reflex/istate/manager/redis.py",
+      "reflex/utils/token_manager.py",
+      "tests/units/istate/manager/test_redis.py",
+      "tests/units/reflex_cli/conftest.py"
+    ],
+    "detail": "7fa41d641646af5b2cb4017e39677a9fcfb322b3"
+  },
+  "6688": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/components/memo.py",
+      "pyi_hashes.json",
+      "reflex/app.py",
+      "reflex/compiler/compiler.py",
+      "reflex/compiler/plugins/memoize.py",
+      "reflex/compiler/utils.py",
+      "reflex/reflex.py",
+      "tests/units/compiler/test_compiler.py",
+      "tests/units/compiler/test_memoize_plugin.py",
+      "tests/units/test_app.py",
+      "tests/units/utils/test_path_ops.py"
+    ],
+    "detail": "2ea8b691e74fd4bcf0045a0fa1ff775f91288c13"
+  },
+  "6768": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/vars/base.py"
+    ],
+    "detail": "607e467fc91ec4305b8e7df53b94cb34a85e344b"
+  },
+  "6796": {
+    "clean": false,
+    "files": [
+      "tests/units/reflex_base/event/processor/test_base_state_processor.py"
+    ],
+    "detail": "362efc79388d220ba3baff6a9aa4e8bb3b53f8f6"
+  },
+  "6873": {
+    "clean": true,
+    "files": [],
+    "detail": "3efceb763c03d7f06fe825f9d3eaf14517a8e118"
+  },
+  "7007": {
+    "clean": false,
+    "files": [
+      ".github/workflows/dispatch_release.yml",
+      "packages/reflex-base/src/reflex_base/utils/log.py",
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "detail": "6c846f779b216f3fe91f6ebcb082d3309e5d6ea7"
+  },
+  "7036": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/utils/types.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "reflex/state.py",
+      "tests/units/test_state.py"
+    ],
+    "detail": "d4d646ace590f4ec959c5ae58fed0662c9f1099c"
+  },
+  "7040": {
+    "clean": false,
+    "files": [
+      "reflex/custom_components/custom_components.py",
+      "reflex/utils/telemetry.py",
+      "tests/units/test_telemetry.py",
+      "uv.lock"
+    ],
+    "detail": "05cb08cbd0c019d7e9607bdee020ea7d7a96953f"
+  },
+  "7051": {
+    "clean": true,
+    "files": [],
+    "detail": "da258be626d14f82a8515834a75c6cc2f7b60951"
+  },
+  "7065": {
+    "clean": false,
+    "files": [
+      "reflex/istate/manager/disk.py",
+      "reflex/utils/prerequisites.py",
+      "tests/units/istate/manager/test_disk.py"
+    ],
+    "detail": "52275fbf8a2ed612147b0d26658e491634a6d320"
+  },
+  "7144": {
+    "clean": false,
+    "files": [
+      "reflex/app.py",
+      "tests/units/test_app.py"
+    ],
+    "detail": "f34acb71e34ce25b4cfd3ef5c16c4f8fae456fdd"
+  },
+  "7323": {
+    "clean": false,
+    "files": [
+      "tests/units/istate/manager/test_disk.py"
+    ],
+    "detail": "2bfa8a95e810565e420dbe2651607d68a843584b"
+  },
+  "7337": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/compiler/templates.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "packages/reflex-base/src/reflex_base/event/processor/event_processor.py",
+      "packages/reflex-base/src/reflex_base/utils/format.py",
+      "packages/reflex-frontend/src/utils/state.js",
+      "reflex/compiler/utils.py",
+      "reflex/testing.py",
+      "tests/integration/test_linked_state.py",
+      "tests/integration/tests_playwright/test_client_error.py",
+      "tests/units/compiler/state_js.test.mjs",
+      "tests/units/compiler/test_context_js_template.py",
+      "tests/units/compiler/test_state_js_template.py",
+      "tests/units/test_app.py",
+      "tests/units/test_event.py",
+      "tests/units/test_reflex.py",
+      "tests/units/test_state.py"
+    ],
+    "detail": "d3c54fce25ca399e2eb85de9d669838c4c507feb"
+  },
+  "7362": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+      "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+      "pyproject.toml",
+      "reflex/app.py",
+      "tests/units/components/core/test_upload.py",
+      "tests/units/reflex_base/event/test_context.py",
+      "tests/units/test_app.py",
+      "tests/units/utils/test_token_manager.py"
+    ],
+    "detail": "f8aef0b01b282d2ca5045f0d3022d70ac8f9c055"
+  },
+  "7363": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+      "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+      "packages/reflex-frontend/src/utils/state.js",
+      "pyproject.toml",
+      "reflex/app.py",
+      "tests/units/compiler/state_js.test.mjs",
+      "tests/units/components/core/test_upload.py",
+      "tests/units/reflex_base/client_event_queue_runtime.mjs",
+      "tests/units/reflex_base/client_state_updates.mjs",
+      "tests/units/reflex_base/client_upload.mjs",
+      "tests/units/reflex_base/event/test_context.py",
+      "tests/units/test_app.py",
+      "tests/units/utils/test_token_manager.py"
+    ],
+    "detail": "5b6392e56a7d7782f70a4d9b2437cb09d8072100"
+  },
+  "7379": {
+    "clean": true,
+    "files": [],
+    "detail": "f0edce0914e4681b7dbaedff94a3368c890001cc"
+  },
+  "7394": {
+    "clean": false,
+    "files": [
+      ".github/workflows/build_packages.yml",
+      ".github/workflows/examples.yml",
+      ".github/workflows/integration_app_harness.yml",
+      ".github/workflows/unit_tests.yml"
+    ],
+    "detail": "da8c620f824517ef63477e3ed6d7bd7eb8ba122f"
+  },
+  "7448": {
+    "clean": false,
+    "files": [
+      "pyproject.toml",
+      "tests/units/istate/test_proxy.py",
+      "tests/units/reflex_base/utils/test_format.py",
+      "tests/units/utils/test_serializers.py",
+      "uv.lock"
+    ],
+    "detail": "6d5f0fa1d7e3f1eea0aa4142736c356b0d58f3c9"
+  },
+  "7455": {
+    "clean": true,
+    "files": [],
+    "detail": "964abe73f4ab603b6c6b1ca4dfdf65dd8987e7a2"
+  },
+  "7540": {
+    "clean": false,
+    "files": [
+      "docs/library/forms/form.md",
+      "packages/reflex-components-core/src/reflex_components_core/el/elements/forms.py",
+      "pyproject.toml",
+      "reflex/compiler/plugins/memoize.py",
+      "reflex/compiler/utils.py",
+      "tests/integration/tests_playwright/test_form_submit.py"
+    ],
+    "detail": "aa62a7523772adedfc7e5ee419543377140167b3"
+  },
+  "7688": {
+    "clean": true,
+    "files": [],
+    "detail": "b397002f49005fbe0031f4f9d490b84502a50815"
+  },
+  "7699": {
+    "clean": true,
+    "files": [],
+    "detail": "2b3c594ad0034dfc621814ca72a17930d9870492"
+  },
+  "7760": {
+    "clean": false,
+    "files": [
+      "reflex/testing.py"
+    ],
+    "detail": "a9f3d5ceefd8a2ceccae90ead7360d9eb57379b2"
+  },
+  "7766": {
+    "clean": true,
+    "files": [],
+    "detail": "c591b8ac1fbeb582bd8e849de3bb260073108237"
+  },
+  "7776": {
+    "clean": true,
+    "files": [],
+    "detail": "a375fc1821136388833e3843c11b75063bf8672f"
+  },
+  "7777": {
+    "clean": true,
+    "files": [],
+    "detail": "ecb42e4b9f33b42776e8cf38779c91aea28eb70b"
+  },
+  "7778": {
+    "clean": true,
+    "files": [],
+    "detail": "321bd802ac76502f0fd3e16a910dfa61e5ee90d0"
+  },
+  "7780": {
+    "clean": true,
+    "files": [],
+    "detail": "05b96af9e3dff8f91f97c9767e4ceb14fa5f9d3c"
+  },
+  "7786": {
+    "clean": true,
+    "files": [],
+    "detail": "828b9ef5461c35772ba5f8d9579d49d4b5d3eb0b"
+  },
+  "7788": {
+    "clean": true,
+    "files": [],
+    "detail": "f1f6af0ec33897075a7d911c506294dbffb7af60"
+  },
+  "7824": {
+    "clean": true,
+    "files": [],
+    "detail": "20cb56985574624c436de4e16cac0c9874fd6d1e"
+  },
+  "7704": {
+    "clean": false,
+    "files": [
+      "tests/units/utils/test_path_ops.py"
+    ],
+    "detail": "4f2f7f098a774a2a59f5d3a50a12619b4b57c0f6"
+  },
+  "7630": {
+    "clean": false,
+    "files": [
+      "tests/units/compiler/test_compiler.py"
+    ],
+    "detail": "a5029945572a0ef0a9a7c32bfc880c55865d2526"
+  },
+  "7695": {
+    "clean": false,
+    "files": [
+      "docs/app/assets/docs-theme.css",
+      "docs/library/data-display/icon.md"
+    ],
+    "detail": "624b069fedc843d99f320abe29b114a0a1a13b09"
+  },
+  "6841": {
+    "clean": true,
+    "files": [],
+    "detail": "5c932597d9776ea49fe763ef45f921fbceb13668"
+  },
+  "6733": {
+    "clean": false,
+    "files": [
+      "reflex/app.py"
+    ],
+    "detail": "ccea3a40baa9f817a095034e07448f0aac694a47"
+  },
+  "7313": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/event/__init__.py",
+      "packages/reflex-base/src/reflex_base/event/context.py",
+      "packages/reflex-base/src/reflex_base/event/processor/base_state_processor.py",
+      "reflex/app.py",
+      "reflex/istate/proxy.py",
+      "reflex/state.py",
+      "tests/benchmarks/test_event_processing.py",
+      "tests/units/istate/test_proxy.py",
+      "tests/units/reflex_base/event/test_context.py",
+      "tests/units/test_event.py"
+    ],
+    "detail": "2639817ee868609d72c14727fbe3b4ae73d2fe9b"
+  },
+  "7364": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/utils/exceptions.py",
+      "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+      "packages/reflex-frontend/src/utils/state.js",
+      "pyproject.toml",
+      "reflex/app.py",
+      "tests/units/compiler/state_js.test.mjs",
+      "tests/units/components/core/test_upload.py",
+      "tests/units/reflex_base/client_event_queue_runtime.mjs",
+      "tests/units/reflex_base/client_state_updates.mjs",
+      "tests/units/reflex_base/client_upload.mjs",
+      "tests/units/reflex_base/event/test_context.py",
+      "tests/units/test_app.py",
+      "tests/units/utils/test_token_manager.py"
+    ],
+    "detail": "9adb6f961842d95e8ed9c369481a2f9d8d35c5ae"
+  },
+  "7308": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/vars/base.py"
+    ],
+    "detail": "503b33704b2cf442e45546740296ef2dbfa14707"
+  },
+  "7416": {
+    "clean": false,
+    "files": [
+      "tests/units/utils/test_exec.py"
+    ],
+    "detail": "54071d54d31f19cadbb693156fc72f2d11dae9a9"
+  },
+  "7436": {
+    "clean": false,
+    "files": [
+      "reflex/state.py"
+    ],
+    "detail": "47105cf8992b4e4d19ca45b8f132c034896c4c9f"
+  },
+  "7381": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "tests/units/reflex_base/vars/test_base.py"
+    ],
+    "detail": "bc4bcfac2f6378f4071138aa643877a0fca2d6a1"
+  },
+  "6898": {
+    "clean": false,
+    "files": [
+      "docs/app/agent_files/_plugin.py",
+      "docs/app/reflex_docs/redirects.py",
+      "docs/app/reflex_docs/reflex_docs.py",
+      "docs/app/tests/test_agent_files.py",
+      "docs/app/tests/test_routes.py",
+      "docs/app/tests/test_sidebar.py"
+    ],
+    "detail": "5ffc8906f34b3343978807bf858e2c3f5c32acde"
+  },
+  "6853": {
+    "clean": false,
+    "files": [
+      "reflex/istate/manager/redis.py",
+      "tests/units/test_state.py"
+    ],
+    "detail": "3b415acc5679707d979535fa8c600336f90f51f9"
+  },
+  "7056": {
+    "clean": false,
+    "files": [
+      "packages/reflex-base/src/reflex_base/utils/format.py",
+      "packages/reflex-base/src/reflex_base/utils/serializers.py",
+      "packages/reflex-base/src/reflex_base/vars/base.py",
+      "packages/reflex-components-core/src/reflex_components_core/core/_upload.py",
+      "reflex/istate/proxy.py",
+      "tests/units/reflex_base/utils/test_format.py",
+      "tests/units/reflex_base/utils/test_types.py",
+      "uv.lock"
+    ],
+    "detail": "61509dc747674fd850b37da09d5c4049f5a3c904"
+  }
+}

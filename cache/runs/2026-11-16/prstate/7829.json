@@ -1,0 +1,117 @@
+{
+  "number": 7829,
+  "fetched_at": "2026-11-16T21:18:10Z",
+  "author_login": "YusefSyed",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "YusefSyed/reflex",
+  "head_sha": "097cd0e8f37f95e19093322091dae7e7ff751b3e",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7825,
+      "title": "A dev run stopped before its backend loads leaves .web/nocompile, so the next run or export skips the compile",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-11T20:24:09Z",
+      "can_push": true,
+      "commit_id": "6982c0886e3cf270e70e283b0b4dd62964911024"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-11T20:24:18Z",
+      "can_push": true,
+      "commit_id": "6982c0886e3cf270e70e283b0b4dd62964911024"
+    },
+    {
+      "by": "YusefSyed",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-11T20:34:36Z",
+      "can_push": false,
+      "commit_id": "6982c0886e3cf270e70e283b0b4dd62964911024"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-11T20:24:05Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=103675631&amp;sig=326ff56fe6c458c5356dc47fa5f80df7508f921b5f7ca2d637d0f0144666"
+    }
+  ],
+  "head_activity_at": "2026-11-12T21:56:19Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-11T20:24:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-11T20:24:08Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-11T20:24:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-11T20:24:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "YusefSyed",
+      "association": "NONE",
+      "at": "2026-11-11T20:34:36Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-12T21:56:19Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

@@ -1,0 +1,57 @@
+{
+  "applied_at": "2026-11-16T21:22:10Z",
+  "authenticated_as": "masenf",
+  "additions": {
+    "Bug": [
+      7911,
+      7908,
+      7909,
+      7906,
+      7907,
+      7903,
+      7905,
+      7904,
+      7902,
+      7901,
+      7900,
+      7898
+    ],
+    "Documentation": [
+      7911,
+      7908,
+      7909,
+      7904,
+      7902,
+      7886,
+      7897,
+      7761,
+      7872,
+      7880,
+      7888,
+      7764
+    ],
+    "Perf": [
+      7727,
+      7910
+    ],
+    "breaking": [
+      6932,
+      7315,
+      7314,
+      7909
+    ]
+  },
+  "addition_count": 30,
+  "live_open_counts": {
+    "Bug": 77,
+    "Documentation": 41,
+    "Perf": 24,
+    "breaking": 12
+  },
+  "criteria": {
+    "Bug": "Clear bug fix with an associated issue.",
+    "Perf": "Primary purpose is performance improvement.",
+    "Documentation": "Changes real docs content under docs/.",
+    "breaking": "Changes a current API contract and includes a breaking fragment or equivalent explicit evidence."
+  }
+}

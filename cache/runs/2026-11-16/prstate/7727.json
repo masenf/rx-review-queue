@@ -1,0 +1,237 @@
+{
+  "number": 7727,
+  "fetched_at": "2026-11-16T21:18:47Z",
+  "author_login": "Bl0ck154",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "Bl0ck154/reflex",
+  "head_sha": "286fac9cb48f1a8f023f218219d55c442dedc536",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-03T12:17:51Z",
+      "can_push": true,
+      "commit_id": "299214f2148cab4bd17b9f3865d5fc69ed2b5a36"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-03T12:22:30Z",
+      "can_push": true,
+      "commit_id": "53242b096aaf0b87f002faf944002881493d74b7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-03T12:24:23Z",
+      "can_push": true,
+      "commit_id": "53242b096aaf0b87f002faf944002881493d74b7"
+    },
+    {
+      "by": "Bl0ck154",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-03T12:55:04Z",
+      "can_push": false,
+      "commit_id": "b9e94f7212f112e0ae457853945a90fd4e8f66b2"
+    },
+    {
+      "by": "Bl0ck154",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-03T12:55:21Z",
+      "can_push": false,
+      "commit_id": "b9e94f7212f112e0ae457853945a90fd4e8f66b2"
+    },
+    {
+      "by": "Bl0ck154",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-03T20:49:28Z",
+      "can_push": false,
+      "commit_id": "f092911c9ebff8e83db886af6a3c251a4248207d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T17:06:38Z",
+      "can_push": true,
+      "commit_id": "2ad44d4b968333aa2c54f4f35f8c87faa413eb93"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=950c2570-8062-41d5-87e6-f4b71135f491 -->\n<!-- cubic:review-run=43776dfe-be40-597c-9ac6-7e1700ea6815 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Place `_delta_value_key` before `_global_var"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-03T12:17:47Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=94332332&amp;sig=5f0f73ac103d9e6474584abdebe9251ccbabd7bbb288b613fd7a0f9b5f6d6"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-12T17:01:49Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n<details>\n<summary><b>3 warnings</b></summary>\n\n> :warning: **15 b"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T17:06:42Z",
+      "excerpt": "Want your agent to iterate on Greptile's feedback? Try [*greploops*](https://github.com/greptileai/skills/blob/main/greploop/SKILL.md)."
+    },
+    {
+      "by": "Bl0ck154",
+      "association": "NONE",
+      "at": "2026-11-14T17:18:21Z",
+      "excerpt": "Added the missing `sort_keys` docstring in `286fac9`. The PR checks are still awaiting workflow approval. Could a maintainer approve them when convenient?"
+    }
+  ],
+  "head_activity_at": "2026-11-14T16:24:18Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-03T12:17:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-03T12:17:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-03T12:17:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-03T12:22:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-03T12:22:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-03T12:24:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-03T12:24:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Bl0ck154",
+      "association": "NONE",
+      "at": "2026-11-03T12:55:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Bl0ck154",
+      "association": "NONE",
+      "at": "2026-11-03T12:55:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "Bl0ck154",
+      "association": "NONE",
+      "at": "2026-11-03T20:49:28Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-12T17:01:49Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T17:06:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T17:06:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T17:06:42Z"
+    },
+    {
+      "kind": "comment",
+      "by": "Bl0ck154",
+      "association": "NONE",
+      "at": "2026-11-14T17:18:21Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "P2: Keep `_delta_value_key` before `_global_vars` so Ruff import sorting passes.",
+      "addressed": true,
+      "path": "tests/units/reflex_base/vars/test_base.py",
+      "outdated": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-14T17:18:21Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

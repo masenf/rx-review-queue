@@ -1,0 +1,190 @@
+{
+  "number": 7448,
+  "fetched_at": "2026-11-16T21:25:20Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "FarhanAliRaza/reflex",
+  "head_sha": "3e7cdeff43f53a070da3ef24747d6a3ee71c9016",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T17:25:10Z",
+      "can_push": true,
+      "commit_id": "5fb36dc3f5db73f2b435afaea3401170884cfed4"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-06T17:25:50Z",
+      "can_push": true,
+      "commit_id": "5fb36dc3f5db73f2b435afaea3401170884cfed4"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=ab2396c3-6e18-40c5-82a4-e008e0ad615b -->\n<!-- cubic:review-run=9f70129f-6f8c-5b39-b06a-5e1b39f3bc17 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: The install command fails in zsh because the"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=36db7db9-08d1-4f3a-822a-1e75b602b341 -->\n<!-- cubic:review-run=9f70129f-6f8c-5b39-b06a-5e1b39f3bc17 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This marker also selects PyPy 3.11+ on Linux"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=291a4a84-0d7b-4890-abad-cf393b2efa5b -->\n<!-- cubic:review-run=9f70129f-6f8c-5b39-b06a-5e1b39f3bc17 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: An explicit `default=None` is replaced with "
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Extra can remain inactive** If an installation already has `reflex-base==0.9.12`, i"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Marker exceeds wheel support** On Linux x86_64 with glibc older than 2.35, this mar"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": true,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Explicit default gets replaced** With the native encoder installed, `json_dumps(val"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 148,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 145
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 144
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:25:43Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=75724003\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https:"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-10-06T17:29:58Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 93.47%**\n\n<details>\n<summary>:warning: <b>Different runtime en"
+    }
+  ],
+  "head_activity_at": "2026-10-06T19:18:14Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:25:10Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:25:10Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:25:43Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:25:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-06T17:25:50Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-10-06T17:29:58Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Quote `pip install 'reflex-base[yjson]'` in the performance fragment so zsh does not treat the extra as a glob.",
+      "addressed": false,
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Add `implementation_name == 'cpython'` to the yjson dependency marker so PyPy does not select a CPython-only extra.",
+      "addressed": false,
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Preserve an explicitly supplied `default=None`; use Reflex's serializer only when `default` is absent.",
+      "addressed": false,
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Raise the reflex-base dependency floor so installing `reflex[yjson]` cannot retain an older reflex-base without the extra or native encoder.",
+      "addressed": false,
+      "outdated": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Handle yjson's glibc 2.35 wheel floor so the extra does not claim unsupported older Linux x86_64 hosts.",
+      "addressed": false,
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Keep `json_dumps(value, default=None)` behavior identical with and without the native encoder.",
+      "addressed": false,
+      "outdated": true
+    }
+  ],
+  "body_has_repro": false,
+  "failing_job_findings": [],
+  "conflicting_files": [
+    "pyproject.toml",
+    "tests/units/istate/test_proxy.py",
+    "tests/units/reflex_base/utils/test_format.py",
+    "tests/units/utils/test_serializers.py",
+    "uv.lock"
+  ],
+  "last_author_activity_at": "2026-10-06T19:18:14Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

@@ -1,0 +1,104 @@
+{
+  "number": 7876,
+  "fetched_at": "2026-11-16T21:25:32Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "9b3b29c3e1dbb22e2f650896b9d5e9aa122e2586",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T20:58:19Z",
+      "can_push": true,
+      "commit_id": "9b3b29c3e1dbb22e2f650896b9d5e9aa122e2586"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 173,
+    "by_state": {
+      "CANCELLED": 1,
+      "FAILURE": 1,
+      "SKIPPED": 6,
+      "SUCCESS": 165
+    },
+    "failing": [
+      "changelog",
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 169
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T20:33:14Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105040135&amp;sig=9abdcfff72799a7f7e537b5abb3eca9a633ceb9aa834bb9011749f6bfba6"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-12T20:41:12Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 2 benchmarks\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :warning: **17 "
+    }
+  ],
+  "head_activity_at": "2026-11-12T20:30:51Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T20:33:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-12T20:41:12Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T20:58:19Z",
+      "state": "commented"
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "cause": "The historical check was cancelled; gh reports `log not found`, so its job log has expired or is no longer available."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports two route-matching regressions of 5.07%-5.09%; it also warns that three significantly changed benchmarks used different hardware, so attribution is uncertain."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-12T20:30:51Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

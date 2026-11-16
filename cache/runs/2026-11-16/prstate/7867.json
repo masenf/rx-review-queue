@@ -1,0 +1,188 @@
+{
+  "number": 7867,
+  "fetched_at": "2026-11-16T21:33:14Z",
+  "author_login": "MaiAditya",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "MaiAditya/reflex",
+  "head_sha": "9cd99a462a93292d81a6529870fbb9c14df0eb69",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7840,
+      "title": "\"Decorators above `@rx.event`\" deprecation names only the first offending method per class",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T06:03:49Z",
+      "can_push": true,
+      "commit_id": "3516f5b5592571c0ed60bf74a76a1a55e666181c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T06:05:38Z",
+      "can_push": true,
+      "commit_id": "3516f5b5592571c0ed60bf74a76a1a55e666181c"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T06:14:48Z",
+      "can_push": false,
+      "commit_id": "3516f5b5592571c0ed60bf74a76a1a55e666181c"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T06:14:50Z",
+      "can_push": false,
+      "commit_id": "9cd99a462a93292d81a6529870fbb9c14df0eb69"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "CANCELLED": 1,
+      "FAILURE": 1,
+      "SKIPPED": 5,
+      "SUCCESS": 164
+    },
+    "failing": [
+      "CodSpeed Performance Analysis",
+      "changelog"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T06:03:45Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=104187558&amp;sig=c7c6c93a8c3cbb7864a22b557e54f31b5e05832b76bb8c6680a1db5366e5"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-12T17:01:36Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 1.73%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-11-12T06:07:16Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T06:03:45Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T06:03:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T06:03:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T06:05:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T06:05:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T06:14:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T06:14:50Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-12T17:01:36Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Compare the complete deprecation-warning messages in the new tests instead of matching method-name substrings.",
+      "addressed": true,
+      "path": "tests/units/test_state.py",
+      "outdated": true
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Extract the repeated wrapped-handler deprecation feature identifier into one named constant.",
+      "addressed": true,
+      "path": "reflex/state.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Assert exact full deprecation-warning messages, normalizing run-dependent source locations.",
+      "addressed": true,
+      "path": "tests/units/test_state.py",
+      "outdated": true
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 131346085371,
+      "cause": "CodSpeed reports three regressions: test_state_access[read_cached_computed] from 45.6 ms to 50.8 ms (-10.33%), test_state_update_wire_serialization[model_1000] from 25.2 ms to 26.5 ms (-4.87%), and test_state_access[write_inherited] from 213 ms to 222.8 ms (-4.39%). It also warns that four significant changes were measured on different hardware."
+    },
+    {
+      "check": "changelog",
+      "check_id": 131339773683,
+      "cause": "The job log shows GitHub cancelled the run during checkout because a higher-priority waiting request for changelog-5272405329 existed; news-fragment and workflow-sync checks never ran, so this is cancellation fallout rather than a changelog assertion failure."
+    }
+  ],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-12T06:14:50Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

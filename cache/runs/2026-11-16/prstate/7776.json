@@ -1,0 +1,123 @@
+{
+  "number": 7776,
+  "fetched_at": "2026-11-16T21:25:07Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "ba559e4122ebb07fdad96735f6f807342aeb19dc",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7771,
+      "title": "SharedState: an event cancelled while taking its linked locks leaks the locks it already holds, hanging every linked client",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T17:50:55Z",
+      "can_push": true,
+      "commit_id": "1e80631327544fcff42cc1e70d81aaafd716b439"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 5,
+      "SUCCESS": 165
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:51:00Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=100751565&amp;sig=c8c485682a997a6da0d9789ae6cc8af98d2c6d08563716cdd9b431ad4a6b"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-09T18:59:58Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.68%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:00:31Z",
+      "excerpt": "**CodSpeed Performance Analysis (-4.68%) isn't from this PR's code.**\n\n- **What it flags:** `test_state_collection_assignment[1000]` (-4.82%) and `test_state_up"
+    }
+  ],
+  "head_activity_at": "2026-11-09T18:48:36Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:50:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:51:00Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-09T18:59:58Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:00:31Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "codspeed",
+      "ask": "Fix or acknowledge the current-head CodSpeed regressions in test_state_collection_assignment[1000] and test_state_update_wire_serialization[model_1000].",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "conclusion": "FAILURE",
+      "check_run_id": 129368443393,
+      "cause": "Current CodSpeed output reports test_state_collection_assignment[1000] slowing 11.4 to 12.0 ms (-4.82%) and test_state_update_wire_serialization[model_1000] slowing 25.1 to 26.3 ms (-4.53%). The PR changes shared-state lock handling, not either benchmark path; CodSpeed also warns that both significant comparisons used different hardware and that nine benchmarks are dominated by system calls. This is an external CodSpeed check, so no GitHub Actions job log exists."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-09T19:00:31Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

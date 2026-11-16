@@ -1,0 +1,165 @@
+{
+  "number": 7885,
+  "fetched_at": "2026-11-16T21:18:14Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "cb6a0163f6fbe23c4e995afe3dc223d6c1c412dc",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7831,
+      "title": "DeclarativeBase serializer renders blanks silently: hybrid_property values are never sent, expired instances serialize as {}",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T09:09:58Z",
+      "can_push": true,
+      "commit_id": "404321e8daf4255d169afcb4b7ad20d3c7c302de"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T09:13:06Z",
+      "can_push": true,
+      "commit_id": "404321e8daf4255d169afcb4b7ad20d3c7c302de"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T09:40:00Z",
+      "can_push": false,
+      "commit_id": "79fcd04fc61aa61ee6b1986762997460f7941508"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T09:40:06Z",
+      "can_push": false,
+      "commit_id": "79fcd04fc61aa61ee6b1986762997460f7941508"
+    },
+    {
+      "by": "YusefSyed",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-14T18:01:30Z",
+      "can_push": false,
+      "commit_id": "cb6a0163f6fbe23c4e995afe3dc223d6c1c412dc"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 171,
+    "by_state": {
+      "SKIPPED": 5,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T09:09:53Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105693831&amp;sig=40fc88edf65e77ff7a5b7fbd463f45360244ce0acbdca5425486b5734b7e"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-13T09:17:25Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 6.87%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-11-13T09:51:31Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T09:09:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T09:09:56Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T09:09:58Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T09:13:06Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T09:13:07Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T09:17:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T09:40:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T09:40:06Z"
+    },
+    {
+      "kind": "review",
+      "by": "YusefSyed",
+      "association": "NONE",
+      "at": "2026-11-14T18:01:30Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-13T09:51:31Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 3,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

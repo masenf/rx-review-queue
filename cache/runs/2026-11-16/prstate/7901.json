@@ -1,0 +1,82 @@
+{
+  "number": 7901,
+  "fetched_at": "2026-11-16T21:18:12Z",
+  "author_login": "zeyadrabie",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "zeyadrabie/reflex",
+  "head_sha": "ab49ce0554cdb7f80a5b489de10db25bcda6e412",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7844,
+      "title": "Unit tests: invoking the reflex CLI in-process leaves REFLEX_MANAGED_LOGGING=true in os.environ for every later test",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-15T00:58:42Z",
+      "can_push": true,
+      "commit_id": "ab49ce0554cdb7f80a5b489de10db25bcda6e412"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T00:58:24Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=107235058&amp;sig=10b49d7c8dac3f75d413d91f8cf133b203f44b6a46ae6d606e899c3cab32"
+    }
+  ],
+  "head_activity_at": "2026-11-15T00:41:43Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T00:58:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T00:58:42Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-15T00:41:43Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

@@ -1,0 +1,203 @@
+{
+  "number": 7871,
+  "fetched_at": "2026-11-16T21:25:42Z",
+  "author_login": "psinghal01",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "psinghal01/reflex",
+  "head_sha": "3f0deb3c41bb7f09dbadfa037bf362eb1cfac655",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7858,
+      "title": "Upload handler that raises after yielding an update: the browser shows no error (only a console.log)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T18:18:00Z",
+      "can_push": true,
+      "commit_id": "d284ccd7b07b477d6aa5851ab81c6e3a2a765d22"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T18:21:36Z",
+      "can_push": true,
+      "commit_id": "d284ccd7b07b477d6aa5851ab81c6e3a2a765d22"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T06:00:38Z",
+      "can_push": true,
+      "commit_id": "3f0deb3c41bb7f09dbadfa037bf362eb1cfac655"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T06:03:14Z",
+      "can_push": true,
+      "commit_id": "3f0deb3c41bb7f09dbadfa037bf362eb1cfac655"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=ffc56d42-dbf7-47fb-bd1e-59b7a056cd1d -->\n<!-- cubic:review-run=c328e410-8f15-5f89-91b7-4766495cc981 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: `handled[0]` allows the exception handler t"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=e4510d37-2e18-4c89-9a7c-1a560a87b2f6 -->\n<!-- cubic:review-run=c328e410-8f15-5f89-91b7-4766495cc981 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: This invokes `backend_exception_handler` a "
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Successful uploads lose browser events.** The new `_emit_event_impl` captures every"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a9643ae2-e72d-43ed-a814-42effbcedfe6 -->\n<!-- cubic:review-run=748fd194-9a5c-53cb-a0d1-59c0bef72cee -->\n<!-- metadata:{\"confidence\":10} -->\nP2: This buffers every frontend event from the "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b9e93dd6-1da4-423b-948a-a5df0e71302b -->\n<!-- cubic:review-run=748fd194-9a5c-53cb-a0d1-59c0bef72cee -->\n<!-- metadata:{\"confidence\":8} -->\nP2: `_handle_backend_exception` only awaits coro"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T18:17:55Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=104873782&amp;sig=2fbc38120e9dbec1fafc3653f8a5d33a595b906c9080039f570c8a8536fb"
+    }
+  ],
+  "head_activity_at": "2026-11-13T05:58:03Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T18:17:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T18:17:59Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T18:18:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T18:21:36Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T18:21:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T06:00:37Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T06:00:38Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T06:03:14Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T06:03:14Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Keep the regression test strict enough to require exactly one backend exception-handler invocation.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Avoid invoking the backend exception handler twice for a post-yield upload failure.",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Forward browser events from successful uploads instead of leaving them buffered and dropped.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Forward buffered toast, redirect, and other frontend events when an upload completes successfully.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Use `inspect.isawaitable` so Future and custom-awaitable exception-handler results are awaited before chaining.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-13T05:58:03Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

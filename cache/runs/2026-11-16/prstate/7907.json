@@ -1,0 +1,134 @@
+{
+  "number": 7907,
+  "fetched_at": "2026-11-16T21:18:14Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "231713f8e4c0d81738754463d0a814210020cd66",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7839,
+      "title": "Awaiting an event handler from a background task: a caught exception still shows the error toast, and a finished supersedes=True handler raises CancelledError (memory manager)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-15T09:16:52Z",
+      "can_push": true,
+      "commit_id": "20cc4b64ae6abd7a9240bf8b757ed059d7f853f1"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-15T09:17:39Z",
+      "can_push": true,
+      "commit_id": "20cc4b64ae6abd7a9240bf8b757ed059d7f853f1"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=cb739ea4-cb40-4ae6-94bd-0cb87a946702 -->\n<!-- cubic:review-run=b4253d56-8eb8-55bc-9a93-9a053793663b -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This fixed sleep does not guarantee that the"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 168,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 165
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T09:17:35Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=107428883&amp;sig=bfdf75e67b97d39c9b4b8f73b95ec846a237c4ce9c92c60e8bb93a54ecc1"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-15T09:23:57Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-11-15T09:23:20Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T09:16:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T09:16:53Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T09:17:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T09:17:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T09:17:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-15T09:23:57Z"
+    }
+  ],
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Replace the fixed sleep in the supersession race test with a deterministic synchronization barrier.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-15T09:23:20Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

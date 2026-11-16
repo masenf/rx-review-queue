@@ -1,0 +1,297 @@
+{
+  "number": 7778,
+  "fetched_at": "2026-11-16T21:25:08Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "7b35da6f55935b12028263407322b7cb3003225a",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7773,
+      "title": "reflex cloud --watch: a second connection blip stops following a live deployment, because the first outage's start time is never cleared",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T17:51:30Z",
+      "can_push": true,
+      "commit_id": "286d5dd650f394497dd5f31b4e01e2e7a282d53c"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T17:51:37Z",
+      "can_push": true,
+      "commit_id": "286d5dd650f394497dd5f31b4e01e2e7a282d53c"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:53:53Z",
+      "can_push": true,
+      "commit_id": "8245db9e6628efb56d94da6197217d50c45f0afb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:53:55Z",
+      "can_push": true,
+      "commit_id": "8245db9e6628efb56d94da6197217d50c45f0afb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:53:58Z",
+      "can_push": true,
+      "commit_id": "8245db9e6628efb56d94da6197217d50c45f0afb"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:56:08Z",
+      "can_push": true,
+      "commit_id": "8245db9e6628efb56d94da6197217d50c45f0afb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:58:56Z",
+      "can_push": true,
+      "commit_id": "5b71197fd8ae12bf9972a0ed71e6116f153b82c5"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T19:01:18Z",
+      "can_push": true,
+      "commit_id": "5b71197fd8ae12bf9972a0ed71e6116f153b82c5"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T19:03:51Z",
+      "can_push": true,
+      "commit_id": "fa3f202a9b79ba7d40923f2b70baddc8583818f0"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T19:07:49Z",
+      "can_push": true,
+      "commit_id": "fa3f202a9b79ba7d40923f2b70baddc8583818f0"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T19:10:11Z",
+      "can_push": true,
+      "commit_id": "fa3f202a9b79ba7d40923f2b70baddc8583818f0"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 5,
+      "SUCCESS": 165
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:51:25Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=100751851&amp;sig=1749cb53f912467e021e4c749dea522f6bdf60075f03ecff6072017754e7"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-09T19:01:12Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 0.56%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:01:27Z",
+      "excerpt": "**CodSpeed Performance Analysis (1 benchmark regressed) isn't from this PR's code.**\n\n- **What it flags:** `test_state_collection_assignment[1000]` (11.4 ms \u2192 1"
+    }
+  ],
+  "head_activity_at": "2026-11-09T19:10:06Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:51:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:51:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:51:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:51:37Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:51:37Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:53:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:53:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:53:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:56:07Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:56:08Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:58:56Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-09T19:01:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T19:01:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T19:01:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:01:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:03:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T19:07:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T19:07:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:10:11Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "codspeed",
+      "ask": "Fix or acknowledge the current-head CodSpeed regressions in test_route_matching[10] and test_state_collection_assignment[1000].",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "conclusion": "FAILURE",
+      "check_run_id": 129379761511,
+      "cause": "Current CodSpeed output reports test_route_matching[10] slowing 50.2 to 53.4 us (-6.03%) and test_state_collection_assignment[1000] slowing 11.4 to 12.1 ms (-5.24%). This PR changes only deployment-watch code under reflex-hosting-cli, not either benchmark path; CodSpeed also warns that four significant changes used different hardware and that 17 benchmarks are dominated by system calls. This is an external CodSpeed check, so no GitHub Actions job log exists."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-09T19:10:11Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

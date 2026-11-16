@@ -1,0 +1,116 @@
+{
+  "number": 7900,
+  "fetched_at": "2026-11-16T21:18:13Z",
+  "author_login": "YusefSyed",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "YusefSyed/reflex",
+  "head_sha": "2c47be417846777919b608d52dd472425ec247f6",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7835,
+      "title": "Redis: after an outage longer than ~5 s, updates produced on another worker never reach already-connected clients",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-14T17:44:15Z",
+      "can_push": true,
+      "commit_id": "ec775cbfa95bb5d2cbaff0daa92dafad16eca2c2"
+    },
+    {
+      "by": "YusefSyed",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-14T19:16:23Z",
+      "can_push": false,
+      "commit_id": "2c47be417846777919b608d52dd472425ec247f6"
+    },
+    {
+      "by": "YusefSyed",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-14T19:16:29Z",
+      "can_push": false,
+      "commit_id": "2c47be417846777919b608d52dd472425ec247f6"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T17:42:13Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=107019071&amp;sig=7503ad26ac8145cf06f176db036886e65dd79cfbc42f0760c104ccafacfc"
+    }
+  ],
+  "head_activity_at": "2026-11-14T18:40:19Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T17:42:13Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T17:44:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T17:44:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "YusefSyed",
+      "association": "NONE",
+      "at": "2026-11-14T19:16:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "YusefSyed",
+      "association": "NONE",
+      "at": "2026-11-14T19:16:29Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-14T19:16:29Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

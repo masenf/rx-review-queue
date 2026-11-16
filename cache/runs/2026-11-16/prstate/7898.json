@@ -1,0 +1,116 @@
+{
+  "number": 7898,
+  "fetched_at": "2026-11-16T21:18:22Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "d36e95aba92cd10490c8bd8a24212104e520b8be",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7849,
+      "title": "Backend-only start without a .web directory serializes the initial state with no plugin libraries bundled (reflex-enterprise apps die: \"Library @radix-ui/themes is not bundled\")",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-14T11:19:00Z",
+      "can_push": true,
+      "commit_id": "0e01ff01cf3d7bd4fcf886f0ba2b351981d24926"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-14T11:19:43Z",
+      "can_push": true,
+      "commit_id": "0e01ff01cf3d7bd4fcf886f0ba2b351981d24926"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 168,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 165
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T11:18:57Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=106858214&amp;sig=f1f46b3f311c9b458470cc38163b7545e043977c7f6509d2520660adebd0"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-14T11:23:23Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-11-14T13:45:32Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T11:18:57Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T11:19:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T11:19:00Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-14T11:19:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-14T11:23:23Z"
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "failing_job_findings": [],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-14T13:45:32Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 2,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

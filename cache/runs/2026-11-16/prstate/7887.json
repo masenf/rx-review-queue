@@ -1,0 +1,124 @@
+{
+  "number": 7887,
+  "fetched_at": "2026-11-16T21:18:13Z",
+  "author_login": "AzalHoseinian",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "AzalHoseinian/reflex",
+  "head_sha": "0faa6a65c01aac3eec6dd6d95fac5979cd962197",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7846,
+      "title": "Key access on a Var typed as a parametrized generic TypedDict raises VarAttributeError",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:03:27Z",
+      "can_push": true,
+      "commit_id": "68e18178bc71946ad9d996cfacd2ed2c1b67cec7"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:03:51Z",
+      "can_push": true,
+      "commit_id": "68e18178bc71946ad9d996cfacd2ed2c1b67cec7"
+    },
+    {
+      "by": "YusefSyed",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-14T18:02:05Z",
+      "can_push": false,
+      "commit_id": "0faa6a65c01aac3eec6dd6d95fac5979cd962197"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 2,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:03:47Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105815357&amp;sig=26df9c8dbbdfe2f4d1ea0c677418e7ecf9455fee295ad5e0a46fb49d8c68"
+    }
+  ],
+  "head_activity_at": "2026-11-13T13:23:42Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:03:27Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:03:27Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:03:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:03:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:03:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "YusefSyed",
+      "association": "NONE",
+      "at": "2026-11-14T18:02:05Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-13T13:23:42Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

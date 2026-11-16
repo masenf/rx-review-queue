@@ -1,0 +1,104 @@
+{
+  "number": 7699,
+  "fetched_at": "2026-11-16T21:25:20Z",
+  "author_login": "DevChiniwala",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "DevChiniwala/reflex",
+  "head_sha": "911c38d970d4e45b3b1723066b4883195e538d3d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "copilot-pull-request-reviewer",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-10-31T10:11:57Z",
+      "can_push": false,
+      "commit_id": "10a54925031204e0b927a767ff267e9d847f4915"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T10:13:02Z",
+      "can_push": true,
+      "commit_id": "10a54925031204e0b927a767ff267e9d847f4915"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 5,
+    "by_state": {
+      "SKIPPED": 2,
+      "SUCCESS": 3
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 3
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T10:13:14Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=91912204&amp;sig=55ecaa12e23ec48b0a05748017c1d40984c458c330de597b822aee0c5e7c8"
+    },
+    {
+      "by": "DevChiniwala",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-11T20:21:23Z",
+      "excerpt": "Synced current main in `911c38d970d4e45b3b1723066b4883195e538d3d`. The test-path conflict is resolved by preserving upstream's ORM serializer tests unchanged an"
+    }
+  ],
+  "head_activity_at": "2026-11-11T20:16:21Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "Copilot",
+      "association": "NONE",
+      "at": "2026-10-31T10:11:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T10:13:02Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T10:13:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "DevChiniwala",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-11T20:21:23Z"
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-11T20:21:23Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

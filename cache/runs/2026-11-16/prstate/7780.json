@@ -1,0 +1,241 @@
+{
+  "number": 7780,
+  "fetched_at": "2026-11-16T21:25:08Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7775,
+      "title": "AppHarness: stop() is not idempotent, and a failed start() inside `with` leaks the backend thread and registry context",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:03:33Z",
+      "can_push": true,
+      "commit_id": "5a6d86bf1ea5cd15af2445c8fccd7ca68d4c3d19"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:05:52Z",
+      "can_push": true,
+      "commit_id": "5a6d86bf1ea5cd15af2445c8fccd7ca68d4c3d19"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:09:11Z",
+      "can_push": true,
+      "commit_id": "5a6d86bf1ea5cd15af2445c8fccd7ca68d4c3d19"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:04Z",
+      "can_push": true,
+      "commit_id": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:06Z",
+      "can_push": true,
+      "commit_id": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:08Z",
+      "can_push": true,
+      "commit_id": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:11Z",
+      "can_push": true,
+      "commit_id": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:13Z",
+      "can_push": true,
+      "commit_id": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:15Z",
+      "can_push": true,
+      "commit_id": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:18Z",
+      "can_push": true,
+      "commit_id": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 7,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 171,
+    "by_state": {
+      "SKIPPED": 5,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:03:28Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=100764981&amp;sig=cfcd89d444834902c566f44f737e50329cb6f4d9ee7d7dd0ceddfec3662b"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-09T19:01:57Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.18%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-11-09T18:54:57Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:03:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:03:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:03:33Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:05:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:05:52Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:09:10Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:09:11Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:18Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-09T19:01:57Z"
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-09T18:55:18Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 7,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

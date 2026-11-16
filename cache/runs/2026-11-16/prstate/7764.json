@@ -1,0 +1,247 @@
+{
+  "number": 7764,
+  "fetched_at": "2026-11-16T21:33:08Z",
+  "author_login": "Aarkin7",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "Aarkin7/reflex",
+  "head_sha": "20a614abccdb312667f3be353ab3ce639493f1f7",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7763,
+      "title": "Computed var keeps its first value when auto-dependency tracking misses fields read through super(), a nested helper, or getattr",
+      "filed_by": "Aarkin7"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-07T15:39:56Z",
+      "can_push": true,
+      "commit_id": "0d6ccd47491b41f7548eab2d5424c3dd6f758eda"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-07T15:43:19Z",
+      "can_push": true,
+      "commit_id": "0d6ccd47491b41f7548eab2d5424c3dd6f758eda"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-07T15:44:29Z",
+      "can_push": true,
+      "commit_id": "0d6ccd47491b41f7548eab2d5424c3dd6f758eda"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-07T17:27:15Z",
+      "can_push": true,
+      "commit_id": "303c5c5c96128c968b0e0a27ad78d0d63878cf16"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-07T18:10:54Z",
+      "can_push": true,
+      "commit_id": "3825f5d13f788e75ef2965a1fc62e930d57d6e62"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-07T18:50:30Z",
+      "can_push": true,
+      "commit_id": "92a7a66b9db3fd262b6744913ba0c78d2d3fad34"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-08T19:22:12Z",
+      "can_push": true,
+      "commit_id": "20a614abccdb312667f3be353ab3ce639493f1f7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99"
+  ],
+  "threads": {
+    "total": 17,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 4,
+      "SUCCESS": 166
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed flags computed-dependency fanout regressions: fanout[50] rose from 1.7 ms to 5.7 ms (-69.51% efficiency) and fanout[10] from 483.7 us to 654.4 us (-26.09%); it warns that 125 significant changes used a different software environment."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:39:51Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=99206088&amp;sig=2f1a73887db0968be5948b1948296e55878150514d52fe60f80f52ec24a7f"
+    },
+    {
+      "by": "Aarkin7",
+      "association": "NONE",
+      "at": "2026-11-09T08:01:56Z",
+      "excerpt": "Fair, and the numbers back it: `super()` resolution alone is ~250 of the ~440 lines this adds to `dep_tracking.py`, and nested-call binding most of the rest. Th"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-12T17:02:24Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 2 benchmarks\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :warning: **17 "
+    }
+  ],
+  "head_activity_at": "2026-11-07T19:11:08Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:39:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:39:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:39:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:43:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:43:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:43:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:44:28Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T15:44:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T17:27:14Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T17:27:15Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T18:10:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T18:10:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T18:50:30Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-07T18:50:30Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-08T19:22:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "Aarkin7",
+      "association": "NONE",
+      "at": "2026-11-09T08:01:56Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-12T17:02:24Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-09T08:01:56Z",
+  "last_maintainer_activity_at": "2026-11-08T19:22:12Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

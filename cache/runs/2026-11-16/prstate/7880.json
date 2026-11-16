@@ -1,0 +1,224 @@
+{
+  "number": 7880,
+  "fetched_at": "2026-11-16T21:25:14Z",
+  "author_login": "MaiAditya",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "MaiAditya/reflex",
+  "head_sha": "1b0af00eb6ade34757746516f3a4ed1bed7f54d0",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7854,
+      "title": "trusted_proxy_hops: the selected X-Forwarded-For entry becomes client_ip verbatim, with no IP validation",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T03:41:55Z",
+      "can_push": true,
+      "commit_id": "b3a32ee9c93c5504c6b3a4f88121f1451d947f31"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T03:44:13Z",
+      "can_push": true,
+      "commit_id": "b3a32ee9c93c5504c6b3a4f88121f1451d947f31"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T05:29:42Z",
+      "can_push": false,
+      "commit_id": "47a5c935626fb71a87f44585b7c897a5b6c1d0b7"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T05:29:44Z",
+      "can_push": false,
+      "commit_id": "47a5c935626fb71a87f44585b7c897a5b6c1d0b7"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T05:29:47Z",
+      "can_push": false,
+      "commit_id": "47a5c935626fb71a87f44585b7c897a5b6c1d0b7"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T05:34:40Z",
+      "can_push": true,
+      "commit_id": "47a5c935626fb71a87f44585b7c897a5b6c1d0b7"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 4,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 174,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 6,
+      "SUCCESS": 167
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 170
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:41:51Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105473862&amp;sig=4affdda39c071a599b9ed6fe4aa8a97e6f2db884845f7e18826ad5134b61"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-13T03:46:20Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 5.9%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :war"
+    },
+    {
+      "by": "YusefSyed",
+      "association": "NONE",
+      "at": "2026-11-13T04:16:18Z",
+      "excerpt": "`ipaddress.ip_address()` doesn't validate an IPv6 zone index, the text after a `%`, so with `trusted_proxy_hops=1` a client can still pick its own `client_ip` o"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T06:20:19Z",
+      "excerpt": "Good catch, thanks. Fixed in 1b0af00: an entry with a `%` zone index now falls back to the peer address, and both of your examples are in the parametrized test "
+    }
+  ],
+  "head_activity_at": "2026-11-13T06:03:55Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:41:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:41:54Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:41:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:44:13Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:44:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:44:14Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T03:46:20Z"
+    },
+    {
+      "kind": "comment",
+      "by": "YusefSyed",
+      "association": "NONE",
+      "at": "2026-11-13T04:16:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T05:29:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T05:29:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T05:29:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T05:34:40Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T05:34:40Z"
+    },
+    {
+      "kind": "comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T06:20:19Z"
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports three route-matching/serialization regressions of 5.56%-6.44%; it also warns that three significantly changed benchmarks used different hardware, so attribution is uncertain."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-13T06:20:19Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

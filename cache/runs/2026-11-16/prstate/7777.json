@@ -1,0 +1,123 @@
+{
+  "number": 7777,
+  "fetched_at": "2026-11-16T21:25:07Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "ca1731ae7becd50a01d11dab73cb24ba3e8e71d6",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7772,
+      "title": "EventProcessor: a long cancelled same-token backlog raises RecursionError and stalls that client's events for good",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T17:55:23Z",
+      "can_push": true,
+      "commit_id": "2a3f755e519b87ea957dce57276ba0774572e0d9"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 5,
+      "SUCCESS": 165
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:50:44Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=100751699&amp;sig=7af2d30331e4e986d2d837f537e5f45be024069cc8b9fc71991af7eb9f71"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-09T19:01:15Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 1.8%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :war"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:02:20Z",
+      "excerpt": "**CodSpeed Performance Analysis (-1.8%) isn't from this PR's code.**\n\n- **What it flags:** `test_state_collection_assignment[1000]` (11.4 \u2192 12.1 ms) and `test_s"
+    }
+  ],
+  "head_activity_at": "2026-11-09T18:48:37Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:50:44Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T17:55:23Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-09T19:01:15Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:02:20Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "codspeed",
+      "ask": "Fix or acknowledge the current-head CodSpeed regressions in test_state_collection_assignment[1000] and test_state_update_wire_serialization[model_1000].",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "conclusion": "FAILURE",
+      "check_run_id": 129369175883,
+      "cause": "Current CodSpeed output reports test_state_collection_assignment[1000] slowing 11.4 to 12.1 ms (-5.58%) and test_state_update_wire_serialization[model_1000] slowing 25.1 to 26.4 ms (-4.72%). The PR changes queued-event dispatch, not either benchmark path; CodSpeed also warns that three significant changes used different hardware and that 21 benchmarks are dominated by system calls. This is an external CodSpeed check, so no GitHub Actions job log exists."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-09T19:02:20Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

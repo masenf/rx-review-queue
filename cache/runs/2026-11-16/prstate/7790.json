@@ -1,0 +1,129 @@
+{
+  "number": 7790,
+  "fetched_at": "2026-11-16T21:33:54Z",
+  "author_login": "munjikesh",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "munjikesh/reflex",
+  "head_sha": "ad98df58f22b4eb34300f838e3d1cba712b3e286",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T19:15:09Z",
+      "can_push": true,
+      "commit_id": "dcf1941011f1fdf4b35792be3191b01a41ca0d0a"
+    },
+    {
+      "by": "munjikesh",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-11T00:27:47Z",
+      "can_push": false,
+      "commit_id": "ad98df58f22b4eb34300f838e3d1cba712b3e286"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 167,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 3,
+      "SUCCESS": 163
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 163
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed flags two regressions: route_matching[1000] slowed 5.86% (47.8 us to 50.7 us) and format_var_outside_operation slowed 4.03% (30.0 ms to 31.3 ms); it warns that two significant changes ran on different hardware."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T19:15:26Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=102235935&amp;sig=6ba0e65ec63ca3da68339acd501f37c00fad5ae737647ba054483d138ebe"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-12T17:02:34Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.95%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    },
+    {
+      "by": "munjikesh",
+      "association": "NONE",
+      "at": "2026-11-12T17:15:29Z",
+      "excerpt": "On the CodSpeed report: this PR only changes `tests/units/utils/test_telemetry_accounting.py`. It doesn't touch the code under `test_route_matching[1000]` or `t"
+    }
+  ],
+  "head_activity_at": "2026-11-11T00:27:35Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T19:15:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T19:15:09Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T19:15:26Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "munjikesh",
+      "association": "NONE",
+      "at": "2026-11-11T00:27:47Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-12T17:02:34Z"
+    },
+    {
+      "kind": "comment",
+      "by": "munjikesh",
+      "association": "NONE",
+      "at": "2026-11-12T17:15:29Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-12T17:15:29Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

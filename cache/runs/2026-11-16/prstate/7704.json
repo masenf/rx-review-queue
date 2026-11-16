@@ -1,0 +1,307 @@
+{
+  "number": 7704,
+  "fetched_at": "2026-11-16T21:25:19Z",
+  "author_login": "AP24110011695",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "AP24110011695/reflex",
+  "head_sha": "21e65c6ecea71ece2d112b2b465bd911d5f112f1",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:09:09Z",
+      "can_push": true,
+      "commit_id": "af9302478cbc2634436d071bad756d341b7e2316"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:10:16Z",
+      "can_push": true,
+      "commit_id": "af9302478cbc2634436d071bad756d341b7e2316"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:15:56Z",
+      "can_push": false,
+      "commit_id": "267b8541e32c550a012ab9939d9c92a96267bbdc"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:15:59Z",
+      "can_push": false,
+      "commit_id": "267b8541e32c550a012ab9939d9c92a96267bbdc"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:16:04Z",
+      "can_push": false,
+      "commit_id": "267b8541e32c550a012ab9939d9c92a96267bbdc"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-31T20:17:11Z",
+      "can_push": true,
+      "commit_id": "267b8541e32c550a012ab9939d9c92a96267bbdc"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-08T19:44:32Z",
+      "can_push": true,
+      "commit_id": "a2c175be0d4610bd13bee6458a2ef7a280d560c1"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T15:30:29Z",
+      "can_push": true,
+      "commit_id": "be178412b1babaf1aa914f397ae033b425e614f5"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T15:30:44Z",
+      "can_push": true,
+      "commit_id": "be178412b1babaf1aa914f397ae033b425e614f5"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T16:17:36Z",
+      "can_push": false,
+      "commit_id": "21e65c6ecea71ece2d112b2b465bd911d5f112f1"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T16:17:39Z",
+      "can_push": false,
+      "commit_id": "21e65c6ecea71ece2d112b2b465bd911d5f112f1"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T16:17:43Z",
+      "can_push": false,
+      "commit_id": "21e65c6ecea71ece2d112b2b465bd911d5f112f1"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 7,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 167,
+    "by_state": {
+      "FAILURE": 2,
+      "SKIPPED": 3,
+      "SUCCESS": 162
+    },
+    "failing": [
+      "performance-tests-gate",
+      "Run benchmarks"
+    ],
+    "pending": [],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:10:11Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=92069690&amp;sig=db22fcc236333cf7c594664f041f54fbeae70688b4cde3465843f0345f92f"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T15:29:17Z",
+      "excerpt": "Confirmed \u2014 zero callers: a search across `reflex/`, `docs/`, and the test suite finds no uses (the only references anywhere were the tests this PR previously a"
+    },
+    {
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T16:18:22Z",
+      "excerpt": "Follow-up on the conversion: the review bots flagged that an outright removal breaks downstream imports without the deprecation cycle AGENTS.md requires (ln shi"
+    }
+  ],
+  "head_activity_at": "2026-11-09T16:16:50Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:09:09Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:09:09Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:10:11Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:10:15Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:10:16Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:15:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:15:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:16:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:17:11Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-31T20:17:11Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-08T19:44:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T15:29:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T15:30:29Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T15:30:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T15:30:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T15:30:44Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T16:17:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T16:17:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T16:17:43Z"
+    },
+    {
+      "kind": "comment",
+      "by": "AP24110011695",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T16:18:22Z"
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "failing_job_findings": [
+    {
+      "check": "performance-tests-gate",
+      "job_id": 129285736874,
+      "run_id": 42653180467,
+      "cause": "The gate log reports `benchmarks=failure browser-performance=success lighthouse=success` and fails because the benchmark job is blocking."
+    },
+    {
+      "check": "Run benchmarks",
+      "job_id": 129284632797,
+      "run_id": 42653180467,
+      "cause": "CodSpeed runner v5.2.1 exits immediately with `Unsupported system` on the Ubuntu 26.04 runner before either pytest benchmark command runs."
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/utils/test_path_ops.py"
+  ],
+  "last_author_activity_at": "2026-11-09T16:18:22Z",
+  "last_maintainer_activity_at": "2026-11-08T19:44:32Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

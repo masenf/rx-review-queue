@@ -1,0 +1,129 @@
+{
+  "number": 7886,
+  "fetched_at": "2026-11-16T21:18:14Z",
+  "author_login": "qubydev",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "qubydev/reflex",
+  "head_sha": "ac513f018cf251e60672fe51e181ee1c44cb64c1",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7832,
+      "title": "A middleware that raises on a lifespan scope silently disables a FastAPI api_transformer's lifespan (only an INFO line)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T10:32:39Z",
+      "can_push": true,
+      "commit_id": "777510452aaf75ff22734b05f08a1b6c63bff643"
+    },
+    {
+      "by": "YusefSyed",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-14T18:01:19Z",
+      "can_push": false,
+      "commit_id": "ac513f018cf251e60672fe51e181ee1c44cb64c1"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 1,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 171,
+    "by_state": {
+      "SKIPPED": 4,
+      "SUCCESS": 167
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "chatgpt-codex-connector",
+      "association": "NONE",
+      "at": "2026-11-13T10:30:26Z",
+      "excerpt": "<!-- codex-pull-request-review-summary -->\n<!-- codex-review-state:v1 {\"code_review\":{\"commit_sha\":\"777510452aaf75ff22734b05f08a1b6c63bff643\",\"has_any_findings\""
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T10:32:16Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105752483&amp;sig=01499a4e61be5ef510c282f76306ebbcabd569c12e4b2f1d642499d888cc"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-13T10:40:03Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 4.67%**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :war"
+    }
+  ],
+  "head_activity_at": "2026-11-13T12:47:42Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "chatgpt-codex-connector[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T10:30:26Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T10:32:16Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T10:32:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T10:32:39Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T10:40:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "YusefSyed",
+      "association": "NONE",
+      "at": "2026-11-14T18:01:19Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-13T12:47:42Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 3,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

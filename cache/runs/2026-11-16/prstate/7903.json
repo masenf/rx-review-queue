@@ -1,0 +1,213 @@
+{
+  "number": 7903,
+  "fetched_at": "2026-11-16T21:18:14Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "7a39d938497adb3817860d4a2ea82fcfc15d68c2",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7836,
+      "title": "Inside an `@rx.memo` body, hooks of rx.cond / rx.foreach children are hoisted: cond on_mount fires unconditionally, foreach items crash the page",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-15T08:37:25Z",
+      "can_push": true,
+      "commit_id": "7f2b3e396baade781e51a8928e8bc2d0e2794f88"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-15T08:38:49Z",
+      "can_push": true,
+      "commit_id": "7f2b3e396baade781e51a8928e8bc2d0e2794f88"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-15T08:49:20Z",
+      "can_push": true,
+      "commit_id": "ca0521b6738c0413fb75ff75b588478e91f09c70"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-15T08:49:22Z",
+      "can_push": true,
+      "commit_id": "ca0521b6738c0413fb75ff75b588478e91f09c70"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-15T08:50:15Z",
+      "can_push": true,
+      "commit_id": "ca0521b6738c0413fb75ff75b588478e91f09c70"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-15T08:50:20Z",
+      "can_push": true,
+      "commit_id": "ca0521b6738c0413fb75ff75b588478e91f09c70"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=b440c278-bb42-45ea-83f2-2d7a11d22c50 -->\n<!-- cubic:review-run=61d2e22a-6af4-547f-b26a-61684c6b2f7b -->\n<!-- metadata:{\"confidence\":8} -->\nP2: This pass never scopes branch or loop compon"
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Changelog is too long.** Both this fragment and `packages/reflex-base/news/+memo-bo"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 168,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 165
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:38:45Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=107413996&amp;sig=642c0f48ef3ca3c1f3799d19856cef30f846388374f55edc985b5b25e15e"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-15T08:44:09Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-11-15T09:19:39Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:37:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:37:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:37:26Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:38:45Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:38:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:38:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-15T08:44:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-15T08:49:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-15T08:49:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:50:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:50:19Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-15T08:50:20Z",
+      "state": "commented"
+    }
+  ],
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Traverse and rewrite component-valued props so branch and loop descendant hooks are scoped inside @rx.memo bodies.",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Shorten both memo-body-hooks news fragments to one or two sentences while retaining the fix and fallback limits.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-15T09:19:39Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

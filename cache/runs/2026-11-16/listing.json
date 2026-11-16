@@ -1,0 +1,2501 @@
+{
+  "fetched_at": "2026-11-16T21:22:10Z",
+  "source": "rest",
+  "authenticated_as": "masenf",
+  "open_count": 134,
+  "prs": [
+    {
+      "number": 7910,
+      "title": "perf: import rarely used modules lazily on Python 3.15 via __lazy_modules__",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "perf"
+      ],
+      "created_at": "2026-11-15T20:42:39Z",
+      "updated_at": "2026-11-16T21:21:56Z",
+      "comments": null,
+      "head_sha": "559b0258e9df3e0472c59828298e71885764c032",
+      "head_ref": "lazy-modules",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7911,
+      "title": "fix(event): report a blocking handler from an installed package once",
+      "draft": false,
+      "author": "vjymisal0",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-16T06:55:03Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "490da26fd527bf938729cc300429756901cac2b6",
+      "head_ref": "fix/blocking-monitor-third-party",
+      "head_repo": "vjymisal0/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7909,
+      "title": "Keep the session when a client token connects again: a token can have several sockets",
+      "draft": true,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation",
+        "breaking"
+      ],
+      "created_at": "2026-11-15T09:49:50Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "159e9052ed692c72e56ee101947ba1ce7dfd43ea",
+      "head_ref": "claude/shared-token-sockets-6345",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7907,
+      "title": "Fix awaiting an event handler from a background task: caught exceptions and finished superseding runs",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-15T09:14:50Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "231713f8e4c0d81738754463d0a814210020cd66",
+      "head_ref": "claude/awaited-handler-from-background-7839",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7906,
+      "title": "Force the exit on a repeated Ctrl-C while a prod lifespan cleanup is stuck",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-15T09:14:00Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "7891ea394417bc95f05215103a600ff3e22402a9",
+      "head_ref": "claude/prod-forced-exit-7834",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7904,
+      "title": "Target the right element when a set_focus/set_value id is built from a Var",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-15T08:45:01Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "96c0897b9e480ed4f2fe51931699f18242f18cee",
+      "head_ref": "ccr-b5f6d6c1-k1ong5-foreach-item-ref",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7903,
+      "title": "Scope hooks under rx.cond, rx.match and rx.foreach in @rx.memo bodies",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-15T08:34:50Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "7a39d938497adb3817860d4a2ea82fcfc15d68c2",
+      "head_ref": "ccr-b5f6d6c1-k1ong5-memo-body-hooks",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7901,
+      "title": "Reset managed logging between unit tests",
+      "draft": false,
+      "author": "zeyadrabie",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-15T00:56:43Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "ab49ce0554cdb7f80a5b489de10db25bcda6e412",
+      "head_ref": "reset-managed-logging-between-tests",
+      "head_repo": "zeyadrabie/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7900,
+      "title": "Keep the Redis pub/sub subscribers retrying through an outage",
+      "draft": false,
+      "author": "YusefSyed",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-14T17:40:15Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "2c47be417846777919b608d52dd472425ec247f6",
+      "head_ref": "fix/redis-subscriber-retry",
+      "head_repo": "YusefSyed/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7897,
+      "title": "Add public component ref Var helper",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "documentation"
+      ],
+      "created_at": "2026-11-14T10:21:05Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "be8f1ed8846ad87d9d1b51f1de5ec6508456aaab",
+      "head_ref": "fix/7848-public-ref-var",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7886,
+      "title": "Warn when ASGI middleware interrupts lifespan startup",
+      "draft": false,
+      "author": "qubydev",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-13T10:30:15Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "ac513f018cf251e60672fe51e181ee1c44cb64c1",
+      "head_ref": "fix/7832-lifespan-startup-warning",
+      "head_repo": "qubydev/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7872,
+      "title": "Browser tests for every docs demo, written beside the demo",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "testing"
+      ],
+      "created_at": "2026-11-12T19:20:47Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "314835da6e2d75836eec9165e2371e1222975254",
+      "head_ref": "claude/docs-demo-tests",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7764,
+      "title": "Track dependencies reached through super(), aliases and nested calls",
+      "draft": false,
+      "author": "Aarkin7",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-07T15:34:51Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "20a614abccdb312667f3be353ab3ce639493f1f7",
+      "head_ref": "fix/7763-computed-var-dep-tracking",
+      "head_repo": "Aarkin7/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7315,
+      "title": "Add Var.dispatch_value for speculative frontend updates",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "roadmap",
+        "breaking"
+      ],
+      "created_at": "2026-09-24T17:42:23Z",
+      "updated_at": "2026-11-16T21:21:55Z",
+      "comments": null,
+      "head_sha": "d912047ceaa4c0645e5bd69387ade1960bf2f360",
+      "head_ref": "claude/gallant-bell-1ivcn5-4-dispatch-value",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7908,
+      "title": "fix: raise BackendVarFormatError for the remaining backend var UI uses",
+      "draft": false,
+      "author": "ShaanGS",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-15T09:17:41Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "6b6244c70a62f686bf9c309ca6cb274299e67253",
+      "head_ref": "fix/backend-var-ui-errors",
+      "head_repo": "ShaanGS/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7905,
+      "title": "Use initial_value for computed var dependencies when building the initial state dict",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-15T09:09:27Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "e11559158cf8401a39d66c14a06cea22efa87c49",
+      "head_ref": "claude/fix-5767-initial-value-dependency",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7902,
+      "title": "Treat None as an empty string in optional StringVar operations",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-15T08:16:55Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "cbd9751a7c009236be5f1de3bfc7911fe987094a",
+      "head_ref": "ccr-b5f6d6c1-k1ong5-optional-str-none",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7898,
+      "title": "fix: include plugin libraries in backend startup",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-14T11:17:07Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "d36e95aba92cd10490c8bd8a24212104e520b8be",
+      "head_ref": "fix/7849-backend-only-plugin-bundles",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7888,
+      "title": "fix: warn when transformer lifespan middleware raises",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-13T12:24:23Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "95e6b80da6bd8e6b3b1647c3a4161448e7273033",
+      "head_ref": "codex/7832-lifespan-warning",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7880,
+      "title": "fix: validate the trusted X-Forwarded-For entry as client_ip",
+      "draft": false,
+      "author": "MaiAditya",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-13T03:40:24Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "1b0af00eb6ade34757746516f3a4ed1bed7f54d0",
+      "head_ref": "fix/trusted-proxy-client-ip",
+      "head_repo": "MaiAditya/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7761,
+      "title": "Stream event handler yield and return values to the frontend caller",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "on deck",
+        "breaking"
+      ],
+      "created_at": "2026-11-06T19:36:51Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "08a6507c52469c0416dca5f7bb675659451d2356",
+      "head_ref": "farhan/amazing-bardeen-8ddaa1",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7727,
+      "title": "fix(vars): ignore mapping key order when deduplicating deltas",
+      "draft": false,
+      "author": "Bl0ck154",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "perf"
+      ],
+      "created_at": "2026-11-03T12:15:20Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "286fac9cb48f1a8f023f218219d55c442dedc536",
+      "head_ref": "fix/delta-key-mapping-order-7253",
+      "head_repo": "Bl0ck154/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7314,
+      "title": "Move the core state machinery into reflex_base.state",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "roadmap",
+        "breaking"
+      ],
+      "created_at": "2026-09-24T17:42:14Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "5977e24ed6b6d669abeaa134c75c3a973c37a086",
+      "head_ref": "claude/gallant-bell-1ivcn5-3-core-state",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6932,
+      "title": "bare websockets",
+      "draft": false,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "roadmap",
+        "perf",
+        "breaking"
+      ],
+      "created_at": "2026-08-22T20:58:25Z",
+      "updated_at": "2026-11-16T21:21:54Z",
+      "comments": null,
+      "head_sha": "b0f9946f0bc7e29236827d90e8b56c3251d8c13c",
+      "head_ref": "make-sio-optional",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6876,
+      "title": "fix: hide the Radix wrapper of a hidden rx.input",
+      "draft": false,
+      "author": "rawsun007",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "on deck"
+      ],
+      "created_at": "2026-08-12T08:32:09Z",
+      "updated_at": "2026-11-16T19:53:04Z",
+      "comments": null,
+      "head_sha": "f510362fac95fe0f623cce4ef815907a109a290d",
+      "head_ref": "fix/hidden-input-wrapper",
+      "head_repo": "rawsun007/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7033,
+      "title": "feat: allow explicit only event handlers",
+      "draft": false,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "roadmap",
+        "on deck"
+      ],
+      "created_at": "2026-09-02T09:45:27Z",
+      "updated_at": "2026-11-16T19:51:39Z",
+      "comments": null,
+      "head_sha": "405f7dd8ad78a3f07fe823fe363ac1a2dc5cdce5",
+      "head_ref": "disable-implicit-event-handlers",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7714,
+      "title": "fix(app): resolve exception handler annotations in the handler's module",
+      "draft": false,
+      "author": "Dengzi555",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "on deck"
+      ],
+      "created_at": "2026-11-02T04:52:07Z",
+      "updated_at": "2026-11-16T16:08:58Z",
+      "comments": null,
+      "head_sha": "7d46264947d4e1de2c7eaa83c7217b50ae0fdcdf",
+      "head_ref": "fix-exception-handler-annotations",
+      "head_repo": "Dengzi555/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7059,
+      "title": "Reuse normalization of unchanged literal app styles",
+      "draft": true,
+      "author": "Alek99",
+      "author_association": "MEMBER",
+      "labels": [
+        "perf"
+      ],
+      "created_at": "2026-09-07T17:54:05Z",
+      "updated_at": "2026-11-16T07:58:40Z",
+      "comments": null,
+      "head_sha": "ecf09e07abed4d7ea7f28abbc878e92abd54fd7a",
+      "head_ref": "codex/perf-shared-style-normalization",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7890,
+      "title": "fix(set): match set cases by their elements and coerce set[...] event args",
+      "draft": false,
+      "author": "vjymisal0",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T17:03:31Z",
+      "updated_at": "2026-11-16T05:41:10Z",
+      "comments": null,
+      "head_sha": "c4d63a6f3e227cb4d802219c3a88d763c00a6174",
+      "head_ref": "fix/set-match-and-event-args",
+      "head_repo": "vjymisal0/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7671,
+      "title": "fix(config): stop rx.asset in rxconfig.py from recursing",
+      "draft": false,
+      "author": "vjymisal0",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-10-27T13:18:37Z",
+      "updated_at": "2026-11-16T05:25:51Z",
+      "comments": null,
+      "head_sha": "a57ce2c471954fecfefbffac4d26e2eaa5495340",
+      "head_ref": "fix/asset-in-rxconfig-recursion",
+      "head_repo": "vjymisal0/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7146,
+      "title": "Add changelog-driven application deployments to reflex-release",
+      "draft": true,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-09-14T23:20:22Z",
+      "updated_at": "2026-11-16T03:18:47Z",
+      "comments": null,
+      "head_sha": "b5984d8c20e0a3d818a44bc2559b74b11f0a5d08",
+      "head_ref": "codex/changelog-app-deployments",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7887,
+      "title": "fix(vars): resolve fields of parametrized generic TypedDict vars",
+      "draft": false,
+      "author": "AzalHoseinian",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T12:01:18Z",
+      "updated_at": "2026-11-14T18:02:06Z",
+      "comments": null,
+      "head_sha": "0faa6a65c01aac3eec6dd6d95fac5979cd962197",
+      "head_ref": "fix/generic-typeddict-var-access",
+      "head_repo": "AzalHoseinian/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7885,
+      "title": "Fix SQLAlchemy serializer feedback for #7831",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T09:07:35Z",
+      "updated_at": "2026-11-14T18:01:30Z",
+      "comments": null,
+      "head_sha": "cb6a0163f6fbe23c4e995afe3dc223d6c1c412dc",
+      "head_ref": "codex/7831-declarative-serializer",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7899,
+      "title": "test: add required Bun-only and outdated Node integration coverage",
+      "draft": false,
+      "author": "somiljain2006",
+      "author_association": "CONTRIBUTOR",
+      "labels": [],
+      "created_at": "2026-11-14T16:40:55Z",
+      "updated_at": "2026-11-14T17:28:33Z",
+      "comments": null,
+      "head_sha": "504de44b743df12ed11abf612d41e22752e47d7e",
+      "head_ref": "bun",
+      "head_repo": "somiljain2006/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7718,
+      "title": "feat: let plugins encode state updates for the browser",
+      "draft": false,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "documentation",
+        "enhancement"
+      ],
+      "created_at": "2026-11-02T15:33:52Z",
+      "updated_at": "2026-11-14T17:24:09Z",
+      "comments": null,
+      "head_sha": "5d1f07fa0344bfeb9f59fb478f016bbc44c1596d",
+      "head_ref": "state-update-codec",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7594,
+      "title": "fix: deduplicate Moment locale imports",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-10-18T10:42:43Z",
+      "updated_at": "2026-11-14T09:27:06Z",
+      "comments": null,
+      "head_sha": "099b340bec651ed4c5abff18e968afc64f6a11dc",
+      "head_ref": "fix/7099-moment-import-dedupe",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7874,
+      "title": "fix: make model metadata merging deterministic",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-12T19:55:20Z",
+      "updated_at": "2026-11-14T09:19:37Z",
+      "comments": null,
+      "head_sha": "701bd6dcf94c35657b50d9f87be28d07a37686fb",
+      "head_ref": "fix/7830-deterministic-model-metadata",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7883,
+      "title": "fix(export): restore console log level after export and always export REFLEX_LOGLEVEL",
+      "draft": false,
+      "author": "xh123637",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T08:10:25Z",
+      "updated_at": "2026-11-14T05:23:46Z",
+      "comments": null,
+      "head_sha": "5558d18c5be65efc6cab73779191db73ce153c34",
+      "head_ref": "fix/7850-export-log-level-restore",
+      "head_repo": "xh123637/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7876,
+      "title": "fix(docs): improve Stack and Foreach demo contrast",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-12T20:31:35Z",
+      "updated_at": "2026-11-13T20:58:19Z",
+      "comments": null,
+      "head_sha": "9b3b29c3e1dbb22e2f650896b9d5e9aa122e2586",
+      "head_ref": "fix/docs-fixed-color-demo-contrast",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7853,
+      "title": "fix(event): save inline rx.download data through a blob url",
+      "draft": false,
+      "author": "abulvenz",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "ios"
+      ],
+      "created_at": "2026-11-11T22:00:54Z",
+      "updated_at": "2026-11-13T20:16:15Z",
+      "comments": null,
+      "head_sha": "c6f3c593f09873151a39e5af24c96268ba0f3231",
+      "head_ref": "download-blob-url",
+      "head_repo": "abulvenz/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7703,
+      "title": "Fix rx.asset(shared=True) crash on Windows without Developer Mode",
+      "draft": false,
+      "author": "AP24110011695",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "documentation",
+        "windows"
+      ],
+      "created_at": "2026-10-31T19:55:41Z",
+      "updated_at": "2026-11-13T20:15:05Z",
+      "comments": null,
+      "head_sha": "90ff27f44f850edca1644389b98a9f867898a935",
+      "head_ref": "fix/shared-asset-windows-fallback",
+      "head_repo": "AP24110011695/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7875,
+      "title": "docs: fix utility navigation and misleading demo/property guidance",
+      "draft": true,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-12T20:31:20Z",
+      "updated_at": "2026-11-13T20:14:45Z",
+      "comments": null,
+      "head_sha": "03d3ee01213fab5ca1f5da580bc83c81274f363e",
+      "head_ref": "fix/docs-navigation-copy-20261112",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7877,
+      "title": "fix(docs): synchronize Radar allocations and give chart labels room",
+      "draft": true,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-11-12T20:39:10Z",
+      "updated_at": "2026-11-13T20:14:37Z",
+      "comments": null,
+      "head_sha": "ead41691a269c9b46a032a39d3b376268596cf79",
+      "head_ref": "fix/docs-radar-controlled-allocation",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7871,
+      "title": "fix(upload): deliver backend exception handler events when upload handler raises after yielding (#7858)",
+      "draft": false,
+      "author": "psinghal01",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-12T18:15:39Z",
+      "updated_at": "2026-11-13T20:14:29Z",
+      "comments": null,
+      "head_sha": "3f0deb3c41bb7f09dbadfa037bf362eb1cfac655",
+      "head_ref": "fix/upload-handler-error-toast",
+      "head_repo": "psinghal01/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7881,
+      "title": "fix: handle symlinks when zipping the app for export",
+      "draft": false,
+      "author": "MaiAditya",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T03:40:32Z",
+      "updated_at": "2026-11-13T20:14:18Z",
+      "comments": null,
+      "head_sha": "bd018b4611d93346c6099f22eaa1301e56449d3f",
+      "head_ref": "fix/export-zip-symlinks",
+      "head_repo": "MaiAditya/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7882,
+      "title": "fix: reject page routes that match the same URLs",
+      "draft": false,
+      "author": "MaiAditya",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T03:40:40Z",
+      "updated_at": "2026-11-13T20:14:12Z",
+      "comments": null,
+      "head_sha": "656e96551fe97d97581409fd73d0f1a4a64dbf8c",
+      "head_ref": "fix/route-case-collision",
+      "head_repo": "MaiAditya/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7884,
+      "title": "fix(data_editor): return true from onDelete so Delete clears the selection",
+      "draft": false,
+      "author": "VishApp",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T08:25:32Z",
+      "updated_at": "2026-11-13T19:55:59Z",
+      "comments": null,
+      "head_sha": "9dc5cd6e4968f9c619104cdb271d7d176f41857f",
+      "head_ref": "dataeditor-on-delete-return-true",
+      "head_repo": "VishApp/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7790,
+      "title": "Restore root state metadata after the shared-state telemetry test",
+      "draft": false,
+      "author": "munjikesh",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [],
+      "created_at": "2026-11-10T19:12:54Z",
+      "updated_at": "2026-11-13T19:40:30Z",
+      "comments": null,
+      "head_sha": "ad98df58f22b4eb34300f838e3d1cba712b3e286",
+      "head_ref": "fix/telemetry-test-shared-state-leak",
+      "head_repo": "munjikesh/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7892,
+      "title": "fix: name a forwarded scheme mismatch in the origin rejection warning",
+      "draft": false,
+      "author": "MaiAditya",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T18:41:44Z",
+      "updated_at": "2026-11-13T18:51:48Z",
+      "comments": null,
+      "head_sha": "fb02d24508eb50999499e89eb7ca1308ff2bba61",
+      "head_ref": "fix/origin-warning-forwarded-proto",
+      "head_repo": "MaiAditya/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7893,
+      "title": "fix: type a repeated @rx.event as one handler",
+      "draft": false,
+      "author": "MaiAditya",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T18:41:50Z",
+      "updated_at": "2026-11-13T18:51:27Z",
+      "comments": null,
+      "head_sha": "ebaf4b54fcabbce43be7c9d0a6dedb25db1203aa",
+      "head_ref": "fix/stacked-event-decorator-typing",
+      "head_repo": "MaiAditya/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7891,
+      "title": "fix: resolve relative alembic script_location before matching frames",
+      "draft": false,
+      "author": "MaiAditya",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-13T18:41:38Z",
+      "updated_at": "2026-11-13T18:49:42Z",
+      "comments": null,
+      "head_sha": "a29c76dda29fd9e7cf8810d14b91b25954dfef99",
+      "head_ref": "fix/alembic-relative-script-location",
+      "head_repo": "MaiAditya/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7823,
+      "title": "fix: display fallback DataEditor cell values",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-11T10:13:27Z",
+      "updated_at": "2026-11-13T07:27:53Z",
+      "comments": null,
+      "head_sha": "d6a929589a4a215135e05688289d9e44a0df8d2f",
+      "head_ref": "fix/7822-dataeditor-unsupported-type-fallback",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7829,
+      "title": "Do not let a leftover nocompile marker skip the next CLI compile",
+      "draft": false,
+      "author": "YusefSyed",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-11T20:21:55Z",
+      "updated_at": "2026-11-12T23:52:23Z",
+      "comments": null,
+      "head_sha": "097cd0e8f37f95e19093322091dae7e7ff751b3e",
+      "head_ref": "fix/stale-nocompile-marker",
+      "head_repo": "YusefSyed/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7781,
+      "title": "fix(state.js): stop the event loop spinning while the socket is down",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-09T18:35:04Z",
+      "updated_at": "2026-11-12T19:46:06Z",
+      "comments": null,
+      "head_sha": "1ccc901c8a0ef05c8ad49c38c004bfa25dce7bf8",
+      "head_ref": "farhan/gracious-planck-g2zgyp-event-loop",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7655,
+      "title": "Label Reflex compiler and server processes by role",
+      "draft": false,
+      "author": "Akarshkushwaha",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "on deck"
+      ],
+      "created_at": "2026-10-25T18:50:26Z",
+      "updated_at": "2026-11-12T18:55:07Z",
+      "comments": null,
+      "head_sha": "f8e79121e52c91f21c9980d0de20caaca022d591",
+      "head_ref": "codex/label-reflex-processes",
+      "head_repo": "Akarshkushwaha/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7574,
+      "title": "Share Tailwind v3/v4 plugin code in shared_tailwind",
+      "draft": false,
+      "author": "quotentiroler",
+      "author_association": "CONTRIBUTOR",
+      "labels": [],
+      "created_at": "2026-10-15T08:28:06Z",
+      "updated_at": "2026-11-12T18:26:15Z",
+      "comments": null,
+      "head_sha": "48c0dbcc969816ae41805f8fbf8d1788ed861cf8",
+      "head_ref": "refactor/share-tailwind-plugin-code",
+      "head_repo": "quotentiroler/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7744,
+      "title": "fix: handle the complete upload response once it loads",
+      "draft": false,
+      "author": "SrkianFardin25",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-05T06:39:46Z",
+      "updated_at": "2026-11-12T17:03:28Z",
+      "comments": null,
+      "head_sha": "4f4a6a95ada18fb1d0e67f76f8e8d716fae1bbda",
+      "head_ref": "fix/upload-final-chunk-parse",
+      "head_repo": "SrkianFardin25/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7759,
+      "title": "fix(client): report upload chunk parse errors on completion (fixes #7736)",
+      "draft": false,
+      "author": "thekarak",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-06T09:42:12Z",
+      "updated_at": "2026-11-12T17:02:57Z",
+      "comments": null,
+      "head_sha": "675052374bb71de0c2a0af5c353a07d4c7770de7",
+      "head_ref": "fix-upload-chunk-errors",
+      "head_repo": "thekarak/reflex-karak",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7867,
+      "title": "Name every method decorated above @rx.event in the deprecation warning",
+      "draft": false,
+      "author": "MaiAditya",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-12T06:01:37Z",
+      "updated_at": "2026-11-12T17:01:36Z",
+      "comments": null,
+      "head_sha": "9cd99a462a93292d81a6529870fbb9c14df0eb69",
+      "head_ref": "fix/event-decorator-deprecation-all-methods",
+      "head_repo": "MaiAditya/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7769,
+      "title": "Persist disk state-manager writes when a handler raises or is cancelled",
+      "draft": false,
+      "author": "Aarkin7",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-09T13:03:27Z",
+      "updated_at": "2026-11-12T17:00:29Z",
+      "comments": null,
+      "head_sha": "19fa2d9062b1f012a6ec9ba15353126699f61bc5",
+      "head_ref": "fix/disk-persist-failed-handler-writes",
+      "head_repo": "Aarkin7/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7583,
+      "title": "perf: re-render state readers only when a field they read changes",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "perf",
+        "on deck"
+      ],
+      "created_at": "2026-10-16T17:29:11Z",
+      "updated_at": "2026-11-12T16:31:00Z",
+      "comments": null,
+      "head_sha": "15c5ddcfc1f4eab4f72aca682cb6a40081f3d725",
+      "head_ref": "farhan/field-level-state-subscriptions",
+      "head_repo": "FarhanAliRaza/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7408,
+      "title": "feat(plotly)!: migrate maps to plotly.js 4",
+      "draft": false,
+      "author": "kr1shna-exe",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "on deck",
+        "breaking"
+      ],
+      "created_at": "2026-10-04T15:12:40Z",
+      "updated_at": "2026-11-12T16:30:45Z",
+      "comments": null,
+      "head_sha": "a1840bad48227c1e35033ff1f74254e8c17a9da4",
+      "head_ref": "feat/7002-plotly-map-migration",
+      "head_repo": "kr1shna-exe/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7361,
+      "title": "Add signed browser sessions and bound client tokens",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "enhancement",
+        "roadmap",
+        "on deck",
+        "security"
+      ],
+      "created_at": "2026-09-30T00:41:30Z",
+      "updated_at": "2026-11-12T16:30:31Z",
+      "comments": null,
+      "head_sha": "44c4b4e8de06277fb7851600034151d03af83abb",
+      "head_ref": "codex/codex/session-token-primitives",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6100,
+      "title": "Explicit state and event id minification",
+      "draft": false,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "roadmap",
+        "perf"
+      ],
+      "created_at": "2026-01-24T21:51:48Z",
+      "updated_at": "2026-11-12T14:23:25Z",
+      "comments": null,
+      "head_sha": "d4a7d697e45626734af57860dc27ce707d1851ff",
+      "head_ref": "explicit-event-id-minification",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6116,
+      "title": "add orjson",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "enhancement",
+        "perf"
+      ],
+      "created_at": "2026-02-06T23:56:33Z",
+      "updated_at": "2026-11-12T14:23:20Z",
+      "comments": null,
+      "head_sha": "a0154b50a7125d7da6e4a13ba9b4097f6a8af3ae",
+      "head_ref": "try-orjson",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6125,
+      "title": "feat: Add Redis Sentinel support for HA",
+      "draft": false,
+      "author": "timon0305",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-02-11T12:19:12Z",
+      "updated_at": "2026-11-12T14:23:16Z",
+      "comments": null,
+      "head_sha": "f18922ac53509a66d715454d001bf0002bbd5643",
+      "head_ref": "feature/redis-sentinel-support",
+      "head_repo": "timon0305/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6126,
+      "title": "feat: Expose TokenManager with lifecycle APIs for session management",
+      "draft": false,
+      "author": "timon0305",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-02-11T15:58:51Z",
+      "updated_at": "2026-11-12T14:23:12Z",
+      "comments": null,
+      "head_sha": "18181e5ad4f5fcae3587119fb9f0d70433b3ee6b",
+      "head_ref": "feature/expose-token-manager-api",
+      "head_repo": "timon0305/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6173,
+      "title": "ssr wip",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-03-13T00:31:45Z",
+      "updated_at": "2026-11-12T14:23:08Z",
+      "comments": null,
+      "head_sha": "451c79d9bd6dc15f6c27fcfb977b0f149ed30e61",
+      "head_ref": "ssr",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": false
+    },
+    {
+      "number": 6465,
+      "title": "tentative migrate pyright to ty",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "enhancement",
+        "perf"
+      ],
+      "created_at": "2026-05-06T19:22:48Z",
+      "updated_at": "2026-11-12T14:23:04Z",
+      "comments": null,
+      "head_sha": "b2f584b0b76c9426c888d57cb00b617e18405ccf",
+      "head_ref": "migrate-pyright-to-ty",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6468,
+      "title": "refactor: freeze components after create and use copy_with for mutations",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "enhancement",
+        "roadmap",
+        "breaking"
+      ],
+      "created_at": "2026-05-07T15:52:44Z",
+      "updated_at": "2026-11-12T14:23:00Z",
+      "comments": null,
+      "head_sha": "294365776349b342bdf3630bb9cf419ccee86959",
+      "head_ref": "immutability",
+      "head_repo": "FarhanAliRaza/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6490,
+      "title": "Support Redis Cluster",
+      "draft": false,
+      "author": "riebecj",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-05-11T22:58:06Z",
+      "updated_at": "2026-11-12T14:22:56Z",
+      "comments": null,
+      "head_sha": "62019f3edc491eaebf30885a24325854a918346b",
+      "head_ref": "redis-cluster",
+      "head_repo": "riebecj/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6518,
+      "title": "Run sync event handlers off the asyncio loop via executor",
+      "draft": true,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "roadmap",
+        "perf"
+      ],
+      "created_at": "2026-05-15T21:51:03Z",
+      "updated_at": "2026-11-12T14:22:51Z",
+      "comments": null,
+      "head_sha": "a3c0fe9829305087421d3b31bd92dc2d45ca225f",
+      "head_ref": "claude/add-event-executor-option-grkJH",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6688,
+      "title": "ENG-9148: feat(compiler): incremental compile cache & warm hot-reload daemon (REFLEX_COMPILE_CACHE)",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "enhancement",
+        "roadmap",
+        "perf"
+      ],
+      "created_at": "2026-06-28T15:37:11Z",
+      "updated_at": "2026-11-12T14:22:47Z",
+      "comments": null,
+      "head_sha": "9752de1e60cd1553ef3f06d8880c55c854eb7bdc",
+      "head_ref": "reflex-hmr",
+      "head_repo": "FarhanAliRaza/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6768,
+      "title": "fix(vars): use monotonic time for computed var intervals",
+      "draft": false,
+      "author": "anxkhn",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-07-15T04:48:14Z",
+      "updated_at": "2026-11-12T14:22:43Z",
+      "comments": null,
+      "head_sha": "e4123be238ea749bf0cca692265b312a260f01ba",
+      "head_ref": "fix/computed-var-monotonic-interval",
+      "head_repo": "anxkhn/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6796,
+      "title": "add i18n support",
+      "draft": false,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "roadmap"
+      ],
+      "created_at": "2026-07-17T22:26:12Z",
+      "updated_at": "2026-11-12T14:22:21Z",
+      "comments": null,
+      "head_sha": "ce40301d74a8dc595c53cf9dceb3939f159c5e9d",
+      "head_ref": "add-i18n",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6799,
+      "title": "reregister memo in app harness",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-07-18T10:40:51Z",
+      "updated_at": "2026-11-12T14:22:17Z",
+      "comments": null,
+      "head_sha": "377a848a0c0c0b020fd3af5a5a8767a9b6fc0784",
+      "head_ref": "fix-memo-harness",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": false
+    },
+    {
+      "number": 6800,
+      "title": "Ssr plugin wip",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-07-18T22:55:04Z",
+      "updated_at": "2026-11-12T14:22:13Z",
+      "comments": null,
+      "head_sha": "1c6edaa13ed77d39030c8df076945249d8166da5",
+      "head_ref": "ssr-plugin",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6873,
+      "title": "Add mixin resolution to state lookup and token handling",
+      "draft": false,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-08-11T23:05:03Z",
+      "updated_at": "2026-11-12T14:22:09Z",
+      "comments": null,
+      "head_sha": "9618a3fc890b625f49eb4f1ac89fd1eabf982023",
+      "head_ref": "mixin-registration-context",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6886,
+      "title": "ENG-11157: wait out \"being scaled\" instead of failing the deploy",
+      "draft": true,
+      "author": "Kastier1",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-08-14T02:36:33Z",
+      "updated_at": "2026-11-12T14:22:04Z",
+      "comments": null,
+      "head_sha": "6be8aa2a1350661a7f4f5e8093f418ad5d163fb6",
+      "head_ref": "eng-11157-deploy-instance-bounds",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6942,
+      "title": "DO NOT MERGE - Disconnect shared state",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-08-25T07:42:28Z",
+      "updated_at": "2026-11-12T14:21:55Z",
+      "comments": null,
+      "head_sha": "d0e978d167e68f7158d6e71eaf4ef323ec6a4d17",
+      "head_ref": "disconnect-shared-state",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7007,
+      "title": "Add reflex-webmcp package with WebMCPPlugin",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "enhancement"
+      ],
+      "created_at": "2026-08-30T18:24:05Z",
+      "updated_at": "2026-11-12T14:21:50Z",
+      "comments": null,
+      "head_sha": "dd8c0080693bccb50966571d1ba134e876a1a8ce",
+      "head_ref": "webmcp-plugin",
+      "head_repo": "FarhanAliRaza/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7036,
+      "title": "perf(state): skip unchanged scalar writes and resolve stale computed vars lazily",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "perf"
+      ],
+      "created_at": "2026-09-02T17:54:52Z",
+      "updated_at": "2026-11-12T14:21:42Z",
+      "comments": null,
+      "head_sha": "4ed537a69f40f3b8549a622561c2d15308136869",
+      "head_ref": "dirty-tracking-cutoff",
+      "head_repo": "FarhanAliRaza/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7040,
+      "title": "[HTTPXodus] migrate httpx to httpx2 (hard switch)",
+      "draft": false,
+      "author": "SiAgentBuild",
+      "author_association": "FIRST_TIME_CONTRIBUTOR",
+      "labels": [
+        "enhancement",
+        "breaking"
+      ],
+      "created_at": "2026-09-03T04:14:25Z",
+      "updated_at": "2026-11-12T14:21:38Z",
+      "comments": null,
+      "head_sha": "bccf225f713b8eb2115ccf3518a9b940316a90c7",
+      "head_ref": "httpxodus/httpx2-migration",
+      "head_repo": "SiAgentBuild/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7051,
+      "title": "Serialize concurrent frontend dependency installs",
+      "draft": false,
+      "author": "Alek99",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-09-06T07:59:25Z",
+      "updated_at": "2026-11-12T14:21:34Z",
+      "comments": null,
+      "head_sha": "281f8dc5a2c76addfe2d591451a72a59aebd20e8",
+      "head_ref": "codex/serialize-frontend-installs",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7065,
+      "title": "Keep disk state reads, sidecar stats and redis version lookup off the event loop",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "perf"
+      ],
+      "created_at": "2026-09-07T21:41:10Z",
+      "updated_at": "2026-11-12T14:21:30Z",
+      "comments": null,
+      "head_sha": "bf69e19a36cb3a98c7734f6115dee334dbcd426c",
+      "head_ref": "claude/blockbuster-reflex-analysis-06qhgm",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7084,
+      "title": "Extend rx.memo configuration and function memoization",
+      "draft": true,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "perf"
+      ],
+      "created_at": "2026-09-11T05:41:43Z",
+      "updated_at": "2026-11-12T14:21:25Z",
+      "comments": null,
+      "head_sha": "852cec5bd6e39c60ad94855c504fd2b3df9723fb",
+      "head_ref": "codex/extend-rx-memo",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7144,
+      "title": "fix(config): preserve preloaded rxconfig classes",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-09-14T21:59:46Z",
+      "updated_at": "2026-11-12T14:21:20Z",
+      "comments": null,
+      "head_sha": "98fbd9fc0dc0ad4972c522969b0851443c24951c",
+      "head_ref": "codex/config-reload-boundary",
+      "head_repo": "FarhanAliRaza/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7323,
+      "title": "fix(StateManagerDisk): log error when corrupted state file is encountered",
+      "draft": false,
+      "author": "dajiaohuang",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-09-25T03:57:10Z",
+      "updated_at": "2026-11-12T14:20:55Z",
+      "comments": null,
+      "head_sha": "19eb7743c2eea7e997b7e0809d591eee22df5bbb",
+      "head_ref": "main",
+      "head_repo": "dajiaohuang/reflex-1",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7337,
+      "title": "Minify state var names and allow installing a name resolver after states exist",
+      "draft": false,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "perf"
+      ],
+      "created_at": "2026-09-27T14:24:25Z",
+      "updated_at": "2026-11-12T14:20:51Z",
+      "comments": null,
+      "head_sha": "4af1902e1cde0740a126b9daeb25d0413b55f2a6",
+      "head_ref": "late-bound-wire-names",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7362,
+      "title": "Authorize browser state through session-aware transports",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "enhancement",
+        "roadmap",
+        "security"
+      ],
+      "created_at": "2026-09-30T00:41:34Z",
+      "updated_at": "2026-11-12T14:20:37Z",
+      "comments": null,
+      "head_sha": "ebed735dae423f429e3a2a8bc7e1f9caaa142c8a",
+      "head_ref": "codex/session-transport",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7363,
+      "title": "Persist browser sessions without delaying hydration",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "enhancement",
+        "roadmap",
+        "security"
+      ],
+      "created_at": "2026-09-30T00:41:37Z",
+      "updated_at": "2026-11-12T14:20:33Z",
+      "comments": null,
+      "head_sha": "9e9b3b60120a2a2e4c002784fea9c11fc528ccbe",
+      "head_ref": "codex/session-frontend",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7379,
+      "title": "docs: add a Workflows section for reflex-workflow",
+      "draft": false,
+      "author": "adhami3310",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "enhancement"
+      ],
+      "created_at": "2026-10-01T19:42:51Z",
+      "updated_at": "2026-11-12T14:20:29Z",
+      "comments": null,
+      "head_sha": "41697d086bf31345c41a34888a78ff6d6fd8c9ea",
+      "head_ref": "docs/reflex-workflow",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7394,
+      "title": "Support push event in changed_paths action and expand path filters",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "enhancement"
+      ],
+      "created_at": "2026-10-02T22:38:39Z",
+      "updated_at": "2026-11-12T14:20:24Z",
+      "comments": null,
+      "head_sha": "33e11e6bd727a98eaa9127053e4498cd474a3e1e",
+      "head_ref": "claude/quirky-hamilton-1huje9",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7397,
+      "title": "fix(event): declare LambdaEventCallback.__code__ read-only so bound methods match the protocol",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-10-03T00:29:06Z",
+      "updated_at": "2026-11-12T14:20:20Z",
+      "comments": null,
+      "head_sha": "6949923ac99875a2f7b3e7aa7efbb24c3e7e1d09",
+      "head_ref": "lambda-callback-readonly-code",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7448,
+      "title": "Serialize JSON with yjson when the reflex[yjson] extra is installed",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "enhancement",
+        "perf"
+      ],
+      "created_at": "2026-10-06T17:21:44Z",
+      "updated_at": "2026-11-12T14:20:12Z",
+      "comments": null,
+      "head_sha": "3e7cdeff43f53a070da3ef24747d6a3ee71c9016",
+      "head_ref": "yjson-encoder",
+      "head_repo": "FarhanAliRaza/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7455,
+      "title": "Add an opt-in cache for deterministic production frontend builds",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "perf"
+      ],
+      "created_at": "2026-10-06T18:20:02Z",
+      "updated_at": "2026-11-12T14:20:08Z",
+      "comments": null,
+      "head_sha": "d181a8fe9c169f3afb8256f3fb360d744b9f499b",
+      "head_ref": "farhan/frontend-build-cache",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7540,
+      "title": "Build form_data from field names only (remove id-based form fields)",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "roadmap",
+        "breaking"
+      ],
+      "created_at": "2026-10-09T21:24:12Z",
+      "updated_at": "2026-11-12T14:20:04Z",
+      "comments": null,
+      "head_sha": "cd8421d23c194701289f961d492d4bea5ef4bb6c",
+      "head_ref": "claude/form-data-remove-id-fields",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7581,
+      "title": "docs: replace localhost links in .md copies with production URLs",
+      "draft": true,
+      "author": "Alek99",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-10-16T15:08:53Z",
+      "updated_at": "2026-11-12T14:19:55Z",
+      "comments": null,
+      "head_sha": "d572d8fa71e27ec38f8180989aa1c7b33b60b150",
+      "head_ref": "cursor/fix-docs-md-localhost-links-526f",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7688,
+      "title": "Keep docs heading permalinks to a single fragment",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation"
+      ],
+      "created_at": "2026-10-28T17:03:38Z",
+      "updated_at": "2026-11-12T14:19:41Z",
+      "comments": null,
+      "head_sha": "334b0283ce8211b714161fdbfc2f570424f57ec1",
+      "head_ref": "ccr-921eda66-kjt8mt-heading-permalinks",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7699,
+      "title": "fix(base): preserve typed serialization results for dataclasses",
+      "draft": false,
+      "author": "DevChiniwala",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-10-31T10:11:49Z",
+      "updated_at": "2026-11-12T14:19:36Z",
+      "comments": null,
+      "head_sha": "911c38d970d4e45b3b1723066b4883195e538d3d",
+      "head_ref": "fix/dataclass-serializer-result-type",
+      "head_repo": "DevChiniwala/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7760,
+      "title": "fix: preserve AppHarness state registrations",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-06T12:44:33Z",
+      "updated_at": "2026-11-12T14:18:16Z",
+      "comments": null,
+      "head_sha": "9ff4242cd449c30009a1d5dcc933661a2d39abe0",
+      "head_ref": "fix/7479-shared-module-harness-state",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7766,
+      "title": "fix(events): flush state changes after foreground handler errors",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-09T09:09:31Z",
+      "updated_at": "2026-11-12T14:18:01Z",
+      "comments": null,
+      "head_sha": "4995382474c7c23df2aa2e0ea390bc99557d89c5",
+      "head_ref": "fix/7476-foreground-error-delta",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7776,
+      "title": "fix(state): release linked state locks when linking fails",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-09T17:48:40Z",
+      "updated_at": "2026-11-12T14:17:53Z",
+      "comments": null,
+      "head_sha": "ba559e4122ebb07fdad96735f6f807342aeb19dc",
+      "head_ref": "farhan/gracious-planck-g2zgyp",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7777,
+      "title": "fix(event): skip a cancelled same-token backlog without recursing",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-09T17:48:47Z",
+      "updated_at": "2026-11-12T14:17:49Z",
+      "comments": null,
+      "head_sha": "ca1731ae7becd50a01d11dab73cb24ba3e8e71d6",
+      "head_ref": "farhan/gracious-planck-g2zgyp-event-queue",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7778,
+      "title": "fix(cli): give each outage during a deployment watch its own grace period",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-09T17:48:54Z",
+      "updated_at": "2026-11-12T14:17:45Z",
+      "comments": null,
+      "head_sha": "7b35da6f55935b12028263407322b7cb3003225a",
+      "head_ref": "farhan/gracious-planck-g2zgyp-cli-watch",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7780,
+      "title": "fix(testing): make AppHarness stop idempotent and clean up a failed start",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-09T18:00:41Z",
+      "updated_at": "2026-11-12T14:17:41Z",
+      "comments": null,
+      "head_sha": "5b069a24cf7c3dead8b1190d69891fbe978bd9fb",
+      "head_ref": "farhan/gracious-planck-g2zgyp-app-harness",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7786,
+      "title": "Fix Sonner toast button style prop names",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-10T09:18:28Z",
+      "updated_at": "2026-11-12T14:17:30Z",
+      "comments": null,
+      "head_sha": "16b27892cf81a994f6f4c4b4bc950d86b99c2d9d",
+      "head_ref": "fix/7785-toast-button-styles",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7788,
+      "title": "Fix nested PropsBase serialization filters",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-10T12:47:38Z",
+      "updated_at": "2026-11-12T14:17:25Z",
+      "comments": null,
+      "head_sha": "888db009c6b108999acae37fcccc3435188e5198",
+      "head_ref": "fix/7787-nested-props-filters",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7824,
+      "title": "Type the Toaster hotkey prop as a list of keys",
+      "draft": false,
+      "author": "Ishkirat-Singh",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-11T15:33:36Z",
+      "updated_at": "2026-11-12T14:17:17Z",
+      "comments": null,
+      "head_sha": "3087db592f01ef4fd027dc88ad3e73c0dca09e3a",
+      "head_ref": "fix/sonner-toaster-hotkey-list",
+      "head_repo": "Ishkirat-Singh/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7868,
+      "title": "Keep the docs sidebar mounted across navigation",
+      "draft": true,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-11-12T08:45:45Z",
+      "updated_at": "2026-11-12T14:16:47Z",
+      "comments": null,
+      "head_sha": "5e969b112765d3d120f23c1638fa1e17cb61358a",
+      "head_ref": "claude/sidebar-rerender-performance-56974c",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7427,
+      "title": "chore(ci): update reviewed SHA-pinned workflow actions",
+      "draft": true,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [],
+      "created_at": "2026-10-05T20:23:22Z",
+      "updated_at": "2026-11-09T19:28:01Z",
+      "comments": null,
+      "head_sha": "460efe4f7fd14d5003216b35129686f5ebb90f51",
+      "head_ref": "codex/update-workflow-action-pins",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7704,
+      "title": "Remove unused path_ops.ln",
+      "draft": false,
+      "author": "AP24110011695",
+      "author_association": "CONTRIBUTOR",
+      "labels": [],
+      "created_at": "2026-10-31T20:05:16Z",
+      "updated_at": "2026-11-09T16:18:42Z",
+      "comments": null,
+      "head_sha": "21e65c6ecea71ece2d112b2b465bd911d5f112f1",
+      "head_ref": "fix/path-ops-ln-direction",
+      "head_repo": "AP24110011695/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7630,
+      "title": "fix(compiler): check memo modules for state reads when state is disabled",
+      "draft": false,
+      "author": "fixfon",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-10-22T00:11:34Z",
+      "updated_at": "2026-11-08T15:26:31Z",
+      "comments": null,
+      "head_sha": "1617db08600cc6eea5b4072d4f4a170ecf4cefb9",
+      "head_ref": "fix/7579-memo-state-guard",
+      "head_repo": "fixfon/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7695,
+      "title": "Speed up docs pages: icon gallery, layout shift, smaller page JS",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "perf"
+      ],
+      "created_at": "2026-10-29T16:50:05Z",
+      "updated_at": "2026-11-02T17:46:44Z",
+      "comments": null,
+      "head_sha": "c6a61b18d1084af8c1864e953aca58506de133cd",
+      "head_ref": "claude/docs-lighthouse-fixes",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6841,
+      "title": "Avoid root dirty delta for shared state events",
+      "draft": false,
+      "author": "harsh21234i",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "perf"
+      ],
+      "created_at": "2026-08-04T11:06:51Z",
+      "updated_at": "2026-11-01T06:43:29Z",
+      "comments": null,
+      "head_sha": "333562e25aa4a3512534756bf052c3750835f7cd",
+      "head_ref": "fix/shared-state-root-dirty-6392",
+      "head_repo": "harsh21234i/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6733,
+      "title": "ENG-9917 fix: run plugin post_compile hooks at most once per app instance",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-07-10T18:50:21Z",
+      "updated_at": "2026-10-27T19:39:01Z",
+      "comments": null,
+      "head_sha": "f315ecfab5eef15419323762708115492007d458",
+      "head_ref": "farhan/eng-9917-post-compile-once-per-app",
+      "head_repo": "FarhanAliRaza/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7338,
+      "title": "Check out states in the EventContext, make StateManager a key-value store",
+      "draft": true,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "roadmap",
+        "perf",
+        "breaking"
+      ],
+      "created_at": "2026-09-27T18:46:33Z",
+      "updated_at": "2026-10-23T00:01:18Z",
+      "comments": null,
+      "head_sha": "5921c47f85c8e524907df429471d46ffe81952c0",
+      "head_ref": "claude/gallant-bell-1ivcn5-1-state-context",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7313,
+      "title": "Replace StateProxy with state locks held by the EventContext",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "roadmap",
+        "breaking"
+      ],
+      "created_at": "2026-09-24T17:42:04Z",
+      "updated_at": "2026-10-23T00:01:15Z",
+      "comments": null,
+      "head_sha": "0f8077be89ad079b58fae7f8ff16f384b7c4a73f",
+      "head_ref": "claude/gallant-bell-1ivcn5-2-state-locks",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7364,
+      "title": "Validate enforced sessions and document migration",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation",
+        "roadmap",
+        "security"
+      ],
+      "created_at": "2026-09-30T00:41:41Z",
+      "updated_at": "2026-10-23T00:00:24Z",
+      "comments": null,
+      "head_sha": "d5e211ba5cf05a05bb2eb2c455c5d103a9c445a9",
+      "head_ref": "codex/session-integration",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7425,
+      "title": "Split unit tests by package and run affected suites in CI",
+      "draft": true,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "roadmap",
+        "skip-changelog"
+      ],
+      "created_at": "2026-10-05T18:54:31Z",
+      "updated_at": "2026-10-23T00:00:07Z",
+      "comments": null,
+      "head_sha": "28c66e2495f15bca33b0a970e0d376e61f2d8de9",
+      "head_ref": "codex/package-unit-test-suites",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6162,
+      "title": "improve delta perf",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "perf"
+      ],
+      "created_at": "2026-03-06T21:56:00Z",
+      "updated_at": "2026-10-21T07:20:30Z",
+      "comments": null,
+      "head_sha": "ab49fdfd5ffbaa21d3af820715269df03cfb4cd9",
+      "head_ref": "faster-delta",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": false
+    },
+    {
+      "number": 6722,
+      "title": "some typing nits",
+      "draft": true,
+      "author": "benedikt-bartscher",
+      "author_association": "CONTRIBUTOR",
+      "labels": [],
+      "created_at": "2026-07-08T18:28:52Z",
+      "updated_at": "2026-10-20T21:15:41Z",
+      "comments": null,
+      "head_sha": "c230ebe207f8877303624fca28d4bd4062d4ebd3",
+      "head_ref": "port-typing-fixes",
+      "head_repo": "benedikt-bartscher/reflex",
+      "is_fork": true,
+      "body_present": false
+    },
+    {
+      "number": 7308,
+      "title": "fix: support dataclasses.field(...) as a state var default",
+      "draft": false,
+      "author": "flcrom",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-09-24T10:17:22Z",
+      "updated_at": "2026-10-10T03:44:48Z",
+      "comments": null,
+      "head_sha": "be801a3ca4c403a138c2d00ab787b91682346012",
+      "head_ref": "fix-7017-dataclasses-field-default",
+      "head_repo": "flcrom/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7539,
+      "title": "test: diagnose output supervisor shutdown flakes",
+      "draft": true,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [],
+      "created_at": "2026-10-09T19:28:38Z",
+      "updated_at": "2026-10-09T19:35:28Z",
+      "comments": null,
+      "head_sha": "e0b8d59258e3495acf175be863921ad85232b985",
+      "head_ref": "codex/diagnose-output-supervisor-shutdown",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7416,
+      "title": "fix(cli): report backend readiness after startup",
+      "draft": false,
+      "author": "kr1shna-exe",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-10-04T19:46:42Z",
+      "updated_at": "2026-10-08T21:21:25Z",
+      "comments": null,
+      "head_sha": "29bfd58deba9666976f051c6751c2d4b35030c59",
+      "head_ref": "fix/7252-backend-startup-status",
+      "head_repo": "kr1shna-exe/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7436,
+      "title": "fix(state): record hydrated computed values",
+      "draft": false,
+      "author": "kr1shna-exe",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "perf"
+      ],
+      "created_at": "2026-10-06T04:47:05Z",
+      "updated_at": "2026-10-07T16:52:42Z",
+      "comments": null,
+      "head_sha": "5273a6a149dc84dbe73ed1a458bd3b74849f4b0a",
+      "head_ref": "fix/7253-record-hydrated-values",
+      "head_repo": "kr1shna-exe/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7381,
+      "title": "Reject clashing mixin vars; let mixin vars without a default use the parent's",
+      "draft": false,
+      "author": "masenf",
+      "author_association": "MEMBER",
+      "labels": [
+        "bug",
+        "documentation",
+        "breaking"
+      ],
+      "created_at": "2026-10-01T22:34:32Z",
+      "updated_at": "2026-10-06T18:07:56Z",
+      "comments": null,
+      "head_sha": "4bf23786b527e919cb393fcccc468ed2ca71e818",
+      "head_ref": "claude/pr-7206-tests-main-ta8uci",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6898,
+      "title": "docs: add guidance for scaling state",
+      "draft": false,
+      "author": "Alek99",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation"
+      ],
+      "created_at": "2026-08-17T20:40:26Z",
+      "updated_at": "2026-10-06T17:41:47Z",
+      "comments": null,
+      "head_sha": "7c580aaba195f0fec2461852f7e493c64124804d",
+      "head_ref": "docs/scaling-state",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6811,
+      "title": "OPS-1673: Audit & update Integrations & Connections docs",
+      "draft": true,
+      "author": "amsraman",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation"
+      ],
+      "created_at": "2026-07-24T00:15:38Z",
+      "updated_at": "2026-10-06T17:41:45Z",
+      "comments": null,
+      "head_sha": "cdbaeb088901b0eea7ab1a16a038e1aa578e1ee6",
+      "head_ref": "aditya/ops-1673-audit-update-integrations-connections-docs",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6853,
+      "title": "[fix] Only check the redis session lock once per set_state fan-out",
+      "draft": false,
+      "author": "qubydev",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug",
+        "perf"
+      ],
+      "created_at": "2026-08-06T20:48:38Z",
+      "updated_at": "2026-10-06T17:41:03Z",
+      "comments": null,
+      "head_sha": "cff19a4ce8bf42c6be15fae50c0d6dfd92dfa3f9",
+      "head_ref": "fix/dedupe-redis-state-lock-checks",
+      "head_repo": "qubydev/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 6771,
+      "title": "fix(tokens): claim redis socket tokens atomically",
+      "draft": true,
+      "author": "anxkhn",
+      "author_association": "CONTRIBUTOR",
+      "labels": [
+        "bug"
+      ],
+      "created_at": "2026-07-15T05:48:41Z",
+      "updated_at": "2026-10-06T17:40:59Z",
+      "comments": null,
+      "head_sha": "bc6364e1aa566e8a9a2858bc2cbc4b034450cb24",
+      "head_ref": "fix/atomic-redis-token-claim",
+      "head_repo": "anxkhn/reflex",
+      "is_fork": true,
+      "body_present": true
+    },
+    {
+      "number": 7056,
+      "title": "Optimize runtime type checks and state delta encoding",
+      "draft": false,
+      "author": "FarhanAliRaza",
+      "author_association": "MEMBER",
+      "labels": [
+        "perf"
+      ],
+      "created_at": "2026-09-07T16:56:06Z",
+      "updated_at": "2026-10-01T00:43:27Z",
+      "comments": null,
+      "head_sha": "d640f035d22e24c8d0ef0c514df65d430aabdba1",
+      "head_ref": "claude/performance-optimization-rust-u1afuo",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 7062,
+      "title": "Index in-memory session expiration deadlines",
+      "draft": true,
+      "author": "Alek99",
+      "author_association": "MEMBER",
+      "labels": [
+        "perf"
+      ],
+      "created_at": "2026-09-07T17:56:32Z",
+      "updated_at": "2026-09-29T19:53:55Z",
+      "comments": null,
+      "head_sha": "33d13c72841c6f5a646a2c95f83e18f5ffe29a17",
+      "head_ref": "codex/perf-memory-expiration-index",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    },
+    {
+      "number": 6396,
+      "title": "improve-select-docs",
+      "draft": true,
+      "author": "tgberkeley",
+      "author_association": "MEMBER",
+      "labels": [
+        "documentation"
+      ],
+      "created_at": "2026-04-27T16:09:40Z",
+      "updated_at": "2026-04-29T21:28:41Z",
+      "comments": null,
+      "head_sha": "ebcf7f15d5b69962137baf39ea511df06b1aeca7",
+      "head_ref": "new-select-docs",
+      "head_repo": "reflex-dev/reflex",
+      "is_fork": false,
+      "body_present": true
+    }
+  ]
+}

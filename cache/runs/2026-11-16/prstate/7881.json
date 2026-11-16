@@ -1,0 +1,186 @@
+{
+  "number": 7881,
+  "fetched_at": "2026-11-16T21:33:14Z",
+  "author_login": "MaiAditya",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "MaiAditya/reflex",
+  "head_sha": "bd018b4611d93346c6099f22eaa1301e56449d3f",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7851,
+      "title": "`reflex export` crashes with a traceback (and leaves a partial backend.zip) on a directory symlink pointing outside the app or a dangling symlink",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T03:42:53Z",
+      "can_push": true,
+      "commit_id": "719ce5309f851d31d66718b7e3dd2d5b386d44ae"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T03:44:46Z",
+      "can_push": true,
+      "commit_id": "719ce5309f851d31d66718b7e3dd2d5b386d44ae"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T05:29:55Z",
+      "can_push": false,
+      "commit_id": "bd018b4611d93346c6099f22eaa1301e56449d3f"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T05:29:57Z",
+      "can_push": false,
+      "commit_id": "bd018b4611d93346c6099f22eaa1301e56449d3f"
+    },
+    {
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T05:30:00Z",
+      "can_push": false,
+      "commit_id": "bd018b4611d93346c6099f22eaa1301e56449d3f"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 171,
+    "by_state": {
+      "SKIPPED": 5,
+      "SUCCESS": 166
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:42:49Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105473952&amp;sig=4b343e82ba0e38a50952441efdc80046870c1b8559414818e43ad0a2c199"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-13T03:50:09Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-11-13T04:22:12Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:42:49Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:42:53Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:42:53Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:44:46Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T03:44:46Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T03:50:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T05:29:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T05:29:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "MaiAditya",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T05:30:00Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Replace the in-app symlink-loop test with an external directory cycle that actually exercises the inode-based traversal guard.",
+      "addressed": true,
+      "path": "tests/units/utils/test_build.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Exercise visited_directory_ids with an external directory symlink that loops back to an already visited directory.",
+      "addressed": true,
+      "path": "tests/units/utils/test_build.py",
+      "outdated": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Handle ELOOP from cyclic file symlinks as a skipped looping symlink while re-raising unrelated OSError values.",
+      "addressed": true,
+      "path": "reflex/utils/build.py",
+      "outdated": true
+    }
+  ],
+  "failing_job_findings": [],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-13T05:30:00Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 3,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

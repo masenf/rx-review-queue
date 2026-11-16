@@ -1,0 +1,324 @@
+{
+  "number": 6876,
+  "fetched_at": "2026-11-16T21:17:59Z",
+  "author_login": "rawsun007",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "rawsun007/reflex",
+  "head_sha": "f510362fac95fe0f623cce4ef815907a109a290d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Strengthen the style-Var regression test by asserting that text_field.style[\"&\"] preserves the user-provided style, not only its key order.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "linked_issues": [
+    {
+      "number": 6874,
+      "title": "Hidden rx.input is not properly hidden",
+      "filed_by": "luator"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:36:22Z",
+      "can_push": true,
+      "commit_id": "82dfb96cbd5593dfe318ddcf6b432f6435fbea4b"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:38:28Z",
+      "can_push": true,
+      "commit_id": "82dfb96cbd5593dfe318ddcf6b432f6435fbea4b"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:41:22Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:41:23Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-08-12T08:42:52Z",
+      "can_push": false,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-08-14T17:07:17Z",
+      "can_push": true,
+      "commit_id": "0441c5a562418cdf283b5b8e77d9155cc0173d06"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-09-30T23:20:25Z",
+      "can_push": true,
+      "commit_id": "132fd41e5ccd28f4296d4c64694bf4ae1b978399"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T02:41:28Z",
+      "can_push": true,
+      "commit_id": "9330c63bbff38cb0bc267e9888e96e335642eb3d"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-10-01T02:56:35Z",
+      "can_push": true,
+      "commit_id": "1cd6735c7e3029f6cd315aa6fa4e5a5322e4d213"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T13:13:21Z",
+      "can_push": true,
+      "commit_id": "a436b8e470d92e706d904383917ecd98f0afb989"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T19:37:32Z",
+      "can_push": true,
+      "commit_id": "f510362fac95fe0f623cce4ef815907a109a290d"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [],
+  "threads": {
+    "total": 9,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a40b4b42-59b9-4319-8aad-7577d34f7d13 -->\n<!-- cubic:review-run=248eb13b-8c31-55c4-b177-e38728379e28 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This assertion does not verify that the user"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 168,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 165
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:18Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=52510535&amp;sig=7f5f209fb68323e6ff230561801120c61ab78608426d780bbaed93153c68f"
+    },
+    {
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-15T04:33:23Z",
+      "excerpt": "Yeah, `rx.el.input(type=\"hidden\")` works fine, so if it were just \"how do I render a hidden input\" then a docs line would cover it.\n\nWhat #6874 runs into is tha"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:46Z",
+      "excerpt": "Want your agent to iterate on Greptile's feedback? Try [*greploops*](https://github.com/greptileai/skills/blob/main/greploop/SKILL.md)."
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-13T21:19:50Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    }
+  ],
+  "head_activity_at": "2026-11-16T19:31:57Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:18Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:36:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:38:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-08-12T08:38:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:41:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:41:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-12T08:42:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-08-14T17:07:17Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "rawsun007",
+      "association": "NONE",
+      "at": "2026-08-15T04:33:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:20:24Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-09-30T23:20:25Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:28Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:29Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:41:46Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:56:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-10-01T02:56:35Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T21:19:50Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T13:13:21Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T13:13:21Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T19:37:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T19:37:32Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-16T19:31:57Z",
+  "last_maintainer_activity_at": "2026-08-14T17:07:17Z",
+  "never_maintainer_review": false,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

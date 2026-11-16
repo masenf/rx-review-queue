@@ -1,0 +1,602 @@
+{
+  "number": 7872,
+  "fetched_at": "2026-11-16T21:25:07Z",
+  "author_login": "masenf",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "314835da6e2d75836eec9165e2371e1222975254",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T19:27:05Z",
+      "can_push": true,
+      "commit_id": "158ce2e614cdd3cb9d235c29e61854577c8108fa"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T19:29:03Z",
+      "can_push": true,
+      "commit_id": "158ce2e614cdd3cb9d235c29e61854577c8108fa"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:25:53Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:25:55Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:25:56Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:25:58Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:00Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:02Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:04Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:06Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:08Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:10Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:13Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:15Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:17Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:19Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:21Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:23Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:25Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:27Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:29Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:31Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:32Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:34Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:36Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:38Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:40Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:42Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:44Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "masenf",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:26:46Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T20:29:55Z",
+      "can_push": true,
+      "commit_id": "314835da6e2d75836eec9165e2371e1222975254"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 29,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=6cd5926c-a6f6-4d60-8119-bc36f2553686 -->\n<!-- cubic:review-run=b3d3b8f6-ce7e-5806-a5cd-3760f4d76dc5 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: These assertions can pass when an option\u2019s "
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=c68a42eb-01e7-4e68-91e4-48735bcb7216 -->\n<!-- cubic:review-run=b3d3b8f6-ce7e-5806-a5cd-3760f4d76dc5 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: These text locators match both the desktop a"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d36d5f37-df75-473e-98e6-113ce070a96c -->\n<!-- cubic:review-run=b3d3b8f6-ce7e-5806-a5cd-3760f4d76dc5 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: This assertion expects a default vertical pa"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=28f73760-6472-4a48-946b-3dd858e71ca4 -->\n<!-- cubic:review-run=b3d3b8f6-ce7e-5806-a5cd-3760f4d76dc5 -->\n<!-- metadata:{\"confidence\":10} -->\nP2: This retry loop can silently finish without"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=d438b55b-45c0-477d-8258-ff4d083869e5 -->\n<!-- cubic:review-run=bd38c75c-becd-5d93-9ce3-e8d9bdbfeb17 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: These broadened push paths also make the exi"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 185,
+    "by_state": {
+      "CANCELLED": 1,
+      "FAILURE": 1,
+      "SKIPPED": 10,
+      "SUCCESS": 173
+    },
+    "failing": [
+      "changelog",
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 181
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:28:58Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=104951179&amp;sig=fe2eaf98311f127d0116fcf02049bd0ce73ba89e93a9a74e60902cc016c1"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-12T19:30:33Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.69%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-11-12T20:25:25Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:27:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:27:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:27:06Z"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:28:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:29:01Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:29:03Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-12T19:30:33Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:25:53Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:25:55Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:25:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:25:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:06Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:13Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:19Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:25Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:29Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:32Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:34Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:36Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:38Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:40Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:42Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "masenf",
+      "association": "MEMBER",
+      "at": "2026-11-12T20:26:46Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T20:29:55Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T20:29:55Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Assert the exact option count and full accessible names in the AG Grid pivot-mode test.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Filter the desktop/mobile profile text locators to visible elements before asserting visibility.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Do not assert nonzero default section padding unless the demo or component contract provides it.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "After the Cond retry loop, assert that the displayed value actually changed.",
+      "addressed": true
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Separate the docs-demo trigger from the existing docs-test filter so framework-only changes do not run the full docs-tests job.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "changelog",
+      "cause": "The job was cancelled during runner setup while fetching action metadata, before changelog validation ran."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports `test_route_matching[1000]` regressed 4.69%; it also warns that the significant change used different hardware, so attribution is uncertain."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-12T20:26:46Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

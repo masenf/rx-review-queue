@@ -1,0 +1,105 @@
+{
+  "number": 7769,
+  "fetched_at": "2026-11-16T21:33:50Z",
+  "author_login": "Aarkin7",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "Aarkin7/reflex",
+  "head_sha": "19fa2d9062b1f012a6ec9ba15353126699f61bc5",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7768,
+      "title": "Disk state manager drops state changes when a handler raises or is cancelled",
+      "filed_by": "Aarkin7"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T13:06:49Z",
+      "can_push": true,
+      "commit_id": "19fa2d9062b1f012a6ec9ba15353126699f61bc5"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 5,
+      "SUCCESS": 165
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed flags three regressions: state_collection_assignment[1000] slowed 11.68%, var_to_dispatch 5.76%, and state_collection_assignment[100000] 5.08%; it warns that six significant changes ran on different hardware."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T13:05:42Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=100448409&amp;sig=e33cb5100b21a73ccdfcf8cb932a4eb6932346bb71902e7dc37d8c621fd2"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-12T17:00:29Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 0.01%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-11-09T12:56:28Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T13:05:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T13:06:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-12T17:00:29Z"
+    }
+  ],
+  "conflicting_files": [
+    "tests/units/istate/manager/test_disk.py"
+  ],
+  "last_author_activity_at": "2026-11-09T12:56:28Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

@@ -1,0 +1,82 @@
+{
+  "number": 7884,
+  "fetched_at": "2026-11-16T21:33:12Z",
+  "author_login": "VishApp",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "VishApp/reflex",
+  "head_sha": "9dc5cd6e4968f9c619104cdb271d7d176f41857f",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7852,
+      "title": "rx.data_editor with on_delete bound: pressing Delete throws `TypeError: ... reading 'length'` and never clears the cell",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T08:27:25Z",
+      "can_push": true,
+      "commit_id": "cd57fa03585d39830ba5b1fceb7598e2f87b6e82"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 0,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:27:18Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105663224&amp;sig=3fc31d6d7b205dd66a3446538d4a2250c375f9a4c9eff3cd0fae0c227ee7"
+    }
+  ],
+  "head_activity_at": "2026-11-13T19:54:12Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:27:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:27:25Z",
+      "state": "commented"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [],
+  "failing_job_findings": [],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-13T19:54:12Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

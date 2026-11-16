@@ -1,0 +1,531 @@
+{
+  "number": 7761,
+  "fetched_at": "2026-11-16T21:24:50Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "08a6507c52469c0416dca5f7bb675659451d2356",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7608,
+      "title": "EventHandler return values: stream yielded/returned values to the frontend",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:40:39Z",
+      "can_push": true,
+      "commit_id": "90607e3b5cf97030f5b46c7c96f4f51ebf6c1f0a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:43:12Z",
+      "can_push": true,
+      "commit_id": "3e8952945688e88ae4733f67a62be464da5c92c3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:43:14Z",
+      "can_push": true,
+      "commit_id": "3e8952945688e88ae4733f67a62be464da5c92c3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:43:24Z",
+      "can_push": true,
+      "commit_id": "3e8952945688e88ae4733f67a62be464da5c92c3"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:43:41Z",
+      "can_push": true,
+      "commit_id": "3e8952945688e88ae4733f67a62be464da5c92c3"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:43:57Z",
+      "can_push": true,
+      "commit_id": "3e8952945688e88ae4733f67a62be464da5c92c3"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:48:54Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:48:56Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:48:59Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:01Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:04Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:07Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:10Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:12Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:14Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:17Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:19Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:49:48Z",
+      "can_push": true,
+      "commit_id": "de6bb2222e91f8249825ba26fa2bbfa817cb4d98"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:52:12Z",
+      "can_push": true,
+      "commit_id": "801d3297d4aa61b2f6b3a027c8a8efc227758ee6"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:52:15Z",
+      "can_push": true,
+      "commit_id": "801d3297d4aa61b2f6b3a027c8a8efc227758ee6"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-06T19:52:17Z",
+      "can_push": true,
+      "commit_id": "801d3297d4aa61b2f6b3a027c8a8efc227758ee6"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:22:04Z",
+      "can_push": true,
+      "commit_id": "11dbaa945ea82b7c9669472b8182f08fbd61a754"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:28:21Z",
+      "can_push": true,
+      "commit_id": "6d446d747203c928706a131d9a0e0e8947a24cd0"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:28:24Z",
+      "can_push": true,
+      "commit_id": "6d446d747203c928706a131d9a0e0e8947a24cd0"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:28:27Z",
+      "can_push": true,
+      "commit_id": "6d446d747203c928706a131d9a0e0e8947a24cd0"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:28:29Z",
+      "can_push": true,
+      "commit_id": "6d446d747203c928706a131d9a0e0e8947a24cd0"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 21,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P1\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p1.svg?v=9\" align=\"top\"></a> **Failed saves look successful**\n\nThe foreground path sends `done` and sets `result_s"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a021672f-1297-43b8-b82c-a0211a56fbe5 -->\n<!-- cubic:review-run=be152f71-c5c7-5244-a4ac-afbb3bb1e062 -->\n<!-- metadata:{\"confidence\":9} -->\nP1: Move this completion emission until after `m"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=9e1aea18-49fa-4e97-9c78-a1a3f1cb5b25 -->\n<!-- cubic:review-run=be152f71-c5c7-5244-a4ac-afbb3bb1e062 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: A synchronous event handler returning an awa"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 4,
+      "SUCCESS": 166
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:40:35Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=98564987&amp;sig=f9e548bd8b809477c3c299c3ae3aafd9faaa0e30ba7d9d8e9a743d79def91"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-06T19:43:10Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 3 benchmarks\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :warning: **12 "
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-13T21:43:40Z",
+      "excerpt": "CodSpeed on 08a6507c5:\n\n- **`test_state_update_dataclass_serialization`** was a real regression from the new `StateUpdate.results` field (\u221212% on acf3c88). It i"
+    }
+  ],
+  "head_activity_at": "2026-11-13T21:37:09Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:40:35Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:40:38Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:40:39Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-06T19:43:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:43:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:43:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:43:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:43:41Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:43:57Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:43:57Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:43:58Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:48:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:48:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:48:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:49:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:49:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:49:07Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:49:10Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:49:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:49:14Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:49:16Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:49:19Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:49:48Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-06T19:49:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:52:12Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:52:15Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-06T19:52:17Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:22:03Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:22:04Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-13T12:28:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-13T12:28:24Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-13T12:28:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-13T12:28:29Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-13T21:43:40Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Delay successful result-stream completion until after state persistence, so a Redis save failure rejects instead of reporting success.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Move completion emission after the state context exits successfully so failed persistence cannot leave the frontend request completed.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Await a synchronous handler's returned awaitable instead of rejecting or serializing it.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reports three route-matching regressions of 5.50%-6.81%; it also warns that five significantly changed benchmarks used different hardware, so attribution is uncertain."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-13T21:43:40Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

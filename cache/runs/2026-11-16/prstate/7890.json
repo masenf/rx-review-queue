@@ -1,0 +1,273 @@
+{
+  "number": 7890,
+  "fetched_at": "2026-11-16T21:17:58Z",
+  "author_login": "vjymisal0",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "vjymisal0/reflex",
+  "head_sha": "c4d63a6f3e227cb4d802219c3a88d763c00a6174",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "failing_job_findings": [],
+  "linked_issues": [
+    {
+      "number": 7841,
+      "title": "Set vars: rx.match compares a set case as order-dependent JSON, and a set[str] handler argument arrives as a list",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T17:05:54Z",
+      "can_push": true,
+      "commit_id": "509fb8f6fbe58cac0f24e4fe78c5aacd59176e4f"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T17:09:44Z",
+      "can_push": true,
+      "commit_id": "509fb8f6fbe58cac0f24e4fe78c5aacd59176e4f"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T04:59:21Z",
+      "can_push": false,
+      "commit_id": "1d17bf5fff5b0ac0bcea3c91186d2532d9a97d85"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T05:06:51Z",
+      "can_push": false,
+      "commit_id": "7dcbbe525fe4b29d70933a63b55e165431239fe5"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T05:06:54Z",
+      "can_push": false,
+      "commit_id": "7dcbbe525fe4b29d70933a63b55e165431239fe5"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T05:06:56Z",
+      "can_push": false,
+      "commit_id": "7dcbbe525fe4b29d70933a63b55e165431239fe5"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T05:06:59Z",
+      "can_push": false,
+      "commit_id": "7dcbbe525fe4b29d70933a63b55e165431239fe5"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T05:07:01Z",
+      "can_push": false,
+      "commit_id": "7dcbbe525fe4b29d70933a63b55e165431239fe5"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T05:07:03Z",
+      "can_push": false,
+      "commit_id": "7dcbbe525fe4b29d70933a63b55e165431239fe5"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T05:09:12Z",
+      "can_push": true,
+      "commit_id": "7dcbbe525fe4b29d70933a63b55e165431239fe5"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-16T05:13:47Z",
+      "can_push": false,
+      "commit_id": "f9b8732e560dfebb2d0d2072cd92e7c68636d808"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 168,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 165
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T17:05:49Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=106102805&amp;sig=5963110bb7ffbce8753a8d627fa934ea62f0669e1bcc02e2fb36fdba1245"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-13T17:13:48Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: *"
+    },
+    {
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:32:47Z",
+      "excerpt": "Followed up on the match benchmark in `c4d63a6f`. Set-case detection now happens during the existing case traversal, and generic Var inference stays on comparis"
+    }
+  ],
+  "head_activity_at": "2026-11-16T05:32:12Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T17:05:49Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T17:05:52Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T17:05:54Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T17:09:44Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T17:09:44Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T17:09:45Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T17:13:48Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T04:59:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:06:51Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:06:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:06:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:06:59Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:07:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:07:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:09:11Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:09:12Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:13:47Z"
+    },
+    {
+      "kind": "comment",
+      "by": "vjymisal0",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-16T05:32:47Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-16T05:32:47Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": true,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

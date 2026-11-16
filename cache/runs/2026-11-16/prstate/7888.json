@@ -1,0 +1,205 @@
+{
+  "number": 7888,
+  "fetched_at": "2026-11-16T21:18:10Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "95e6b80da6bd8e6b3b1647c3a4161448e7273033",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7832,
+      "title": "A middleware that raises on a lifespan scope silently disables a FastAPI api_transformer's lifespan (only an INFO line)",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:26:24Z",
+      "can_push": true,
+      "commit_id": "6727599f067eefcd8f47b641eed130f1afa701d3"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:31:52Z",
+      "can_push": true,
+      "commit_id": "6727599f067eefcd8f47b641eed130f1afa701d3"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:44:19Z",
+      "can_push": true,
+      "commit_id": "bee2556d45505e3a0f43282aa38fa268a37a63a3"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T12:46:05Z",
+      "can_push": true,
+      "commit_id": "bee2556d45505e3a0f43282aa38fa268a37a63a3"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "Alek99",
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 8,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Warning tests miss changed text.** These assertions check only fragments of the war"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=5ad5afa2-968c-4458-94f4-f1cad0a069a5 -->\n<!-- cubic:review-run=b50eb03f-6b98-5bea-8e79-5bf50b49051c -->\n<!-- metadata:{\"confidence\":7} -->\nP3: These substring checks would pass on partial"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=6e4041fe-2b77-4f31-a0bf-471f74d80280 -->\n<!-- cubic:review-run=b50eb03f-6b98-5bea-8e79-5bf50b49051c -->\n<!-- metadata:{\"confidence\":7} -->\nP3: This test asserts substrings of the warning "
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 4,
+      "SUCCESS": 166
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reported four regressed var-operation benchmarks: arithmetic[bare] -5%, comparison[bare] -4.66%, comparison[state] -4.65%, and arithmetic[state] -4.55%."
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Replace fragment-only warning assertions with exact full-message assertions in both new warning tests.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Assert the full records[0].message value for the nested-lifespan warning, normalizing the temporary-path prefix.",
+      "addressed": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Compare records[0].message with the complete expected warning in the earlier warning test instead of checking substrings.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:26:20Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105832126&amp;sig=f39f5dec9e1ad025513626f36286f268e1ce926a1330c8c16077a4963c11"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-13T12:32:21Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.72%**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :war"
+    }
+  ],
+  "head_activity_at": "2026-11-13T13:51:30Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:26:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:26:23Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:26:24Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:31:52Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:31:52Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T12:32:21Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:44:18Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:44:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:46:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T12:46:06Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-13T13:51:30Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

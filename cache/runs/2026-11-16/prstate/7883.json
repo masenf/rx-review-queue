@@ -1,0 +1,241 @@
+{
+  "number": 7883,
+  "fetched_at": "2026-11-16T21:18:22Z",
+  "author_login": "xh123637",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "xh123637/reflex",
+  "head_sha": "5558d18c5be65efc6cab73779191db73ce153c34",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7850,
+      "title": "`reflex deploy` hides its progress and success messages: the export step leaves the console at WARNING",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T08:12:32Z",
+      "can_push": true,
+      "commit_id": "2c238d351e68963afd61a7df4fdcb95b9bc681d1"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T08:13:56Z",
+      "can_push": true,
+      "commit_id": "2c238d351e68963afd61a7df4fdcb95b9bc681d1"
+    },
+    {
+      "by": "xh123637",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-13T13:19:54Z",
+      "can_push": false,
+      "commit_id": "d4111d278a63bed23e2712ef9a20cf33fd66ed64"
+    },
+    {
+      "by": "xh123637",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-13T13:20:07Z",
+      "can_push": false,
+      "commit_id": "d4111d278a63bed23e2712ef9a20cf33fd66ed64"
+    },
+    {
+      "by": "xh123637",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-13T13:20:20Z",
+      "can_push": false,
+      "commit_id": "d4111d278a63bed23e2712ef9a20cf33fd66ed64"
+    },
+    {
+      "by": "xh123637",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-13T13:20:33Z",
+      "can_push": false,
+      "commit_id": "d4111d278a63bed23e2712ef9a20cf33fd66ed64"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T13:21:35Z",
+      "can_push": true,
+      "commit_id": "d4111d278a63bed23e2712ef9a20cf33fd66ed64"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T13:24:41Z",
+      "can_push": true,
+      "commit_id": "d4111d278a63bed23e2712ef9a20cf33fd66ed64"
+    },
+    {
+      "by": "xh123637",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-14T05:22:23Z",
+      "can_push": false,
+      "commit_id": "5558d18c5be65efc6cab73779191db73ce153c34"
+    },
+    {
+      "by": "xh123637",
+      "association": "NONE",
+      "state": "COMMENTED",
+      "at": "2026-11-14T05:22:37Z",
+      "can_push": false,
+      "commit_id": "5558d18c5be65efc6cab73779191db73ce153c34"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 6,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 2,
+    "by_state": {
+      "SUCCESS": 2
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 0
+  },
+  "ci_never_ran": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:12:27Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=105650932&amp;sig=fc8920409bfd37411c81b091129e87b956bf7f79a45dba93c9d4aa9a3967"
+    }
+  ],
+  "head_activity_at": "2026-11-14T05:21:54Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:12:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:12:30Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:12:31Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:12:32Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:13:56Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T08:13:56Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "xh123637",
+      "association": "NONE",
+      "at": "2026-11-13T13:19:54Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "xh123637",
+      "association": "NONE",
+      "at": "2026-11-13T13:20:07Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "xh123637",
+      "association": "NONE",
+      "at": "2026-11-13T13:20:20Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "xh123637",
+      "association": "NONE",
+      "at": "2026-11-13T13:20:33Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T13:21:34Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T13:21:35Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T13:24:41Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T13:24:41Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "xh123637",
+      "association": "NONE",
+      "at": "2026-11-14T05:22:22Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "xh123637",
+      "association": "NONE",
+      "at": "2026-11-14T05:22:37Z"
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": false,
+  "failing_job_findings": [],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-14T05:22:37Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

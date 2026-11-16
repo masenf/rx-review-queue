@@ -1,0 +1,180 @@
+{
+  "number": 7786,
+  "fetched_at": "2026-11-16T21:25:07Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "16b27892cf81a994f6f4c4b4bc950d86b99c2d9d",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7785,
+      "title": "rx.toast action and cancel button styles use invalid Sonner prop names",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T09:20:22Z",
+      "can_push": true,
+      "commit_id": "822ad64fd42a463c22424a5f9bc4b59d37db3133"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T09:21:05Z",
+      "can_push": true,
+      "commit_id": "822ad64fd42a463c22424a5f9bc4b59d37db3133"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T09:34:27Z",
+      "can_push": false,
+      "commit_id": "9126c7e20463c3fccb5e4dbeca84b0b57a058db6"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T09:35:09Z",
+      "can_push": false,
+      "commit_id": "9126c7e20463c3fccb5e4dbeca84b0b57a058db6"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T09:35:14Z",
+      "can_push": false,
+      "commit_id": "9126c7e20463c3fccb5e4dbeca84b0b57a058db6"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 5,
+      "SUCCESS": 165
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:21:00Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=101637443&amp;sig=77c886c4f3239ed8d34e3266d9865eb9f6cfcc9305ecb0d93df1f5454f51"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-10T09:26:28Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 2.13%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-11-10T09:42:17Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:20:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:21:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:21:03Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:21:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:21:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-10T09:26:28Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:34:27Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:35:09Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T09:35:14Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "codspeed",
+      "ask": "Fix or acknowledge the current-head CodSpeed regressions in route matching, independent-token event bursts, and proxy-list mutation.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "conclusion": "FAILURE",
+      "check_run_id": 129755050290,
+      "cause": "Current CodSpeed output reports regressions in test_route_matching[10] (50.4 to 53.1 us, -5.08%), test_process_event_burst_independent_tokens[1] (2.7 to 2.9 ms, -4.41%), and test_proxy_list_mutation (9.2 to 9.6 ms, -4.16%). The PR changes only Sonner toast serialization and its unit test, not those benchmark paths; CodSpeed also warns that four significant changes used different hardware and that 18 benchmarks are dominated by system calls. This is an external CodSpeed check, so no GitHub Actions job log exists."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-10T09:42:17Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

@@ -1,0 +1,206 @@
+{
+  "number": 7781,
+  "fetched_at": "2026-11-16T21:18:33Z",
+  "author_login": "FarhanAliRaza",
+  "author_association": "MEMBER",
+  "head_repo": "reflex-dev/reflex",
+  "head_sha": "1ccc901c8a0ef05c8ad49c38c004bfa25dce7bf8",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7774,
+      "title": "state.js: the event loop can spin on microtasks while the socket is disconnected, freezing the tab and blocking the reconnect",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:39:22Z",
+      "can_push": true,
+      "commit_id": "093d60f10fe1b2dbffccdd3c6c21b6920de30552"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:47Z",
+      "can_push": true,
+      "commit_id": "9ab1a36bc5ca139d18e1fbf66b35fdc88aac629a"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-09T18:55:50Z",
+      "can_push": true,
+      "commit_id": "9ab1a36bc5ca139d18e1fbf66b35fdc88aac629a"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T19:24:26Z",
+      "can_push": true,
+      "commit_id": "a33adecd174674a655166d4027052fc68f834367"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "state": "COMMENTED",
+      "at": "2026-11-12T19:25:20Z",
+      "can_push": true,
+      "commit_id": "1ccc901c8a0ef05c8ad49c38c004bfa25dce7bf8"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 168,
+    "by_state": {
+      "FAILURE": 3,
+      "SKIPPED": 3,
+      "SUCCESS": 162
+    },
+    "failing": [
+      "unit-tests-gate",
+      "CodSpeed Performance Analysis",
+      "unit-tests (ubuntu-latest, 3.13)"
+    ],
+    "pending": [],
+    "actions_total": 164
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [
+    {
+      "check": "unit-tests-gate",
+      "cause": "The gate propagated the required unit-tests failure: its log says 'Blocking job results: unit-tests=failure'."
+    },
+    {
+      "check": "CodSpeed Performance Analysis",
+      "cause": "CodSpeed reported test_state_update_wire_serialization[model_1000] regressed from 25.2 ms to 26.4 ms, a 4.4% efficiency loss."
+    },
+    {
+      "check": "unit-tests (ubuntu-latest, 3.13)",
+      "cause": "The lone failure was tests/units/istate/manager/test_redis.py::test_modify_oplock at line 620 (assert 1 == 2); 15,217 tests passed, and this PR does not touch Redis code."
+    }
+  ],
+  "outstanding_asks": [],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:37:02Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=100801674&amp;sig=8a4ebef4ddbeacd5e1645c4ef627f85397713cbff0163b7453aadd0fbfc7"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-09T18:41:23Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.4%**\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warn"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:00:02Z",
+      "excerpt": "**CodSpeed Performance Analysis (-2.31%) isn't from this PR's code.**\n\n- **What it flags:** `test_state_collection_assignment[1000]` (-6.2%) and `test_var_to_di"
+    },
+    {
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-12T19:40:09Z",
+      "excerpt": "**`unit-tests (ubuntu-latest, 3.13)` failed on 1ccc901, in a Redis test that is racy and unrelated to this PR.**\n\n```\nFAILED tests/units/istate/manager/test_red"
+    }
+  ],
+  "head_activity_at": "2026-11-12T19:25:07Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:37:02Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:39:22Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-09T18:39:22Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-09T18:41:23Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:47Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T18:55:50Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-09T19:00:02Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:24:25Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T19:24:26Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-12T19:25:20Z"
+    },
+    {
+      "kind": "comment",
+      "by": "FarhanAliRaza",
+      "association": "MEMBER",
+      "at": "2026-11-12T19:40:09Z"
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-12T19:40:09Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

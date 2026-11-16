@@ -1,0 +1,195 @@
+{
+  "number": 7788,
+  "fetched_at": "2026-11-16T21:25:07Z",
+  "author_login": "harsh21234i",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "harsh21234i/reflex",
+  "head_sha": "888db009c6b108999acae37fcccc3435188e5198",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7787,
+      "title": "PropsBase nested serialization applies parent include/exclude filters to child fields",
+      "filed_by": "harsh21234i"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T12:48:51Z",
+      "can_push": true,
+      "commit_id": "1497f2313dca61d2efc5796298297828998f00ea"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T12:49:49Z",
+      "can_push": true,
+      "commit_id": "1497f2313dca61d2efc5796298297828998f00ea"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T12:57:08Z",
+      "can_push": false,
+      "commit_id": "348666588618fabaef53d573a637724995db9044"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T12:57:12Z",
+      "can_push": false,
+      "commit_id": "348666588618fabaef53d573a637724995db9044"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T12:59:05Z",
+      "can_push": true,
+      "commit_id": "348666588618fabaef53d573a637724995db9044"
+    },
+    {
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-10T13:16:01Z",
+      "can_push": false,
+      "commit_id": "888db009c6b108999acae37fcccc3435188e5198"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": []
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 5,
+      "SUCCESS": 165
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:49:45Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=101809965&amp;sig=5e0eb63651ccc52d63f8d6535e053ad500068b6b83c1c32e6337717bcc18"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-10T12:57:19Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **degrade performance by 4.28%**\n\n<details>\n<summary><b>2 warnings</b></summary>\n\n> :wa"
+    }
+  ],
+  "head_activity_at": "2026-11-10T13:15:18Z",
+  "interaction_events": [
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:48:51Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:49:45Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:49:48Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:49:49Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:57:08Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:57:12Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-10T12:57:19Z"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:59:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T12:59:05Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "harsh21234i",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-10T13:16:01Z"
+    }
+  ],
+  "outstanding_asks": [
+    {
+      "by": "codspeed",
+      "ask": "Fix or acknowledge the current-head CodSpeed regression in test_state_access[get_handler].",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": false,
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "conclusion": "FAILURE",
+      "check_run_id": 129856553650,
+      "cause": "Current CodSpeed output reports test_state_access[get_handler] slowing 69.6 to 72.8 ms (-4.28%). The PR changes nested component-prop serialization and its unit test, not the benchmark path; CodSpeed also warns that this significant comparison used different hardware and that 18 benchmarks are dominated by system calls. This is an external CodSpeed check, so no GitHub Actions job log exists."
+    }
+  ],
+  "conflicting_files": [],
+  "last_author_activity_at": "2026-11-10T13:16:01Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

@@ -1,0 +1,169 @@
+{
+  "number": 7891,
+  "fetched_at": "2026-11-16T21:33:16Z",
+  "author_login": "MaiAditya",
+  "author_association": "CONTRIBUTOR",
+  "head_repo": "MaiAditya/reflex",
+  "head_sha": "a29c76dda29fd9e7cf8810d14b91b25954dfef99",
+  "mergeable": "MERGEABLE",
+  "merge_state": "BLOCKED",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7856,
+      "title": "Kept env.py failure: the \"move it aside\" hint is dropped and a full traceback is logged when alembic.ini uses a relative script_location",
+      "filed_by": "masenf"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T18:44:05Z",
+      "can_push": true,
+      "commit_id": "a29c76dda29fd9e7cf8810d14b91b25954dfef99"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-13T18:46:19Z",
+      "can_push": true,
+      "commit_id": "a29c76dda29fd9e7cf8810d14b91b25954dfef99"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 3,
+    "unresolved": [
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Linked `env.py` loses its hint.** If `alembic/env.py` links to a shared custom file"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=9eaf61d7-1220-4782-914e-0b45778c01b8 -->\n<!-- cubic:review-run=a653cd51-33e2-5439-8aa8-e9f6e000b251 -->\n<!-- metadata:{\"confidence\":8} -->\nP2: Resolving every traceback path can misclassi"
+      },
+      {
+        "by": "cubic-dev-ai",
+        "outdated": false,
+        "first_comment": "<!-- cubic:v=a620c9b0-38c2-4230-9af5-b76e99d135d5 -->\n<!-- cubic:review-run=a653cd51-33e2-5439-8aa8-e9f6e000b251 -->\n<!-- metadata:{\"confidence\":9} -->\nP2: Match the resolved `env.py` path before filt"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "FAILURE",
+    "total": 171,
+    "by_state": {
+      "FAILURE": 1,
+      "SKIPPED": 5,
+      "SUCCESS": 165
+    },
+    "failing": [
+      "CodSpeed Performance Analysis"
+    ],
+    "pending": [],
+    "actions_total": 167
+  },
+  "ci_never_ran": false,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T18:44:01Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=106214989&amp;sig=75db4a35db66d2869a2439440f95f4735d167d15eace68e2e8825b0441fb"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-13T18:49:42Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will regress 1 benchmark\n\n<details>\n<summary><b>1 warning</b></summary>\n\n> :warning: **17 be"
+    }
+  ],
+  "head_activity_at": "2026-11-13T18:16:36Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T18:44:01Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T18:44:04Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T18:44:05Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T18:46:19Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-13T18:46:20Z"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-13T18:49:42Z"
+    }
+  ],
+  "conflicting_files": [],
+  "outstanding_asks": [
+    {
+      "by": "greptile-apps",
+      "ask": "Compare against the resolved env.py path before rejecting paths outside the script directory, and add a linked-env.py regression test.",
+      "addressed": false,
+      "path": "reflex/utils/migrations.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Prevent symlinked revision-script failures from being misclassified as env.py failures while still resolving configuration aliases.",
+      "addressed": false,
+      "path": "reflex/utils/migrations.py",
+      "outdated": false
+    },
+    {
+      "by": "cubic-dev-ai",
+      "ask": "Match the resolved env.py path before filtering traceback paths to the scripts directory so linked env.py files retain the custom-environment hint.",
+      "addressed": false,
+      "path": "reflex/utils/migrations.py",
+      "outdated": false
+    }
+  ],
+  "failing_job_findings": [
+    {
+      "check": "CodSpeed Performance Analysis",
+      "check_id": 132095783644,
+      "cause": "CodSpeed reports test_route_matching[10] regressed from 50.3 microseconds to 53.2 microseconds (-5.36%); 149 benchmarks were unchanged and one improved."
+    }
+  ],
+  "body_has_repro": true,
+  "last_author_activity_at": "2026-11-13T18:16:36Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}

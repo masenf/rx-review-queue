@@ -1,0 +1,185 @@
+{
+  "number": 7744,
+  "fetched_at": "2026-11-16T21:18:32Z",
+  "author_login": "SrkianFardin25",
+  "author_association": "FIRST_TIME_CONTRIBUTOR",
+  "head_repo": "SrkianFardin25/reflex",
+  "head_sha": "4f4a6a95ada18fb1d0e67f76f8e8d716fae1bbda",
+  "mergeable": "CONFLICTING",
+  "merge_state": "DIRTY",
+  "auto_merge": false,
+  "review_decision": "REVIEW_REQUIRED",
+  "linked_issues": [
+    {
+      "number": 7736,
+      "title": "Upload chunk parse errors are never logged: progress === 1 is never true for the streamed upload response",
+      "filed_by": "FarhanAliRaza"
+    }
+  ],
+  "reviews": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-05T06:42:43Z",
+      "can_push": true,
+      "commit_id": "96d5073cc0f903d17ec7ab90c8a3cead471532f3"
+    },
+    {
+      "by": "cubic-dev-ai",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-05T06:48:00Z",
+      "can_push": true,
+      "commit_id": "96d5073cc0f903d17ec7ab90c8a3cead471532f3"
+    },
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "state": "COMMENTED",
+      "at": "2026-11-12T11:41:18Z",
+      "can_push": true,
+      "commit_id": "4f4a6a95ada18fb1d0e67f76f8e8d716fae1bbda"
+    }
+  ],
+  "counting_approval": false,
+  "awaiting": [
+    "reflex-team"
+  ],
+  "threads": {
+    "total": 5,
+    "unresolved": [
+      {
+        "by": "cubic-dev-ai",
+        "outdated": true,
+        "first_comment": "<!-- cubic:v=129b1c0c-b21e-49cf-985b-adf7dbad1386 -->\n<!-- cubic:review-run=f2ad4b47-6539-5bff-8787-f3dda06a6721 -->\n<!-- metadata:{\"confidence\":5} -->\nP2: On the final pass, one malformed mid-stream "
+      },
+      {
+        "by": "greptile-apps",
+        "outdated": false,
+        "first_comment": "<a href=\"#\"><img alt=\"P2\" src=\"https://greptile-static-assets.s3.amazonaws.com/badges/p2.svg?v=9\" align=\"top\"></a> **Required regression tests are missing**\n\nThis PR changes how uploads finish but add"
+      }
+    ]
+  },
+  "checks": {
+    "rollup": "SUCCESS",
+    "total": 170,
+    "by_state": {
+      "SKIPPED": 3,
+      "SUCCESS": 167
+    },
+    "failing": [],
+    "pending": [],
+    "actions_total": 166
+  },
+  "ci_never_ran": false,
+  "failing_job_findings": [],
+  "outstanding_asks": [
+    {
+      "by": "cubic-dev-ai",
+      "ask": "On the final response pass, log and skip a malformed mid-stream line so later complete chunks are still processed.",
+      "addressed": false
+    },
+    {
+      "by": "greptile-apps",
+      "ask": "Add saved regression tests covering the final response pass, apply-once behavior, malformed-chunk logging, and empty-response handling.",
+      "addressed": false
+    }
+  ],
+  "body_has_repro": true,
+  "recent_comments": [
+    {
+      "by": "greptile-apps",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-05T06:42:39Z",
+      "excerpt": "<!-- greptile_summary -->\n\n<h2><a href=\"https://app.greptile.com/api/retrigger?id=96646509&amp;sig=40f289947b2d4ff39cf792d702ea68dd7efd3e49733de33fdba34761d0cef"
+    },
+    {
+      "by": "SrkianFardin25",
+      "association": "NONE",
+      "at": "2026-11-06T09:33:04Z",
+      "excerpt": "Pushed 4f4a6a9: the final parse in `xhr.onload` now only runs when `xhr.responseText.trim()` is non-empty, so a successful upload with an empty body no longer l"
+    },
+    {
+      "by": "codspeed",
+      "association": "NONE",
+      "at": "2026-11-12T17:03:28Z",
+      "excerpt": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by 6%**\n\n<details>\n<summary><b>3 warnings</b></summary>\n\n> :warni"
+    }
+  ],
+  "head_activity_at": "2026-11-06T09:32:57Z",
+  "interaction_events": [
+    {
+      "kind": "comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-05T06:42:39Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-05T06:42:42Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-05T06:42:43Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-05T06:48:00Z",
+      "state": "commented"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-05T06:48:00Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "cubic-dev-ai[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-05T06:48:01Z"
+    },
+    {
+      "kind": "comment",
+      "by": "SrkianFardin25",
+      "association": "NONE",
+      "at": "2026-11-06T09:33:04Z"
+    },
+    {
+      "kind": "review_comment",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T11:41:17Z"
+    },
+    {
+      "kind": "review",
+      "by": "greptile-apps[bot]",
+      "association": "CONTRIBUTOR",
+      "at": "2026-11-12T11:41:18Z",
+      "state": "commented"
+    },
+    {
+      "kind": "comment",
+      "by": "codspeed[bot]",
+      "association": "NONE",
+      "at": "2026-11-12T17:03:28Z"
+    }
+  ],
+  "conflicting_files": [
+    "packages/reflex-frontend/src/utils/helpers/upload.js"
+  ],
+  "last_author_activity_at": "2026-11-06T09:33:04Z",
+  "last_maintainer_activity_at": null,
+  "never_maintainer_review": true,
+  "waiting_on_maintainer": false,
+  "days_waiting_on_maintainer": 0,
+  "reconciled_at": "2026-11-16T21:38:07.956908Z"
+}
